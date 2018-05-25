@@ -1,0 +1,42 @@
+/* 全局通用颜色 */
+$dark-blue = #203260
+$font-dark = #1E64B4
+$font-light = #456C99
+
+multi-ellipsis($line = 2)
+  overflow  hidden
+  text-overflow ellipsis
+  display -webkit-box
+  -webkit-line-clamp $line
+  -webkit-box-orient vertical
+
+//宽高
+wh($width, $height)
+  width $width
+  height $height
+
+
+//字体大小，颜色
+sc($size, $color)
+  font-size $size
+  color $color
+
+
+//flex 布局和 子元素 对其方式
+fj($type = space-between)
+  display flex
+  justify-content $type
+
+// 水平垂直居中
+fc($type = center)
+  display flex
+  justify-content $type
+  align-items center
+
+textChange()
+  background -webkit-linear-gradient(left, #27cdff, #5f9bff)
+  -webkit-background-clip text
+  -webkit-text-fill-color transparent
+
+elChange()
+  background-image -webkit-linear-gradient(left, #96e4ff, #b0ccff)
