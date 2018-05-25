@@ -7,61 +7,42 @@
       .container-app-header-nav
         ul
           router-link(
-            v-for="item in list",
-            to="item.path",
+            v-for="(item, index) in indexList",
+            :key="index",
+            :to="item.path",
             tag="li",
-          ) {{item.name}}
+          ) {{ $t(`nav.${item.tag}`) }}
+          li ENGLISH▼
     div
       router-view
     div
     |  底部撒旦撒多
   </div>
 </template>
+
 <script>
+const indexList = [
+  { path: 'join', tag: 'git' },
+  { path: 'team', tag: 'about' },
+  { path: 'docs', tag: 'join' },
+  { path: 'message', tag: 'tec' },
+  { path: 'node', tag: 'docs' },
+  { path: 'node', tag: 'forum' },
+  { path: 'node', tag: 'noderank' }
+]
+
 export default {
-  data() {
+  data () {
     return {
-      list: [
-        {
-          path: "join",
-          name: "GITCLUB "
-        },
-        {
-          path: "team",
-          name: "ABOUT "
-        },
-        {
-          path: "docs",
-          name: "JOIN US "
-        },
-        {
-          path: "message",
-          name: "TECHNICAL"
-        },
-        {
-          path: "node",
-          name: "DOCS "
-        },
-        {
-          path: "node",
-          name: "FORUM "
-        },
-        {
-          path: "node",
-          name: "节点排行 "
-        },
-        {
-          path: "node",
-          name: "ENGLISH▼"
-        }
-      ]
-    };
+      indexList
+    }
   },
-  mounted() {
+  mounted () {
     // alert('aaa')
   }
-};
+}
 </script>
+
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
 .container-app

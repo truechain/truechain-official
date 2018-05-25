@@ -1,0 +1,12 @@
+{
+  "name": "初链",
+  "nav": {
+    "git": "GITHUB",
+    "about": "关于我们",
+    "join": "加入我们",
+    "tec": "技术团队",
+    "docs": "文档",
+    "forum": "社区",
+    "noderank": "节点排行"
+  }
+}
