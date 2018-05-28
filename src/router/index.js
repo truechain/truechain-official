@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HomeIndex from '@/components/index'
+import TrueAbout from '@/components/true-about'
 import TrueJoin from '@/components/true-join'
 import TrueTeam from '@/components/true-team'
 import TrueDocs from '@/components/true-docs'
@@ -17,28 +18,37 @@ export default new Router({
       component: HomeIndex,
       children: [
         {
+          path: '',
+          redirect: 'about'
+        },
+        {
+          path: '/about',
+          name: 'about',
+          component: TrueAbout
+        },
+        {
           path: '/join',
-          name: 'TrueJoin',
+          name: 'join',
           component: TrueJoin
         },
         {
           path: '/docs',
-          name: 'TrueDocs',
+          name: 'docs',
           component: TrueDocs
         },
         {
           path: '/node',
-          name: 'TrueNode',
+          name: 'node',
           component: TrueNode
         },
         {
           path: '/message',
-          name: 'TrueMessage',
+          name: 'message',
           component: TrueMessage
         },
         {
           path: '/team',
-          name: 'TrueTeam',
+          name: 'team',
           component: TrueTeam
         }
       ]

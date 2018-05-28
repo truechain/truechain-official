@@ -43,10 +43,10 @@ import { setStore, getStore } from '../util'
 
 const indexList = [
   { path: 'join', tag: 'git' },
-  { path: 'team', tag: 'about' },
+  { path: 'about', tag: 'about' },
   { path: 'docs', tag: 'join' },
   { path: 'message', tag: 'tec' },
-  { path: 'node', tag: 'docs' },
+  { path: 'team', tag: 'docs' },
   { path: 'node', tag: 'forum' },
   { path: 'node', tag: 'noderank' }
 ]
@@ -134,6 +134,9 @@ export default {
         wh(30px, 30px)
         background white
         border-radius 50%
+        transition all ease .3s
+        &:hover
+          opacity .7
         img
           transform scale(.58)
   .container-app-footer-logo
