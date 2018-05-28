@@ -1,17 +1,22 @@
 <template lang="pug">
-  div
-    .container-app-header
-      .container-app-header-logo
-        img(src="~@/assets/images/logo_top.png")
-      .container-app-header-nav
-        ul
-          router-link(
-            v-for="(item, index) in indexList",
-            :key="index",
-            :to="item.path",
-            tag="li",
-          ) {{ $t(`nav.${item.tag}`) }}
-          li(@click="toggleLanguage") ENGLISH▼
+  .container-app
+    nav
+      .container-app-header
+        router-link(to="/")
+          .container-app-header-logo
+            img(src="~@/assets/images/logo_top.png")
+        .container-app-header-nav
+          ul(:style="{'height': menuIsOpen ? `${40 * (indexList.length + 1)}px` : '0'}")
+            li(
+              v-for="(item, index) in indexList",
+              :key="index",
+              @click="jumpTo(item.path)",
+            ) {{ $t(`nav.${item.tag}`) }}
+            li.container-app-header-lang(@click="toggleLanguage") ENGLISH
+        span.container-app-header-button(@click="toggleMenu")
+          span
+          span
+          span
     .container-app-content
       transition(name="fade-x", mode="out-in")
         router-view
@@ -20,11 +25,10 @@
         img(src="~@/assets/images/logo_bot.png")
       .container-app-footer-nav
         ul
-          router-link(
+          li(
             v-for="(item, index) in footerList",
             :key="index",
-            :to="item.path",
-            tag="li",
+            @click="jumpTo(item.path)",
           ) {{ $t(`nav.${item.tag}`) }}
       .container-app-footer-links
         ul
@@ -38,23 +42,21 @@
 </template>
 
 <script>
-
-import { setStore, getStore } from '../util'
+import { setStore, getStore } from '@/util'
 
 const indexList = [
-  { path: 'join', tag: 'git' },
-  { path: 'about', tag: 'about' },
-  { path: 'docs', tag: 'join' },
-  { path: 'message', tag: 'tec' },
-  { path: 'team', tag: 'docs' },
-  { path: 'node', tag: 'forum' },
+  { path: 'https://github.com/truechain', tag: 'git' },
+  { path: 'team', tag: 'about' },
+  { path: 'join', tag: 'join' },
+  { path: 'docs', tag: 'docs' },
+  { path: 'http://group.truechain.pro/', tag: 'forum' },
   { path: 'node', tag: 'noderank' }
 ]
 const footerList = [
-  { path: 'join', tag: 'git' },
+  { path: 'https://github.com/truechain', tag: 'git' },
   { path: 'team', tag: 'about' },
-  { path: 'docs', tag: 'join' },
-  { path: 'message', tag: 'tec' }
+  { path: 'join', tag: 'join' },
+  { path: 'docs', tag: 'docs' }
 ]
 const linksList = [
   { path: require('@/assets/images/wechat.png'), link: 'wechat' },
@@ -67,14 +69,36 @@ export default {
   data () {
     return {
       indexList,
+      menuIsOpen: false,
       footerList,
       linksList
     }
   },
   created () {
-    this._i18n.locale = getStore('locale')
+    this._i18n.locale = getStore('locale') || 'sc'
   },
   methods: {
+    jumpTo (path) {
+      if (/http[s]?:\/\//.test(path)) {
+        window.open(path)
+      } else {
+        this.$router.push(path)
+      }
+    },
+    toggleMenu () {
+      if (!this.menuIsOpen) {
+        this.menuIsOpen = true
+        document.addEventListener('click', this.closeMenu, true)
+      } else {
+        this.menuIsOpen = false
+      }
+    },
+    closeMenu () {
+      this.$nextTick(() => {
+        this.menuIsOpen = false
+        document.removeEventListener('click', this.closeMenu, true)
+      })
+    },
     toggleLanguage () {
       if (getStore('locale') === 'sc') {
         setStore('locale', 'en')
@@ -90,24 +114,61 @@ export default {
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
   .container-app
-  .container-app-header
-    height 94px
-    fc(space-between)
-    padding 0 80px
-    background green
+    margin-top 100px
+  nav
+    position fixed
+    top 0
+    left 0
+    wh(100%, 100px)
     background-color $dark-blue
+  .container-app-header
+    padding 35px
+    mw()
   .container-app-header-logo
     wh(118px, 30px)
-    // background red
+    float left
   .container-app-header-nav
     color $font-light
     ul
-      fj()
+      float right
+      background-color $dark-blue
       li
-        color #A9ADBB
-        margin-left 30px
+        float left
+        color #fff
+        font-weight 200
+        opacity .6
+        margin-left 10px
         font-size 14px
+        cursor pointer
+        transition opacity .4s
+        line-height 20px
+        padding 5px 15px
+        &:hover
+          opacity 1
+      .container-app-header-lang
+        padding 4px 14px
+        border solid 1px #fff
+        border-radius 15px
+        opacity 1
+  .container-app-header-button
+    display none
+    float right
+    margin 5px 0
+    cursor pointer
+    wh(30px, 20px)
+    span
+      background-color #FFF
+      display block
+      margin 7px 0
+      wh(30px, 2px)
+      &:first-child
+        margin 0
+      &:last-child
+        margin 0
+
   .container-app-content
+    background red
+
     // background red
   .container-app-footer
     wh(100%, 426px)
@@ -125,6 +186,7 @@ export default {
         margin 0 25px
         color white
         font-size 12px
+        cursor pointer
   .container-app-footer-links
     padding 20px 0 40px
     ul
@@ -148,4 +210,22 @@ export default {
     div
       color white
       font-size 13px
+
+@media screen and (max-width 860px)
+  .container-app-header-nav
+    ul
+      overflow hidden
+      position absolute
+      left 0
+      top 100px
+      width 100%
+      height 0
+      transition height .6s
+      li
+        float none
+        line-height 30px
+        margin-left 0
+        border none !important
+  .container-app-header-button
+    display block
 </style>
