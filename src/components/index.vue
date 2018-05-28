@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  .container-app
     nav
       .container-app-header
         router-link(to="/")
@@ -115,6 +115,7 @@ export default {
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
   .container-app
+    margin-top 100px
   nav
     position fixed
     top 0
