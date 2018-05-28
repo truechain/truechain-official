@@ -25,11 +25,10 @@
         img(src="~@/assets/images/logo_bot.png")
       .container-app-footer-nav
         ul
-          router-link(
+          li(
             v-for="(item, index) in footerList",
             :key="index",
-            :to="item.path",
-            tag="li",
+            @click="jumpTo(item.path)",
           ) {{ $t(`nav.${item.tag}`) }}
       .container-app-footer-links
         ul
@@ -54,10 +53,10 @@ const indexList = [
   { path: 'node', tag: 'noderank' }
 ]
 const footerList = [
-  { path: 'join', tag: 'git' },
+  { path: 'https://github.com/truechain', tag: 'git' },
   { path: 'team', tag: 'about' },
-  { path: 'docs', tag: 'join' },
-  { path: 'message', tag: 'docs' }
+  { path: 'join', tag: 'join' },
+  { path: 'docs', tag: 'docs' }
 ]
 const linksList = [
   { path: require('@/assets/images/wechat.png'), link: 'wechat' },
@@ -187,6 +186,7 @@ export default {
         margin 0 25px
         color white
         font-size 12px
+        cursor pointer
   .container-app-footer-links
     padding 20px 0 40px
     ul
