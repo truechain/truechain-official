@@ -119,6 +119,7 @@ export default {
     position fixed
     top 0
     left 0
+    z-index 100
     wh(100%, 100px)
     background-color $dark-blue
   .container-app-header
