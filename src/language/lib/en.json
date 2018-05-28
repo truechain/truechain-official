@@ -1,0 +1,12 @@
+{
+  "name": "Truechain",
+  "nav": {
+    "git": "GITHUB",
+    "about": "ABOUT",
+    "join": "JOIN US",
+    "tec": "TECHNICAL",
+    "docs": "DOCS",
+    "forum": "FORUM",
+    "noderank": "NODES RANK"
+  }
+}

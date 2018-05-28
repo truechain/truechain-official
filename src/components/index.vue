@@ -6,18 +6,40 @@
       .container-app-header-nav
         ul
           router-link(
+<<<<<<< HEAD
             v-for="item in list",
             :to="item.path",
             tag="li",
           ) {{item.name}}
     div.aaaaa
+=======
+            v-for="(item, index) in indexList",
+            :key="index",
+            :to="item.path",
+            tag="li",
+          ) {{ $t(`nav.${item.tag}`) }}
+          li ENGLISH▼
+    div
+>>>>>>> 7f3a23c1aced8e8d61d2f7152d1b8cb0f8302050
       router-view
 
 </template>
+
 <script>
+const indexList = [
+  { path: 'join', tag: 'git' },
+  { path: 'team', tag: 'about' },
+  { path: 'docs', tag: 'join' },
+  { path: 'message', tag: 'tec' },
+  { path: 'node', tag: 'docs' },
+  { path: 'node', tag: 'forum' },
+  { path: 'node', tag: 'noderank' }
+]
+
 export default {
   data () {
     return {
+<<<<<<< HEAD
       list: [
         {
           path: 'join',
@@ -52,6 +74,9 @@ export default {
           name: 'ENGLISH▼'
         }
       ]
+=======
+      indexList
+>>>>>>> 7f3a23c1aced8e8d61d2f7152d1b8cb0f8302050
     }
   },
   mounted () {
@@ -59,6 +84,7 @@ export default {
   }
 }
 </script>
+
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
   .container-app
