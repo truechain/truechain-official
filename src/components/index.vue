@@ -12,7 +12,7 @@
               :to="item.path",
               tag="li",
             ) {{ $t(`nav.${item.tag}`) }}
-            li.container-app-header-lang ENGLISH▼
+            li.container-app-header-lang(@click="toggleLanguage") ENGLISH▼
     .container-app-content
       router-view
     .container-app-footer.
@@ -21,6 +21,9 @@
 </template>
 
 <script>
+
+import { setStore, getStore } from '../util'
+
 const indexList = [
   { path: 'join', tag: 'git' },
   { path: 'team', tag: 'about' },
@@ -37,8 +40,18 @@ export default {
       indexList
     }
   },
-  mounted () {
-    this._i18n.locale = 'sc'
+  created () {
+    this._i18n.locale = getStore('locale')
+  },
+  methods: {
+    toggleLanguage () {
+      if (getStore('locale') === 'sc') {
+        setStore('locale', 'en')
+      } else {
+        setStore('locale', 'sc')
+      }
+      this._i18n.locale = getStore('locale')
+    }
   }
 }
 </script>
