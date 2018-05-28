@@ -90,12 +90,6 @@
             .about-honor-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
 </template>
 
-<script>
-  export default {
-
-  }
-</script>
-
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
   .about-container
