@@ -196,9 +196,6 @@ export default {
         wh(30px, 30px)
         background white
         border-radius 50%
-        transition all ease .3s
-        &:hover
-          opacity .7
         img
           transform scale(.58)
   .container-app-footer-logo
