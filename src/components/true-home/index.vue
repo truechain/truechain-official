@@ -1,5 +1,5 @@
 <template>
   <div>
-    common
+    home
   </div>
 </template>
