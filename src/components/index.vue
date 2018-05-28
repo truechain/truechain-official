@@ -2,27 +2,28 @@
   div
     nav
       .container-app-header
-        router-link(
-          to="/"
-        ).container-app-header-logo
-          img(src="~@/assets/images/logo_top.png")
+        router-link(to="/")
+          .container-app-header-logo
+            img(src="~@/assets/images/logo_top.png")
         .container-app-header-nav
-          ul
+          ul(:style="{'height': menuIsOpen ? `${40 * (indexList.length + 1)}px` : '0'}")
             li(
               v-for="(item, index) in indexList",
               :key="index",
               @click="jumpTo(item.path)",
             ) {{ $t(`nav.${item.tag}`) }}
             li.container-app-header-lang(@click="toggleLanguage") ENGLISH
+        span.container-app-header-button(@click="toggleMenu")
+          span
+          span
+          span
     .container-app-content
       router-view
     .container-app-footer.
       asdasdsa
-
 </template>
 
 <script>
-
 import { setStore, getStore } from '@/util'
 
 const indexList = [
@@ -30,14 +31,15 @@ const indexList = [
   { path: 'team', tag: 'about' },
   { path: 'join', tag: 'join' },
   { path: 'docs', tag: 'docs' },
-  { path: 'https://www.truechain.pro/', tag: 'forum' },
+  { path: 'http://group.truechain.pro/', tag: 'forum' },
   { path: 'node', tag: 'noderank' }
 ]
 
 export default {
   data () {
     return {
-      indexList
+      indexList,
+      menuIsOpen: false
     }
   },
   created () {
@@ -50,6 +52,20 @@ export default {
       } else {
         this.$router.push(path)
       }
+    },
+    toggleMenu () {
+      if (!this.menuIsOpen) {
+        this.menuIsOpen = true
+        document.addEventListener('click', this.closeMenu, true)
+      } else {
+        this.menuIsOpen = false
+      }
+    },
+    closeMenu () {
+      this.$nextTick(() => {
+        this.menuIsOpen = false
+        document.removeEventListener('click', this.closeMenu, true)
+      })
     },
     toggleLanguage () {
       if (getStore('locale') === 'sc') {
@@ -67,7 +83,10 @@ export default {
 @import '~@/assets/stylus/mixin.styl'
   .container-app
   nav
-    height 100px
+    position fixed
+    top 0
+    left 0
+    wh(100%, 100px)
     background-color $dark-blue
   .container-app-header
     padding 35px
@@ -79,6 +98,7 @@ export default {
     color $font-light
     ul
       float right
+      background-color $dark-blue
       li
         float left
         color #fff
@@ -97,6 +117,40 @@ export default {
         border solid 1px #fff
         border-radius 15px
         opacity 1
+  .container-app-header-button
+    display none
+    float right
+    margin 5px 0
+    cursor pointer
+    wh(30px, 20px)
+    span
+      background-color #FFF
+      display block
+      margin 7px 0
+      wh(30px, 2px)
+      &:first-child
+        margin 0
+      &:last-child
+        margin 0
+
   .container-app-content
     background red
+
+@media screen and (max-width 860px)
+  .container-app-header-nav
+    ul
+      overflow hidden
+      position absolute
+      left 0
+      top 100px
+      width 100%
+      height 0
+      transition height .6s
+      li
+        float none
+        line-height 30px
+        margin-left 0
+        border none !important
+  .container-app-header-button
+    display block
 </style>
