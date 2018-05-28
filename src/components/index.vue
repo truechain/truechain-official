@@ -46,7 +46,7 @@ import { setStore, getStore } from '@/util'
 
 const indexList = [
   { path: 'https://github.com/truechain', tag: 'git' },
-  { path: 'team', tag: 'about' },
+  { path: 'about', tag: 'about' },
   { path: 'join', tag: 'join' },
   { path: 'docs', tag: 'docs' },
   { path: 'http://group.truechain.pro/', tag: 'forum' },

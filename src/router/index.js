@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HomeIndex from '@/components/index'
 import TrueAbout from '@/components/true-about'
+import TrueHome from '@/components/true-home'
 import TrueJoin from '@/components/true-join'
 import TrueTeam from '@/components/true-team'
 import TrueDocs from '@/components/true-docs'
@@ -19,7 +20,12 @@ export default new Router({
       children: [
         {
           path: '',
-          redirect: 'about'
+          redirect: 'home'
+        },
+        {
+          path: '/home',
+          name: 'home',
+          component: TrueHome
         },
         {
           path: '/about',
