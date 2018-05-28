@@ -1,5 +1,5 @@
 <template lang="pug">
-  .container-app
+  div
     .container-app-header
       .container-app-header-logo
         img(src="~@/assets/images/logo_top.png")
@@ -12,8 +12,10 @@
             tag="li",
           ) {{ $t(`nav.${item.tag}`) }}
           li ENGLISH▼
-    div
+    .container-app-content
       router-view
+    .container-app-footer.
+      asdasdsa
 
 </template>
 
@@ -35,7 +37,7 @@ export default {
     }
   },
   mounted () {
-    // alert('aaa')
+    this._i18n.locale = 'sc'
   }
 }
 </script>
@@ -46,7 +48,7 @@ export default {
   .container-app-header
     height 94px
     fc(space-between)
-    padding 0 60px
+    padding 0 80px
     background green
     background-color $dark-blue
   .container-app-header-logo
@@ -60,9 +62,6 @@ export default {
         color #A9ADBB
         margin-left 30px
         font-size 14px
-  .aaa
-    wh(100px, 30px)
-    border 1px solid white
-  .aaaaa
+  .container-app-content
     background red
 </style>
