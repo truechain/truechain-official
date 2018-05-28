@@ -60,10 +60,14 @@ export default {
       float right
       li
         float left
-        color #A9ADBB
+        color #fff
+        opacity .8
         margin-left 40px
         font-size 14px
         cursor pointer
+        transition opacity .4
+        &:hover
+          opacity 1
       .container-app-header-lang
         border solid 1px #fff
   .container-app-content
