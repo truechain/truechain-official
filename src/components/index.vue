@@ -18,9 +18,28 @@
           span
           span
     .container-app-content
-      router-view
-    .container-app-footer.
-      asdasdsa
+      transition(name="fade-x", mode="out-in")
+        router-view
+    .container-app-footer
+      .container-app-footer-logo
+        img(src="~@/assets/images/logo_bot.png")
+      .container-app-footer-nav
+        ul
+          router-link(
+            v-for="(item, index) in footerList",
+            :key="index",
+            :to="item.path",
+            tag="li",
+          ) {{ $t(`nav.${item.tag}`) }}
+      .container-app-footer-links
+        ul
+          li(
+            v-for="(item, index) in linksList",
+            :key="index",
+          )
+            img(:src="item.path", alt="")
+      .container-app-footer-copyright
+        div COPYRIGHT© TRUE CHAIN (初链)官方网站版权所有
 </template>
 
 <script>
@@ -34,12 +53,26 @@ const indexList = [
   { path: 'http://group.truechain.pro/', tag: 'forum' },
   { path: 'node', tag: 'noderank' }
 ]
+const footerList = [
+  { path: 'join', tag: 'git' },
+  { path: 'team', tag: 'about' },
+  { path: 'docs', tag: 'join' },
+  { path: 'message', tag: 'docs' }
+]
+const linksList = [
+  { path: require('@/assets/images/wechat.png'), link: 'wechat' },
+  { path: require('@/assets/images/weibo.png'), link: 'weibo' },
+  { path: require('@/assets/images/twitter.png'), link: 'twitter' },
+  { path: require('@/assets/images/telegram.png'), link: 'telegram' }
+]
 
 export default {
   data () {
     return {
       indexList,
-      menuIsOpen: false
+      menuIsOpen: false,
+      footerList,
+      linksList
     }
   },
   created () {
@@ -135,6 +168,44 @@ export default {
 
   .container-app-content
     background red
+
+    // background red
+  .container-app-footer
+    wh(100%, 426px)
+    background-color $dark-blue
+    fc()
+    display flex
+    align-items center
+    flex-direction column
+  .container-app-footer-nav
+    // background red
+    padding 40px 0
+    ul
+      display flex
+      li
+        margin 0 25px
+        color white
+        font-size 12px
+  .container-app-footer-links
+    padding 20px 0 40px
+    ul
+      display flex
+      li
+        margin 0 25px
+        wh(30px, 30px)
+        background white
+        border-radius 50%
+        img
+          transform scale(.58)
+  .container-app-footer-logo
+    wh(88px, 88px)
+    background-color white
+    border-radius 50%
+    padding 20px
+  .container-app-footer-copyright
+    div
+      color white
+      font-size 13px
 
 @media screen and (max-width 860px)
   .container-app-header-nav
