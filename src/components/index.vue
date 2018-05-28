@@ -6,13 +6,6 @@
       .container-app-header-nav
         ul
           router-link(
-<<<<<<< HEAD
-            v-for="item in list",
-            :to="item.path",
-            tag="li",
-          ) {{item.name}}
-    div.aaaaa
-=======
             v-for="(item, index) in indexList",
             :key="index",
             :to="item.path",
@@ -20,7 +13,6 @@
           ) {{ $t(`nav.${item.tag}`) }}
           li ENGLISH▼
     div
->>>>>>> 7f3a23c1aced8e8d61d2f7152d1b8cb0f8302050
       router-view
 
 </template>
@@ -39,44 +31,7 @@ const indexList = [
 export default {
   data () {
     return {
-<<<<<<< HEAD
-      list: [
-        {
-          path: 'join',
-          name: 'GITCLUB'
-        },
-        {
-          path: 'team',
-          name: 'ABOUT '
-        },
-        {
-          path: 'docs',
-          name: 'JOIN US '
-        },
-        {
-          path: 'message',
-          name: 'TECHNICAL'
-        },
-        {
-          path: 'node',
-          name: 'DOCS '
-        },
-        {
-          path: 'node',
-          name: 'FORUM '
-        },
-        {
-          path: 'node',
-          name: '节点排行 '
-        },
-        {
-          path: 'node',
-          name: 'ENGLISH▼'
-        }
-      ]
-=======
       indexList
->>>>>>> 7f3a23c1aced8e8d61d2f7152d1b8cb0f8302050
     }
   },
   mounted () {
