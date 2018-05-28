@@ -1,17 +1,18 @@
 <template lang="pug">
   div
-    .container-app-header
-      .container-app-header-logo
-        img(src="~@/assets/images/logo_top.png")
-      .container-app-header-nav
-        ul
-          router-link(
-            v-for="(item, index) in indexList",
-            :key="index",
-            :to="item.path",
-            tag="li",
-          ) {{ $t(`nav.${item.tag}`) }}
-          li ENGLISH▼
+    nav
+      .container-app-header
+        .container-app-header-logo
+          img(src="~@/assets/images/logo_top.png")
+        .container-app-header-nav
+          ul
+            router-link(
+              v-for="(item, index) in indexList",
+              :key="index",
+              :to="item.path",
+              tag="li",
+            ) {{ $t(`nav.${item.tag}`) }}
+            li.container-app-header-lang ENGLISH▼
     .container-app-content
       router-view
     .container-app-footer.
@@ -45,23 +46,26 @@ export default {
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
   .container-app
-  .container-app-header
-    height 94px
-    fc(space-between)
-    padding 0 80px
-    background green
+  nav
+    height 100px
     background-color $dark-blue
+  .container-app-header
+    mw()
   .container-app-header-logo
     wh(118px, 30px)
     // background red
   .container-app-header-nav
     color $font-light
     ul
-      fj()
+      float right
       li
+        float left
         color #A9ADBB
-        margin-left 30px
+        margin-left 40px
         font-size 14px
+        cursor pointer
+      .container-app-header-lang
+        border solid 1px #fff
   .container-app-content
     background red
 </style>
