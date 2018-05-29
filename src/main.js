@@ -4,7 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import i18n from './language'
+import { Page } from 'iview'
+import 'iview/dist/styles/iview.css'
 
+Vue.component('Page', Page)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
