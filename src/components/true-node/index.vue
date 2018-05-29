@@ -73,108 +73,66 @@
               div TTR得票
         .node-body-table-body
           ul
-            li
+            li(
+              v-for="(item, index) in list",
+              :key="index"
+            )
               div 1
-              div 飞狐小分队
-              div 2018-20-23-12-12-33
-              div 12000TRUE
-              div 100000票
-            li
-              div 1
-              div 飞狐小分队
-              div 2018-20-23-12-12-33
-              div 12000TRUE
-              div 100000票
-            li
-              div 1
-              div 飞狐小分队
-              div 2018-20-23-12-12-33
-              div 12000TRUE
-              div 100000票
-            li
-              div 1
-              div 飞狐小分队
-              div 2018-20-23-12-12-33
-              div 12000TRUE
-              div 100000票
-            li
-              div 1
-              div 飞狐小分队
-              div 2018-20-23-12-12-33
-              div 12000TRUE
-              div 100000票
-            li
-              div 1
-              div 飞狐小分队
-              div 2018-20-23-12-12-33
-              div 12000TRUE
-              div 100000票
-            li
-              div 1
-              div 飞狐小分队
-              div 2018-20-23-12-12-33
-              div 12000TRUE
-              div 100000票
-            li
-              div 1
-              div 飞狐小分队
-              div 2018-20-23-12-12-33
-              div 12000TRUE
-              div 100000票
-            li
-              div 1
-              div 飞狐小分队
-              div 2018-20-23-12-12-33
-              div 12000TRUE
-              div 100000票
-            li
-              div 1
-              div 飞狐小分队
-              div 2018-20-23-12-12-33
-              div 12000TRUE
-              div 100000票
-            li
-              div 1
-              div 飞狐小分队
-              div 2018-20-23-12-12-33
-              div 12000TRUE
-              div 100000票
-            li
-              div 1
-              div 飞狐小分队
-              div 2018-20-23-12-12-33
-              div 12000TRUE
-              div 100000票
-            li
-              div 1
-              div 飞狐小分队
-              div 2018-20-23-12-12-33
-              div 12000TRUE
-              div 100000票
-            li
-              div 1
-              div 飞狐小分队
-              div 2018-20-23-12-12-33
-              div 12000TRUE
-              div 100000票
+              div {{item.declaration}}
+              div {{item.create_time}}
+              div {{item.lock_num}}TRUE
+              div {{item.tickets}}票
       .node-body-page
         Page(
-          :total="100",
-          :current="10",
-          @on-change="test",
-          @on-page-size-change="test"
+          :total="pageSum",
+          @on-change="onChangePage",
+          @on-page-size-change="onChangePageSize"
         )
 
 </template>
 
 <script>
+  import http from '../../service/http.js'
   export default {
+    data () {
+      return {
+        list: [],
+        pageNumber: 10,
+        pageSum: 0
+      }
+    },
+    created () {
+      this.fetchData()
+      this.onFetchSumPage()
+    },
+    computed: {
+      VpageSum () {
+        return this.pageSum
+      }
+    },
     methods: {
-      test (x) {
-        console.log(x)
+      fetchData (pageIndex = 1, pageSum) {
+        http.get('nodeRank', {
+          'node_type': 1,
+          'pageIndex': (pageIndex - 1) * this.pageNumber,
+          'pageNumber': pageSum || this.pageNumber
+        }).then(res => {
+          if (pageSum) {
+            this.pageSum = res.data.data.length
+          } else {
+            this.list = res.data.data
+          }
+        })
       },
-      aaa (v) {
-        console.log(v, '==')
+      onChangePage (x) {
+        this.fetchData(x)
+      },
+      onFetchSumPage (x) {
+        this.fetchData(1, 1000)
+      },
+      onChangePageSize (x) {
+        // this.fetchData(x - 1)
+        // console.log('哦口口')
       }
     }
   }
