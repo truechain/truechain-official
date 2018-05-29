@@ -1,0 +1,54 @@
+@import '~@/assets/stylus/mixin.styl'
+
+.app-button-box
+  float left
+  margin 50px 30px 0 0
+  wh(150px, 50px)
+.app-button
+  display block
+  border solid 1px #FFF
+  background-color #0002
+  border-radius 25px
+  line-height 48px
+  text-align center
+  color #FFF
+  fill #FFF
+  transition .4s
+  &:hover
+    background-color #FFF
+    color $dark-blue
+    fill $dark-blue
+  svg
+    fill inherit
+    margin 8px 0 10px
+    vertical-align bottom
+  span
+    color inherit
+    font-size 14px
+.app-button-qrcode
+  padding-top 12px
+  margin 0 10px
+  div
+    position relative
+    transform scale(0)
+    opacity 0
+    transform-origin 50% -10px
+    transition transform .4s, opacity .4s
+    border-radius 3px
+    background-color #FFF
+    padding 4px
+    wh(130px, 130px)
+    &:before
+      content ''
+      position absolute
+      top 0
+      left 50%
+      border-bottom 12px solid #FFF
+      border-left 6px solid transparent
+      border-right 6px solid transparent
+      transform translate3d(-5px, -10px, 0)
+      wh(0, 0)
+.app-button-qrcode-show
+  div
+    transform scale(1)
+    opacity 1
