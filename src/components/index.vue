@@ -111,7 +111,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scpoed>
 @import '~@/assets/stylus/mixin.styl'
   .container-app
     margin-top 100px
@@ -168,8 +168,6 @@ export default {
         margin 0
 
   .container-app-content
-    background red
-
     // background red
   .container-app-footer
     wh(100%, 426px)
