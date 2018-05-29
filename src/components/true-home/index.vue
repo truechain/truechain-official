@@ -2,9 +2,9 @@
   div
     .home-introduce-banner
       .home-introduce-banner-text
-        h1 The True light wallet APP
-        p Public beta version
-        p Scan QR code to download
+        h1 {{ $t('banner.title') }}
+        p {{ $t('banner.p1') }}
+        p {{ $t('banner.p2') }}
         app-ios
         app-android
 </template>
@@ -29,6 +29,7 @@ export default {
 .home-introduce-banner-text
   transform translate3d(50%, 150px, 0)
   h1
+    letter-spacing 0.05em
     font-size 40px
     line-height 40px
     margin-bottom 30px

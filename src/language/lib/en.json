@@ -7,5 +7,10 @@
     "docs": "TECHNICAL DOCS",
     "forum": "FORUM",
     "noderank": "NODES RANK"
+  },
+  "banner": {
+    "title": "The True light wallet APP",
+    "p1": "Public beta version",
+    "p2": "Scan QR code to download"
   }
 }
