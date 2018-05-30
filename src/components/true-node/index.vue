@@ -84,7 +84,8 @@
               :key="index"
             )
               div {{ 1 +  (pageNumber * (pageIndex)) + index}}
-              div {{item.nickname}}
+              div
+                span(:class="{ tag: item.type === 1 }") {{item.nickname}}
               div {{getTime(+item.create_time)}}
               div {{item.lock_num}}TRUE
               div {{item.tickets}}票
@@ -415,6 +416,23 @@ export default {
       height 50px
       div
         color #456C99
+      .tag
+        position relative
+        height 100%
+        &:after
+          width 40px
+          height 20px
+          content '个人'
+          line-height 20px
+          position absolute
+          right -45px
+          top 50%
+          border-radius 10px
+          font-size 10px
+          color white
+          transform translateY(-50%) scale(.8)
+          background-color #1E64B4
+
     li:nth-child(odd)
       background #FBFCFE
     li:nth-child(even)
