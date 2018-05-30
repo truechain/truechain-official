@@ -75,7 +75,7 @@
       "list": [
         {
           "name": "Archit Sharma",
-          "intro": "an expert at distributed system, operation systems and performance engineering, is responsible for TrueChain engineering and engineering team management. Ren X has worked in Red Hat and CERN, engaged in large-scale cloud service and distributed system design and development. Ren X is a contributor of several important open source projects, as well as several Docker Hackathon champions."
+          "intro": "An expert at distributed system, operation systems and performance engineering, is responsible for TrueChain engineering and engineering team management. Ren X has worked in Red Hat and CERN, engaged in large-scale cloud service and distributed system design and development. Ren X is a contributor of several important open source projects, as well as several Docker Hackathon champions."
         },
         {
           "name": "Eric Zhang",
@@ -83,23 +83,47 @@
         },
         {
           "name": "Felix Cai",
-          "intro": "the front-end product leader of TrueChain, also a front-end geek, is graduated from Xi'an Jiao Tong University youth class."
+          "intro": "The front-end product leader of TrueChain, also a front-end geek, is graduated from Xi'an Jiao Tong University youth class."
         },
         {
           "name": "Home Chen",
-          "intro": "the mobile terminal product leader, engaged in IT work for 20 years, has rich experience in Internet product design and development, and software project management. He was a technical partner of “CaiHuohuo”, responsible for the research and development of new products, server cluster and high concurrent processing."
+          "intro": "The mobile terminal product leader, engaged in IT work for 20 years, has rich experience in Internet product design and development, and software project management. He was a technical partner of “CaiHuohuo”, responsible for the research and development of new products, server cluster and high concurrent processing."
         },
         {
           "name": "Jasper L",
-          "intro": "an expert at applied cryptography, cryptographic protocol, distributed system consensus, is responsible for TrueChain’s consensus research. Jepser L is graduated from Tsinghua University."
+          "intro": "An expert at applied cryptography, cryptographic protocol, distributed system consensus, is responsible for TrueChain’s consensus research. Jepser L is graduated from Tsinghua University."
         },
         {
           "name": "Richard Wang",
-          "intro": "the leader of TrueChain’s China technology community, has the resources of 4000+ Internet technology executives nationwide, 300+ author and 400+ frontline developers. Wang has been the CTO and CEO of many Internet companies, and participated in several transformations of traditional Internet enterprises projects. He is also the technical author of Mechanical Industry Press, and have attended several major domestic technical seminars as guests and judges."
+          "intro": "The leader of TrueChain’s China technology community, has the resources of 4000+ Internet technology executives nationwide, 300+ author and 400+ frontline developers. Wang has been the CTO and CEO of many Internet companies, and participated in several transformations of traditional Internet enterprises projects. He is also the technical author of Mechanical Industry Press, and have attended several major domestic technical seminars as guests and judges."
         },
         {
           "name": "Seay (wizard)",
-          "intro": "the security consultant of TrueChain, the author of “Code Audit: Enterprise Edition Web Code Security Architecture”, Seay source code security audit system author, and the blogger of well-known security blog “cnseay.com”. He once served at Alibaba security, and was the leader of Ali attack and defense laboratory, Sobug technology partner. Seay has experiences of more than ten years in security attack and defense and served for several well-known enterprises."
+          "intro": "The security consultant of TrueChain, the author of “Code Audit: Enterprise Edition Web Code Security Architecture”, Seay source code security audit system author, and the blogger of well-known security blog “cnseay.com”. He once served at Alibaba security, and was the leader of Ali attack and defense laboratory, Sobug technology partner. Seay has experiences of more than ten years in security attack and defense and served for several well-known enterprises."
+        },
+        {
+          "name": "Ming Tian",
+          "intro": "More than 10 years' experience in c/c++ development, responsible for large projects, strong learning ability, complete real-time database products and project experience of digital currency trading platform products."
+        },
+        {
+          "name": "Xiaojian Bai",
+          "intro": "Skilled front-end and back-end processing and writing, there are more mature open source works, MAC enthusiasts."
+        },
+        {
+          "name": "Chore.Qu",
+          "intro": "Years of experience in storage and cloud computing, gopher."
+        },
+        {
+          "name": "Qiang Chen",
+          "intro": "is responsible for the function test and pressure test of many large Internet and financial projects, and is good at analyzing and weighing the problems. It likes to study the new industry technology,the rigorous work style."
+        },
+        {
+          "name": "Shenglong Jia",
+          "intro": "Many years of C/C++ development experience, participate in a number of high concurrency server development projects.Rich experience in development."
+        },
+        {
+          "name": "Jinyuan Shi",
+          "intro": "Golang program development, once did the big data development analysis of automobile finance, built the high-concurrency distributed crawler system, now responsible for the block chain consensus layer development."
         }
       ]
     },
@@ -111,16 +135,20 @@
           "intro": "is the founder of TrueChain, Chief Strategic Officer, also the leader of global public relations and institutional investors, an experienced entrepreneur, and the member of Chang’an club. He is also the vice president of the black horse (2015- 2016) and the member of the Great Wall Association."
         },
         {
-          "name": "Yan Liu",
-          "intro": "the operations director, is responsible for TrueChain products and business operations, as well as TrueChain community building and operation."
-        },
-        {
           "name": "Larry Lin",
           "intro": "as the founder of TrueChain, chief development officer, the expert of Internet marketing and community operation, has been responsible for the operation of \"Baidu encyclopedia\", which is the largest co-building community in China. Lin has more than 10 years of digital advertising and Internet industry experience, and was the author of several bestsellers in propaganda."
         },
         {
           "name": "Yu Zhu (binke)",
           "intro": "is the head of the Block Chain and the New retail Research Institute, the first head of the new retailing (O2O) department of Alibaba Group. He became the vice president of Shopin Enterprise in 2015, taking charge of offline entities and online overall work. He has rich experience in complete digitization and full channel communication, and digital marketing business."
+        },
+        {
+          "name": "Yu Zhu (binke)",
+          "intro": "is the head of the Block Chain and the New retail Research Institute, the first head of the new retailing (O2O) department of Alibaba Group. He became the vice president of Shopin Enterprise in 2015, taking charge of offline entities and online overall work. He has rich experience in complete digitization and full channel communication, and digital marketing business."
+        },
+        {
+          "name": "Hongyi Zheng",
+          "intro": "15 years experience in corporate executives, Internet, financial, blockchain and other business experience, with thousands of management experience, 10 billion performance, a number of successful cases, 400 million user operating experience. Engaged in internet finance industry and internet + blockchain. Proficient in the application of mobile internet, e-commerce, big data, cloud computing, artificial intelligence, blockchain technology in various industries, familiar with global financial technology trends and operating models. Proficient in financial technology management based on +Internet."
         }
       ]
     },
@@ -149,6 +177,9 @@
         }
       ]
     }
+  },
+  "honor": {
+    "title": "honor"
   },
   "join": {
     "title": "join us",

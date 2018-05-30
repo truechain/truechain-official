@@ -148,7 +148,7 @@ export default {
 @import '~@/assets/stylus/mixin.styl'
 
   .container-app
-    margin-top 100px
+    padding-top 100px
   nav
     position fixed
     top 0
