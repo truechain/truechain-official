@@ -12,7 +12,22 @@
               :key="index",
               @click="jumpTo(item.path)",
             ) {{ $t(`nav.${item.tag}`) }}
-            li.container-app-header-lang(@click="toggleLanguage") ENGLISH
+            li.container-app-header-lang(
+              :style="{'height': langsSelectorIsOpen ? `${langs.length * 28 + 2}px` : '30px'}"
+              @mouseenter="openLangsSelector"
+              @mouseleave="closeLangsSelector"
+            )
+              div(
+                :style="{'transform': `translateY(${langsSelectorIsOpen ? 0 : -usedLangNum * 28}px)`}"
+              )
+                div(
+                  v-for="(item, index) in langs"
+                  :key="index"
+                  @click="toggleLanguage(index)"
+                ) {{item.name}}
+              //- .container-app-header-lang-select
+              //-   div ENGLISH
+              //-   div 简体中文
         span.container-app-header-button(@click="toggleMenu")
           span
           span
@@ -52,6 +67,10 @@ const indexList = [
   { path: 'http://group.truechain.pro/', tag: 'forum' },
   { path: 'node', tag: 'noderank' }
 ]
+const langs = [
+  { name: 'ENGLISH', tag: 'en' },
+  { name: '简体中文', tag: 'sc' }
+]
 const footerList = [
   { path: 'https://github.com/truechain', tag: 'git' },
   { path: 'team', tag: 'about' },
@@ -69,13 +88,23 @@ export default {
   data () {
     return {
       indexList,
+      langs,
       menuIsOpen: false,
       footerList,
-      linksList
+      linksList,
+      langsSelectorIsOpen: false,
+      usedLangNum: 0
     }
   },
   created () {
-    this._i18n.locale = getStore('locale') || 'sc'
+    const storeLangConfig = getStore('locale')
+    const index = this.langs.indexOf(storeLangConfig)
+    if (index !== -1) {
+      this._i18n.locale = storeLangConfig
+      this.usedLangNum = index
+    } else {
+      this.toggleLanguage(0)
+    }
   },
   methods: {
     jumpTo (path) {
@@ -99,12 +128,16 @@ export default {
         document.removeEventListener('click', this.closeMenu, true)
       })
     },
-    toggleLanguage () {
-      if (getStore('locale') === 'sc') {
-        setStore('locale', 'en')
-      } else {
-        setStore('locale', 'sc')
-      }
+    openLangsSelector () {
+      this.langsSelectorIsOpen = true
+    },
+    closeLangsSelector () {
+      this.langsSelectorIsOpen = false
+    },
+    toggleLanguage (index) {
+      const tag = this.langs[index].tag
+      setStore('locale', tag)
+      this.usedLangNum = index
       this._i18n.locale = getStore('locale')
     }
   }
@@ -113,6 +146,7 @@ export default {
 
 <style lang="stylus" scpoed>
 @import '~@/assets/stylus/mixin.styl'
+
   .container-app
     margin-top 100px
   nav
@@ -146,10 +180,19 @@ export default {
         &:hover
           opacity 1
       .container-app-header-lang
-        padding 4px 14px
+        padding 0 14px
         border solid 1px #fff
         border-radius 15px
         opacity 1
+        height 30px
+        transition height .4s
+        overflow hidden
+        div
+          line-height 28px
+          color #FFF
+          cursor pointer
+        >div
+          transition transform .4s
   .container-app-header-button
     display none
     float right
