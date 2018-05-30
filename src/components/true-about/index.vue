@@ -6,32 +6,32 @@
         ul
           li
             .about-introduce-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-introduce-list-name dddd
             .about-introduce-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
           li
             .about-introduce-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-introduce-list-name dddd
             .about-introduce-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
           li
             .about-introduce-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-introduce-list-name dddd
             .about-introduce-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
           li
             .about-introduce-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-introduce-list-name dddd
             .about-introduce-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
           li
             .about-introduce-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-introduce-list-name dddd
             .about-introduce-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
           li
             .about-introduce-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-introduce-list-name dddd
             .about-introduce-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
     .about-introduce
@@ -40,32 +40,32 @@
         ul
           li
             .about-introduce-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-introduce-list-name dddd
             .about-introduce-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
           li
             .about-introduce-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-introduce-list-name dddd
             .about-introduce-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
           li
             .about-introduce-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-introduce-list-name dddd
             .about-introduce-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
           li
             .about-introduce-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-introduce-list-name dddd
             .about-introduce-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
           li
             .about-introduce-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-introduce-list-name dddd
             .about-introduce-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
           li
             .about-introduce-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-introduce-list-name dddd
             .about-introduce-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
 
@@ -75,17 +75,17 @@
         ul
           li
             .about-honor-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-honor-list-name dddd
             .about-honor-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
           li
             .about-honor-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-honor-list-name dddd
             .about-honor-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
           li
             .about-honor-list-avatar
-              img(src="~@/assets/images/pic3.png")
+              img(src="~@/assets/images/pic3.jpg")
             .about-honor-list-name dddd
             .about-honor-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
 </template>

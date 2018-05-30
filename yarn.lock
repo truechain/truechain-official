@@ -32,6 +32,13 @@
   dependencies:
     "@babel/types" "7.0.0-beta.44"
 
+"@babel/helper-module-imports@^7.0.0-beta.34":
+  version "7.0.0-beta.49"
+  resolved "http://registry.npm.taobao.org/@babel/helper-module-imports/download/@babel/helper-module-imports-7.0.0-beta.49.tgz#41d7d59891016c493432a46f7464446552890c75"
+  dependencies:
+    "@babel/types" "7.0.0-beta.49"
+    lodash "^4.17.5"
+
 "@babel/helper-split-export-declaration@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "http://registry.npm.taobao.org/@babel/helper-split-export-declaration/download/@babel/helper-split-export-declaration-7.0.0-beta.44.tgz#c0b351735e0fbcb3822c8ad8db4e583b05ebd9dc"
@@ -76,6 +83,14 @@
   dependencies:
     esutils "^2.0.2"
     lodash "^4.2.0"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@7.0.0-beta.49":
+  version "7.0.0-beta.49"
+  resolved "http://registry.npm.taobao.org/@babel/types/download/@babel/types-7.0.0-beta.49.tgz#b7e3b1c3f4d4cfe11bdf8c89f1efd5e1617b87a6"
+  dependencies:
+    esutils "^2.0.2"
+    lodash "^4.17.5"
     to-fast-properties "^2.0.0"
 
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
@@ -310,6 +325,12 @@ async-limiter@~1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/async-limiter/download/async-limiter-1.0.0.tgz#78faed8c3d074ab81f22b4e985d79e8738f720f8"
 
+async-validator@^1.8.2:
+  version "1.8.2"
+  resolved "http://registry.npm.taobao.org/async-validator/download/async-validator-1.8.2.tgz#b77597226e96242f8d531c0d46ae295f62422ba4"
+  dependencies:
+    babel-runtime "6.x"
+
 async@^1.5.2:
   version "1.5.2"
   resolved "http://registry.npm.taobao.org/async/download/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
@@ -345,6 +366,13 @@ autoprefixer@^7.1.2:
     num2fraction "^1.2.2"
     postcss "^6.0.17"
     postcss-value-parser "^3.2.3"
+
+axios@^0.18.0:
+  version "0.18.0"
+  resolved "http://registry.npm.taobao.org/axios/download/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
+  dependencies:
+    follow-redirects "^1.3.0"
+    is-buffer "^1.1.5"
 
 babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
   version "6.26.0"
@@ -543,6 +571,12 @@ babel-plugin-check-es2015-constants@^6.22.0:
   resolved "http://registry.npm.taobao.org/babel-plugin-check-es2015-constants/download/babel-plugin-check-es2015-constants-6.22.0.tgz#35157b101426fd2ffd3da3f75c7d1e91835bbf8a"
   dependencies:
     babel-runtime "^6.22.0"
+
+babel-plugin-import@^1.7.0:
+  version "1.7.0"
+  resolved "http://registry.npm.taobao.org/babel-plugin-import/download/babel-plugin-import-1.7.0.tgz#7da886c26d46a048bc9ed126890fa7e419a6133d"
+  dependencies:
+    "@babel/helper-module-imports" "^7.0.0-beta.34"
 
 babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
@@ -889,7 +923,7 @@ babel-register@^6.26.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.15"
 
-babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0:
+babel-runtime@6.x, babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "http://registry.npm.taobao.org/babel-runtime/download/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   dependencies:
@@ -960,6 +994,10 @@ base@^0.11.1:
     isobject "^3.0.1"
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
+
+batch-processor@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/batch-processor/download/batch-processor-1.0.0.tgz#75c95c32b748e0850d10c2b168f6bdbe9891ace8"
 
 batch@0.6.1:
   version "0.6.1"
@@ -1795,6 +1833,10 @@ deep-is@~0.1.3:
   version "0.1.3"
   resolved "http://registry.npm.taobao.org/deep-is/download/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
 
+deepmerge@^2.1.0:
+  version "2.1.1"
+  resolved "http://registry.npm.taobao.org/deepmerge/download/deepmerge-2.1.1.tgz#e862b4e45ea0555072bf51e7fd0d9845170ae768"
+
 define-properties@^1.1.2:
   version "1.1.2"
   resolved "http://registry.npm.taobao.org/define-properties/download/define-properties-1.1.2.tgz#83a73f2fea569898fb737193c8f873caf6d45c94"
@@ -2008,6 +2050,12 @@ ejs@^2.5.7:
 electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.30, electron-to-chromium@^1.3.47:
   version "1.3.48"
   resolved "http://registry.npm.taobao.org/electron-to-chromium/download/electron-to-chromium-1.3.48.tgz#d3b0d8593814044e092ece2108fc3ac9aea4b900"
+
+element-resize-detector@^1.1.14:
+  version "1.1.14"
+  resolved "http://registry.npm.taobao.org/element-resize-detector/download/element-resize-detector-1.1.14.tgz#af064a0a618a820ad570a95c5eec5b77be0128c1"
+  dependencies:
+    batch-processor "^1.0.0"
 
 elliptic@^6.0.0:
   version "6.4.0"
@@ -2621,7 +2669,7 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.1"
     readable-stream "^2.0.4"
 
-follow-redirects@^1.0.0:
+follow-redirects@^1.0.0, follow-redirects@^1.3.0:
   version "1.5.0"
   resolved "http://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.5.0.tgz#234f49cf770b7f35b40e790f636ceba0c3a0ab77"
   dependencies:
@@ -3429,9 +3477,26 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "http://registry.npm.taobao.org/isobject/download/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
 
+iview@^2.14.0:
+  version "2.14.0"
+  resolved "http://registry.npm.taobao.org/iview/download/iview-2.14.0.tgz#6819a30b6bba1f8be848b80ce364e1aefc19547a"
+  dependencies:
+    async-validator "^1.8.2"
+    deepmerge "^2.1.0"
+    element-resize-detector "^1.1.14"
+    js-calendar "^1.2.3"
+    lodash.throttle "^4.1.1"
+    popper.js "^1.14.1"
+    tinycolor2 "^1.4.1"
+    v-click-outside-x "^2.4.0"
+
 js-base64@^2.1.9:
   version "2.4.5"
   resolved "http://registry.npm.taobao.org/js-base64/download/js-base64-2.4.5.tgz#e293cd3c7c82f070d700fc7a1ca0a2e69f101f92"
+
+js-calendar@^1.2.3:
+  version "1.2.3"
+  resolved "http://registry.npm.taobao.org/js-calendar/download/js-calendar-1.2.3.tgz#a583b0644b4e695ba394f344d103dbcc7a7a7d3e"
 
 js-stringify@^1.0.1:
   version "1.0.2"
@@ -3607,6 +3672,10 @@ lodash.clonedeep@^4.5.0:
 lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "http://registry.npm.taobao.org/lodash.memoize/download/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
+
+lodash.throttle@^4.1.1:
+  version "4.1.1"
+  resolved "http://registry.npm.taobao.org/lodash.throttle/download/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
 
 lodash.uniq@^4.5.0:
   version "4.5.0"
@@ -4391,6 +4460,10 @@ pluralize@^7.0.0:
   version "7.0.0"
   resolved "http://registry.npm.taobao.org/pluralize/download/pluralize-7.0.0.tgz#298b89df8b93b0221dbf421ad2b1b1ea23fc6777"
 
+popper.js@^1.14.1:
+  version "1.14.3"
+  resolved "http://registry.npm.taobao.org/popper.js/download/popper.js-1.14.3.tgz#1438f98d046acf7b4d78cd502bf418ac64d4f095"
+
 portfinder@^1.0.13, portfinder@^1.0.9:
   version "1.0.13"
   resolved "http://registry.npm.taobao.org/portfinder/download/portfinder-1.0.13.tgz#bb32ecd87c27104ae6ee44b5a3ccbf0ebb1aede9"
@@ -4900,6 +4973,10 @@ q@^1.1.2:
 qs@6.5.1:
   version "6.5.1"
   resolved "http://registry.npm.taobao.org/qs/download/qs-6.5.1.tgz#349cdf6eef89ec45c12d7d5eb3fc0c870343a6d8"
+
+qs@^6.5.2:
+  version "6.5.2"
+  resolved "http://registry.npm.taobao.org/qs/download/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
 
 query-string@^4.1.0:
   version "4.3.4"
@@ -5794,6 +5871,10 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
+tinycolor2@^1.4.1:
+  version "1.4.1"
+  resolved "http://registry.npm.taobao.org/tinycolor2/download/tinycolor2-1.4.1.tgz#f4fad333447bc0b07d4dc8e9209d8f39a8ac77e8"
+
 tmp@^0.0.33:
   version "0.0.33"
   resolved "http://registry.npm.taobao.org/tmp/download/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
@@ -6033,6 +6114,10 @@ utils-merge@1.0.1:
 uuid@^3.0.1:
   version "3.2.1"
   resolved "http://registry.npm.taobao.org/uuid/download/uuid-3.2.1.tgz#12c528bb9d58d0b9265d9a2f6f0fe8be17ff1f14"
+
+v-click-outside-x@^2.4.0:
+  version "2.5.1"
+  resolved "http://registry.npm.taobao.org/v-click-outside-x/download/v-click-outside-x-2.5.1.tgz#c87b9899f1bd27d2dc66b6fde960600e95060254"
 
 validate-npm-package-license@^3.0.1:
   version "3.0.3"

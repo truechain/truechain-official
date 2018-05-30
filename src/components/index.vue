@@ -136,7 +136,6 @@ export default {
       li
         float left
         color #fff
-        font-weight 200
         opacity .6
         margin-left 10px
         font-size 14px
