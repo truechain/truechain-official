@@ -49,13 +49,13 @@
         .node-header-countdown-title 优先节点竞选投票倒计时
         .node-header-countdown-clock
           ul
-            li 87
+            li {{time.d}}
             li 天
-            li 22
+            li {{time.h}}
             li 时
-            li 59
+            li {{time.m}}
             li 分
-            li 29
+            li {{time.s}}
             li 秒
     .node-body
       .node-body-title 优先节点竞选投票排行
@@ -85,7 +85,6 @@
             )
               div {{ 1 +  (pageNumber * (pageIndex)) + index}}
               div {{item.nickname}}
-              //- div {{item.create_time}}
               div {{getTime(+item.create_time)}}
               div {{item.lock_num}}TRUE
               div {{item.tickets}}票
@@ -100,8 +99,8 @@
 </template>
 
 <script>
-  import http from '@/service/http.js'
-  import { getTime } from '@/util'
+  import http from '@/service/http'
+  import { getTime, contdown } from '@/util'
 
 export default {
     data () {
@@ -111,15 +110,38 @@ export default {
         pageSum: 0,
         nodeType: 1,
         pageIndex: 0,
-        currentPage: 1
+        currentPage: 1,
+        time: {
+          d: '00',
+          h: '00',
+          m: '00',
+          s: '00'
+        }
       }
     },
     created () {
       this.fetchData()
       this.onFetchSumPage()
+      this.setContdown()
     },
     methods: {
       getTime,
+      setContdown () {
+        const timer = setInterval(() => {
+          const { time, lefttime } = contdown()
+          if (lefttime <= 0) {
+            clearInterval(timer)
+            this.time = {
+              d: '00',
+              h: '00',
+              m: '00',
+              s: '00'
+            }
+            return
+          }
+          this.time = time
+        }, 1000)
+      },
       toggleNode (x) {
         this.nodeType = x
         this.pageIndex = 0
