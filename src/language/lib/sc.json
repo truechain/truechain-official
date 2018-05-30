@@ -66,6 +66,9 @@
       }
     ]
   },
+  "partner": {
+    "title": "partner"
+  },
   "team": {
     "technology": {
       "title": "technology",
