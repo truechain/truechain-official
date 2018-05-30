@@ -135,7 +135,7 @@ export default {
   min-height 540px
   background-color $background
   .home-introduce-intro-text
-    max-width 740px
+    max-width 1200px
     padding 0 20px
     margin auto
   h2
