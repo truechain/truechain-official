@@ -75,8 +75,8 @@
               div 排名
               div 昵称
               div 报名时间
-              div TRUE数量
-              div TTR得票
+              //- div TRUE数量
+              div {{ nodeType === 1 ? '综合得分' : 'TTR得票' }}
         .node-body-table-body
           ul
             li(
@@ -87,8 +87,11 @@
               div
                 span(:class="{ tag: item.type === 1 }") {{item.nickname}}
               div {{getTime(+item.create_time)}}
-              div {{item.lock_num}}TRUE
-              div {{item.tickets}}票
+              //- div {{item.lock_num}}TRUE
+              template(v-if="nodeType === 1")
+                div {{Math.ceil((item.lock_num * 0.8 + item.tickets * 0.2)*100)}}分
+              template(v-else)
+                div {{item.tickets}}票
       .node-body-page
         Page(
           :total="pageSum",
@@ -100,6 +103,7 @@
 </template>
 
 <script>
+
 import { getTime, contdown } from '@/util'
 import { apiNodeRank, apiNodeSum, apiNodeRankPc, apiNodeTypeSumNum } from '@/api'
 export default {
@@ -399,7 +403,11 @@ export default {
       div:nth-child(1)
         flex-grow .5
       div:nth-child(2)
-        flex-grow 2
+        // background red
+        margin-left 30px
+        text-align left
+        box-sizing border-box
+        flex-grow 1
       div:nth-child(3)
         flex-grow 1
       div:nth-child(4)
@@ -428,6 +436,7 @@ export default {
           right -45px
           top 50%
           border-radius 10px
+          text-align center
           font-size 10px
           color white
           transform translateY(-50%) scale(.8)
