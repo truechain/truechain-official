@@ -18,34 +18,86 @@
         p {{ $t('intro.p3') }}
     ul.home-introduce-details
       li(
-        v-for="(item, index) in detailsIntro"
-        :key="index"
+        v-for="n in 4"
+        :key="n"
       )
         div
           .home-introduce-details-text
             hr
-            h3 {{ $t(`details.${index}.title`) }}
+            h3 {{ $t(`details.${n - 1}.title`) }}
             p(
-              v-for="(para, index) in $t(`details.${index}.para`).split('|')"
+              v-for="(para, index) in $t(`details.${n - 1}.para`).split('|')"
               :key="index"
             ) {{para}}
         div
           .home-introduce-details-image(
-            :style="{'background-image': `url(${require(`@/assets/images/pic${index}.jpg`)})`}"
+            :style="{'background-image': `url(${require(`@/assets/images/pic${n - 1}.jpg`)})`}"
           )
-
+    .home-introduce-intro
+      .home-introduce-intro-text
+        h2 {{ $t('news.title') }}
+        hr
+        transition-group.home-introduce-news(
+          name="fade"
+          mode="out-in"
+          tag="ul"
+        )
+          li(
+            v-for="n in 5"
+            :key="n"
+            v-if="focus === n"
+          )
+            a(
+              target="_blank"
+              :href="$t(`news.details.${n - 1}.path`)"
+            )
+              h3 {{ $t(`news.details.${n - 1}.title`) }}
+            p(
+              v-for="(para, index) in $t(`news.details.${n - 1}.intro`).split('|')"
+              :key="index"
+            ) {{para}}
+        ul.home-introduce-news-index
+          li(
+            v-for="n in 5"
+            :key="n"
+            @click="focusNewsTo(n)"
+          )
+            span(
+              :style="{'transform': `translateX(${(focus - n) * 40}px)`}"
+            )
 </template>
 
 <script>
 import AppAndroid from '@/components/common/app-android.vue'
 import AppIos from '@/components/common/app-ios.vue'
 
-const detailsIntro = [1, 1, 1, 1]
-
 export default {
   data () {
     return {
-      detailsIntro
+      focus: 1,
+      newsToggleTimer: 0,
+      lastNewsTimer: 0
+    }
+  },
+  mounted () {
+    requestAnimationFrame(this.update)
+  },
+  methods: {
+    focusNewsTo (n) {
+      this.focus = n
+      this.newsToggleTimer = -3000
+    },
+    update (timer) {
+      // console.log(timer)
+      const delta = timer - this.lastNewsTimer
+      this.newsToggleTimer += delta > 1000 ? 0 : delta
+      if (this.newsToggleTimer > 5000) {
+        this.newsToggleTimer = 0
+        const nextN = this.focus + 1
+        this.focus = nextN <= 5 ? nextN : 1
+      }
+      this.lastNewsTimer = timer
+      requestAnimationFrame(this.update)
     }
   },
   components: {
@@ -72,7 +124,7 @@ export default {
     font-size 40px
     line-height 40px
     margin-bottom 30px
-    font-weight 800
+    font-weight bold
     color #FFF
   p
     font-size 18px
@@ -80,7 +132,7 @@ export default {
     color #FFF
 .home-introduce-intro
   padding 100px 0
-  min-height 600px
+  min-height 540px
   background-color $background
   .home-introduce-intro-text
     max-width 740px
@@ -90,6 +142,7 @@ export default {
     color $font-dark
     text-align center
     font-size 26px
+    font-weight bold
     line-height 30px
     text-transform uppercase
   hr
@@ -138,6 +191,7 @@ export default {
     wh(60px, 2px)
   h3
     font-size 24px
+    font-weight bold
     color $font-dark
     line-height 36px
     margin 20px auto
@@ -154,6 +208,42 @@ export default {
   background-size contain
   background-position center
   wh(640px, 440px)
+
+.home-introduce-news
+  height 182px
+  overflow hidden
+  position relative
+  li
+    position absolute
+  h3
+    font-size 24px
+    font-weight bold
+    color $font-dark
+    line-height 36px
+    margin-bottom 10px
+  p
+    font-size 16px
+    line-height 34px
+.home-introduce-news-index
+  margin-top 44px
+  fc()
+  li
+    background-color #c2d6eb
+    border-radius 2px
+    margin 0 5px
+    overflow hidden
+    position relative
+    cursor pointer
+    wh(30px, 4px)
+    span
+      position absolute
+      background-color $font-dark
+      transition transform .4s
+      wh(40px, 100%)
+.fade-enter-active, .fade-leave-active
+  transition opacity .4s
+.fade-enter, .fade-leave-to
+  opacity 0
 
 @media screen and (max-width 1024px)
   .home-introduce-details-text
