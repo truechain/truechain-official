@@ -146,5 +146,12 @@
         }
       ]
     }
+  },
+  "join": {
+    "title": "join us",
+    "intro": "We want best hackers, system programmers, crypto researchers, frontend and backend developers, designers to join our core tech & research team.",
+    "button": "Now",
+    "p1": "You can also join our developer community.",
+    "p2": "Join Hackathons in whichTrueChain is Involved."
   }
 }
