@@ -97,7 +97,14 @@ export default {
     }
   },
   created () {
-    this._i18n.locale = getStore('locale') || 'sc'
+    const storeLangConfig = getStore('locale')
+    const index = this.langs.indexOf(storeLangConfig)
+    if (index !== -1) {
+      this._i18n.locale = storeLangConfig
+      this.usedLangNum = index
+    } else {
+      this.toggleLanguage(0)
+    }
   },
   methods: {
     jumpTo (path) {
@@ -139,6 +146,7 @@ export default {
 
 <style lang="stylus" scpoed>
 @import '~@/assets/stylus/mixin.styl'
+
   .container-app
     margin-top 100px
   nav
