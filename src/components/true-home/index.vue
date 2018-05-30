@@ -65,6 +65,16 @@
             span(
               :style="{'transform': `translateX(${(focus - n) * 40}px)`}"
             )
+    .home-introduce-intro.home-introduce-partner
+      .home-introduce-intro-text
+        h2 {{ $t('partner.title') }}
+        hr
+        ul
+          li(
+            v-for="n in 3"
+            :key="n"
+            :style="{'background-image': `url(${require(`@/assets/images/partner${n}.png`)})`}"
+          )
 </template>
 
 <script>
@@ -245,6 +255,16 @@ export default {
 .fade-enter, .fade-leave-to
   opacity 0
 
+.home-introduce-partner
+  min-height auto
+  background-color #FFF
+  ul
+    fc()
+  li
+    border solid 1px $font-dark
+    margin 0 20px
+    wh(300px, 120px)
+
 @media screen and (max-width 1024px)
   .home-introduce-details-text
     position static
@@ -259,4 +279,9 @@ export default {
       flex-direction column-reverse !important
       >div:last-child
         min-height auto
+  .home-introduce-partner
+    ul
+      flex-direction column
+      li
+        margin 20px 0
 </style>
