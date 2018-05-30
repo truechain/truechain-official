@@ -21,14 +21,18 @@
         v-for="(item, index) in detailsIntro"
         :key="index"
       )
-        .home-introduce-details-text
-          hr
-          h3 {{ $t(`details.${index}.title`) }}
-          p(
-            v-for="(para, index) in $t(`details.${index}.para`).split('|')"
-            :key="index"
-          ) {{para}}
-        .home-introduce-details-image
+        div
+          .home-introduce-details-text
+            hr
+            h3 {{ $t(`details.${index}.title`) }}
+            p(
+              v-for="(para, index) in $t(`details.${index}.para`).split('|')"
+              :key="index"
+            ) {{para}}
+        div
+          .home-introduce-details-image(
+            :style="{'background-image': `url(${require(`@/assets/images/pic${index}.jpg`)})`}"
+          )
 
 </template>
 
@@ -58,7 +62,7 @@ export default {
   overflow hidden
   height 560px
   background-color $dark-blue
-  background-image url("~@/assets/images/banner.png")
+  background-image url("~@/assets/images/banner.jpg")
   background-position 50%
   background-repeat no-repeat
 .home-introduce-banner-text
@@ -101,11 +105,68 @@ export default {
 .home-introduce-details
   background-color #FFF
   li
-    clear both
-  div
-    width 50%
-  li:nth-child(odd) div
-    float left
-  li:nth-child(even) div
-    float right
+    background-color $dark-blue
+    fc()
+    >div
+      position relative
+      width 100%
+      min-height 540px
+      &:first-child
+        background-color #FFF
+  li:nth-child(odd)
+    flex-direction row-reverse
+    .home-introduce-details-text
+      left 30px
+    .home-introduce-details-image
+      right 40px
+  li:nth-child(even)
+    .home-introduce-details-text
+      right 30px
+    .home-introduce-details-image
+      left 40px
+.home-introduce-details-text
+  max-width 540px
+  position absolute
+  top 50%
+  transform translate3d(0, -50%, 0)
+  padding 30px 20px
+  margin auto
+  hr
+    background-color $font-dark
+    border none
+    display block
+    wh(60px, 2px)
+  h3
+    font-size 24px
+    color $font-dark
+    line-height 36px
+    margin 20px auto
+  p
+    font-size 14px
+    color $font-light
+    line-height 24px
+    min-height 24px
+.home-introduce-details-image
+  position absolute
+  top 60px
+  background-repeat no-repeat
+  max-width 80%
+  background-size contain
+  background-position center
+  wh(640px, 440px)
+
+@media screen and (max-width 1024px)
+  .home-introduce-details-text
+    position static
+    transform translate3d(0, 0, 0)
+  .home-introduce-details-image
+    position static
+    height 55vw
+    max-height 240px
+    margin 20px auto
+  .home-introduce-details
+    li
+      flex-direction column-reverse !important
+      >div:last-child
+        min-height auto
 </style>
