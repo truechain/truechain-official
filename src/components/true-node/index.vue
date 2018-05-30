@@ -61,8 +61,14 @@
       .node-body-title 优先节点竞选投票排行
       .node-body-table
         .node-body-table-btn
-          div.node-body-table-btn-avtive 标准节点
-          div 全节点
+          div(
+            :class="{ 'node-body-table-btn-avtive': nodeType === 1 }",
+            @click="toggleNode(1)"
+          ) 标准节点
+          div(
+            :class="{ 'node-body-table-btn-avtive': nodeType === 2 }",
+            @click="toggleNode(2)"
+            ) 全节点
         .node-body-table-header
           ul
             li
@@ -77,14 +83,16 @@
               v-for="(item, index) in list",
               :key="index"
             )
-              div 1
-              div {{item.declaration}}
-              div {{item.create_time}}
+              div {{ 1 +  (pageNumber * (pageIndex)) + index}}
+              div {{item.nickname}}
+              //- div {{item.create_time}}
+              div {{getTime(+item.create_time)}}
               div {{item.lock_num}}TRUE
               div {{item.tickets}}票
       .node-body-page
         Page(
           :total="pageSum",
+          :current="currentPage",
           @on-change="onChangePage",
           @on-page-size-change="onChangePageSize"
         )
@@ -92,32 +100,43 @@
 </template>
 
 <script>
-  import http from '../../service/http.js'
-  export default {
+  import http from '@/service/http.js'
+  import { getTime } from '@/util'
+
+export default {
     data () {
       return {
         list: [],
         pageNumber: 10,
-        pageSum: 0
+        pageSum: 0,
+        nodeType: 1,
+        pageIndex: 0,
+        currentPage: 1
       }
     },
     created () {
       this.fetchData()
       this.onFetchSumPage()
     },
-    computed: {
-      VpageSum () {
-        return this.pageSum
-      }
-    },
     methods: {
-      fetchData (pageIndex = 1, pageSum) {
+      getTime,
+      toggleNode (x) {
+        this.nodeType = x
+        this.pageIndex = 0
+        this.onFetchSumPage(x)
+        this.fetchData({
+          nodeType: x
+        })
+      },
+      fetchData (obj = {}) {
+        const { pageSum, nodeType, pageIndex = 1 } = obj
+        this.pageIndex = pageIndex - 1
         http.get('nodeRank', {
-          'node_type': 1,
+          'node_type': nodeType || 1,
           'pageIndex': (pageIndex - 1) * this.pageNumber,
           'pageNumber': pageSum || this.pageNumber
         }).then(res => {
-          if (pageSum) {
+          if (pageSum > 10) {
             this.pageSum = res.data.data.length
           } else {
             this.list = res.data.data
@@ -125,14 +144,19 @@
         })
       },
       onChangePage (x) {
-        this.fetchData(x)
+        this.fetchData({
+          pageIndex: x,
+          nodeType: this.nodeType
+        })
       },
       onFetchSumPage (x) {
-        this.fetchData(1, 1000)
+        this.fetchData({
+          nodeType: x,
+          pageSum: 1000
+        })
       },
       onChangePageSize (x) {
-        // this.fetchData(x - 1)
-        // console.log('哦口口')
+        console.log(x, '=======')
       }
     }
   }
