@@ -5,7 +5,7 @@
         .node-header-title1 优先节点竞选报名
         .node-header-title2 ▲
         .node-header-title3
-          span 38781
+          span {{sumNum}}
           i 人
       .node-header-apply
         .node-header-apply-title 标准节点竞选已报名
@@ -14,17 +14,17 @@
             li
               span 总数
               span
-                i 21932
+                i {{nodeStandardSum}}
                 i &nbsp;人
             li
               span 个人竞选
               span
-                i 21932
+                i {{nodeStandard_11}}
                 i &nbsp;人
             li
               span 组队竞选
               span
-                i 21932
+                i {{nodeStandard_21}}
                 i &nbsp;组
       .node-header-apply
         .node-header-apply-title 全节点竞选已报名
@@ -33,17 +33,17 @@
             li
               span 总数
               span
-                i 21932
+                i {{nodeFullSum}}
                 i &nbsp;人
             li
               span 个人竞选
               span
-                i 21932
+                i {{nodeFull_12}}
                 i &nbsp;人
             li
               span 组队竞选
               span
-                i 21932
+                i {{nodeFull_22}}
                 i &nbsp;组
       .node-header-countdown
         .node-header-countdown-title 优先节点竞选投票倒计时
@@ -99,89 +99,157 @@
 </template>
 
 <script>
-  import http from '@/service/http'
-  import { getTime, contdown } from '@/util'
-
+import { getTime, contdown } from '@/util'
+import { apiNodeRank, apiNodeSum, apiNodeRankPc, apiNodeTypeSumNum } from '@/api'
 export default {
-    data () {
-      return {
-        list: [],
-        pageNumber: 10,
-        pageSum: 0,
-        nodeType: 1,
-        pageIndex: 0,
-        currentPage: 1,
-        time: {
-          d: '00',
-          h: '00',
-          m: '00',
-          s: '00'
+  data () {
+    return {
+      list: [],
+      sumNum: 0,
+      pageSum: 0,
+      nodeType: 1,
+      pageIndex: 0,
+      currentPage: 1,
+      pageNumber: 10,
+      time: {
+        d: '00',
+        h: '00',
+        m: '00',
+        s: '00'
+      },
+      nodeStandardObj: {
+        type1: 2,
+        type2: 1,
+        type3: 1,
+        type4: 1
+      },
+      nodeFullObj: {
+        type1: 2,
+        type2: 2,
+        type3: 1,
+        type4: 2
+      },
+      nodeStandardSum: 0,
+      nodeFullSum: 0,
+      nodeStandard_21: 0,
+      nodeStandard_11: 0,
+      nodeFull_22: 0,
+      nodeFull_12: 0,
+      nodeArr: [
+        {
+          type: 2,
+          nodeType: 1
+        },
+        {
+          type: 1,
+          nodeType: 1
+        },
+        {
+          type: 2,
+          nodeType: 2
+        },
+        {
+          type: 1,
+          nodeType: 2
         }
-      }
-    },
-    created () {
-      this.fetchData()
-      this.onFetchSumPage()
-      this.setContdown()
-    },
-    methods: {
-      getTime,
-      setContdown () {
-        const timer = setInterval(() => {
-          const { time, lefttime } = contdown()
-          if (lefttime <= 0) {
-            clearInterval(timer)
-            this.time = {
-              d: '00',
-              h: '00',
-              m: '00',
-              s: '00'
-            }
-            return
-          }
-          this.time = time
-        }, 1000)
-      },
-      toggleNode (x) {
-        this.nodeType = x
-        this.pageIndex = 0
-        this.onFetchSumPage(x)
-        this.fetchData({
-          nodeType: x
-        })
-      },
-      fetchData (obj = {}) {
-        const { pageSum, nodeType, pageIndex = 1 } = obj
-        this.pageIndex = pageIndex - 1
-        http.get('nodeRank', {
-          'node_type': nodeType || 1,
-          'pageIndex': (pageIndex - 1) * this.pageNumber,
-          'pageNumber': pageSum || this.pageNumber
-        }).then(res => {
-          if (pageSum > 10) {
-            this.pageSum = res.data.data.length
-          } else {
-            this.list = res.data.data
-          }
-        })
-      },
-      onChangePage (x) {
-        this.fetchData({
-          pageIndex: x,
-          nodeType: this.nodeType
-        })
-      },
-      onFetchSumPage (x) {
-        this.fetchData({
-          nodeType: x,
-          pageSum: 1000
-        })
-      },
-      onChangePageSize (x) {
-        console.log(x, '=======')
-      }
+      ]
     }
+  },
+  async created () {
+    this.fetchData()
+    this.onFetchSumPage()
+    this.setContdown()
+    this.NodeSum()
+    this.nodeArr.forEach(item => {
+      this.nodeRankPc(item.type, item.nodeType)
+    })
+    this.nodeStandardSum = await this.nodeTypeSumNum(this.nodeStandardObj)
+    this.nodeFullSum = await this.nodeTypeSumNum(this.nodeFullObj)
+  },
+  methods: {
+    getTime,
+    async nodeTypeSumNum (options) {
+      const { data: { data } } = await apiNodeTypeSumNum(options)
+      return data[0].sumNum
+    },
+    async nodeRankPc (type = 1, nodeType = 1) {
+      // debugger
+      const { data: { data } } = await apiNodeRankPc({
+        type: type,
+        node_type: nodeType
+      })
+      let { sumNum } = data[0]
+      if (type === 2 && nodeType === 1) {
+        this.nodeStandard_21 = sumNum
+      } else if (type === 1 && nodeType === 1) {
+        this.nodeStandard_11 = sumNum
+      } else if (type === 2 && nodeType === 2) {
+        this.nodeFull_22 = sumNum
+      } else if (type === 1 && nodeType === 2) {
+        this.nodeFull_12 = sumNum
+      }
+    },
+    async NodeSum () {
+      const { data: { data } } = await apiNodeSum()
+      this.sumNum = data[0].sumNum
+    },
+    setContdown () {
+      const timer = setInterval(() => {
+        const { time, lefttime } = contdown()
+        if (lefttime <= 0) {
+          clearInterval(timer)
+          this.time = {
+            d: '00',
+            h: '00',
+            m: '00',
+            s: '00'
+          }
+          return
+        }
+        this.time = time
+      }, 1000)
+    },
+    toggleNode (x) {
+      this.nodeType = x
+      this.pageIndex = 0
+      this.onFetchSumPage(x)
+      this.fetchData({
+        nodeType: x
+      })
+    },
+    fetchData (obj = {}) {
+      const { pageSum, nodeType, pageIndex = 1 } = obj
+      this.pageIndex = pageIndex - 1
+      apiNodeRank({
+        'node_type': nodeType || 1,
+        'pageIndex': (pageIndex - 1) * this.pageNumber,
+        'pageNumber': pageSum || this.pageNumber
+      }).then(res => {
+        if (pageSum > 10) {
+          this.pageSum = res.data.data.length
+        } else {
+          this.list = res.data.data
+        }
+      })
+    },
+    onChangePage (x) {
+      this.fetchData({
+        pageIndex: x,
+        nodeType: this.nodeType
+      })
+    },
+    onFetchSumPage (x) {
+      this.fetchData({
+        nodeType: x,
+        pageSum: 1000
+      })
+    },
+    onChangePageSize (x) {
+      console.log(x, '=======')
+    }
+
   }
+}
 </script>
 
 <style lang="stylus">

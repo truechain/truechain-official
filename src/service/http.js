@@ -60,7 +60,7 @@ export default {
       }
     )
   },
-  get (url, params) {
+  get (url, params = {}) {
     return axios({
       method: 'get',
       baseURL: 'http://localhost:8989/',
