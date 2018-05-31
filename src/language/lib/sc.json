@@ -37,7 +37,7 @@
     }
   ],
   "news": {
-    "title": "news",
+    "title": "新闻",
     "details": [
       {
         "title": "央视报道：初链（TRUE）正式开源，共同展望区块链3.0技术创新",
@@ -67,11 +67,11 @@
     ]
   },
   "partner": {
-    "title": "partner"
+    "title": "合作伙伴"
   },
   "team": {
     "technology": {
-      "title": "technology",
+      "title": "技术团队",
       "list": [
         {
           "name": "Archit Sharma",
@@ -128,7 +128,7 @@
       ]
     },
     "business": {
-      "title": "business",
+      "title": "商业团队",
       "list": [
         {
           "name": "Xiaoyong Cheng",
@@ -153,7 +153,7 @@
       ]
     },
     "consultant": {
-      "title": "consultant",
+      "title": "顾问",
       "list": [
         {
           "name": "James Cooper",
@@ -179,13 +179,17 @@
     }
   },
   "honor": {
-    "title": "honor"
+    "title": "荣誉"
   },
   "join": {
-    "title": "join us",
+    "title": "加入我们",
     "intro": "We want best hackers, system programmers, crypto researchers, frontend and backend developers, designers to join our core tech & research team.",
     "button": "立刻加入",
     "p1": "You can also join our developer community.",
     "p2": "Join Hackathons in whichTrueChain is Involved."
+  },
+  "docs": {
+    "title": "技术文档",
+    "button": "浏览"
   }
 }

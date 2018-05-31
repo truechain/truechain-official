@@ -1,7 +1,8 @@
 <template lang="pug">
   .docs-container
     .docs-body
-      .docs-body-title TECHNICAL DOCS
+      h2 {{ $t('docs.title') }}
+      hr
       .docs-body-list
         ul
           li
@@ -12,8 +13,10 @@
               .docs-body-list-info-title 白皮书
               .docs-body-list-info-content 打造承载未来商用去中心化应用的公链，是时代的需求，也是初链的梦想。基于混合共识机制设计的初链，旨在为社会提供高速点对点通信、价值传输以及智能合约基础设施。
               .docs-body-list-info-btn
-                div Preview
-                div Download
+                a(
+                  target="_blank"
+                  href="https://www.truechain.pro/Truechain.pdf"
+                ) {{ $t('docs.button') }}
           li
             .docs-body-list-poster
               div
@@ -22,8 +25,10 @@
               .docs-body-list-info-title White Paper
               .docs-body-list-info-content It is the demand of the times and the dream of TrueChain to create a public chain that will carry the future commercial decentralized applications. Based on the hybrid consensus mechanism, TrueChain aims to provide high-speed point-to-point communication, value transfer and to build the infrastructures of smart contract for the society.
               .docs-body-list-info-btn
-                div Preview
-                div Download
+                a(
+                  target="_blank"
+                  href="https://www.truechain.pro/EnTruechain.pdf"
+                ) {{ $t('docs.button') }}
           li
             .docs-body-list-poster
               div
@@ -32,18 +37,32 @@
               .docs-body-list-info-title Yellow Paper
               .docs-body-list-info-content It is the demand of the times and the dream of TrueChain to create a public chain that will carry the future commercial decentralized applications. Based on the hybrid consensus mechanism, TrueChain aims to provide high-speed point-to-point communication, value transfer and to build the infrastructures of smart contract for the society.
               .docs-body-list-info-btn
-                div Preview
-                div Download
+                a(
+                  target="_blank"
+                  href="https://arxiv.org/pdf/1805.01457.pdf"
+                ) {{ $t('docs.button') }}
 
 </template>
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
+
 .docs-container
-  padding 30px 0
+  padding 100px 20px
+  h2
+    color $font-dark
+    text-align center
+    font-size 26px
+    font-weight bold
+    line-height 30px
+    text-transform uppercase
+  hr
+    background-color $font-dark
+    border none
+    display block
+    margin 24px auto 54px
+    wh(60px, 2px)
 .docs-body
   width 900px
-
-
   margin 0 auto
   // background red
 
@@ -100,7 +119,9 @@
 .docs-body-list-info-btn
   display flex
   justify-content flex-end
-  div
+  a
+    display block
+    cursor pointer
     margin 0 15px
     wh(150px, 50px)
     background-color white

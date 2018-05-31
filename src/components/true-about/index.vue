@@ -82,21 +82,6 @@
     display flex
     justify-content center
     flex-direction column
-  .about-introduce-title
-    font-size 26px
-    color $font-dark
-    position relative
-    text-align center
-    padding 20px 0
-    &:after
-      content ''
-      wh(60px, 2px)
-      position absolute
-      bottom 0
-      // transform
-      left 50%
-      transform translateX(-50%)
-      background-color $font-dark
   .about-introduce-list
     max-width 850px
     margin 0 auto
