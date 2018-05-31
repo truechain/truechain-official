@@ -1,5 +1,6 @@
 {
   "name": "TrueChain",
+  "copyright": "(truechain) Official website All rights reserved",
   "nav": {
     "git": "GITHUB",
     "about": "ABOUT",
@@ -191,5 +192,28 @@
   "docs": {
     "title": "technical docs",
     "button": "Preview"
+  },
+  "node": {
+    "title": "Priority Node Campaign enrollment",
+    "StandardSum": "Standard node campaign has been registered",
+    "nodeFullSum": "Full node campaign has been registered",
+    "sumNum": "sum",
+    "personalCampaign": "Personal campaign",
+    "teamCampaign": "Team campaign",
+    "timeDownCampaign": "Priority node election countdown",
+    "nodeRank": "Priority Node campaign turnout ranking",
+    "nodeStandard": "Standard Node",
+    "nodeFull": "Full Node",
+    "tableRank": "Rank",
+    "tableNickname": "Nickname",
+    "tableTime": "Registration time",
+    "tableScore": "Comprehensive score",
+    "tableTickets": "Tickets",
+    "team": "team",
+    "person": "personal",
+    "day": "day",
+    "hour": "hour",
+    "minute": "minute",
+    "second": "second"
   }
 }

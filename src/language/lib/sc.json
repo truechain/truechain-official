@@ -1,5 +1,6 @@
 {
   "name": "初链",
+  "copyright": "（初链）官方网站版权所有",
   "nav": {
     "git": "GITHUB",
     "about": "关于我们",
@@ -191,5 +192,28 @@
   "docs": {
     "title": "技术文档",
     "button": "浏览"
+  },
+  "node": {
+    "title": "优先节点竞选报名",
+    "StandardSum": "标准节点竞选已报名",
+    "nodeFullSum": "全节点竞选已报名",
+    "sumNum": "总数",
+    "personalCampaign": "个人竞选",
+    "teamCampaign": "组队竞选",
+    "timeDownCampaign": "优先节点竞选投票倒计时",
+    "nodeRank": "优先节点竞选投票排行",
+    "nodeStandard": "标准节点",
+    "nodeFull": "全节点",
+    "tableRank": "排名",
+    "tableNickname": "昵称",
+    "tableTime": "报名时间",
+    "tableScore": "综合得分",
+    "tableTickets": "得票",
+    "team": "组",
+    "person": "人",
+    "day": "天",
+    "hour": "时",
+    "minute": "分",
+    "second": "秒"
   }
 }

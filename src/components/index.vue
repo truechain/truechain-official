@@ -53,7 +53,7 @@
           )
             img(:src="item.path", alt="")
       .container-app-footer-copyright
-        div COPYRIGHT© TRUE CHAIN (初链)官方网站版权所有
+        div COPYRIGHT© TRUE CHAIN {{$t('copyright')}}
 </template>
 
 <script>

@@ -2,81 +2,81 @@
   .node-container
     .node-header
       .node-header-title
-        .node-header-title1 优先节点竞选报名
+        .node-header-title1 {{$t('node.title')}}
         .node-header-title2 ▲
         .node-header-title3
           span {{sumNum}}
-          i 人
+          i {{$t('node.person')}}
       .node-header-apply
-        .node-header-apply-title 标准节点竞选已报名
+        .node-header-apply-title {{$t('node.StandardSum')}}
         .node-header-apply-list
           ul
             li
-              span 总数
+              span {{$t('node.sumNum')}}
               span
                 i {{nodeStandardSum}}
-                i &nbsp;人
+                i &nbsp;{{$t('node.person')}}
             li
-              span 个人竞选
+              span {{$t('node.personalCampaign')}}
               span
                 i {{nodeStandard_11}}
-                i &nbsp;人
+                i &nbsp;{{$t('node.person')}}
             li
-              span 组队竞选
+              span {{$t('node.teamCampaign')}}
               span
                 i {{nodeStandard_21}}
-                i &nbsp;组
+                i &nbsp;{{$t('node.team')}}
       .node-header-apply
-        .node-header-apply-title 全节点竞选已报名
+        .node-header-apply-title {{$t('node.nodeFullSum')}}
         .node-header-apply-list
           ul
             li
-              span 总数
+              span {{$t('node.sumNum')}}
               span
                 i {{nodeFullSum}}
-                i &nbsp;人
+                i &nbsp;{{$t('node.person')}}
             li
-              span 个人竞选
+              span {{$t('node.personalCampaign')}}
               span
                 i {{nodeFull_12}}
-                i &nbsp;人
+                i &nbsp;{{$t('node.person')}}
             li
-              span 组队竞选
+              span {{$t('node.teamCampaign')}}
               span
                 i {{nodeFull_22}}
-                i &nbsp;组
+                i &nbsp;{{$t('node.team')}}
       .node-header-countdown
-        .node-header-countdown-title 优先节点竞选投票倒计时
+        .node-header-countdown-title {{$t('node.timeDownCampaign')}}
         .node-header-countdown-clock
           ul
             li {{time.d}}
-            li 天
+            li {{$t('node.day')}}
             li {{time.h}}
-            li 时
+            li {{$t('node.hour')}}
             li {{time.m}}
-            li 分
+            li {{$t('node.minute')}}
             li {{time.s}}
-            li 秒
+            li {{$t('node.second')}}
     .node-body
-      .node-body-title 优先节点竞选投票排行
+      .node-body-title {{$t('node.nodeRank')}}
       .node-body-table
         .node-body-table-btn
           div(
             :class="{ 'node-body-table-btn-avtive': nodeType === 1 }",
             @click="toggleNode(1)"
-          ) 标准节点
+          ) {{$t('node.nodeStandard')}}
           div(
             :class="{ 'node-body-table-btn-avtive': nodeType === 2 }",
             @click="toggleNode(2)"
-            ) 全节点
+            ) {{$t('node.nodeFull')}}
         .node-body-table-header
           ul
             li
-              div 排名
-              div 昵称
-              div 报名时间
+              div {{$t('node.tableRank')}}
+              div {{$t('node.tableNickname')}}
+              div {{$t('node.tableTime')}}
               //- div TRUE数量
-              div {{ nodeType === 1 ? '综合得分' : 'TTR得票' }}
+              div {{ nodeType === 1 ? $t('node.tableScore') : 'TTR' + $t('node.tableTickets')}}
         .node-body-table-body
           ul
             li(
