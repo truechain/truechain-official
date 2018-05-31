@@ -259,6 +259,13 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
+  /* 覆盖分页样式 */
+.ivu-page
+  .ivu-page-item-active
+    background $font-dark
+  .ivu-page-item
+    color $font-light
+    border 1px solid $font-light
 .node-header
   wh(100%, 1027px)
   color white
