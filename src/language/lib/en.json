@@ -187,5 +187,9 @@
     "button": "Now",
     "p1": "You can also join our developer community.",
     "p2": "Join Hackathons in whichTrueChain is Involved."
+  },
+  "docs": {
+    "title": "technical docs",
+    "button": "Preview"
   }
 }
