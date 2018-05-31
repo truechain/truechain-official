@@ -180,19 +180,29 @@ export default {
         &:hover
           opacity 1
       .container-app-header-lang
-        padding 0 14px
+        padding 0 24px 0 14px
         border solid 1px #fff
         border-radius 15px
         opacity 1
         height 30px
         transition height .4s
         overflow hidden
+        position relative
         div
           line-height 28px
           color #FFF
           cursor pointer
         >div
           transition transform .4s
+        &:after
+          content ''
+          position absolute
+          right 8px
+          top 11px
+          border-top solid 7px #FFF
+          border-left solid 5px transparent
+          border-right solid 5px transparent
+          wh(0, 0)
   .container-app-header-button
     display none
     float right

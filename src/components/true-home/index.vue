@@ -33,38 +33,38 @@
           .home-introduce-details-image(
             :style="{'background-image': `url(${require(`@/assets/images/pic${n - 1}.jpg`)})`}"
           )
-    .home-introduce-intro
-      .home-introduce-intro-text
-        h2 {{ $t('news.title') }}
-        hr
-        transition-group.home-introduce-news(
-          name="fade"
-          mode="out-in"
-          tag="ul"
-        )
-          li(
-            v-for="n in 5"
-            :key="n"
-            v-if="focus === n"
-          )
-            a(
-              target="_blank"
-              :href="$t(`news.details.${n - 1}.path`)"
-            )
-              h3 {{ $t(`news.details.${n - 1}.title`) }}
-            p(
-              v-for="(para, index) in $t(`news.details.${n - 1}.intro`).split('|')"
-              :key="index"
-            ) {{para}}
-        ul.home-introduce-news-index
-          li(
-            v-for="n in 5"
-            :key="n"
-            @click="focusNewsTo(n)"
-          )
-            span(
-              :style="{'transform': `translateX(${(focus - n) * 40}px)`}"
-            )
+    .home-introduce-intro(style="min-height: 80px !important; padding: 0;")
+    //-   .home-introduce-intro-text
+    //-     h2 {{ $t('news.title') }}
+    //-     hr
+    //-     transition-group.home-introduce-news(
+    //-       name="fade"
+    //-       mode="out-in"
+    //-       tag="ul"
+    //-     )
+    //-       li(
+    //-         v-for="n in 5"
+    //-         :key="n"
+    //-         v-if="focus === n"
+    //-       )
+    //-         a(
+    //-           target="_blank"
+    //-           :href="$t(`news.details.${n - 1}.path`)"
+    //-         )
+    //-           h3 {{ $t(`news.details.${n - 1}.title`) }}
+    //-         p(
+    //-           v-for="(para, index) in $t(`news.details.${n - 1}.intro`).split('|')"
+    //-           :key="index"
+    //-         ) {{para}}
+    //-     ul.home-introduce-news-index
+    //-       li(
+    //-         v-for="n in 5"
+    //-         :key="n"
+    //-         @click="focusNewsTo(n)"
+    //-       )
+    //-         span(
+    //-           :style="{'transform': `translateX(${(focus - n) * 40}px)`}"
+    //-         )
     .home-introduce-intro.home-introduce-partner
       .home-introduce-intro-text
         h2 {{ $t('partner.title') }}
