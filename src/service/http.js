@@ -42,7 +42,7 @@ export default {
   post (url, data) {
     return axios({
       method: 'post',
-      baseURL: 'http://localhost:8989/',
+      baseURL: 'http://39.105.125.189:7001/',
       url,
       data: qs.stringify(data),
       timeout: 10000,
@@ -63,7 +63,7 @@ export default {
   get (url, params = {}) {
     return axios({
       method: 'get',
-      baseURL: 'http://localhost:8989/',
+      baseURL: 'http://39.105.125.189:7001/',
       url,
       params, // get 请求时带的参数
       timeout: 10000,
