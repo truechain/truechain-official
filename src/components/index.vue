@@ -32,7 +32,7 @@
           span
           span
           span
-    .container-app-content
+    .container-app-content(@click="closeMenu")
       transition(name="fade-x", mode="out-in")
         router-view
     .container-app-footer
@@ -117,16 +117,12 @@ export default {
     toggleMenu () {
       if (!this.menuIsOpen) {
         this.menuIsOpen = true
-        document.addEventListener('click', this.closeMenu, true)
       } else {
         this.menuIsOpen = false
       }
     },
     closeMenu () {
-      this.$nextTick(() => {
-        this.menuIsOpen = false
-        document.removeEventListener('click', this.closeMenu, true)
-      })
+      this.menuIsOpen = false
     },
     openLangsSelector () {
       this.langsSelectorIsOpen = true
