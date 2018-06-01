@@ -33,7 +33,7 @@
           .home-introduce-details-image(
             :style="{'background-image': `url(${require(`@/assets/images/pic${n - 1}.jpg`)})`}"
           )
-    .home-introduce-intro(style="min-height: 80px !important; padding: 0;")
+    //- .home-introduce-intro(style="min-height: 80px !important; padding: 0;")
     //-   .home-introduce-intro-text
     //-     h2 {{ $t('news.title') }}
     //-     hr
