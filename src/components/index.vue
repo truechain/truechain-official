@@ -1,5 +1,5 @@
 <template lang="pug">
-  .container-app
+  .container-app(@click="closeMenu")
     nav
       .container-app-header
         router-link(to="/")
@@ -28,11 +28,11 @@
               //- .container-app-header-lang-select
               //-   div ENGLISH
               //-   div 简体中文
-        span.container-app-header-button(@click="toggleMenu")
+        span.container-app-header-button(@click.stop="toggleMenu")
           span
           span
           span
-    .container-app-content(@click="closeMenu")
+    .container-app-content
       transition(name="fade-x", mode="out-in")
         router-view
     .container-app-footer
@@ -121,7 +121,7 @@ export default {
         this.menuIsOpen = false
       }
     },
-    closeMenu () {
+    closeMenu (e) {
       this.menuIsOpen = false
     },
     openLangsSelector () {
