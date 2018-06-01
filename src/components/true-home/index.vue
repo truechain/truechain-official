@@ -43,7 +43,7 @@
           tag="ul"
         )
           li(
-            v-for="n in 5"
+            v-for="n in 2"
             :key="n"
             v-if="focus === n"
           )
@@ -58,7 +58,7 @@
             ) {{para}}
         ul.home-introduce-news-index
           li(
-            v-for="n in 5"
+            v-for="n in 2"
             :key="n"
             @click="focusNewsTo(n)"
           )
@@ -104,7 +104,7 @@ export default {
       if (this.newsToggleTimer > 5000) {
         this.newsToggleTimer = 0
         const nextN = this.focus + 1
-        this.focus = nextN <= 5 ? nextN : 1
+        this.focus = nextN <= 2 ? nextN : 1
       }
       this.lastNewsTimer = timer
       requestAnimationFrame(this.update)
