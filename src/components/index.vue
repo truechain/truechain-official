@@ -272,9 +272,6 @@ export default {
         wh(30px, 30px)
         background white
         border-radius 50%
-        transition all ease .3s
-        position relative
-        cursor pointer
         img
           transform scale(.58)
         .wechatImg
