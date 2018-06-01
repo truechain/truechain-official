@@ -5,37 +5,25 @@
       hr
       .docs-body-list
         ul
-          li(v-if="_i18n.locale === 'sc'")
+          li
             .docs-body-list-poster
               div
                 img(src="~@/assets/images/logo_bot.png")
             .docs-body-list-info
-              .docs-body-list-info-title 白皮书
-              .docs-body-list-info-content 打造承载未来商用去中心化应用的公链，是时代的需求，也是初链的梦想。基于混合共识机制设计的初链，旨在为社会提供高速点对点通信、价值传输以及智能合约基础设施。
+              .docs-body-list-info-title {{ $t('docs.white-title') }}
+              .docs-body-list-info-content {{ $t('docs.white-content') }}
               .docs-body-list-info-btn
                 a(
                   target="_blank"
                   href="https://www.truechain.pro/Truechain.pdf"
-                ) {{ $t('docs.button') }}
-          li(v-if="_i18n.locale === 'en'")
-            .docs-body-list-poster
-              div
-                img(src="~@/assets/images/logo_bot.png")
-            .docs-body-list-info
-              .docs-body-list-info-title White Paper
-              .docs-body-list-info-content It is the demand of the times and the dream of TrueChain to create a public chain that will carry the future commercial decentralized applications. Based on the hybrid consensus mechanism, TrueChain aims to provide high-speed point-to-point communication, value transfer and to build the infrastructures of smart contract for the society.
-              .docs-body-list-info-btn
-                a(
-                  target="_blank"
-                  href="https://www.truechain.pro/EnTruechain.pdf"
                 ) {{ $t('docs.button') }}
           li
             .docs-body-list-poster
               div
                 img(src="~@/assets/images/logo_bot.png")
             .docs-body-list-info
-              .docs-body-list-info-title Yellow Paper
-              .docs-body-list-info-content It is the demand of the times and the dream of TrueChain to create a public chain that will carry the future commercial decentralized applications. Based on the hybrid consensus mechanism, TrueChain aims to provide high-speed point-to-point communication, value transfer and to build the infrastructures of smart contract for the society.
+              .docs-body-list-info-title {{ $t('docs.yellow-title') }}
+              .docs-body-list-info-content {{ $t('docs.yellow-content') }}
               .docs-body-list-info-btn
                 a(
                   target="_blank"

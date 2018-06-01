@@ -193,7 +193,11 @@
   },
   "docs": {
     "title": "technical docs",
-    "button": "Preview"
+    "button": "Preview",
+    "white-title": "White Paper",
+    "white-content": "It is the demand of the times and the dream of TrueChain to create a public chain that will carry the future commercial decentralized applications. Based on the hybrid consensus mechanism, TrueChain aims to provide high-speed point-to-point communication, value transfer and to build the infrastructures of smart contract for the society.",
+    "yellow-title": "Yellow Paper",
+    "yellow-content": "With the increasing popularity of encrypted currencies, block chaining technology has attracted the attention of industry and academia. One can think that block chain is a shared computing environment, which involves the members of the peer, and can join and exit freely. This is a common prerequisite for consensus agreement."
   },
   "node": {
     "title": "Priority Node Campaign enrollment",
