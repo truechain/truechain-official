@@ -48,10 +48,18 @@
       .container-app-footer-links
         ul
           li(
+            @mouseenter="setErweima",
+            @mouseleave="setErweima",
+            :class="{ wechatImg: isWechat }"
+          )
+            img(src="~@/assets/images/wechat.png")
+          li(
             v-for="(item, index) in linksList",
             :key="index",
+            @click="onJump(item.link)",
+            :id="item.id"
           )
-            img(:src="item.path", alt="")
+            img(:src="item.path")
       .container-app-footer-copyright
         div COPYRIGHT© TRUE CHAIN {{$t('copyright')}}
 </template>
@@ -73,15 +81,26 @@ const langs = [
 ]
 const footerList = [
   { path: 'https://github.com/truechain', tag: 'git' },
-  { path: 'team', tag: 'about' },
+  { path: 'about', tag: 'about' },
   { path: 'join', tag: 'join' },
   { path: 'docs', tag: 'docs' }
 ]
 const linksList = [
-  { path: require('@/assets/images/wechat.png'), link: 'wechat' },
-  { path: require('@/assets/images/weibo.png'), link: 'weibo' },
-  { path: require('@/assets/images/twitter.png'), link: 'twitter' },
-  { path: require('@/assets/images/telegram.png'), link: 'telegram' }
+  {
+    path: require('@/assets/images/weibo.png'),
+    name: 'weibo',
+    link: 'https://weibo.com/525045616'
+  },
+  {
+    path: require('@/assets/images/twitter.png'),
+    name: 'twitter',
+    link: 'https://twitter.com/truechaingroup'
+  },
+  {
+    path: require('@/assets/images/telegram.png'),
+    name: 'telegram',
+    link: 'http://www.t.me/truechainglobal'
+  }
 ]
 
 export default {
@@ -93,7 +112,8 @@ export default {
       footerList,
       linksList,
       langsSelectorIsOpen: false,
-      usedLangNum: 0
+      usedLangNum: 0,
+      isWechat: false
     }
   },
   created () {
@@ -107,6 +127,13 @@ export default {
     }
   },
   methods: {
+    setErweima () {
+      this.isWechat = !this.isWechat
+    },
+    onJump (path) {
+      if (!path) return
+      window.open(path)
+    },
     jumpTo (path) {
       if (/http[s]?:\/\//.test(path)) {
         window.open(path)
@@ -238,16 +265,28 @@ export default {
     padding 20px 0 40px
     ul
       display flex
+
       li
         margin 0 25px
         wh(30px, 30px)
         background white
         border-radius 50%
         transition all ease .3s
-        &:hover
-          opacity .7
+        position relative
+        cursor pointer
         img
           transform scale(.58)
+      .wechatImg
+        &:after
+          content ''
+          width 100px
+          height 100px
+          position absolute
+          background url('~@/assets/images/qrcode.png')
+          background-size 100% 100%
+          top -110px
+          left -30px
+          z-index 999
   .container-app-footer-logo
     wh(88px, 88px)
     background-color white

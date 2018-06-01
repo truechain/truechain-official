@@ -46,19 +46,12 @@
         ul
           li
             .about-honor-list-avatar
-              img(src="~@/assets/images/pic3.jpg")
-            .about-honor-list-name dddd
-            .about-honor-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
+              img(src="~@/assets/images/honor1.jpg")
+            .about-honor-list-detail {{ $t('honor.text1') }}
           li
             .about-honor-list-avatar
-              img(src="~@/assets/images/pic3.jpg")
-            .about-honor-list-name dddd
-            .about-honor-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
-          li
-            .about-honor-list-avatar
-              img(src="~@/assets/images/pic3.jpg")
-            .about-honor-list-name dddd
-            .about-honor-list-detail dasdasas蛮吊马上东北角马舍不得不为撒,豆瓣是
+              img(src="~@/assets/images/honor1.jpg")
+            .about-honor-list-detail {{ $t('honor.text2') }}
 </template>
 
 <style lang="stylus">
@@ -134,27 +127,22 @@
   padding 40px 0
   max-width 850px
   margin 0 auto
+  // background red
   ul
-    fc()
+    display flex
     flex-wrap wrap
     li
       width 250px
       display flex
       margin 0 15px 40px
-      justify-content space-between
-      // justify-content center
       flex-direction column
       .about-honor-list-avatar
         background red
         wh(250px,180px)
         border-radius 15px
         overflow hidden
-      .about-honor-list-name
-        padding 25px 0 15px
-        font-size 20px
-        color $font-dark
-        text-align center
       .about-honor-list-detail
+        padding-top 22px
         font-size 12px
         line-height 22px
         color #456C99
