@@ -30,7 +30,7 @@
     },
     {
       "title": "Usability Improvements",
-      "para": "TrueChain builds toolkits for developers and operation managers to access, monitor, and access applications.||TrueChain BaaS|Smart Contract Manager|TRUE Dapp Store|Contract Browser||A Blockchain-as-a-Service platform for developers to test, verify, deploy smart contracts. Operation managers will be able to monitor, access, manage smart contracts on chain.TrueChain applications will be listed on TRUE Dapp Store with SDKs to access.Unique blockchain and smart contract browser to search for transactions, data, token utilities."
+      "para": "TrueChain builds toolkits for developers and operation managers to access, monitor, and managers applications.||TrueChain BaaS|Smart Contract Manager|TRUE Dapp Store|Contract Browser||A Blockchain-as-a-Service platform for developers to test, verify, deploy smart contracts. Operation managers will be able to monitor, access, manage smart contracts on chain.TrueChain applications will be listed on TRUE Dapp Store with SDKs to access.Unique blockchain and smart contract browser to search for transactions, data, token utilities."
     },
     {
       "title": "Cross-Chain Transaction Protocols",
@@ -136,12 +136,12 @@
           "intro": "is the founder of TrueChain, Chief Strategic Officer, also the leader of global public relations and institutional investors, an experienced entrepreneur, and the member of Chang’an club. He is also the vice president of the black horse (2015- 2016) and the member of the Great Wall Association."
         },
         {
-          "name": "Larry Lin",
-          "intro": "as the founder of TrueChain, chief development officer, the expert of Internet marketing and community operation, has been responsible for the operation of \"Baidu encyclopedia\", which is the largest co-building community in China. Lin has more than 10 years of digital advertising and Internet industry experience, and was the author of several bestsellers in propaganda."
+          "name": "Yan Liu",
+          "intro": "the operations director, is responsible for TrueChain products and business operations, as well as TrueChain community building and operation."
         },
         {
-          "name": "Yu Zhu (binke)",
-          "intro": "is the head of the Block Chain and the New retail Research Institute, the first head of the new retailing (O2O) department of Alibaba Group. He became the vice president of Shopin Enterprise in 2015, taking charge of offline entities and online overall work. He has rich experience in complete digitization and full channel communication, and digital marketing business."
+          "name": "Larry Lin",
+          "intro": "as the founder of TrueChain, chief development officer, the expert of Internet marketing and community operation, has been responsible for the operation of \"Baidu encyclopedia\", which is the largest co-building community in China. Lin has more than 10 years of digital advertising and Internet industry experience, and was the author of several bestsellers in propaganda."
         },
         {
           "name": "Yu Zhu (binke)",
@@ -187,7 +187,7 @@
     "intro": "We want best hackers, system programmers, crypto researchers, frontend and backend developers, designers to join our core tech & research team.",
     "button": "Now",
     "p1": "You can also join our developer community.",
-    "p2": "Join Hackathons in whichTrueChain is Involved."
+    "p2": "Join Hackathons in which TrueChain is Involved."
   },
   "docs": {
     "title": "technical docs",
@@ -197,7 +197,7 @@
     "title": "Priority Node Campaign enrollment",
     "StandardSum": "Standard node campaign has been registered",
     "nodeFullSum": "Full node campaign has been registered",
-    "sumNum": "sum",
+    "sumNum": "Sum",
     "personalCampaign": "Personal campaign",
     "teamCampaign": "Team campaign",
     "timeDownCampaign": "Priority node election countdown",

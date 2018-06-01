@@ -5,7 +5,7 @@
       hr
       .docs-body-list
         ul
-          li
+          li(v-if="_i18n.locale === 'sc'")
             .docs-body-list-poster
               div
                 img(src="~@/assets/images/logo_bot.png")
@@ -17,7 +17,7 @@
                   target="_blank"
                   href="https://www.truechain.pro/Truechain.pdf"
                 ) {{ $t('docs.button') }}
-          li
+          li(v-if="_i18n.locale === 'en'")
             .docs-body-list-poster
               div
                 img(src="~@/assets/images/logo_bot.png")

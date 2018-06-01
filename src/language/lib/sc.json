@@ -15,26 +15,26 @@
     "p2": "扫描二维码下载应用"
   },
   "intro": {
-    "p1": "TrueChain is building a global blockchain infrastructure that brings blockchain technology to business communities by supporting performance demanding commercial applications. The needs from business world are guiding TrueChain's developmen t and research, and TrueChain's success is only based on the prosperity of applications built on TrueChain. Therefore TrueChain's technology team is always looking at the real-world needs and pushing the boundry of blockchain technology based on how commercial applications evolve.",
-    "p2": "TrueChain has a team of members who have strong blockchain and Internet technology background. We believe only a team of best hackers, operation managers and business negotiators could move the blockchain industry forward and meet the real-world needs from industries.",
-    "p3": "TrueChain is supported by a strong team of blockchain developers, important tech communities, Internet company executives, and investors. TrueChain is continuously attracting best executives and tech talents from all over the world to build up its ecosystem of commercial applications."
+    "p1": "初链正在构建一个全球化的区块链基础设施，通过支持对性能要求严格的商业应用，将区块链技术引入商业社会。 商业社会的需求指引着初链的开发和研究，而初链的成功将基于构建在初链上应用程序的繁荣发展。 因此，初链的技术团队始终关注现实生活中的需求，并根据商业应用程序的发展来不断拓宽区块链结束的边界。",
+    "p2": "初链拥有具备强大的区块链和互联网技术背景的团队，我们相信只有一支由最优秀的极客，运营经理和商业谈判人员组成的团队才能推动区块链行业向前发展，并满足各行业的实际需求。",
+    "p3": "初链的背后有强大的区块链开发团队，重要技术社区，互联网公司高管和投资者的支持。初链不断吸引着全球范围内的优秀管理人员和技术人才来构建其商业应用程序生态系统。"
   },
   "details": [
     {
-      "title": "Build Blockchain Infrastructure for Commercial Decentralized Applications",
-      "para": "TrueChain combines a modified BFT consensus with a smart contract platform. On consensus layer, TrueChain takes advantage of BFT consensus to achieve high TPS, and delivers an improved BFT protocol that enables various players to join as validators. Therefore TrueChain is made to be a public blockchain for performance-demanding decentralized applications.||With requirements from commercial applications in various industries, TrueChain prioritizes performance, stability, usability and compatibility. It is the only open platform for real-world businesses to build serious and trusted decentralized applications. Usability allows enterprise developers to manage contract life cycle in a completely new environment. Compatibility features allow TrueChain to integrate with existing web and mobile applications quickly."
+      "title": "为去中心化商业应用构建区块链基础设施",
+      "para": "初链将改良后的BFT共识与智能合约平台相结合，在共识层面，初链利用BFT共识实现了高TPS，并提供了改良的BFT协议，使各种参与者都可以作为验证者加入。因此初链从设计之初便要成为能满足去中心化商业应用高性能需求的公链。随着各行业商业应用程序的需求，初链将性能，稳定性，可用性和兼容性列为优先考虑的因素，它是至今唯一能承载现实商业来构建严肃可信的去中心化应用的开放平台。可实用性使开发人员在全新的环境中管理合约生命周期。兼容性功能使初链能够快速整合现有的网络和移动应用程序。"
     },
     {
-      "title": "Smart Contracts with Business Logics",
-      "para": "Starting with Dapps from digital advertising industry, TrueChain's smart contract platform is providing an abstraction layer for commercial applications, making it easy and fast for developers to access blockchain technology.||Application builders can create their own tokens, define workflows, and test/verify their contracts based on a unified environment."
+      "title": "智能合约与商业逻辑",
+      "para": "从数字广告行业的去中心化应用开始，初链的智能合约平台为商业应用程序提供了一个抽象层，使开发人员可以轻松快速地获取区块链技术。||应用程序构建者可以创建自己的代币，定义工作流程，并根据统一的环境对合同进行测试、验证。"
     },
     {
-      "title": "Usability Improvements",
-      "para": "TrueChain builds toolkits for developers and operation managers to access, monitor, and access applications.||TrueChain BaaS|Smart Contract Manager|TRUE Dapp Store|Contract Browser||A Blockchain-as-a-Service platform for developers to test, verify, deploy smart contracts. Operation managers will be able to monitor, access, manage smart contracts on chain.TrueChain applications will be listed on TRUE Dapp Store with SDKs to access.Unique blockchain and smart contract browser to search for transactions, data, token utilities."
+      "title": "可用性改进",
+      "para": "初链为开发人员和运营经理构建工具包，以访问，监控和管理应用程序。||初链 BaaS|智能合约管理者|TRUE Dapp商店|合同浏览器||区块链即服务平台让开发人员的可以测试，验证和部署智能合约。运营经理将能够监控，访问和管理链上的智能合约.初链应用程序将在Dapp商店中列出，并通过SDK访问。独特的区块链和智能合约浏览器可搜索交易，数据，令牌工具。"
     },
     {
-      "title": "Cross-Chain Transaction Protocols",
-      "para": "Interfacing with applications from various blockchains is going to be important. TrueChain cross-chain transaction protocols will support cross-chain smart contract interface and allow transactions to be made between TrueChain applications and Dapps from various blockchains."
+      "title": "跨链交易协议",
+      "para": "与各种区块链应用程序的连接非常重要，初链跨链交易协议将支持跨链智能合约接口，并允许初链的应用程序与来自各个区块链的Dapps之间进行交易。"
     }
   ],
   "news": {
@@ -76,31 +76,31 @@
       "list": [
         {
           "name": "Archit Sharma",
-          "intro": "An expert at distributed system, operation systems and performance engineering, is responsible for TrueChain engineering and engineering team management. Ren X has worked in Red Hat and CERN, engaged in large-scale cloud service and distributed system design and development. Ren X is a contributor of several important open source projects, as well as several Docker Hackathon champions."
+          "intro": "分布式系统，操作系统和性能工程方面的专家，负责初链工程和工程技术团队管理。 Ren X曾在红帽Red Hat和欧洲核子研究组织CERN工作，从事大规模云服务和分布式系统设计和开发。 Ren X是几个重要的开源项目的贡献者，还是很多届Docker Hackathon比赛冠军。"
         },
         {
           "name": "Eric Zhang",
-          "intro": "is the founder and CEO of TrueChain, also the founder of China's top geek platform “TopHacker Group”, which connects technology geeks with various industries. TopHacker helps multiple block chain enterprises solve the core technical problems at application level."
+          "intro": "初链创始人及CEO，牛津大学计算机硕士，中国90后创业者代表。他曾在欧洲核子研究组织CERN研究分布式系统，并创立DoraHacks--全球最大，覆盖地域最广的Hacker社区，他本人是年轻一代极客中最有影响力的Hackathon组织者, 致力于用技术解决现实商业问题。"
         },
         {
           "name": "Felix Cai",
-          "intro": "The front-end product leader of TrueChain, also a front-end geek, is graduated from Xi'an Jiao Tong University youth class."
+          "intro": "初链前端产品负责人，也是前端极客。目前初链联盟链商业技术负责人。"
         },
         {
           "name": "Home Chen",
-          "intro": "The mobile terminal product leader, engaged in IT work for 20 years, has rich experience in Internet product design and development, and software project management. He was a technical partner of “CaiHuohuo”, responsible for the research and development of new products, server cluster and high concurrent processing."
+          "intro": "移动终端产品的领导者，从事IT行业20年，在互联网产品设计开发和软件项目管理方面有丰富的经验。 他是“财火火”的技术合作伙伴，负责新产品的研发，服务器集群和高并发处理。"
         },
         {
           "name": "Jasper L",
-          "intro": "An expert at applied cryptography, cryptographic protocol, distributed system consensus, is responsible for TrueChain’s consensus research. Jepser L is graduated from Tsinghua University."
+          "intro": "应用密码学，密码协议和分布式系统共识的专家，负责初链的共识研究，毕业于清华大学。"
         },
         {
           "name": "Richard Wang",
-          "intro": "The leader of TrueChain’s China technology community, has the resources of 4000+ Internet technology executives nationwide, 300+ author and 400+ frontline developers. Wang has been the CTO and CEO of many Internet companies, and participated in several transformations of traditional Internet enterprises projects. He is also the technical author of Mechanical Industry Press, and have attended several major domestic technical seminars as guests and judges."
+          "intro": "初链中国技术社区的领导者，拥有全国4000多名互联网技术高管，300多位作者和400多位前线开发人员的资源，曾担任多家互联网公司的首席技术官和首席执行官，并多次参与了传统互联网企业的转型，同时也是机械工业出版社的技术作者，并作为嘉宾和评委参加过几次国内的主要技术研讨会。"
         },
         {
           "name": "Seay (wizard)",
-          "intro": "The security consultant of TrueChain, the author of “Code Audit: Enterprise Edition Web Code Security Architecture”, Seay source code security audit system author, and the blogger of well-known security blog “cnseay.com”. He once served at Alibaba security, and was the leader of Ali attack and defense laboratory, Sobug technology partner. Seay has experiences of more than ten years in security attack and defense and served for several well-known enterprises."
+          "intro": "初链安全顾问，《代码审计：企业版网络代码安全架构》Seay源代码安全审计系统作者，以及着名安全博客“cnseay.com”的博客作者。 他曾任职于阿里巴巴安全部门，曾担任阿里攻防实验室的领导者，苏博格技术的合作伙伴。 Seay拥有十多年的安全攻防经验，曾为多家知名企业服务。"
         },
         {
           "name": "Ming Tian",
@@ -133,19 +133,19 @@
       "list": [
         {
           "name": "Xiaoyong Cheng",
-          "intro": "is the founder of TrueChain, Chief Strategic Officer, also the leader of global public relations and institutional investors, an experienced entrepreneur, and the member of Chang’an club. He is also the vice president of the black horse (2015- 2016) and the member of the Great Wall Association."
+          "intro": "初链创始人，首席战略官，也是全球公共关系和机构投资者的领导者，经验丰富的企业家、长安俱乐部的成员、黑马副总裁（2015年至2016年）和长城协会成员。"
+        },
+        {
+          "name": "Yan Liu",
+          "intro": "运营总监，负责初链产品和业务运营，以及初链社区的建设和运营。"
         },
         {
           "name": "Larry Lin",
-          "intro": "as the founder of TrueChain, chief development officer, the expert of Internet marketing and community operation, has been responsible for the operation of \"Baidu encyclopedia\", which is the largest co-building community in China. Lin has more than 10 years of digital advertising and Internet industry experience, and was the author of several bestsellers in propaganda."
+          "intro": "初链创始人、首席开发官、互联网营销和社区运营专家，曾负责“百度百科”的运营（中国最大的共建社区）。拥有10年的数字广告和互联网行业经验，曾是宣传行业畅销书作者。"
         },
         {
           "name": "Yu Zhu (binke)",
-          "intro": "is the head of the Block Chain and the New retail Research Institute, the first head of the new retailing (O2O) department of Alibaba Group. He became the vice president of Shopin Enterprise in 2015, taking charge of offline entities and online overall work. He has rich experience in complete digitization and full channel communication, and digital marketing business."
-        },
-        {
-          "name": "Yu Zhu (binke)",
-          "intro": "is the head of the Block Chain and the New retail Research Institute, the first head of the new retailing (O2O) department of Alibaba Group. He became the vice president of Shopin Enterprise in 2015, taking charge of offline entities and online overall work. He has rich experience in complete digitization and full channel communication, and digital marketing business."
+          "intro": "区块链行业和新零售研究院的领导者，阿里巴巴集团新零售（O2O）部门的第一任负责人，2015年成为Shopin企业的副总裁，负责线下实体和线上整体工作。在完全数字化、全渠道沟通、数字营销业务方面拥有丰富的经验。"
         },
         {
           "name": "Hongyi Zheng",
@@ -158,23 +158,23 @@
       "list": [
         {
           "name": "James Cooper",
-          "intro": "TrueChain’s North American corporate and media relations leader, is responsible for the global legality. He is also a global intellectual property legal expert, the professor of California Western School of Law, chairman of Proyecto ACCESO foundation project, former United States State Department, American Development Bank, American patent and Trademark Office consultant, United States representative of the world intellectual property organization."
+          "intro": "初链北美分公司社团和媒体关系负责人，负责全球法务工作。 全球知识产权法律专家，加州西部法学院教授，Proyecto ACCESO基金会项目主席，前美国国务院、美国开发银行、美国专利和商标局顾问，世界知识产权组织的美国代表。"
         },
         {
           "name": "Xianhua Wei",
-          "intro": "the professor and PhD tutor of Chinese Academy of Sciences, is also the deputy director of the virtual economy and data science research center of Chinese Academy of Sciences, and the executive director of the CAS - Reuters financial risk management joint laboratory."
+          "intro": "中科院教授，博士生导师，中科院虚拟经济与数据科学研究中心副主任，中科院路透金融风险管理联合实验室执行主任。"
         },
         {
           "name": "Jinglong Zhou",
-          "intro": "the former partner of the Great Wall, which is the world's largest Internet Organization. He has a wide range of connections and resources of Internet industry and governments all over the world."
+          "intro": "长城（世界上最大的互联网组织）前合伙人，拥有全世界范围类互联网行业和政府的关系和资源。"
         },
         {
           "name": "Jun Zou",
-          "intro": "the author of best seller \"block chain technology guide\", is also an expert of Zhongguancun block chain industry alliance. He is a PhD of Service Contract, the former chief software architect of IBM Australian financial industry, and have published more than 200 papers in the International Conference on IEEE, of which block chain related papers were awarded to IEEE ICWS in 2016."
+          "intro": "畅销书《区块链技术指南》的作者，中关村区块链产业联盟的专家，服务合同的博士，IBM澳大利亚金融行业前首席软件工程师， 在IEEE国际会议上已发表超过200篇论文，其中有关区块链相关论文的论文在2016年被授予IEEE ICWS。"
         },
         {
           "name": "Xiong Li",
-          "intro": "is the founder of LianXiang Finance and Economics."
+          "intro": "联祥财经的创始人。"
         }
       ]
     }
@@ -187,7 +187,7 @@
     "intro": "We want best hackers, system programmers, crypto researchers, frontend and backend developers, designers to join our core tech & research team.",
     "button": "立刻加入",
     "p1": "You can also join our developer community.",
-    "p2": "Join Hackathons in whichTrueChain is Involved."
+    "p2": "Join Hackathons in which TrueChain is Involved."
   },
   "docs": {
     "title": "技术文档",

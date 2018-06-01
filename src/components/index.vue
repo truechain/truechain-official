@@ -64,7 +64,7 @@ const indexList = [
   { path: 'about', tag: 'about' },
   { path: 'join', tag: 'join' },
   { path: 'docs', tag: 'docs' },
-  { path: 'http://group.truechain.pro/', tag: 'forum' },
+  // { path: 'http://group.truechain.pro/', tag: 'forum' },
   { path: 'node', tag: 'noderank' }
 ]
 const langs = [
