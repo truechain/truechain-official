@@ -46,11 +46,11 @@
         ul
           li
             .about-honor-list-avatar
-              img(src="~@/assets/images/honor1.jpg")
+              img(src="~@/assets/images/honor1.png")
             .about-honor-list-detail {{ $t('honor.text1') }}
           li
             .about-honor-list-avatar
-              img(src="~@/assets/images/honor1.jpg")
+              img(src="~@/assets/images/honer2.png")
             .about-honor-list-detail {{ $t('honor.text2') }}
 </template>
 

@@ -50,9 +50,10 @@
           li(
             @mouseenter="setErweima",
             @mouseleave="setErweima",
-            :class="{ wechatImg: isWechat }"
           )
             img(src="~@/assets/images/wechat.png")
+            transition(name="fade", mode="out-in")
+              span(class="wechatImg " v-show="isWechat")
           li(
             v-for="(item, index) in linksList",
             :key="index",
@@ -99,7 +100,7 @@ const linksList = [
   {
     path: require('@/assets/images/telegram.png'),
     name: 'telegram',
-    link: 'http://www.t.me/truechainglobal'
+    link: 'https://www.facebook.com/TrueChaingroup/'
   }
 ]
 
@@ -276,17 +277,25 @@ export default {
         cursor pointer
         img
           transform scale(.58)
-      .wechatImg
-        &:after
-          content ''
+        .wechatImg
           width 100px
           height 100px
           position absolute
           background url('~@/assets/images/qrcode.png')
           background-size 100% 100%
           top -110px
-          left -30px
+          left -36px
           z-index 999
+          &:after
+            content ''
+            width 0
+            height 0
+            position absolute
+            bottom -18px
+            left 50%
+            transform translateX(-50%)
+            border 10px solid
+            border-color #fff transparent transparent transparent
   .container-app-footer-logo
     wh(88px, 88px)
     background-color white
