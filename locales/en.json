@@ -1,0 +1,225 @@
+{
+  "name": "TrueChain",
+  "copyright": "(truechain) Official website All rights reserved",
+  "nav": {
+    "git": "GITHUB",
+    "about": "ABOUT",
+    "join": "JOIN US",
+    "docs": "TECHNICAL DOCS",
+    "forum": "FORUM",
+    "noderank": "NODES RANK"
+  },
+  "banner": {
+    "title": "The True light wallet APP",
+    "p1": "Public beta version",
+    "p2": "Scan QR code to download"
+  },
+  "intro": {
+    "p1": "TrueChain is building a global blockchain infrastructure that brings blockchain technology to business communities by supporting performance demanding commercial applications. The needs from business world are guiding TrueChain's developmen t and research, and TrueChain's success is only based on the prosperity of applications built on TrueChain. Therefore TrueChain's technology team is always looking at the real-world needs and pushing the boundry of blockchain technology based on how commercial applications evolve.",
+    "p2": "TrueChain has a team of members who have strong blockchain and Internet technology background. We believe only a team of best hackers, operation managers and business negotiators could move the blockchain industry forward and meet the real-world needs from industries.",
+    "p3": "TrueChain is supported by a strong team of blockchain developers, important tech communities, Internet company executives, and investors. TrueChain is continuously attracting best executives and tech talents from all over the world to build up its ecosystem of commercial applications."
+  },
+  "details": [
+    {
+      "title": "Build Blockchain Infrastructure for Commercial Decentralized Applications",
+      "para": "TrueChain combines a modified BFT consensus with a smart contract platform. On consensus layer, TrueChain takes advantage of BFT consensus to achieve high TPS, and delivers an improved BFT protocol that enables various players to join as validators. Therefore TrueChain is made to be a public blockchain for performance-demanding decentralized applications.||With requirements from commercial applications in various industries, TrueChain prioritizes performance, stability, usability and compatibility. It is the only open platform for real-world businesses to build serious and trusted decentralized applications. Usability allows enterprise developers to manage contract life cycle in a completely new environment. Compatibility features allow TrueChain to integrate with existing web and mobile applications quickly."
+    },
+    {
+      "title": "Smart Contracts with Business Logics",
+      "para": "Starting with Dapps from digital advertising industry, TrueChain's smart contract platform is providing an abstraction layer for commercial applications, making it easy and fast for developers to access blockchain technology.||Application builders can create their own tokens, define workflows, and test/verify their contracts based on a unified environment."
+    },
+    {
+      "title": "Usability Improvements",
+      "para": "TrueChain builds toolkits for developers and operation managers to access, monitor, and managers applications.||TrueChain BaaS|Smart Contract Manager|TRUE Dapp Store|Contract Browser||A Blockchain-as-a-Service platform for developers to test, verify, deploy smart contracts. Operation managers will be able to monitor, access, manage smart contracts on chain.TrueChain applications will be listed on TRUE Dapp Store with SDKs to access.Unique blockchain and smart contract browser to search for transactions, data, token utilities."
+    },
+    {
+      "title": "Cross-Chain Transaction Protocols",
+      "para": "Interfacing with applications from various blockchains is going to be important. TrueChain cross-chain transaction protocols will support cross-chain smart contract interface and allow transactions to be made between TrueChain applications and Dapps from various blockchains."
+    }
+  ],
+  "news": {
+    "title": "news",
+    "details": [
+      {
+        "title": "初链TrueChain参与工信部《2018中国区块链产业白皮书》调研工作",
+        "intro": "初链作为国内首个开发PBFT+POW混合共识技术的公有链项目，获得了工信部的关注，并积极配合工信部《白皮书》的调研工作，为我国区块链技术发展，特别是混合共识公有链技术发展提供了宝贵的经验。",
+        "path": "https://mp.weixin.qq.com/s/NZG7EWRKMsdnOPZOQ_TpWg"
+      },
+      {
+        "title": "央视报道：初链（TRUE）正式开源，共同展望区块链3.0技术创新",
+        "intro": "央视财经记者专门采访初链创始人林大亮，了解到，区块链技术或将在海淘、人才、广告等领域最先落地应用，这将彻底改变整个行业的生态。|目前，业内普遍认为，区块链不可篡改的技术特性，将在物流、海淘广告等信息严重不透明的领域，以及版权、人力资源等注重唯一性的行业，率先进入应用阶段。",
+        "path": "https://mp.weixin.qq.com/s/2bbBqkIOk95Xi0Cl2XqFRA"
+      },
+      {
+        "title": "初链TrueChain成为国家链网创新中心成员",
+        "intro": "初链（TrueChain）成为国家链网创新中心成员。该中心由原中国投资有限公司副总经理（副部级）原央行金融稳定局局长、原央行研究局局长兼央行金融研究所所长谢平担任主任。",
+        "path": "https://mp.weixin.qq.com/s/gp1yYq5rSmCQUQuCn0kK-A"
+      },
+      {
+        "title": "初链TrueChain获得中国云体系产业创新战略联盟理事单位牌照",
+        "intro": "初链创始人大永接受了工信部领导颁发的中国云体系产业创新战略联盟理事单位牌照。",
+        "path": "https://mp.weixin.qq.com/s/sMuvHg0748pi-M8pxf48Ig"
+      },
+      {
+        "title": "央视报道：初链（TRUE）正式开源，共同展望区块链3.0技术创新",
+        "intro": "央视财经记者专门采访初链创始人林大亮，了解到，区块链技术或将在海淘、人才、广告等领域最先落地应用，这将彻底改变整个行业的生态。|目前，业内普遍认为，区块链不可篡改的技术特性，将在物流、海淘广告等信息严重不透明的领域，以及版权、人力资源等注重唯一性的行业，率先进入应用阶段。",
+        "path": "https://mp.weixin.qq.com/s/2bbBqkIOk95Xi0Cl2XqFRA"
+      }
+    ]
+  },
+  "partner": {
+    "title": "partner"
+  },
+  "team": {
+    "technology": {
+      "title": "technology",
+      "list": [
+        {
+          "name": "Archit Sharma",
+          "intro": "An expert at distributed system, operation systems and performance engineering, is responsible for TrueChain engineering and engineering team management. Ren X has worked in Red Hat and CERN, engaged in large-scale cloud service and distributed system design and development. Ren X is a contributor of several important open source projects, as well as several Docker Hackathon champions."
+        },
+        {
+          "name": "Eric Zhang",
+          "intro": "is the founder and CEO of TrueChain, also the founder of China's top geek platform “TopHacker Group”, which connects technology geeks with various industries. TopHacker helps multiple block chain enterprises solve the core technical problems at application level."
+        },
+        {
+          "name": "Felix Cai",
+          "intro": "The front-end product leader of TrueChain, also a front-end geek, is graduated from Xi'an Jiao Tong University youth class."
+        },
+        {
+          "name": "Home Chen",
+          "intro": "The mobile terminal product leader, engaged in IT work for 20 years, has rich experience in Internet product design and development, and software project management. He was a technical partner of “CaiHuohuo”, responsible for the research and development of new products, server cluster and high concurrent processing."
+        },
+        {
+          "name": "Jasper L",
+          "intro": "An expert at applied cryptography, cryptographic protocol, distributed system consensus, is responsible for TrueChain’s consensus research. Jepser L is graduated from Tsinghua University."
+        },
+        {
+          "name": "Richard Wang",
+          "intro": "The leader of TrueChain’s China technology community, has the resources of 4000+ Internet technology executives nationwide, 300+ author and 400+ frontline developers. Wang has been the CTO and CEO of many Internet companies, and participated in several transformations of traditional Internet enterprises projects. He is also the technical author of Mechanical Industry Press, and have attended several major domestic technical seminars as guests and judges."
+        },
+        {
+          "name": "Seay (wizard)",
+          "intro": "The security consultant of TrueChain, the author of “Code Audit: Enterprise Edition Web Code Security Architecture”, Seay source code security audit system author, and the blogger of well-known security blog “cnseay.com”. He once served at Alibaba security, and was the leader of Ali attack and defense laboratory, Sobug technology partner. Seay has experiences of more than ten years in security attack and defense and served for several well-known enterprises."
+        },
+        {
+          "name": "Ming Tian",
+          "intro": "More than 10 years' experience in c/c++ development, responsible for large projects, strong learning ability, complete real-time database products and project experience of digital currency trading platform products."
+        },
+        {
+          "name": "Xiaojian Bai",
+          "intro": "Skilled front-end and back-end processing and writing, there are more mature open source works, Mac enthusiasts."
+        },
+        {
+          "name": "Chore.Qu",
+          "intro": "Years of experience in storage and cloud computing, gopher."
+        },
+        {
+          "name": "Qiang Chen",
+          "intro": "is responsible for the function test and pressure test of many large Internet and financial projects, and is good at analyzing and weighing the problems. It likes to study the new industry technology,the rigorous work style."
+        },
+        {
+          "name": "Shenglong Jia",
+          "intro": "Many years of C/C++ development experience, participate in a number of high concurrency server development projects.Rich experience in development."
+        },
+        {
+          "name": "Jinyuan Shi",
+          "intro": "Golang program development, once did the big data development analysis of automobile finance, built the high-concurrency distributed crawler system, now responsible for the block chain consensus layer development."
+        }
+      ]
+    },
+    "business": {
+      "title": "business",
+      "list": [
+        {
+          "name": "Xiaoyong Cheng",
+          "intro": "is the founder of TrueChain, Chief Strategic Officer, also the leader of global public relations and institutional investors, an experienced entrepreneur, and the member of Chang’an club. He is also the vice president of the black horse (2015- 2016) and the member of the Great Wall Association."
+        },
+        {
+          "name": "Yan Liu",
+          "intro": "the operations director, is responsible for TrueChain products and business operations, as well as TrueChain community building and operation."
+        },
+        {
+          "name": "Larry Lin",
+          "intro": "as the founder of TrueChain, chief development officer, the expert of Internet marketing and community operation, has been responsible for the operation of \"Baidu encyclopedia\", which is the largest co-building community in China. Lin has more than 10 years of digital advertising and Internet industry experience, and was the author of several bestsellers in propaganda."
+        },
+        {
+          "name": "Yu Zhu (binke)",
+          "intro": "is the head of the Block Chain and the New retail Research Institute, the first head of the new retailing (O2O) department of Alibaba Group. He became the vice president of Shopin Enterprise in 2015, taking charge of offline entities and online overall work. He has rich experience in complete digitization and full channel communication, and digital marketing business."
+        },
+        {
+          "name": "Hongyi Zheng",
+          "intro": "15 years experience in corporate executives, Internet, financial, blockchain and other business experience, with thousands of management experience, 10 billion performance, a number of successful cases, 400 million user operating experience. Engaged in internet finance industry and internet + blockchain. Proficient in the application of mobile internet, e-commerce, big data, cloud computing, artificial intelligence, blockchain technology in various industries, familiar with global financial technology trends and operating models. Proficient in financial technology management based on +Internet."
+        }
+      ]
+    },
+    "consultant": {
+      "title": "consultant",
+      "list": [
+        {
+          "name": "James Cooper",
+          "intro": "TrueChain’s North American corporate and media relations leader, is responsible for the global legality. He is also a global intellectual property legal expert, the professor of California Western School of Law, chairman of Proyecto ACCESO foundation project, former United States State Department, American Development Bank, American patent and Trademark Office consultant, United States representative of the world intellectual property organization."
+        },
+        {
+          "name": "Xianhua Wei",
+          "intro": "the professor and PhD tutor of Chinese Academy of Sciences, is also the deputy director of the virtual economy and data science research center of Chinese Academy of Sciences, and the executive director of the CAS - Reuters financial risk management joint laboratory."
+        },
+        {
+          "name": "Jinglong Zhou",
+          "intro": "the former partner of the Great Wall, which is the world's largest Internet Organization. He has a wide range of connections and resources of Internet industry and governments all over the world."
+        },
+        {
+          "name": "Jun Zou",
+          "intro": "the author of best seller \"block chain technology guide\", is also an expert of Zhongguancun block chain industry alliance. He is a PhD of Service Contract, the former chief software architect of IBM Australian financial industry, and have published more than 200 papers in the International Conference on IEEE, of which block chain related papers were awarded to IEEE ICWS in 2016."
+        },
+        {
+          "name": "Xiong Li",
+          "intro": "is the founder of LianXiang Finance and Economics."
+        }
+      ]
+    }
+  },
+  "honor": {
+    "title": "honor",
+    "text1": "TrueChain was approved of the License for the China Cloud System Industrial Innovation Strategic Alliance On the morning of May 20, 2018, the co-founder of TrueChain, Cheng Xiao Yong, received the committee member institutional license of China Cloud System Industrial Innovation Strategic Alliance awarded by the Ministry of Industry and Information Technology.",
+    "text2": "TrueChain becomes a member of the National Chain Network Innovation Center The chairman of the center is Xie Ping. He was the deputy general manager of the former China Investment Co., Ltd. (Deputy ministerial level) , the director of the former Central Bank Financial Stability Bureau, the former director of the Central Bank Research Bureau and the head of the Central Bank Financial Research Institute ."
+  },
+  "join": {
+    "title": "join us",
+    "intro": "We want best hackers, system programmers, crypto researchers, frontend and backend developers, designers to join our core tech & research team.",
+    "button": "Now",
+    "p1": "You can also join our developer community.",
+    "p2": "Join Hackathons in which TrueChain is Involved."
+  },
+  "docs": {
+    "title": "technical docs",
+    "button": "Preview",
+    "white-title": "White Paper",
+    "white-content": "It is the demand of the times and the dream of TrueChain to create a public chain that will carry the future commercial decentralized applications. Based on the hybrid consensus mechanism, TrueChain aims to provide high-speed point-to-point communication, value transfer and to build the infrastructures of smart contract for the society.",
+    "yellow-title": "Yellow Paper",
+    "yellow-content": "With the increasing popularity of encrypted currencies, block chaining technology has attracted the attention of industry and academia. One can think that block chain is a shared computing environment, which involves the members of the peer, and can join and exit freely. This is a common prerequisite for consensus agreement."
+  },
+  "node": {
+    "title": "Priority Node Campaign enrollment",
+    "StandardSum": "Standard node campaign has been registered",
+    "nodeFullSum": "Full node campaign has been registered",
+    "sumNum": "Sum",
+    "personalCampaign": "Personal campaign",
+    "teamCampaign": "Team campaign",
+    "timeDownCampaign": "Priority node election countdown",
+    "nodeRank": "Priority Node campaign turnout ranking",
+    "nodeStandard": "Standard Node",
+    "nodeFull": "Full Node",
+    "tableRank": "Rank",
+    "tableNickname": "Nickname",
+    "tableTime": "Registration time",
+    "tableScore": "Comprehensive score",
+    "tableTickets": "Tickets",
+    "team": "team",
+    "person": "person",
+    "day": "day",
+    "hour": "hour",
+    "minute": "minute",
+    "second": "second"
+  }
+}
