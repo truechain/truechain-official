@@ -18,11 +18,12 @@
   "copyright": "(truechain) Official website All rights reserved",
   "nav": {
     "git": "GITHUB",
-    "about": "ABOUT",
+    "blog": "BLOG",
+    "team": "TEAM",
+    "news": "NEWS",
     "join": "JOIN US",
-    "docs": "TECHNICAL DOCS",
-    "forum": "FORUM",
-    "noderank": "NODES RANK"
+    "node": "NODE",
+    "english": "EN"
   },
   "banner": {
     "title": "The True light wallet APP",

@@ -50,9 +50,12 @@ module.exports = {
       }
     }
   },
-  plugins: ['~/plugins/i18n.js'],
+  plugins: [
+  '~/plugins/i18n.js',
+  { src: '~plugins/iview', ssr: true }
+],
   generate: {
-    routes: ['/', '/about', '/fr', '/fr/about']
+    routes: ['/']
   },
   loading: {
     color: 'cyan'

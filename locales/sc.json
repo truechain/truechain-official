@@ -18,11 +18,12 @@
   "copyright": "（初链）官方网站版权所有",
   "nav": {
     "git": "GITHUB",
-    "about": "关于我们",
+    "blog": "博客",
+    "team": "团队",
+    "news": "新闻",
     "join": "加入我们",
-    "docs": "技术文档",
-    "forum": "社区",
-    "noderank": "节点排行"
+    "node": "节点",
+    "english": "EN"
   },
   "banner": {
     "title": "True轻钱包",
