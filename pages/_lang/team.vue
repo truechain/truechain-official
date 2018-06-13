@@ -6,12 +6,12 @@
       .about-introduce-list
         ul
           li(
-            v-for="n in 13"
+            v-for="n in 7"
             :key="n"
           )
             .about-introduce-list-avatar
-              img(:src="require(`@/assets/members/tec${n - 1}.jpg`)")
-            .about-introduce-list-name {{ $t(`team.technology.list.${n - 1}.name`) }}
+              img(:src="require(`~/assets/members/a${n}.png`)")
+            // .about-introduce-list-name {{ $t(`team.technology.list.${n - 1}.name`) }}
             .about-introduce-list-detail {{ $t(`team.technology.list.${n - 1}.intro`) }}
     .about-introduce
       h2 {{ $t('team.business.title') }}
@@ -23,8 +23,8 @@
             :key="n"
           )
             .about-introduce-list-avatar
-              img(:src="require(`@/assets/members/bus${n - 1}.jpg`)")
-            .about-introduce-list-name {{ $t(`team.business.list.${n - 1}.name`) }}
+              img(:src="require(`@/assets/members/b${n}.png`)")
+            // .about-introduce-list-name {{ $t(`team.business.list.${n - 1}.name`) }}
             .about-introduce-list-detail {{ $t(`team.business.list.${n - 1}.intro`) }}
     .about-introduce
       h2 {{ $t('team.consultant.title') }}
@@ -35,23 +35,10 @@
             v-for="n in 5"
             :key="n"
           )
-            .about-introduce-list-avatar
+            // .about-introduce-list-avatar
               img(:src="require(`@/assets/members/con${n - 1}.jpg`)")
             .about-introduce-list-name {{ $t(`team.consultant.list.${n - 1}.name`) }}
             .about-introduce-list-detail {{ $t(`team.consultant.list.${n - 1}.intro`) }}
-    .about-honor
-      h2 {{ $t('honor.title') }}
-      hr
-      .about-honor-list
-        ul
-          li
-            .about-honor-list-avatar
-              img(src="~@/assets/images/honor1.png")
-            .about-honor-list-detail {{ $t('honor.text1') }}
-          li
-            .about-honor-list-avatar
-              img(src="~@/assets/images/honer2.png")
-            .about-honor-list-detail {{ $t('honor.text2') }}
 </template>
 
 
@@ -59,11 +46,11 @@
 @import '~@/assets/stylus/mixin.styl'
 
 .about-container
-  padding 100px 20px
+  padding 60px 20px
   h2
     color $font-dark
     text-align center
-    font-size 26px
+    font-size 32px
     font-weight bold
     line-height 30px
     text-transform uppercase
@@ -72,7 +59,8 @@
     border none
     display block
     margin 24px auto 54px
-    wh(60px, 2px)
+    border-radius 3px
+    wh(80px, 4px)
 .about-introduce
   display flex
   justify-content center
@@ -95,6 +83,7 @@
         wh(100%, 200px)
         border-radius 50%
         overflow hidden
+        margin-bottom 10px
       .about-introduce-list-name
         padding 25px 0 15px
         font-size 20px
