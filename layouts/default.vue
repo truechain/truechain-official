@@ -6,6 +6,8 @@
           nuxt-link(to="/")
             .container-app-header-logo
               img(src="~@/assets/images/logo_top.png")
+              span 啊实打实大撒的
+              i(class="icon font_family icon-facebook")
           .container-app-header-nav
             ul(:style="{'height': menuIsOpen ? `${40 * (indexList.length + 1)}px` : '0'}")
               // nuxt-link(
