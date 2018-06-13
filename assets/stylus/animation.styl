@@ -1,0 +1,24 @@
+  animation()
+    /* 设置进行转换的元素的背面在面对用户时是否可见：隐藏 */
+    -webkit-transform-style preserve-3d
+    /* 设置内嵌的元素在 3D 空间如何呈现：保留3D */
+    -webkit-backface-visibility hidden
+    /* 动画定义3D硬件加速 */
+    -webkit-transform translate3d(0, 0, 0)
+    transform translate3d(0, 0, 0)
+
+  .fade-x-enter-active
+    animation()
+    transition all .3s ease
+
+  .fade-x-enter, .fade-x-leave-to
+    animation()
+    transform translateX(150px)
+    opacity 0
+
+ .fade-enter-active, .fade-leave-active
+    animation()
+   transition opacity .5s
+  .fade-enter, .fade-leave-to
+    animation()
+   opacity 0
