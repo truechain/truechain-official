@@ -1,66 +1,137 @@
 <template lang="pug">
-  #join-us
-    .join-us-text
-      h2 {{ $t('join.title') }}
-      hr
-      p {{ $t('join.intro') }}
-      a.join-us-button(
-        href="http://dorahacks.mikecrm.com/gFQKWLF"
-        target="_blank"
-      ) {{ $t('join.button') }}
-      p {{ $t('join.p1') }}
-      a.join-us-button(
-        href="https://github.com/truechain"
-        target="_blank"
-      ) Github
-      p {{ $t('join.p2') }}
-      a.join-us-button(
-        href="https://www.facebook.com/TrueChain-338812233299903"
-        target="_blank"
-      ) Facebook
+  .join-container
+    .join-head
+      .join-head-title {{ $t('join.title') }}
+      .join-head-intro {{ $t('join.intro') }}
+      .join-head-detail {{ $t('join.detail') }}
+    .join-body
+      ul
+        nuxt-link(
+          tag="li",
+          v-for="(item, index) in jobList",
+          :to="item.path",
+          :key="index"
+        )
+          .join-body-icon
+            span(:class="item.icon")
+          .join-body-job {{item.job}}
+    .join-footer
+      div 简历投递邮箱: hr@truechain.pro
 </template>
+<script>
+export default {
+  data() {
+    return {
+      jobList: [
+        {
+          path: 'jd/1',
+          icon: 'icon font_family icon-kaifa',
+          job: 'GO语言开发工程师',
+        },
+        {
+          path: 'jd/2',
+          icon: 'icon font_family icon-suanfa',
+          job: 'GO语言算法工程师',
+        },
+        {
+          path: 'jd/3',
+          icon: 'icon font_family icon-touzi',
+          job: '投资者关系总监',
+        },
+        {
+          path: 'jd/4',
+          icon: 'icon font_family icon-zhaopin',
+          job: '招聘主管',
+        },
+        {
+          path: 'jd/5',
+          icon: 'icon font_family icon-zhuli',
+          job: 'CEO助理',
+        },
+        {
+          path: 'jd/6',
+          icon: 'icon font_family icon-zhuli',
+          job: '区块链业务总监',
+        },
+        {
+          path: 'jd/7',
+          icon: 'icon font_family icon-shixisheng',
+          job: '运营实习生',
+        },
+      ]
+    }
+  }
+}
+</script>
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
-
-#join-us
-  padding 100px 0
-  min-height 540px
-  background-color #FFF
-  .join-us-text
-    max-width 1200px
-    padding 0 20px
-    margin auto
-  h2
+  /* 覆盖分页样式 */
+.join-head
+  display flex
+  flex-direction column
+  margin 0 auto
+  width 750px
+  // background red
+  padding-top 50px
+  padding-bottom 25px
+  position relative
+.join-head-title
+  color $font-dark
+  text-align center
+  font-size 26px
+  font-weight bold
+  position relative
+  padding-bottom 30px
+  &:after
+    content ''
+    width 60px
+    height 2px
+    background rgba(30,100,180,1)
+    position absolute
+    left 50%
+    bottom 0
+    transform translate(-50%, -50%)
+.join-head-intro
+  // background red
+  color $font-dark
+  margin-top 15px
+  font-weight bold
+  line-height 50px
+  font-size 22px
+.join-head-detail
+  margin-top 10px
+  color #456C99
+  line-height 26px
+  font-size 14px
+.join-body
+  background rgb(242, 245, 250);
+  padding 0 300px
+  ul
+    display flex
+    flex-wrap wrap
+    padding 40px 0
+    li
+      text-align center
+      margin-bottom 20px
+      .join-body-icon
+        wh(200px, 70px)
+        // background pink
+        fc()
+        .icon
+          color $font-dark
+          font-size 55px
+      .join-body-job
+        // background red
+        font-size 12px
+        font-weight bold
+        line-height 20px
+        color $font-dark
+.join-footer
+  text-align center
+  div
+    padding 40px 0
     color $font-dark
-    text-align center
-    font-size 26px
     font-weight bold
-    line-height 30px
-    text-transform uppercase
-  hr
-    background-color $font-dark
-    border none
-    display block
-    margin 24px auto 54px
-    wh(60px, 2px)
-  p
-    max-width 700px
-    margin auto
-    color #627792
     font-size 14px
-    line-height 24px
-    text-align center
-  .join-us-button
-    display block
-    margin 50px auto 100px
-    border-radius 25px
-    border solid 1px $font-dark
-    text-align center
-    line-height 48px
-    color $font-dark
-    font-size 16px
-    wh(148px, 48px)
-    &:last-child
-      margin-bottom 0
 </style>
