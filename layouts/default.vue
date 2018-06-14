@@ -93,7 +93,7 @@
 
 const indexList = [
   { path: 'https://github.com/truechain', tag: 'git' },
-  { path: 'blog', tag: 'blog' },
+  { path: 'http://group.truechain.pro/', tag: 'blog' },
   { path: 'team', tag: 'team' },
   { path: 'news', tag: 'news' },
   { path: 'join', tag: 'join' },
