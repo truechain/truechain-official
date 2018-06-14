@@ -94,7 +94,6 @@
 </template>
 
 <script>
-// import { setStore, getStore } from '@/util'
 
 const indexList = [
   // { path: 'https://github.com/truechain', tag: 'git' },
@@ -105,7 +104,7 @@ const indexList = [
   { path: 'node', tag: 'node' }
 ]
 const langs = [
-  { name: 'ENGLISH', tag: 'en' },
+  { name: 'EN', tag: 'en' },
   { name: '简体中文', tag: 'sc' }
 ]
 const linksList = [
