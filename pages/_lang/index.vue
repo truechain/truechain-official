@@ -47,38 +47,45 @@
       hr
       .time-line-con
         .start-point
-        .time-line-block
+        .time-line-block(
+          v-for="(item,index) in $t('roadmapcon') "
+        )
           .lf
-            .time 2018-06-12
+            .even(v-if="index%2==0")
+              .time {{item.time}}
+            .odd(v-if="index%2>0")
+              .link-bk
+              .link-dot-big
+              .link-dot-sm
+              .bk
+                .entry-txt(
+                  v-for="txt in item.con"
+                )
+                  .dot
+                  .txt {{txt}}
           .ri
-            .link-bk
-            .link-dot-big
-            .link-dot-sm
-            .bk
-              .entry-txt
-                .dot
-                .txt heeeheeeheeeheeeheeeheeeheeeheee
-              .entry-txt
-                .dot
-                .txt heeeheeeh
-        .time-line-block
-          .lf
-            .link-bk
-            .link-dot-big
-            .link-dot-sm
-            .bk
-              .entry-txt
-                .dot
-                .txt heeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheee
-          .ri
-            .time 2018-06-12
+            .even(v-if="index%2==0")
+              .link-bk
+              .link-dot-big
+              .link-dot-sm
+              .bk
+                .entry-txt(
+                  v-for="txt in item.con"
+                )
+                  .dot
+                  .txt {{txt}}
+                .entry-txt
+                  .dot
+                  .txt heeeheeeh
+            .odd(v-if="index%2>0")
+              .time {{item.time}}
 
     .home-partner
       h3 {{ $t('partner.title') }}
       hr
       .con
         .co
-            img(src="~assets/images/p-logo1.png")
+          img(src="~assets/images/p-logo1.png")
         .co
           img(src="~assets/images/p-logo2.png")
         .co
@@ -161,7 +168,7 @@ export default {
     return {
       focus: 1,
       newsToggleTimer: 0,
-      lastNewsTimer: 0
+      lastNewsTimer: 0      
     }
   },
   mounted () {
@@ -208,7 +215,7 @@ export default {
     flex-wrap wrap
     justify-content space-between
     align-items flex-start
-    max-width 900px
+    max-width 1024px
     margin 0px auto
     text-align center
   .icon
@@ -217,7 +224,8 @@ export default {
     color $font-dark    
   h4
     line-height 28px
-    font-size 22px
+    font-size 18px
+    font-weight 600
     color $font-dark
     margin 0px auto 20px
     txtwrap()
@@ -238,7 +246,7 @@ export default {
   padding 100px 20px 80px
   background-color $bg-pearlblue
   .con
-    max-width 900px
+    max-width 1024px
     margin 0px auto
   h3
     color $font-dark
@@ -304,7 +312,7 @@ export default {
     flex-wrap nowrap
     justify-content space-around
     align-items flex-start
-    max-width 900px
+    max-width 1024px
     margin 0px auto
     .co
       wh(142px,80px)
@@ -334,7 +342,7 @@ export default {
     flex-wrap nowrap
     justify-content center
     align-items flex-start
-    max-width 900px
+    max-width 1024px
     margin 0px auto
     .co
       wh(142px,80px)
@@ -457,6 +465,7 @@ export default {
             margin 10px 10px 0px 10px
           .txt
             color white
+            line-height 26px
 
 .home-introduce-banner
   overflow hidden
