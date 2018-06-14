@@ -29,21 +29,16 @@
               //   :key="index",
               //   @click="jumpTo(item.path)",
               // ) {{ $t(`nav.${item.tag}`) }}
-              // nuxt-link(class="Header__Link" v-if="$i18n.locale === 'en'" :to="`/sc` + $route.fullPath" active-class="none" exact) {{ $t('nav.english') }}
-              // nuxt-link(class="Header__Link" v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" active-class="none" exact) {{ $t('nav.english') }}
-              li.container-app-header-lang(
-                :style="{'height': langsSelectorIsOpen ? `${langs.length * 28 + 2}px` : '30px'}"
-                @mouseenter="openLangsSelector"
-                @mouseleave="closeLangsSelector"
-              )
-                div(
-                  :style="{'transform': `translateY(${langsSelectorIsOpen ? 0 : -usedLangNum * 28}px)`}"
-                )
-                  div(
-                    v-for="(item, index) in langs"
-                    :key="index"
-                    @click="toggleLanguage(index)"
-                  ) {{item.name}}
+
+              // li.container-app-header-lang(
+              //   :style="{'height': langsSelectorIsOpen ? `${langs.length * 28 + 2}px` : '30px'}"
+              //   @mouseenter="openLangsSelector"
+              //   @mouseleave="closeLangsSelector"
+              // )
+              li(
+                class="container-app-header-lang",
+                @click="toggleLanguage"
+              ) {{ $t(`language`) }}
                 //- .container-app-header-lang-select
                 //-   div ENGLISH
                 //-   div 简体中文
@@ -175,9 +170,10 @@ export default {
     },
     toggleLanguage (index) {
       // console.log(this.$store.state.locale);
-    const { $route:{ fullPath }, $router, $store } = this;
-      if(index) {
-        if($store.state.locale === 'sc') return
+      const { $route:{ fullPath }, $router, $store } = this;
+      // $store.state.locale === 'sc'
+      // if($store.state.locale === 'sc') return
+      if($store.state.locale === 'en') {
         $router.push(`/sc${fullPath}`)
       } else {
         $router.push(fullPath.replace(/^\/[^\/]+/, ''))
@@ -190,7 +186,17 @@ export default {
 <style lang="stylus" scpoed>
 @import '~@/assets/stylus/index.styl';
 @import '~@/assets/stylus/mixin.styl';
-
+.nuxt-link-exact-active
+  color white !important
+  &:after
+    content ''
+    wh(40px, 2px)
+    position absolute
+    background white
+    position absolute
+    bottom -5px
+    left 50%
+    transform translate(-50%, -50%)
 .container-app
   padding-top 100px
 nav
@@ -219,37 +225,36 @@ nav
     background-color $dark-blue
     li
       float left
-      color #fff
-      opacity .6
+      color #A9ADBB
       margin-left 10px
       font-size 14px
       cursor pointer
       transition opacity .4s
       line-height 20px
       padding 5px 15px
+      position relative
       &:hover
         opacity 1
     .container-app-header-lang
-      padding 0 24px 0 14px
-      border solid 1px #fff
-      border-radius 15px
-      opacity 1
-      height 30px
-      transition height .4s
-      overflow hidden
+      // padding 0 24px 0 14px
+      // color #fff
+      // opacity .6
+      // height 30px
+      // transition height .4s
+      // overflow hidden
       position relative
-      div
-        line-height 28px
-        color #FFF
-        cursor pointer
-      >div
-        transition transform .4s
+      // div
+      //   line-height 28px
+      //   color #FFF
+      //   cursor pointer
+      // >div
+      //   transition transform .4s
       &:after
         content ''
         position absolute
-        right 8px
+        right 0px
         top 11px
-        border-top solid 7px #1E64B4
+        border-top solid 7px #fff
         border-left solid 5px transparent
         border-right solid 5px transparent
         wh(0, 0)
