@@ -9,7 +9,39 @@
         p {{ $t('banner.p2') }}
         app-ios
         app-android
+    
     #lizibg.home-banner
+    .home-intro-3col
+      .col3-con
+        .co.col-1
+            i(class="icon font_family icon-te")
+            h4 {{ $t('homeintro[0].title') }}
+            p.txt {{ $t('homeintro[0].text') }}
+        .co.col-2
+            i(class="icon font_family icon-te1")
+            h4 {{ $t('homeintro[1].title') }}
+            p.txt {{ $t('homeintro[1].text') }}
+        .co.col-3
+            i(class="icon font_family icon-te2")
+            h4 {{ $t('homeintro[2].title') }}
+            p.txt {{ $t('homeintro[2].text') }}
+    .home-about
+      .con
+        h3 {{ $t('homeabout.h3') }}
+        hr
+        .title {{ $t('homeabout.title') }}
+        .descr
+          p {{ $t('homeabout.p1') }}
+          p {{ $t('homeabout.p2') }}
+          p {{ $t('homeabout.p3') }}
+          p {{ $t('homeabout.p4') }}
+        .col3
+          .co
+            img(src="~assets/images/h1.png")
+          .co
+            img(src="~assets/images/h2.png")
+          .co
+            img(src="~assets/images/h3.png")
     .home-roadmap
       h3 {{ $t('roadmap') }}
       hr
@@ -41,6 +73,7 @@
           .ri
             .time 2018-06-12
 
+    .home-partner
     .home-introduce-intro
       .home-introduce-intro-text
         h2 {{ $t('name') }}
@@ -165,6 +198,83 @@ export default {
 .home-banner
   wh(100%,500px)
   background-color $font-dark
+.home-intro-3col
+  padding 0px 20px 100px
+  .col3-con
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content space-between
+    align-items flex-start
+    max-width 900px
+    margin 0px auto
+    text-align center
+  .icon
+    font-size 68px
+    margin 75px auto 28px
+    color $font-dark    
+  h4
+    line-height 28px
+    font-size 22px
+    color $font-dark
+    margin 0px auto 20px
+    txtwrap()
+    padding 0px 10px
+  .txt
+    line-height 24px
+    font-size 12px
+    color $font-grey
+    text-align left
+  .co
+    width 240px
+  .col-1   
+  .col-2
+  .col-3
+    color $font-dark
+
+.home-about
+  padding 100px 20px 80px
+  background-color $bg-pearlblue
+  .con
+    max-width 900px
+    margin 0px auto
+  h3
+    color $font-dark
+    text-align center
+    font-size 26px
+    font-weight bold
+    line-height 30px
+    text-transform uppercase
+  hr
+    background-color $font-dark
+    border none
+    display block
+    margin 24px auto 54px
+    wh(60px, 2px)
+  .title
+    color $font-dark
+    font-size 20px
+    line-height 36px
+    margin-bottom 20px
+  .descr
+    font-size 12px
+    color $font-grey
+    line-height 24px
+    p
+      margin-bottom 24px
+  .col3
+    margin 38px auto
+    width 630px
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    justify-content space-between
+    align-items flex-start
+    .co
+      width 180px
+      img
+        width 100%
+        height auto
 
 .home-introduce-banner
   overflow hidden
@@ -204,7 +314,7 @@ export default {
     margin 24px auto 54px
     wh(60px, 2px)
   .time-line-con
-    width 700px
+    width 630px
     margin 0px auto
     .start-point
       dot(8px)
