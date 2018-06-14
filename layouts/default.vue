@@ -12,17 +12,23 @@
               // img(src="~@/assets/images/logo_top.png")
           .container-app-header-nav
             ul(:style="{'height': menuIsOpen ? `${40 * (indexList.length + 1)}px` : '0'}")
-              // nuxt-link(
-              //   v-for="(item, index) in indexList",
-              //   tag="li",
-              //   :key="index",
-              //   :to="item.path"
-              // ) {{ $t(`nav.${item.tag}`) }}
               li(
+                  @click="jumpTo('https://github.com/truechain')"
+                ) {{ $t(`nav.git`) }}
+              li(
+                  @click="jumpTo('http://group.truechain.pro')"
+              ) {{ $t(`nav.blog`) }}
+              nuxt-link(
                 v-for="(item, index) in indexList",
+                tag="li",
                 :key="index",
-                @click="jumpTo(item.path)",
+                :to="item.path"
               ) {{ $t(`nav.${item.tag}`) }}
+              // li(
+              //   v-for="(item, index) in indexList",
+              //   :key="index",
+              //   @click="jumpTo(item.path)",
+              // ) {{ $t(`nav.${item.tag}`) }}
               // nuxt-link(class="Header__Link" v-if="$i18n.locale === 'en'" :to="`/sc` + $route.fullPath" active-class="none" exact) {{ $t('nav.english') }}
               // nuxt-link(class="Header__Link" v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" active-class="none" exact) {{ $t('nav.english') }}
               li.container-app-header-lang(
@@ -91,8 +97,8 @@
 // import { setStore, getStore } from '@/util'
 
 const indexList = [
-  { path: 'https://github.com/truechain', tag: 'git' },
-  { path: 'http://group.truechain.pro/', tag: 'blog' },
+  // { path: 'https://github.com/truechain', tag: 'git' },
+  // { path: 'http://group.truechain.pro/', tag: 'blog' },
   { path: 'team', tag: 'team' },
   { path: 'news', tag: 'news' },
   { path: 'join', tag: 'join' },
@@ -104,27 +110,23 @@ const langs = [
 ]
 const linksList = [
   {
-    path: require('@/assets/images/weibo.png'),
     name: 'weibo',
-    icon: 'icon font_family icon-facebook',
+    icon: 'icon font_family icon-weibo',
     link: 'https://weibo.com/525045616'
   },
   {
-    path: require('@/assets/images/telegram.png'),
-    name: 'telegram',
-    icon: 'icon font_family icon-weibo',
-    link: 'https://www.facebook.com/TrueChaingroup/'
+    name: 'twitter',
+    icon: 'icon font_family icon-twitter',
+    link: 'https://twitter.com/truechaingroup'
   },
   {
-    path: require('@/assets/images/telegram.png'),
     name: 'telegram',
     icon: 'icon font_family icon-telegram',
     link: 'https://www.facebook.com/TrueChaingroup/'
   },
   {
-    path: require('@/assets/images/telegram.png'),
     name: 'telegram',
-    icon: 'icon font_family icon-twitter',
+    icon: 'icon font_family icon-facebook',
     link: 'https://www.facebook.com/TrueChaingroup/'
   },
 ]
