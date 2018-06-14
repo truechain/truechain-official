@@ -6,8 +6,6 @@
           nuxt-link(to="/")
             .container-app-header-logo
               img(src="~@/assets/images/logo_top.png")
-              span 啊实打实大撒的
-              i(class="icon font_family icon-facebook")
           .container-app-header-nav
             ul(:style="{'height': menuIsOpen ? `${40 * (indexList.length + 1)}px` : '0'}")
               // nuxt-link(
@@ -102,7 +100,7 @@ const indexList = [
   { path: 'node', tag: 'node' }
 ]
 const langs = [
-  { name: 'ENGLISH', tag: 'en' },
+  { name: 'EN', tag: 'en' },
   { name: '简体中文', tag: 'sc' }
 ]
 const linksList = [
@@ -185,7 +183,7 @@ export default {
 @import '~@/assets/stylus/mixin.styl';
 
 .container-app {
-  padding-top: 100px;
+  padding-top: 90px;
 }
 
 nav {
@@ -193,7 +191,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 100;
-  wh(100%, 100px);
+  wh(100%, 90px);
   background-color: $dark-blue;
 }
 
@@ -232,7 +230,7 @@ nav {
 
     .container-app-header-lang {
       padding: 0 24px 0 14px;
-      border: solid 1px #fff;
+      border: none;
       border-radius: 15px;
       opacity: 1;
       height: 30px;

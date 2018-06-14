@@ -9,6 +9,8 @@
         p {{ $t('banner.p2') }}
         app-ios
         app-android
+    .home-roadmap
+
     .home-introduce-intro
       .home-introduce-intro-text
         h2 {{ $t('name') }}
@@ -140,6 +142,11 @@ export default {
     font-size 18px
     line-height 30px
     color #FFF
+
+.home-roadmap
+  wh(100% ,500px)
+  background-color white
+
 .home-introduce-intro
   padding 100px 0
   min-height 540px
