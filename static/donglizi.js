@@ -115,5 +115,6 @@ var liziconf = {
   }
 };
 
-
-particlesJS('lizibg', liziconf);
+window.setTimeout(function () {
+  particlesJS('lizibg', liziconf);
+},800)

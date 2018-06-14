@@ -1,4 +1,29 @@
 {
+  "homeintro":[
+    {
+      "icon":"icon-te",
+      "title":"Highly Performant Blockchain Infrastructure",
+      "text":"TrueChain uses hybrid consensus technology combing PBFT and POW. On consensus layer, TrueChain takes advantage of PBFT to achieve high TPS, and support infinite POW nodes as validators to ensure decentralization and security. Therefore TrueChain is made to be a public blockchain for performance-demanding decentralized applications."
+    },
+    {
+      "icon":"icon-te1",
+      "title":"Smart Contracts with Business Logics",
+      "text":"TrueChain's smart contract platform is providing an abstraction layer for commercial applications, making it easy and fast for developers to access blockchain technology. Application builders can create their own tokens, define workflows, and test/verify their contracts based on a unified environment."
+    },
+    {
+      "icon":"icon-te2",
+      "title":"Usable Developing Toolkits",
+      "text":"TrueChain builds toolkits for developers and operations to access, monitor, and manage applications. With TrueChain BaaS, Smart Contract Manager, TRUE Dapp Store and Contract Browser, it’s easy to use TrueChain as a blockchain platform. "
+    }
+  ],
+  "homeabout":{
+    "h3":"ABOUT",
+    "title":"True Chain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW. ",
+    "p1":"Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPos or dBFT have been improved in efficiency, but are having problems in decentralization. That being said, True Chain, while keeps the essence of decentralization, can also deliver fast and highly efficient performance. As one may know, the scalability and security are the core issues confronting the consensus mechanism of PoW and PBFT respectively. True Chain, by combining the two together, has solved the most important problem of public chain -- the co-existence of decentralization and efficiency. PBFT protocol ensures the transmission of value as well as the speed and efficiency needed by commercial activities of DApps, and PBFT with PoW together ensures True Chain to be a public chain, ie to be decentralized.",
+    "p2":"True Chain aims to be the best public chain. The complete matrix of products allow users and institutions to interact with the chain conveniently. Included in the product matrix are Stellar -- the platform for the DApp developers to create smart contracts and manage the life cycle of the contracts; DApp warehouse -- the warehouse for decentralized applications on True Chain; TrueScan explorer; True Light Purse, etc. ",
+    "p3":"The leading research and engineering team of True Chain come from the U.S., India and China. ",
+    "p4":"True Chain is a committee member of China’s National Cloud Industry Strategic Innovation Alliance, a member of the National Chain-Web Innovation Center of China; and is also one of the few block chain projects that have been reported by China’s authoritative media - CCTV, and also participated in the research work of the white paper released by the Ministry of Industry and Information Technology of the Chinese government."
+  },
   "links": {
     "home": "Home",
     "about": "About",
@@ -14,6 +39,44 @@
     "introduction": "This page is made to give you more informations."
   },
   "roadmap": "road map",
+  "roadmapcon":[
+    {
+      "time":"2018.1",
+      "con":[
+        "TrueChain’s white paper released"
+      ]
+    },
+    {
+      "time":"2018.3",
+      "con":[
+        "PBFT consortium blockchain launched"
+      ]
+    },
+    {
+      "time":"2018.4",
+      "con":[
+        "TrueChain tech yellow paper released",
+        "Hybrid consensus mechanism design completed",
+        "Stellar-the platform to deploy and manage the full life cycle of smart contracts released"
+      ]
+    },
+    {
+      "time":"2018.5",
+      "con":[
+        "TrueChain’s engineering roadmap released on github",
+        "TrueChain Light Wallet released",
+        "TrueChain’s election system for decentralized nodes released"
+      ]
+    },
+    {
+      "time":"2018.6",
+      "con":[
+        "Hybrid consensus framework code open source",
+        "Hybrid consensus incentives release",
+        "Mainnet v0.1 internal test"
+      ]
+    }
+  ],
   "name": "TrueChain",
   "copyright": "(truechain) Official website All rights reserved",
   "nav": {
