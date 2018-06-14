@@ -16,7 +16,7 @@
           div
             ul
               li(
-                v-for="(item, index) in currentJob.duty"
+                v-for="(item, index) in currentJob.require"
               ) {{index + 1 +  '、' + item}}
       .jd-head-mail 简历投递邮箱: hr@truechain.pro
 </template>
@@ -143,7 +143,9 @@ export default {
     }
   },
   created () {
+
     this.currentJob = this.jobArr[this.$route.params.id] || {};
+    console.log(this.currentJob);
   }
 }
 </script>
