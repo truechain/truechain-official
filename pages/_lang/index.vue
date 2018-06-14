@@ -1,12 +1,12 @@
 <template lang="pug">
   div
-    .home-introduce-banner
-      .home-introduce-banner-text
-        h1 {{ $t('banner.title') }}
-        p(
-          v-html="$t('banner.p1')"
-        )
-        p {{ $t('banner.p2') }}
+    // .home-introduce-banner
+    //   .home-introduce-banner-text
+    //     h1 {{ $t('banner.title') }}
+    //     p(
+    //       v-html="$t('banner.p1')"
+    //     )
+    //     p {{ $t('banner.p2') }}
         app-ios
         app-android
     
@@ -74,30 +74,32 @@
             .time 2018-06-12
 
     .home-partner
-    .home-introduce-intro
-      .home-introduce-intro-text
-        h2 {{ $t('name') }}
-        hr
-        p {{ $t('intro.p1') }}
-        p {{ $t('intro.p2') }}
-        p {{ $t('intro.p3') }}
-    ul.home-introduce-details
-      li(
-        v-for="n in 4"
-        :key="n"
-      )
-        div
-          .home-introduce-details-text
-            hr
-            h3 {{ $t(`details.${n - 1}.title`) }}
-            p(
-              v-for="(para, index) in $t(`details.${n - 1}.para`).split('|')"
-              :key="index"
-            ) {{para}}
-        div
-          .home-introduce-details-image(
-            :style="{'background-image': `url(${require(`@/assets/images/pic${n - 1}.jpg`)})`}"
-          )
+      h3 {{ $t('partner.title') }}
+      hr
+      .con
+        .co
+            img(src="~assets/images/p-logo1.png")
+        .co
+          img(src="~assets/images/p-logo2.png")
+        .co
+          img(src="~assets/images/p-logo3.png")
+        .co
+          img(src="~assets/images/p-logo4.png")
+        .co
+          img(src="~assets/images/p-logo5.png")
+    .home-investment
+      h3 {{ $t('homeinvestment.h3') }}
+      hr
+      .con
+        .co
+          img(src="~assets/images/partner1.png")
+        .co
+          img(src="~assets/images/partner2.png")
+        .co
+          img(src="~assets/images/partner3.png")
+        .co
+          img(src="~assets/images/partner4.png")
+    
     .home-introduce-intro(style="min-height: 80px !important; padding: 50px;")
       .home-introduce-intro-text
         h2 {{ $t('news.title') }}
@@ -257,11 +259,14 @@ export default {
     line-height 36px
     margin-bottom 20px
   .descr
-    font-size 12px
+    font-size 13px
     color $font-grey
+    font-color $font-grey
     line-height 24px
     p
       margin-bottom 24px
+      color $font-grey
+      font-color $font-grey
   .col3
     margin 38px auto
     width 630px
@@ -275,27 +280,72 @@ export default {
       img
         width 100%
         height auto
+        border-radius 5px
 
-.home-introduce-banner
-  overflow hidden
-  height 560px
-  background-color $dark-blue
-  background-image url("~@/assets/images/banner.jpg")
-  background-position 50%
-  background-repeat no-repeat
-.home-introduce-banner-text
-  transform translate3d(50%, 150px, 0)
-  h1
-    letter-spacing 0.05em
-    font-size 40px
-    line-height 40px
-    margin-bottom 30px
+.home-partner
+  padding 100px 20px 80px
+  background-color $bg-pearlblue
+  h3
+    color $font-dark
+    text-align center
+    font-size 26px
     font-weight bold
-    color #FFF
-  p
-    font-size 18px
     line-height 30px
-    color #FFF
+    text-transform uppercase
+  hr
+    background-color $font-dark
+    border none
+    display block
+    margin 24px auto 54px
+    wh(60px, 2px)
+  .con
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    justify-content space-around
+    align-items flex-start
+    max-width 900px
+    margin 0px auto
+    .co
+      wh(142px,80px)
+      img
+        wh(100%,100%)
+        border-radius 5px
+
+.home-investment
+  padding 100px 20px 80px
+  background-color white
+  h3
+    color $font-dark
+    text-align center
+    font-size 26px
+    font-weight bold
+    line-height 30px
+    text-transform uppercase
+  hr
+    background-color $font-dark
+    border none
+    display block
+    margin 24px auto 54px
+    wh(60px, 2px)
+  .con
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    justify-content center
+    align-items flex-start
+    max-width 900px
+    margin 0px auto
+    .co
+      wh(142px,80px)
+      border 1px solid #C5D6F6
+      border-radius 5px
+      padding 3px
+      margin 10px
+      img
+        wh(100%,100%)
+        
+
 
 .home-roadmap
   background-color white
@@ -407,6 +457,27 @@ export default {
             margin 10px 10px 0px 10px
           .txt
             color white
+
+.home-introduce-banner
+  overflow hidden
+  height 560px
+  background-color $dark-blue
+  background-image url("~@/assets/images/banner.jpg")
+  background-position 50%
+  background-repeat no-repeat
+.home-introduce-banner-text
+  transform translate3d(50%, 150px, 0)
+  h1
+    letter-spacing 0.05em
+    font-size 40px
+    line-height 40px
+    margin-bottom 30px
+    font-weight bold
+    color #FFF
+  p
+    font-size 18px
+    line-height 30px
+    color #FFF
 
 
 

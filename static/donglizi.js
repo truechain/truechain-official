@@ -117,4 +117,8 @@ var liziconf = {
 
 window.setTimeout(function () {
   particlesJS('lizibg', liziconf);
-},800)
+},800);
+// window.setInterval(function(){
+//   document.getElementById('lizibg').innerHTML = "";
+//   particlesJS('lizibg', liziconf);
+// },3000);
