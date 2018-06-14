@@ -30,6 +30,11 @@
     "english": "English version",
     "french": "French version"
   },
+  "newsRouter":{
+    "technical": "Technical trends",
+    "biz": "Business trends",
+    "title": "NEWS"
+  },
   "home": {
     "title": "Welcome",
     "introduction": "This is an introduction in English."
@@ -250,6 +255,7 @@
   "join": {
     "title": "join us",
     "intro": "We want best hackers, system programmers, crypto researchers, frontend and backend developers, designers to join our core tech & research team.",
+    "detail": "从进入的第一天起，你就开始了一边工作一边培训的过程。你将发现我们积累的专业经验对你收益良多。加入我们你将被列入公司的员工职业发展培训计划中。培训不仅是每位员工素质及潜能获得不断提高和发展的需要，也是促进公司获得更大成功的重要标志之一。我们可以很自信的说，通过这里的工作学习，你将有机会成为这个行业的专家。",
     "button": "Now",
     "p1": "You can also join our developer community.",
     "p2": "Join Hackathons in which TrueChain is Involved."
