@@ -25,7 +25,6 @@
 export default {
   data() {
     return {
-      currentJob: {},
       jobArr: [
         {
           duty: [
@@ -142,10 +141,10 @@ export default {
       ]
     }
   },
-  created () {
-
-    this.currentJob = this.jobArr[this.$route.params.id] || {};
-    console.log(this.currentJob);
+  computed: {
+    currentJob () {
+      return this.jobArr[this.$route.params.id]
+    }
   }
 }
 </script>
