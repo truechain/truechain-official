@@ -3,10 +3,7 @@
     .container-app(@click="closeMenu")
       nav
         .container-app-header
-          nuxt-link(
-            to="/",
-            tag="div"
-          )
+          div(@click="$router.push('/')")
             .container-app-header-logo
               i(class="icon font_family icon-logo2")
               // img(src="~@/assets/images/logo_top.png")
