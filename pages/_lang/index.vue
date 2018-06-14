@@ -9,7 +9,37 @@
         p {{ $t('banner.p2') }}
         app-ios
         app-android
+    #lizibg.home-banner
     .home-roadmap
+      h3 {{ $t('roadmap') }}
+      hr
+      .time-line-con
+        .start-point
+        .time-line-block
+          .lf
+            .time 2018-06-12
+          .ri
+            .link-bk
+            .link-dot-big
+            .link-dot-sm
+            .bk
+              .entry-txt
+                .dot
+                .txt heeeheeeheeeheeeheeeheeeheeeheee
+              .entry-txt
+                .dot
+                .txt heeeheeeh
+        .time-line-block
+          .lf
+            .link-bk
+            .link-dot-big
+            .link-dot-sm
+            .bk
+              .entry-txt
+                .dot
+                .txt heeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheeeheee
+          .ri
+            .time 2018-06-12
 
     .home-introduce-intro
       .home-introduce-intro-text
@@ -79,11 +109,19 @@
     //-       )
 </template>
 
+
 <script>
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
 
+
 export default {
+  head: {
+    script: [
+      { src: '/particles.min.js' },
+      { src: '/donglizi.js' }
+    ],
+  },
   data () {
     return {
       focus: 1,
@@ -119,8 +157,14 @@ export default {
 }
 </script>
 
+
+
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
+
+.home-banner
+  wh(100%,500px)
+  background-color $font-dark
 
 .home-introduce-banner
   overflow hidden
@@ -144,8 +188,117 @@ export default {
     color #FFF
 
 .home-roadmap
-  wh(100% ,500px)
   background-color white
+  padding 100px 20px
+  h3
+    color $font-dark
+    text-align center
+    font-size 26px
+    font-weight bold
+    line-height 30px
+    text-transform uppercase
+  hr
+    background-color $font-dark
+    border none
+    display block
+    margin 24px auto 54px
+    wh(60px, 2px)
+  .time-line-con
+    width 700px
+    margin 0px auto
+    .start-point
+      dot(8px)
+      background-color $font-dark
+      margin 0px auto
+      position relative
+      z-index 200
+      left -1.2px
+    .time-line-block
+      display flex
+      flex-direction row
+      flex-wrap: nowrap
+      justify-content space-between
+      align-items stretch
+      font-size 0px
+      .lf,.ri
+        width 50%
+        padding 20px
+        box-sizing border-box
+        font-size 14px
+        txtwrap()
+        position relative
+        z-index 200
+      .lf
+        border-right 2px solid $font-dark
+        .time
+          text-align right
+        .link-bk
+          background-color $font-dark
+          wh(20px,2px)
+          position absolute
+          z-index 200
+          top 54px
+          right 0px
+        .link-dot-big
+          dot(18px)
+          background-color #C5D6F6
+          position absolute
+          z-index 190
+          top 46px
+          right -10px
+        .link-dot-sm
+          dot(10px)
+          background-color $font-dark
+          position absolute
+          z-index 200
+          top 50px
+          right -6px
+      .ri
+        .link-bk
+          background-color $font-dark
+          wh(20px,2px)
+          position absolute
+          z-index 200
+          top 53px
+          left 0px
+        .link-dot-big
+          dot(18px)
+          background-color #C5D6F6
+          position absolute
+          z-index 190
+          top 46px
+          left -10px
+        .link-dot-sm
+          dot(10px)
+          background-color $font-dark
+          position absolute
+          z-index 200
+          top 50px
+          left -6px
+      .time
+        color $font-dark
+        margin-top 20px
+        line-height 30px
+      .bk
+        background-color $font-dark
+        padding 20px 20px 20px 8px
+        color white
+        border-radius 6px
+        .entry-txt
+          display flex
+          flex-direction row
+          flex-wrap nowrap
+          justify-content flex-start
+          align-items flex-start
+          .dot
+            flex-shrink 0
+            background-color white
+            dot(8px)
+            margin 10px 10px 0px 10px
+          .txt
+            color white
+
+
 
 .home-introduce-intro
   padding 100px 0
