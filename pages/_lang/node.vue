@@ -89,7 +89,7 @@
               div {{getTime(+item.create_time)}}
               //- div {{item.lock_num}}TRUE
               template(v-if="nodeType === 1")
-                div {{Math.ceil((item.lock_num * 0.8 + item.tickets * 0.2)*100)}}分
+                div {{item.score}}分
               template(v-else)
                 div {{item.tickets}}票
       .node-body-page
@@ -230,7 +230,8 @@ export default {
       apiNodeRank({
         'node_type': nodeType || 1,
         'pageIndex': (pageIndex - 1) * this.pageNumber,
-        'pageNumber': pageSum || this.pageNumber
+        'pageNumber': pageSum || this.pageNumber,
+        'isScore': this.nodeType === 1
       }).then(res => {
         if (pageSum > 10) {
           this.pageSum = res.data.data.length
