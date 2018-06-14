@@ -88,7 +88,6 @@
 </template>
 
 <script>
-// import { setStore, getStore } from '@/util'
 
 const indexList = [
   { path: 'https://github.com/truechain', tag: 'git' },
