@@ -11,7 +11,7 @@
           )
             .about-introduce-list-avatar
               img(:src="require(`~/assets/members/a${n}.png`)")
-            // .about-introduce-list-name {{ $t(`team.technology.list.${n - 1}.name`) }}
+              .about-introduce-list-name-hover {{ $t(`team.technology.list.${n - 1}.name`) }}
             .about-introduce-list-detail {{ $t(`team.technology.list.${n - 1}.intro`) }}
     .about-introduce
       h2 {{ $t('team.business.title') }}
@@ -24,7 +24,7 @@
           )
             .about-introduce-list-avatar
               img(:src="require(`@/assets/members/b${n}.png`)")
-            // .about-introduce-list-name {{ $t(`team.business.list.${n - 1}.name`) }}
+              .about-introduce-list-name-hover {{ $t(`team.business.list.${n - 1}.name`) }}
             .about-introduce-list-detail {{ $t(`team.business.list.${n - 1}.intro`) }}
     .about-introduce
       h2 {{ $t('team.consultant.title') }}
@@ -50,7 +50,7 @@
   h2
     color $font-dark
     text-align center
-    font-size 32px
+    font-size 26px
     font-weight bold
     line-height 30px
     text-transform uppercase
@@ -60,7 +60,7 @@
     display block
     margin 24px auto 54px
     border-radius 3px
-    wh(80px, 4px)
+    wh(60px, 2px)
 .about-introduce
   display flex
   justify-content center
@@ -83,7 +83,21 @@
         wh(100%, 200px)
         border-radius 50%
         overflow hidden
+        position relative
         margin-bottom 10px
+        &:hover
+          .about-introduce-list-name-hover
+            opacity 1
+      .about-introduce-list-name-hover
+        position absolute
+        top 0
+        wh(100%, 100%)
+        background rgba(32, 50, 96, .5)
+        fc()
+        color white
+        font-size 20px
+        opacity 0
+        transition all .5s ease
       .about-introduce-list-name
         padding 25px 0 15px
         font-size 20px
