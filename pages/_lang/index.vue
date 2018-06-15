@@ -106,6 +106,7 @@
                 )
                   .dot
                   .txt {{txt}}
+            .odd(v-if="index%2>0")
               .time {{item.time}}
 
     .home-partner
@@ -131,9 +132,10 @@
         .co(
           v-for="item in $t('homenews.cols')"
         )
-          .vid
+          .vid(@click="showmod")
           .time {{ item.time }}
           .descr {{ item.title }}
+    modal(name="ooo") ooo
 
 </template>
 
@@ -141,6 +143,8 @@
 <script>
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
+// import VModal from 'vue-js-modal'
+
 
 export default {
   data () {
@@ -160,6 +164,14 @@ export default {
   components: {
     AppAndroid,
     AppIos
+  },
+  methods: {
+    showmod () {
+      this.$modal.show('hello-world');
+    },
+    hidemod () {
+      this.$modal.hide('hello-world');
+    }
   }
 }
 </script>
@@ -283,7 +295,8 @@ export default {
     border none
     display block
     margin 24px auto 54px
-    wh(60px, 2px)
+    wh(60px, 4px)
+    border-radius 2px
   .title
     color $font-dark
     font-size 20px
@@ -328,7 +341,8 @@ export default {
     border none
     display block
     margin 24px auto 54px
-    wh(60px, 2px)
+    wh(60px, 4px)
+    border-radius 2px
   .con
     display flex
     flex-direction row
@@ -358,7 +372,8 @@ export default {
     border none
     display block
     margin 24px auto 54px
-    wh(60px, 2px)
+    wh(60px, 4px)
+    border-radius 2px
   .con
     display flex
     flex-direction row
@@ -391,7 +406,8 @@ export default {
     border none
     display block
     margin 24px auto 54px
-    wh(60px, 2px)
+    wh(60px, 4px)
+    border-radius 2px
   .con
     display flex
     flex-direction row
@@ -419,7 +435,7 @@ export default {
 
 .home-roadmap
   background-color white
-  padding 100px 20px
+  padding 100px 20px 0px
   h3
     color $font-dark
     text-align center
@@ -432,7 +448,8 @@ export default {
     border none
     display block
     margin 24px auto 54px
-    wh(60px, 2px)
+    wh(60px, 4px)
+    border-radius 2px
   .time-line-con
     width 630px
     margin 0px auto
@@ -528,6 +545,12 @@ export default {
           .txt
             color white
             line-height 26px
+    .time-line-block:last-child
+      .lf,.ri
+        padding-bottom 80px
+
+
+
 
 .home-introduce-banner
   overflow hidden
