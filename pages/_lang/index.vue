@@ -126,11 +126,11 @@
           )
             img(:src="require(`@/assets/images/partner${index}.png`)")
     .home-news
-      h3 {{ $t('home.news') }}
+      h3 {{ $t('home.news.title') }}
       hr
       .con
         .co(
-          v-for="item in $t('homenews.cols')"
+          v-for="item in $t('home.news.list')"
         )
           .vid(@click="showmod")
           .time {{ item.time }}
