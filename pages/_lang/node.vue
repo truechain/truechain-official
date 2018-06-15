@@ -276,7 +276,7 @@ export default {
   wh(100%, 1027px)
   background-color $dark-blue
   position absolute
-  top 0
+  top 100px
   left 0
   right 0
   bottom 0
@@ -295,7 +295,7 @@ export default {
   display flex
   align-items center
   flex-direction column
-  padding-top 99px
+  padding-top 100px
   position relative
 .node-header-title
   padding-bottom 40px
@@ -350,6 +350,7 @@ export default {
   background white
   border-radius 10px
   position absolute
+  // bottom -20px
   bottom -(238/2)px
   box-shadow:0px 2px 5px #EEEFF3
 .node-header-countdown-title
