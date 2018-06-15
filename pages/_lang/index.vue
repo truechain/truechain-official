@@ -106,6 +106,7 @@
                 )
                   .dot
                   .txt {{txt}}
+            .odd(v-if="index%2>0")
               .time {{item.time}}
 
     .home-partner
@@ -146,7 +147,7 @@
 <script>
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
-import VModal from 'vue-js-modal'
+// import VModal from 'vue-js-modal'
 
 
 export default {
