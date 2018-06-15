@@ -140,6 +140,16 @@
           img(src="~assets/images/partner3.png")
         .co
           img(src="~assets/images/partner4.png")
+    .home-news
+      h3 {{ $t('homenews.h3') }}
+      hr
+      .con
+        .co(
+          v-for="item in $t('homenews.cols')"
+        )
+          .vid
+          .time {{ item.time }}
+          .descr {{ item.title }}
 
 </template>
 
@@ -147,7 +157,6 @@
 <script>
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
-
 
 export default {
   data () {
@@ -385,6 +394,45 @@ export default {
       margin 10px
       img
         wh(100%,100%)
+
+.home-news
+  padding 100px 20px 80px
+  background-color $bg-pearlblue
+  h3
+    color $font-dark
+    text-align center
+    font-size 26px
+    font-weight bold
+    line-height 30px
+    text-transform uppercase
+  hr
+    background-color $font-dark
+    border none
+    display block
+    margin 24px auto 54px
+    wh(60px, 2px)
+  .con
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    justify-content space-around
+    align-items flex-start
+    max-width 1024px
+    margin 0px auto
+    .co
+      width 300px      
+      .vid
+        wh(100%,168px)
+        background-color #eee
+        border-radius 8px
+      .time
+        color $font-light
+        font-size 13px
+        line-height 30px
+      .descr
+        font-size 16px
+        color $font-dark
+        line-height 20px
 
 
 
