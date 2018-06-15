@@ -1,7 +1,7 @@
 var liziconf = {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 100,
       "density": {
         "enable": true,
         "value_area": 800
@@ -26,7 +26,7 @@ var liziconf = {
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.2,
       "random": false,
       "anim": {
         "enable": false,
@@ -54,7 +54,7 @@ var liziconf = {
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 3,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -70,11 +70,11 @@ var liziconf = {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "repulse"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
@@ -106,7 +106,7 @@ var liziconf = {
   },
   "retina_detect": true,
   "config_demo": {
-    "hide_card": false,
+    "hide_card": true,
     "background_color": "#b61924",
     "background_image": "",
     "background_position": "50% 50%",
@@ -114,11 +114,3 @@ var liziconf = {
     "background_size": "cover"
   }
 };
-
-window.setTimeout(function () {
-  particlesJS('lizibg', liziconf);
-},800);
-// window.setInterval(function(){
-//   document.getElementById('lizibg').innerHTML = "";
-//   particlesJS('lizibg', liziconf);
-// },3000);
