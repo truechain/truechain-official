@@ -64,14 +64,17 @@
     "yellow": "YELLOW PAPER",
     "superiority": [
       {
+        "icon": "icon font_family icon-te",
         "title": "Highly Performant Blockchain Infrastructure",
         "detail":"TrueChain uses hybrid consensus technology combing PBFT and POW. On consensus layer, TrueChain takes advantage of PBFT to achieve high TPS, and support infinite POW nodes as validators to ensure decentralization and security. Therefore TrueChain is made to be a public blockchain for performance-demanding decentralized applications."
       },
       {
+        "icon": "icon font_family icon-te1",
         "title": "Smart Contracts with Business Logics",
         "detail":"TrueChain's smart contract platform is providing an abstraction layer for commercial applications, making it easy and fast for developers to access blockchain technology. Application builders can create their own tokens, define workflows, and test/verify their contracts based on a unified environment."
       },
       {
+        "icon": "icon font_family icon-te2",
         "title": "Usable Developing Toolkits",
         "detail":"TrueChain builds toolkits for developers and operations to access, monitor, and manage applications. With TrueChain BaaS, Smart Contract Manager, TRUE Dapp Store and Contract Browser, it’s easy to use TrueChain as a blockchain platform. "
       }
