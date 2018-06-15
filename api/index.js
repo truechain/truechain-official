@@ -1,13 +1,30 @@
 import http from './http.js'
-export const apiNodeRank = (options) => {
+
+const apiNodeRank = (options) => {
   return http.get('nodeRank', options)
 }
-export const apiNodeSum = (options) => {
+
+const apiNodeSum = (options) => {
   return http.get('nodeSum', options)
 }
-export const apiNodeRankPc = (options) => {
+
+const apiNodeRankPc = (options) => {
   return http.get('nodeRankPc', options)
 }
-export const apiNodeTypeSumNum = (options) => {
+
+const apiNodeTypeSumNum = (options) => {
   return http.get('nodeTypeSumNum', options)
+}
+
+const apiArticleList = (options) => {
+  return http._get('articleList', options)
+}
+
+
+export {
+  apiNodeRank,
+  apiNodeSum,
+  apiNodeRankPc,
+  apiNodeTypeSumNum,
+  apiArticleList
 }

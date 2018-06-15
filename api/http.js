@@ -80,5 +80,23 @@ export default {
         return checkCode(res)
       }
     )
-  }
+  },
+  _get (url, params = {}) {
+    return axios({
+      method: 'get',
+      baseURL: 'http://127.0.0.1:7001/',
+      url,
+      params,
+      timeout: 10000,
+    }).then(
+      (response) => {
+        return checkStatus(response)
+      }
+    ).then(
+      (res) => {
+        return checkCode(res)
+      }
+    )
+  },
+
 }
