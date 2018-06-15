@@ -36,23 +36,6 @@
   "homeinvestment":{
     "h3":"Investment institution"
   },
-  "homenews":{
-    "h3":"news",
-    "cols":[
-      {
-        "time":"2018-05-24",
-        "title":"十名资深构架师加入初链技术研发社区，链技术研发社区"
-      },
-      {
-        "time":"2018-05-23",
-        "title":"初链助推实体经济腾飞"
-      },
-      {
-        "time":"2018-05-20",
-        "title":"3天锁仓200W+，是时候 ALL IN TRUE！！"
-      }
-    ]
-  },
   "newsRouter":{
     "technical": "Technical trends",
     "biz": "Business trends",
@@ -64,14 +47,17 @@
     "yellow": "YELLOW PAPER",
     "superiority": [
       {
+        "icon": "icon font_family icon-te",
         "title": "Highly Performant Blockchain Infrastructure",
         "detail":"TrueChain uses hybrid consensus technology combing PBFT and POW. On consensus layer, TrueChain takes advantage of PBFT to achieve high TPS, and support infinite POW nodes as validators to ensure decentralization and security. Therefore TrueChain is made to be a public blockchain for performance-demanding decentralized applications."
       },
       {
+        "icon": "icon font_family icon-te1",
         "title": "Smart Contracts with Business Logics",
         "detail":"TrueChain's smart contract platform is providing an abstraction layer for commercial applications, making it easy and fast for developers to access blockchain technology. Application builders can create their own tokens, define workflows, and test/verify their contracts based on a unified environment."
       },
       {
+        "icon": "icon font_family icon-te2",
         "title": "Usable Developing Toolkits",
         "detail":"TrueChain builds toolkits for developers and operations to access, monitor, and manage applications. With TrueChain BaaS, Smart Contract Manager, TRUE Dapp Store and Contract Browser, it’s easy to use TrueChain as a blockchain platform. "
       }
@@ -131,7 +117,23 @@
     },
     "partner": "PARTNER",
     "institution": "INVESTMENT INSTITUTION",
-    "news": "NEWS"
+    "news":{
+      "title":"NEWS",
+      "list":[
+        {
+          "time":"2018-05-24",
+          "title":"假装有英文 askdaskjdkjwhekasd"
+        },
+        {
+          "time":"2018-05-23",
+          "title":"初链助推实体经济腾飞"
+        },
+        {
+          "time":"2018-05-20",
+          "title":"3天锁仓200W+，是时候 ALL IN TRUE！！"
+        }
+      ]
+    }
   },
   "roadmap": "road map",
   "roadmapcon":[

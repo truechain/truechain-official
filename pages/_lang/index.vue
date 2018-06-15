@@ -116,25 +116,21 @@
         .co(
            v-for="index in 5",
         )
-          img(src="`require('~assets/images/p-logo${index}.png')`")
+          img(:src="require(`@/assets/images/p-logo${index}.png`)")
     .home-investment
-      h3 {{ $t('homeinvestment.h3') }}
-      hr
-      .con
-        .co
-          img(src="~assets/images/partner1.png")
-        .co
-          img(src="~assets/images/partner2.png")
-        .co
-          img(src="~assets/images/partner3.png")
-        .co
-          img(src="~assets/images/partner4.png")
-    .home-news
-      h3 {{ $t('homenews.h3') }}
+      h3 {{ $t('home.partner') }}
       hr
       .con
         .co(
-          v-for="item in $t('homenews.cols')"
+            v-for="index in 4",
+          )
+            img(:src="require(`@/assets/images/partner${index}.png`)")
+    .home-news
+      h3 {{ $t('home.news.title') }}
+      hr
+      .con
+        .co(
+          v-for="item in $t('home.news.list')"
         )
           .vid(@click="showmod")
           .time {{ item.time }}
