@@ -272,11 +272,13 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
+.node-container
+  position relative
 #particles-js-node
   wh(100%, 1027px)
   background-color $dark-blue
   position absolute
-  top 100px
+  top 0
   left 0
   right 0
   bottom 0

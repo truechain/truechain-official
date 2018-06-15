@@ -1,23 +1,87 @@
 {
   "language": "中文",
-  "links": {
-    "home": "Accueil",
-    "about": "À propos",
-    "english": "Version Anglaise",
-    "french": "Version Française"
-  },
   "newsRouter":{
     "technical": "技术动态",
     "biz": "商业动态",
     "title": "新闻"
   },
   "home": {
-    "title": "Bienvenue",
-    "introduction": "Ceci est un texte d'introduction en Français."
-  },
-  "about": {
-    "title": "À propos",
-    "introduction": "Cette page est faite pour vous donner plus d'informations."
+    "slogan": "高性能  无穷节点  混合共识公链",
+    "white": "白皮书",
+    "yellow": "黄皮书",
+    "superiority": [
+      {
+        "icon": "icon font_family icon-te",
+        "title": "高性能的区块链基础设施",
+        "detail":"初链使用混合共识技术将PBFT和POW结合起来。在共识层面，初链利用PBFT节点实现高TPS, 同时可以接入无限POW节点作为验证者，从而确保去中心化和安全性。因此，初链从设计根本上就注定成为能满足去中心化商业应用高性能需求的公链。"
+      },
+      {
+        "icon": "icon font_family icon-te1",
+        "title": "具有商业逻辑的智能合约层",
+        "detail":"初链的智能合约平台为商业应用程序提供了一个平台，使开发人员可以轻松快速地获取区块链技术。应用程序构建者可以创建自己的代币，定义工作流程，并根据统一的环境对合同进行测试/验证"
+      },
+      {
+        "icon": "icon font_family icon-te2",
+        "title": "简单实用的开发工具包",
+        "detail":"初链为开发人员和组织构建实用工具包，以访问、监控和管理应用程序。结合初链的BaaS，智能合约管理，TRUE Dapp商店和合同浏览器， 使用初链作为区块链底层平台将非常简单实用。"
+      }
+    ],
+    "about": {
+      "title": "关于",
+      "subhead": "初链（TrueChain）是全球最早实现PBFT-POW混合共识的公链之一。",
+      "p1": "POW/POS等单一共识公有链，目前遇到性能瓶颈的问题，而DPOS/dBFT等基于单一共识的改进型公有链，有中心化的问题。初链既具备高性能，也足够去中心化。众所周知，POW及PBFT共识机制的规模化和安全性久经考验。初链混合共识将PBFT和POW结合在一起，解决了公有链最重要的问题: 去中心化和性能之间的矛盾。PBFT协议保证价值流通和商业应用所需要的性能，而PBFT-POW混合共识保证初链是一条公有链。",
+      "p2": "初链是最好用的公链，完善的产品体系让用户和企业能够便捷地与区块链进行交互，发布和管理智能合约的全生命周期，包括Stellar ——初链合约全生命周期管理平台；Dapp Warehouse ——初链去中心化应用仓库；TrueScan Explorer；初链轻钱包等。",
+      "p3": "初链的研究和工程团队主要分布在美国、印度和中国。",
+      "p4": "初链是中国国家云产业体系战略创新联盟理事单位，国家链网中心成员；也是为数不多的、接受过中国中央电视台等权威媒体报道的区块链项目，并参与工信部区块链白皮书调研。"
+    },
+    "roadmap": {
+      "title": "路线",
+      "list": [
+        {
+          "time": "2018.1",
+          "events": ["True白皮书发布"]
+        },
+        {
+          "time": "2018.3",
+          "events": ["PBFT联盟链上线"]
+        },
+        {
+          "time": "2018.4",
+          "events": ["初链技术黄皮书发布", "混合共识机制设计完善", "合约生命周期管理平台发布和stellar平台发布"]
+        },
+        {
+          "time": "2018.5",
+          "events": ["初链工程路线图在github发布", "初链轻钱包上线", "初链去中心化节点竞选系统上线"]
+        },
+        {
+          "time": "2018.6",
+          "events": ["混合共识代码框架开源", "混合共识激励机制发布", "主网v0.1内测"]
+        },
+        {
+          "time": "2018.7",
+          "events": ["fPOW基础框架实现和开源", "美国开发者社区成立"]
+        },
+        {
+          "time": "2018.8",
+          "events": ["fPOW与初链主网整合", "混合共识分片机制"]
+        },
+        {
+          "time": "2018.9",
+          "events": ["初链主网上线（仅对优先节点开放）"]
+        },
+        {
+          "time": "2018.12",
+          "events": ["混合共识分片机制上线"]
+        },
+        {
+          "time": "2019.3",
+          "events": ["主网向全部节点开放"]
+        }
+      ]
+    },
+    "partner": "合伙人",
+    "institution": "投资机构",
+    "news": "新闻"
   },
   "roadmap": "路线",
   "name": "初链",

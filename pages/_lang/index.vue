@@ -13,6 +13,7 @@
       #particles-js
       Carousel(
         class="loop-container",
+        v-model="value1"
         arrow="always"
       )
           CarouselItem
@@ -20,11 +21,11 @@
               .banner-home-logo
                 i(class="icon font_family icon-logo")
               .banner-home-slogan
-                span PUBLIC BLOCKCHAIN WITH HYBRID CONSENSUS
+                span {{ $t('home.slogan') }}
               .banner-home-buttons
                 a(href="https://github.com/truechain",target="_blank") GITHUB
-                a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") WHITE PAPER
-                a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") YELLOW PAPER
+                a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") {{ $t('home.white') }}
+                a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") {{ $t('home.yellow') }}
           CarouselItem
             div(class="demo-carousel banner-home")
               .banner-home-logo
@@ -47,28 +48,23 @@
                 a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") YELLOW PAPER
     .home-intro-3col
       .col3-con
-        .co.col-1
-            i(class="icon font_family icon-te")
-            h4 {{ $t('homeintro[0].title') }}
-            p.txt {{ $t('homeintro[0].text') }}
-        .co.col-2
-            i(class="icon font_family icon-te1")
-            h4 {{ $t('homeintro[1].title') }}
-            p.txt {{ $t('homeintro[1].text') }}
-        .co.col-3
-            i(class="icon font_family icon-te2")
-            h4 {{ $t('homeintro[2].title') }}
-            p.txt {{ $t('homeintro[2].text') }}
+        .co(
+          v-for="(item, index) in $t('home.superiority')"
+          :key="index"
+        )
+            i(:class="item.icon")
+            h4 {{ item.title }}
+            p.txt {{ item.detail }}
     .home-about
       .con
-        h3 {{ $t('homeabout.h3') }}
+        h3 {{ $t('home.about.title') }}
         hr
-        .title {{ $t('homeabout.title') }}
+        .title {{ $t('home.about.subhead') }}
         .descr
-          p {{ $t('homeabout.p1') }}
-          p {{ $t('homeabout.p2') }}
-          p {{ $t('homeabout.p3') }}
-          p {{ $t('homeabout.p4') }}
+          p {{ $t('home.about.p1') }}
+          p {{ $t('home.about.p2') }}
+          p {{ $t('home.about.p3') }}
+          p {{ $t('home.about.p4') }}
         .col3
           .co
             img(src="~assets/images/h1.png")
@@ -77,12 +73,12 @@
           .co
             img(src="~assets/images/h3.png")
     .home-roadmap
-      h3 {{ $t('roadmap') }}
+      h3 {{ $t('home.roadmap.title') }}
       hr
       .time-line-con
         .start-point
         .time-line-block(
-          v-for="(item,index) in $t('roadmapcon') "
+          v-for="(item,index) in $t('home.roadmap.list') "
         )
           .lf
             .even(v-if="index%2==0")
@@ -93,7 +89,8 @@
               .link-dot-sm
               .bk
                 .entry-txt(
-                  v-for="txt in item.con"
+                  v-for="(txt, index) in item.events",
+                  :key="index"
                 )
                   .dot
                   .txt {{txt}}
@@ -104,30 +101,21 @@
               .link-dot-sm
               .bk
                 .entry-txt(
-                  v-for="txt in item.con"
+                  v-for="(txt, index) in item.events",
+                  :key="index"
                 )
                   .dot
                   .txt {{txt}}
-                .entry-txt
-                  .dot
-                  .txt heeeheeeh
-            .odd(v-if="index%2>0")
               .time {{item.time}}
 
     .home-partner
       h3 {{ $t('partner.title') }}
       hr
       .con
-        .co
-          img(src="~assets/images/p-logo1.png")
-        .co
-          img(src="~assets/images/p-logo2.png")
-        .co
-          img(src="~assets/images/p-logo3.png")
-        .co
-          img(src="~assets/images/p-logo4.png")
-        .co
-          img(src="~assets/images/p-logo5.png")
+        .co(
+           v-for="index in 5",
+        )
+          img(src="`require('~assets/images/p-logo${index}.png')`")
     .home-investment
       h3 {{ $t('homeinvestment.h3') }}
       hr
@@ -279,9 +267,6 @@ export default {
     text-align left
   .co
     width 240px
-  .col-1
-  .col-2
-  .col-3
     color $font-dark
 
 .home-about
@@ -420,7 +405,7 @@ export default {
     max-width 1024px
     margin 0px auto
     .co
-      width 300px      
+      width 300px
       .vid
         wh(100%,168px)
         background-color #eee
@@ -568,8 +553,6 @@ export default {
     font-size 18px
     line-height 30px
     color #FFF
-
-
 
 .home-introduce-intro
   padding 100px 0
