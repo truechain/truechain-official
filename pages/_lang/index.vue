@@ -135,7 +135,11 @@
           .vid(@click="showmod")
           .time {{ item.time }}
           .descr {{ item.title }}
-    modal(name="ooo") ooo
+    modal(name="vidmod")
+      video(
+        src="/oceans.mp4"
+        controls="controls"
+      )
 
 </template>
 
@@ -143,17 +147,22 @@
 <script>
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
-// import VModal from 'vue-js-modal'
+
 
 
 export default {
+  asyncData ({ req }) {
+    return {
+      name: req ? 'server' : 'client'
+    }
+  },
   data () {
     return {
       value1: 0
     }
   },
   mounted () {
-    particlesJS('particles-js', liziconf);
+    particlesJS('particles-js', liziconf);    
   },
   head: {
     script: [
@@ -167,10 +176,10 @@ export default {
   },
   methods: {
     showmod () {
-      this.$modal.show('hello-world');
+      this.$modal.show('vidmod',{src:'/oceans.mp4'});
     },
     hidemod () {
-      this.$modal.hide('hello-world');
+      this.$modal.hide('vidmod');
     }
   }
 }
@@ -180,6 +189,14 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
+
+.v--modal
+  text-align: center
+  wh(320px,260px)
+  padding: 0px
+  video 
+    wh(100%,100%)
+
 .ivu-carousel-dots
   margin-bottom 10px
 .ivu-carousel
