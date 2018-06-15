@@ -36,6 +36,23 @@
   "homeinvestment":{
     "h3":"Investment institution"
   },
+  "homenews":{
+    "h3":"news",
+    "cols":[
+      {
+        "time":"2018-05-24",
+        "title":"十名资深构架师加入初链技术研发社区，链技术研发社区"
+      },
+      {
+        "time":"2018-05-23",
+        "title":"初链助推实体经济腾飞"
+      },
+      {
+        "time":"2018-05-20",
+        "title":"3天锁仓200W+，是时候 ALL IN TRUE！！"
+      }
+    ]
+  },
   "links": {
     "home": "Home",
     "about": "About",
