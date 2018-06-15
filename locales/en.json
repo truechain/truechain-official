@@ -1,5 +1,13 @@
 {
   "language": "ENGLISH",
+  "homebanner":{
+    "p1":{
+      "title":"PUBLIC BLOCKCHAIN WITH HYBRID CONSENSUS",
+      "btn_github_text":"GITHUB",
+      "btn_white_paper_text":"white paper",
+      "btn_yellow_paper_text":"yellow paper"
+    }
+  },
   "homeintro":[
     {
       "icon":"icon-te",

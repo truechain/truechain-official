@@ -11,6 +11,8 @@
         app-android
     
     #lizibg.home-banner
+      .p1
+        i(class="icon font_family icon-logo")
     .home-intro-3col
       .col3-con
         .co.col-1
@@ -206,7 +208,9 @@ export default {
 
 .home-banner
   wh(100%,500px)
-  background-color $font-dark
+  background-color $dark-blue
+  position relative
+  z-index 80
 .home-intro-3col
   padding 0px 20px 100px
   .col3-con
