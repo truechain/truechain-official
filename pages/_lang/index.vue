@@ -9,7 +9,7 @@
     //     p {{ $t('banner.p2') }}
         app-ios
         app-android
-    
+
     #lizibg.home-banner
       .p1
         i(class="icon font_family icon-logo")
@@ -108,49 +108,7 @@
           img(src="~assets/images/partner3.png")
         .co
           img(src="~assets/images/partner4.png")
-    
-    .home-introduce-intro(style="min-height: 80px !important; padding: 50px;")
-      .home-introduce-intro-text
-        h2 {{ $t('news.title') }}
-        hr
-        transition-group.home-introduce-news(
-          name="fade"
-          mode="out-in"
-          tag="ul"
-        )
-          li(
-            v-for="n in 2"
-            :key="n"
-            v-if="focus === n"
-          )
-            a(
-              target="_blank"
-              :href="$t(`news.details.${n - 1}.path`)"
-            )
-              h3 {{ $t(`news.details.${n - 1}.title`) }}
-            p(
-              v-for="(para, index) in $t(`news.details.${n - 1}.intro`).split('|')"
-              :key="index"
-            ) {{para}}
-        ul.home-introduce-news-index
-          li(
-            v-for="n in 2"
-            :key="n"
-            @click="focusNewsTo(n)"
-          )
-            span(
-              :style="{'transform': `translateX(${(focus - n) * 40}px)`}"
-            )
-    //- .home-introduce-intro.home-introduce-partner
-    //-   .home-introduce-intro-text
-    //-     h2 {{ $t('partner.title') }}
-    //-     hr
-    //-     ul
-    //-       li(
-    //-         v-for="n in 3"
-    //-         :key="n"
-    //-         :style="{'background-image': `url(${require(`@/assets/images/partner${n}.png`)})`}"
-    //-       )
+
 </template>
 
 
@@ -165,34 +123,6 @@ export default {
       { src: '/particles.min.js' },
       { src: '/donglizi.js' }
     ],
-  },
-  data () {
-    return {
-      focus: 1,
-      newsToggleTimer: 0,
-      lastNewsTimer: 0      
-    }
-  },
-  mounted () {
-    requestAnimationFrame(this.update)
-  },
-  methods: {
-    focusNewsTo (n) {
-      this.focus = n
-      this.newsToggleTimer = -3000
-    },
-    update (timer) {
-      // console.log(timer)
-      const delta = timer - this.lastNewsTimer
-      this.newsToggleTimer += delta > 1000 ? 0 : delta
-      if (this.newsToggleTimer > 5000) {
-        this.newsToggleTimer = 0
-        const nextN = this.focus + 1
-        this.focus = nextN <= 2 ? nextN : 1
-      }
-      this.lastNewsTimer = timer
-      requestAnimationFrame(this.update)
-    }
   },
   components: {
     AppAndroid,
@@ -225,7 +155,7 @@ export default {
   .icon
     font-size 68px
     margin 75px auto 28px
-    color $font-dark    
+    color $font-dark
   h4
     line-height 28px
     font-size 18px
@@ -241,7 +171,7 @@ export default {
     text-align left
   .co
     width 240px
-  .col-1   
+  .col-1
   .col-2
   .col-3
     color $font-dark
@@ -356,7 +286,7 @@ export default {
       margin 10px
       img
         wh(100%,100%)
-        
+
 
 
 .home-roadmap
