@@ -5,27 +5,28 @@
       .news-body-table
         .news-body-table-btn
           div(
-            :class="{ 'news-body-table-btn-avtive': nodeType === 1 }",
+            :class="{ 'news-body-table-btn-avtive': theme === 1 }",
             @click="toggleNode(1)"
           ) {{$t('newsRouter.technical')}}
           div(
-            :class="{ 'news-body-table-btn-avtive': nodeType === 2 }",
+            :class="{ 'news-body-table-btn-avtive': theme === 2 }",
             @click="toggleNode(2)"
             ) {{$t('newsRouter.biz')}}
         .news-body-table-body
           ul
-            li(
+            nuxt-link(
+              tag="li",
               v-for="(item, index) in list",
-              :key="index"
+              :key="index",
+              :to="`news_detail/${item.id}`",
             )
-              .news-body-table-body-date {{ item.tickets }}
-              .news-body-table-body-title  {{item.nickname}}
+              .news-body-table-body-date {{ item.create_time }}
+              .news-body-table-body-title  {{item.title}}
       .news-body-page
         Page(
           :total="pageSum",
           :current="currentPage",
-          @on-change="onChangePage",
-          @on-page-size-change="onChangePageSize"
+          @on-change="onChangePage"
         )
 
 </template>
@@ -33,133 +34,47 @@
 <script>
 
 import { getTime, contdown } from '~/util/index.js'
-// console.log(getTime);
-
-import { apiNodeRank, apiNodeSum, apiNodeRankPc, apiNodeTypeSumNum } from '@/api'
+import { apiArticleList } from '@/api'
 export default {
   data () {
     return {
       list: [],
       sumNum: 0,
       pageSum: 0,
-      nodeType: 1,
+      theme: 1,
       pageIndex: 0,
       currentPage: 1,
       pageNumber: 10,
-      time: {
-        d: '00',
-        h: '00',
-        m: '00',
-        s: '00'
-      },
-      nodeStandardObj: {
-        type1: 2,
-        type2: 1,
-        type3: 1,
-        type4: 1
-      },
-      nodeFullObj: {
-        type1: 2,
-        type2: 2,
-        type3: 1,
-        type4: 2
-      },
       nodeStandardSum: 0,
-      nodeFullSum: 0,
-      nodeStandard_21: 0,
-      nodeStandard_11: 0,
-      nodeFull_22: 0,
-      nodeFull_12: 0,
-      nodeArr: [
-        {
-          type: 2,
-          nodeType: 1
-        },
-        {
-          type: 1,
-          nodeType: 1
-        },
-        {
-          type: 2,
-          nodeType: 2
-        },
-        {
-          type: 1,
-          nodeType: 2
-        }
-      ]
+      nodeFullSum: 0
     }
   },
   async created () {
     this.fetchData()
-    this.onFetchSumPage()
-    this.setContdown()
-    this.NodeSum()
-    this.nodeArr.forEach(item => {
-      this.nodeRankPc(item.type, item.nodeType)
-    })
-    this.nodeStandardSum = await this.nodeTypeSumNum(this.nodeStandardObj)
-    this.nodeFullSum = await this.nodeTypeSumNum(this.nodeFullObj)
+    // this.NodeSum()
   },
   methods: {
     getTime,
-    async nodeTypeSumNum (options) {
-      const { data: { data } } = await apiNodeTypeSumNum(options)
-      return data[0].sumNum
-    },
-    async nodeRankPc (type = 1, nodeType = 1) {
-      // debugger
-      const { data: { data } } = await apiNodeRankPc({
-        type: type,
-        node_type: nodeType
-      })
-      let { sumNum } = data[0]
-      if (type === 2 && nodeType === 1) {
-        this.nodeStandard_21 = sumNum
-      } else if (type === 1 && nodeType === 1) {
-        this.nodeStandard_11 = sumNum
-      } else if (type === 2 && nodeType === 2) {
-        this.nodeFull_22 = sumNum
-      } else if (type === 1 && nodeType === 2) {
-        this.nodeFull_12 = sumNum
-      }
-    },
-    async NodeSum () {
-      const { data: { data } } = await apiNodeSum()
-      this.sumNum = data[0].sumNum
-    },
-    setContdown () {
-      const timer = setInterval(() => {
-        const { time, lefttime } = contdown()
-        if (lefttime <= 0) {
-          clearInterval(timer)
-          this.time = {
-            d: '00',
-            h: '00',
-            m: '00',
-            s: '00'
-          }
-          return
-        }
-        this.time = time
-      }, 1000)
-    },
+    // async NodeSum () {
+    //   const { data: { data } } = await apiNodeSum()
+    //   this.sumNum = data[0].sumNum
+    // },
     toggleNode (x) {
-      this.nodeType = x
       this.pageIndex = 0
-      this.onFetchSumPage(x)
+      this.theme = x
       this.fetchData({
-        nodeType: x
+        theme: x
       })
     },
     fetchData (obj = {}) {
-      const { pageSum, nodeType, pageIndex = 1 } = obj
+      const { pageSum, theme, pageIndex = 1 } = obj
+      debugger
       this.pageIndex = pageIndex - 1
-      apiNodeRank({
-        'node_type': nodeType || 1,
-        'pageIndex': (pageIndex - 1) * this.pageNumber,
-        'pageNumber': pageSum || this.pageNumber
-      }).then(res => {
+       apiArticleList({
+         theme
+       }).then(res =>{
+        const { data } = res.data;
+        console.log(data);
         if (pageSum > 10) {
           this.pageSum = res.data.data.length
         } else {
@@ -170,19 +85,9 @@ export default {
     onChangePage (x) {
       this.fetchData({
         pageIndex: x,
-        nodeType: this.nodeType
+        theme: this.theme
       })
     },
-    onFetchSumPage (x) {
-      this.fetchData({
-        nodeType: x,
-        pageSum: 1000
-      })
-    },
-    onChangePageSize (x) {
-      console.log(x, '=======')
-    }
-
   }
 }
 </script>
