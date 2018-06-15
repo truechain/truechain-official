@@ -158,6 +158,7 @@
 <script>
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
+import VModal from 'vue-js-modal'
 
 
 export default {
