@@ -24,37 +24,37 @@ export default {
     return {
       jobList: [
         {
-          path: 'jd/1',
+          path: 'jd/0',
           icon: 'icon font_family icon-kaifa',
           job: 'GO语言开发工程师',
         },
         {
-          path: 'jd/2',
+          path: 'jd/1',
           icon: 'icon font_family icon-suanfa',
           job: 'GO语言算法工程师',
         },
         {
-          path: 'jd/3',
+          path: 'jd/2',
           icon: 'icon font_family icon-touzi',
           job: '投资者关系总监',
         },
         {
-          path: 'jd/4',
+          path: 'jd/3',
           icon: 'icon font_family icon-zhaopin',
           job: '招聘主管',
         },
         {
-          path: 'jd/5',
+          path: 'jd/4',
           icon: 'icon font_family icon-zhuli',
           job: 'CEO助理',
         },
         {
-          path: 'jd/6',
+          path: 'jd/5',
           icon: 'icon font_family icon-zhuli',
           job: '区块链业务总监',
         },
         {
-          path: 'jd/7',
+          path: 'jd/6',
           icon: 'icon font_family icon-shixisheng',
           job: '运营实习生',
         },
@@ -97,7 +97,7 @@ export default {
   color $font-dark
   margin-top 15px
   font-weight bold
-  line-height 50px
+  line-height 28px
   font-size 22px
 .join-head-detail
   margin-top 10px
