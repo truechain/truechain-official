@@ -1,5 +1,6 @@
 <template lang="pug">
   .node-container
+    #particles-js-node
     .node-header
       .node-header-title
         .node-header-title1 {{$t('node.title')}}
@@ -109,6 +110,15 @@ import { getTime, contdown } from '~/util/index.js'
 
 import { apiNodeRank, apiNodeSum, apiNodeRankPc, apiNodeTypeSumNum } from '@/api'
 export default {
+  head: {
+    script: [
+      { src: '/particles.min.js' },
+      { src: '/donglizi.js' }
+    ],
+  },
+  mounted () {
+    particlesJS('particles-js-node', liziconf);
+  },
   data () {
     return {
       list: [],
@@ -262,6 +272,14 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
+#particles-js-node
+  wh(100%, 1027px)
+  background-color $dark-blue
+  position absolute
+  top 100px
+  left 0
+  right 0
+  bottom 0
   /* 覆盖分页样式 */
 .ivu-page
   .ivu-page-item-active
@@ -272,11 +290,12 @@ export default {
 .node-header
   wh(100%, 1027px)
   color white
-  background-image url("~@/assets/images/node_bg.jpg")
+  color #000
+  // background-image url("~@/assets/images/node_bg.jpg")
   display flex
   align-items center
   flex-direction column
-  padding-top 99px
+  padding-top 100px
   position relative
 .node-header-title
   padding-bottom 40px
@@ -331,6 +350,7 @@ export default {
   background white
   border-radius 10px
   position absolute
+  // bottom -20px
   bottom -(238/2)px
   box-shadow:0px 2px 5px #EEEFF3
 .node-header-countdown-title
