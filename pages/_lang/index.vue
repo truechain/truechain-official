@@ -9,10 +9,42 @@
     //     p {{ $t('banner.p2') }}
         app-ios
         app-android
-
-    #lizibg.home-banner
-      .p1
-        i(class="icon font_family icon-logo")
+    .loop-header
+      #particles-js
+      Carousel(
+        class="loop-container",
+        arrow="always"
+      )
+          CarouselItem
+            div(class="demo-carousel banner-home")
+              .banner-home-logo
+                i(class="icon font_family icon-logo")
+              .banner-home-slogan
+                span PUBLIC BLOCKCHAIN WITH HYBRID CONSENSUS
+              .banner-home-buttons
+                a(href="https://github.com/truechain",target="_blank") GITHUB
+                a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") WHITE PAPER
+                a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") YELLOW PAPER
+          CarouselItem
+            div(class="demo-carousel banner-home")
+              .banner-home-logo
+                i(class="icon font_family icon-logo")
+              .banner-home-slogan
+                span PUBLIC BLOCKCHAIN WITH HYBRID CONSENSUS
+              .banner-home-buttons
+                a(href="https://github.com/truechain",target="_blank") GITHUB
+                a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") WHITE PAPER
+                a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") YELLOW PAPER
+          CarouselItem
+            div(class="demo-carousel banner-home")
+              .banner-home-logo
+                i(class="icon font_family icon-logo")
+              .banner-home-slogan
+                span PUBLIC BLOCKCHAIN WITH HYBRID CONSENSUS
+              .banner-home-buttons
+                a(href="https://github.com/truechain",target="_blank") GITHUB
+                a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") WHITE PAPER
+                a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") YELLOW PAPER
     .home-intro-3col
       .col3-con
         .co.col-1
@@ -127,6 +159,14 @@ import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
 
 export default {
+  data () {
+    return {
+      value1: 0
+    }
+  },
+  mounted () {
+    particlesJS('particles-js', liziconf);
+  },
   head: {
     script: [
       { src: '/particles.min.js' },
@@ -144,12 +184,71 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
-
-.home-banner
+.ivu-carousel-dots
+  margin-bottom 10px
+.ivu-carousel
+  .ivu-carousel-arrow.left
+    left 100px
+  .ivu-carousel-arrow.right
+    right 100px
+  .ivu-carousel-arrow
+    transform scale(1.5)
+    background ''
+    .ivu-icon
+      color white
+.loop-header
   wh(100%,500px)
-  background-color $dark-blue
   position relative
-  z-index 80
+  .loop-container
+    wh(100%,500px)
+    .demo-carousel
+      display flex
+      align-items center
+      wh(100%, 500px)
+      margin-top 80px
+    .banner-home
+      display flex
+      flex-direction column
+      div
+        span
+          color white
+      .banner-home-logo
+        .icon-logo
+          color white
+          font-size 160px
+      .banner-home-slogan
+        font-size 30px
+        margin 30px 0
+        font-weight bold
+        position relative
+        &:after
+          content ''
+          wh(100px, 2px)
+          background white
+          position absolute
+          bottom -20px
+          left 50%
+          transform translateX(-50%)
+      .banner-home-buttons
+        margin-top 40px
+        a
+          padding 10px 20px
+          border 1px solid white
+          margin 0 10px
+          border-radius 25px
+          cursor pointer
+          transition background .5s ease
+          color white
+          &:hover
+            background rgba(255, 255, 255, .8)
+            color $dark-blue
+#particles-js
+  background-color $dark-blue
+  position absolute
+  top 0
+  left 0
+  right 0
+  bottom 0
 .home-intro-3col
   padding 0px 20px 100px
   .col3-con
