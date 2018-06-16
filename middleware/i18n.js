@@ -14,13 +14,18 @@ export default function ({ isHMR, app, store, route, params, error, redirect }) 
   store.commit('SET_LANG', locale)
   app.i18n.locale = store.state.locale
 
-  /* 清空路径中的jd */
-  if(Number.isNaN(+(route.params.id))) {
+  /* 清空路径中的不需要的值 */
+  if(route.params.id && Number.isNaN(+(route.params.id))) {
+    debugger
     const path = route.fullPath;
-    if(path.includes('/jd')) {
+    const pathWhite = ['/news_detail', '/jd'];
+    const emptyPath = pathWhite.find(x => path.includes(x))
+    if(emptyPath) {
       redirect(
-        path.split('/jd').join('')
+        path.split(emptyPath).join('')
       )
+    } else {
+      console.log('不知道咋整了');
     }
 
   }
