@@ -76,10 +76,10 @@
       h3 {{ $t('home.roadmap.title') }}
       hr
       .time-line-con
-        .start-point
+        .start-point        
         .time-line-block(
           v-for="(item,index) in $t('home.roadmap.list') "
-        )
+        ) 
           .lf
             .even(v-if="index%2==0")
               .time {{item.time}}
@@ -139,6 +139,7 @@
       video(
         :src="current_video"
         controls="controls"
+        autoplay        
       )
 
 </template>
@@ -147,7 +148,6 @@
 <script>
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
-
 
 
 export default {
