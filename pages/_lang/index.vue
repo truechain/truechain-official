@@ -501,7 +501,7 @@ export default {
           height 100%
       .vid:hover
         .vid-mask
-          background-color rgba(0,0,0,0.6)
+          background-color rgba(0,0,0,0.3)
       .time
         color $font-light
         font-size 13px
