@@ -50,7 +50,7 @@ div
 
   .home-about
     .page-title {{ $t('home.about.title') }}
-    .con      
+    .con
       .title {{ $t('home.about.subhead') }}
       .descr
         p {{ $t('home.about.p1') }}
@@ -283,7 +283,7 @@ export default {
           wh(100px, 4px)
           background white
           position absolute
-          bottom -20px
+          bottom -38px
           left 50%
           transform translateX(-50%)
           border-radius 2px

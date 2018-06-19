@@ -94,7 +94,7 @@ export default {
     display flex
     flex-wrap wrap
     padding 40px 0
-    width 64%
+    width 70%
     margin 0 auto
     li
       text-align center
