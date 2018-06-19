@@ -141,10 +141,10 @@
         controls="controls"
         autoplay        
       )
-    d-player(
-      :options="dplayer_opts"
-      ref="dplayer"
-    )
+    // d-player(
+    //   :options="dplayer_opts"
+    //   ref="dplayer"
+    // )
 
 </template>
 
