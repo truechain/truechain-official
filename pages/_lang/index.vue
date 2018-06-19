@@ -150,10 +150,8 @@ div
     class-name="vertical-center-modal"
     @on-visible-change="changedmodal"
   )
-    d-player(
-      :options="dplayer_opts"
-      ref="dplayer"
-    )
+    <d-player :options="dplayer_opts" ref="dplayer"></d-player>
+
 </template>
 
 
