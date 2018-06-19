@@ -20,11 +20,16 @@ const apiArticleList = (options) => {
   return http._get('articleList', options)
 }
 
+const apiArticleDetail = (options) => {
+  return http._get('articleDetail', options)
+}
+
 
 export {
   apiNodeRank,
   apiNodeSum,
   apiNodeRankPc,
   apiNodeTypeSumNum,
-  apiArticleList
+  apiArticleList,
+  apiArticleDetail
 }

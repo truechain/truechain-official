@@ -29,7 +29,7 @@ function addZero (i) {
   return i < 10 ? `0${i}` : i
 }
 
-export const getTime = time => {
+export const getTime = (time, form) => {
   const date = new Date(time)
   const Y = date.getFullYear() + '-'
   const M = addZero(date.getMonth() + 1) + '-'
@@ -37,7 +37,11 @@ export const getTime = time => {
   const h = addZero(date.getHours()) + ':'
   const m = addZero(date.getMinutes()) + ':'
   const s = addZero(date.getSeconds())
-  return Y + M + D + h + m + s
+  if(form) {
+    return Y + M + D
+  } else {
+    return Y + M + D + h + m + s
+  }
 }
 
 export const contdown = time => {
