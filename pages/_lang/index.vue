@@ -492,6 +492,7 @@ export default {
         wh(100%,155px)
         background-color #eee
         border-radius 8px
+        overflow hidden
         position relative
         z-index 190
         .vid-mask
