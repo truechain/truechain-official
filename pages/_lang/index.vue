@@ -144,11 +144,13 @@ div
           .vid-mask
         .time {{ item.time }}
         .descr {{ item.title }}
+    // video(:src="current_video",style="width:600px;height:auto;",controls="controls")
   
   Modal(
     v-model="modalvid"
     class-name="vertical-center-modal"
     @on-visible-change="changedmodal"
+    :width="800"
   )
     <d-player :options="dplayer_opts" ref="dplayer"></d-player>
 
@@ -214,7 +216,8 @@ export default {
       this.$modal.hide('vidmod');
     },
     changedmodal(sts){
-      if(!sts){//false:模态框关闭 true:模态框打开  关闭播放模态框时暂停视频播放
+      if(!sts){
+        //false:模态框关闭 true:模态框打开  关闭播放模态框时暂停视频播放
         this.player.pause();
       }
     }
@@ -484,7 +487,7 @@ export default {
     .co
       width 300px
       .vid
-        wh(100%,168px)
+        wh(100%,155px)
         background-color #eee
         border-radius 8px
         position relative
