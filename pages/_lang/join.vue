@@ -106,7 +106,7 @@ export default {
   font-size 14px
 .join-body
   background rgb(242, 245, 250);
-  padding 0 300px
+  padding 0 280px
   ul
     display flex
     flex-wrap wrap
