@@ -20,8 +20,8 @@
               :key="index",
               :to="`news_detail/${item.id}`",
             )
-              .news-body-table-body-date {{ item.create_time }}
-              .news-body-table-body-title  {{item.title}}
+              .news-body-table-body-date {{ getTime(+item.create_time, true) }}
+              .news-body-table-body-title.ellipsis  {{item.title}}
       .news-body-page
         Page(
           :total="pageSum",
@@ -68,7 +68,7 @@ export default {
     },
     fetchData (obj = {}) {
       const { pageSum, theme, pageIndex = 1 } = obj
-      debugger
+      // debugger
       this.pageIndex = pageIndex - 1
        apiArticleList({
          theme
@@ -163,4 +163,6 @@ export default {
   position absolute
   right 270px
   bottom 70px
+.news-body-table-body-title
+  width 82%
 </style>
