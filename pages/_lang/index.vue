@@ -167,7 +167,7 @@ export default {
   asyncData ({ req }) {
     return {
       name: req ? 'server' : 'client',
-      current_video:'/oceans.mp4',
+      current_video:'/m1.mp4',
       vids:[
         '/m1.mp4',
         '/m2.mp4',
@@ -228,24 +228,14 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
-.v--modal-overlay
-  .v--modal
-    text-align: center
-    padding: 0px
-    width 800px !important
-    height auto !important
-    left: auto !important
-    margin 0px auto !important 
-    video 
-      width 100%
-      // wh(100%,100%)
+
 .vertical-center-modal
   display: flex
   align-items: center
   justify-content: center
   .ivu-modal
     top: 0px
-    width: 700px
+    width: 700px !important
 .ivu-modal-footer
 .ivu-modal-close
   display none
@@ -499,6 +489,18 @@ export default {
         wh(100%,168px)
         background-color #eee
         border-radius 8px
+        position relative
+        z-index 190
+        .vid-mask
+          position absolute
+          z-index 201
+          top 0px
+          left 0px
+          width 100%
+          height 100%
+      .vid:hover
+        .vid-mask
+          background-color rgba(0,0,0,0.6)
       .time
         color $font-light
         font-size 13px
