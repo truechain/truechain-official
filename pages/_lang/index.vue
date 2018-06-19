@@ -201,6 +201,10 @@ export default {
   .v--modal
     text-align: center
     padding: 0px
+    width 800px !important
+    height 400px !important
+    left: auto !important
+    margin 0px auto !important 
     video 
       wh(100%,100%)
 
