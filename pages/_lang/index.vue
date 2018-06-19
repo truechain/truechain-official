@@ -174,7 +174,7 @@ export default {
           url: '/m1.mp4',
           pic: '/m1.png'
         },
-        autoplay: false,
+        autoplay: true,
         contextmenu: [],
         player:null
       }
