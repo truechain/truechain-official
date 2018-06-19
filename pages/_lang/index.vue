@@ -49,9 +49,8 @@ div
           p.txt {{ item.detail }}
 
   .home-about
-    .con
-      h3 {{ $t('home.about.title') }}
-      hr
+    .page-title {{ $t('home.about.title') }}
+    .con      
       .title {{ $t('home.about.subhead') }}
       .descr
         p {{ $t('home.about.p1') }}
@@ -67,8 +66,7 @@ div
           img(src="~assets/images/h3.png")
 
   .home-roadmap
-    h3 {{ $t('home.roadmap.title') }}
-    hr
+    .page-title {{ $t('home.roadmap.title') }}
     .time-line-con
       .start-point
       .time-line-block(
@@ -105,8 +103,7 @@ div
 
 
   .home-partner
-    h3 {{ $t('partner.title') }}
-    hr
+    .page-title {{ $t('partner.title') }}
     .con
       .co(
           v-for="index in 5",
@@ -114,16 +111,14 @@ div
         img(:src="require(`@/assets/images/p-logo${index}.png`)")
 
   .home-investment
-    h3 {{ $t('home.partner') }}
-    hr
+    .page-title {{ $t('home.partner') }}
     .con
       .co(
           v-for="index in 4",
         )
           img(:src="require(`@/assets/images/partner${index}.png`)")
   .home-news
-    h3 {{ $t('home.news.title') }}
-    hr
+    .page-title {{ $t('home.news.title') }}
     .con
       .co(
         v-for="(item,i) in $t('home.news.list')"
@@ -352,7 +347,7 @@ export default {
   background-color $bg-pearlblue
   .con
     max-width 1024px
-    margin 0px auto
+    margin 46px auto 0px
   h3
     color $font-dark
     text-align center
@@ -421,7 +416,7 @@ export default {
     justify-content space-around
     align-items flex-start
     max-width 1024px
-    margin 0px auto
+    margin 46px auto 0px
     .co
       wh(142px,80px)
       img
@@ -452,7 +447,7 @@ export default {
     justify-content center
     align-items flex-start
     max-width 1024px
-    margin 0px auto
+    margin 46px auto 0px
     .co
       wh(160px,72px)
       border 1px solid #C5D6F6
@@ -486,7 +481,7 @@ export default {
     justify-content space-around
     align-items flex-start
     max-width 1024px
-    margin 0px auto
+    margin 46px auto 0px
     .co
       width 300px
       .vid
@@ -535,7 +530,7 @@ export default {
     border-radius 2px
   .time-line-con
     width 630px
-    margin 0px auto
+    margin 46px auto 0px
     .start-point
       dot(8px)
       background-color $font-dark

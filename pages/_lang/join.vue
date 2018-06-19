@@ -71,7 +71,7 @@ export default {
   display flex
   flex-direction column
   margin 0 auto
-  width 750px
+  width 1024px
   // background red
   padding-top 50px
   padding-bottom 25px
@@ -94,13 +94,13 @@ export default {
     display flex
     flex-wrap wrap
     padding 40px 0
-    width 58%
+    width 64%
     margin 0 auto
     li
       text-align center
       margin-bottom 20px
       .join-body-icon
-        wh(200px, 70px)
+        wh(230px, 70px)
         // background pink
         fc()
         .icon
