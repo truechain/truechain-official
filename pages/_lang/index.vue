@@ -188,8 +188,9 @@ export default {
   mounted () {
     this.player = this.$refs.dplayer.dp;
     if(particlesJS){
-      particlesJS('particles-js-node', liziconf);
+      particlesJS('particles-js', liziconf);
     }
+    
   },
   head: {
     script: [
