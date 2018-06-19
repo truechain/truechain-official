@@ -1,8 +1,7 @@
 <template lang="pug">
   .about-container
     .about-introduce
-      h2 {{ $t('team.technology.title') }}
-      hr
+      .page-title.photo-header {{ $t('team.technology.title') }}
       .about-introduce-list
         ul
           li(
@@ -14,8 +13,7 @@
               .about-introduce-list-name-hover {{ $t(`team.technology.list.${n - 1}.name`) }}
             .about-introduce-list-detail {{ $t(`team.technology.list.${n - 1}.intro`) }}
     .about-introduce
-      h2 {{ $t('team.business.title') }}
-      hr
+      .page-title.photo-header {{ $t('team.business.title') }}
       .about-introduce-list
         ul
           li(
@@ -27,8 +25,7 @@
               .about-introduce-list-name-hover {{ $t(`team.business.list.${n - 1}.name`) }}
             .about-introduce-list-detail {{ $t(`team.business.list.${n - 1}.intro`) }}
     .about-introduce
-      h2 {{ $t('team.consultant.title') }}
-      hr
+      .page-title {{ $t('team.consultant.title') }}
       .about-introduce-list
         ul
           li(
@@ -47,20 +44,8 @@
 
 .about-container
   padding 60px 20px
-  h2
-    color $font-dark
-    text-align center
-    font-size 26px
-    font-weight bold
-    line-height 30px
-    text-transform uppercase
-  hr
-    background-color $font-dark
-    border none
-    display block
-    margin 24px auto 54px
-    border-radius 3px
-    wh(60px, 2px)
+  .page-title.photo-header
+    margin-bottom 30px
 .about-introduce
   display flex
   justify-content center
@@ -79,15 +64,15 @@
       justify-content space-between
       // justify-content center
       flex-direction column
+      &:hover
+        .about-introduce-list-name-hover
+          opacity 1
       .about-introduce-list-avatar
         wh(100%, 200px)
         border-radius 50%
         overflow hidden
         position relative
         margin-bottom 10px
-        &:hover
-          .about-introduce-list-name-hover
-            opacity 1
       .about-introduce-list-name-hover
         position absolute
         top 0

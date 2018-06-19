@@ -396,15 +396,19 @@ export default {
   display flex
   div
     wh(240px, 60px)
-    background rgba(208,224,240,1)
+    background white
+    color $font-light
+    // background rgba(208,224,240,1)
     border-radius 10px 10px 0px 0px
     text-align center
     line-height 60px
-    color white
     font-weight bold
+    border 1px solid #DAE2EB
+    box-sizing border-box
 .node-body-table-btn-avtive
   color $font-dark !important
   background rgba(235,242,249,1) !important
+  border 0 !important
 .node-body-table-body,
 .node-body-table-header
   ul
