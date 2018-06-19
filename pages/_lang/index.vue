@@ -206,6 +206,7 @@ export default {
       this.player.switchVideo({
         url: this.current_video
       });
+      this.player.play();
     },
     hidemod () {
       this.$modal.hide('vidmod');
