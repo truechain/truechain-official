@@ -174,7 +174,7 @@ export default {
           url: '/m1.mp4',
           pic: '/m1.png'
         },
-        autoplay: false,
+        autoplay: true,
         contextmenu: [],
         player:null
       }
@@ -187,7 +187,9 @@ export default {
   },
   mounted () {
     this.player = this.$refs.dplayer.dp;
-    particlesJS('particles-js', liziconf);
+    if(particlesJS){
+      particlesJS('particles-js-node', liziconf);
+    }
   },
   head: {
     script: [
@@ -206,6 +208,7 @@ export default {
       this.player.switchVideo({
         url: this.current_video
       });
+      this.player.play();
     },
     hidemod () {
       this.$modal.hide('vidmod');

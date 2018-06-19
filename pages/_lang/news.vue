@@ -130,11 +130,11 @@ export default {
   display flex
   div
     wh(240px, 60px)
-    background rgba(208,224,240,1)
+    background rgba(255,255,255,1)
     border-radius 10px 10px 0px 0px
     text-align center
     line-height 60px
-    color white
+    color #456c99
     font-weight bold
 .news-body-table-btn-avtive
   color $font-dark !important

@@ -118,7 +118,9 @@ export default {
     ],
   },
   mounted () {
-    particlesJS('particles-js-node', liziconf);
+    if(particlesJS){
+      particlesJS('particles-js-node', liziconf);
+    }    
   },
   data () {
     return {
