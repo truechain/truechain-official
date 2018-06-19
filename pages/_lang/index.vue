@@ -76,10 +76,10 @@
       h3 {{ $t('home.roadmap.title') }}
       hr
       .time-line-con
-        .start-point
+        .start-point        
         .time-line-block(
           v-for="(item,index) in $t('home.roadmap.list') "
-        )
+        ) 
           .lf
             .even(v-if="index%2==0")
               .time {{item.time}}
@@ -130,15 +130,16 @@
       hr
       .con
         .co(
-          v-for="item in $t('home.news.list')"
+          v-for="(item,i) in $t('home.news.list')"
         )
-          .vid(@click="showmod")
+          .vid(@click='showmod(i)')
           .time {{ item.time }}
           .descr {{ item.title }}
     modal(name="vidmod")
       video(
-        src="/oceans.mp4"
+        :src="current_video"
         controls="controls"
+        autoplay        
       )
 
 </template>
@@ -149,19 +150,25 @@ import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
 
 
-
 export default {
   asyncData ({ req }) {
     return {
-      name: req ? 'server' : 'client'
+      name: req ? 'server' : 'client',
+      current_video:'/oceans.mp4',
+      vids:[
+        '/oceans.mp4',
+        '11',
+        '333'
+      ]
     }
   },
   data () {
     return {
-      value1: 0
+      value1: 0      
     }
   },
   mounted () {
+    
     particlesJS('particles-js', liziconf);    
   },
   head: {
@@ -175,8 +182,9 @@ export default {
     AppIos
   },
   methods: {
-    showmod () {
-      this.$modal.show('vidmod',{src:'/oceans.mp4'});
+    showmod (vind) {
+      this.current_video = this.vids[vind];
+      this.$modal.show('vidmod');
     },
     hidemod () {
       this.$modal.hide('vidmod');
@@ -189,13 +197,16 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
-
-.v--modal
-  text-align: center
-  wh(320px,260px)
-  padding: 0px
-  video 
-    wh(100%,100%)
+.v--modal-overlay
+  .v--modal
+    text-align: center
+    padding: 0px
+    width 800px !important
+    height 400px !important
+    left: auto !important
+    margin 0px auto !important 
+    video 
+      wh(100%,100%)
 
 .ivu-carousel-dots
   margin-bottom 10px
