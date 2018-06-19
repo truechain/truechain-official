@@ -1,151 +1,159 @@
 <template lang="pug">
-  div
-    // .home-introduce-banner
-    //   .home-introduce-banner-text
-    //     h1 {{ $t('banner.title') }}
-    //     p(
-    //       v-html="$t('banner.p1')"
-    //     )
-    //     p {{ $t('banner.p2') }}
-        app-ios
-        app-android
-    .loop-header
-      #particles-js
-      Carousel(
-        class="loop-container",
-        v-model="value1"
-        arrow="always"
+div
+  .loop-header
+    #particles-js
+    Carousel(
+      class="loop-container",
+      v-model="value1"
+      arrow="always"
+    )
+      CarouselItem
+        div(class="demo-carousel banner-home")
+          .banner-home-logo
+            i(class="icon font_family icon-logo")
+          .banner-home-slogan
+            span {{ $t('home.slogan') }}
+          .banner-home-buttons
+            a(href="https://github.com/truechain",target="_blank") GITHUB
+            a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") {{ $t('home.white') }}
+            a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") {{ $t('home.yellow') }}
+      CarouselItem
+        div(class="demo-carousel banner-home")
+          .banner-home-logo
+            i(class="icon font_family icon-logo")
+          .banner-home-slogan
+            span PUBLIC BLOCKCHAIN WITH HYBRID CONSENSUS
+          .banner-home-buttons
+            a(href="https://github.com/truechain",target="_blank") GITHUB
+            a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") WHITE PAPER
+            a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") YELLOW PAPER
+      CarouselItem
+        div(class="demo-carousel banner-home")
+          .banner-home-logo
+            i(class="icon font_family icon-logo")
+          .banner-home-slogan
+            span PUBLIC BLOCKCHAIN WITH HYBRID CONSENSUS
+          .banner-home-buttons
+            a(href="https://github.com/truechain",target="_blank") GITHUB
+            a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") WHITE PAPER
+            a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") YELLOW PAPER
+  
+  .home-intro-3col
+    .col3-con
+      .co(
+        v-for="(item, index) in $t('home.superiority')"
+        :key="index"
       )
-          CarouselItem
-            div(class="demo-carousel banner-home")
-              .banner-home-logo
-                i(class="icon font_family icon-logo")
-              .banner-home-slogan
-                span {{ $t('home.slogan') }}
-              .banner-home-buttons
-                a(href="https://github.com/truechain",target="_blank") GITHUB
-                a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") {{ $t('home.white') }}
-                a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") {{ $t('home.yellow') }}
-          CarouselItem
-            div(class="demo-carousel banner-home")
-              .banner-home-logo
-                i(class="icon font_family icon-logo")
-              .banner-home-slogan
-                span PUBLIC BLOCKCHAIN WITH HYBRID CONSENSUS
-              .banner-home-buttons
-                a(href="https://github.com/truechain",target="_blank") GITHUB
-                a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") WHITE PAPER
-                a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") YELLOW PAPER
-          CarouselItem
-            div(class="demo-carousel banner-home")
-              .banner-home-logo
-                i(class="icon font_family icon-logo")
-              .banner-home-slogan
-                span PUBLIC BLOCKCHAIN WITH HYBRID CONSENSUS
-              .banner-home-buttons
-                a(href="https://github.com/truechain",target="_blank") GITHUB
-                a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") WHITE PAPER
-                a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") YELLOW PAPER
-    .home-intro-3col
-      .col3-con
-        .co(
-          v-for="(item, index) in $t('home.superiority')"
-          :key="index"
-        )
-            i(:class="item.icon")
-            h4 {{ item.title }}
-            p.txt {{ item.detail }}
-    .home-about
-      .con
-        h3 {{ $t('home.about.title') }}
-        hr
-        .title {{ $t('home.about.subhead') }}
-        .descr
-          p {{ $t('home.about.p1') }}
-          p {{ $t('home.about.p2') }}
-          p {{ $t('home.about.p3') }}
-          p {{ $t('home.about.p4') }}
-        .col3
-          .co
-            img(src="~assets/images/h1.png")
-          .co
-            img(src="~assets/images/h2.png")
-          .co
-            img(src="~assets/images/h3.png")
-    .home-roadmap
-      h3 {{ $t('home.roadmap.title') }}
+          i(:class="item.icon")
+          h4 {{ item.title }}
+          p.txt {{ item.detail }}
+  
+  .home-about
+    .con
+      h3 {{ $t('home.about.title') }}
       hr
-      .time-line-con
-        .start-point        
-        .time-line-block(
-          v-for="(item,index) in $t('home.roadmap.list') "
-        ) 
-          .lf
-            .even(v-if="index%2==0")
-              .time {{item.time}}
-            .odd(v-if="index%2>0")
-              .link-bk
-              .link-dot-big
-              .link-dot-sm
-              .bk
-                .entry-txt(
-                  v-for="(txt, index) in item.events",
-                  :key="index"
-                )
-                  .dot
-                  .txt {{txt}}
-          .ri
-            .even(v-if="index%2==0")
-              .link-bk
-              .link-dot-big
-              .link-dot-sm
-              .bk
-                .entry-txt(
-                  v-for="(txt, index) in item.events",
-                  :key="index"
-                )
-                  .dot
-                  .txt {{txt}}
-            .odd(v-if="index%2>0")
-              .time {{item.time}}
+      .title {{ $t('home.about.subhead') }}
+      .descr
+        p {{ $t('home.about.p1') }}
+        p {{ $t('home.about.p2') }}
+        p {{ $t('home.about.p3') }}
+        p {{ $t('home.about.p4') }}
+      .col3
+        .co
+          img(src="~assets/images/h1.png")
+        .co
+          img(src="~assets/images/h2.png")
+        .co
+          img(src="~assets/images/h3.png")
+  
+  .home-roadmap
+    h3 {{ $t('home.roadmap.title') }}
+    hr
+    .time-line-con
+      .start-point        
+      .time-line-block(
+        v-for="(item,index) in $t('home.roadmap.list') "
+      ) 
+        .lf
+          .even(v-if="index%2==0")
+            .time {{item.time}}
+          .odd(v-if="index%2>0")
+            .link-bk
+            .link-dot-big
+            .link-dot-sm
+            .bk
+              .entry-txt(
+                v-for="(txt, index) in item.events",
+                :key="index"
+              )
+                .dot
+                .txt {{txt}}
+        .ri
+          .even(v-if="index%2==0")
+            .link-bk
+            .link-dot-big
+            .link-dot-sm
+            .bk
+              .entry-txt(
+                v-for="(txt, index) in item.events",
+                :key="index"
+              )
+                .dot
+                .txt {{txt}}
+          .odd(v-if="index%2>0")
+            .time {{item.time}}
 
-    .home-partner
-      h3 {{ $t('partner.title') }}
-      hr
-      .con
-        .co(
-           v-for="index in 5",
+  
+  .home-partner
+    h3 {{ $t('partner.title') }}
+    hr
+    .con
+      .co(
+          v-for="index in 5",
+      )
+        img(:src="require(`@/assets/images/p-logo${index}.png`)")
+  
+  .home-investment
+    h3 {{ $t('home.partner') }}
+    hr
+    .con
+      .co(
+          v-for="index in 4",
         )
-          img(:src="require(`@/assets/images/p-logo${index}.png`)")
-    .home-investment
-      h3 {{ $t('home.partner') }}
-      hr
-      .con
-        .co(
-            v-for="index in 4",
+          img(:src="require(`@/assets/images/partner${index}.png`)")
+  .home-news
+    h3 {{ $t('home.news.title') }}
+    hr
+    .con
+      .co(
+        v-for="(item,i) in $t('home.news.list')"
+      )
+        .vid(@click='showmod(i)')
+          img(
+            v-if="i==0"
+            src="/m1.png"
           )
-            img(:src="require(`@/assets/images/partner${index}.png`)")
-    .home-news
-      h3 {{ $t('home.news.title') }}
-      hr
-      .con
-        .co(
-          v-for="(item,i) in $t('home.news.list')"
-        )
-          .vid(@click='showmod(i)')
-          .time {{ item.time }}
-          .descr {{ item.title }}
-    modal(name="vidmod")      
-      video(
-        :src="current_video"
-        controls="controls"
-        autoplay        
-      )
-    // d-player(
-    //   :options="dplayer_opts"
-    //   ref="dplayer"
-    // )
-
+          img(
+            v-if="i==1"
+            src="/m2.png"
+          )
+          img(
+            v-if="i==2"
+            src="/m3.png"
+          )
+          .vid-mask
+        .time {{ item.time }}
+        .descr {{ item.title }}
+  
+  Modal(
+    v-model="modalvid"
+    class-name="vertical-center-modal"
+    @on-visible-change="changedmodal"
+  )
+    d-player(
+      :options="dplayer_opts"
+      ref="dplayer"
+    )
 </template>
 
 
@@ -161,22 +169,18 @@ export default {
       name: req ? 'server' : 'client',
       current_video:'/oceans.mp4',
       vids:[
-        '/oceans.mp4',
-        '11',
-        '333'
+        '/m1.mp4',
+        '/m2.mp4',
+        '/m3.mp4'
       ],
+      modalvid:false,
       dplayer_opts:{
         video: {
-          url: 'http://static.smartisanos.cn/common/video/t1-ui.mp4',
-          pic: 'http://static.smartisanos.cn/pr/img/video/video_03_cc87ce5bdb.jpg'
+          url: '/m1.mp4',
+          pic: '/m1.png'
         },
         autoplay: false,
-        contextmenu: [
-          {
-            text: 'GitHub',
-            link: 'https://github.com/MoePlayer/vue-dplayer'
-          }
-        ],
+        contextmenu: [],
         player:null
       }
     }
@@ -188,7 +192,6 @@ export default {
   },
   mounted () {
     this.player = this.$refs.dplayer.dp;
-    console.log(this.player);
     particlesJS('particles-js', liziconf);    
   },
   head: {
@@ -203,11 +206,19 @@ export default {
   },
   methods: {
     showmod (vind) {
+      this.modalvid = true;
       this.current_video = this.vids[vind];
-      this.$modal.show('vidmod');
+      this.player.switchVideo({
+        url: this.current_video
+      });
     },
     hidemod () {
       this.$modal.hide('vidmod');
+    },
+    changedmodal(sts){
+      if(!sts){//false:模态框关闭 true:模态框打开  关闭播放模态框时暂停视频播放
+        this.player.pause();
+      }
     }
   }
 }
@@ -228,6 +239,22 @@ export default {
     video 
       width 100%
       // wh(100%,100%)
+.vertical-center-modal
+  display: flex
+  align-items: center
+  justify-content: center
+  .ivu-modal
+    top: 0px
+    width: 700px
+.ivu-modal-footer
+.ivu-modal-close
+  display none
+.ivu-modal-body
+  padding 0px
+
+.dplayer-icon
+  .dplayer-icon-content
+    wh(100%,100%)
 
 .ivu-carousel-dots
   margin-bottom 10px
