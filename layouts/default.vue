@@ -59,6 +59,12 @@
             //     :to="item.path"
             //   ) {{ $t(`nav.${item.tag}`) }}
             li(
+                  @click="jumpTo('https://github.com/truechain')"
+                ) {{ $t(`nav.git`) }}
+            li(
+                @click="jumpTo('http://group.truechain.pro')"
+            ) {{ $t(`nav.blog`) }}
+            li(
               v-for="(item, index) in indexList",
               :key="index",
               @click="jumpTo(item.path)",
@@ -295,7 +301,7 @@ nav
   ul
     display flex
     li
-      margin 0 20px
+      margin 0 15px
       wh(30px, 30px)
       background white
       border-radius 50%

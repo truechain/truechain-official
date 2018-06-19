@@ -285,12 +285,13 @@ export default {
         position relative
         &:after
           content ''
-          wh(100px, 2px)
+          wh(100px, 4px)
           background white
           position absolute
           bottom -20px
           left 50%
           transform translateX(-50%)
+          border-radius 2px
       .banner-home-buttons
         margin-top 40px
         a
@@ -301,6 +302,9 @@ export default {
           cursor pointer
           transition background .5s ease
           color white
+          width 178px
+          text-align center
+          display inline-block
           &:hover
             background rgba(255, 255, 255, .8)
             color $dark-blue
@@ -353,7 +357,7 @@ export default {
     color $font-dark
     text-align center
     font-size 26px
-    font-weight bold
+    font-weight 800
     line-height 30px
     text-transform uppercase
   hr
@@ -450,7 +454,7 @@ export default {
     max-width 1024px
     margin 0px auto
     .co
-      wh(142px,80px)
+      wh(160px,72px)
       border 1px solid #C5D6F6
       border-radius 5px
       padding 3px
