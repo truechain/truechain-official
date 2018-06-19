@@ -37,7 +37,7 @@ div
             a(href="https://github.com/truechain",target="_blank") GITHUB
             a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") WHITE PAPER
             a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") YELLOW PAPER
-  
+
   .home-intro-3col
     .col3-con
       .co(
@@ -47,7 +47,7 @@ div
           i(:class="item.icon")
           h4 {{ item.title }}
           p.txt {{ item.detail }}
-  
+
   .home-about
     .con
       h3 {{ $t('home.about.title') }}
@@ -65,15 +65,15 @@ div
           img(src="~assets/images/h2.png")
         .co
           img(src="~assets/images/h3.png")
-  
+
   .home-roadmap
     h3 {{ $t('home.roadmap.title') }}
     hr
     .time-line-con
-      .start-point        
+      .start-point
       .time-line-block(
         v-for="(item,index) in $t('home.roadmap.list') "
-      ) 
+      )
         .lf
           .even(v-if="index%2==0")
             .time {{item.time}}
@@ -103,7 +103,7 @@ div
           .odd(v-if="index%2>0")
             .time {{item.time}}
 
-  
+
   .home-partner
     h3 {{ $t('partner.title') }}
     hr
@@ -112,7 +112,7 @@ div
           v-for="index in 5",
       )
         img(:src="require(`@/assets/images/p-logo${index}.png`)")
-  
+
   .home-investment
     h3 {{ $t('home.partner') }}
     hr
@@ -145,7 +145,7 @@ div
         .time {{ item.time }}
         .descr {{ item.title }}
     // video(:src="current_video",style="width:600px;height:auto;",controls="controls")
-  
+
   Modal(
     v-model="modalvid"
     class-name="vertical-center-modal"
@@ -187,12 +187,12 @@ export default {
   },
   data () {
     return {
-      value1: 0          
+      value1: 0
     }
   },
   mounted () {
     this.player = this.$refs.dplayer.dp;
-    particlesJS('particles-js', liziconf);    
+    particlesJS('particles-js', liziconf);
   },
   head: {
     script: [

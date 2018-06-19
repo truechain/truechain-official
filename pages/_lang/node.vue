@@ -59,7 +59,8 @@
             li {{time.s}}
             li {{$t('node.second')}}
     .node-body
-      .node-body-title {{$t('node.nodeRank')}}
+      // .node-body-title {{$t('node.nodeRank')}}
+      .page-title {{$t('node.nodeRank')}}
       .node-body-table
         .node-body-table-btn
           div(
@@ -388,21 +389,6 @@ export default {
   padding-top 238px
   padding-bottom 140px
   position relative
-.node-body-title
-  color $font-dark
-  font-size 26px
-  font-weight bold
-  position relative
-  padding-bottom 30px
-  &:after
-    content ''
-    width 60px
-    height 2px
-    background rgba(30,100,180,1)
-    position absolute
-    left 50%
-    bottom 0
-    transform translate(-50%, -50%)
 .node-body-table
   width 900px
 .node-body-table-btn

@@ -1,7 +1,7 @@
 <template lang="pug">
   .news-container
     .news-body
-      .news-body-title {{$t('newsRouter.title')}}
+      .page-title {{$t('newsRouter.title')}}
       .news-body-table
         .news-body-table-btn
           div(
@@ -108,21 +108,21 @@ export default {
   padding-top 50px
   padding-bottom 140px
   position relative
-.news-body-title
-  color $font-dark
-  font-size 26px
-  font-weight bold
-  position relative
-  padding-bottom 30px
-  &:after
-    content ''
-    width 60px
-    height 2px
-    background rgba(30,100,180,1)
-    position absolute
-    left 50%
-    bottom 0
-    transform translate(-50%, -50%)
+// .news-body-title
+//   color $font-dark
+//   font-size 26px
+//   font-weight bold
+//   position relative
+//   padding-bottom 30px
+//   &:after
+//     content ''
+//     width 60px
+//     height 2px
+//     background rgba(30,100,180,1)
+//     position absolute
+//     left 50%
+//     bottom 0
+    // transform translate(-50%, -50%)
 .news-body-table
   width 900px
 .news-body-table-btn

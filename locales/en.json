@@ -378,9 +378,9 @@
     "tableTickets": "Tickets",
     "team": "team",
     "person": "person",
-    "day": "day",
-    "hour": "hour",
-    "minute": "minute",
-    "second": "second"
+    "day": "Day",
+    "hour": "Hour",
+    "minute": "Minute",
+    "second": "Second"
   }
 }

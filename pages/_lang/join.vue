@@ -1,7 +1,7 @@
 <template lang="pug">
   .join-container
     .join-head
-      .join-head-title {{ $t('join.title') }}
+      .page-title {{ $t('join.title') }}
       .join-head-intro {{ $t('join.intro') }}
       .join-head-detail {{ $t('join.detail') }}
     .join-body
@@ -76,22 +76,6 @@ export default {
   padding-top 50px
   padding-bottom 25px
   position relative
-.join-head-title
-  color $font-dark
-  text-align center
-  font-size 26px
-  font-weight bold
-  position relative
-  padding-bottom 30px
-  &:after
-    content ''
-    width 60px
-    height 2px
-    background rgba(30,100,180,1)
-    position absolute
-    left 50%
-    bottom 0
-    transform translate(-50%, -50%)
 .join-head-intro
   // background red
   color $font-dark
