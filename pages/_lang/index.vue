@@ -111,7 +111,7 @@ div
         img(:src="require(`@/assets/images/p-logo${index}.png`)")
 
   .home-investment
-    .page-title {{ $t('home.partner') }}
+    .page-title {{ $t('home.institution') }}
     .con
       .co(
           v-for="index in 4",

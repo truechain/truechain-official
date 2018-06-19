@@ -135,6 +135,7 @@ export default {
     text-align center
     line-height 60px
     color #456c99
+    border 1px solid #dae2eb
     font-weight bold
 .news-body-table-btn-avtive
   color $font-dark !important
