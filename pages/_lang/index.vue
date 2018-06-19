@@ -135,12 +135,16 @@
           .vid(@click='showmod(i)')
           .time {{ item.time }}
           .descr {{ item.title }}
-    modal(name="vidmod")
+    modal(name="vidmod")      
       video(
         :src="current_video"
         controls="controls"
         autoplay        
       )
+    d-player(
+      :options="dplayer_opts"
+      ref="dplayer"
+    )
 
 </template>
 
@@ -148,6 +152,7 @@
 <script>
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
+
 
 
 export default {
@@ -159,16 +164,31 @@ export default {
         '/oceans.mp4',
         '11',
         '333'
-      ]
+      ],
+      dplayer_opts:{
+        video: {
+          url: 'http://static.smartisanos.cn/common/video/t1-ui.mp4',
+          pic: 'http://static.smartisanos.cn/pr/img/video/video_03_cc87ce5bdb.jpg'
+        },
+        autoplay: false,
+        contextmenu: [
+          {
+            text: 'GitHub',
+            link: 'https://github.com/MoePlayer/vue-dplayer'
+          }
+        ],
+        player:null
+      }
     }
   },
   data () {
     return {
-      value1: 0      
+      value1: 0          
     }
   },
   mounted () {
-    
+    this.player = this.$refs.dplayer.dp;
+    console.log(this.player);
     particlesJS('particles-js', liziconf);    
   },
   head: {
@@ -202,11 +222,12 @@ export default {
     text-align: center
     padding: 0px
     width 800px !important
-    height 400px !important
+    height auto !important
     left: auto !important
     margin 0px auto !important 
     video 
-      wh(100%,100%)
+      width 100%
+      // wh(100%,100%)
 
 .ivu-carousel-dots
   margin-bottom 10px
@@ -330,6 +351,7 @@ export default {
     font-size 20px
     line-height 36px
     margin-bottom 20px
+    font-weight 600
   .descr
     font-size 13px
     color $font-grey
@@ -556,7 +578,7 @@ export default {
         line-height 30px
       .bk
         background-color $font-dark
-        padding 20px 20px 20px 8px
+        padding 10px 20px 10px 8px
         color white
         border-radius 6px
         .entry-txt

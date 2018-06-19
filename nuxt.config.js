@@ -59,7 +59,8 @@ module.exports = {
   plugins: [
   '~/plugins/i18n.js',
   { src: '~plugins/iview', ssr: true },
-  '~/plugins/vue-js-modal'
+  { src:'~/plugins/vue-js-modal', ssr: false },
+  { src: '~plugins/vue-dplayer', ssr: false }
 ],
   generate: {
     routes: ['/']
