@@ -150,7 +150,7 @@ div
     v-model="modalvid"
     class-name="vertical-center-modal"
     @on-visible-change="changedmodal"
-    :width="800"
+    :width="700"
   )
     <d-player :options="dplayer_opts" ref="dplayer"></d-player>
 
@@ -236,7 +236,6 @@ export default {
   justify-content: center
   .ivu-modal
     top: 0px
-    width: 700px !important
 .ivu-modal-footer
 .ivu-modal-close
   display none
