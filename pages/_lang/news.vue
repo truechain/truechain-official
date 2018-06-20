@@ -139,7 +139,7 @@ export default {
     font-weight bold
 .news-body-table-btn-avtive
   color $font-dark !important
-  background rgba(235,242,249,1) !important
+  background $bg-pearlblue !important
 .news-body-table-body
   ul
     width 100%
@@ -159,7 +159,7 @@ export default {
     li:nth-child(odd)
       background #FBFCFE
     li:nth-child(even)
-      background #EBF2F9
+      background $bg-pearlblue
 .news-body-page
   position absolute
   right 270px

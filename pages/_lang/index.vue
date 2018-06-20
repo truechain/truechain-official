@@ -18,25 +18,27 @@ div
             a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") {{ $t('home.white') }}
             a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") {{ $t('home.yellow') }}
       CarouselItem
-        div(class="demo-carousel banner-home")
-          .banner-home-logo
-            i(class="icon font_family icon-logo")
-          .banner-home-slogan
-            span PUBLIC BLOCKCHAIN WITH HYBRID CONSENSUS
-          .banner-home-buttons
-            a(href="https://github.com/truechain",target="_blank") GITHUB
-            a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") WHITE PAPER
-            a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") YELLOW PAPER
+        .banner2
+          img.telpic(src="/home-banner2.png")
+          .ri
+            p.title The True light wallet APP
+            p.line1 Public beta version
+            p.line2 Scan QR code to download
+            .down
+              app-android
+              app-ios
       CarouselItem
-        div(class="demo-carousel banner-home")
-          .banner-home-logo
-            i(class="icon font_family icon-logo")
-          .banner-home-slogan
-            span PUBLIC BLOCKCHAIN WITH HYBRID CONSENSUS
-          .banner-home-buttons
-            a(href="https://github.com/truechain",target="_blank") GITHUB
-            a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") WHITE PAPER
-            a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") YELLOW PAPER
+        .banner3-bg
+          img(src="/home-banner3bg.png")
+        .banner3
+          .lf
+            i(class="icon font_family icon-logo1")
+            p.title 优先节点火热竞选中
+            p.line1 4000个优先标准节点 & 100个优先全节点
+            p.line2 3000w个True Token节点激励
+            a.node-detail(href="/node") 查看详情
+          .ri
+            img(src="/home-banner3.png")
 
   .home-intro-3col
     .col3-con
@@ -124,18 +126,19 @@ div
         v-for="(item,i) in $t('home.news.list')"
       )
         .vid(@click='showmod(i)')
-          img(
+          img.pic(
             v-if="i==0"
-            src="/m1.png"
+            src="/mx1.png"
           )
-          img(
+          img.pic(
             v-if="i==1"
-            src="/m2.png"
+            src="/mx2.png"
           )
-          img(
+          img.pic(
             v-if="i==2"
-            src="/m3.png"
+            src="/mx3.png"
           )
+          img.playicon(src="/playicon.png")
           .vid-mask
         .time {{ item.time }}
         .descr {{ item.title }}
@@ -247,6 +250,7 @@ export default {
 
 .ivu-carousel-dots
   margin-bottom 10px
+  z-index 230
 .ivu-carousel
   .ivu-carousel-arrow.left
     left 100px
@@ -260,6 +264,7 @@ export default {
 .loop-header
   wh(100%,500px)
   position relative
+  z-index 100
   .loop-container
     wh(100%,500px)
     .demo-carousel
@@ -307,6 +312,101 @@ export default {
           &:hover
             background rgba(255, 255, 255, .8)
             color $dark-blue
+    .banner2
+      display flex
+      flex-direction row
+      flex-wrap wrap
+      justify-content center
+      align-items flex-start
+      max-width 1024px
+      margin 0px auto
+      text-align center
+      color white
+      font-color white
+      overflow hidden
+      height 500px
+      padding-top 60px
+      .telpic
+        width 420px
+        height auto
+      .ri
+        padding 80px 0px 20px 30px
+        text-align left
+        .app-button-box
+          margin-top 35px
+        .app-button
+          span
+            margin-left 10px
+          svg 
+            width 25px
+        .app-button-qrcode
+          img
+            wh(100%,100%)
+          div
+            wh(100px,100px)
+            margin 0px auto
+      .title
+        font-size 36px
+        line-height 72px
+        color white
+      .line1
+      .line2
+        color white
+        font-size 16px
+        line-height 26px
+      .line1
+        margin-top 15px
+    .banner3-bg
+      position absolute 
+      z-index 205
+      max-height 500px
+      overflow hidden
+    .banner3
+      position relative
+      z-index 210
+      left 0px
+      right 0px
+      display flex
+      flex-direction row
+      flex-wrap wrap
+      justify-content center
+      align-items flex-start
+      max-width 1024px
+      margin 0px auto
+      text-align center
+      color white
+      font-color white
+      padding 100px 0px 0px
+      .lf
+        padding-right 100px
+        .icon-logo1
+          font-size 60px
+          color white
+        .title
+          color white
+          font-size 40px
+          line-height 42px
+          margin 25px
+        .line1
+        .line2
+          color white
+          font-size 16px
+          line-height 30px
+        a
+          display inline-block
+          border 1px solid white
+          border-radius 28px
+          padding 10px 25px
+          color white
+          font-size 14px
+          line-height 22px
+          width 150px
+          margin-top 30px
+      .ri
+        img 
+          width 280px
+          height auto
+
 #particles-js
   background-color $dark-blue
   position absolute
@@ -495,6 +595,16 @@ export default {
         overflow hidden
         position relative
         z-index 190
+        text-align center
+        .pic
+          wh(100%,100%)
+        .playicon
+          position relative
+          z-index 205
+          top -106px
+          left 0px
+          display inline-block
+          wh(60px,auto)
         .vid-mask
           position absolute
           z-index 201
@@ -502,9 +612,10 @@ export default {
           left 0px
           width 100%
           height 100%
+          background-color rgba(0,0,0,0.3)
       .vid:hover
         .vid-mask
-          background-color rgba(0,0,0,0.3)
+          background-color rgba(0,0,0,0.0)
       .time
         color $font-light
         font-size 13px

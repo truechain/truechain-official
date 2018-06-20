@@ -1,6 +1,8 @@
 <template lang="pug">
   .node-container
     #particles-js-node
+    .node-bg
+      img(src="/home-banner3bg.png")
     .node-header
       .node-header-title
         .node-header-title1 {{$t('node.title')}}
@@ -281,6 +283,16 @@ export default {
   wh(100%, 1027px)
   background-color $dark-blue
   position absolute
+  z-index 150
+  top 0
+  left 0
+  right 0
+  bottom 0
+.node-bg
+  wh(100%, 1027px)
+  background-color $dark-blue
+  position absolute
+  z-index 160
   top 0
   left 0
   right 0
@@ -302,6 +314,7 @@ export default {
   flex-direction column
   padding-top 100px
   position relative
+  z-index 180
 .node-header-title
   padding-bottom 40px
   div
@@ -409,7 +422,7 @@ export default {
     box-sizing border-box
 .node-body-table-btn-avtive
   color $font-dark !important
-  background rgba(235,242,249,1) !important
+  background $bg-pearlblue !important
   border 0 !important
 .node-body-table-body,
 .node-body-table-header
@@ -437,7 +450,7 @@ export default {
       div:nth-child(4)
         flex-grow 1
 .node-body-table-header
-  background #EBF2F9
+  background $bg-pearlblue
   div
     color $font-dark
 .node-body-table-body
@@ -469,7 +482,7 @@ export default {
     li:nth-child(odd)
       background #FBFCFE
     li:nth-child(even)
-      background #EBF2F9
+      background $bg-pearlblue
 .node-body-page
   position absolute
   right 270px
