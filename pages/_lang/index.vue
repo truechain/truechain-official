@@ -279,7 +279,7 @@ export default {
           font-size 160px
       .banner-home-slogan
         font-size 30px
-        margin 30px 0
+        margin 15px 0px 30px
         font-weight bold
         position relative
         &:after
@@ -292,7 +292,7 @@ export default {
           transform translateX(-50%)
           border-radius 2px
       .banner-home-buttons
-        margin-top 40px
+        margin-top 62px
         a
           padding 10px 20px
           border 1px solid white
@@ -539,7 +539,7 @@ export default {
     .start-point
       dot(8px)
       background-color $font-dark
-      margin 0px auto
+      margin 0px auto -2px
       position relative
       z-index 200
       left -1.2px
@@ -556,6 +556,7 @@ export default {
         box-sizing border-box
         font-size 14px
         txtwrap()
+        word-break: break-word;
         position relative
         z-index 200
       .lf
