@@ -257,7 +257,7 @@ nav
         position absolute
         right 0px
         top 11px
-        border-top solid 7px #fff
+        border-top solid 7px #a9adab
         border-left solid 5px transparent
         border-right solid 5px transparent
         wh(0, 0)

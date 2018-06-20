@@ -590,7 +590,7 @@ export default {
           wh(20px,2px)
           position absolute
           z-index 200
-          top 53px
+          top 54px
           left 0px
         .link-dot-big
           dot(18px)
@@ -615,6 +615,7 @@ export default {
         padding 10px 20px 10px 8px
         color white
         border-radius 6px
+        margin-top 10px
         .entry-txt
           display flex
           flex-direction row

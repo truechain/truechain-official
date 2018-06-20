@@ -74,43 +74,43 @@
       "title": "ROAD MAP",
       "list": [
         {
-          "time": "2018.1",
+          "time": "2018-01",
           "events": ["TrueChain’s white paper released "]
         },
         {
-          "time": "2018.3",
+          "time": "2018-03",
           "events": ["PBFT consortium blockchain launched "]
         },
         {
-          "time": "2018.4",
+          "time": "2018-04",
           "events": ["TrueChain tech yellow paper released ", "Hybrid consensus mechanism design completed ", "Stellar-the platform to deploy and manage the full life cycle of smart contracts released "]
         },
         {
-          "time": "2018.5",
+          "time": "2018-05",
           "events": ["TrueChain’s engineering roadmap released on github ", "TrueChain Light Wallet released ", "TrueChain’s election system for decentralized nodes released "]
         },
         {
-          "time": "2018.6",
+          "time": "2018-06",
           "events": ["Hybrid consensus framework code open source ", "Hybrid consensus incentives release", "Mainnet v0.1 internal test.1内测"]
         },
         {
-          "time": "2018.7",
+          "time": "2018-07",
           "events": ["fPOW basic framework complete and open source ", "American developers community establish "]
         },
         {
-          "time": "2018.8",
+          "time": "2018-08",
           "events": ["fPOW and TrueChain mainnet integrate ", "Hybrid consensus sharding mechanism "]
         },
         {
-          "time": "2018.9",
+          "time": "2018-09",
           "events": ["TrueChain mainnet launch （only open to priority nodes）"]
         },
         {
-          "time": "2018.12",
+          "time": "2018-12",
           "events": ["Hybrid consensus sharding launch"]
         },
         {
-          "time": "2019.3",
+          "time": "2019-03",
           "events": ["Mainnet open to all nodes"]
         }
       ]
