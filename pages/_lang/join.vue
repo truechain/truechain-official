@@ -15,6 +15,8 @@
           .join-body-icon
             span(:class="item.icon")
           .join-body-job {{item.job}}
+        li
+          .join-body-icon
     .join-footer
       div 简历投递邮箱: hr@truechain.pro
 </template>
@@ -80,6 +82,7 @@ export default {
   // background red
   color $font-dark
   margin-top 60px
+  margin-bottom 40px
   font-weight bold
   line-height 28px
   font-size 22px
@@ -93,12 +96,13 @@ export default {
   ul
     display flex
     flex-wrap wrap
-    padding 40px 0
-    width 70%
+    padding 80px 0px 20px
+    max-width 1024px
     margin 0 auto
+    justify-content space-around
     li
       text-align center
-      margin-bottom 20px
+      margin-bottom 60px
       .join-body-icon
         wh(230px, 70px)
         // background pink
@@ -115,7 +119,7 @@ export default {
 .join-footer
   text-align center
   div
-    padding 40px 0
+    padding 40px 0px 100px
     color $font-dark
     font-weight bold
     font-size 14px

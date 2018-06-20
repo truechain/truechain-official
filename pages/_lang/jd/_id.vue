@@ -1,7 +1,7 @@
 <template lang="pug">
   .jd-container
     .jd-head
-      .jd-head-title {{ $t('join.title') }}
+      .page-title {{ $t('join.title') }}
       .jd-head-subhead Go语言开发工程师
       .jd-head-detail
         div
@@ -158,8 +158,8 @@ export default {
   margin 0 auto
   width 750px
   // background red
-  padding-top 50px
-  padding-bottom 25px
+  padding-top 100px
+  padding-bottom 70px
   position relative
 .jd-head-title
   color $font-dark
@@ -180,7 +180,7 @@ export default {
 .jd-head-subhead
   // background red
   color $font-dark
-  margin-top 15px
+  margin-top 45px
   font-weight bold
   line-height 50px
   font-size 22px

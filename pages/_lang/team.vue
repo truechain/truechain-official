@@ -27,7 +27,7 @@
     .about-introduce
       .page-title {{ $t('team.consultant.title') }}
       .about-introduce-list
-        ul
+        ul.consult
           li(
             v-for="n in 5"
             :key="n"
@@ -43,9 +43,9 @@
 @import '~@/assets/stylus/mixin.styl'
 
 .about-container
-  padding 60px 20px
+  padding 100px 20px 40px
   .page-title.photo-header
-    margin-bottom 30px
+    margin-bottom 60px
 .about-introduce
   display flex
   justify-content center
@@ -53,14 +53,17 @@
 .about-introduce-list
   max-width 850px
   margin 0 auto
+  .consult
+    padding-top 30px
   ul
     display flex
     align-items baseline
     flex-wrap wrap
+    padding 0px
     li
       width 200px
       display flex
-      margin 0 40px 100px
+      margin 0 40px 60px
       justify-content space-between
       // justify-content center
       flex-direction column

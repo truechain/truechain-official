@@ -299,7 +299,8 @@ export default {
       .banner-home-buttons
         margin-top 62px
         a
-          padding 10px 20px
+          padding 11px 20px
+          line-height 20px
           border 1px solid white
           margin 0 10px
           border-radius 25px
@@ -334,11 +335,15 @@ export default {
         text-align left
         .app-button-box
           margin-top 35px
+          line-height 42px
         .app-button
+          line-height 42px
           span
             margin-left 10px
           svg 
             width 25px
+            height 42px
+            margin 0px
         .app-button-qrcode
           img
             wh(100%,100%)

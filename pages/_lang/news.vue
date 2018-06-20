@@ -105,9 +105,11 @@ export default {
   display flex
   flex-direction column
   align-items center
-  padding-top 50px
-  padding-bottom 140px
+  padding-top 100px
+  padding-bottom 170px
   position relative
+  width 900px
+  margin 0px auto
 // .news-body-title
 //   color $font-dark
 //   font-size 26px
@@ -126,7 +128,7 @@ export default {
 .news-body-table
   width 900px
 .news-body-table-btn
-  padding-top 50px
+  padding-top 60px
   display flex
   div
     wh(240px, 60px)
@@ -140,6 +142,8 @@ export default {
 .news-body-table-btn-avtive
   color $font-dark !important
   background $bg-pearlblue !important
+  border none !important
+    
 .news-body-table-body
   ul
     width 100%
@@ -162,8 +166,8 @@ export default {
       background $bg-pearlblue
 .news-body-page
   position absolute
-  right 270px
-  bottom 70px
+  right 0px
+  bottom 100px
 .news-body-table-body-title
   width 82%
 </style>

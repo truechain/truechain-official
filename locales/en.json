@@ -248,7 +248,7 @@
   },
   "team": {
     "technology": {
-      "title": "technology",
+      "title": "TECHNOLOGY",
       "list": [
         {
           "name": "Eric Zhang",
@@ -285,7 +285,7 @@
       ]
     },
     "business": {
-      "title": "business",
+      "title": "BUSINESS",
       "list": [
         {
           "name": "Xiaoyong Cheng",
@@ -310,7 +310,7 @@
       ]
     },
     "consultant": {
-      "title": "consultant",
+      "title": "CONSULTANT",
       "list": [
         {
           "name": "Xianhua Wei",

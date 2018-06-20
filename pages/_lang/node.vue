@@ -322,6 +322,7 @@ export default {
     color white
   .node-header-title1
       font-size 48px
+      font-weight 600
   .node-header-title2
       text-align center
       transform rotate(180deg) scale(1.8)
@@ -358,6 +359,7 @@ export default {
         line-height 40px
         &:nth-child(1)
           font-size 20px
+          width 160px
         &:nth-child(2)
           i
             color white
@@ -370,7 +372,7 @@ export default {
   position absolute
   // bottom -20px
   bottom -(238/2)px
-  box-shadow:0px 2px 5px #EEEFF3
+  box-shadow:0px 5px 5px rgba(11,23,73,0.15)
 .node-header-countdown-title
   color $font-dark
   font-size 26px
@@ -402,12 +404,14 @@ export default {
   flex-direction column
   align-items center
   padding-top 238px
-  padding-bottom 140px
+  padding-bottom 170px
   position relative
+  width 900px 
+  margin 0px auto
 .node-body-table
   width 900px
 .node-body-table-btn
-  padding-top 50px
+  padding-top 60px
   display flex
   div
     wh(240px, 60px)
@@ -439,6 +443,7 @@ export default {
         flex-grow 1
       div:nth-child(1)
         flex-grow .5
+        width 160px
       div:nth-child(2)
         // background red
         margin-left 30px
@@ -485,6 +490,6 @@ export default {
       background $bg-pearlblue
 .node-body-page
   position absolute
-  right 270px
-  bottom 70px
+  right 0px
+  bottom 100px
 </style>
