@@ -113,17 +113,6 @@ import { getTime, contdown } from '~/util/index.js'
 
 import { apiNodeRank, apiNodeSum, apiNodeRankPc, apiNodeTypeSumNum } from '@/api'
 export default {
-  head: {
-    script: [
-      { src: '/particles.min.js' },
-      { src: '/donglizi.js' }
-    ],
-  },
-  mounted () {
-    if(particlesJS){
-      particlesJS('particles-js-node', liziconf);
-    }
-  },
   data () {
     return {
       list: [],
