@@ -103,7 +103,7 @@ div
 
 
   .home-partner
-    .page-title {{ $t('partner.title') }}
+    .page-title {{ $t('home.partner') }}
     .con
       .co(
           v-for="index in 5",
