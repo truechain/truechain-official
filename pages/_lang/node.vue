@@ -120,7 +120,7 @@ export default {
   mounted () {
     if(particlesJS){
       particlesJS('particles-js-node', liziconf);
-    }    
+    }
   },
   data () {
     return {
@@ -380,7 +380,6 @@ export default {
       background-color $dark-blue
       border-radius 5px
       text-align center
-
       color white
       font-weight bold
       font-size 48px
@@ -407,6 +406,7 @@ export default {
     font-weight bold
     border 1px solid #DAE2EB
     box-sizing border-box
+    border-bottom 0
 .node-body-table-btn-avtive
   color $font-dark !important
   background rgba(235,242,249,1) !important
