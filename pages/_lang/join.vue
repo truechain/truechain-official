@@ -73,13 +73,13 @@ export default {
   margin 0 auto
   width 1024px
   // background red
-  padding-top 50px
-  padding-bottom 25px
+  padding-top 100px
+  padding-bottom 60px
   position relative
 .join-head-intro
   // background red
   color $font-dark
-  margin-top 15px
+  margin-top 60px
   font-weight bold
   line-height 28px
   font-size 22px

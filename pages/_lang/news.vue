@@ -135,14 +135,15 @@ export default {
     border-radius 10px 10px 0px 0px
     text-align center
     line-height 60px
+    color #456c99
     font-weight bold
     border 1px solid #DAE2EB
     box-sizing border-box
     border-bottom 0
 .news-body-table-btn-avtive
   color $font-dark !important
-  background rgba(235,242,249,1) !important
   border 0 !important
+  background $bg-pearlblue !important
 .news-body-table-body
   ul
     width 100%
@@ -162,7 +163,7 @@ export default {
     li:nth-child(odd)
       background #FBFCFE
     li:nth-child(even)
-      background #EBF2F9
+      background $bg-pearlblue
 .news-body-page
   position absolute
   right 270px
