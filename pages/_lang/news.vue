@@ -74,8 +74,7 @@ export default {
          theme
        }).then(res =>{
         const { data } = res.data;
-        console.log(data);
-        if (pageSum > 10) {
+        if (pageSum > 10){
           this.pageSum = res.data.data.length
         } else {
           this.list = res.data.data
@@ -132,15 +131,20 @@ export default {
   display flex
   div
     wh(240px, 60px)
-    background rgba(255,255,255,1)
+    background white
+    color $font-light
+    // background rgba(208,224,240,1)
     border-radius 10px 10px 0px 0px
     text-align center
     line-height 60px
     color #456c99
-    border 1px solid #dae2eb
     font-weight bold
+    border 1px solid #DAE2EB
+    box-sizing border-box
+    border-bottom 0
 .news-body-table-btn-avtive
   color $font-dark !important
+  border 0 !important
   background $bg-pearlblue !important
   border none !important
     

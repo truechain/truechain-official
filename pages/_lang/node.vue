@@ -113,17 +113,6 @@ import { getTime, contdown } from '~/util/index.js'
 
 import { apiNodeRank, apiNodeSum, apiNodeRankPc, apiNodeTypeSumNum } from '@/api'
 export default {
-  head: {
-    script: [
-      { src: '/particles.min.js' },
-      { src: '/donglizi.js' }
-    ],
-  },
-  mounted () {
-    if(particlesJS){
-      particlesJS('particles-js-node', liziconf);
-    }    
-  },
   data () {
     return {
       list: [],
@@ -395,7 +384,6 @@ export default {
       background-color $dark-blue
       border-radius 5px
       text-align center
-
       color white
       font-weight bold
       font-size 48px
@@ -424,6 +412,7 @@ export default {
     font-weight bold
     border 1px solid #DAE2EB
     box-sizing border-box
+    border-bottom 0
 .node-body-table-btn-avtive
   color $font-dark !important
   background $bg-pearlblue !important

@@ -2,6 +2,10 @@
 
 import axios from 'axios'
 import qs from 'qs'
+import {
+  articleUrl,
+  lightWalletUrl
+} from '../config/index.js'
 
 // axios.interceptors.request.use(config => {
 //   // loading
@@ -42,7 +46,7 @@ export default {
   post (url, data) {
     return axios({
       method: 'post',
-      baseURL: 'http://39.105.125.189:7001/',
+      baseURL: lightWalletUrl,
       url,
       data: qs.stringify(data),
       timeout: 10000,
@@ -63,7 +67,7 @@ export default {
   get (url, params = {}) {
     return axios({
       method: 'get',
-      baseURL: 'http://39.105.125.189:7001/',
+      baseURL: lightWalletUrl,
       url,
       params, // get 请求时带的参数
       timeout: 10000,
@@ -84,7 +88,7 @@ export default {
   _get (url, params = {}) {
     return axios({
       method: 'get',
-      baseURL: 'http://127.0.0.1:7001/',
+      baseURL: articleUrl,
       url,
       params,
       timeout: 10000,
