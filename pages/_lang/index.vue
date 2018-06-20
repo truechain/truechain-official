@@ -159,8 +159,6 @@ div
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
 
-
-
 export default {
   asyncData ({ req }) {
     return {
@@ -193,7 +191,7 @@ export default {
     if(particlesJS){
       particlesJS('particles-js', liziconf);
     }
-    
+
   },
   head: {
     script: [
@@ -337,7 +335,7 @@ export default {
         .app-button
           span
             margin-left 10px
-          svg 
+          svg
             width 25px
         .app-button-qrcode
           img
@@ -357,7 +355,7 @@ export default {
       .line1
         margin-top 15px
     .banner3-bg
-      position absolute 
+      position absolute
       z-index 205
       max-height 500px
       overflow hidden
@@ -403,7 +401,7 @@ export default {
           width 150px
           margin-top 30px
       .ri
-        img 
+        img
           width 280px
           height auto
 
