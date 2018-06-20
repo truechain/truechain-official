@@ -426,27 +426,27 @@ export default {
       width 100%
       display flex
       div
-        wh(0, 50px)
+        wh(0, 60px)
         text-align center
-        line-height 50px
+        line-height 60px
         flex-grow 1
       div:nth-child(1)
-        flex-grow .5
+        flex-grow 0.5
         width 160px
       div:nth-child(2)
-        // background red
-        margin-left 30px
         text-align left
         box-sizing border-box
-        flex-grow 1
+        flex-grow 0
+        width 240px
       div:nth-child(3)
         flex-grow 1
       div:nth-child(4)
         flex-grow 1
 .node-body-table-header
   background $bg-pearlblue
+  font-weight 800
   div
-    color $font-dark
+    color $font-dark    
 .node-body-table-body
   ul
     flex-wrap wrap

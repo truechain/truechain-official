@@ -153,9 +153,9 @@ export default {
     width 100%
     // flex-wrap wrap
     li
-      font-size 14px
+      font-size 16px
       width 100%
-      height 50px
+      height 60px
       display flex
       align-items center
       div
@@ -164,14 +164,16 @@ export default {
       .news-body-table-body-date
         color #456C99
         margin 0 30px 0 20px
+        font-size 14px
     li:nth-child(odd)
-      background #FBFCFE
+      background $bg-pearlblue      
     li:nth-child(even)
-      background $bg-pearlblue
+      background #FBFCFE
 .news-body-page
   position absolute
   right 0px
   bottom 100px
 .news-body-table-body-title
   width 82%
+  color $font-dark !important
 </style>

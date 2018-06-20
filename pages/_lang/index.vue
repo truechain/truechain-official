@@ -188,7 +188,7 @@ export default {
   },
   mounted () {
     this.player = this.$refs.dplayer.dp;
-    if(particlesJS){
+    if(window.particlesJS){
       particlesJS('particles-js', liziconf);
     }
 
@@ -607,7 +607,7 @@ export default {
           top -106px
           left 0px
           display inline-block
-          wh(60px,auto)
+          wh(50px,auto)
         .vid-mask
           position absolute
           z-index 201
