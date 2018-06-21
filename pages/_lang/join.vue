@@ -86,6 +86,7 @@ export default {
   font-weight bold
   line-height 28px
   font-size 22px
+  text-align center
 .join-head-detail
   margin-top 10px
   color #456C99
