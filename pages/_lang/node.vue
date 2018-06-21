@@ -255,11 +255,7 @@ export default {
         nodeType: x,
         pageSum: 1000
       })
-    },
-    onChangePageSize (x) {
-      console.log(x, '=======')
     }
-
   }
 }
 </script>
@@ -286,13 +282,7 @@ export default {
   left 0
   right 0
   bottom 0
-  /* 覆盖分页样式 */
-.ivu-page
-  .ivu-page-item-active
-    background $font-dark
-  .ivu-page-item
-    color $font-light
-    border 1px solid $font-light
+
 .node-header
   wh(100%, 1027px)
   color white
@@ -394,7 +384,7 @@ export default {
   padding-top 238px
   padding-bottom 170px
   position relative
-  width 900px 
+  width 900px
   margin 0px auto
 .node-body-table
   width 900px
@@ -446,7 +436,7 @@ export default {
   background $bg-pearlblue
   font-weight 800
   div
-    color $font-dark    
+    color $font-dark
 .node-body-table-body
   ul
     flex-wrap wrap
