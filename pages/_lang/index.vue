@@ -309,7 +309,7 @@ export default {
           text-align center
           display inline-block
           &:hover
-            background rgba(255, 255, 255, .8)
+            background white
             color $dark-blue
     .banner2
       display flex
@@ -380,6 +380,7 @@ export default {
       color white
       font-color white
       padding 100px 0px 0px
+      .node-detai
       .lf
         padding-right 100px
         .icon-logo1
