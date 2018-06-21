@@ -1,3 +1,4 @@
+@import '~@/assets/stylus/mixin.styl'
 html,
 body,
 div,
@@ -165,4 +166,14 @@ img {
   width: 0;
   height: 0;
   opacity: 0;
+}
+
+.ivu-page {
+  .ivu-page-item-active {
+      background $font-dark
+  }
+  .ivu-page-item {
+    color $font-light
+    border 1px solid $font-light
+  }
 }
