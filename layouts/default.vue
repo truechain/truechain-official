@@ -232,12 +232,12 @@ nav
       margin-left 10px
       font-size 14px
       cursor pointer
-      transition opacity .4s
+      transition color .4s
       line-height 20px
       padding 5px 15px
       position relative
       &:hover
-        opacity 1
+        color white
     .container-app-header-lang
       // padding 0 24px 0 14px
       // color #fff
