@@ -36,9 +36,9 @@
                 class="container-app-header-lang",
                 @click="toggleLanguage"
               ) {{ $t(`language`) }}
-                //- .container-app-header-lang-select
-                //-   div ENGLISH
-                //-   div 简体中文
+                // - .container-app-header-lang-select
+                // -   div ENGLISH
+                // -   div 简体中文
           span.container-app-header-button(@click.stop="toggleMenu")
             span
             span
