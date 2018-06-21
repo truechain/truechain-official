@@ -45,6 +45,17 @@
     "slogan": "High performance Infinite Nodes Hybrid Consensus Public Blockchain",
     "white": "WHITE PAPER",
     "yellow": "YELLOW PAPER",
+    "banner2":{
+      "title":"The True light wallet APP",
+      "line1":"Public beta version",
+      "line2":"Scan QR code to download"
+    },
+    "banner3":{
+      "title":"优先节点火热竞选中",
+      "line1":"4000个优先标准节点 & 100个优先全节点",
+      "line2":"3000w个True Token节点激励",
+      "btntext":"查看详情"
+    },
     "superiority": [
       {
         "icon": "icon font_family icon-te",

@@ -21,9 +21,9 @@ div
         .banner2
           img.telpic(src="/home-banner2.png")
           .ri
-            p.title The True light wallet APP
-            p.line1 Public beta version
-            p.line2 Scan QR code to download
+            p.title {{ $t('home.banner2.title') }}
+            p.line1 {{ $t('home.banner2.line1') }}
+            p.line2 {{ $t('home.banner2.line2') }}
             .down
               app-android
               app-ios
@@ -33,10 +33,10 @@ div
         .banner3
           .lf
             i(class="icon font_family icon-logo1")
-            p.title 优先节点火热竞选中
-            p.line1 4000个优先标准节点 & 100个优先全节点
-            p.line2 3000w个True Token节点激励
-            a.node-detail(href="/node") 查看详情
+            p.title {{ $t('home.banner3.title') }}
+            p.line1 {{ $t('home.banner3.line1') }}
+            p.line2 {{ $t('home.banner3.line2') }}
+            a.node-detail(href="/node") {{ $t('home.banner3.btntext') }}
           .ri
             img(src="/home-banner3.png")
 
@@ -406,6 +406,9 @@ export default {
           line-height 22px
           width 150px
           margin-top 30px
+        .node-detail:hover
+          background: rgba(255, 255, 255, .8);
+          color: $dark-blue
       .ri
         img
           width 280px
