@@ -1,3 +1,4 @@
+
 <template lang="pug">
   .news-container
     .news-body
@@ -5,11 +6,11 @@
       .news-body-table
         .news-body-table-btn
           div(
-            :class="{ 'news-body-table-btn-avtive': theme === 1 }",
+            :class="{ 'news-body-table-btn-avtive': nodeType === 1 }",
             @click="toggleNode(1)"
           ) {{$t('newsRouter.technical')}}
           div(
-            :class="{ 'news-body-table-btn-avtive': theme === 2 }",
+            :class="{ 'news-body-table-btn-avtive': nodeType === 2 }",
             @click="toggleNode(2)"
             ) {{$t('newsRouter.biz')}}
         .news-body-table-body
@@ -28,12 +29,13 @@
           :current="currentPage",
           @on-change="onChangePage"
         )
-
 </template>
 
 <script>
 
 import { getTime, contdown } from '~/util/index.js'
+// console.log(getTime);
+
 import { apiArticleList } from '@/api'
 export default {
   data () {
@@ -41,40 +43,35 @@ export default {
       list: [],
       sumNum: 0,
       pageSum: 0,
-      theme: 1,
+      nodeType: 1,
       pageIndex: 0,
       currentPage: 1,
       pageNumber: 10,
-      nodeStandardSum: 0,
-      nodeFullSum: 0
     }
   },
   async created () {
     this.fetchData()
-    // this.NodeSum()
+    this.onFetchSumPage()
   },
   methods: {
     getTime,
-    // async NodeSum () {
-    //   const { data: { data } } = await apiNodeSum()
-    //   this.sumNum = data[0].sumNum
-    // },
     toggleNode (x) {
+      this.nodeType = x
       this.pageIndex = 0
-      this.theme = x
+      this.onFetchSumPage(x)
       this.fetchData({
-        theme: x
+        nodeType: x
       })
     },
     fetchData (obj = {}) {
-      const { pageSum, theme, pageIndex = 1 } = obj
-      // debugger
+      const { pageSum, nodeType, pageIndex = 1 } = obj
       this.pageIndex = pageIndex - 1
-       apiArticleList({
-         theme
-       }).then(res =>{
-        const { data } = res.data;
-        if (pageSum > 10){
+      apiArticleList({
+        'theme': nodeType || 1,
+        'pageIndex': (pageIndex - 1) * this.pageNumber,
+        'pageNumber': pageSum || this.pageNumber
+      }).then(res => {
+        if (pageSum > 10) {
           this.pageSum = res.data.data.length
         } else {
           this.list = res.data.data
@@ -84,7 +81,13 @@ export default {
     onChangePage (x) {
       this.fetchData({
         pageIndex: x,
-        theme: this.theme
+        nodeType: this.nodeType
+      })
+    },
+    onFetchSumPage (x) {
+      this.fetchData({
+        nodeType: x,
+        pageSum: 50000
       })
     },
   }
@@ -93,13 +96,7 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
-  /* 覆盖分页样式 */
-.ivu-page
-  .ivu-page-item-active
-    background $font-dark
-  .ivu-page-item
-    color $font-light
-    border 1px solid $font-light
+
 .news-body
   display flex
   flex-direction column
@@ -109,21 +106,6 @@ export default {
   position relative
   width 900px
   margin 0px auto
-// .news-body-title
-//   color $font-dark
-//   font-size 26px
-//   font-weight bold
-//   position relative
-//   padding-bottom 30px
-//   &:after
-//     content ''
-//     width 60px
-//     height 2px
-//     background rgba(30,100,180,1)
-//     position absolute
-//     left 50%
-//     bottom 0
-    // transform translate(-50%, -50%)
 .news-body-table
   width 900px
 .news-body-table-btn
@@ -147,7 +129,7 @@ export default {
   border 0 !important
   background $bg-pearlblue !important
   border none !important
-    
+
 .news-body-table-body
   ul
     width 100%
@@ -166,7 +148,7 @@ export default {
         margin 0 30px 0 20px
         font-size 14px
     li:nth-child(odd)
-      background $bg-pearlblue      
+      background $bg-pearlblue
     li:nth-child(even)
       background #FBFCFE
 .news-body-page
@@ -177,3 +159,4 @@ export default {
   width 82%
   color $font-dark !important
 </style>
+
