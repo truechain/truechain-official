@@ -133,15 +133,15 @@
       "list":[
         {
           "time":"2018-05-24",
-          "title":"假装有英文 askdaskjdkjwhekasd"
+          "title":"TrueChain shows on CCTV6 to boost real economy"
         },
         {
           "time":"2018-05-23",
-          "title":"初链助推实体经济腾飞"
+          "title":"Blockchain technology will revolutionize many industries"
         },
         {
           "time":"2018-05-20",
-          "title":"3天锁仓200W+，是时候 ALL IN TRUE！！"
+          "title":"TrueChain contributed to blockchain whitepaper by MIIT"
         }
       ]
     }
@@ -357,11 +357,84 @@
   },
   "join": {
     "title": "JOIN US",
-    "intro": "We want best hackers, system programmers, crypto researchers, frontend and backend developers, designers to join our core tech & research team.",
-    "detail": "从进入的第一天起，你就开始了一边工作一边培训的过程。你将发现我们积累的专业经验对你收益良多。加入我们你将被列入公司的员工职业发展培训计划中。培训不仅是每位员工素质及潜能获得不断提高和发展的需要，也是促进公司获得更大成功的重要标志之一。我们可以很自信的说，通过这里的工作学习，你将有机会成为这个行业的专家。",
+    "intro": "Welcome the creative, passionate and sincere you to join us, Sail with us!",
+    "p1": "Once you join us, you will get training while working. You will benefit from the accumulated professional experience from us. Join us and you will be added in the TrueChain employee career development training program.",
+    "p2": "Training is not only a requirement for the continuous improvement and development of each employee's quality and potential, but also an important process to achieve the company’s success.",
     "button": "Now",
-    "p1": "You can also join our developer community.",
-    "p2": "Join Hackathons in which TrueChain is Involved."
+    "duty": "Responsibilities",
+    "require": "Requirements",
+    "workCity": "Work Location",
+    "requireNum": "Demand amount",
+    "salary": "Salary",
+    "email": "Resume delivery",
+    "position": [
+      {
+        "path": "jd/0",
+        "icon": "icon font_family icon-kaifa",
+        "job": "Go development engineer"
+      },
+      {
+        "path": "jd/1",
+        "icon": "icon font_family icon-suanfa",
+        "job": "Go algorithm engineer"
+      },
+      {
+        "path": "jd/2",
+        "icon": "icon font_family icon-touzi",
+        "job": "Investor Relations Director"
+      }
+    ],
+    "jobs": [
+      {
+        "title": "Go development engineer",
+        "duty": [
+          "Use Go language to design and develop the TrueChain product.",
+          "Participate in the software architecture design of the blockchain platform, study the key technologies of the blockchain infrastructure.",
+          "Responsible for development related to blockchain core layer (transaction, message, virtual machine EVM).",
+          "Work closely with product/design/front-end development/test team, deliver blockchain development tasks on time",
+          "Other works arranged by senior leadership"
+        ],
+        "require": [
+          "Have more than 2 years’ experience in project development;",
+          "Familiar with golang language programming, master multithreading;",
+          "Experienced in high load, high concurrent development design is preferred;",
+          "Have solid computer programming capabilities, especially skilled in the data structure, algorithms and code, software design ;",
+          "Familiar with the fabric or Ethereum development."
+        ]
+      },
+      {
+        "title": "Go algorithm engineer",
+        "duty": [
+          "Use Go language to design and develop the TrueChain product.",
+          "Participate in the software architecture design of the blockchain platform, study the key technologies of the blockchain infrastructure.",
+          "Responsible for development related to blockchain core layer (transaction, message, virtual machine EVM).",
+          "Work closely with product/design/front-end development/test team, deliver blockchain development tasks on time",
+          "Other works arranged by senior leadership"
+        ],
+        "require": [
+          "Have more than 2 years’ experience in project development;",
+          "Familiar with golang language programming, master multithreading;",
+          "Experienced in high load, high concurrent development design is preferred;",
+          "Have solid computer programming capabilities, especially skilled in the data structure, algorithms and code, software design ;",
+          "Familiar with the fabric or Ethereum development."
+        ]
+      },
+      {
+        "title": "Investor Relations Director",
+        "workCity": "China, United States",
+        "requireNum": "2 people (one based in the United States, fluent in English speaking and writing)",
+        "duty": [
+          "Responsible for the maintenance of institutional investor relations, directs and organizes meet-up for the mainstream Blockchain Foundation in China and the United States, and negotiate potential cooperation."
+        ],
+        "require": [
+          "Familiar with the blockchain investment field, can prepare relevant materials and investment proposals .",
+          "Financial related background, FA background or public listed company fundraising and private fund raising background, financial technology industry ",
+          "Flexibility and integrity, bold in both thinking and action, can quickly learn the basic knowledge and the market structure of the blockchain .",
+          "Professional personal image."
+        ],
+        "salary": "Basic salary about 30,000 plus commission (linked to the volume of fund-raising, holding time, fund visibility, etc.)"
+      }
+    ]
   },
   "docs": {
     "title": "technical docs",

@@ -140,7 +140,7 @@ div
           )
           img.playicon(src="/playicon.png")
           .vid-mask
-        .time {{ item.time }}
+        // .time {{ item.time }}
         .descr {{ item.title }}
     // video(:src="current_video",style="width:600px;height:auto;",controls="controls")
 
@@ -150,7 +150,7 @@ div
     @on-visible-change="changedmodal"
     :width="700"
   )
-    <d-player :options="dplayer_opts" ref="dplayer"></d-player>
+    d-player(:options="dplayer_opts" ref="dplayer")
 
 </template>
 
@@ -632,6 +632,7 @@ export default {
         font-size 16px
         color $font-dark
         line-height 20px
+        margin-top 15px
 
 
 

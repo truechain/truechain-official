@@ -100,8 +100,7 @@
         Page(
           :total="pageSum",
           :current="currentPage",
-          @on-change="onChangePage",
-          @on-page-size-change="onChangePageSize"
+          @on-change="onChangePage"
         )
 
 </template>
