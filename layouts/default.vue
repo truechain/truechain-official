@@ -32,13 +32,23 @@
               //   @mouseenter="openLangsSelector"
               //   @mouseleave="closeLangsSelector"
               // )
-              li(
-                class="container-app-header-lang",
-                @click="toggleLanguage"
-              ) {{ $t(`language`) }}
-                // - .container-app-header-lang-select
-                // -   div ENGLISH
-                // -   div 简体中文
+              // li(
+              //   class="container-app-header-lang",
+              //   @click="toggleLanguage"
+              // ) {{ $t(`language`) }}
+              //   // - .container-app-header-lang-select
+              //   // -   div ENGLISH
+              //   // -   div 简体中文
+              li.container-app-header-nav-langli
+                i-select(
+                  placeholder="EN"
+                  @on-change="changeLanguage"
+                )
+                  i-option(
+                    v-for="item in langs"
+                    :value="item.tag"
+                    :key="item.tag"
+                  ) {{item.name}}
           span.container-app-header-button(@click.stop="toggleMenu")
             span
             span
@@ -172,7 +182,6 @@ export default {
       this.langsSelectorIsOpen = false
     },
     toggleLanguage (index) {
-      // console.log(this.$store.state.locale);
       const { $route:{ fullPath }, $router, $store } = this;
       // $store.state.locale === 'sc'
       // if($store.state.locale === 'sc') return
@@ -180,6 +189,16 @@ export default {
         $router.push(`/sc${fullPath}`)
       } else {
         $router.push(fullPath.replace(/^\/[^\/]+/, ''))
+      }
+    },
+    changeLanguage (lang) {
+      // console.log(lang)
+      const { $route:{ fullPath }, $router, $store } = this;
+      if(lang === 'en') {
+        $router.push(fullPath.replace(/^\/[^\/]+/, ''))
+      } 
+      if(lang =="sc"){
+        $router.push(`/sc${fullPath}`)
       }
     }
   }
@@ -238,6 +257,40 @@ nav
       position relative
       &:hover
         color white
+    .container-app-header-nav-langli
+      padding-top 0px
+    .ivu-select
+    .ivu-select-selection
+      border none
+      box-shadow none
+      background-color $dark-blue
+      .ivu-select-placeholder
+      .ivu-select-selected-value
+        color #a9adbb
+        transition all .4s
+        background-color $dark-blue
+        font-size 14px
+      .ivu-icon
+        display inline-block
+    .ivu-select-selected-value:hover
+      color white
+    
+    .ivu-select-dropdown
+      width auto
+    .ivu-select-dropdown
+      width auto !important
+      background-color $dark-blue    
+    .ivu-select-item-focus:hover
+      background-color #f3f3f3
+    .ivu-select-item-selected
+      background-color $dark-blue
+    .ivu-select-item
+      width 100%
+      margin 0px
+      font-size 14px !important
+    .ivu-select-item:hover
+      color $dark-blue
+    
     .container-app-header-lang
       // padding 0 24px 0 14px
       // color #fff
