@@ -287,6 +287,7 @@ nav
     .ivu-select-item
       width 100%
       margin 0px
+      transition all .4s
       font-size 14px !important
     .ivu-select-item:hover
       color $dark-blue
