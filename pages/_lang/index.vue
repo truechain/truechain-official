@@ -405,6 +405,9 @@ export default {
           line-height 22px
           width 150px
           margin-top 30px
+        .node-detail:hover
+          background: rgba(255, 255, 255, .8);
+          color: $dark-blue
       .ri
         img
           width 280px
