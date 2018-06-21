@@ -337,7 +337,6 @@ export default {
         line-height 40px
         &:nth-child(1)
           font-size 20px
-          width 160px
         &:nth-child(2)
           i
             color white
