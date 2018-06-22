@@ -19,7 +19,7 @@ div
             a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") {{ $t('home.yellow') }}
       CarouselItem
         .banner2
-          img.telpic(src="/home-banner2.png")
+          img.telpic(src="~assets/images/home-banner2.png")
           .ri
             p.title {{ $t('home.banner2.title') }}
             p.line1 {{ $t('home.banner2.line1') }}
@@ -29,7 +29,7 @@ div
               app-ios
       CarouselItem
         .banner3-bg
-          img(src="/home-banner3bg.png")
+          img(src="~assets/images/home-banner3bg.jpg")
         .banner3
           .lf
             i(class="icon font_family icon-logo1")
@@ -38,7 +38,7 @@ div
             p.line2 {{ $t('home.banner3.line2') }}
             a.node-detail(href="/node") {{ $t('home.banner3.btntext') }}
           .ri
-            img(src="/home-banner3.png")
+            img(src="~assets/images/home-banner3.png")
 
   .home-intro-3col
     .col3-con
@@ -128,15 +128,15 @@ div
         .vid(@click='showmod(i)')
           img.pic(
             v-if="i==0"
-            src="/mx1.png"
+            src="~assets/images/mx1.jpg"
           )
           img.pic(
             v-if="i==1"
-            src="/mx2.png"
+            src="~assets/images/mx2.jpg"
           )
           img.pic(
             v-if="i==2"
-            src="/mx3.png"
+            src="~assets/images/mx3.jpg"
           )
           img.playicon(src="/playicon.png")
           .vid-mask
@@ -179,8 +179,7 @@ export default {
       modalvid:false,
       dplayer_opts:{
         video: {
-          url: '/m1.mp4',
-          pic: '/m1.png'
+          url: '/m1.mp4'
         },
         autoplay: true,
         contextmenu: [],
