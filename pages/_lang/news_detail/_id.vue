@@ -10,6 +10,13 @@
 import { apiArticleDetail } from '@/api'
 import { getTime } from '@/util'
 export default {
+  head: {
+    title: '团队',
+    meta: [
+      { hid: 'news-detail-keyword', name: 'keyword', content: 'truechain, true, 初链' },
+      { hid: 'news-detail-description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
+    ]
+  },
   data () {
     return {
       detail: {}

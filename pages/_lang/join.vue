@@ -21,6 +21,17 @@
     .join-footer
       div {{ $t('join.email')}}: hr@truechain.pro
 </template>
+<script>
+export default {
+  head: {
+    title: '团队',
+    meta: [
+      { hid: 'join-keyword', name: 'keyword', content: 'truechain, true, 初链' },
+      { hid: 'join-description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
+    ]
+  }
+}
+</script>
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'

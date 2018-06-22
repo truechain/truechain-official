@@ -31,6 +31,19 @@
                 ) {{ $t('docs.button') }}
 
 </template>
+
+<script>
+export default {
+   head: {
+    title: '团队',
+    meta: [
+      { hid: 'docs-keyword', name: 'keyword', content: 'truechain, true, 初链' },
+      { hid: 'docs-description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
+    ]
+  },
+}
+</script>
+
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
 

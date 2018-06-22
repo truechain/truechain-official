@@ -1,23 +1,20 @@
 module.exports = {
 
-
   /*
    ** Headers of the page
    */
   head: {
-    title: 'truechain-official-ssr',
-    meta: [{
+    title: 'True Chain',
+    meta: [
+      {
         charset: 'utf-8'
       },
       {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1'
       },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Nuxt.js project'
-      }
+      { hid: 'keyword', name: 'keyword', content: 'truechain, true, 初链' },
+      { hid: 'description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
     ],
     link: [
       {

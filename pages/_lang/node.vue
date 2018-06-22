@@ -112,6 +112,13 @@ import { getTime, contdown } from '~/util/index.js'
 
 import { apiNodeRank, apiNodeSum, apiNodeRankPc, apiNodeTypeSumNum } from '@/api'
 export default {
+   head: {
+    title: '节点',
+    meta: [
+      { hid: 'node-keyword', name: 'keyword', content: 'truechain, true, 初链' },
+      { hid: 'node-description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
+    ]
+  },
   data () {
     return {
       list: [],
