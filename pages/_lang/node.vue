@@ -2,7 +2,7 @@
   .node-container
     #particles-js-node
     .node-bg
-      img(src="/home-banner3bg.png")
+      img(src="~assets/images/home-banner3bg.png")
     .node-header
       .node-header-title
         .node-header-title1 {{$t('node.title')}}
