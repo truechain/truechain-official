@@ -626,6 +626,7 @@ export default {
           left 0px
           width 100%
           height 100%
+          transition all 0.5s
           background-color rgba(0,0,0,0.3)
       .vid:hover
         .vid-mask
