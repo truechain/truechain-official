@@ -196,7 +196,7 @@ export default {
       const { $route:{ fullPath }, $router, $store } = this;
       if(lang === 'en') {
         $router.push(fullPath.replace(/^\/[^\/]+/, ''))
-      } else if(lang =="sc"){
+      } else if(lang === 'sc'){
         $router.push(`/sc${fullPath}`)
       }
     }
