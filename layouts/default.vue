@@ -196,8 +196,7 @@ export default {
       const { $route:{ fullPath }, $router, $store } = this;
       if(lang === 'en') {
         $router.push(fullPath.replace(/^\/[^\/]+/, ''))
-      } 
-      if(lang =="sc"){
+      } else if(lang =="sc"){
         $router.push(`/sc${fullPath}`)
       }
     }
@@ -274,12 +273,12 @@ nav
         display inline-block
     .ivu-select-selected-value:hover
       color white
-    
+
     .ivu-select-dropdown
       width auto
     .ivu-select-dropdown
       width auto !important
-      background-color $dark-blue    
+      background-color $dark-blue
     .ivu-select-item-focus:hover
       background-color #f3f3f3
     .ivu-select-item-selected
@@ -291,7 +290,7 @@ nav
       font-size 14px !important
     .ivu-select-item:hover
       color $dark-blue
-    
+
     .container-app-header-lang
       // padding 0 24px 0 14px
       // color #fff
