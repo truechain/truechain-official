@@ -144,13 +144,15 @@ div
         .descr {{ item.title }}
     // video(:src="current_video",style="width:600px;height:auto;",controls="controls")
 
-  Modal(
-    v-model="modalvid"
-    class-name="vertical-center-modal"
-    @on-visible-change="changedmodal"
-    :width="700"
-  )
-    d-player(:options="dplayer_opts" ref="dplayer")
+  no-ssr(placeholder="Loading...")
+    Modal(
+      v-model="modalvid",
+      class-name="vertical-center-modal",
+      @on-visible-change="changedmodal",
+      :width="700"
+      )
+      no-ssr(placeholder="Loading...")
+        d-player(:options="dplayer_opts" ref="dplayer")
 
 </template>
 
@@ -170,18 +172,17 @@ export default {
   asyncData ({ req }) {
     return {
       name: req ? 'server' : 'client',
-      current_video:'/m1.mp4',
       vids:[
         '/m1.mp4',
         '/m2.mp4',
         '/m3.mp4'
       ],
-      modalvid:false,
+      modalvid: false,
       dplayer_opts:{
         video: {
-          url: '/m1.mp4'
+          url: '/m1.mp4',
         },
-        autoplay: true,
+        autoplay: false,
         contextmenu: [],
         player:null
       }
@@ -193,11 +194,12 @@ export default {
     }
   },
   mounted () {
-    this.player = this.$refs.dplayer.dp;
     if(window.particlesJS){
       particlesJS('particles-js', liziconf);
     }
-
+    setTimeout(() => {
+      this.player = this.$refs.dplayer.dp;
+    }, 100);
   },
   head: {
     script: [
@@ -212,14 +214,10 @@ export default {
   methods: {
     showmod (vind) {
       this.modalvid = true;
-      this.current_video = this.vids[vind];
       this.player.switchVideo({
-        url: this.current_video
+        url: this.vids[vind]
       });
       this.player.play();
-    },
-    hidemod () {
-      this.$modal.hide('vidmod');
     },
     changedmodal(sts){
       if(!sts){
@@ -251,7 +249,9 @@ export default {
 .dplayer-icon
   .dplayer-icon-content
     wh(100%,100%)
-
+.dplayer-ptime,
+.dplayer-dtime
+  color white
 .ivu-carousel-dots
   margin-bottom 10px
   z-index 230
