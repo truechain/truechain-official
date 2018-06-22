@@ -24,7 +24,17 @@
               div 暂无该 {{typeof item}}类型数据显示
       .jd-head-mail {{ $t('join.email')}}: hr@truechain.pro
 </template>
-
+<script>
+export default {
+   head: {
+    title: '团队',
+    meta: [
+      { hid: 'jd-keyword', name: 'keyword', content: 'truechain, true, 初链' },
+      { hid: 'jd-description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
+    ]
+  },
+}
+</script>
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
   /* 覆盖分页样式 */

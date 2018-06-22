@@ -160,6 +160,13 @@ import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
 
 export default {
+  head: {
+    title: '团队',
+    meta: [
+      { hid: 'index-keyword', name: 'keyword', content: 'truechain, true, 初链' },
+      { hid: 'index-description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
+    ]
+  },
   asyncData ({ req }) {
     return {
       name: req ? 'server' : 'client',

@@ -13,19 +13,8 @@ module.exports = {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1'
       },
-      {
-        hid: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！',
-        name: 'truechain, true, 初链',
-        content: 'True chain'
-      },
-      {
-        name: 'keyword',
-        content: 'truechain, true, 初链',
-      },
-      {
-        property: 'description',
-        name: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！'
-      },
+      { hid: 'keyword', name: 'keyword', content: 'truechain, true, 初链' },
+      { hid: 'description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
     ],
     link: [
       {

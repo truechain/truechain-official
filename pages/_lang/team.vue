@@ -37,7 +37,17 @@
             .about-introduce-list-name {{ $t(`team.consultant.list.${n - 1}.name`) }}
             .about-introduce-list-detail {{ $t(`team.consultant.list.${n - 1}.intro`) }}
 </template>
-
+<script>
+export default {
+   head: {
+    title: '团队',
+    meta: [
+      { hid: 'team-keyword', name: 'keyword', content: 'truechain, true, 初链' },
+      { hid: 'team-description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
+    ]
+  },
+}
+</script>
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'

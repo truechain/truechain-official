@@ -38,6 +38,13 @@ import { getTime, contdown } from '~/util/index.js'
 
 import { apiArticleList } from '@/api'
 export default {
+  head: {
+    title: '新闻',
+    meta: [
+      { hid: 'news-keyword', name: 'keyword', content: 'truechain, true, 初链' },
+      { hid: 'news-description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
+    ]
+  },
   data () {
     return {
       list: [],
