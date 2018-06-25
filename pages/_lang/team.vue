@@ -40,10 +40,10 @@
 <script>
 export default {
    head: {
-    title: '团队',
+    title: '初链团队-初链TrueChain',
     meta: [
-      { hid: 'team-keyword', name: 'keyword', content: 'truechain, true, 初链' },
-      { hid: 'team-description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
+      { hid: 'team-keyword', name: 'keyword', content: '初链团队成员，TRUE,区块链专家，数字货币专家，区块链人才' },
+      { hid: 'team-description', name: 'description', content: '初链的全球团队成员主要分为技术团队，商业团队及区块链专家顾问，分布在美国、印度和中国。' },
     ]
   },
 }

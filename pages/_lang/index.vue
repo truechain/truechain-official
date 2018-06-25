@@ -154,10 +154,10 @@ import AppIos from '~/components/app-ios.vue'
 
 export default {
   head: {
-    title: '团队',
+    title: '初链-高性能无穷节点混合共识公链',
     meta: [
-      { hid: 'index-keyword', name: 'keyword', content: 'truechain, true, 初链' },
-      { hid: 'index-description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
+      { hid: 'index-keyword', name: 'keyword', content: '初链，TRUE，初链币，TrueChain，张剑南，区块链，混合共识，程大永，林大亮' },
+      { hid: 'index-description', name: 'description', content: '初链（TrueChain）是全球最早的混合共识公链，设计和实现初链混合共识协议，将PBFT和POW共识结合在一起。初链解决了区块链领域最重要的问题之一: 去中心化和性能的矛盾。' },
     ]
   },
   asyncData ({ req }) {
@@ -169,7 +169,7 @@ export default {
         '/m3.mp4'
       ],
       modalvid: false,
-      dplayer_opts:{
+      dplayer_opts: {
         video: {
           url: '/m1.mp4',
         },

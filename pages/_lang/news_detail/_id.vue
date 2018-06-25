@@ -11,10 +11,10 @@ import { apiArticleDetail } from '@/api'
 import { getTime } from '@/util'
 export default {
   head: {
-    title: '团队',
+    title: '初链新闻-初链最新动态-区块链快讯-初链',
     meta: [
-      { hid: 'news-detail-keyword', name: 'keyword', content: 'truechain, true, 初链' },
-      { hid: 'news-detail-description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
+      { hid: 'news-detail-keyword', name: 'keyword', content: '初链快讯，TRUE,区块链快讯，数字货币快讯' },
+      { hid: 'news-detail-description', name: 'description', content: '初链新闻版块提供初链最新动态消息，区块链快讯等区块链领域的实时资讯。' },
     ]
   },
   data () {

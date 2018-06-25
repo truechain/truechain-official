@@ -24,10 +24,10 @@
 <script>
 export default {
   head: {
-    title: '团队',
+    title: '初链-招聘官网',
     meta: [
-      { hid: 'join-keyword', name: 'keyword', content: 'truechain, true, 初链' },
-      { hid: 'join-description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
+      { hid: 'join-keyword', name: 'keyword', content: '初链，TRUE，招聘官网，区块链，区块链人才，数字货币' },
+      { hid: 'join-description', name: 'description', content: '初链招聘期待更多区块链人才加入我们。' },
     ]
   }
 }
