@@ -127,16 +127,7 @@ div
       )
         .vid(@click='showmod(i)')
           img.pic(
-            v-if="i==0"
-            src="~assets/images/mx1.jpg"
-          )
-          img.pic(
-            v-if="i==1"
-            src="~assets/images/mx2.jpg"
-          )
-          img.pic(
-            v-if="i==2"
-            src="~assets/images/mx3.jpg"
+            :src="require(`@/assets/images/mx${i+1}.jpg`)"
           )
           img.playicon(src="/playicon.png")
           .vid-mask
