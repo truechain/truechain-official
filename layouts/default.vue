@@ -112,8 +112,8 @@ const indexList = [
   { path: 'node', tag: 'node' }
 ]
 const langs = [
-  { name: '简体中文', tag: 'en' },
-  { name: 'EN', tag: 'sc' }
+  { name: 'EN', tag: 'en' },
+  { name: '简体中文', tag: 'sc' }
 ]
 const linksList = [
   {
