@@ -59,6 +59,8 @@ div
         p {{ $t('home.about.p2') }}
         p {{ $t('home.about.p3') }}
         p {{ $t('home.about.p4') }}
+        p {{ $t('home.about.p5') }}
+        p {{ $t('home.about.p6') }}
       .col3
         .co
           img(src="~assets/images/h1.png")
