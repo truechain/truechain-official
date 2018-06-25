@@ -3,7 +3,7 @@
     .container-app(@click="closeMenu")
       nav
         .container-app-header
-          div(@click="$router.push('/')")
+          div(@click="goHome")
             .container-app-header-logo
               i(class="icon font_family icon-logo2")
               // img(src="~@/assets/images/logo_top.png")
@@ -151,6 +151,10 @@ export default {
     }
   },
   methods: {
+    goHome () {
+      const { lang } = this.$route.params
+      this.$router.push(`/${lang ? lang + '/' : ''}`)
+    },
     setErweima () {
       this.isWechat = !this.isWechat
     },
@@ -181,23 +185,20 @@ export default {
     closeLangsSelector () {
       this.langsSelectorIsOpen = false
     },
-    toggleLanguage (index) {
+   /*  toggleLanguage (index) {
       const { $route:{ fullPath }, $router, $store } = this;
-      // $store.state.locale === 'sc'
-      // if($store.state.locale === 'sc') return
       if($store.state.locale === 'en') {
         $router.push(`/sc${fullPath}`)
       } else {
         $router.push(fullPath.replace(/^\/[^\/]+/, ''))
       }
-    },
+    }, */
     changeLanguage (lang) {
-      // console.log(lang)
       const { $route:{ fullPath }, $router, $store } = this;
       if(lang === 'en') {
         $router.push(fullPath.replace(/^\/[^\/]+/, ''))
-      } else if(lang === 'sc'){
-        $router.push(`/sc${fullPath}`)
+      } else {
+        $router.push(`/${ lang + fullPath}`)
       }
     }
   }
@@ -234,6 +235,7 @@ nav
   // wh(118px, 30px)
   margin-top 8px
   float left
+  cursor pointer
   .icon-logo2
     color white
     // font-size 100px
