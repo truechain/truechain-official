@@ -11,11 +11,13 @@ export default ({ app, store }) => {
     fallbackLocale: 'en',
     messages: {
       'en': require('~/locales/en.json'),
-      'sc': require('~/locales/sc.json')
+      'sc': require('~/locales/sc.json'),
+      'ko': require('~/locales/ko.json'),
     }
   })
 
   app.i18n.path = (link) => {
+
     if (app.i18n.locale === app.i18n.fallbackLocale) {
       return `/${link}`
     }
