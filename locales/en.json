@@ -15,10 +15,10 @@
       "line2":"Scan QR code to download"
     },
     "banner3":{
-      "title":"Priority node campaign",
-      "line1":"4000 Priority standard node & 100 Priority master node",
-      "line2":"3000w True Token Node Incentives",
-      "btntext":"View Details"
+      "title":"Priority Nodes Election",
+      "line1":"4000 Standard Nodes&100 Master Nodes",
+      "line2":"3000w TRUE as rewards",
+      "btntext":"See details"
     },
     "superiority": [
       {
@@ -28,35 +28,35 @@
       },
       {
         "icon": "icon font_family icon-te1",
-        "title": "Smart Contracts with Business Logics",
+        "title": "Smart Contracts with Business Logistics",
         "detail":"TrueChain's smart contract platform is providing an abstraction layer for commercial applications, making it easy and fast for developers to access blockchain technology. Application builders can create their own tokens, define workflows, and test/verify their contracts based on a unified environment."
       },
       {
         "icon": "icon font_family icon-te2",
         "title": "Usable Developing Toolkit",
-        "detail":"TrueChain builds toolkit for developers and operations to access, monitor, and manage applications. With TrueChain BaaS, Smart Contract Manager, TrueChain Dapp Store, Contract Browser and Easy DApp framework, it’s easy to use TrueChain as a blockchain platform."
+        "detail":"TrueChain builds toolkit for developers and operations to access, monitor, and manage applications. With TrueChain BaaS, Smart Contract Manager, TrueChain DApp Store, Contract Browser and Easy DApp framework, it’s easy to use TrueChain as a blockchain platform."
       }
     ],
     "about": {
       "title": "ABOUT",
-      "subhead": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW. ",
-      "p1": "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus combining PBFT and PoW to solve the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency. TrueChain takes advantage of PBFT which is fast to reach consensus, to provide the high performance needed by value transmission and commercial activities of decentralized applications. Meanwhile, TrueChain uses PoW nodes as validators, and leave the election and oversight of PBFT to the hands of POW to ensure the whole chain to be decentralized and therefore secure. ",
-      "p2": "TrueChain adopts sharding to raise the transaction processing speed, to realize scalability without affecting the safety of hybrid consensus. TrueChain integrates fruitchain technology into PoW protocol to allow mobile users to participate in mining, and re-assure complete decentralization. ",
-      "p3": "True Chain also creates Easy DApp, the easy-to-use developing framework for decentralized applications. Developers can take advantage of Easy DApp and use standard API, with the facilitation of x86 virtual machine, to  develop and deploy decentralized applications easily and quickly. ",
-      "p4": "TrueChain’s complete matrix of products allows users and institutions to interact with the chain conveniently. Included in the product matrix are Stellar -- the toolkit for the DApp developers to create smart contracts and manage the life cycle of the contracts; DApp Store-- the store for decentralized applications on True Chain; TrueScan explorer; True Light Wallet, etc. ",
+      "subhead": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW.",
+      "p1": "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus combining PBFT and PoW to solve the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency. TrueChain takes advantage of PBFT which is fast to reach consensus, to provide the high performance needed by value transmission and commercial activities of decentralized applications. Meanwhile, TrueChain uses PoW nodes as validators, and leave the election and oversight of PBFT to the hands of PoW to ensure the whole chain to be decentralized and therefore secure.",
+      "p2": "TrueChain adopts sharding to raise the transaction processing speed, to realize scalability without affecting the safety of hybrid consensus. TrueChain integrates fruitchain technology into PoW protocol to allow regular users to participate in mining more fairly, and re-assure complete decentralization.",
+      "p3": "True Chain also creates Easy DApp, the easy-to-use developing framework for decentralized applications. Developers can take advantage of Easy DApp and use standard API, with the facilitation of x86 virtual machine, to develop and deploy decentralized applications easily and quickly.",
+      "p4": "TrueChain’s complete matrix of products allows users and institutions to interact with the chain conveniently. Included in the product matrix are Stellar -- the toolkit for the DApp developers to create smart contracts and manage the life cycle of the contracts; DApp Store-- the store for decentralized applications on True Chain; TrueScan explorer; True Light Wallet, etc.",
       "p5": "The leading research and engineering team members of True Chain come from the U.S., India and China.",
-      "p6": "True Chain is a committee member of China’s National Cloud Industry Strategic Innovation Alliance, a member of the National Chain-Web Innovation Center of China; and is also one of the few block"
+      "p6": "True Chain is a committee member of China’s National Cloud Industry Strategic Innovation Alliance, a member of the National Chain-Web Innovation Center of China; and is also one of the few block chain projects that have been reported by China’s authoritative media - CCTV, and also participated in the research work of the white paper released by the Ministry of Industry and Information Technology of the Chinese government. "
     },
     "roadmap": {
       "title": "ROAD MAP",
       "list": [
         {
           "time": "2018-01",
-          "events": ["TrueChain’s white paper released "]
+          "events": ["TrueChain’s white paper released"]
         },
         {
           "time": "2018-03",
-          "events": ["PBFT consortium blockchain launched "]
+          "events": ["PBFT consortium blockchain launched"]
         },
         {
           "time": "2018-04",
@@ -68,7 +68,7 @@
         },
         {
           "time": "2018-06",
-          "events": ["Hybrid consensus framework code open source ", "Hybrid consensus incentives release", "Mainnet v0.01 internal test.1内测"]
+          "events": ["Hybrid consensus framework code open source ", "Hybrid consensus incentives release", "Mainnet v0.1 internal test"]
         },
         {
           "time": "2018-07",
@@ -112,45 +112,6 @@
       ]
     }
   },
-  "roadmap": "road map",
-  "roadmapcon":[
-    {
-      "time":"2018.1",
-      "con":[
-        "TrueChain’s white paper released"
-      ]
-    },
-    {
-      "time":"2018.3",
-      "con":[
-        "PBFT consortium blockchain launched"
-      ]
-    },
-    {
-      "time":"2018.4",
-      "con":[
-        "TrueChain tech yellow paper released",
-        "Hybrid consensus mechanism design completed",
-        "Stellar-the platform to deploy and manage the full life cycle of smart contracts released"
-      ]
-    },
-    {
-      "time":"2018.5",
-      "con":[
-        "TrueChain’s engineering roadmap released on github",
-        "TrueChain Light Wallet released",
-        "TrueChain’s election system for decentralized nodes released"
-      ]
-    },
-    {
-      "time":"2018.6",
-      "con":[
-        "Hybrid consensus framework code open source",
-        "Hybrid consensus incentives release",
-        "Mainnet v0.1 internal test"
-      ]
-    }
-  ],
   "name": "TrueChain",
   "copyright": "(truechain) Official website All rights reserved",
   "nav": {
@@ -202,11 +163,11 @@
       "list": [
         {
           "name": "Eric Zhang",
-          "intro": "The co-founder and CEO of TrueChain. Eric Zhang graduated from Oxford University with a master’s degree in computer science. He used to work at CERN-the European Organization for Nuclear Research focusing on decentralized computation. He’s also the founder of Dorahacks which is now the largest Hacker community with great reach. He’s one of the most influential organizer of Hackathon among the young generation dedicated to use technology to solve problems in the real business world. "
+          "intro": "The co-founder and CEO of TrueChain. Eric Zhang graduated from Oxford University with a master’s degree in computer science. He used to work at CERN-the European Organization for Nuclear Research focusing on decentralized computation. He’s also the founder of Dorahacks which is now the largest Hacker community with great reach. He’s one of the most influential organizer of Hackathon among the young generation dedicated to use technology to solve problems in the real business world."
         },
         {
           "name": "Archit Sharma",
-          "intro": "TrueChain’s tech lead responsible for TrueChain’s engineering and engineering team management. Archit Sharma is an expert at distributed system, operation systems and performance engineering. Archit has worked in Red Hat and CERN, engaged in large-scale cloud service and distributed system design and development. Archit is a contributor of several important open source projects, as well as several Docker Hackathon champions."
+          "intro": "TrueChain’s tech lead responsible for TrueChain’s engineering and engineering team management. Archit Sharma is an expert at distributed system, operation systems and performance engineering. Archit has worked in Red Hat and CERN, engaged in large-scale cloud service and distributed system design and development. Archit is a contributor of several important open source projects, as well as several Hackathon champions."
         },
         {
           "name": "Home Chen",
@@ -225,12 +186,8 @@
           "intro": "Got his bachelor's and master's degree in Tsinghua University. He has over 10 years’ experience in development and system architecture. He is an expert at cryptography and building algorithms. He is responsible for the research and development of hybrid consensus and POW of TrueChain."
         },
         {
-          "name": "Rabbi",
-          "intro": "Golang development engineer, is sophisticated in c/c++ development, familiar with Bitcoin, Ethereum and BitShares. He did in-depth research on BitShares and DPOS consensus, participated in the development of multiple public blockchain projects."
-        },
-        {
           "name": "Seay (Wizard)",
-          "intro": "The security consultant of TrueChain, the author of “Code Audit: Enterprise Edition Web Code Security Architecture”, Seay source code security audit system author, and the blogger of well-known security blog “cnseay.com”. He once served at Alibaba security, and was the leader of Ali attack and defense laboratory, Sobug technology partner. Seay has experiences of more than ten years in security attack and defense and served for several well-known enterprises."
+          "intro": "The security consultant of TrueChain, the author of “Code Audit: Enterprise Edition Web Code Security Architecture”, Seay source code security audit system author, and the blogger of well-known security blog “cnseay.com”. He once served at Alibaba security, and was the leader of Ali attack and defense laboratory, Sobug technology partner. Seay has experience of more than ten years in security attack and defense and served for several well-known enterprises."
         }
       ]
     },
@@ -247,7 +204,7 @@
         },
         {
           "name": "Larry Lin",
-          "intro": "The co-founder of TrueChain, chief development officer, the expert of Internet marketing and community operation, has been responsible for the operation of ‘Baidu encyclopedia’, which is the largest co-building community in China. Lin has more than 10 years of digital advertising and Internet industry experience, and was the author of several bestsellers in propaganda."
+          "intro": "The co-founder of TrueChain, chief development officer. Larry Lin is an expert of Internet marketing and community operation. He has been responsible for the operation of ‘Baidu encyclopedia’, which is the largest co-building community in China. Lin has more than 10 years of digital advertising and Internet industry experience, and was the author of several bestsellers in propaganda."
         },
         {
           "name": "Yan Liu",
@@ -276,7 +233,7 @@
         },
         {
           "name": "Jun Zou",
-          "intro": "The author of best seller \"block chain technology guide\", is also an expert of Zhongguancun block chain industry alliance. He is a PhD of Service Contract, the former chief software architect of IBM Australian financial industry, and have published more than 200 papers in the International Conference on IEEE, of which block chain related papers were awarded to IEEE ICWS in 2016."
+          "intro": "The author of best seller \"block chain technology guide\", also an expert of Zhongguancun block chain industry alliance. He is a PhD in Service Contract, the former chief software architect of IBM Australian financial industry, and have published more than 200 papers in the International Conference on IEEE, of which block chain related papers were awarded to IEEE ICWS in 2016."
         },
         {
           "name": "Xiong Li",
@@ -384,23 +341,23 @@
     "yellow-content": "With the increasing popularity of encrypted currencies, block chaining technology has attracted the attention of industry and academia. One can think that block chain is a shared computing environment, which involves the members of the peer, and can join and exit freely. This is a common prerequisite for consensus agreement."
   },
   "node": {
-    "title": "Priority Node Campaign enrollment",
-    "StandardSum": "Standard node campaign has been registered",
-    "nodeFullSum": "Full node campaign has been registered",
-    "sumNum": "Sum",
-    "personalCampaign": "Personal campaign",
-    "teamCampaign": "Team campaign",
-    "timeDownCampaign": "Priority node election countdown",
-    "nodeRank": "Priority Node campaign turnout ranking",
-    "nodeStandard": "Standard Node",
-    "nodeFull": "Full Node",
+    "title": "Priority Nodes Election Enrollment",
+    "StandardSum": "Registry for Standard Nodes",
+    "nodeFullSum": "Registry for Master | Nodes",
+    "sumNum": "Total",
+    "personalCampaign": "Individual Participants",
+    "teamCampaign": "Team Participants",
+    "timeDownCampaign": "Priority Nodes Election Countdown",
+    "nodeRank": "Priority Nodes Ranking",
+    "nodeStandard": "Standard Nodes",
+    "nodeFull": "Master Nodes",
     "tableRank": "Rank",
     "tableNickname": "Nickname",
     "tableTime": "Registration time",
-    "tableScore": "Comprehensive score",
+    "tableScore": "Full Score",
     "tableTickets": "Tickets",
     "team": "team",
-    "person": "person",
+    "person": "",
     "day": "Day",
     "hour": "Hour",
     "minute": "Minute",
