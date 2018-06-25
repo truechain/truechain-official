@@ -250,7 +250,7 @@
       },
       {
         "path": "jd/2",
-        "icon": "icon font_family icon-touzi",
+        "icon": "icon font_family icon-kaifa",
         "job": "투자자 관계 감독"
       },
       {
@@ -260,12 +260,12 @@
       },
       {
         "path": "jd/4",
-        "icon": "icon font_family icon-touzi",
+        "icon": "icon font_family icon-zhuli",
         "job": "CEO보좌관"
       },
       {
         "path": "jd/5",
-        "icon": "icon font_family icon-touzi",
+        "icon": "icon font_family icon-kaifa",
         "job": "블록 링크 실무 감독"
       },
       {

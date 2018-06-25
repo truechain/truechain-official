@@ -170,15 +170,14 @@ export default {
       }
     }, */
     changeLanguage (lang) {
-      console.log(lang,'====');
-
+      // debugger
       const { $route:{ fullPath, params }, $router } = this;
-      const path = fullPath.split(`${params.lang}`).join('').split("/").join('');
+      const path = fullPath.split(`/${params.lang}`).join('');
 
       if(lang === 'en') {
         $router.push(fullPath.replace(/^\/[^\/]+/, ''))
       } else {
-        $router.push(`/${lang}/${ path }`)
+        $router.push(`/${lang}${ path }`)
       }
     }
   }
