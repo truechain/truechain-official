@@ -407,7 +407,7 @@ export default {
           margin-top 30px
           transition background .5s ease
         .node-detail:hover
-          background: rgba(255, 255, 255, .8);
+          background: white
           color: $dark-blue
       .ri
         img
