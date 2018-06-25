@@ -1,45 +1,12 @@
 {
   "language": "ENGLISH",
-  "homebanner":{
-    "p1":{
-      "title":"PUBLIC BLOCKCHAIN WITH HYBRID CONSENSUS",
-      "btn_github_text":"GITHUB",
-      "btn_white_paper_text":"white paper",
-      "btn_yellow_paper_text":"yellow paper"
-    }
-  },
-  "homeintro":[
-    {
-      "icon":"icon-te",
-      "title":"Highly Performant Blockchain Infrastructure",
-      "text":"TrueChain uses hybrid consensus technology combing PBFT and POW. On consensus layer, TrueChain takes advantage of PBFT to achieve high TPS, and support infinite POW nodes as validators to ensure decentralization and security. Therefore TrueChain is made to be a public blockchain for performance-demanding decentralized applications."
-    },
-    {
-      "icon":"icon-te1",
-      "title":"Smart Contracts with Business Logics",
-      "text":"TrueChain's smart contract platform is providing an abstraction layer for commercial applications, making it easy and fast for developers to access blockchain technology. Application builders can create their own tokens, define workflows, and test/verify their contracts based on a unified environment."
-    },
-    {
-      "icon":"icon-te2",
-      "title":"Usable Developing Toolkits",
-      "text":"TrueChain builds toolkits for developers and operations to access, monitor, and manage applications. With TrueChain BaaS, Smart Contract Manager, TRUE Dapp Store and Contract Browser, it’s easy to use TrueChain as a blockchain platform. "
-    }
-  ],
-  "homeabout":{
-    "h3":"ABOUT",
-    "title":"True Chain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW. ",
-    "p1":"Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPos or dBFT have been improved in efficiency, but are having problems in decentralization. That being said, True Chain, while keeps the essence of decentralization, can also deliver fast and highly efficient performance. As one may know, the scalability and security are the core issues confronting the consensus mechanism of PoW and PBFT respectively. True Chain, by combining the two together, has solved the most important problem of public chain -- the co-existence of decentralization and efficiency. PBFT protocol ensures the transmission of value as well as the speed and efficiency needed by commercial activities of DApps, and PBFT with PoW together ensures True Chain to be a public chain, ie to be decentralized.",
-    "p2":"True Chain aims to be the best public chain. The complete matrix of products allow users and institutions to interact with the chain conveniently. Included in the product matrix are Stellar -- the platform for the DApp developers to create smart contracts and manage the life cycle of the contracts; DApp warehouse -- the warehouse for decentralized applications on True Chain; TrueScan explorer; True Light Purse, etc. ",
-    "p3":"The leading research and engineering team of True Chain come from the U.S., India and China. ",
-    "p4":"True Chain is a committee member of China’s National Cloud Industry Strategic Innovation Alliance, a member of the National Chain-Web Innovation Center of China; and is also one of the few block chain projects that have been reported by China’s authoritative media - CCTV, and also participated in the research work of the white paper released by the Ministry of Industry and Information Technology of the Chinese government."
-  },
   "newsRouter":{
     "technical": "Technical trends",
     "biz": "Business trends",
     "title": "NEWS"
   },
   "home": {
-    "slogan": "High performance Infinite Nodes Hybrid Consensus Public Blockchain",
+    "slogan": "High performance　Infinite Nodes Hybrid　Consensus Public Blockchain",
     "white": "WHITE PAPER",
     "yellow": "YELLOW PAPER",
     "banner2":{
@@ -48,10 +15,10 @@
       "line2":"Scan QR code to download"
     },
     "banner3":{
-      "title":"优先节点火热竞选中",
-      "line1":"4000个优先标准节点 & 100个优先全节点",
-      "line2":"3000w个True Token节点激励",
-      "btntext":"查看详情"
+      "title":"Priority node campaign",
+      "line1":"4000 Priority standard node & 100 Priority master node",
+      "line2":"3000w True Token Node Incentives",
+      "btntext":"View Details"
     },
     "superiority": [
       {
@@ -66,17 +33,19 @@
       },
       {
         "icon": "icon font_family icon-te2",
-        "title": "Usable Developing Toolkits",
-        "detail":"TrueChain builds toolkits for developers and operations to access, monitor, and manage applications. With TrueChain BaaS, Smart Contract Manager, TRUE Dapp Store and Contract Browser, it’s easy to use TrueChain as a blockchain platform. "
+        "title": "Usable Developing Toolkit",
+        "detail":"TrueChain builds toolkit for developers and operations to access, monitor, and manage applications. With TrueChain BaaS, Smart Contract Manager, TrueChain Dapp Store, Contract Browser and Easy DApp framework, it’s easy to use TrueChain as a blockchain platform."
       }
     ],
     "about": {
       "title": "ABOUT",
       "subhead": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW. ",
-      "p1": "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPos or dBFT have been improved in efficiency, but are having problems in decentralization. That being said, TrueChain, while keeps the essence of decentralization, can also deliver fast and highly efficient performance. As one may know, the scalability and security are the core issues confronting the consensus mechanism of PoW and PBFT respectively. TrueChain, by combining the two together, has solved the most important problem of public chain -- the co-existence of decentralization and efficiency. PBFT protocol ensures the transmission of value as well as the speed and efficiency needed by commercial activities of DApps, and PBFT with PoW together ensures TrueChain to be a public chain, ie to be decentralized. ",
-      "p2": "TrueChain aims to be the best public chain. The complete matrix of products allow users and institutions to interact with the chain conveniently. Included in the product matrix are Stellar -- the platform for the DApp developers to create smart contracts and manage the life cycle of the contracts; DApp warehouse -- the warehouse for decentralized applications on TrueChain; TrueScan explorer; True Light Purse, etc. ",
-      "p3": "The leading research and engineering team of TrueChain come from the U.S., India and China. ",
-      "p4": "TrueChain is a committee member of China’s National Cloud Industry Strategic Innovation Alliance, a member of the National Chain-Web Innovation Center of China; and is also one of the few block chain projects that have been reported by China’s authoritative media - CCTV, and also participated in the research work of the white paper released by the Ministry of Industry and Information Technology of the Chinese government. "
+      "p1": "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus combining PBFT and PoW to solve the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency. TrueChain takes advantage of PBFT which is fast to reach consensus, to provide the high performance needed by value transmission and commercial activities of decentralized applications. Meanwhile, TrueChain uses PoW nodes as validators, and leave the election and oversight of PBFT to the hands of POW to ensure the whole chain to be decentralized and therefore secure. ",
+      "p2": "TrueChain adopts sharding to raise the transaction processing speed, to realize scalability without affecting the safety of hybrid consensus. TrueChain integrates fruitchain technology into PoW protocol to allow mobile users to participate in mining, and re-assure complete decentralization. ",
+      "p3": "True Chain also creates Easy DApp, the easy-to-use developing framework for decentralized applications. Developers can take advantage of Easy DApp and use standard API, with the facilitation of x86 virtual machine, to  develop and deploy decentralized applications easily and quickly. ",
+      "p4": "TrueChain’s complete matrix of products allows users and institutions to interact with the chain conveniently. Included in the product matrix are Stellar -- the toolkit for the DApp developers to create smart contracts and manage the life cycle of the contracts; DApp Store-- the store for decentralized applications on True Chain; TrueScan explorer; True Light Wallet, etc. ",
+      "p5": "The leading research and engineering team members of True Chain come from the U.S., India and China.",
+      "p6": "True Chain is a committee member of China’s National Cloud Industry Strategic Innovation Alliance, a member of the National Chain-Web Innovation Center of China; and is also one of the few block"
     },
     "roadmap": {
       "title": "ROAD MAP",
@@ -222,34 +191,7 @@
     }
   ],
   "news": {
-    "title": "news",
-    "details": [
-      {
-        "title": "初链TrueChain参与工信部《2018中国区块链产业白皮书》调研工作",
-        "intro": "初链作为国内首个开发PBFT+POW混合共识技术的公有链项目，获得了工信部的关注，并积极配合工信部《白皮书》的调研工作，为我国区块链技术发展，特别是混合共识公有链技术发展提供了宝贵的经验。",
-        "path": "https://mp.weixin.qq.com/s/NZG7EWRKMsdnOPZOQ_TpWg"
-      },
-      {
-        "title": "央视报道：初链（TRUE）正式开源，共同展望区块链3.0技术创新",
-        "intro": "央视财经记者专门采访初链创始人林大亮，了解到，区块链技术或将在海淘、人才、广告等领域最先落地应用，这将彻底改变整个行业的生态。|目前，业内普遍认为，区块链不可篡改的技术特性，将在物流、海淘广告等信息严重不透明的领域，以及版权、人力资源等注重唯一性的行业，率先进入应用阶段。",
-        "path": "https://mp.weixin.qq.com/s/2bbBqkIOk95Xi0Cl2XqFRA"
-      },
-      {
-        "title": "初链TrueChain成为国家链网创新中心成员",
-        "intro": "初链（TrueChain）成为国家链网创新中心成员。该中心由原中国投资有限公司副总经理（副部级）原央行金融稳定局局长、原央行研究局局长兼央行金融研究所所长谢平担任主任。",
-        "path": "https://mp.weixin.qq.com/s/gp1yYq5rSmCQUQuCn0kK-A"
-      },
-      {
-        "title": "初链TrueChain获得中国云体系产业创新战略联盟理事单位牌照",
-        "intro": "初链创始人大永接受了工信部领导颁发的中国云体系产业创新战略联盟理事单位牌照。",
-        "path": "https://mp.weixin.qq.com/s/sMuvHg0748pi-M8pxf48Ig"
-      },
-      {
-        "title": "央视报道：初链（TRUE）正式开源，共同展望区块链3.0技术创新",
-        "intro": "央视财经记者专门采访初链创始人林大亮，了解到，区块链技术或将在海淘、人才、广告等领域最先落地应用，这将彻底改变整个行业的生态。|目前，业内普遍认为，区块链不可篡改的技术特性，将在物流、海淘广告等信息严重不透明的领域，以及版权、人力资源等注重唯一性的行业，率先进入应用阶段。",
-        "path": "https://mp.weixin.qq.com/s/2bbBqkIOk95Xi0Cl2XqFRA"
-      }
-    ]
+    "title": "news"
   },
   "partner": {
     "title": "partner"
@@ -260,19 +202,19 @@
       "list": [
         {
           "name": "Eric Zhang",
-          "intro": "The co-founder and CEO of TrueChain. He graduated from Oxford University with a master degree in computer science. He used to work at CERN-the European Organization for Nuclear Research focusing on decentralized computation. He’s also the founder of Dorahacks which is now the largest Hacker community with great reach. He’s one of the most influential organizer of Hackathon among the young generation dedicated to use technology to solve problems in the real business world."
+          "intro": "The co-founder and CEO of TrueChain. Eric Zhang graduated from Oxford University with a master’s degree in computer science. He used to work at CERN-the European Organization for Nuclear Research focusing on decentralized computation. He’s also the founder of Dorahacks which is now the largest Hacker community with great reach. He’s one of the most influential organizer of Hackathon among the young generation dedicated to use technology to solve problems in the real business world. "
         },
         {
           "name": "Archit Sharma",
-          "intro": "TrueChain’s tech lead responsible for TrueChain’s engineering and engineering team management. He is an expert at distributed system, operation systems and performance engineering. Archit has worked in Red Hat and CERN, engaged in large-scale cloud service and distributed system design and development. Archit is a contributor of several important open source projects, as well as several Docker Hackathon champions."
+          "intro": "TrueChain’s tech lead responsible for TrueChain’s engineering and engineering team management. Archit Sharma is an expert at distributed system, operation systems and performance engineering. Archit has worked in Red Hat and CERN, engaged in large-scale cloud service and distributed system design and development. Archit is a contributor of several important open source projects, as well as several Docker Hackathon champions."
         },
         {
           "name": "Home Chen",
-          "intro": "TrueChain’s CTO in the greater China area, engaged in IT work for 20 years, has rich experience in Internet product design and development, and software project management. He was a technical partner of “CaiHuohuo”, responsible for the research and development of new products, server cluster and high concurrent processing."
+          "intro": "TrueChain’s CTO in the greater China area. Home Chen has worked in IT industry for 20 years. He has rich experience in Internet product design and development, and software project management. He was a technical partner of “CaiHuohuo”, responsible for the research and development of new products, server cluster and high concurrent processing."
         },
         {
           "name": "Felix Cai",
-          "intro": "the front-end product leader of TrueChain, also a front-end geek, is graduated from Xi'an Jiao Tong University youth class."
+          "intro": "The front-end product leader of TrueChain, also a front-end geek. Felix Cai graduated from Xi'an Jiao Tong University youth class."
         },
         {
           "name": "Ice Ming",
@@ -297,11 +239,11 @@
       "list": [
         {
           "name": "Xiaoyong Cheng",
-          "intro": "The co-founder of TrueChain, Chief Strategic Officer, also the leader of global public relations and institutional investors, an experienced entrepreneur, and the member of Chang’an club. He is also the vice president of the black horse (2015- 2016) and the member of the GWC."
+          "intro": "The co-founder of TrueChain, Chief Strategic Officer. XiaoYong  Cheng is a part-time research staff in Tsinghua University , executive director of China Cloud System Pioneer Strategic Alliance. He is also a member of Youth Leader in Changan Club."
         },
         {
           "name": "Honyi Zheng",
-          "intro": "In charge of the consortium blockchain of TrueChain Foundation. He is the founder of Micro-Blocks and Smart Web Loan. He was the former Chief Operation Officer of the software release center of Kaspersky, the CEO of Zhuoxin group, CEO of Anhe Foundation, and the operation head of the Monternet business of China Mobile. He graduated from Harbin Institute of Technology."
+          "intro": "TrueChain’s Chief Operating Officer, mainly responsible for DApp business cooperation and development. Hongyi Zheng is the founder of Micro-Blocks and Smart Web Loan. He was the former Chief Operation Officer of the software release center of Kaspersky, the CEO of Zhuoxin group, CEO of Anhe Foundation, and the operation head of the Monternet business of China Mobile. He graduated from Harbin Institute of Technology. "
         },
         {
           "name": "Larry Lin",
@@ -322,7 +264,7 @@
       "list": [
         {
           "name": "Xianhua Wei",
-          "intro": "the professor and PhD tutor of Chinese Academy of Sciences, is also the deputy director of the virtual economy and data science research center of Chinese Academy of Sciences, and the executive director of the CAS - Reuters financial risk management joint laboratory."
+          "intro": "The professor and PhD tutor of Chinese Academy of Sciences. Xianhua Wei is also the deputy director of the virtual economy and data science research center of Chinese Academy of Sciences, and the executive director of the CAS - Reuters financial risk management joint laboratory."
         },
         {
           "name": "Jamie Cooper",
