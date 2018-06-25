@@ -21,34 +21,16 @@
                 :key="index",
                 :to="item.path"
               ) {{ $t(`nav.${item.tag}`) }}
-              // li(
-              //   v-for="(item, index) in indexList",
-              //   :key="index",
-              //   @click="jumpTo(item.path)",
-              // ) {{ $t(`nav.${item.tag}`) }}
-
-              // li.container-app-header-lang(
-              //   :style="{'height': langsSelectorIsOpen ? `${langs.length * 28 + 2}px` : '30px'}"
-              //   @mouseenter="openLangsSelector"
-              //   @mouseleave="closeLangsSelector"
-              // )
-              // li(
-              //   class="container-app-header-lang",
-              //   @click="toggleLanguage"
-              // ) {{ $t(`language`) }}
-              //   // - .container-app-header-lang-select
-              //   // -   div ENGLISH
-              //   // -   div 简体中文
               li.container-app-header-nav-langli
-                i-select(
-                  placeholder="EN"
-                  @on-change="changeLanguage"
-                )
-                  i-option(
-                    v-for="item in langs"
-                    :value="item.tag"
-                    :key="item.tag"
-                  ) {{item.name}}
+                Dropdown(@on-click="changeLanguage", trigger="click")
+                  Button(type="primary") {{ $t(`language`) }}
+                    Icon(type="arrow-down-b")
+                  DropdownMenu(slot="list")
+                    DropdownItem(
+                      v-for="item in langs"
+                      :name="item.tag"
+                      :key="item.tag"
+                    ) {{item.name}}
           span.container-app-header-button(@click.stop="toggleMenu")
             span
             span
@@ -62,15 +44,9 @@
           // img(src="~@/assets/images/logo_bot.png")
         .container-app-footer-nav
           ul
-            // nuxt-link(
-            //     v-for="(item, index) in indexList",
-            //     tag="li",
-            //     :key="index",
-            //     :to="item.path"
-            //   ) {{ $t(`nav.${item.tag}`) }}
             li(
-                  @click="jumpTo('https://github.com/truechain')"
-                ) {{ $t(`nav.git`) }}
+                @click="jumpTo('https://github.com/truechain')"
+              ) {{ $t(`nav.git`) }}
             li(
                 @click="jumpTo('http://group.truechain.pro')"
             ) {{ $t(`nav.blog`) }}
@@ -85,7 +61,6 @@
               @mouseenter="setErweima",
               @mouseleave="setErweima",
             )
-              // img(src="~@/assets/images/wechat.png")
               span(class="icon font_family icon-weixin")
               transition(name="fade", mode="out-in")
                 span(class="wechatImg " v-show="isWechat")
@@ -113,7 +88,8 @@ const indexList = [
 ]
 const langs = [
   { name: 'EN', tag: 'en' },
-  { name: '简体中文', tag: 'sc' }
+  { name: '简体中文', tag: 'sc' },
+  { name: '한국어', tag: 'ko' },
 ]
 const linksList = [
   {
@@ -194,11 +170,15 @@ export default {
       }
     }, */
     changeLanguage (lang) {
-      const { $route:{ fullPath }, $router, $store } = this;
+      console.log(lang,'====');
+
+      const { $route:{ fullPath, params }, $router } = this;
+      const path = fullPath.split(`${params.lang}`).join('').split("/").join('');
+
       if(lang === 'en') {
         $router.push(fullPath.replace(/^\/[^\/]+/, ''))
       } else {
-        $router.push(`/${ lang + fullPath}`)
+        $router.push(`/${lang}/${ path }`)
       }
     }
   }
@@ -260,62 +240,29 @@ nav
         color white
     .container-app-header-nav-langli
       padding-top 0px
-    .ivu-select
-    .ivu-select-selection
-      border none
-      box-shadow none
-      background-color $dark-blue
-      .ivu-select-placeholder
-      .ivu-select-selected-value
-        color #a9adbb
-        transition all .4s
+      margin-left 0px
+      .ivu-btn
+        &:focus
+          box-shadow none
+      .ivu-select-dropdown
+        .ivu-dropdown-item
+          margin 0
+          text-align left
+          width 100%
+          &:hover
+            background-color $dark-blue
+      .ivu-btn-primary
         background-color $dark-blue
-        font-size 14px
-      .ivu-icon
-        display inline-block
-    .ivu-select-selected-value:hover
-      color white
-
-    .ivu-select-dropdown
-      width auto
+        border 0
+        margin-left 0px
+        span,i
+          color #A9ADBB
+          font-size 14px
+        .ivu-icon-arrow-down-b
+          margin-left 6px
     .ivu-select-dropdown
       width auto !important
       background-color $dark-blue
-    .ivu-select-item-focus:hover
-      background-color #f3f3f3
-    .ivu-select-item-selected
-      background-color $dark-blue
-    .ivu-select-item
-      width 100%
-      margin 0px
-      transition all .4s
-      font-size 14px !important
-    .ivu-select-item:hover
-      color $dark-blue
-
-    .container-app-header-lang
-      // padding 0 24px 0 14px
-      // color #fff
-      // opacity .6
-      // height 30px
-      // transition height .4s
-      // overflow hidden
-      position relative
-      // div
-      //   line-height 28px
-      //   color #FFF
-      //   cursor pointer
-      // >div
-      //   transition transform .4s
-      &:after
-        content ''
-        position absolute
-        right 0px
-        top 11px
-        border-top solid 7px #a9adab
-        border-left solid 5px transparent
-        border-right solid 5px transparent
-        wh(0, 0)
 .container-app-header-button
   display none
   float right
