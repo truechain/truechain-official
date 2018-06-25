@@ -119,17 +119,17 @@ const linksList = [
   {
     name: 'weibo',
     icon: 'icon font_family icon-weibo',
-    link: 'https://weibo.com/525045616'
+    link: 'https://weibo.com/525045616/'
   },
   {
     name: 'twitter',
     icon: 'icon font_family icon-twitter',
-    link: 'https://twitter.com/truechaingroup'
+    link: 'https://twitter.com/truechaingroup/'
   },
   {
     name: 'telegram',
     icon: 'icon font_family icon-telegram',
-    link: 'https://www.facebook.com/TrueChaingroup/'
+    link: 'http://www.t.me/truechainglobal/'
   },
   {
     name: 'telegram',
