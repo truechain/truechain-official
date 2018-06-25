@@ -442,7 +442,6 @@ export default {
     font-weight 600
     color $font-dark
     margin 0px auto 20px
-    txtwrap()
     padding 0px 10px
   .txt
     line-height 24px
