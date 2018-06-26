@@ -12,9 +12,9 @@
               li(
                   @click="jumpTo('https://github.com/truechain')"
                 ) {{ $t(`nav.git`) }}
-              li(
-                  @click="jumpTo('http://group.truechain.pro')"
-              ) {{ $t(`nav.blog`) }}
+              // li(
+              //     @click="jumpTo('http://group.truechain.pro')"
+              // ) {{ $t(`nav.blog`) }}
               nuxt-link(
                 v-for="(item, index) in indexList",
                 tag="li",
@@ -47,9 +47,9 @@
             li(
                 @click="jumpTo('https://github.com/truechain')"
               ) {{ $t(`nav.git`) }}
-            li(
-                @click="jumpTo('http://group.truechain.pro')"
-            ) {{ $t(`nav.blog`) }}
+            // li(
+            //     @click="jumpTo('http://group.truechain.pro')"
+            // ) {{ $t(`nav.blog`) }}
             li(
               v-for="(item, index) in indexList",
               :key="index",
@@ -89,7 +89,7 @@ const indexList = [
 const langs = [
   { name: '简体中文', tag: 'sc' },
   { name: 'EN', tag: 'en' },
-  { name: '한국어', tag: 'ko' },
+  // { name: '한국어', tag: 'ko' },
 ]
 const linksList = [
   {
@@ -170,7 +170,9 @@ export default {
       }
     }, */
     changeLanguage (lang) {
-      // debugger
+
+      if(this.$store.state.locale === lang) return
+
       const { $route:{ fullPath, params }, $router } = this;
       const path = fullPath.split(`/${params.lang}`).join('');
 
