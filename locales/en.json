@@ -9,8 +9,8 @@
     "slogan": "High Performance　Infinite Nodes　Hybrid Consensus Public Blockchain",
     "white": "WHITE PAPER",
     "yellow": "YELLOW PAPER",
-    "banner2":{
-      "title":"The True light wallet APP",
+    "banner2": {
+      "title":"The True Light Wallet APP",
       "line1":"Public beta version",
       "line2":"Scan QR code to download"
     },
@@ -123,11 +123,6 @@
     "node": "NODE",
     "english": "EN"
   },
-  "banner": {
-    "title": "The True light wallet APP",
-    "p1": "Public beta version",
-    "p2": "Scan QR code to download"
-  },
   "news": {
     "title": "news"
   },
@@ -173,7 +168,7 @@
       "list": [
         {
           "name": "Xiaoyong Cheng",
-          "intro": "The co-founder of TrueChain, Chief Strategic Officer. XiaoYong  Cheng is a part-time research staff in Tsinghua University , executive director of China Cloud System Pioneer Strategic Alliance. He is also a member of Youth Leader in Changan Club."
+          "intro": "The co-founder of TrueChain, Chief Strategic Officer. XiaoYong Cheng is a serial entrepreneur, executive director of China Cloud System Pioneer Strategic Alliance. He is also a member of Youth Leader in Changan Club."
         },
         {
           "name": "Hongyi Zheng",
@@ -186,10 +181,6 @@
         {
           "name": "Yan Liu",
           "intro": "TrueChain’s chief operation officer. He is responsible for TrueChain products and business operations, as well as TrueChain’s community building and operation."
-        },
-        {
-          "name": "Alex Chang",
-          "intro": "TrueChain’s chief marketing officer,13 years’experience in branding and marketing. He was rewarded as the Chief CBO of 2014 Brandcn. He was also the former founder&CBO of LYNKY CLOUD, the former founder of 95TECH."
         }
       ]
     },
@@ -213,13 +204,14 @@
           "intro": "The author of best seller \"block chain technology guide\", also an expert of Zhongguancun block chain industry alliance. He is a PhD in Service Contract, the former chief software architect of IBM Australian financial industry, and have published more than 200 papers in the International Conference on IEEE, of which block chain related papers were awarded to IEEE ICWS in 2016."
         },
         {
-          "name": "Xiong Li",
-          "intro": "The founder of LianXiang Finance and Economics."
-        },
-        {
           "name": "Yu Zhu (binke)",
           "intro": "The head of the Block Chain and the New retail Research Institute, the first head of the new retailing (O2O) department of Alibaba Group. He became the vice president of Shopin Enterprise in 2015, taking charge of offline entities and online overall work. He has rich experience in complete digitization and full channel communication, and digital marketing business."
+        },
+        {
+          "name": "Xiong Li",
+          "intro": "The founder of LianXiang Finance and Economics."
         }
+
       ]
     }
   },

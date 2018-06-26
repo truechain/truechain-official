@@ -17,7 +17,7 @@
       .about-introduce-list
         ul
           li(
-            v-for="n in 5"
+            v-for="n in 4"
             :key="n"
           )
             .about-introduce-list-avatar
@@ -29,7 +29,7 @@
       .about-introduce-list
         ul.consult
           li(
-            v-for="n in 5"
+            v-for="n in 6"
             :key="n"
           )
             // .about-introduce-list-avatar
