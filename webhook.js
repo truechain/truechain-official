@@ -4,7 +4,7 @@ const createHandler = require('github-webhook-handler');
 const { spawn } = require('child_process');
 const handler = createHandler({
   path: '/webhook',
-  secret: 'truechainSSR'
+  secret: ''
 });
 
 
