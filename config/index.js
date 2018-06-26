@@ -18,12 +18,11 @@ switch (process.env.NODE_ENV) {
     // articleUrl = 'http://39.105.125.189:8001/'
     // lightWalletUrl = 'http://39.105.125.189:7001/'
 
-    articleUrl = 'https://api.buditem.com/api2/'
-    lightWalletUrl = 'https://api.buditem.com/api/'
+    // articleUrl = 'https://api.buditem.com/api2/'
+    // lightWalletUrl = 'https://api.buditem.com/api/'
 
-
-    // articleUrl = 'https://www.truechain.pro/api2/'
-    // lightWalletUrl = 'https://www.truechain.pro/api/'
+    articleUrl = 'https://www.truechain.pro/api2/'
+    lightWalletUrl = 'https://www.truechain.pro/api/'
     break
 }
 
