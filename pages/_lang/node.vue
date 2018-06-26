@@ -447,7 +447,6 @@ export default {
     flex-wrap wrap
     li
       font-size 14px
-      height 50px
       div
         color #456C99
       .tag
