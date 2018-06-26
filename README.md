@@ -1,7 +1,5 @@
 # truechain-official-ssr
 
-> Nuxt.js project
-
 ## Build Setup
 
 ``` bash
