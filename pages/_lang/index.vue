@@ -36,7 +36,7 @@ div
             p.title {{ $t('home.banner3.title') }}
             p.line1 {{ $t('home.banner3.line1') }}
             p.line2 {{ $t('home.banner3.line2') }}
-            a.node-detail(href="/node") {{ $t('home.banner3.btntext') }}
+            .node-detail(@click="$router.push('node')") {{ $t('home.banner3.btntext') }}
           .ri
             img(src="~assets/images/home-banner3.png")
 
@@ -395,7 +395,7 @@ export default {
           color white
           font-size 16px
           line-height 30px
-        a
+        .node-detail
           display inline-block
           border 1px solid white
           border-radius 28px
@@ -406,9 +406,9 @@ export default {
           width 150px
           margin-top 30px
           transition background .5s ease
-        .node-detail:hover
-          background: white
-          color: $dark-blue
+          &:hover
+            background: white
+            color: $dark-blue
       .ri
         img
           width 280px
