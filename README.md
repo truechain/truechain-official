@@ -1,5 +1,7 @@
 # truechain-official-ssr
 
+[中文文档](https://github.com/truechain/truechain-official/blob/master/README.zh.md)
+
 ``` bash
 # install dependencies
 $ npm install # Or yarn install
