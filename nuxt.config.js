@@ -4,7 +4,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'True Chain',
+    title: '初链-高性能无穷节点混合共识公链',
     meta: [
       {
         charset: 'utf-8'
@@ -13,8 +13,8 @@ module.exports = {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1'
       },
-      { hid: 'keyword', name: 'keyword', content: 'truechain, true, 初链' },
-      { hid: 'description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' },
+      { name: 'keyword', content: '初链，TRUE，初链币，TrueChain，张剑南，区块链，混合共识，程大永，林大亮' },
+      { name: 'description', content: '初链（TrueChain）是全球最早的混合共识公链，设计和实现初链混合共识协议，将PBFT和POW共识结合在一起。初链解决了区块链领域最重要的问题之一: 去中心化和性能的矛盾。' },
     ],
     link: [
       {
