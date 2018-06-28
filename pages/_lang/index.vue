@@ -155,16 +155,6 @@ import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
 
 export default {
-  head() {
-
-    return {
-      title: this.$t('home.head.title'),
-      meta: [
-        { hid: 'home-keyword', name: 'keyword', content: this.$t('home.head.keyword') },
-        { hid: 'home-description', name: 'description', content: this.$t('home.head.description') },
-      ]
-    }
-  },
   asyncData ({ req }) {
     return {
       name: req ? 'server' : 'client',
