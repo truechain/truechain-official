@@ -6,6 +6,11 @@
     "title": "NEWS"
   },
   "home": {
+    "head": {
+      "title": "home-===================",
+      "keyword": "home-keyword",
+      "description": "home-description"
+    },
     "slogan": "High Performance　Infinite Nodes　Hybrid Consensus Public Blockchain",
     "white": "WHITE PAPER",
     "yellow": "YELLOW PAPER",
@@ -124,12 +129,24 @@
     "english": "EN"
   },
   "news": {
-    "title": "news"
+    "head": {
+      "title": "初链-==================",
+      "keyword": "初链，TRUE，初链币，TrueChain，张剑南，区块链，混合共识，程大永，林大亮",
+      "description": "初链（TrueChain）是全球最早的混合共识公链，设计和实现初链混合共识协议，将PBFT和POW共识结合在一起。初链解决了区块链领域最重要的问题之一: 去中心化和性能的矛盾。"
+    },
+    "title": "news",
+    "technical": "Technical trends",
+    "biz": "Business trends"
   },
   "partner": {
     "title": "partner"
   },
   "team": {
+    "head": {
+      "title": "初链-==================",
+      "keyword": "初链，TRUE，初链币，TrueChain，张剑南，区块链，混合共识，程大永，林大亮",
+      "description": "初链（TrueChain）是全球最早的混合共识公链，设计和实现初链混合共识协议，将PBFT和POW共识结合在一起。初链解决了区块链领域最重要的问题之一: 去中心化和性能的矛盾。"
+    },
     "technology": {
       "title": "TECHNOLOGY",
       "list": [
@@ -225,6 +242,11 @@
     "text2": "TrueChain becomes a member of the National Chain Network Innovation Center The chairman of the center is Xie Ping. He was the deputy general manager of the former China Investment Co., Ltd. (Deputy ministerial level) , the director of the former Central Bank Financial Stability Bureau, the former director of the Central Bank Research Bureau and the head of the Central Bank Financial Research Institute ."
   },
   "join": {
+    "head": {
+      "title": "初链-===============",
+      "keyword": "初链，TRUE，招聘官网，区块链，区块链人才，数字货币",
+      "description": "初链招聘期待更多区块链人才加入我们。"
+    },
     "title": "JOIN US",
     "intro": "Welcome the creative, passionate and sincere you to join us, Sail with us!",
     "p1": "Once you join us, you will get training while working. You will benefit from the accumulated professional experience from us. Join us and you will be added in the TrueChain employee career development training program.",
@@ -306,6 +328,11 @@
     ]
   },
   "node": {
+    "head": {
+      "title": "初链-===========",
+      "keyword": "初链，TRUE,节点竞选，超级节点，区块链，数字货币",
+      "description": "初链将在9月主网测试网上线之前，通过报名和投票机制，选举出最多不超过4000个优先标准节点（POW）和 最多不超过100个优先全节点（PBFT+POW）。"
+    },
     "title": "Priority Nodes Election Enrollment",
     "StandardSum": "Registry for Standard Nodes",
     "nodeFullSum": "Registry for Master Nodes",
