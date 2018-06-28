@@ -1,5 +1,4 @@
 module.exports = {
-
   /*
    ** Headers of the page
    */
@@ -59,7 +58,44 @@ module.exports = {
   { src: '~plugins/vue-dplayer', ssr: false }
 ],
   generate: {
-    routes: ['/']
+    routes: [
+      '/',
+      '/join',
+      '/news',
+      '/node',
+      '/team',
+      // '/jd/1',
+      // '/jd/2',
+      // '/jd/3',
+      // '/jd/4',
+      // '/jd/5',
+      // '/jd/6',
+      // '/jd/7',
+      '/sc',
+      '/sc/join',
+      '/sc/news',
+      '/sc/node',
+      '/sc/team',
+      // '/sc/jd/1',
+      // '/sc/jd/2',
+      // '/sc/jd/3',
+      // '/sc/jd/4',
+      // '/sc/jd/5',
+      // '/sc/jd/6',
+      // '/sc/jd/7',
+      // '/ko',
+      // '/ko/join',
+      // '/ko/news',
+      // '/ko/node',
+      // '/ko/team',
+      // '/ko/jd/1',
+      // '/ko/jd/2',
+      // '/ko/jd/3',
+      // '/ko/jd/4',
+      // '/ko/jd/5',
+      // '/ko/jd/6',
+      // '/ko/jd/7',
+    ]
   },
   loading: {
     color: 'cyan'
