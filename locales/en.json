@@ -7,9 +7,9 @@
   },
   "home": {
     "head": {
-      "title": "home-===================",
-      "keyword": "home-keyword",
-      "description": "home-description"
+      "title": "TrueChain -High performance infinite nodes hybrid consensus public blockchain",
+      "keyword": "True，TrueChain，Eric zhang，blockchain, hybrid consensus, Xiaoyong Cheng, Larry Lin",
+      "description": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW. It solves the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency. "
     },
     "slogan": "High Performance　Infinite Nodes　Hybrid Consensus Public Blockchain",
     "white": "WHITE PAPER",
@@ -130,9 +130,9 @@
   },
   "news": {
     "head": {
-      "title": "初链-==================",
-      "keyword": "初链，TRUE，初链币，TrueChain，张剑南，区块链，混合共识，程大永，林大亮",
-      "description": "初链（TrueChain）是全球最早的混合共识公链，设计和实现初链混合共识协议，将PBFT和POW共识结合在一起。初链解决了区块链领域最重要的问题之一: 去中心化和性能的矛盾。"
+      "title": "TrueChain news- TrueChain Updates, TrueChain posts",
+      "keyword": "TrueChain news- TrueChain flash, digital currency news, TRUE",
+      "description": "TrueChain news section provides real-time information about TrueChain, news and real-time information in the field of blockchain."
     },
     "title": "news",
     "technical": "Technical trends",
@@ -143,9 +143,9 @@
   },
   "team": {
     "head": {
-      "title": "初链-==================",
-      "keyword": "初链，TRUE，初链币，TrueChain，张剑南，区块链，混合共识，程大永，林大亮",
-      "description": "初链（TrueChain）是全球最早的混合共识公链，设计和实现初链混合共识协议，将PBFT和POW共识结合在一起。初链解决了区块链领域最重要的问题之一: 去中心化和性能的矛盾。"
+      "title": "TrueChain team-TrueChain",
+      "keyword": "TrueChain team members, TRUE, Blockchain expert, digital currency expert, Blockchain Talents",
+      "description": "The leading research and engineering team members of True Chain come from the U.S., India and China. "
     },
     "technology": {
       "title": "TECHNOLOGY",
@@ -243,9 +243,9 @@
   },
   "join": {
     "head": {
-      "title": "初链-===============",
-      "keyword": "初链，TRUE，招聘官网，区块链，区块链人才，数字货币",
-      "description": "初链招聘期待更多区块链人才加入我们。"
+      "title": "TrueChain recruitment website",
+      "keyword": "TrueChain, TRUE, recruitment website,blockchain, blockchain employee, digital currency",
+      "description": "TrueChain welcome more people come to join us."
     },
     "title": "JOIN US",
     "intro": "Welcome the creative, passionate and sincere you to join us, Sail with us!",
@@ -329,9 +329,9 @@
   },
   "node": {
     "head": {
-      "title": "初链-===========",
-      "keyword": "初链，TRUE,节点竞选，超级节点，区块链，数字货币",
-      "description": "初链将在9月主网测试网上线之前，通过报名和投票机制，选举出最多不超过4000个优先标准节点（POW）和 最多不超过100个优先全节点（PBFT+POW）。"
+      "title": "TrueChain priority nodes election",
+      "keyword": "TrueChain,TRUE, nodes election, super nodes, blockchain, digital currency",
+      "description": "TrueChain will select no more than 4000 priority standard nodes (POW) and no more than 100 priority master nodes (PBFT+POW) by votes before the test main network released in September."
     },
     "title": "Priority Nodes Election Enrollment",
     "StandardSum": "Registry for Standard Nodes",
