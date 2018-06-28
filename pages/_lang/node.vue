@@ -112,12 +112,14 @@ import { getTime, contdown } from '~/util/index.js'
 
 import { apiNodeRank, apiNodeSum, apiNodeRankPc, apiNodeTypeSumNum } from '@/api'
 export default {
-   head: {
-    title: '初链-优先节点竞选',
-    meta: [
-      { hid: 'node-keyword', name: 'keyword', content: '初链，TRUE,节点竞选，超级节点，区块链，数字货币' },
-      { hid: 'node-description', name: 'description', content: '初链将在9月主网测试网上线之前，通过报名和投票机制，选举出最多不超过4000个优先标准节点（POW）和 最多不超过100个优先全节点（PBFT+POW）。' },
-    ]
+   head() {
+    return {
+      title: this.$t('node.head.title'),
+      meta: [
+        { hid: 'node-keyword', name: 'keyword', content: this.$t('node.head.keyword'), },
+        { hid: 'node-description', name: 'description', content: this.$t('node.head.description'), },
+      ]
+    }
   },
   data () {
     return {

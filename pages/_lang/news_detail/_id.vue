@@ -10,12 +10,14 @@
 import { apiArticleDetail } from '@/api'
 import { getTime } from '@/util'
 export default {
-  head: {
-    title: '初链新闻-初链最新动态-区块链快讯-初链',
-    meta: [
-      { hid: 'news-detail-keyword', name: 'keyword', content: '初链快讯，TRUE,区块链快讯，数字货币快讯' },
-      { hid: 'news-detail-description', name: 'description', content: '初链新闻版块提供初链最新动态消息，区块链快讯等区块链领域的实时资讯。' },
-    ]
+  head() {
+    return {
+      title: this.$t('news.head.title'),
+      meta: [
+        { hid: 'news-keyword', name: 'keyword', content: this.$t('news.head.keyword'), },
+        { hid: 'news-description', name: 'description', content: this.$t('news.head.description'), },
+      ]
+    }
   },
   data () {
     return {

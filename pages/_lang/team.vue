@@ -39,13 +39,15 @@
 </template>
 <script>
 export default {
-   head: {
-    title: '初链团队-初链TrueChain',
-    meta: [
-      { hid: 'team-keyword', name: 'keyword', content: '初链团队成员，TRUE,区块链专家，数字货币专家，区块链人才' },
-      { hid: 'team-description', name: 'description', content: '初链的全球团队成员主要分为技术团队，商业团队及区块链专家顾问，分布在美国、印度和中国。' },
-    ]
-  },
+  head() {
+    return {
+      title: this.$t('team.head.title'),
+      meta: [
+        { hid: 'team-keyword', name: 'keyword', content: this.$t('team.head.keyword'), },
+        { hid: 'team-description', name: 'description', content: this.$t('team.head.description'), },
+      ]
+    }
+  }
 }
 </script>
 

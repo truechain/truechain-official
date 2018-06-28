@@ -23,12 +23,14 @@
 </template>
 <script>
 export default {
-  head: {
-    title: '初链-招聘官网',
-    meta: [
-      { hid: 'join-keyword', name: 'keyword', content: '初链，TRUE，招聘官网，区块链，区块链人才，数字货币' },
-      { hid: 'join-description', name: 'description', content: '初链招聘期待更多区块链人才加入我们。' },
-    ]
+  head() {
+    return {
+      title: this.$t('join.head.title'),
+      meta: [
+        { hid: 'join-keyword', name: 'keyword', content: this.$t('join.head.keyword') },
+        { hid: 'join-description', name: 'description', content: this.$t('join.head.description') },
+      ]
+    }
   }
 }
 </script>
