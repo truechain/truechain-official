@@ -33,6 +33,7 @@
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
+    "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-vue": "^4.0.0",
     "github-webhook-handler": "^0.7.1",
     "pug": "^2.0.3",
