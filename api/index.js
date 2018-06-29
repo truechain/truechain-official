@@ -24,6 +24,10 @@ const apiArticleDetail = (options) => {
   return http._get('articleDetail', options)
 }
 
+const apiGetIpInfo = (options) => {
+  return http._get('getIpInfo', options)
+}
+
 
 export {
   apiNodeRank,
@@ -31,5 +35,6 @@ export {
   apiNodeRankPc,
   apiNodeTypeSumNum,
   apiArticleList,
-  apiArticleDetail
+  apiArticleDetail,
+  apiGetIpInfo
 }

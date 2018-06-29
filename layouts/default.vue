@@ -77,6 +77,7 @@
 </template>
 
 <script>
+import { apiGetIpInfo } from '~/api';
 
 const indexList = [
   // { path: 'https://github.com/truechain', tag: 'git' },
@@ -87,7 +88,7 @@ const indexList = [
   { path: 'node', tag: 'node' }
 ]
 const langs = [
-  { name: '简体中文', tag: 'sc' },
+  { name: '简体中文', tag: 'zh' },
   { name: 'EN', tag: 'en' },
   // { name: '한국어', tag: 'ko' },
 ]
@@ -115,12 +116,19 @@ const linksList = [
 ]
 
 export default {
-   head() {
+  mounted () {
+    this.setLanguage()
+  },
+  head() {
     return {
       title: this.$t('home.head.title'),
       meta: [
         { hid: 'home-keyword', name: 'keyword', content: this.$t('home.head.keyword') },
         { hid: 'home-description', name: 'description', content: this.$t('home.head.description') },
+      ],
+      script: [
+        { src: 'http://pv.sohu.com/cityjson?ie=utf-8' },
+        { src: '/donglizi.js' }
       ]
     }
   },
@@ -132,10 +140,23 @@ export default {
       linksList,
       langsSelectorIsOpen: false,
       usedLangNum: 0,
-      isWechat: false
+      isWechat: false,
+      countrys: {
+        '中国': 'zh' ,
+        '英国': 'en',
+        '韩国': 'ko'
+      }
     }
   },
   methods: {
+    setLanguage () {
+      apiGetIpInfo({
+        ip: returnCitySN.cip
+      }).then(x => {
+        const { country } = JSON.parse(x.data.data).data;
+        this.changeLanguage(this.countrys[country])
+      })
+    },
     goHome () {
       const { lang } = this.$route.params
       this.$router.push(`/${lang ? lang + '/' : ''}`)
@@ -173,7 +194,7 @@ export default {
    /*  toggleLanguage (index) {
       const { $route:{ fullPath }, $router, $store } = this;
       if($store.state.locale === 'en') {
-        $router.push(`/sc${fullPath}`)
+        $router.push(`/zh${fullPath}`)
       } else {
         $router.push(fullPath.replace(/^\/[^\/]+/, ''))
       }
