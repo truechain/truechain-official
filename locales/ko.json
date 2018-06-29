@@ -8,7 +8,9 @@
   "home": {
     "slogan": "고성능　무한한 노드　하이브리드 합의방식의 블록체인",
     "white": "백서",
+    "whiteLink": "https://github.com/truechain/wiki/blob/master/paper/white_paper/Truechain.pdf",
     "yellow": "황서",
+    "yellowLink": "https://github.com/truechain/wiki/blob/master/paper/yellow_paper/YellowPaper.pdf",
     "banner2":{
       "title":"True 지갑",
       "line1":"공개 테스트 버전",

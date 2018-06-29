@@ -127,7 +127,7 @@ export default {
         { hid: 'home-description', name: 'description', content: this.$t('home.head.description') },
       ],
       script: [
-        { src: 'https://pv.sohu.com/cityjson?ie=utf-8' },
+        { src: '//pv.sohu.com/cityjson?ie=utf-8' },
         { src: '/donglizi.js' }
       ]
     }
@@ -206,7 +206,7 @@ export default {
       const { $route:{ fullPath, params }, $router } = this;
       const path = fullPath.split(`/${params.lang}`).join('');
 
-      if(lang === 'en') {
+      if(lang === 'zh') {
         $router.push(fullPath.replace(/^\/[^\/]+/, ''))
       } else {
         $router.push(`/${lang}${ path }`)

@@ -15,8 +15,8 @@ div
             span {{ $t('home.slogan') }}
           .banner-home-buttons
             a(href="https://github.com/truechain",target="_blank") GITHUB
-            a(href="https://www.truechain.pro/EnTruechain.pdf",target="_blank") {{ $t('home.white') }}
-            a(href="https://arxiv.org/pdf/1805.01457.pdf",target="_blank") {{ $t('home.yellow') }}
+            a(:href="$t('home.whiteLink')",target="_blank") {{ $t('home.white') }}
+            a(:href="$t('home.yellowLink')",target="_blank") {{ $t('home.yellow') }}
       CarouselItem
         .banner2
           img.telpic(src="~assets/images/home-banner2.png")

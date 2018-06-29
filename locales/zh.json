@@ -13,7 +13,9 @@
     },
     "slogan": "高性能　无穷节点　混合共识公链",
     "white": "白皮书",
+    "whiteLink": "https://github.com/truechain/wiki/blob/master/paper/white_paper/Truechain.pdf",
     "yellow": "黄皮书",
+    "yellowLink": "https://github.com/truechain/wiki/blob/master/paper/yellow_paper/YellowPaper.pdf",
     "banner2":{
       "title":"True 轻钱包应用",
       "line1":"公测版本",
