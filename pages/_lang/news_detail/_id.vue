@@ -136,4 +136,7 @@ export default {
     text-decoration line-through
   hr
     border 1px inset
+  img
+    width auto
+    height auto
 </style>
