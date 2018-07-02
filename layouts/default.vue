@@ -239,9 +239,11 @@ nav
   z-index 1000
   wh(100%, 100px)
   background-color $dark-blue
+  // background-color red
 .container-app-header
-  padding 35px
-  mw()
+  padding 35px 0
+  width 80%
+  margin auto
 .container-app-header-logo
   // wh(118px, 30px)
   margin-top 8px
