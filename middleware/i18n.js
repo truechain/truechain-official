@@ -22,8 +22,6 @@ export default function ({ isHMR, app, store, route, params, error, redirect }) 
       redirect(
         path.split(emptyPath).join('')
       )
-    } else {
-      console.log('不知道咋整了');
     }
 
   }

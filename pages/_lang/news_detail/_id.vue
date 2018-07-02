@@ -2,7 +2,7 @@
   .news-detail-container
     .news-detail
       .news-detail-title {{detail.title}}
-      .news-detail-timestamp {{getTime(+detail.create_time, true)}}
+      .news-detail-timestamp(v-text="getTime(+detail.create_time, true)")
       .news-detail-content(v-html="detail.content")
 </template>
 
@@ -21,7 +21,8 @@ export default {
   },
   data () {
     return {
-      detail: {}
+      detail: {},
+      spinShow: true
     }
   },
   methods: {

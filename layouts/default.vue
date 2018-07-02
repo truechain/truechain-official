@@ -38,6 +38,7 @@
       .container-app-content
         transition(name="fade-x", mode="out-in")
           nuxt
+          Spin(size="small", v-if="false")
       .container-app-footer
         .container-app-footer-logo
           i(class="icon font_family icon-logo1")
@@ -134,6 +135,7 @@ export default {
   },
   data () {
     return {
+      spinShow: true,
       indexList,
       langs,
       menuIsOpen: false,
