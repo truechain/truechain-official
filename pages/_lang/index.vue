@@ -521,7 +521,7 @@ export default {
     max-width 1024px
     margin 46px auto 0px
     .co
-      wh(142px,80px)
+      wh(190px, 106px)
       img
         wh(100%,100%)
         border-radius 5px
@@ -552,7 +552,7 @@ export default {
     max-width 1024px
     margin 46px auto 0px
     .co
-      wh(160px,72px)
+      wh(190px, 106px)
       border 1px solid #C5D6F6
       border-radius 5px
       padding 3px
