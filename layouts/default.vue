@@ -342,7 +342,7 @@ nav
       wh(30px, 30px)
       background white
       border-radius 50%
-      transition all ease 1s
+      transition all ease .5s
       position relative
       cursor pointer
       fc()
@@ -350,7 +350,7 @@ nav
         color $dark-blue
         transform scale(1.2)
       &:hover
-        transform rotateY(360deg)
+        transform scale(1.3)
       .wechatImg
         width 100px
         height 100px
