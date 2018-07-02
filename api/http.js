@@ -2,26 +2,15 @@
 
 import axios from 'axios'
 import qs from 'qs'
+import Vue from 'vue'
+
 import {
   articleUrl,
   lightWalletUrl
 } from '../config/index.js'
 
-// axios.interceptors.request.use(config => {
-//   // loading
-//   return config
-// }, error => {
-//   return Promise.reject(error)
-// })
-
-// axios.interceptors.response.use(response => {
-//   return response
-// }, error => {
-//   return Promise.resolve(error.response)
-// })
-
 function checkStatus (response) {
-  // loading
+  Vue.prototype.$Spin.hide();
   // 如果http状态码正常，则直接返回数据
   if (response && (response.status === 200 || response.status === 304 || response.status === 400)) {
     return response
@@ -44,6 +33,7 @@ function checkCode (res) {
 
 export default {
   post (url, data) {
+    Vue.prototype.$Spin.show();
     return axios({
       method: 'post',
       baseURL: lightWalletUrl,
@@ -65,6 +55,7 @@ export default {
     )
   },
   get (url, params = {}) {
+    Vue.prototype.$Spin.show();
     return axios({
       method: 'get',
       baseURL: lightWalletUrl,
@@ -86,6 +77,7 @@ export default {
     )
   },
   _get (url, params = {}) {
+    Vue.prototype.$Spin.show();
     return axios({
       method: 'get',
       baseURL: articleUrl,
