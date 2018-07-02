@@ -1,4 +1,3 @@
-const axios = require('axios')
 module.exports = {
   /*
    ** Headers of the page
@@ -54,60 +53,10 @@ module.exports = {
     }
   },
   plugins: [
-  '~/plugins/i18n.js',
-  { src: '~plugins/iview', ssr: true },
-  { src: '~plugins/vue-dplayer', ssr: false }
-],
-// generate: {
-//   routes: function () {
-//     return axios.get('https://my-api/users')
-//     .then((res) => {
-//       return res.data.map((user) => {
-//         return '/users/' + user.id
-//       })
-//     })
-//   }
-// },
-  generate: {
-    routes: [
-      '/',
-      '/join',
-      '/news',
-      '/node',
-      '/team',
-      // '/jd/1',
-      // '/jd/2',
-      // '/jd/3',
-      // '/jd/4',
-      // '/jd/5',
-      // '/jd/6',
-      // '/jd/7',
-      '/en',
-      '/en/join',
-      '/en/news',
-      '/en/node',
-      '/en/team',
-      // '/en/jd/1',
-      // '/en/jd/2',
-      // '/en/jd/3',
-      // '/en/jd/4',
-      // '/en/jd/5',
-      // '/en/jd/6',
-      // '/en/jd/7',
-      // '/ko',
-      // '/ko/join',
-      // '/ko/news',
-      // '/ko/node',
-      // '/ko/team',
-      // '/ko/jd/1',
-      // '/ko/jd/2',
-      // '/ko/jd/3',
-      // '/ko/jd/4',
-      // '/ko/jd/5',
-      // '/ko/jd/6',
-      // '/ko/jd/7',
-    ]
-  },
+    '~/plugins/i18n.js',
+    { src: '~plugins/iview', ssr: true },
+    { src: '~plugins/vue-dplayer', ssr: false }
+  ],
   loading: {
     color: 'cyan'
   },
