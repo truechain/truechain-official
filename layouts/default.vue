@@ -154,7 +154,7 @@ export default {
         ip: returnCitySN.cip
       }).then(x => {
         const { country } = JSON.parse(x.data.data).data;
-        this.changeLanguage(this.countrys[country])
+        this.changeLanguage(this.countrys[country] || 'zh')
       })
     },
     goHome () {

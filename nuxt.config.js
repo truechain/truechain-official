@@ -1,3 +1,4 @@
+const axios = require('axios')
 module.exports = {
   /*
    ** Headers of the page
@@ -57,6 +58,16 @@ module.exports = {
   { src: '~plugins/iview', ssr: true },
   { src: '~plugins/vue-dplayer', ssr: false }
 ],
+// generate: {
+//   routes: function () {
+//     return axios.get('https://my-api/users')
+//     .then((res) => {
+//       return res.data.map((user) => {
+//         return '/users/' + user.id
+//       })
+//     })
+//   }
+// },
   generate: {
     routes: [
       '/',

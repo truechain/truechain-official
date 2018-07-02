@@ -58,7 +58,7 @@ export default {
       pageNumber: 10,
     }
   },
-  async created () {
+  created () {
     this.fetchData()
     this.onFetchSumPage()
   },
