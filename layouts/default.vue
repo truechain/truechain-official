@@ -144,8 +144,8 @@ export default {
       usedLangNum: 0,
       isWechat: false,
       countrys: {
-        '中国': 'zh' ,
-        '英国': 'en',
+        '中国': 'zh',
+        '美国': 'en',
         '韩国': 'ko'
       }
     }
@@ -156,7 +156,7 @@ export default {
         ip: returnCitySN.cip
       }).then(x => {
         const { country } = JSON.parse(x.data.data).data;
-        this.changeLanguage(this.countrys[country] || 'zh')
+        this.changeLanguage(this.countrys[country] || 'en')
       })
     },
     goHome () {
