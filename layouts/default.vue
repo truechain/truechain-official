@@ -72,12 +72,19 @@
               :id="item.id"
             )
               span(:class="item.icon")
-
+        .container-app-footer-down
+          .container-app-footer-text
+            div TRUE轻钱包应用下载
+          .container-app-footer-buttons
+            app-android
+            app-ios
         .container-app-footer-copyright
           div COPYRIGHT© TRUE CHAIN {{$t('copyright')}}
 </template>
 
 <script>
+import AppAndroid from '~/components/app-android.vue'
+import AppIos from '~/components/app-ios.vue'
 import { apiGetIpInfo } from '~/api';
 
 const indexList = [
@@ -117,6 +124,10 @@ const linksList = [
 ]
 
 export default {
+  components: {
+    AppAndroid,
+    AppIos
+  },
   mounted () {
     this.setLanguage()
   },
@@ -334,7 +345,7 @@ nav
       font-size 12px
       cursor pointer
 .container-app-footer-links
-  padding 20px 0 40px
+  padding 10px 0
   ul
     display flex
     li
@@ -401,4 +412,20 @@ nav
         border none !important
   .container-app-header-button
     display block
+.container-app-footer-down
+  position relative
+  width 400px
+  padding 10px 0
+.container-app-footer-text
+  div
+    line-height 45px
+    color white
+.container-app-footer-buttons
+  position absolute
+  top -34px
+  right -58px
+  transform scale(.6)
+  height 100px
+  display flex
+  align-items center
 </style>
