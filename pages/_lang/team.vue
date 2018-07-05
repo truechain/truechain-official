@@ -5,25 +5,25 @@
       .about-introduce-list
         ul
           li(
-            v-for="n in 7"
-            :key="n"
+            v-for="(item, index) in $t(`team.technology.list`)"
+            :key="index"
           )
             .about-introduce-list-avatar
-              img(:src="require(`~/assets/members/a${n}.png`)")
-              .about-introduce-list-name-hover {{ $t(`team.technology.list.${n - 1}.name`) }}
-            .about-introduce-list-detail {{ $t(`team.technology.list.${n - 1}.intro`) }}
+              img(:src="require(`~/assets/members/a${index + 1}.png`)")
+              .about-introduce-list-name-hover {{ item.name }}
+            .about-introduce-list-detail {{ item.intro }}
     .about-introduce
       .page-title.photo-header {{ $t('team.business.title') }}
       .about-introduce-list
         ul
           li(
-            v-for="n in 4"
-            :key="n"
+            v-for="(item, index) in $t('team.business.list')"
+            :key="index"
           )
             .about-introduce-list-avatar
-              img(:src="require(`@/assets/members/b${n}.png`)")
-              .about-introduce-list-name-hover {{ $t(`team.business.list.${n - 1}.name`) }}
-            .about-introduce-list-detail {{ $t(`team.business.list.${n - 1}.intro`) }}
+              img(:src="require(`@/assets/members/b${index + 1}.png`)")
+              .about-introduce-list-name-hover {{ item.name }}
+            .about-introduce-list-detail {{ item.intro }}
     .about-introduce
       .page-title {{ $t('team.consultant.title') }}
       .about-introduce-list
