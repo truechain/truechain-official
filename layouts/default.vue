@@ -42,7 +42,6 @@
       .container-app-footer
         .container-app-footer-logo
           i(class="icon font_family icon-logo1")
-          // img(src="~@/assets/images/logo_bot.png")
         .container-app-footer-nav
           ul
             li(
