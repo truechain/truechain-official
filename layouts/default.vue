@@ -73,12 +73,12 @@
               span(:class="item.icon")
         .container-app-footer-down
           .container-app-footer-text
-            div TRUE轻钱包应用下载
+            div {{ $t('home.banner2.title') }}
           .container-app-footer-buttons
             app-android
             app-ios
         .container-app-footer-copyright
-          div COPYRIGHT© TRUE CHAIN {{$t('copyright')}}
+          div COPYRIGHT© TRUE CHAIN {{$t('copyright') }}
 </template>
 
 <script>
@@ -422,7 +422,7 @@ nav
 .container-app-footer-buttons
   position absolute
   top -34px
-  right -58px
+  right -88px
   transform scale(.6)
   height 100px
   display flex
