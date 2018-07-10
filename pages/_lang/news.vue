@@ -2,27 +2,32 @@
 <template lang="pug">
   .news-container
     .news-body
-      .page-title {{$t('newsRouter.title')}}
+      .page-title {{$t('news.title')}}
       .news-body-table
         .news-body-table-btn
           div(
             :class="{ 'news-body-table-btn-avtive': nodeType === 1 }",
             @click="toggleNode(1)"
-          ) {{$t('newsRouter.technical')}}
+          ) {{$t('news.technical')}}
           div(
             :class="{ 'news-body-table-btn-avtive': nodeType === 2 }",
             @click="toggleNode(2)"
-            ) {{$t('newsRouter.biz')}}
+            ) {{$t('news.biz')}}
         .news-body-table-body
           ul
-            nuxt-link(
-              tag="li",
-              v-for="(item, index) in list",
-              :key="index",
-              :to="`news_detail/${item.id}`",
-            )
-              .news-body-table-body-date {{ getTime(+item.create_time, true) }}
-              .news-body-table-body-title.ellipsis  {{item.title}}
+            template(v-if="list.length")
+              nuxt-link(
+                tag="li",
+                v-for="(item, index) in list",
+                :key="index",
+                :to="`news_detail/${item.id}`",
+              )
+                .news-body-table-body-date {{ getTime(+item.create_time, true) }}
+                .news-body-table-body-title.ellipsis  {{item.title}}
+            template(v-else)
+              li
+                .news-body-table-body-date
+                .news-body-table-body-title {{$t('news.point')}}
       .news-body-page
         Page(
           :total="pageSum",
@@ -78,7 +83,7 @@ export default {
       const language = {
         'zh': '1',
         'en': '2',
-        'ko': '3' 
+        'ko': '3'
       }
       apiArticleList({
         'theme': nodeType || 1,

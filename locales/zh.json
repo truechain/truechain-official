@@ -1,10 +1,5 @@
 {
   "language": "简体中文",
-  "newsRouter":{
-    "technical": "技术动态",
-    "biz": "商业动态",
-    "title": "新闻"
-  },
   "home": {
     "head": {
       "title": "初链-超高性能无穷节点混合共识公链",
@@ -103,7 +98,10 @@
     "partner": "合作机构",
     "institution": "投资机构",
     "news":{
-      "title":"新闻",
+      "title": "新闻",
+      "technical": "技术动态",
+      "biz": "商业动态",
+      "point": "暂无数据",
       "list":[
         {
           "time":"2018-05-24",
@@ -144,6 +142,7 @@
       "description": "初链新闻版块提供初链最新动态消息，区块链快讯等区块链领域的实时资讯。"
     },
     "title": "新闻",
+    "point": "暂无数据",
     "technical": "技术动态",
     "biz": "商业动态"
 

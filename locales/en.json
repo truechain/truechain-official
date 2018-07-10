@@ -1,10 +1,5 @@
 {
   "language": "EN",
-  "newsRouter":{
-    "technical": "Technical trends",
-    "biz": "Business trends",
-    "title": "NEWS"
-  },
   "home": {
     "head": {
       "title": "TrueChain-High performance infinite nodes hybrid consensus public blockchain",
@@ -103,6 +98,8 @@
     "institution": "INVESTMENT INSTITUTION",
     "news":{
       "title":"NEWS",
+      "technical": "Technical trends",
+      "biz": "Business trends",
       "list":[
         {
           "time":"2018-05-24",
@@ -137,6 +134,7 @@
       "description": "TrueChain news section provides real-time information about TrueChain, news and real-time information in the field of blockchain."
     },
     "title": "news",
+    "point": "This category have nothing data",
     "technical": "Technical trends",
     "biz": "Business trends"
   },
