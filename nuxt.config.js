@@ -3,7 +3,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: '初链-高性能无穷节点混合共识公链',
+    title: '初链-高性能无穷节点混合共识公链-官网',
     meta: [
       {
         charset: 'utf-8'
