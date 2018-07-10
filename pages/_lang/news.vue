@@ -63,7 +63,7 @@ export default {
       pageNumber: 10,
     }
   },
-  created () {
+  mounted () {
     this.fetchData()
     this.onFetchSumPage()
   },
