@@ -9,7 +9,7 @@ let articleUrl, lightWalletUrl;
 
 switch (process.env.NODE_ENV) {
   case 'development':
-    articleUrl = 'http://127.0.0.1:8001/api2'
+    articleUrl = 'http://39.105.125.189:8001/api2'
     // lightWalletUrl = 'http://127.0.0.1:8989/api'
     lightWalletUrl = 'http://39.105.125.189:7001/api'
     // lightWalletUrl = 'https://api.buditem.com/api/nodeSum'
