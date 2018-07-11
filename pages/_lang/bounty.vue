@@ -1,6 +1,6 @@
 <template lang="pug">
   .bounty-container
-    img.bounty-image
+    img.bounty-image(src="~assets/images/bounty.jpg")
     .bounty-title
       h1 TrueChain Bounty Program
       p The TrueChain Bounty Program provides bounties for bugs. We call on our community and all bug bounty hunters to help identify bugs in the protocols and clients. Earn rewards for finding a vulnerability and get a place on our leaderboard. See Rules & Rewards section for details.
@@ -43,7 +43,6 @@ export default {
   display flex
 .bounty-image
   width 400px
-  height 300px
   flex 400px 0 0
 .bounty-title
   padding-left 40px
@@ -51,7 +50,7 @@ export default {
   h1
     font-size 28px
     color #1e64b4
-    padding 20px 0
+    padding-bottom 20px
   p
     color #456c99
     line-height 1.5em
