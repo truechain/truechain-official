@@ -287,6 +287,7 @@ nav
       padding-top 0px
       margin-left 0px
       .ivu-btn
+        padding 5px 15px
         &:focus
           box-shadow none
       .ivu-select-dropdown
