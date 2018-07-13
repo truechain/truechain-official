@@ -1,15 +1,19 @@
 <template lang="pug">
   .bounty-container
-    img.bounty-image(src="~assets/images/bounty.jpg")
-    .bounty-title
-      h1 TrueChain Bounty Program
-      p The TrueChain Bounty Program provides bounties for bugs. We call on our community and all bug bounty hunters to help identify bugs in the protocols and clients. Earn rewards for finding a vulnerability and get a place on our leaderboard. See Rules & Rewards section for details.
-      a.bounty-button(
-        target="_blank"
-        :href="link[this.$store.state.locale]"
-      ) Submit a Vulnerability
+    .bounty-banner
+      img.bounty-image(:src="require('@/assets/images/bounty.jpg')")
+      .bounty-title
+        h1 TrueChain Bounty Program
+        p The TrueChain Bounty Program provides bounties for bugs. We call on our community and all bug bounty hunters to help identify bugs in the protocols and clients. Earn rewards for finding a vulnerability and get a place on our leaderboard. See Rules & Rewards section for details.
+        a.bounty-button(
+          target="_blank"
+          :href="link[this.$store.state.locale]"
+        ) Submit a Vulnerability
+    .bounty-rule(v-html="rulesHTML")
 </template>
 <script>
+const rules = require('@/static/bounty.md')
+
 const link = {
   'en': 'https://goo.gl/forms/zRqZu5QPvrCb7cze2',
   'zh': 'https://goo.gl/forms/zRqZu5QPvrCb7cze2',
@@ -19,7 +23,8 @@ const link = {
 export default {
   data() {
     return {
-      link
+      link,
+      rulesHTML: rules
     }
   },
   head() {
@@ -36,7 +41,7 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
-.bounty-container
+.bounty-banner
   max-width 1024px
   margin auto
   padding 100px 40px

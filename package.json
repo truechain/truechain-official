@@ -22,6 +22,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "iview": "^2.14.2",
+    "marked": "^0.4.0",
     "nuxt": "^1.0.0",
     "qs": "^6.5.2",
     "vue-dplayer": "0.0.10",
@@ -36,7 +37,11 @@
     "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-vue": "^4.0.0",
     "github-webhook-handler": "^0.7.1",
+    "html-loader": "^0.5.5",
+    "markdown-loader": "^3.0.0",
     "pug": "^2.0.3",
+    "raw-loader": "^0.5.1",
+    "string-loader": "0.0.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
   }
