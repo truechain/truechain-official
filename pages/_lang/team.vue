@@ -10,7 +10,8 @@
           )
             .about-introduce-list-avatar
               img(:src="require(`~/assets/members/a${index + 1}.png`)")
-              .about-introduce-list-name-hover {{ item.name }}
+              // .about-introduce-list-name-hover {{ item.name }}
+            .about-introduce-list-name {{ item.name }}
             .about-introduce-list-detail {{ item.intro }}
     .about-introduce
       .page-title.photo-header {{ $t('team.business.title') }}
@@ -22,7 +23,8 @@
           )
             .about-introduce-list-avatar
               img(:src="require(`@/assets/members/b${index + 1}.png`)")
-              .about-introduce-list-name-hover {{ item.name }}
+              // .about-introduce-list-name-hover {{ item.name }}
+            .about-introduce-list-name {{ item.name }}
             .about-introduce-list-detail {{ item.intro }}
     .about-introduce
       .page-title {{ $t('team.consultant.title') }}
