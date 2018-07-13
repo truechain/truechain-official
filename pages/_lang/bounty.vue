@@ -12,7 +12,7 @@
     .bounty-rule(v-html="rulesHTML")
 </template>
 <script>
-const rules = require('@/static/bounty.md')
+import rules from '~/static/bounty.md'
 
 const link = {
   'en': 'https://goo.gl/forms/zRqZu5QPvrCb7cze2',
@@ -26,6 +26,9 @@ export default {
       link,
       rulesHTML: rules
     }
+  },
+  mounted () {
+    console.log(rules);
   },
   head() {
     return {
