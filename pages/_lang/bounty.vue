@@ -39,7 +39,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 @import '~@/assets/stylus/mixin.styl'
 .bounty-banner
   max-width 1024px
@@ -75,4 +75,8 @@ export default {
   &:hover
     color #fff
     background-color #143964
+.bounty-rule
+  margin auto
+  max-width 900px
+  padding 0px 40px 80px
 </style>
