@@ -1,5 +1,27 @@
 {
   "language": "EN",
+  "linksList": [
+    {
+      "name": "weibo",
+      "icon": "icon font_family icon-weibo",
+      "link": "https://weibo.com/525045616/"
+    },
+    {
+      "name": "twitter",
+      "icon": "icon font_family icon-twitter",
+      "link": "https://twitter.com/truechaingroup/"
+    },
+    {
+      "name": "telegram",
+      "icon": "icon font_family icon-telegram",
+      "link": "http://www.t.me/truechainglobal/"
+    },
+    {
+      "name": "telegram",
+      "icon": "icon font_family icon-facebook",
+      "link": "https://www.facebook.com/TrueChaingroup/"
+    }
+  ],
   "home": {
     "head": {
       "title": "TrueChain-High performance infinite nodes hybrid consensus public blockchain",

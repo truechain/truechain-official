@@ -65,7 +65,7 @@
               transition(name="fade", mode="out-in")
                 span(class="wechatImg " v-show="isWechat")
             li(
-              v-for="(item, index) in linksList",
+              v-for="(item, index) in $t('linksList')",
               :key="index",
               @click="onJump(item.link)",
               :id="item.id"
@@ -99,28 +99,6 @@ const langs = [
   { name: 'EN', tag: 'en' },
   { name: '한국어', tag: 'ko' },
 ]
-const linksList = [
-  {
-    name: 'weibo',
-    icon: 'icon font_family icon-weibo',
-    link: 'https://weibo.com/525045616/'
-  },
-  {
-    name: 'twitter',
-    icon: 'icon font_family icon-twitter',
-    link: 'https://twitter.com/truechaingroup/'
-  },
-  {
-    name: 'telegram',
-    icon: 'icon font_family icon-telegram',
-    link: 'http://www.t.me/truechainglobal/'
-  },
-  {
-    name: 'telegram',
-    icon: 'icon font_family icon-facebook',
-    link: 'https://www.facebook.com/TrueChaingroup/'
-  },
-]
 
 export default {
   components: {
@@ -149,7 +127,6 @@ export default {
       indexList,
       langs,
       menuIsOpen: false,
-      linksList,
       langsSelectorIsOpen: false,
       usedLangNum: 0,
       isWechat: false,

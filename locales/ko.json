@@ -1,5 +1,27 @@
 {
   "language": "한국어",
+  "linksList": [
+    {
+      "name": "weibo",
+      "icon": "icon font_family icon-weibo",
+      "link": "https://weibo.com/525045616/"
+    },
+    {
+      "name": "twitter",
+      "icon": "icon font_family icon-twitter",
+      "link": "https://twitter.com/truechaingroup/"
+    },
+    {
+      "name": "telegram",
+      "icon": "icon font_family icon-telegram",
+      "link": "https://t.me/truechainkorea"
+    },
+    {
+      "name": "telegram",
+      "icon": "icon font_family icon-facebook",
+      "link": "https://www.facebook.com/TrueChaingroup/"
+    }
+  ],
   "home": {
     "head": {
       "title": "트루체인 - 고성능의 무한한 노드, 하이브리드 합의 알고리즘의 블록체인",

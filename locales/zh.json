@@ -1,5 +1,27 @@
 {
   "language": "简体中文",
+  "linksList": [
+    {
+      "name": "weibo",
+      "icon": "icon font_family icon-weibo",
+      "link": "https://weibo.com/525045616/"
+    },
+    {
+      "name": "twitter",
+      "icon": "icon font_family icon-twitter",
+      "link": "https://twitter.com/truechaingroup/"
+    },
+    {
+      "name": "telegram",
+      "icon": "icon font_family icon-telegram",
+      "link": "http://www.t.me/truechain"
+    },
+    {
+      "name": "telegram",
+      "icon": "icon font_family icon-facebook",
+      "link": "https://www.facebook.com/TrueChaingroup/"
+    }
+  ],
   "home": {
     "head": {
       "title": "初链-超高性能无穷节点混合共识公链",
