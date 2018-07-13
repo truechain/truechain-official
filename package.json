@@ -20,6 +20,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/markdownit": "^1.2.1",
     "axios": "^0.18.0",
     "iview": "^2.14.2",
     "marked": "^0.4.0",
