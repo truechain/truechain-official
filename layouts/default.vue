@@ -40,43 +40,44 @@
           nuxt
           Spin(size="small", v-if="false")
       .container-app-footer
-        .container-app-footer-logo
-          i(class="icon font_family icon-logo1")
-        .container-app-footer-nav
-          ul
-            li(
-                @click="jumpTo('https://github.com/truechain')"
-              ) {{ $t(`nav.git`) }}
-            // li(
-            //     @click="jumpTo('http://group.truechain.pro')"
-            // ) {{ $t(`nav.blog`) }}
-            li(
-              v-for="(item, index) in indexList",
-              :key="index",
-              @click="jumpTo(item.path)",
-            ) {{ $t(`nav.${item.tag}`) }}
-        .container-app-footer-links
-          ul
-            li(
-              @mouseenter="setErweima",
-              @mouseleave="setErweima",
-            )
-              span(class="icon font_family icon-weixin")
-              transition(name="fade", mode="out-in")
-                span(class="wechatImg " v-show="isWechat")
-            li(
-              v-for="(item, index) in $t('linksList')",
-              :key="index",
-              @click="onJump(item.link)",
-              :id="item.id"
-            )
-              span(:class="item.icon")
-        .container-app-footer-down
-          .container-app-footer-text
-            div {{ $t('home.banner2.title') }}
-          .container-app-footer-buttons
-            app-android
-            app-ios
+        // .container-app-footer-logo
+        //   i(class="icon font_family icon-logo1")
+        // .container-app-footer-nav
+        //   ul
+        //     li(
+        //         @click="jumpTo('https://github.com/truechain')"
+        //       ) {{ $t(`nav.git`) }}
+        //     // li(
+        //     //     @click="jumpTo('http://group.truechain.pro')"
+        //     // ) {{ $t(`nav.blog`) }}
+        //     li(
+        //       v-for="(item, index) in indexList",
+        //       :key="index",
+        //       @click="jumpTo(item.path)",
+        //     ) {{ $t(`nav.${item.tag}`) }}
+        .container-app-footer-info
+          .container-app-footer-links
+            p.container-app-footer-text {{ $t('footerLinkDescr') }}
+            ul
+              li(
+                @mouseenter="setErweima",
+                @mouseleave="setErweima",
+              )
+                span(class="icon font_family icon-weixin")
+                transition(name="fade", mode="out-in")
+                  span(class="wechatImg " v-show="isWechat")
+              li(
+                v-for="(item, index) in $t('linksList')",
+                :key="index",
+                @click="onJump(item.link)",
+                :id="item.id"
+              )
+                span(:class="item.icon")
+          .container-app-footer-down
+            .container-app-footer-text {{ $t('footerDownDescr') }}
+            .container-app-footer-buttons
+              app-android
+              app-ios
         .container-app-footer-copyright
           div COPYRIGHT© TRUE CHAIN {{$t('copyright') }}
 </template>
@@ -305,12 +306,23 @@ nav
 .container-app-content
   // background red
 .container-app-footer
-  wh(100%, 426px)
+  wh(100%, auto)
+  padding 50px 0px 0px
   background-color $dark-blue
   fc()
   display flex
   align-items center
   flex-direction column
+.container-app-footer-logo
+  width 88px
+  height 88px
+  background-color white
+  border-radius 50%
+  padding 20px
+  fc()
+  .font_family
+    font-size 60px
+    color $font-dark
 .container-app-footer-nav
   // background red
   padding 40px 0
@@ -321,13 +333,31 @@ nav
       color white
       font-size 12px
       cursor pointer
+.container-app-footer-info
+  display flex
+  flex-direction row
+  justify-content flex-start
+  align-items flex-start
+  width 1200px
+  border-bottom 1px solid rgba(250,250,250,0.2)
+  font-size 0px
+  padding-bottom 50px
 .container-app-footer-links
-  padding 10px 0
+  width auto
+  height auto
+  border-right 1px solid rgba(250,250,250,0.6)
+  padding 10px 0px 0px
   ul
     display flex
+    margin-top 50px
+    height 80px
+    li:first-child
+      margin-left 0px
+    li:last-child
+      margin-right 60px
     li
-      margin 0 15px
-      wh(30px, 30px)
+      margin 0 30px
+      wh(70px, 70px)
       background white
       border-radius 50%
       transition all ease .5s
@@ -337,40 +367,55 @@ nav
       .font_family
         color $dark-blue
         transform scale(1.2)
+        font-size 30px
       &:hover
         transform scale(1.3)
       .wechatImg
-        width 100px
-        height 100px
+        width 55px
+        height 55px
         position absolute
         background url('~@/assets/images/qrcode.png')
         background-size 100% 100%
-        top -125px
-        left -36px
+        top 81px
+        left 0px
         z-index 999
         &:after
           content ''
           width 0
           height 0
           position absolute
-          bottom -18px
-          left 50%
+          top -9px
+          left 30px
           transform translateX(-50%)
-          border 10px solid
-          border-color #fff transparent transparent transparent
-.container-app-footer-logo
-  wh(88px, 88px)
-  background-color white
-  border-radius 50%
-  // padding 20px
-  fc()
-  .font_family
-    font-size 60px
-    color $font-dark
+          border 5px solid
+          border-color transparent transparent #fff transparent
+.container-app-footer-down
+  position relative
+  padding 10px 0px 10px 60px
+.container-app-footer-buttons
+  .app-button-box    
+    height 42px
+    margin-top 68px
+    .app-button
+      line-height 40px
+      display flex
+      flex-direction row
+      align-items center
+      justify-content center
+      svg 
+        margin 0px 8px 0px 0px
+  .app-button-qrcode
+    div
+      wh(80px,80px)
+      margin 0px auto
 .container-app-footer-copyright
+  width 1200px
+  padding-bottom 0px
   div
     color white
+    text-align left
     font-size 13px
+    line-height 60px
 
 @media screen and (max-width 860px)
   .container-app-header-nav
@@ -389,20 +434,13 @@ nav
         border none !important
   .container-app-header-button
     display block
-.container-app-footer-down
-  position relative
-  width 400px
-  padding 10px 0
+
 .container-app-footer-text
-  div
-    line-height 45px
-    color white
-.container-app-footer-buttons
-  position absolute
-  top -34px
-  right -88px
-  transform scale(.6)
-  height 100px
-  display flex
-  align-items center
+  font-size 30px
+  font-weight bold
+  line-height 40px
+  height 40px
+  color white
+  display block
+
 </style>
