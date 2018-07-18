@@ -346,8 +346,8 @@ nav
 .container-app-footer-links
   width auto
   height auto
-  border-right 1px solid rgba(250,250,250,0.6)
-  padding 10px 0px 0px
+  border-right 1px solid rgba(250,250,250,0.4)
+  padding 10px 30px 0px 0px
   ul
     display flex
     margin-top 50px
@@ -357,8 +357,8 @@ nav
     li:last-child
       margin-right 60px
     li
-      margin 0 30px
-      wh(70px, 70px)
+      margin 0 15px
+      wh(60px, 60px)
       background white
       border-radius 50%
       transition all ease .5s
@@ -378,7 +378,7 @@ nav
         background url('~@/assets/images/qrcode.png')
         background-size 100% 100%
         top 81px
-        left 0px
+        left -12px
         z-index 999
         &:after
           content ''
@@ -392,11 +392,11 @@ nav
           border-color transparent transparent #fff transparent
 .container-app-footer-down
   position relative
-  padding 10px 0px 10px 60px
+  padding 10px 0px 10px 70px
 .container-app-footer-buttons
   .app-button-box
     height 42px
-    margin-top 68px
+    margin-top 58px
     .app-button
       line-height 40px
       display flex
