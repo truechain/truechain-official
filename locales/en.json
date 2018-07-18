@@ -2,11 +2,6 @@
   "language": "EN",
   "linksList": [
     {
-      "name": "weibo",
-      "icon": "icon font_family icon-weibo",
-      "link": "https://weibo.com/525045616/"
-    },
-    {
       "name": "twitter",
       "icon": "icon font_family icon-twitter",
       "link": "https://twitter.com/truechaingroup/"
@@ -14,12 +9,27 @@
     {
       "name": "telegram",
       "icon": "icon font_family icon-telegram",
-      "link": "http://www.t.me/truechainglobal/"
+      "link": "http://www.t.me/truechain"
     },
     {
-      "name": "telegram",
+      "name": "facebook",
       "icon": "icon font_family icon-facebook",
       "link": "https://www.facebook.com/TrueChaingroup/"
+    },
+    {
+      "name": "reddit",
+      "icon": "icon font_family icon-reddit",
+      "link": "https://www.reddit.com/r/truechain/"
+    },
+    {
+      "name": "medium",
+      "icon": "icon font_family icon-medium",
+      "link": "https://medium.com/"
+    },
+    {
+      "name": "youtube",
+      "icon": "icon font_family icon-youtube",
+      "link": "https://www.youtube.com/"
     }
   ],
   "footerLinkDescr":"TrueChain Official SNS Platform",
