@@ -12,6 +12,7 @@
               img(:src="require(`~/assets/members/a${index + 1}.png`)")
               // .about-introduce-list-name-hover {{ item.name }}
             .about-introduce-list-name {{ item.name }}
+            .about-introduce-list-post {{ item.post }}
             .about-introduce-list-detail {{ item.intro }}
     .about-introduce
       .page-title.photo-header {{ $t('team.business.title') }}
@@ -105,6 +106,10 @@ export default {
         font-size 20px
         color $font-dark
         text-align center
+      .about-introduce-list-post
+        margin 10px 0
+        color $font-dark
+        font-weight bold
       .about-introduce-list-detail
         font-size 12px
         line-height 22px

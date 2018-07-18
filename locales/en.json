@@ -203,34 +203,42 @@
       "list": [
         {
           "name": "Eric Zhang",
+          "post": "Co - Founder, CEO",
           "intro": "The co-founder and CEO of TrueChain. Eric Zhang graduated from Oxford University with a master’s degree in computer science. He used to work at CERN-the European Organization for Nuclear Research focusing on decentralized computation. He’s also the founder of Dorahacks which is now the largest Hacker community with great reach. He’s one of the most influential organizer of Hackathon among the young generation dedicated to use technology to solve problems in the real business world."
         },
         {
           "name": "Archit Sharma",
+          "post": "Consensus Engineering Lead",
           "intro": "TrueChain’s tech lead responsible for TrueChain’s engineering and engineering team management. Archit Sharma is an expert at distributed system, operation systems and performance engineering. Archit has worked in Red Hat and CERN, engaged in large-scale cloud service and distributed system design and development. Archit is a contributor of several important open source projects, as well as several Hackathon champions."
         },
         {
           "name": "Home Chen",
+          "post": "Product lead",
           "intro": "TrueChain’s CTO in the greater China area. Home Chen has worked in IT industry for 20 years. He has rich experience in Internet product design and development, and software project management. He was a technical partner of “CaiHuohuo”, responsible for the research and development of new products, server cluster and high concurrent processing."
         },
         {
           "name": "Felix Cai",
+          "post": "Front - end Engineering Lead",
           "intro": "The front-end product leader of TrueChain, also a front-end geek. Felix Cai graduated from Xi'an Jiao Tong University youth class."
         },
         {
           "name": "Ice Ming",
+          "post": "",
           "intro": "Golang engineer,over 10 years experience in c/c++ development, responsible for bid projects, has strong learning ability, has the full package of project experience in real-time database products and digital currency transaction platform products. He has participated in developing bitcoin and ethereum wallets."
         },
         {
           "name": "Liu Yang",
+          "post": "",
           "intro": "Got his bachelor's and master's degree in Tsinghua University. He has over 10 years’ experience in development and system architecture. He is an expert at cryptography and building algorithms. He is responsible for the research and development of hybrid consensus and POW of TrueChain."
         },
         {
           "name": "Seay (Wizard)",
+          "post": "",
           "intro": "The security consultant of TrueChain, the author of “Code Audit: Enterprise Edition Web Code Security Architecture”, Seay source code security audit system author, and the blogger of well-known security blog “cnseay.com”. He once served at Alibaba security, and was the leader of Ali attack and defense laboratory, Sobug technology partner. Seay has experience of more than ten years in security attack and defense and served for several well-known enterprises."
         },
         {
           "name": "Robin Zhang",
+          "post": "",
           "intro": "BS，MS of Tsinghua University and MS of SUNY at Buffalo. As the expert of network communications, Mr. Zhang has more than 18 years of working experience in Silicon Valley and China. He is responsible for the implementation of hybrid consensus and POW of TrueChain. "
         }
       ]
@@ -240,22 +248,27 @@
       "list": [
         {
           "name": "Xiaoyong Cheng",
+          "post": "",
           "intro": "The co-founder of TrueChain, Chief Strategic Officer. XiaoYong Cheng is a serial entrepreneur, executive director of China Cloud System Pioneer Strategic Alliance. He is also a member of Youth Leader in Changan Club."
         },
         {
           "name": "Hongyi Zheng",
+          "post": "",
           "intro": "TrueChain’s Chief Operating Officer, mainly responsible for DApp business cooperation and development. Hongyi Zheng is the founder of Micro-Blocks and Smart Web Loan. He was the former Chief Operation Officer of the software release center of Kaspersky, the CEO of Zhuoxin group, CEO of Anhe Foundation, and the operation head of the Monternet business of China Mobile. He graduated from Harbin Institute of Technology. "
         },
         {
           "name": "Larry Lin",
+          "post": "",
           "intro": "The co-founder of TrueChain, chief development officer. Larry Lin is an expert of Internet marketing and community operation. He has been responsible for the operation of ‘Baidu encyclopedia’, which is the largest co-building community in China. Lin has more than 10 years of digital advertising and Internet industry experience, and was the author of several bestsellers in propaganda."
         },
         {
           "name": "Yan Liu",
+          "post": "",
           "intro": "TrueChain’s chief operation officer. He is responsible for TrueChain products and business operations, as well as TrueChain’s community building and operation."
         },
         {
           "name": "Wen Yan",
+          "post": "",
           "intro": "Market Director of TrueChain. Wen Yan graduated from the School of Journalism, University of Missouri - Columbia. During her stay in the United States, she once worked for Bankrate.com in Washington. D.C. focusing on the Federal Reserve. She later works for Sina Finance as a business reporter, having interviewed some of the biggest financial figures including the head of IMF, the Financial Minister of Denmark and Netherlands. She was also the market manager for Zenwater crowd funding platform. "
         }
       ]
@@ -265,30 +278,37 @@
       "list": [
         {
           "name": "Yushi Shen",
+          "post": "",
           "intro": "The Secretary-General of China Cloud System Pioneer Strategic Alliance. Yushi Shen got his bachelor’s degree in Electronic Engineering from Tsinghua University, master’s and doctor’s degree in computer science from University of California, San Diego. He’s a panelist for China’s “the Thousand Talents Plan”, also a research staff of Tsinghua and other prestigious universities. He was the strategic consultant for Microsoft, the person in charge of the government affairs and business development of cloud computing in the Great China area. He used to work at Microsoft as a senior software architect in the headquarter of Microsoft."
         },
         {
           "name": "Xianhua Wei",
+          "post": "",
           "intro": "The professor and PhD tutor of Chinese Academy of Sciences. Xianhua Wei is also the deputy director of the virtual economy and data science research center of Chinese Academy of Sciences, and the executive director of the CAS - Reuters financial risk management joint laboratory."
         },
         {
           "name": "Jamie Cooper",
+          "post": "",
           "intro": "Global intellectual property legal expert, the professor of California Western School of Law, chairman of Proyecto ACCESO foundation project, former United States State Department, American Development Bank, American patent and Trademark Office consultant, United States representative of the world intellectual property organization."
         },
         {
           "name": "Jinglong Zhou",
+          "post": "",
           "intro": "The former partner of the GWC, which is the world's largest Internet Organization. He has a wide range of connections and resources of Internet industry and governments all over the world."
         },
         {
           "name": "Jun Zou",
+          "post": "",
           "intro": "The author of best seller \"block chain technology guide\", also an expert of Zhongguancun block chain industry alliance. He is a PhD in Service Contract, the former chief software architect of IBM Australian financial industry, and have published more than 200 papers in the International Conference on IEEE, of which block chain related papers were awarded to IEEE ICWS in 2016."
         },
         {
           "name": "Yu Zhu (binke)",
+          "post": "",
           "intro": "The head of the Block Chain and the New retail Research Institute, the first head of the new retailing (O2O) department of Alibaba Group. He became the vice president of Shopin Enterprise in 2015, taking charge of offline entities and online overall work. He has rich experience in complete digitization and full channel communication, and digital marketing business."
         },
         {
           "name": "Xiong Li",
+          "post": "",
           "intro": "The founder of LianXiang Finance and Economics."
         }
 
