@@ -59,32 +59,32 @@
     },
     "superiority": [
       {
-        "icon": "icon font_family icon-te",
+        "icon": "icon font_family icon-jiejue",
         "title": "解决公链最显著的问题",
         "detail":"初链利用基于 PBFT-fPoW混合共识机制和安全的分片机制解决了目前公链面临的最大的问题：性能和去中心化之间的矛盾"
       },
       {
-        "icon": "icon font_family icon-te1",
+        "icon": "icon font_family icon-tianchengzuo",
         "title": "确保去中心化和公平性",
         "detail":"用水果链作为慢链，用fPoW取代中本聪的PoW协议, 初链可确保作为新一代公链的去中心化和公平性"
       },
       {
-        "icon": "icon font_family icon-te2",
+        "icon": "icon font_family icon-gongshijizhi",
         "title": "第一代混合共识激励机制",
         "detail":"初链是世界上第一个利用激励机制来治理混合共识公链的，这为区块链技术赋予了经济意识"
       },
       {
-        "icon": "icon font_family icon-te2",
+        "icon": "icon font_family icon-jizhi",
         "title": "稳定、低成本的燃料费机制",
         "detail":"实现零燃料费对于任何一个公链来说都是不可能的，尽管如此，初链可提供稳定、低成本的燃料费而让更多DApps实现上链"
       },
       {
-        "icon": "icon font_family icon-te2",
+        "icon": "icon font_family icon-shequ",
         "title": "强大的全球开发者社区",
         "detail":"在新一代公链中，初链拥有中国范围内规模最大、全球范围内增长速度最快的开发者社区"
       },
       {
-        "icon": "icon font_family icon-te2",
+        "icon": "icon font_family icon-chanpin",
         "title": "开源的产品矩阵",
         "detail":"为完善和支持混合共识公链平台，初链有十分完整且易用的产品矩阵，并且所有产品都对外开源"
       }

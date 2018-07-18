@@ -59,33 +59,33 @@
     },
     "superiority": [
       {
-        "icon": "icon font_family icon-te",
+        "icon": "icon font_family icon-jiejue",
         "title": "Tackles the Obstacles of Public Blockchain",
         "detail":"The conflict between  efficiency and decentralization for public blockchain is solved by TrueChain with its permissionless PBFT-fPoW hybrid consensus with secure sharding."
       },
       {
-        "icon": "icon font_family icon-te1",
+        "icon": "icon font_family icon-tianchengzuo",
         "title": "Ensures  Decentralization and Fairness",
         "detail":"Using Fruitchain as Snailchain to replace Nakamoto PoW with fPoW, TrueChain ensures  decentralization and fairness for the new generation of public blockchain."
       },
       {
-        "icon": "icon font_family icon-te2",
+        "icon": "icon font_family icon-gongshijizhi",
         "title": "The First  Hybrid Consensus Incentive Model",
         "detail":"TrueChain is the first in the world to design an incentive model for the governance of the hybrid consensus which impart economic awareness to blockchain technology"
       },
       {
-        "icon": "icon font_family icon-te2",
+        "icon": "icon font_family icon-jizhi",
         "title": "Stable and Low Gas Fee Mechanism",
         "detail":"Zero gas fee is impossible for public blockchain, nonetheless, TrueChain designs a stable and relatively low gas fee mechanism for more DApps to be built on it."
       },
       {
-        "icon": "icon font_family icon-te2",
+        "icon": "icon font_family icon-shequ",
         "title": "Strong Global Developer Community",
         "detail":"Among the new generation of public blockchains, TrueChain has a developer community that is the largest in China and the fastest growing in the world."
       },
       {
-        "icon": "icon font_family icon-te2",
-        "title": "Open Source Product Grid",
+        "icon": "icon font_family icon-chanpin",
+        "title": "Open Sourced Grid of Products",
         "detail":"TrueChain brings a grid of products that support the hybrid consensus public blockchain platform and makes the chain easy to use, and they are open source!"
       }
     ],
