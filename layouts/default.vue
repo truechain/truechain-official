@@ -370,10 +370,10 @@ nav
         transform scale(1.2)
         font-size 30px
       &:hover
-        transform scale(1.3)
+        transform scale(1.1)
       .wechatImg
-        width 55px
-        height 55px
+        width 80px
+        height 80px
         position absolute
         background url('~@/assets/images/qrcode.png')
         background-size 100% 100%
@@ -386,7 +386,7 @@ nav
           height 0
           position absolute
           top -9px
-          left 30px
+          left 50%
           transform translateX(-50%)
           border 5px solid
           border-color transparent transparent #fff transparent
