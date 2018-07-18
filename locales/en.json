@@ -40,7 +40,8 @@
       "keyword": "True，TrueChain，Eric zhang，blockchain, hybrid consensus, Xiaoyong Cheng, Larry Lin",
       "description": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW. It solves the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency. "
     },
-    "slogan": "High Performance　Infinite Nodes　Hybrid Consensus Public Blockchain",
+    "slogan": "Truly Fast, Permissionless, Secure and Scalable",
+    "slogan1": "PBFT-fPoW hybrid consensus public blockchain with global developer community",
     "white": "WHITE PAPER",
     "whiteLink": "https://www.truechain.pro/Truechain_en.pdf",
     "yellow": "YELLOW PAPER",
@@ -59,29 +60,45 @@
     "superiority": [
       {
         "icon": "icon font_family icon-te",
-        "title": "Highly Performant Blockchain Infrastructure",
-        "detail":"TrueChain uses hybrid consensus technology combing PBFT and POW. On consensus layer, TrueChain takes advantage of PBFT to achieve high TPS, and support infinite POW nodes as validators to ensure decentralization and security. Therefore TrueChain is made to be a public blockchain for performance-demanding decentralized applications."
+        "title": "Tackles the Obstacles of Public Blockchain",
+        "detail":"The conflict between  efficiency and decentralization for public blockchain is solved by TrueChain with its permissionless PBFT-fPoW hybrid consensus with secure sharding."
       },
       {
         "icon": "icon font_family icon-te1",
-        "title": "Smart Contracts with Business Logistics",
-        "detail":"TrueChain's smart contract platform is providing an abstraction layer for commercial applications, making it easy and fast for developers to access blockchain technology. Application builders can create their own tokens, define workflows, and test/verify their contracts based on a unified environment."
+        "title": "Ensures  Decentralization and Fairness",
+        "detail":"Using Fruitchain as Snailchain to replace Nakamoto PoW with fPoW, TrueChain ensures  decentralization and fairness for the new generation of public blockchain."
       },
       {
         "icon": "icon font_family icon-te2",
-        "title": "Usable Developing Toolkit",
-        "detail":"TrueChain builds toolkit for developers and operations to access, monitor, and manage applications. With TrueChain BaaS, Smart Contract Manager, TrueChain DApp Store, Contract Browser and Easy DApp framework, it’s easy to use TrueChain as a blockchain platform."
+        "title": "The First  Hybrid Consensus Incentive Model",
+        "detail":"TrueChain is the first in the world to design an incentive model for the governance of the hybrid consensus which impart economic awareness to blockchain technology"
+      },
+      {
+        "icon": "icon font_family icon-te2",
+        "title": "Stable and Low Gas Fee Mechanism",
+        "detail":"Zero gas fee is impossible for public blockchain, nonetheless, TrueChain designs a stable and relatively low gas fee mechanism for more DApps to be built on it."
+      },
+      {
+        "icon": "icon font_family icon-te2",
+        "title": "Strong Global Developer Community",
+        "detail":"Among the new generation of public blockchains, TrueChain has a developer community that is the largest in China and the fastest growing in the world."
+      },
+      {
+        "icon": "icon font_family icon-te2",
+        "title": "Open Source Product Grid",
+        "detail":"TrueChain brings a grid of products that support the hybrid consensus public blockchain platform and makes the chain easy to use, and they are open source!"
       }
     ],
     "about": {
       "title": "ABOUT",
-      "subhead": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW.",
-      "p1": "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus combining PBFT and PoW to solve the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency. TrueChain takes advantage of PBFT which is fast to reach consensus, to provide the high performance needed by value transmission and commercial activities of decentralized applications. Meanwhile, TrueChain uses PoW nodes as validators, and leave the election and oversight of PBFT to the hands of PoW to ensure the whole chain to be decentralized and therefore secure.",
-      "p2": "TrueChain adopts sharding to raise the transaction processing speed, to realize scalability without affecting the safety of hybrid consensus. TrueChain integrates fruitchain technology into PoW protocol to allow regular users to participate in mining more fairly, and re-assure complete decentralization.",
-      "p3": "True Chain also creates Easy DApp, the easy-to-use developing framework for decentralized applications. Developers can take advantage of Easy DApp and use standard API, with the facilitation of x86 virtual machine, to develop and deploy decentralized applications easily and quickly.",
-      "p4": "TrueChain’s complete matrix of products allows users and institutions to interact with the chain conveniently. Included in the product matrix are Stellar -- the toolkit for the DApp developers to create smart contracts and manage the life cycle of the contracts; DApp Store-- the store for decentralized applications on True Chain; TrueScan explorer; True Light Wallet, etc.",
-      "p5": "The leading research and engineering team members of True Chain come from the U.S., India and China.",
-      "p6": "True Chain is a committee member of China’s National Cloud Industry Strategic Innovation Alliance, a member of the National Chain-Web Innovation Center of China; and is also one of the few block chain projects that have been reported by China’s authoritative media - CCTV, and also participated in the research work of the white paper released by the Ministry of Industry and Information Technology of the Chinese government. "
+      "subhead": "TrueChain is a truly fast, permissionless, secure and scalable public blockchain platform which is supported by the PBFT and fPoW hybrid consensus technology and a global developer community. ",
+      "contentList": [
+        "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus combining PBFT and fPoW to solve the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency. ",
+        "It uses PBFT as fast-chain to process transactions, and leave the oversight and election of PBFT to the hands of  PoW nodes. Besides, TrueChain integrates fruitchain technology into the traditional PoW protocol  i.e. fPoW, as the snailchain, to make the chain even more decentralized and fair. TrueChain also added sharding on top of PBFT to lift the limit of scalability. ",
+        "With solid and leading technology, TrueChain aims to provide a workable and well-governed blockchain platform for decentralized economy. It comes up with the first hybrid consensus incentive model to use economic awareness as a drive to uphold and improve the chain. Meanwhile, it also creates a stable gas fee mechanism to lower the cost for the developers and operators of DApps, and to make the blockchain more public. ",
+        "As a platform, TrueChain builds an all-inclusive community to attract the worldwide developers and entrepreneurs to be part of it, to join the decentralized economy revolution. Not only TrueChain has a global developer community, it also has a  grid of products that are handy for the developers, and they are open sourced which allows them to be more user oriented. ",
+        "The team of TrueChain is international with its members from India, the United States, China, etc. "
+      ]
     },
     "roadmap": {
       "title": "ROAD MAP",
