@@ -79,7 +79,8 @@
               app-android
               app-ios
         .container-app-footer-copyright
-          div COPYRIGHT© TRUE CHAIN {{$t('copyright') }}
+          div Copyright ⓒ TrueChain All Rights Reserved.
+          // div COPYRIGHT© TRUE CHAIN {{$t('copyright') }}
 </template>
 
 <script>
@@ -393,7 +394,7 @@ nav
   position relative
   padding 10px 0px 10px 60px
 .container-app-footer-buttons
-  .app-button-box    
+  .app-button-box
     height 42px
     margin-top 68px
     .app-button
@@ -402,7 +403,7 @@ nav
       flex-direction row
       align-items center
       justify-content center
-      svg 
+      svg
         margin 0px 8px 0px 0px
   .app-button-qrcode
     div
