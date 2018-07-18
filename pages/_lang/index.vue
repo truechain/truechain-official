@@ -12,7 +12,9 @@ div
           .banner-home-logo
             i(class="icon font_family icon-logo")
           .banner-home-slogan
-            span {{ $t('home.slogan') }}
+            div {{ $t('home.slogan') }}
+            div {{ $t('home.slogan1') }}
+            span(v-if="$store.state.locale === 'en'") No Cliche, Leading Tech, Workable Chain
           .banner-home-buttons
             a(href="https://github.com/truechain",target="_blank") GITHUB
             a(:href="$t('home.whiteLink')",target="_blank") {{ $t('home.white') }}
@@ -55,13 +57,8 @@ div
     .con
       .title {{ $t('home.about.subhead') }}
       .descr
-        p {{ $t('home.about.p1') }}
-        p {{ $t('home.about.p2') }}
-        p {{ $t('home.about.p3') }}
-        p {{ $t('home.about.p4') }}
-        p {{ $t('home.about.p5') }}
-        p {{ $t('home.about.p6') }}
-      .col3
+        p(v-for="item in $t('home.about.contentList')") {{ item }}
+      .col3(v-if="$store.state.locale === 'zh'")
         .co
           img(src="~assets/images/h1.png")
         .co
@@ -259,33 +256,39 @@ export default {
       display flex
       align-items center
       wh(100%, 500px)
-      margin-top 80px
+      margin-top 30px
     .banner-home
+      position relative
       display flex
       flex-direction column
+      justify-content center
+      padding-bottom 90px
       div
         span
           color white
       .banner-home-logo
+        position absolute
+        top 0
         .icon-logo
           color white
-          font-size 160px
+          font-size 140px
       .banner-home-slogan
         font-size 30px
-        margin 15px 0px 30px
+        margin-top 100px
         font-weight bold
-        position relative
-        &:after
-          content ''
-          wh(100px, 4px)
-          background white
-          position absolute
-          bottom -38px
-          left 50%
-          transform translateX(-50%)
-          border-radius 2px
+        text-align center
+        div
+          color white
+          line-height 50px
+          font-size 26px
+        span
+          color #dfe0e5
+          font-size 22px
+          margin-top 20px
+          font-weight normal
       .banner-home-buttons
-        margin-top 62px
+        position absolute
+        bottom 80px
         a
           padding 11px 20px
           line-height 20px
@@ -440,7 +443,7 @@ export default {
     color $font-grey
     text-align left
   .co
-    width 240px
+    width 280px
     color $font-dark
 
 .home-about
