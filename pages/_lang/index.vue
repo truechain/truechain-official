@@ -121,7 +121,7 @@ div
           v-for="index in 4",
         )
           img(:src="require(`@/assets/images/partner${index}.png`)")
-  .home-news
+  .home-news(v-if="$store.state.locale === 'zh'")
     .page-title {{ $t('home.news.title') }}
     .con
       .co(
@@ -135,8 +135,6 @@ div
           .vid-mask
         // .time {{ item.time }}
         .descr {{ item.title }}
-    // video(:src="current_video",style="width:600px;height:auto;",controls="controls")
-
   no-ssr(placeholder="Loading...")
     Modal(
       v-model="modalvid",
