@@ -99,7 +99,7 @@ const indexList = [
 const langs = [
   { name: '简体中文', tag: 'zh' },
   { name: 'EN', tag: 'en' },
-  { name: '한국어', tag: 'ko' },
+  // { name: '한국어', tag: 'ko' },
 ]
 
 export default {
