@@ -91,9 +91,9 @@
     ],
     "about": {
       "title": "ABOUT",
-      "subhead": "TrueChain is a truly fast, permissionless, secure and scalable public blockchain platform which is supported by Minerva - hybrid technology and a global developer community. ",
+      "subhead": "TrueChain is a truly fast, permissionless, secure and scalable public blockchain platform which is supported by hybrid consensus technology called Minerva and a global developer community. ",
       "contentList": [
-        "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus called Minerva to solve the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency.",
+        "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus called Minerva combining PBFT and fPoW to solve the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency.",
         "It uses PBFT as fast-chain to process transactions, and leave the oversight and election of PBFT to the hands of  PoW nodes. Besides, TrueChain integrates fruitchain technology into the traditional PoW protocol  i.e. fPoW, as the snailchain, to make the chain even more decentralized and fair. TrueChain also added sharding on top of PBFT to lift the limit of scalability. ",
         "With solid and leading technology, TrueChain aims to provide a workable and well-governed blockchain platform for decentralized economy. It comes up with the first hybrid consensus incentive model to use economic awareness as a drive to uphold and improve the chain. Meanwhile, it also creates a stable gas fee mechanism to lower the cost for the developers and operators of DApps, and to make the blockchain more public. ",
         "As a platform, TrueChain builds an all-inclusive community to attract the worldwide developers and entrepreneurs to be part of it, to join the decentralized economy revolution. Not only TrueChain has a global developer community, it also has a  grid of products that are handy for the developers, and they are open sourced which allows them to be more user oriented. ",
@@ -146,7 +146,7 @@
       ]
     },
     "partner": "PARTNER",
-    "institution": "INVESTMENT INSTITUTION",
+    "institution": "INVESTORS",
     "news":{
       "title":"NEWS",
       "technical": "Technical trends",
