@@ -15,7 +15,7 @@
             .about-introduce-list-post {{ item.post }}
             .about-introduce-list-detail(v-for="t in item.introList") {{ t }}
     .about-banner
-      div With 500+ developers from the world
+      div {{ $t('team.banner') }}
     .about-introduce
       .page-title.photo-header {{ $t('team.business.title') }}
       .about-introduce-list
