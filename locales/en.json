@@ -198,6 +198,7 @@
       "keyword": "TrueChain team members, TRUE, Blockchain expert, digital currency expert, Blockchain Talents",
       "description": "The leading research and engineering team members of True Chain come from the U.S., India and China. "
     },
+    "banner": "With 500+ developers from the world",
     "technology": {
       "title": "Research and Developers Community",
       "list": [
@@ -310,6 +311,16 @@
           ]
         },
         {
+          "name": "Larry Lin",
+          "post": "Head of Business",
+          "imgSrc": "daliang",
+          "introList": [
+            "Internet marketing community operation expert",
+            "Baidu encyclopedia operation",
+            "10+years of digital advertising and internet industry"
+          ]
+        },
+        {
           "name": "Hongyi Zheng",
           "post": "Chief Operating Officer",
           "imgSrc": "hongyi",
@@ -318,16 +329,6 @@
             "Responsible for DApp business cooperation and development",
             "Former Chief Operation Officer of the software release center of Kaspersky",
             "Former operation head of the Monternet business of China Mobile"
-          ]
-        },
-        {
-          "name": "Larry Lin",
-          "post": "Head of Business",
-          "imgSrc": "daliang",
-          "introList": [
-            "Internet marketing community operation expert",
-            "Baidu encyclopedia operation",
-            "10+years of digital advertising and internet industry"
           ]
         },
         {
