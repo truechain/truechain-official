@@ -14,22 +14,8 @@
             .about-introduce-list-name {{ item.name }}
             .about-introduce-list-post {{ item.post }}
             .about-introduce-list-detail(v-for="t in item.introList") {{ t }}
-    .about-introduce
-      .page-title.photo-header {{ $t('team.community.title') }}
-      .about-introduce-list
-        ul
-          li(
-            v-for="(item, index) in $t('team.community.list')"
-            :key="index"
-          )
-            .about-introduce-list-avatar
-              // img(:src="require(`@/assets/members/b${index + 1}.png`)")
-              img(:src="require(`~/assets/members/${item.imgSrc}.png`)")
-              // .about-introduce-list-name-hover {{ item.name }}
-            .about-introduce-list-name {{ item.name }}
-            // .about-introduce-list-detail {{ item.intro }}
-            .about-introduce-list-post
-            .about-introduce-list-detail(v-for="t in item.introList") {{ t }}
+    .about-banner
+      div With 500+ developers from the world
     .about-introduce
       .page-title.photo-header {{ $t('team.business.title') }}
       .about-introduce-list
@@ -77,7 +63,17 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
-
+.about-banner
+  text-align center
+  div
+    color white
+    font-size 28px
+    padding 20px
+    width 60%
+    margin 0 auto 30px
+    background $font-dark
+    // box-shadow 2px 2px red 2px
+    box-shadow 0px 5px 5px rgba(11,23,73,0.15)
 .about-container
   padding 100px 20px 40px
   .page-title.photo-header
