@@ -24,19 +24,19 @@
     {
       "name": "medium",
       "icon": "icon font_family icon-medium",
-      "link": "https://medium.com/"
+      "link": "https://medium.com/@truechaingroup"
     },
     {
       "name": "youtube",
       "icon": "icon font_family icon-youtube",
-      "link": "https://www.youtube.com/"
+      "link": "https://www.youtube.com/channel/UCsKSh9TPpYCZwHFn4lzhmFg?view_as=subscriber"
     }
   ],
   "footerLinkDescr":"TrueChain Official SNS Platform",
   "footerDownDescr":"TrueChain Light Wallet  APP Download",
   "home": {
     "head": {
-      "title": "TrueChain-High performance infinite nodes hybrid consensus public blockchain",
+      "title": "Next generation hybrid consensus public chain",
       "keyword": "True，TrueChain，Eric zhang，blockchain, hybrid consensus, Xiaoyong Cheng, Larry Lin",
       "description": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW. It solves the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency. "
     },
@@ -91,9 +91,9 @@
     ],
     "about": {
       "title": "ABOUT",
-      "subhead": "TrueChain is a truly fast, permissionless, secure and scalable public blockchain platform which is supported by the PBFT and fPoW hybrid consensus technology and a global developer community. ",
+      "subhead": "TrueChain is a truly fast, permissionless, secure and scalable public blockchain platform which is supported by Minerva - hybrid technology and a global developer community. ",
       "contentList": [
-        "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus combining PBFT and fPoW to solve the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency. ",
+        "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus called Minerva to solve the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency.",
         "It uses PBFT as fast-chain to process transactions, and leave the oversight and election of PBFT to the hands of  PoW nodes. Besides, TrueChain integrates fruitchain technology into the traditional PoW protocol  i.e. fPoW, as the snailchain, to make the chain even more decentralized and fair. TrueChain also added sharding on top of PBFT to lift the limit of scalability. ",
         "With solid and leading technology, TrueChain aims to provide a workable and well-governed blockchain platform for decentralized economy. It comes up with the first hybrid consensus incentive model to use economic awareness as a drive to uphold and improve the chain. Meanwhile, it also creates a stable gas fee mechanism to lower the cost for the developers and operators of DApps, and to make the blockchain more public. ",
         "As a platform, TrueChain builds an all-inclusive community to attract the worldwide developers and entrepreneurs to be part of it, to join the decentralized economy revolution. Not only TrueChain has a global developer community, it also has a  grid of products that are handy for the developers, and they are open sourced which allows them to be more user oriented. ",
@@ -199,11 +199,11 @@
       "description": "The leading research and engineering team members of True Chain come from the U.S., India and China. "
     },
     "technology": {
-      "title": "Research and Core Engineering",
+      "title": "Research and Developers Community",
       "list": [
         {
           "name": "Eric Zhang",
-          "post": "Co - Founder, CEO",
+          "post": "CEO",
           "imgSrc": "jiannan",
           "introList": [
             "M.S. In Computer Science, Oxford University",
@@ -220,6 +220,16 @@
             "Researcher, CERN IT (2013)",
             "Champion, Docker Hackathon",
             "Second Prize, CERN Webfest 2013"
+          ]
+        },
+        {
+          "name": "Yang Liu",
+          "post": "Mainnet Lead",
+          "imgSrc": "liuyang",
+          "introList": [
+            "B.S. & M.S. Computer Science, Tsinghua University",
+            "10+years experience in development and system architecture",
+            "Cryptography and algorithms expert"
           ]
         },
         {
@@ -264,7 +274,7 @@
         },
         {
           "name": "Robin Zhang",
-          "post": "Consensus and PoW product lead     ",
+          "post": "Consensus and PoW product lead",
           "imgSrc": "xubin",
           "introList": [
             "BS, MS, Tsinghua University",
@@ -272,23 +282,10 @@
             "Network communications expert",
             "18+years experience in Silicon Valley and China"
           ]
-        }
-      ]
-    },
-    "community": {
-      "title": "Community developers",
-      "list": [
-        {
-          "name": "Yang Liu",
-          "imgSrc": "liuyang",
-          "introList": [
-            "B.S. & M.S. Computer Science, Tsinghua University",
-            "10+years experience in development and system architecture",
-            "Cryptography and algorithms expert"
-          ]
         },
         {
           "name": "Binqi Tang",
+          "post": "Senior developer",
           "imgSrc": "binqi",
           "introList": [
             "10+years experience in system development and framework",
@@ -304,7 +301,7 @@
       "list": [
         {
           "name": "James Cheng",
-          "post": "Co - founder, head of strategic development ",
+          "post": "head of strategic development ",
           "imgSrc": "xiaoyong",
           "introList": [
             "Part-time research staff of Tsinghua University, Serial entrepreneur",
@@ -325,7 +322,7 @@
         },
         {
           "name": "Larry Lin",
-          "post": "Co - founder, Head of Business",
+          "post": "Head of Business",
           "imgSrc": "daliang",
           "introList": [
             "Internet marketing community operation expert",
@@ -335,13 +332,12 @@
         },
         {
           "name": "Yan Liu",
-          "post": "Community Coordinator ",
+          "post": "Community Coordinator",
           "imgSrc": "liuyan",
           "introList": [
             "10+years internet product operation experience",
             "Senior advisor of ADP",
-            "Operation director of F6 Automobile Technology",
-            "CEO of www.fuer655.com"
+            "Operation Expert of automobile Technology Platform"
           ]
         },
         {
@@ -351,14 +347,13 @@
           "introList": [
             "Graduated from School of Journalism, University of Missouri - Columbia",
             "Reporter at Bankrate.com in Washington. D.C",
-            "Business reporter at Sina Finance",
-            "Market manager for Zenwater crowd funding platform"
+            "Business reporter at Sina Finance"
           ]
         }
       ]
     },
     "consultant": {
-      "title": "CONSULTANT",
+      "title": "Advisors",
       "list": [
         {
           "name": "Yushi Shen",
@@ -413,14 +408,7 @@
             "Former vice president of Shopin Enterprise in 2015",
             "Complete digitization, full channel communications and digital marketing business expert"
           ]
-        },
-        {
-          "name": "Xiong Li",
-          "introList": [
-            "The founder of LianXiang Finance and Economics."
-          ]
         }
-
       ]
     }
   },
