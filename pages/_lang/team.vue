@@ -90,6 +90,7 @@ export default {
   ul
     display flex
     align-items baseline
+    justify-content center
     flex-wrap wrap
     padding 0px
     li

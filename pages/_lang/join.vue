@@ -42,11 +42,12 @@ export default {
   display flex
   flex-direction column
   margin 0 auto
-  width 1024px
+  width 70%
   // background red
   padding-top 100px
   padding-bottom 60px
   position relative
+  // text-align center
 .join-head-intro
   // background red
   color $font-dark
