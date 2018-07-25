@@ -30,11 +30,18 @@
                       v-for="item in langs"
                       :name="item.tag"
                       :key="item.tag"
-                    ) {{item.name}}
+                    ) {{item.name}}          
           span.container-app-header-button(@click.stop="toggleMenu")
             span
             span
-            span
+            span 
+          span.container-app-header-button.lang(@click.stop="toggleLang") {{ $t(`language`) }}
+          ul.langsSelecttor(:style="{'height': langsSelectorIsOpen ? `${40 * (langs.length)}px` : '0'}")
+            li(
+              v-for="item in langs"
+              :key="item.tag"
+              @click="changeLanguage(item.tag)"
+            ) {{item.name}}
       .container-app-content
         transition(name="fade-x", mode="out-in")
           nuxt
@@ -167,6 +174,7 @@ export default {
       }
     },
     toggleMenu () {
+      this.closeLangsSelector()
       if (!this.menuIsOpen) {
         this.menuIsOpen = true
       } else {
@@ -175,6 +183,14 @@ export default {
     },
     closeMenu (e) {
       this.menuIsOpen = false
+    },
+    toggleLang(){
+      this.closeMenu()
+      if (!this.langsSelectorIsOpen) {
+        this.langsSelectorIsOpen = true
+      } else {
+        this.langsSelectorIsOpen = false
+      }
     },
     openLangsSelector () {
       this.langsSelectorIsOpen = true
@@ -191,7 +207,7 @@ export default {
       }
     }, */
     changeLanguage (lang) {
-
+      this.closeLangsSelector()
       if(this.$store.state.locale === lang) return
 
       const { $route:{ fullPath, params }, $router } = this;
@@ -288,6 +304,19 @@ nav
     .ivu-select-dropdown
       width auto !important
       background-color $dark-blue
+.langsSelecttor
+  li
+    float left
+    color #A9ADBB
+    margin-left 10px
+    font-size 14px
+    cursor pointer
+    transition color .4s
+    line-height 20px
+    padding 5px 15px
+    position relative
+    &:hover
+      color white
 .container-app-header-button
   display none
   float right
@@ -303,6 +332,13 @@ nav
       margin 0
     &:last-child
       margin 0
+.container-app-header-button.lang
+  color white
+  display none
+  width auto
+  margin 5px 20px
+  font-size 14px
+  line-height 20px
 
 .container-app-content
   // background red
@@ -428,6 +464,13 @@ nav
     text-align left
     font-size 13px
     line-height 60px
+.container-app-footer-text
+  font-size 30px
+  font-weight bold
+  line-height 40px
+  height 40px
+  color white
+  display block
 
 @media screen and (max-width 1180px)
   .container-app-footer-links
@@ -454,15 +497,24 @@ nav
         line-height 30px
         margin-left 0
         border none !important
+  .langsSelecttor
+    overflow hidden
+    position absolute
+    left 0
+    top 100px
+    width 100%
+    height 0
+    transition height .6s
+    li
+      float none
+      line-height 30px
+      margin-left 0
+      border none !important
   .container-app-header-button
     display block
+  .container-app-header-button.lang
+    display inline-block
 
-.container-app-footer-text
-  font-size 30px
-  font-weight bold
-  line-height 40px
-  height 40px
-  color white
-  display block
+
 
 </style>
