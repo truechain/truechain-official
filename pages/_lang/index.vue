@@ -516,13 +516,14 @@ export default {
   .con
     display flex
     flex-direction row
-    flex-wrap nowrap
-    justify-content space-around
+    flex-wrap wrap
+    justify-content center
     align-items flex-start
-    max-width 1024px
+    max-width 1124px
     margin 46px auto 0px
     .co
-      wh(190px, 106px)
+      wh(210px, 136px)
+      padding 10px 15px
       img
         wh(100%,100%)
         border-radius 5px
@@ -547,7 +548,7 @@ export default {
   .con
     display flex
     flex-direction row
-    flex-wrap nowrap
+    flex-wrap wrap
     justify-content center
     align-items flex-start
     max-width 1024px
@@ -581,13 +582,14 @@ export default {
   .con
     display flex
     flex-direction row
-    flex-wrap nowrap
+    flex-wrap wrap
     justify-content space-around
     align-items flex-start
     max-width 1024px
     margin 46px auto 0px
     .co
       width 300px
+      padding 10px 15px
       .vid
         wh(100%,155px)
         background-color #eee
@@ -647,7 +649,7 @@ export default {
     wh(60px, 4px)
     border-radius 2px
   .time-line-con
-    width 630px
+    max-width 630px
     margin 46px auto 0px
     .start-point
       dot(8px)

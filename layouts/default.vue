@@ -308,7 +308,7 @@ nav
   // background red
 .container-app-footer
   wh(100%, auto)
-  padding 50px 0px 0px
+  padding 50px 20px 0px
   background-color $dark-blue
   fc()
   display flex
@@ -336,17 +336,19 @@ nav
       cursor pointer
 .container-app-footer-info
   display flex
-  flex-direction row
-  justify-content flex-start
+  flex-direction row  
+  flex-wrap wrap
+  justify-content center
   align-items flex-start
   border-bottom 1px solid rgba(250,250,250,0.2)
   font-size 0px
-  padding-bottom 50px
+  padding-bottom 0px
 .container-app-footer-links
   width auto
   height auto
   border-right 1px solid rgba(250,250,250,0.4)
   padding 10px 30px 0px 0px
+  margin-bottom 60px
   ul
     display flex
     margin-top 50px
@@ -391,7 +393,7 @@ nav
           border-color transparent transparent #fff transparent
 .container-app-footer-down
   position relative
-  padding 10px 0px 10px 70px
+  padding 10px 0px 60px 70px
 .container-app-footer-buttons
   .app-button-box
     height 42px
@@ -415,6 +417,15 @@ nav
     text-align left
     font-size 13px
     line-height 60px
+
+@media screen and (max-width 1180px)
+  .container-app-footer-links
+    border-right none
+  .container-app-footer-text
+    text-align center
+  .container-app-footer-down
+    padding-left 0px
+
 
 @media screen and (max-width 860px)
   .container-app-header-nav
