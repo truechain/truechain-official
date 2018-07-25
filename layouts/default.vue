@@ -398,9 +398,17 @@ nav
   position relative
   padding 10px 0px 60px 70px
 .container-app-footer-buttons
+  display flex
+  flex-wrap wrap
+  justify-content center
+  &:before,&:after
+    content: " ";
+    display: block; 
+    clear both
   .app-button-box
     height 42px
     margin-top 58px
+    float none
     .app-button
       line-height 40px
       display flex
