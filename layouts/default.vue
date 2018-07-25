@@ -338,7 +338,6 @@ nav
   flex-direction row
   justify-content flex-start
   align-items flex-start
-  width 1200px
   border-bottom 1px solid rgba(250,250,250,0.2)
   font-size 0px
   padding-bottom 50px
@@ -409,7 +408,6 @@ nav
       wh(80px,80px)
       margin 0px auto
 .container-app-footer-copyright
-  width 1200px
   padding-bottom 0px
   div
     color white
