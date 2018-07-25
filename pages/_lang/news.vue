@@ -6,9 +6,12 @@
       .news-body-table
         .news-body-table-btn
           div(
-            :class="{ 'news-body-table-btn-avtive': nodeType === 1 }",
-            @click="toggleNode(1)"
+            :class="{ 'news-body-table-btn-avtive': nodeType === 1 }"
           ) {{$t('news.technical')}}
+          // div(
+          //   :class="{ 'news-body-table-btn-avtive': nodeType === 1 }",
+          //   @click="toggleNode(1)"
+          // ) {{$t('news.technical')}}
           // div(
           //   :class="{ 'news-body-table-btn-avtive': nodeType === 2 }",
           //   @click="toggleNode(2)"

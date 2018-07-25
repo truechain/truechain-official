@@ -2,11 +2,6 @@
   "language": "EN",
   "linksList": [
     {
-      "name": "weibo",
-      "icon": "icon font_family icon-weibo",
-      "link": "https://weibo.com/525045616/"
-    },
-    {
       "name": "twitter",
       "icon": "icon font_family icon-twitter",
       "link": "https://twitter.com/truechaingroup/"
@@ -14,23 +9,39 @@
     {
       "name": "telegram",
       "icon": "icon font_family icon-telegram",
-      "link": "http://www.t.me/truechainglobal/"
+      "link": "https://t.me/truechainglobal"
     },
     {
-      "name": "telegram",
+      "name": "facebook",
       "icon": "icon font_family icon-facebook",
       "link": "https://www.facebook.com/TrueChaingroup/"
+    },
+    {
+      "name": "reddit",
+      "icon": "icon font_family icon-reddit",
+      "link": "https://www.reddit.com/r/truechain/"
+    },
+    {
+      "name": "medium",
+      "icon": "icon font_family icon-medium",
+      "link": "https://medium.com/@truechaingroup"
+    },
+    {
+      "name": "youtube",
+      "icon": "icon font_family icon-youtube",
+      "link": "https://www.youtube.com/channel/UCsKSh9TPpYCZwHFn4lzhmFg?view_as=subscriber"
     }
   ],
-  "footerLinkDescr":"True chain official social platform",
-  "footerDownDescr":"True chain wallet app download",
+  "footerLinkDescr":"TrueChain Official SNS Platform",
+  "footerDownDescr":"TrueChain Light Wallet  APP Download",
   "home": {
     "head": {
-      "title": "TrueChain-High performance infinite nodes hybrid consensus public blockchain",
+      "title": "Next generation hybrid consensus public chain",
       "keyword": "True，TrueChain，Eric zhang，blockchain, hybrid consensus, Xiaoyong Cheng, Larry Lin",
       "description": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW. It solves the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency. "
     },
-    "slogan": "High Performance　Infinite Nodes　Hybrid Consensus Public Blockchain",
+    "slogan": "Truly Fast, Permissionless, Secure and Scalable",
+    "slogan1": "PBFT-fPoW hybrid consensus public blockchain with global developer community",
     "white": "WHITE PAPER",
     "whiteLink": "https://www.truechain.pro/Truechain_en.pdf",
     "yellow": "YELLOW PAPER",
@@ -48,30 +59,46 @@
     },
     "superiority": [
       {
-        "icon": "icon font_family icon-te",
-        "title": "Highly Performant Blockchain Infrastructure",
-        "detail":"TrueChain uses hybrid consensus technology combing PBFT and POW. On consensus layer, TrueChain takes advantage of PBFT to achieve high TPS, and support infinite POW nodes as validators to ensure decentralization and security. Therefore TrueChain is made to be a public blockchain for performance-demanding decentralized applications."
+        "icon": "icon font_family icon-jiejue",
+        "title": "Tackles the Obstacles of Public Blockchain",
+        "detail":"The conflict between  efficiency and decentralization for public blockchain is solved by TrueChain with its permissionless PBFT-fPoW hybrid consensus with secure sharding."
       },
       {
-        "icon": "icon font_family icon-te1",
-        "title": "Smart Contracts with Business Logistics",
-        "detail":"TrueChain's smart contract platform is providing an abstraction layer for commercial applications, making it easy and fast for developers to access blockchain technology. Application builders can create their own tokens, define workflows, and test/verify their contracts based on a unified environment."
+        "icon": "icon font_family icon-tianchengzuo",
+        "title": "Ensures  Decentralization and Fairness",
+        "detail":"Using Fruitchain as Snailchain to replace Nakamoto PoW with fPoW, TrueChain ensures  decentralization and fairness for the new generation of public blockchain."
       },
       {
-        "icon": "icon font_family icon-te2",
-        "title": "Usable Developing Toolkit",
-        "detail":"TrueChain builds toolkit for developers and operations to access, monitor, and manage applications. With TrueChain BaaS, Smart Contract Manager, TrueChain DApp Store, Contract Browser and Easy DApp framework, it’s easy to use TrueChain as a blockchain platform."
+        "icon": "icon font_family icon-gongshijizhi",
+        "title": "The First  Hybrid Consensus Incentive Model",
+        "detail":"TrueChain is the first in the world to design an incentive model for the governance of the hybrid consensus which impart economic awareness to blockchain technology"
+      },
+      {
+        "icon": "icon font_family icon-jizhi",
+        "title": "Stable and Low Gas Fee Mechanism",
+        "detail":"Zero gas fee is impossible for public blockchain, nonetheless, TrueChain designs a stable and relatively low gas fee mechanism for more DApps to be built on it."
+      },
+      {
+        "icon": "icon font_family icon-shequ",
+        "title": "Strong Global Developer Community",
+        "detail":"Among the new generation of public blockchains, TrueChain has a developer community that is the largest in China and the fastest growing in the world."
+      },
+      {
+        "icon": "icon font_family icon-chanpin",
+        "title": "Open Sourced Grid of Products",
+        "detail":"TrueChain brings a grid of products that support the hybrid consensus public blockchain platform and makes the chain easy to use, and they are open source!"
       }
     ],
     "about": {
       "title": "ABOUT",
-      "subhead": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW.",
-      "p1": "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus combining PBFT and PoW to solve the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency. TrueChain takes advantage of PBFT which is fast to reach consensus, to provide the high performance needed by value transmission and commercial activities of decentralized applications. Meanwhile, TrueChain uses PoW nodes as validators, and leave the election and oversight of PBFT to the hands of PoW to ensure the whole chain to be decentralized and therefore secure.",
-      "p2": "TrueChain adopts sharding to raise the transaction processing speed, to realize scalability without affecting the safety of hybrid consensus. TrueChain integrates fruitchain technology into PoW protocol to allow regular users to participate in mining more fairly, and re-assure complete decentralization.",
-      "p3": "True Chain also creates Easy DApp, the easy-to-use developing framework for decentralized applications. Developers can take advantage of Easy DApp and use standard API, with the facilitation of x86 virtual machine, to develop and deploy decentralized applications easily and quickly.",
-      "p4": "TrueChain’s complete matrix of products allows users and institutions to interact with the chain conveniently. Included in the product matrix are Stellar -- the toolkit for the DApp developers to create smart contracts and manage the life cycle of the contracts; DApp Store-- the store for decentralized applications on True Chain; TrueScan explorer; True Light Wallet, etc.",
-      "p5": "The leading research and engineering team members of True Chain come from the U.S., India and China.",
-      "p6": "True Chain is a committee member of China’s National Cloud Industry Strategic Innovation Alliance, a member of the National Chain-Web Innovation Center of China; and is also one of the few block chain projects that have been reported by China’s authoritative media - CCTV, and also participated in the research work of the white paper released by the Ministry of Industry and Information Technology of the Chinese government. "
+      "subhead": "TrueChain is a truly fast, permissionless, secure and scalable public blockchain platform which is supported by hybrid consensus technology called Minerva and a global developer community. ",
+      "contentList": [
+        "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus called Minerva combining PBFT and fPoW to solve the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency.",
+        "It uses PBFT as fast-chain to process transactions, and leave the oversight and election of PBFT to the hands of  PoW nodes. Besides, TrueChain integrates fruitchain technology into the traditional PoW protocol  i.e. fPoW, as the snailchain, to make the chain even more decentralized and fair. TrueChain also added sharding on top of PBFT to lift the limit of scalability. ",
+        "With solid and leading technology, TrueChain aims to provide a workable and well-governed blockchain platform for decentralized economy. It comes up with the first hybrid consensus incentive model to use economic awareness as a drive to uphold and improve the chain. Meanwhile, it also creates a stable gas fee mechanism to lower the cost for the developers and operators of DApps, and to make the blockchain more public. ",
+        "As a platform, TrueChain builds an all-inclusive community to attract the worldwide developers and entrepreneurs to be part of it, to join the decentralized economy revolution. Not only TrueChain has a global developer community, it also has a  grid of products that are handy for the developers, and they are open sourced which allows them to be more user oriented. ",
+        "The team of TrueChain is international with its members from India, the United States, China, etc. "
+      ]
     },
     "roadmap": {
       "title": "ROAD MAP",
@@ -119,7 +146,7 @@
       ]
     },
     "partner": "PARTNER",
-    "institution": "INVESTMENT INSTITUTION",
+    "institution": "INVESTORS",
     "news":{
       "title":"NEWS",
       "technical": "Technical trends",
@@ -171,107 +198,220 @@
       "keyword": "TrueChain team members, TRUE, Blockchain expert, digital currency expert, Blockchain Talents",
       "description": "The leading research and engineering team members of True Chain come from the U.S., India and China. "
     },
+    "banner": "With 500+ developers from the world",
     "technology": {
-      "title": "TECHNOLOGY",
+      "title": "Research and Developers Community",
       "list": [
         {
           "name": "Eric Zhang",
-          "intro": "The co-founder and CEO of TrueChain. Eric Zhang graduated from Oxford University with a master’s degree in computer science. He used to work at CERN-the European Organization for Nuclear Research focusing on decentralized computation. He’s also the founder of Dorahacks which is now the largest Hacker community with great reach. He’s one of the most influential organizer of Hackathon among the young generation dedicated to use technology to solve problems in the real business world."
+          "post": "CEO",
+          "imgSrc": "jiannan",
+          "introList": [
+            "M.S. In Computer Science, Oxford University",
+            "Founder of TopHacker Group and DoraHacks ",
+            "Researcher, CERN Open Lab (2013)"
+          ]
         },
         {
           "name": "Archit Sharma",
-          "intro": "TrueChain’s tech lead responsible for TrueChain’s engineering and engineering team management. Archit Sharma is an expert at distributed system, operation systems and performance engineering. Archit has worked in Red Hat and CERN, engaged in large-scale cloud service and distributed system design and development. Archit is a contributor of several important open source projects, as well as several Hackathon champions."
+          "post": "Consensus Engineering Lead",
+          "imgSrc": "as",
+          "introList": [
+            "Large-scale cloud and distributed computation expert, Red Hat",
+            "Researcher, CERN IT (2013)",
+            "Champion, Docker Hackathon",
+            "Second Prize, CERN Webfest 2013"
+          ]
+        },
+        {
+          "name": "Yang Liu",
+          "post": "Mainnet Lead",
+          "imgSrc": "liuyang",
+          "introList": [
+            "B.S. & M.S. Computer Science, Tsinghua University",
+            "10+years experience in development and system architecture",
+            "Cryptography and algorithms expert"
+          ]
         },
         {
           "name": "Home Chen",
-          "intro": "TrueChain’s CTO in the greater China area. Home Chen has worked in IT industry for 20 years. He has rich experience in Internet product design and development, and software project management. He was a technical partner of “CaiHuohuo”, responsible for the research and development of new products, server cluster and high concurrent processing."
+          "post": "Product lead",
+          "imgSrc": "dahong",
+          "introList": [
+            "20+years of engineering management",
+            "CTO of QuantCloud",
+            "CTO of Caihuohuo"
+          ]
         },
         {
           "name": "Felix Cai",
-          "intro": "The front-end product leader of TrueChain, also a front-end geek. Felix Cai graduated from Xi'an Jiao Tong University youth class."
+          "post": "Front - end Engineering Lead",
+          "imgSrc": "zhenchuan",
+          "introList": [
+            "Youth Class, Xi’an Jiaotong University",
+            "Front - end Hacker",
+            "First Prize, DoraHacks Autumn@Xi An 2017"
+          ]
         },
         {
           "name": "Ice Ming",
-          "intro": "Golang engineer,over 10 years experience in c/c++ development, responsible for bid projects, has strong learning ability, has the full package of project experience in real-time database products and digital currency transaction platform products. He has participated in developing bitcoin and ethereum wallets."
-        },
-        {
-          "name": "Liu Yang",
-          "intro": "Got his bachelor's and master's degree in Tsinghua University. He has over 10 years’ experience in development and system architecture. He is an expert at cryptography and building algorithms. He is responsible for the research and development of hybrid consensus and POW of TrueChain."
+          "post": "Integration lead",
+          "imgSrc": "tianming",
+          "introList": [
+            "10+years experience in c/c++ development",
+            "Real time database products and digital currency transaction platform products expert",
+            "Participated in developing bitcoin and ethereum wallets"
+          ]
         },
         {
           "name": "Seay (Wizard)",
-          "intro": "The security consultant of TrueChain, the author of “Code Audit: Enterprise Edition Web Code Security Architecture”, Seay source code security audit system author, and the blogger of well-known security blog “cnseay.com”. He once served at Alibaba security, and was the leader of Ali attack and defense laboratory, Sobug technology partner. Seay has experience of more than ten years in security attack and defense and served for several well-known enterprises."
+          "post": "Security Coordinator",
+          "imgSrc": "fashi",
+          "introList": [
+            "Lead, Alibaba attack and security lab",
+            "Author of “Code Audit: Architecture of Enterprise Web Security”",
+            "Host of well-known security blog cnseay.com"
+          ]
         },
         {
           "name": "Robin Zhang",
-          "intro": "BS，MS of Tsinghua University and MS of SUNY at Buffalo. As the expert of network communications, Mr. Zhang has more than 18 years of working experience in Silicon Valley and China. He is responsible for the implementation of hybrid consensus and POW of TrueChain. "
+          "post": "Consensus and PoW product lead",
+          "imgSrc": "xubin",
+          "introList": [
+            "BS, MS, Tsinghua University",
+            "MS of SUNY, Buffalo",
+            "Network communications expert",
+            "18+years experience in Silicon Valley and China"
+          ]
+        },
+        {
+          "name": "Binqi Tang",
+          "post": "Senior developer",
+          "imgSrc": "binqi",
+          "introList": [
+            "10+years experience in system development and framework",
+            "Former manager of Shenzhen Coship electronics company’s development department, Architect of Jwinlink",
+            "Technique expert of 58 home",
+            "Internet framework、big data analysis architecture、product planning、implementing and operating expert"
+          ]
         }
       ]
     },
     "business": {
-      "title": "BUSINESS",
+      "title": "Community and development",
       "list": [
         {
-          "name": "Xiaoyong Cheng",
-          "intro": "The co-founder of TrueChain, Chief Strategic Officer. XiaoYong Cheng is a serial entrepreneur, executive director of China Cloud System Pioneer Strategic Alliance. He is also a member of Youth Leader in Changan Club."
-        },
-        {
-          "name": "Hongyi Zheng",
-          "intro": "TrueChain’s Chief Operating Officer, mainly responsible for DApp business cooperation and development. Hongyi Zheng is the founder of Micro-Blocks and Smart Web Loan. He was the former Chief Operation Officer of the software release center of Kaspersky, the CEO of Zhuoxin group, CEO of Anhe Foundation, and the operation head of the Monternet business of China Mobile. He graduated from Harbin Institute of Technology. "
+          "name": "James Cheng",
+          "post": "head of strategic development",
+          "imgSrc": "xiaoyong",
+          "introList": [
+            "Part-time research staff of Tsinghua University, Serial entrepreneur",
+            "Executive Committee of China Cloud System Pioneer Strategic Alliance",
+            "Member of Youth Lead in Changan Club"
+          ]
         },
         {
           "name": "Larry Lin",
-          "intro": "The co-founder of TrueChain, chief development officer. Larry Lin is an expert of Internet marketing and community operation. He has been responsible for the operation of ‘Baidu encyclopedia’, which is the largest co-building community in China. Lin has more than 10 years of digital advertising and Internet industry experience, and was the author of several bestsellers in propaganda."
+          "post": "Head of Business",
+          "imgSrc": "daliang",
+          "introList": [
+            "Internet marketing community operation expert",
+            "Baidu encyclopedia operation",
+            "10+years of digital advertising and internet industry"
+          ]
+        },
+        {
+          "name": "Hongyi Zheng",
+          "post": "Chief Operating Officer",
+          "imgSrc": "hongyi",
+          "introList": [
+            "Graduated from Harbin Institute of Technology",
+            "Responsible for DApp business cooperation and development",
+            "Former Chief Operation Officer of the software release center of Kaspersky",
+            "Former operation head of the Monternet business of China Mobile"
+          ]
         },
         {
           "name": "Yan Liu",
-          "intro": "TrueChain’s chief operation officer. He is responsible for TrueChain products and business operations, as well as TrueChain’s community building and operation."
+          "post": "Community Coordinator",
+          "imgSrc": "liuyan",
+          "introList": [
+            "10+years internet product operation experience",
+            "Senior advisor of ADP",
+            "Operation Expert of automobile Technology Platform"
+          ]
         },
         {
           "name": "Wen Yan",
-          "intro": "Market Director of TrueChain. Wen Yan graduated from the School of Journalism, University of Missouri - Columbia. During her stay in the United States, she once worked for Bankrate.com in Washington. D.C. focusing on the Federal Reserve. She later works for Sina Finance as a business reporter, having interviewed some of the biggest financial figures including the head of IMF, the Financial Minister of Denmark and Netherlands. She was also the market manager for Zenwater crowd funding platform. "
+          "post": "Marketing coordinator",
+          "imgSrc": "yanwen",
+          "introList": [
+            "Graduated from School of Journalism, University of Missouri - Columbia",
+            "Reporter at Bankrate.com in Washington. D.C",
+            "Business reporter at Sina Finance"
+          ]
         }
       ]
     },
     "consultant": {
-      "title": "CONSULTANT",
+      "title": "Advisors",
       "list": [
         {
           "name": "Yushi Shen",
-          "intro": "The Secretary-General of China Cloud System Pioneer Strategic Alliance. Yushi Shen got his bachelor’s degree in Electronic Engineering from Tsinghua University, master’s and doctor’s degree in computer science from University of California, San Diego. He’s a panelist for China’s “the Thousand Talents Plan”, also a research staff of Tsinghua and other prestigious universities. He was the strategic consultant for Microsoft, the person in charge of the government affairs and business development of cloud computing in the Great China area. He used to work at Microsoft as a senior software architect in the headquarter of Microsoft."
+          "introList": [
+            "The Secretary-General of China Cloud System Pioneer Strategic Alliance    ",
+            "BS, Electronic Engineering, Tsinghua University",
+            "MA, PH.D, computer science, University of California, San Diego",
+            "Panelist for China’s “the Thousand Talents Plan”",
+            "Researcher of Tsinghua and other prestigious universities",
+            "Strategic consultant for Microsoft"
+          ]
         },
         {
           "name": "Xianhua Wei",
-          "intro": "The professor and PhD tutor of Chinese Academy of Sciences. Xianhua Wei is also the deputy director of the virtual economy and data science research center of Chinese Academy of Sciences, and the executive director of the CAS - Reuters financial risk management joint laboratory."
+          "introList": [
+            "Professor and PhD tutor of Chinese Academy of sciences",
+            "Deputy director of the virtual economy and data science research center of Chinese Academy of sciences",
+            "Executive director of the CAS - Reuters financial risk management joint laboratory"
+          ]
         },
         {
           "name": "Jamie Cooper",
-          "intro": "Global intellectual property legal expert, the professor of California Western School of Law, chairman of Proyecto ACCESO foundation project, former United States State Department, American Development Bank, American patent and Trademark Office consultant, United States representative of the world intellectual property organization."
+          "introList": [
+            "Global Intellectual property legal expert",
+            "Professor of California Western School of Law",
+            "Chairman of proyecto ACCESO Foundation project",
+            "Consultant of Former United States State Department, American development Bank, American patent and Trademark Office"
+          ]
         },
         {
           "name": "Jinglong Zhou",
-          "intro": "The former partner of the GWC, which is the world's largest Internet Organization. He has a wide range of connections and resources of Internet industry and governments all over the world."
+          "introList": [
+            "Former partner of the GWC",
+            "Wide range of connections and resources of internet and governments all over the world"
+          ]
         },
         {
           "name": "Jun Zou",
-          "intro": "The author of best seller \"block chain technology guide\", also an expert of Zhongguancun block chain industry alliance. He is a PhD in Service Contract, the former chief software architect of IBM Australian financial industry, and have published more than 200 papers in the International Conference on IEEE, of which block chain related papers were awarded to IEEE ICWS in 2016."
+          "introList": [
+            "Author “Block chain technology guide”",
+            "Expert of Zhonguancun block chain industry alliance",
+            "Former chief software architect of IBM Australian financial industry",
+            "Published more than 200 papers in the international conference on IEEE",
+            "Awarded to IEEE ICWS in 2016"
+          ]
         },
         {
           "name": "Yu Zhu (binke)",
-          "intro": "The head of the Block Chain and the New retail Research Institute, the first head of the new retailing (O2O) department of Alibaba Group. He became the vice president of Shopin Enterprise in 2015, taking charge of offline entities and online overall work. He has rich experience in complete digitization and full channel communication, and digital marketing business."
-        },
-        {
-          "name": "Xiong Li",
-          "intro": "The founder of LianXiang Finance and Economics."
+          "introList": [
+            "The head of block chain and New retail Research Institute",
+            "The First head of the new retailing (o2o) department of Alibaba Group",
+            "Former vice president of Shopin Enterprise in 2015",
+            "Complete digitization, full channel communications and digital marketing business expert"
+          ]
         }
-
       ]
     }
-  },
-  "honor": {
-    "title": "honor",
-    "text1": "TrueChain was approved of the License for the China Cloud System Industrial Innovation Strategic Alliance On the morning of May 20, 2018, the co-founder of TrueChain, Cheng Xiao Yong, received the committee member institutional license of China Cloud System Industrial Innovation Strategic Alliance awarded by the Ministry of Industry and Information Technology.",
-    "text2": "TrueChain becomes a member of the National Chain Network Innovation Center The chairman of the center is Xie Ping. He was the deputy general manager of the former China Investment Co., Ltd. (Deputy ministerial level) , the director of the former Central Bank Financial Stability Bureau, the former director of the Central Bank Research Bureau and the head of the Central Bank Financial Research Institute ."
   },
   "join": {
     "head": {
