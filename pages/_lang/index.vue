@@ -421,7 +421,7 @@ export default {
     display flex
     flex-direction row
     flex-wrap wrap
-    justify-content space-between
+    justify-content center
     align-items flex-start
     max-width 1024px
     margin 0px auto
