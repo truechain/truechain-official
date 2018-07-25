@@ -274,6 +274,16 @@
           ]
         },
         {
+          "name": "Samikshan Bairagya",
+          "post": "Senior developer",
+          "imgSrc": "sb",
+          "introList": [
+            "B.S. In computer science from National Institute of Technology, Durgapur ",
+            "Developer/Participant, Google Summer of Code (2012)",
+            "Software Engineer, Red Hat (2013 - 2018)"
+          ]
+        },
+        {
           "name": "Robin Zhang",
           "post": "Consensus and PoW product lead",
           "imgSrc": "xubin",
