@@ -30,11 +30,11 @@
                       v-for="item in langs"
                       :name="item.tag"
                       :key="item.tag"
-                    ) {{item.name}}          
+                    ) {{item.name}}
           span.container-app-header-button(@click.stop="toggleMenu")
             span
             span
-            span 
+            span
           span.container-app-header-button.lang(@click.stop="toggleLang") {{ $t(`language`) }}
           ul.langsSelecttor(:style="{'height': langsSelectorIsOpen ? `${40 * (langs.length)}px` : '0'}")
             li(
@@ -252,15 +252,13 @@ nav
   width 80%
   margin auto
 .container-app-header-logo
-  // wh(118px, 30px)
-  margin-top 8px
+  margin-top 15px
   float left
   cursor pointer
   .icon-logo2
     color white
-    // font-size 100px
-    // line-height 0
-    transform scale(8)
+    font-size 135px
+    line-height 0
 .container-app-header-nav
   color $font-light
   ul
@@ -374,7 +372,7 @@ nav
       cursor pointer
 .container-app-footer-info
   display flex
-  flex-direction row  
+  flex-direction row
   flex-wrap wrap
   justify-content center
   align-items flex-start
@@ -441,7 +439,7 @@ nav
   justify-content center
   &:before,&:after
     content: " ";
-    display: block; 
+    display: block;
     clear both
   .app-button-box
     height 42px
@@ -516,7 +514,4 @@ nav
     display block
   .container-app-header-button.lang
     display inline-block
-
-
-
 </style>

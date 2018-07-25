@@ -5,7 +5,7 @@ div
     Carousel(
       class="loop-container",
       v-model="value1"
-      arrow="always"
+      arrow="hover"
     )
       CarouselItem
         div(class="demo-carousel banner-home")
@@ -909,6 +909,15 @@ export default {
     height 55vw
     max-height 240px
     margin 20px auto
+  .banner-home-slogan
+    padding 0 20px
+    div
+      font-size 20px !important
+    span
+      display none
+  .banner-home-buttons
+    a
+      width auto !important
   .home-introduce-details
     li
       flex-direction column-reverse !important
