@@ -289,6 +289,7 @@ export default {
       .banner-home-buttons
         position absolute
         bottom 80px
+        text-align center
         a
           padding 11px 20px
           line-height 20px

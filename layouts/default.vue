@@ -305,6 +305,8 @@ nav
       width auto !important
       background-color $dark-blue
 .langsSelecttor
+  background-color $dark-blue
+  overflow hidden
   li
     float left
     color #A9ADBB
