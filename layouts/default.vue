@@ -347,18 +347,21 @@ nav
   width auto
   height auto
   border-right 1px solid rgba(250,250,250,0.4)
-  padding 10px 30px 0px 0px
+  padding 10px 80px 0px 0px
   margin-bottom 60px
   ul
     display flex
-    margin-top 50px
-    height 80px
+    margin-top 35px
+    min-height 80px
+    flex-wrap wrap
+    flex-direction row
+    justify-content center
     li:first-child
       margin-left 0px
-    li:last-child
-      margin-right 60px
+    // li:last-child
+    //   margin-right 60px
     li
-      margin 0 15px
+      margin 10px 15px
       wh(60px, 60px)
       background white
       border-radius 50%
@@ -421,6 +424,7 @@ nav
 @media screen and (max-width 1180px)
   .container-app-footer-links
     border-right none
+    padding-right 0px
   .container-app-footer-text
     text-align center
   .container-app-footer-down

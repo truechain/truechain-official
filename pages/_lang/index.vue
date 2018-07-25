@@ -483,14 +483,15 @@ export default {
       font-color $font-grey
   .col3
     margin 38px auto
-    width 630px
+    max-width 630px
     display flex
     flex-direction row
-    flex-wrap nowrap
+    flex-wrap wrap
     justify-content space-between
     align-items flex-start
     .co
-      width 180px
+      width 210px
+      padding 10px 15px
       img
         width 100%
         height auto
