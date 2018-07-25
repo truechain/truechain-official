@@ -295,6 +295,16 @@
           ]
         },
         {
+          "name": "Samikshan Bairagya",
+          "post": "선임 개발자",
+          "imgSrc": "sb",
+          "introList": [
+            "두르가푸르 국립 과학 기술 대학교 컴퓨터 공학 학사",
+            "구글 summer 프로그래밍 프로젝트 개발자/참여자(2012)",
+            "Red-Hat 소프트웨어 엔지니어(2013-2018)"
+          ]
+        },
+        {
           "name": "Robin Zhang",
           "post": "합의 알고리즘과 POW 제품의 담당자",
           "imgSrc": "xubin",
