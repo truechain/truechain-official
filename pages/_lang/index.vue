@@ -4,8 +4,10 @@ div
     #particles-js
     Carousel(
       class="loop-container",
-      v-model="value1"
-      arrow="hover"
+      v-model="homeCarouse",
+      :arrow="homeCarouseConfig.arrow",
+      :autoplay="homeCarouseConfig.autoplay",
+      :dots="homeCarouseConfig.dots",
     )
       CarouselItem
         div(class="demo-carousel banner-home")
@@ -171,7 +173,13 @@ export default {
   },
   data () {
     return {
-      value1: 0
+      value1: 0,
+      homeCarouse:0,
+      homeCarouseConfig:{
+        autoplay:false,
+        dots:"inside",
+        arrow:"hover"
+      }
     }
   },
   mounted () {
@@ -181,6 +189,15 @@ export default {
     setTimeout(() => {
       this.player = this.$refs.dplayer.dp;
     }, 100);
+
+    if( window.screen.availWidth < 436){
+      this.homeCarouseConfig = {
+         ...this.homeCarouseConfig, 
+         dots : "none",
+         arrow : "never" 
+      }
+    }
+
   },
   head: {
     script: [
