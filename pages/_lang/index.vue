@@ -187,16 +187,16 @@ export default {
       particlesJS('particles-js', liziConfig)
     }
     setTimeout(() => {
-      this.player = this.$refs.dplayer.dp
-    }, 100)
-
-    if (window.screen.availWidth < 436) {
-      this.homeCarouseConfig = {
-        ...this.homeCarouseConfig,
-        dots: 'none',
-        arrow: 'never'
+      this.player = this.$refs.dplayer.dp;
+      if( window.screen.availWidth < 436){
+        this.homeCarouseConfig = {
+          ...this.homeCarouseConfig,
+          dots : 'none',
+          arrow : 'never'
+        }
       }
-    }
+    }, 100);
+
   },
   head: {
     script: [
@@ -926,12 +926,15 @@ export default {
   .banner-home-slogan
     padding 0 20px
     div
-      font-size 20px !important
+      font-size 17px !important
     span
       display none
   .banner-home-buttons
     a
       width auto !important
+      font-size 11px !important
+      line-height 16px !important
+      padding 10px 15px !important
   .home-introduce-details
     li
       flex-direction column-reverse !important

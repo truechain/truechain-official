@@ -336,7 +336,7 @@ nav
   color white
   display none
   width auto
-  margin 5px 20px
+  margin: 5px 20px 5px 5px
   font-size 14px
   line-height 20px
 
