@@ -7,7 +7,7 @@ div
       v-model="homeCarouse",
       :arrow="homeCarouseConfig.arrow",
       :autoplay="homeCarouseConfig.autoplay",
-      :dots="homeCarouseConfig.dots",
+      :dots="homeCarouseConfig.dots"
     )
       CarouselItem
         div(class="demo-carousel banner-home")
@@ -142,67 +142,67 @@ div
       :width="700"
       )
       no-ssr(placeholder="Loading...")
-        d-player(:options="dplayer_opts" ref="dplayer")
+        d-player(:options="dplayerOpts" ref="dplayer")
 
 </template>
 
 <script>
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
+import liziConfig from '~/static/donglizi';
 
 export default {
   asyncData ({ req }) {
     return {
       name: req ? 'server' : 'client',
-      vids:[
+      vids: [
         '/m1.mp4',
         '/m2.mp4',
         '/m3.mp4'
       ],
       modalvid: false,
-      dplayer_opts: {
+      dplayerOpts: {
         video: {
-          url: '/m1.mp4',
+          url: '/m1.mp4'
         },
         autoplay: false,
         contextmenu: [],
-        player:null
+        player: null
       }
     }
   },
   data () {
     return {
       value1: 0,
-      homeCarouse:0,
-      homeCarouseConfig:{
-        autoplay:false,
-        dots:"inside",
-        arrow:"hover"
+      homeCarouse: 0,
+      homeCarouseConfig: {
+        autoplay: false,
+        dots: 'inside',
+        arrow: 'hover'
       }
     }
   },
   mounted () {
-    if(window.particlesJS){
-      particlesJS('particles-js', liziconf);
+    if (window.particlesJS) {
+      particlesJS('particles-js', liziConfig)
     }
     setTimeout(() => {
-      this.player = this.$refs.dplayer.dp;
-    }, 100);
+      this.player = this.$refs.dplayer.dp
+    }, 100)
 
-    if( window.screen.availWidth < 436){
+    if (window.screen.availWidth < 436) {
       this.homeCarouseConfig = {
         ...this.homeCarouseConfig,
-        dots : "none",
-        arrow : "never"
+        dots: 'none',
+        arrow: 'never'
       }
     }
-
   },
   head: {
     script: [
       { src: '/particles.min.js' },
       { src: '/donglizi.js' }
-    ],
+    ]
   },
   components: {
     AppAndroid,
@@ -210,16 +210,16 @@ export default {
   },
   methods: {
     showmod (vind) {
-      this.modalvid = true;
+      this.modalvid = true
       this.player.switchVideo({
         url: this.vids[vind]
-      });
-      this.player.play();
+      })
+      this.player.play()
     },
-    changedmodal(sts){
-      if(!sts){
-        //false:模态框关闭 true:模态框打开  关闭播放模态框时暂停视频播放
-        this.player.pause();
+    changedmodal (sts) {
+      if (!sts) {
+        // false:模态框关闭 true:模态框打开  关闭播放模态框时暂停视频播放
+        this.player.pause()
       }
     }
   }

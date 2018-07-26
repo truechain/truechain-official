@@ -121,6 +121,7 @@ export default {
       ]
     }
   },
+
   data () {
     return {
       list: [],

@@ -1,7 +1,7 @@
 <template lang="pug">
   .news-detail-container
     .news-detail
-      .news-detail-title {{detail.title}}
+      .news-detail-title {{ detail.title }}
       .news-detail-timestamp(v-text="getTime(+detail.create_time, true)")
       .news-detail-content(v-html="detail.content")
 </template>
