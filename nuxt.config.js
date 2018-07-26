@@ -42,7 +42,7 @@ module.exports = {
     /*
      ** Run ESLint on save
      */
-    extend (config, {
+    /* extend (config, {
       isDev,
       isClient
     }) {
@@ -54,7 +54,7 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    } */
   },
   plugins: [
     '~/plugins/i18n.js',

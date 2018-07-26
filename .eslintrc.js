@@ -7,10 +7,17 @@ module.exports = {
     },
     sourceType: 'module'
   },
-
+  extends: [
+    // add more generic rulesets here, such as:
+    'eslint:recommended',
+    'plugin:vue/essential'
+    // 'plugin:vue/recommended'
+    // "plugin:vue/strongly-recommended"
+  ],
   env: {
     es6: true,
-    node: true
+    node: true,
+    browser: true
   },
 
   plugins: ['vue'],
@@ -22,11 +29,12 @@ module.exports = {
   },
 
   rules: {
+    'no-console': 0,
     'accessor-pairs': 2,
     'arrow-spacing': [2, { 'before': true, 'after': true }],
     'block-spacing': [2, 'always'],
     'brace-style': [2, '1tbs', { 'allowSingleLine': true }],
-    'camelcase': [2, { 'properties': 'always' }],
+    // 'camelcase': [2, { 'properties': 'always' }],
     'comma-dangle': [2, 'never'],
     'comma-spacing': [2, { 'before': false, 'after': true }],
     'comma-style': [2, 'last'],
