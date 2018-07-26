@@ -193,8 +193,8 @@ export default {
     if( window.screen.availWidth < 436){
       this.homeCarouseConfig = {
         ...this.homeCarouseConfig, 
-        dots : "none",
-        arrow : "never" 
+        dots : 'none',
+        arrow : 'never' 
       }
     }
 
