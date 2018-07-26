@@ -125,8 +125,7 @@ export default {
         { hid: 'home-description', name: 'description', content: this.$t('home.head.description') },
       ],
       script: [
-        { src: '//pv.sohu.com/cityjson?ie=utf-8' },
-        { src: '/donglizi.js' }
+        { src: '//pv.sohu.com/cityjson?ie=utf-8' }
       ]
     }
   },

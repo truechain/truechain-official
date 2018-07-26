@@ -149,7 +149,7 @@ div
 <script>
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
-import liziConfig from '~/static/donglizi';
+import liziConfig from '~/config/donglizi'
 
 export default {
   asyncData ({ req }) {
@@ -200,8 +200,7 @@ export default {
   },
   head: {
     script: [
-      { src: '/particles.min.js' },
-      { src: '/donglizi.js' }
+      { src: '/particles.min.js' }
     ]
   },
   components: {

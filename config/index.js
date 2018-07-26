@@ -5,7 +5,7 @@
  * test
  */
 
-let articleUrl, lightWalletUrl;
+let articleUrl, lightWalletUrl
 
 switch (process.env.NODE_ENV) {
   case 'development':
@@ -26,7 +26,6 @@ switch (process.env.NODE_ENV) {
     lightWalletUrl = 'https://www.truechain.pro/api/'
     break
 }
-
 
 export {
   articleUrl,
