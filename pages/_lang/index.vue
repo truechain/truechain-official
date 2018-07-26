@@ -422,7 +422,7 @@ export default {
     display flex
     flex-direction row
     flex-wrap wrap
-    justify-content center
+    justify-content space-between
     align-items flex-start
     max-width 1024px
     margin 0px auto
@@ -630,9 +630,6 @@ export default {
         color $font-dark
         line-height 20px
         margin-top 15px
-
-
-
 .home-roadmap
   background-color white
   padding 100px 20px 0px
@@ -901,6 +898,9 @@ export default {
     wh(300px, 120px)
 
 @media screen and (max-width 1024px)
+  .home-intro-3col
+    .col3-con
+      justify-content center
   .home-introduce-details-text
     position static
     transform translate3d(0, 0, 0)
