@@ -4,8 +4,10 @@ div
     #particles-js
     Carousel(
       class="loop-container",
-      v-model="value1"
-      arrow="hover"
+      v-model="homeCarouse",
+      :arrow="homeCarouseConfig.arrow",
+      :autoplay="homeCarouseConfig.autoplay",
+      :dots="homeCarouseConfig.dots",
     )
       CarouselItem
         div(class="demo-carousel banner-home")
@@ -146,68 +148,75 @@ div
 
 
 <script>
-import AppAndroid from '~/components/app-android.vue'
-import AppIos from '~/components/app-ios.vue'
+import AppAndroid from "~/components/app-android.vue";
+import AppIos from "~/components/app-ios.vue";
 
 export default {
-  asyncData ({ req }) {
+  asyncData({ req }) {
     return {
-      name: req ? 'server' : 'client',
-      vids:[
-        '/m1.mp4',
-        '/m2.mp4',
-        '/m3.mp4'
-      ],
+      name: req ? "server" : "client",
+      vids: ["/m1.mp4", "/m2.mp4", "/m3.mp4"],
       modalvid: false,
       dplayer_opts: {
         video: {
-          url: '/m1.mp4',
+          url: "/m1.mp4"
         },
         autoplay: false,
         contextmenu: [],
-        player:null
+        player: null
       }
-    }
+    };
   },
-  data () {
+  data() {
     return {
-      value1: 0
-    }
+      value1: 0,
+      homeCarouse: 0,
+      homeCarouseConfig: {
+        autoplay: false,
+        dots: "inside",
+        arrow: "hover"
+      }
+    };
   },
-  mounted () {
-    if(window.particlesJS){
-      particlesJS('particles-js', liziconf);
+  mounted() {
+    if (window.particlesJS) {
+      particlesJS("particles-js", liziconf);
     }
     setTimeout(() => {
       this.player = this.$refs.dplayer.dp;
     }, 100);
+
+    if (window.screen.availWidth < 436) {
+      this.homeCarouseConfig = {
+        ...this.homeCarouseConfig,
+        dots: "none",
+        arrow: "never"
+      };
+    }
   },
   head: {
-    script: [
-      { src: '/particles.min.js' },
-      { src: '/donglizi.js' }
-    ],
+    script: [{ src: "/particles.min.js" }, { src: "/donglizi.js" }]
   },
   components: {
     AppAndroid,
     AppIos
   },
   methods: {
-    showmod (vind) {
+    showmod(vind) {
       this.modalvid = true;
       this.player.switchVideo({
         url: this.vids[vind]
       });
       this.player.play();
     },
-    changedmodal(sts){
-      if(!sts){
+    changedmodal(sts) {
+      if (!sts) {
         //false:模态框关闭 true:模态框打开  关闭播放模态框时暂停视频播放
         this.player.pause();
       }
     }
   }
-}
+};
 </script>
 
 
