@@ -49,12 +49,12 @@
 </template>
 <script>
 export default {
-  head() {
+  head () {
     return {
       title: this.$t('team.head.title'),
       meta: [
-        { hid: 'team-keyword', name: 'keyword', content: this.$t('team.head.keyword'), },
-        { hid: 'team-description', name: 'description', content: this.$t('team.head.description'), },
+        { hid: 'team-keyword', name: 'keyword', content: this.$t('team.head.keyword') },
+        { hid: 'team-description', name: 'description', content: this.$t('team.head.description') }
       ]
     }
   }

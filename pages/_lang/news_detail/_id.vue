@@ -10,12 +10,12 @@
 import { apiArticleDetail } from '@/api'
 import { getTime } from '@/util'
 export default {
-  head() {
+  head () {
     return {
       title: this.$t('news.head.title'),
       meta: [
-        { hid: 'news-keyword', name: 'keyword', content: this.$t('news.head.keyword'), },
-        { hid: 'news-description', name: 'description', content: this.$t('news.head.description'), },
+        { hid: 'news-keyword', name: 'keyword', content: this.$t('news.head.keyword') },
+        { hid: 'news-description', name: 'description', content: this.$t('news.head.description') }
       ]
     }
   },

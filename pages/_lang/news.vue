@@ -41,15 +41,15 @@
 
 <script>
 
-import { getTime, contdown } from '~/util/index.js'
+import { getTime } from '~/util/index.js'
 import { apiArticleList } from '@/api'
 export default {
-  head() {
+  head () {
     return {
       title: this.$t('news.head.title'),
       meta: [
         { hid: 'news-keyword', name: 'keyword', content: this.$t('news.head.keyword') },
-        { hid: 'news-description', name: 'description', content: this.$t('news.head.description') },
+        { hid: 'news-description', name: 'description', content: this.$t('news.head.description') }
       ]
     }
   },
@@ -61,7 +61,7 @@ export default {
       nodeType: 1,
       pageIndex: 0,
       currentPage: 1,
-      pageNumber: 10,
+      pageNumber: 10
     }
   },
   mounted () {
@@ -90,7 +90,7 @@ export default {
         'theme': nodeType || 1,
         'pageIndex': (pageIndex - 1) * this.pageNumber,
         'pageNumber': pageSum || this.pageNumber,
-        'language':  language[ this.$store.state.locale ]
+        'language': language[ this.$store.state.locale ]
       }).then(res => {
         if (pageSum > 10) {
           this.pageSum = res.data.data.length
@@ -110,7 +110,7 @@ export default {
         nodeType: x,
         pageSum: 50000
       })
-    },
+    }
   }
 }
 </script>

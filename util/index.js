@@ -37,7 +37,7 @@ export const getTime = (time, form) => {
   const h = addZero(date.getHours()) + ':'
   const m = addZero(date.getMinutes()) + ':'
   const s = addZero(date.getSeconds())
-  if(form) {
+  if (form) {
     return Y + M + D
   } else {
     return Y + M + D + h + m + s
@@ -45,9 +45,9 @@ export const getTime = (time, form) => {
 }
 
 export const contdown = time => {
-  let nowtime = new Date()
-  let endtime = new Date('2018/8/16,00:00:00')
-  let lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000)
+  const nowtime = new Date()
+  const endtime = new Date('2018/8/16,00:00:00')
+  const lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000)
   let d = parseInt(lefttime / (24 * 60 * 60))
   let h = parseInt(lefttime / (60 * 60) % 24)
   let m = parseInt(lefttime / 60 % 60)

@@ -23,12 +23,12 @@
 </template>
 <script>
 export default {
-  head() {
+  head () {
     return {
       title: this.$t('join.head.title'),
       meta: [
         { hid: 'join-keyword', name: 'keyword', content: this.$t('join.head.keyword') },
-        { hid: 'join-description', name: 'description', content: this.$t('join.head.description') },
+        { hid: 'join-description', name: 'description', content: this.$t('join.head.description') }
       ]
     }
   }

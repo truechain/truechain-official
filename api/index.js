@@ -28,7 +28,6 @@ const apiGetIpInfo = (options) => {
   return http.get('getIpInfo', options, true)
 }
 
-
 export {
   apiNodeRank,
   apiNodeSum,

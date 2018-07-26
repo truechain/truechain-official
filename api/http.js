@@ -10,20 +10,20 @@ import {
 } from '../config/index.js'
 
 axios.interceptors.request.use(req => {
-    that.$Spin.show();
-		return req;
-	}, err => {
-    that.$Message.error(err);
-		return Promise.reject(err);
-});
+  that.$Spin.show()
+  return req
+}, err => {
+  that.$Message.error(err)
+  return Promise.reject(err)
+})
 
 axios.interceptors.response.use(res => {
-    that.$Spin.hide();
-    return res
-  }, err => {
-    that.$Message.error(err)
-    return Promise.reject(err)
-});
+  that.$Spin.hide()
+  return res
+}, err => {
+  that.$Message.error(err)
+  return Promise.reject(err)
+})
 
 export default {
   post (url, data) {

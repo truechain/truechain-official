@@ -93,7 +93,7 @@
 <script>
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
-import { apiGetIpInfo } from '~/api';
+import { apiGetIpInfo } from '~/api'
 
 const indexList = [
   // { path: 'https://github.com/truechain', tag: 'git' },
@@ -106,7 +106,7 @@ const indexList = [
 const langs = [
   { name: '简体中文', tag: 'zh' },
   { name: 'EN', tag: 'en' },
-  { name: '한국어', tag: 'ko' },
+  { name: '한국어', tag: 'ko' }
 ]
 
 export default {
@@ -117,12 +117,12 @@ export default {
   mounted () {
     this.setLanguage()
   },
-  head() {
+  head () {
     return {
       title: this.$t('home.head.title'),
       meta: [
         { hid: 'home-keyword', name: 'keyword', content: this.$t('home.head.keyword') },
-        { hid: 'home-description', name: 'description', content: this.$t('home.head.description') },
+        { hid: 'home-description', name: 'description', content: this.$t('home.head.description') }
       ],
       script: [
         { src: '//pv.sohu.com/cityjson?ie=utf-8' }
@@ -148,9 +148,10 @@ export default {
   methods: {
     setLanguage () {
       apiGetIpInfo({
+        /* eslint-disable-next-line */
         ip: returnCitySN.cip
       }).then(x => {
-        const { country } = JSON.parse(x.data.data).data;
+        const { country } = JSON.parse(x.data.data).data
         this.changeLanguage(this.countrys[country] || 'en')
       })
     },
@@ -183,7 +184,7 @@ export default {
     closeMenu (e) {
       this.menuIsOpen = false
     },
-    toggleLang(){
+    toggleLang () {
       this.closeMenu()
       if (!this.langsSelectorIsOpen) {
         this.langsSelectorIsOpen = true
@@ -197,7 +198,7 @@ export default {
     closeLangsSelector () {
       this.langsSelectorIsOpen = false
     },
-   /*  toggleLanguage (index) {
+    /*  toggleLanguage (index) {
       const { $route:{ fullPath }, $router, $store } = this;
       if($store.state.locale === 'en') {
         $router.push(`/zh${fullPath}`)
@@ -207,15 +208,15 @@ export default {
     }, */
     changeLanguage (lang) {
       this.closeLangsSelector()
-      if(this.$store.state.locale === lang) return
+      if (this.$store.state.locale === lang) return
 
-      const { $route:{ fullPath, params }, $router } = this;
-      const path = fullPath.split(`/${params.lang}`).join('');
+      const { $route: { fullPath, params }, $router } = this
+      const path = fullPath.split(`/${params.lang}`).join('')
 
-      if(lang === 'en') {
+      if (lang === 'en') {
         $router.push(fullPath.replace(/^\/[^\/]+/, ''))
       } else {
-        $router.push(`/${lang}${ path }`)
+        $router.push(`/${lang}${path}`)
       }
     }
   }

@@ -112,12 +112,12 @@ import { getTime, contdown } from '~/util/index.js'
 
 import { apiNodeRank, apiNodeSum, apiNodeRankPc, apiNodeTypeSumNum } from '@/api'
 export default {
-   head() {
+  head () {
     return {
       title: this.$t('node.head.title'),
       meta: [
-        { hid: 'node-keyword', name: 'keyword', content: this.$t('node.head.keyword'), },
-        { hid: 'node-description', name: 'description', content: this.$t('node.head.description'), },
+        { hid: 'node-keyword', name: 'keyword', content: this.$t('node.head.keyword') },
+        { hid: 'node-description', name: 'description', content: this.$t('node.head.description') }
       ]
     }
   },
@@ -189,16 +189,16 @@ export default {
   methods: {
     getTime,
     async nodeTypeSumNum (options) {
-      const { data: { data } } = await apiNodeTypeSumNum(options)
+      const { data: { data }} = await apiNodeTypeSumNum(options)
       return data[0].sumNum
     },
     async nodeRankPc (type = 1, nodeType = 1) {
       // debugger
-      const { data: { data } } = await apiNodeRankPc({
+      const { data: { data }} = await apiNodeRankPc({
         type: type,
         node_type: nodeType
       })
-      let { sumNum } = data[0]
+      const { sumNum } = data[0]
       if (type === 2 && nodeType === 1) {
         this.nodeStandard_21 = sumNum
       } else if (type === 1 && nodeType === 1) {
@@ -210,7 +210,7 @@ export default {
       }
     },
     async NodeSum () {
-      const { data: { data } } = await apiNodeSum()
+      const { data: { data }} = await apiNodeSum()
       this.sumNum = data[0].sumNum
     },
     setContdown () {
