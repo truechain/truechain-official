@@ -44,7 +44,7 @@ export default {
   display flex
   flex-direction column
   margin 0 auto
-  width 750px
+  width 62%
   // background red
   padding-top 100px
   padding-bottom 70px
