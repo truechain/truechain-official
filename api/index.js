@@ -17,15 +17,15 @@ const apiNodeTypeSumNum = (options) => {
 }
 
 const apiArticleList = (options) => {
-  return http._get('articleList', options)
+  return http.get('articleList', options, true)
 }
 
 const apiArticleDetail = (options) => {
-  return http._get('articleDetail', options)
+  return http.get('articleDetail', options, true)
 }
 
 const apiGetIpInfo = (options) => {
-  return http._get('getIpInfo', options)
+  return http.get('getIpInfo', options, true)
 }
 
 
