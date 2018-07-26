@@ -42,8 +42,6 @@
 <script>
 
 import { getTime, contdown } from '~/util/index.js'
-// console.log(getTime);
-
 import { apiArticleList } from '@/api'
 export default {
   head() {
@@ -119,7 +117,11 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
-
+@media screen and (max-width 1024px)
+  .news-body
+    width 90% !important
+  .news-body-table-body-date
+    margin 0 10px !important
 .news-body
   display flex
   flex-direction column
@@ -127,10 +129,12 @@ export default {
   padding-top 100px
   padding-bottom 170px
   position relative
-  width 900px
+  width 62%
+  // background red
   margin 0px auto
 .news-body-table
-  width 900px
+  // width 900px
+  width 100%
 .news-body-table-btn
   padding-top 60px
   display flex
@@ -169,6 +173,7 @@ export default {
       .news-body-table-body-date
         color #456C99
         margin 0 30px 0 20px
+        white-space nowrap
         font-size 14px
     li:nth-child(odd)
       background $bg-pearlblue

@@ -6,7 +6,7 @@
     .node-header
       .node-header-title
         .node-header-title1 {{$t('node.title')}}
-        .node-header-title2 ▲
+        .node-header-title2
         .node-header-title3
           span {{sumNum}}
           i {{$t('node.person')}}
@@ -90,7 +90,7 @@
               div {{ 1 +  (pageNumber * (pageIndex)) + index}}
               div
                 span(:class="{ tag: item.type === 1 }") {{item.nickname}}
-              div {{getTime(+item.create_time)}}
+              div.ellipsis {{getTime(+item.create_time)}}
               //- div {{item.lock_num}}TRUE
               template(v-if="nodeType === 1")
                 div {{item.score}}分
@@ -270,6 +270,42 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
+@media screen and (max-width 1024px)
+  .node-body
+    width 90% !important
+  .node-body-table-body,
+  .node-body-table-header
+    div
+      wh(0, 60px)
+      text-align center
+      line-height 60px
+      flex-grow 1
+    div:nth-child(1)
+      flex-grow 0.5
+      width auto !important
+    div:nth-child(2)
+      text-align left
+      box-sizing border-box
+      flex-grow 0
+      width auto !important
+    div:nth-child(3)
+      flex-grow 1
+      margin 0 5px
+    div:nth-child(4)
+      flex-grow 1
+  .node-header-countdown
+    width 90% !important
+    height 200px !important
+  .node-header-countdown-clock
+    ul
+      display flex
+      li
+        line-height 40px !important
+        margin 0 5px !important
+      li:nth-child(odd)
+        width 40px !important
+        height 40px !important
+        font-size 20px !important
 .node-container
   position relative
 #particles-js-node
@@ -293,9 +329,6 @@ export default {
 
 .node-header
   wh(100%, 1027px)
-  color white
-  color #000
-  // background-image url("~@/assets/images/node_bg.jpg")
   display flex
   align-items center
   flex-direction column
@@ -307,42 +340,51 @@ export default {
   div
     text-align center
     color white
-  .node-header-title1
-      font-size 48px
-      font-weight 600
-  .node-header-title2
-      text-align center
-      transform rotate(180deg) scale(1.8)
-      padding 35px 0
-  .node-header-title3
-    span
-      font-size 60px
-      font-weight bold
-      color inherit
-    i
-      font-size 16px
-      color inherit
-      margin-left 5px
+.node-header-title1
+    font-size 48px
+    font-weight 600
+.node-header-title2
+    width 0
+    height 0
+    border-left 10px solid transparent
+    border-right 10px solid transparent
+    border-top 15px solid white
+    margin 20px auto
+.node-header-title3
+  span
+    font-size 60px
+    font-weight bold
+    color inherit
+  i
+    font-size 16px
+    color inherit
+    margin-left 5px
 .node-header-apply
   padding 50px 0
-  // background red
+  width 100%
 .node-header-apply-title
   font-size 30px
   color white
   padding-bottom 40px
   text-align center
 .node-header-apply-list
+  // background green
+  margin 0 auto
+  width 50%
   ul
     display flex
     justify-content space-around
     text-align center
+    width 100%
+    // background red
     li
       display flex
       flex-direction column
       color white
-      margin 0 50px
+      margin 0 10px
       span
         color inherit
+        white-space nowrap
         line-height 40px
         &:nth-child(1)
           font-size 20px
@@ -352,7 +394,7 @@ export default {
           i:nth-child(1)
             font-size 30px
 .node-header-countdown
-  wh(900px, 238px)
+  wh(62%, 238px)
   background white
   border-radius 10px
   position absolute
@@ -391,10 +433,10 @@ export default {
   padding-top 238px
   padding-bottom 170px
   position relative
-  width 900px
+  width 62%
   margin 0px auto
 .node-body-table
-  width 900px
+  width 100%
 .node-body-table-btn
   padding-top 60px
   display flex
