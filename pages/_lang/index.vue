@@ -5,9 +5,8 @@ div
     Carousel(
       class="loop-container",
       v-model="homeCarouse",
-      :arrow="homeCarouseConfig.arrow",
-      :autoplay="homeCarouseConfig.autoplay",
-      :dots="homeCarouseConfig.dots"
+      :arrow="homeConfig.arrow",
+      :dots="homeConfig.dots"
     )
       CarouselItem
         div(class="demo-carousel banner-home")
@@ -140,7 +139,7 @@ div
       class-name="vertical-center-modal",
       @on-visible-change="changedmodal",
       :width="700"
-      )
+    )
       no-ssr(placeholder="Loading...")
         d-player(:options="dplayerOpts" ref="dplayer")
 
@@ -175,8 +174,7 @@ export default {
     return {
       value1: 0,
       homeCarouse: 0,
-      homeCarouseConfig: {
-        autoplay: false,
+      homeConfig: {
         dots: 'inside',
         arrow: 'hover'
       }
@@ -184,19 +182,21 @@ export default {
   },
   mounted () {
     if (window.particlesJS) {
-      particlesJS('particles-js', liziConfig)
+      window.particlesJS('particles-js', liziConfig)
+    } else {
+      setTimeout(() => {
+        window.particlesJS('particles-js', liziConfig)
+      }, 500);
     }
-    setTimeout(() => {
-      this.player = this.$refs.dplayer.dp;
-      if( window.screen.availWidth < 436){
-        this.homeCarouseConfig = {
-          ...this.homeCarouseConfig,
-          dots : 'none',
-          arrow : 'never'
+    this.$nextTick(x => {
+      this.player = this.$refs.dplayer.dp
+      if (window.screen.availWidth < 436) {
+        this.homeConfig = {
+          dots: 'none',
+          arrow: 'never'
         }
       }
-    }, 100);
-
+    })
   },
   head: {
     script: [
