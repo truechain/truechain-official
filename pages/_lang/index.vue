@@ -146,7 +146,6 @@ div
 
 </template>
 
-
 <script>
 import AppAndroid from "~/components/app-android.vue";
 import AppIos from "~/components/app-ios.vue";
@@ -219,17 +218,15 @@ export default {
 };
 </script>
 
-
-
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
 
 .vertical-center-modal
-  display: flex
-  align-items: center
-  justify-content: center
+  display flex
+  align-items center
+  justify-content center
   .ivu-modal
-    top: 0px
+    top 0px
 .ivu-modal-footer
 .ivu-modal-close
   display none
