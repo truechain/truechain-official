@@ -213,7 +213,7 @@ export default {
       const { $route:{ fullPath, params }, $router } = this;
       const path = fullPath.split(`/${params.lang}`).join('');
 
-      if(lang === 'zh') {
+      if(lang === 'en') {
         $router.push(fullPath.replace(/^\/[^\/]+/, ''))
       } else {
         $router.push(`/${lang}${ path }`)
