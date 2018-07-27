@@ -84,7 +84,8 @@ export default {
       const language = {
         'zh': '1',
         'en': '2',
-        'ko': '3'
+        'ko': '2',
+        'vi': '2'
       }
       apiArticleList({
         'theme': nodeType || 1,
