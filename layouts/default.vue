@@ -6,15 +6,11 @@
           div(@click="goHome")
             .container-app-header-logo
               i(class="icon font_family icon-logo2")
-              // img(src="~@/assets/images/logo_top.png")
           .container-app-header-nav
             ul(:style="{'height': menuIsOpen ? `${40 * (indexList.length + 1)}px` : '0'}")
               li(
                   @click="jumpTo('https://github.com/truechain')"
                 ) {{ $t(`nav.git`) }}
-              // li(
-              //     @click="jumpTo('http://group.truechain.pro')"
-              // ) {{ $t(`nav.blog`) }}
               nuxt-link(
                 v-for="(item, index) in indexList",
                 tag="li",
@@ -47,21 +43,6 @@
           nuxt
           Spin(size="small", v-if="false")
       .container-app-footer
-        // .container-app-footer-logo
-        //   i(class="icon font_family icon-logo1")
-        // .container-app-footer-nav
-        //   ul
-        //     li(
-        //         @click="jumpTo('https://github.com/truechain')"
-        //       ) {{ $t(`nav.git`) }}
-        //     // li(
-        //     //     @click="jumpTo('http://group.truechain.pro')"
-        //     // ) {{ $t(`nav.blog`) }}
-        //     li(
-        //       v-for="(item, index) in indexList",
-        //       :key="index",
-        //       @click="jumpTo(item.path)",
-        //     ) {{ $t(`nav.${item.tag}`) }}
         .container-app-footer-info
           .container-app-footer-links
             p.container-app-footer-text {{ $t('footerLinkDescr') }}
@@ -94,7 +75,7 @@
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
 import { apiGetIpInfo } from '~/api'
-
+import { setStore, getStore } from '~/util';
 const indexList = [
   // { path: 'https://github.com/truechain', tag: 'git' },
   // { path: 'http://group.truechain.pro/', tag: 'blog' },
@@ -105,7 +86,7 @@ const indexList = [
 ]
 const langs = [
   { name: '简体中文', tag: 'zh' },
-  { name: 'EN', tag: 'en' },
+  { name: 'EN', tag: 'default' },
   { name: '한국어', tag: 'ko' },
   { name: 'Vietnam', tag: 'vi' }
 ]
@@ -116,7 +97,12 @@ export default {
     AppIos
   },
   mounted () {
-    this.setLanguage()
+    const lang = getStore('lang')
+    if(lang) {
+      this.changeLanguage(lang)
+    } else {
+      this.setLanguage()
+    }
   },
   head () {
     return {
@@ -142,7 +128,8 @@ export default {
       countrys: {
         '中国': 'zh',
         '美国': 'en',
-        '韩国': 'ko'
+        '韩国': 'ko',
+        '越南': 'vi'
       }
     }
   },
@@ -153,7 +140,8 @@ export default {
         ip: returnCitySN.cip
       }).then(x => {
         const { country } = JSON.parse(x.data.data).data
-        this.changeLanguage(this.countrys[country] || 'en')
+        setStore('lang', this.countrys[country] || 'en')
+        this.changeLanguage(getStore('lang'))
       })
     },
     goHome () {
@@ -183,6 +171,7 @@ export default {
       }
     },
     closeMenu (e) {
+      this.closeLangsSelector()
       this.menuIsOpen = false
     },
     toggleLang () {
@@ -199,14 +188,6 @@ export default {
     closeLangsSelector () {
       this.langsSelectorIsOpen = false
     },
-    /*  toggleLanguage (index) {
-      const { $route:{ fullPath }, $router, $store } = this;
-      if($store.state.locale === 'en') {
-        $router.push(`/zh${fullPath}`)
-      } else {
-        $router.push(fullPath.replace(/^\/[^\/]+/, ''))
-      }
-    }, */
     changeLanguage (lang) {
       this.closeLangsSelector()
       if (this.$store.state.locale === lang) return
@@ -214,7 +195,8 @@ export default {
       const { $route: { fullPath, params }, $router } = this
       const path = fullPath.split(`/${params.lang}`).join('')
 
-      if (lang === 'en') {
+      setStore('lang', lang)
+      if (lang === 'default') {
         $router.push(fullPath.replace(/^\/[^\/]+/, ''))
       } else {
         $router.push(`/${lang}${path}`)

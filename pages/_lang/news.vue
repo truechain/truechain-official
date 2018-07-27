@@ -84,13 +84,12 @@ export default {
       const language = {
         'zh': '1',
         'en': '2',
-        'ko': '3'
       }
       apiArticleList({
         'theme': nodeType || 1,
         'pageIndex': (pageIndex - 1) * this.pageNumber,
         'pageNumber': pageSum || this.pageNumber,
-        'language': language[ this.$store.state.locale ]
+        'language': language[ this.$store.state.locale ] || '2'
       }).then(res => {
         if (pageSum > 10) {
           this.pageSum = res.data.data.length
