@@ -43,19 +43,19 @@
     "slogan": "Nhanh chóng , không chịu giới hạn , an toàn , có thể khuếch tán dung lượng",
     "slogan1": "Có Public Blockchains đồng thuận hỗn hợp PBFT-fPoW của khu dành cho nhà khai thác toàn cầu ",
     "white": "Sách bạch bì",
-    "whiteLink": "https://www.truechain.pro/Truechain.pdf",
+    "whiteLink": "https://www.truechain.pro/Truechain_en.pdf",
     "yellow": "Sách hoàng bì",
     "yellowLink": "https://www.truechain.pro/paper.pdf",
     "banner2":{
-      "title":"True 轻钱包应用",
-      "line1":"公测版本",
-      "line2":"扫描二维码下载"
+      "title":"True Ứng dụng ví ánh sáng",
+      "line1":"Phiên bản beta công khai",
+      "line2":"Quét mã QR tải xuống"
     },
     "banner3":{
-      "title":"优先节点火热竞选中",
-      "line1":"4000个优先标准节点 & 100个优先全节点",
-      "line2":"3000w True Token节点激励",
-      "btntext":"查看详情"
+      "title":"Ưu tiên bầu cử nút nóng",
+      "line1":"4000 nút tiêu chuẩn ưu tiên và 100 nút đầy đủ ưu tiên",
+      "line2":"3000w Kích hoạt nút mã hóa thực sự",
+      "btntext":"Xem chi tiết"
     },
     "superiority": [
       {
