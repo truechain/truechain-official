@@ -1,5 +1,5 @@
 {
-  "language": "한국어",
+  "language": "Tiếng Việt",
   "linksList": [
     {
       "name": "twitter",
@@ -9,7 +9,7 @@
     {
       "name": "telegram",
       "icon": "icon font_family icon-telegram",
-      "link": "https://t.me/truechainkorea"
+      "link": "http://www.t.me/truechain"
     },
     {
       "name": "facebook",
@@ -32,414 +32,434 @@
       "link": "https://www.youtube.com/channel/UCsKSh9TPpYCZwHFn4lzhmFg?view_as=subscriber"
     }
   ],
-  "footerLinkDescr":"TrueChain 공식 소셜 플랫폼",
-  "footerDownDescr":"TrueChain 지갑 app 다운로드",
+  "footerLinkDescr":"Hệ thống xã giao chính thức TrueChain",
+  "footerDownDescr":"Tải về ứng dụng ví tiền nhẹ TrueChain ",
   "home": {
     "head": {
-      "title": "트루체인 - 고성능의 무한한 노드, 하이브리드 합의 알고리즘의 블록체인",
-      "keyword": "트루체인，TRUE，트루체인 코인，TrueChain，Eric Zhang，블록체인，하이브리드 합의 알고리즘，Xiaoyong Cheng，Larry Lin",
-      "description": "트루체인（TrueChain）은 세계 최초로 PBFT-POW 하이브리드 합의 알고리즘을 실현한 퍼블릭 블록체인입니다. 트루체인은 블록체인 계열 중 가장 중요한 문제인 탈 중앙화와 성능 사이의 모순을 해결하였습니다."
+      "title": "新一代混合共识公链",
+      "keyword": "初链，TRUE，初链币，TrueChain，张剑南，区块链，混合共识，程小永，林大亮",
+      "description": "初链是全球最早的PBFT - fPOW混合共识公链"
     },
-    "slogan": "신속한, 무제한적인, 안전한, 확장성이 있는",
-    "slogan1": "글로벌 개발자 커뮤니티를 가지고 있는 PBFT-FPOW 하이브리드 합의 알고리즘 퍼블릭 블록체인",
-    "white": "백서",
-    "whiteLink": "https://www.truechain.pro/Truechain_en.pdf",
-    "yellow": "황서",
+    "slogan": "Nhanh chóng , không chịu giới hạn , an toàn , có thể khuếch tán dung lượng",
+    "slogan1": "Có Public Blockchains đồng thuận hỗn hợp PBFT-fPoW của khu dành cho nhà khai thác toàn cầu ",
+    "white": "Sách bạch bì",
+    "whiteLink": "https://www.truechain.pro/Truechain.pdf",
+    "yellow": "Sách hoàng bì",
     "yellowLink": "https://www.truechain.pro/paper.pdf",
     "banner2":{
-      "title":"True 지갑",
-      "line1":"공개 테스트 버전",
-      "line2":"QR코드를 사용하여 다운로드 후 이용하세요"
+      "title":"True 轻钱包应用",
+      "line1":"公测版本",
+      "line2":"扫描二维码下载"
     },
     "banner3":{
-      "title":"마스터 노드 투표 절찬리에 진행 중",
-      "line1":"4000개의 우선 순위 표준 노드 & 100개의 마스터 노드",
-      "line2":"3000만 True Token노드의 격려",
-      "btntext":"개표 현황"
+      "title":"优先节点火热竞选中",
+      "line1":"4000个优先标准节点 & 100个优先全节点",
+      "line2":"3000w True Token节点激励",
+      "btntext":"查看详情"
     },
     "superiority": [
       {
         "icon": "icon font_family icon-jiejue",
-        "title": "퍼블릭 블록체인의 가장 큰 문제를 해결하였습니다",
-        "detail":"트루체인은 PBFT-FPOW 하이브리드 합의 알고리즘 메커니즘과 안전한 샤딩(Sharding) 기술을 사용하여 퍼블릭 블록체인의 가장큰 문제인 성능과 탈 중앙화 사이의 모순을 해결하였습니다"
+        "title": "Giải quyết vấn đề nổi bật nhất của Public Blockchains",
+        "detail":"TrueChain tận dụng cơ chế đồng thuận hỗn hợp PBFT-fPoW và cơ chế phân mảnh an toàn đã giải quyết được vấn đề lớn nhất mà hiện tại Public Blockchains phải đối mặt : sự mâu thuẫn giữa tính năng và sự phân tán"
       },
       {
         "icon": "icon font_family icon-tianchengzuo",
-        "title": "탈 중앙화와 공정성을 확실히 보장합니다",
-        "detail":"트루체인은 fruitchain을 이용해 snailchain를 만들었으며, FPOW로 나카모토(Nakamoto)의 POW를 대체합니다. 트루체인은 신세대 퍼블릭 블록체인의 탈 중앙화와 공평성을 보장합니다"
+        "title": "Bảo đảm sự phân tán và tính công bằng",
+        "detail":"Sử dụng Block Fruit làm Slow chain , dùng fPoW thay thế hiệp nghị PoW của Trung Bản Thông , TrueChain có thể đảm bảo sự phân tán và tính công bằng của Public Blockchains thời đại mới "
       },
       {
         "icon": "icon font_family icon-gongshijizhi",
-        "title": "제1세대 하이브리드 합의 알고리즘 장려 메커니즘",
-        "detail":"트루체인은 세계 최초로 장려 메커니즘을 이용하여 하이브리드 합의 알고리즘 퍼블릭 블록체인을 형성하였는데, 이것은 블록체인 기술에게 경제 의식을 부여한 것입니다"
+        "title": "Cơ chế động lực đồng thuận hỗn hợp đời thứ nhất",
+        "detail":"TrueChain là cơ chế đời thứ nhất lợi dụng cơ chế động lực để quản lí Public Blockchains đồng thuận hỗn hợp , đây chính là kĩ thuật Blockchain tạo lên ý thức kinh tế"
       },
       {
         "icon": "icon font_family icon-jizhi",
-        "title": "안정적이고 유지비용이 저렴한 메커니즘",
-        "detail":"일반적으로 유지비용이 저렴한 퍼블릭 블록체인을 실현한다는 것은 불가능에 가깝습니다. 그럼에도 불구하고, 트루체인은 안정적이고, 저렴한 유지비용을 제공하여 더 많은 Dapps를 실현할 수 있습니다"
+        "title": "Cơ chế chi phí nhiên liệu ổn định , giá thành thấp",
+        "detail":"Thực hiện chi phí nhiên liệu bằng không đối với bất kì loại Blockchain nào mà nói là điều không thể nào , mặc dù như vậy , TrueChain vẫn có thể cung cấp chi phí nhiên liệu ổn định , giá thành thấp giúp càng nhiều DApps thực hiện lên đồng chuỗi"
       },
       {
         "icon": "icon font_family icon-shequ",
-        "title": "막강한 글로벌 개발자 커뮤니티",
-        "detail":"신세대 퍼블릭 블록체인중에서, 트루체인은 중국내 규모가 가장 크며, 세계에서 성장 속도가 가장 빠른 개발자 커뮤니티를 보유하고 있습니다"
+        "title": "Khu dành cho nhà khai thác trên toàn thế giới lớn mạnh",
+        "detail":"Trong Public Blockchains thời đại mới , TrueChain có qui mô lớn nhất trong phạm vi Trung Quốc , khu dành cho nhà khai thác có tốc độ tăng trưởng nhanh nhất trong phạm vi toàn cầu"
       },
       {
         "icon": "icon font_family icon-chanpin",
-        "title": "오픈 소스 상품",
-        "detail":"하이브리드 합의 알고리즘 퍼블릭 블렉체인 플랫폼을 보완하기 위해, 트루체인은 완전하고 이용하기 쉬운 여러가지 상품들이 있고, 모든 상품들은 오픈 소스입니다"
+        "title": "Ma trận sản phẩm nguồn mở",
+        "detail":"Để hoàn thiện và cho phép kết hợp hệ thống Public Blockchains đồng thuận , TrueChain có ma trận sản phẩm vô cùng hoàn chỉnh và dễ sử dụng , đồng thời tất cả các sản phẩm đều mở nguồn ra bên ngoài"
       }
     ],
     "about": {
-      "title": "트루체인 소개",
-      "subhead": "트루체인은 확장성이 좋고 신속하고 안전하며 제한이 없는 PBFT-FPOW 하이브리드 합의 알고리즘 퍼블릭 블록체인입니다. 또한 막강한 글로벌 개발자 커뮤니티를 보유하고 있습니다",
+      "title": "Về vấn đề",
+      "subhead": "Nhanh chóng , không chịu giới hạn , an toàn , có thể khuếch tán dung lượng，Có Public Blockchains đồng thuận hỗn hợp PBFT-fPoW của khu dành cho nhà khai thác toàn cầu",
       "contentList": [
-        "POW/POS 등 단일 합의 알고리즘의 퍼블릭 블록체인들은 성능적 한계에 도달했습니다. DPOS/DBFT의 퍼블릭 블록체인은 성능적 문제는 해결되었지만 탈 중앙화 문제에 부딪쳤습니다. 트루체인은 PBFT와 FPOW를 결합한 하이브리드 합의 알고리즘을 이용하여 퍼블릭 블록체인의 가장 중요한 문제인 탈 중앙화와 성능 사이의 모순을 해결하였습니다",
-        "트루체인은 PBFT를 이용하여 Fast-Chain을 만들고, 거래처리속도를 가속화하며, POW로 PBFT위원회의 감독과 선거를 관리합니다. 트루체인은 fruitchain기술을 전통적인 POW기술과 접목시켜 FPOW를 만들어냈고, 일반 사용자들에게 채굴에 참여할 수 있는 기회를 주며, 탈 중앙화와 형평성을 실현하였습니다. 또한 트루체인은 PBFT에 샤딩(Sharding) 메커니즘을 추가하여 확장성 방면의 제한을 극복하였습니다 ",
-        "진취적이고 실용적인 기술을 가지고 있는 트루체인의 목표는 탈 중앙화 경제를 위해 완전히 운용 가능한 블록체인 플랫폼을 제공하는 것입니다. 트루체인은 먼저 하이브리드 합의 알고리즘 메커니즘을 제시하고, 경제 의식을 이용하여 근본적인 지지와 블록체인 발전을 촉진하였습니다. 또한, 트루체인의 안정적인 코스트 체계는 개발자와 운영자가 Dapps의 개발비용을 낮출 수 있으며, 이로서 트루체인은 더욱 대중화되었습니다",
-        "하나의 블록체인 플랫폼으로서, 트루체인은 고도의 수용성 커뮤니티를 만들어 글로벌 개발자와 창업자들을 트루체인의 일원으로 만들었습니다. 트루체인은 글로벌 커뮤니티뿐만 아니라, 많은 오픈 소스 상품을 갖추고 있으며, 개발자들이 사용하기 편리합니다. 트루체인은 유저의 관점에서 Dapp개발을 위한 가장 최적의 조건을 제공할 수 있습니다",
-        "트루체인의 연구팀은 인도, 미국, 중국 등 매우 글로벌하게 이루어져있습니다",
-        "트루체인은 중국 국가 클라우드 산업 시스템의 전략혁신연맹이사이며, 국가 체인 네트워크의 중심멤버이고, 공영방송국(CCTV)를 포함한 여러 매체에 보도된 블록체인 프로젝트입니다"
+        "TrueChain tận dụng cơ chế đồng thuận hỗn hợp PBFT-fPoW và cơ chế phân mảnh an toàn đã giải quyết được vấn đề lớn nhất mà hiện tại Public Blockchains phải đối mặt : sự mâu thuẫn giữa tính năng và sự phân tán ，Giải quyết vấn đề nổi bật nhất của Public Blockchains",
+        "TrueChain căn cứ theo cơ chế đồng thuận hỗn hợp Minerva , kết hợp PBFT và fPoW, tìm hiểu vấn đề lớn nhất mà lĩnh vực Public Blockchains phải đối mặt : sự mâu thuẫn giữa tính năng và sự phân tán",
+        "TrueChain lợi dụng PBFT làm chuỗi cấp tốc để thực hiện xử lí cấp tốc giao dịch , PoW phụ trách giám sát quản lí và lựa chọn đề cử Ủy ban PBFT , và dung hòa kĩ thuật Block Fruit vào trong hiệp nghị PoW truyền thống , trở thành fPow , giúp người dùng phổ thông có cơ hội tham gia đào khoáng , thực hiện càng thêm phân tán và công bằng hóa .Đồng thời , TrueChain đã tăng thêm cơ chế phân mảnh trên PBFT , đã đột phá hạn chế phương diện khuếch tán dung lượng .",
+        "TrueChain có kĩ thuật tiên tiến và chắc chắn , mục tiêu của chúng tôi là cung cấp một hệ thống Blockchain hoàn toàn có thể vận hành , quản lí tốt cho nền kinh tế phân tán . Trước tiên TrueChain đã cung cấp cơ chế động lực đồng thuận hỗn hợp , lợi dụng ý thức kinh tế nâng đỡ từ cơ bản và thúc đẩy sự phát triển của Blockchain .Đồng thời , chi phí cơ chế nhiên liệu ổn định mà TrueChain sáng tạo riêng có thể hạ thấp giá thành của nhà khai thác và nhà vận hành kinh doanh khai thác DApps , từ đó giúp TrueChain càng thêm hướng ra quần chúng",
+        "Đội ngũ TrueChain vô cùng quốc tế hóa , các thành viên đến từ các khu vực như Ấn Độ , Mỹ , Trung Quốc .",
+        "TrueChain là đơn vị lí sự liên minh sáng tạo chiến lược hệ thống tài sản Yun quốc gia Trung Quốc , thành viên trung tâm mạng chuỗi quốc gia , cũng là con số không nhiều , tiếp nhận qua các hạng mục Blockchain mà các hãng truyền thông có uy quyền của đài truyền hình trung ương Trung Quốc đã đưa tin "
       ]
     },
     "roadmap": {
-      "title": "로드맵",
+      "title": "Tuyến đường",
       "list": [
         {
           "time": "2018-01",
-          "events": ["True백서 발표"]
+          "events": ["Sách bạch bì True phát biểu"]
         },
         {
           "time": "2018-03",
-          "events": ["PBFT 컨소시엄 블록 체인 출시"]
+          "events": ["Chuỗi liên minh PBFT"]
         },
         {
           "time": "2018-04",
-          "events": ["트루체인 기술 황서 발표", "완벽한 하이브리드 합의 메커니즘의 설계", "라이프 사이클 관리 계약 플랫폼 및 stellar 플랫폼 발표"]
+          "events": ["Sách hoàng bì kĩ thuật TrueChain phát biểu", "Cơ chế đồng thuận hỗn hợp thiết kế hoàn thiện", "Hệ thống quản lí chu kì sinh mệnh hợp đồng phát biểu và hệ thống stellar phát biểu"]
         },
         {
           "time": "2018-05",
-          "events": ["트루체인 엔지니어링 로드맵 발표", "트루체인 지갑 출시", "트루체인 탈 중앙화 노드 선거 시스템 출시"]
+          "events": ["Sơ đồ tuyến đường công trình TrueChain được github phát biểu", "Ví tiền nhẹ TrueChain đã được tung lên mạng", "Hệ thống cạnh tranh lựa chọn tiết điểm phân tán TrueChain đã được tung lên mạng 05-2018"]
         },
         {
           "time": "2018-06",
-          "events": ["하이브리드 합의 프레임워크 코드 오픈 소스화", "하이브리드 합의 알고리즘을 장려하는 체제 발표", "메인넷 ver0.1 내부 테스트"]
+          "events": ["Nguồn mở khung mã code đồng thuận hỗn hợp", "Cơ chế động lực đồng thuận hỗn hợp phát biểu", "Kiểm tra bên trong mạng chính v0.01"]
         },
         {
           "time": "2018-07",
-          "events": ["FPOW기초 시스템 실현 및 오픈 소스화", "미국 개발자 커뮤니티 설립"]
+          "events": ["thực hiện và mở nguồn khung cơ sở fPOW", "Khu dành cho người khai thác nước Mỹ thành lập vào tháng 7-2018"]
         },
         {
           "time": "2018-08",
-          "events": ["FPOW와 트루체인의 메인넷 통합", "하이브리드 합의 공유(Sharding) 메커니즘"]
+          "events": ["fPOW và chỉnh hợp mạng chính TrueChain", "Cơ chế phân mảnh đồng thuận hỗn hợp"]
         },
         {
           "time": "2018-9",
-          "events": ["트루체인 메인넷 런칭(마스터 노드들에게만 오픈)"]
+          "events": ["Mạng chính TrueChain đã ra mắt trên mạng ( chỉ mở cho tiết điểm ưu tiên )"]
         },
         {
           "time": "2018-12",
-          "events": ["하이브리드 합의 공유(Sharding) 메커니즘 런칭"]
+          "events": ["Cơ chế phân mảnh đồng thuận hỗn hợp đã ra mắt trên mạng"]
         },
         {
           "time": "2019-03",
-          "events": ["모든 노드들에게 메인넷 오픈"]
+          "events": ["Mạng chính mở ra cho toàn bộ tiết điểm"]
         }
       ]
     },
-    "partner": "협력 파트너",
-    "institution": "투자기관",
+    "partner": "Cơ cấu hợp tác",
+    "institution": "Cơ cấu đầu tư",
     "news":{
-      "title":"새 소식",
-      "technical": "기술 동향",
-      "biz": "비즈니스 동향",
+      "title": "Tin mới",
+      "technical": "技术动态",
+      "biz": "商业动态",
+      "point": "暂无数据",
       "list":[
         {
           "time":"2018-05-24",
-          "title":"CCTV6에 출연하여 실물경제로 추진"
+          "title":"Blockchain đăng nhập CCTV6, giúp thúc đẩy kinh tế thực thể "
         },
         {
           "time":"2018-05-23",
-          "title":"블록체인 기술이 수많은 산업들을 전복할 것"
+          "title":"Kĩ thuật Blockchain sẽ lật đổ nhiều ngành nghề"
         },
         {
           "time":"2018-05-20",
-          "title":"트루체인이 중화인민공화국 공업, 정보화부의 블록체인 산업 백서 연구에 참여"
+          "title":"TrueChain tham gia điều tra sách bạch bì ngành Blockchain với bộ Thông tin và Truyền thông"
         }
       ]
     }
   },
-  "roadmap": "로드맵",
-  "name": "트루체인",
-  "copyright": "(트루체인)공식 웹사이트 저작권 소유",
+  "roadmap": "Tuyến đường",
+  "name": "TrueChain ",
+  "copyright": "（初链）官方网站版权所有",
   "nav": {
     "git": "GITHUB",
-    "blog": "블로그",
-    "team": "팀",
-    "news": "새 소식",
-    "join": "채용 공고",
-    "node": "노드",
-    "english": "한국어"
+    "blog": "博客",
+    "team": "Đội ngũ",
+    "news": "Tin mới",
+    "join": "Gia nhập chúng tôi",
+    "node": "Tiết điểm",
+    "english": "简体中文"
   },
   "banner": {
-    "title": "True지갑",
-    "p1": "공개 테스트 버전",
-    "p2": "QR코드를 사용하여 다운로드 후 이용하세요"
+    "title": "True轻钱包",
+    "p1": "公开测试版本",
+    "p2": "扫描二维码下载应用"
   },
   "news": {
     "head": {
-      "title": "트루체인 새소식-트루체인 최신 동태-블록체인 속보-트루체인",
-      "keyword": "트루체인 속보, TRUE, 블록체인 속보, 사이버 머니 속보",
-      "description": " True Chain의 새 소식 업데이트, 블록체인 속보 및 블록체인 영역의 소식과 데이터를 실시간으로 업데이트."
+      "title": "初链Tin mới-初链最新动态-区块链快讯-初链",
+      "keyword": "初链快讯，TRUE,区块链快讯，数字货币快讯",
+      "description": "初链新闻版块提供初链最新动态消息，区块链快讯等区块链领域的实时资讯。"
     },
-    "point": "데이터가 없습니다",
-    "title": "새소식",
-    "technical": "새소식 동태",
-    "biz": "비즈니스 동태"
+    "title": "Tin mới",
+    "point": "暂无数据",
+    "technical": "Tin mới",
+    "biz": "商业动态"
 
   },
   "partner": {
-    "title": "협력 파트너"
+    "title": "合作伙伴"
   },
   "team": {
     "head": {
-      "title": "트루체인 팀-트루체인TrueChain",
-      "keyword": "트루체인 팀원, TRUE, 블록체인 전문가, 블록체인 인재",
-      "description": "트루체인의 글로벌 팀원은 주로 기술팀, 비즈니스 및 블록체인 전문가 고문으로 구성되어 있으며, 미국과 인도 그리고 중국에 분포되어있다."
+      "title": "初链Đội ngũ-初链TrueChain",
+      "keyword": "初链团队成员，TRUE,区块链专家，数字货币专家，区块链人才",
+      "description": "初链的全球团队成员主要分为技术团队，商业团队及区块链专家顾问，分布在美国、印度和中国。"
     },
-    "banner": "With 500+ developers from the world",
+    "banner": "Và hơn 500 nhân viên khai thác đến từ toàn cầu",
     "technology": {
-      "title": "연구 및 개발자 커뮤니티",
+      "title": "Nghiên cứu và khu dành cho nhà khai thác",
       "list": [
         {
-          "name": "Eric Zhang",
-          "post": "공동 창립자&CEO",
+          "name": "Trương Kiếm Nam",
+          "post": "Giám đốc chấp hành cao nhất",
           "imgSrc": "jiannan",
+          "intro": "Thạc sĩ máy tính đại học Oxford，Nhà sáng lập TopHacker và Dorahacks",
           "introList": [
-            "옥스포드 대학 컴퓨터 공학과 석사",
-            "TopHacker와Dorahacks창립자",
-            "유럽 원자력 연구소 CERN 연구원(2013)"
+            "Thạc sĩ máy tính đại học Oxford",
+            "Nhà sáng lập TopHacker và Dorahacks",
+            "研Nhân viên nghiên cứu , tổ chức nghiên cứu hạt nhân châu Âu CERN（2013）"
           ]
         },
         {
           "name": "Archit Sharma",
-          "post": "트루체인 프로젝트 기술 책임자",
+          "post": "Người phụ trách kĩ thuật công trình",
           "imgSrc": "as",
+          "intro": "Dịch vụ Yun và chuyên gia khai thác hệ thống dạng phân bố , mũ đỏ (Red Hat)。Nhân viên nghiên cứu , tổ chức nghiên cứu hạt nhân châu Âu CERN（2013）。Người cống hiến dự án nguồn mở quan trọng，Quán quân , Dorahacks tín đồ geek Marathon",
           "introList": [
-            "운영 체제 및 성능 공학 방면의 전문가, Red-Hat 연구원",
-            "유럽 원자력 연구소 CERN 연구원(2013)",
-            "중요 오픈 소스 항목 공헌자",
-            "Docker Hackathon 우승",
-            "CERN Webfest 2013 준우승"
+            "Dịch vụ Yun và chuyên gia khai thác hệ thống dạng phân bố , mũ đỏ (Red Hat)",
+            "Nhân viên nghiên cứu , tổ chức nghiên cứu hạt nhân châu Âu CERN（2013）",
+            "Người cống hiến dự án nguồn mở quan trọng",
+            "Quán quân , Dorahacks tín đồ geek Marathon",
+            "Á quân , CERN Webfest"
           ]
         },
         {
-          "name": "Yang Liu",
-          "post": "주요 네트워크 소유자",
+          "name": "Lưu Dương",
+          "post": "Người phụ trách mạng chính",
           "imgSrc": "liuyang",
           "introList": [
-            "청화대학교 학사, 석사",
-            "10여년간 시스템 개발 및 구성 경력",
-            "암호학과 알고리즘 전문가 "
+            "Cử nhân , thạc sĩ đại học Thanh Hoa",
+            "10 năm kinh nghiệm khai thác và kết cấu hệ thống",
+            "Chuyên gia mật mã học và phép tính"
           ]
         },
         {
-          "name": "Han Zhang",
-          "post": "트루체인 연구팀 책임자",
+          "name": "Trương Hàn",
+          "post": "Người phụ trách đội ngũ nghiên cứu",
           "imgSrc": "zhanghan",
+          "intro": "Tiến sĩ ngành toán học đại học New South Wales Úc,Từng huấn luyện đội quốc gia toán học Olympic Úc,Nghiên cứu viên đội ngũ nghiên cứu máy tính tính năng cao học việc khoa học Trung Quốc,Có kinh nghiệm nghiên cứu thực tiễn và thực tiễn trong lĩnh vực cơ chế đồng thuận tầng dưới Blockchain , mật mã học , an toàn",
           "introList": [
-            "호주 뉴 사우스 웨일스 대학교 수학과 박사",
-            "호주 올림픽 수학 국가 대표팀 감독 역임",
-            "중국 과학원 고성능 컴퓨터 공학 연구팀 연구원",
-            "블록체인의 합의 메커니즘, 암호학, 안전 분야의 풍부한 연구 경험 보유"
+            "Tiến sĩ ngành toán học đại học New South Wales Úc",
+            "Từng huấn luyện đội quốc gia toán học Olympic Úc",
+            "Nghiên cứu viên đội ngũ nghiên cứu máy tính tính năng cao học việc khoa học Trung Quốc",
+            "Có kinh nghiệm nghiên cứu thực tiễn và thực tiễn trong lĩnh vực cơ chế đồng thuận tầng dưới Blockchain , mật mã học , an toàn"
           ]
         },
         {
-          "name": "Home Chen",
-          "post": "상품 책임자",
+          "name": "Trần Đại Hồng",
+          "post": "Người phụ trách sản phẩm",
           "imgSrc": "dahong",
+          "intro": "Hơn 20 năm kinh nghiệm trong ngành mạng liên kết，Phòng kĩ thuật hàng đầu Yun lượng hóa Phòng kĩ thuật hàng đầu CaiHuoHuo",
           "introList": [
-            "20년간 IT 업계 종사",
-            "QuantCloud의 CTO",
-            "Caihuohuo의 CTO"
+            "Hơn 20 năm kinh nghiệm trong ngành mạng liên kết",
+            "Phòng kĩ thuật hàng đầu Yun lượng hóa",
+            "Phòng kĩ thuật hàng đầu CaiHuoHuo"
           ]
         },
         {
-          "name": "Felix Cai",
-          "post": "프런트 제품 담당자",
+          "name": "Sái Chấn Xuyên",
+          "post": "Người phụ trách sản phẩm Front-end",
           "imgSrc": "zhenchuan",
+          "intro": "Tốt nghiệp tại lớp thiếu niên trường đại học giao thông Tây An ，Đứng thứ nhất trong cuộc thi Dorahacks khu tín đồ Geek năm 2017",
           "introList": [
-            "서안 교통대학교 청년반 졸업",
-            "얼리어답터",
-            "2017년 DoraHacks 얼리어답터 커뮤니티 대회 우승"
+            "Tốt nghiệp tại lớp thiếu niên trường đại học giao thông Tây An ",
+            "Tín đồ Geek Front-end",
+            "Đứng thứ nhất trong cuộc thi Dorahacks khu tín đồ Geek năm 2017"
           ]
         },
         {
-          "name": "Ice Ming",
-          "post": "기술 통합 책임자",
+          "name": "Điền Minh",
+          "post": "Người phụ trách chỉnh hợp kĩ thuật",
           "imgSrc": "tianming",
+          "intro": "Kĩ sư khai thác GolangGolang，Hơn 10 năm c/c++kinh nghiệm khai thác，Sản phẩm kho dữ liệu cập nhật liên tục và kinh nghiệm dự án sản phẩm hệ thống giao dịch tiền tệ kĩ thuật số，Đã từng khai thác đồng BitCoin và ví tiền Ethereum",
           "introList": [
-            "Golang의 엔지니어",
-            "10년 이상의 c/c++ 개발 경험",
-            "실시간 데이터베이스 제품 및 암호화폐 거래 플랫폼 사업 노하우 보유",
-            "비트코인 및 이더리움 지갑 개발 경험"
+            "Kĩ sư khai thác GolangGolang",
+            "Hơn 10 năm c/c++kinh nghiệm khai thác",
+            "Sản phẩm kho dữ liệu cập nhật liên tục và kinh nghiệm dự án sản phẩm hệ thống giao dịch tiền tệ kĩ thuật số",
+            "Đã từng khai thác đồng BitCoin và ví tiền Ethereum"
           ]
         },
         {
-          "name": "Seay (Wizard)",
-          "post": "안전 고문",
+          "name": "Doãn Nghị ( pháp sư )",
+          "post": "Cố vấn an toàn",
           "imgSrc": "fashi",
+          "intro": "Lãnh đạo phòng thực nghiệm tấn công và an toàn Alibaba，Tác giả của “ Thẩm tra mã code : kết cấu an toàn mã code mạng doanh nghiệp。Chủ nhân của Blog an toàn nổi tiếng cnseay.com",
           "introList": [
-            "알리바바 보안 부분과 공방 실습 담당자",
-            "“코드 감사: 기업판 온라인 코드 보안 아키텍처”의 저자",
-            "보안 블로그 cnseay.com 운영"
+            "Lãnh đạo phòng thực nghiệm tấn công và an toàn Alibaba",
+            "Tác giả của “ Thẩm tra mã code : kết cấu an toàn mã code mạng doanh nghiệp”",
+            "Chủ nhân của Blog an toàn nổi tiếng cnseay.com"
           ]
         },
         {
           "name": "Samikshan Bairagya",
-          "post": "선임 개발자",
+          "post": "Nhà khai thác cao cấp",
           "imgSrc": "sb",
+          "intro": "Cử nhân khoa học máy tính học viện kĩ thuật quốc gia Durgapur，Kĩ sư phần mềm mũ đỏ(Red Hat) （2013-2018），Nhà khai thác /nhà tham dự dự án mùa hè biên trình của Google ",
           "introList": [
-            "두르가푸르 국립 과학 기술 대학교 컴퓨터 공학 학사",
-            "구글 summer 프로그래밍 프로젝트 개발자/참여자(2012)",
-            "Red-Hat 소프트웨어 엔지니어(2013-2018)"
+            "Cử nhân khoa học máy tính học viện kĩ thuật quốc gia Durgapur",
+            "Nhà khai thác /nhà tham dự dự án mùa hè biên trình của Google ",
+            "Kĩ sư phần mềm mũ đỏ(Red Hat) （2013-2018）"
           ]
         },
         {
-          "name": "Robin Zhang",
-          "post": "합의 알고리즘과 POW 제품의 담당자",
+          "name": "Trương Húc Bân",
+          "post": "Người phụ trách sản phẩm đồng thuận vàPoW",
           "imgSrc": "xubin",
+          "intro": "Cử nhân , thạc sĩ đại học Thanh Hoa，ó 18 năm kinh nghiệm làm việc , đã từng đảm nhận chức vụ tại Silicon Valley nước Mỹ，Thạc sĩ công trình điện tử đại học SUNY nước Mỹ",
           "introList": [
-            "청화대학교 학사, 석사",
-            "미국 뉴욕 주립대학교 전자 공학과 석사",
-            "네트워크 통신 전문가",
-            "미국 실리콘 밸리에서 18년간 근무"
+            "Cử nhân , thạc sĩ đại học Thanh Hoa",
+            "Thạc sĩ công trình điện tử đại học SUNY nước Mỹ ",
+            "Chuyên gia thông tin mạng",
+            "Có 18 năm kinh nghiệm làm việc , đã từng đảm nhận chức vụ tại Silicon Valley nước Mỹ"
           ]
         },
         {
-          "name": "Binqi Tang",
-          "post": "상급 개발자",
+          "name": "Đường Bân Kì",
+          "post": "Nhà khai thác cao cấp",
           "imgSrc": "binqi",
           "introList": [
-            "10여년간 시스템 개발 및 구성 경력",
-            "전 ShenZhen Coship 전자 회사 개발부 매니저",
-            "HuNan Jwinlink 설계",
-            "58Home 기술 전문가",
-            "인터넷 시스템 구축 및 운영 전문가"
+            "Hơn 10 năm kinh nghiệm khai thác hệ thống và kết cấu khung",
+            "Giám đốc bộ khai thác điện tử Đồng Châu Thâm Quyến",
+            "Nhà kết cấu khung hệ thống Jwinlink Hồ Nam ",
+            "Nhà kết cấu chuyên gia kĩ thuật 58 DaoJia ",
+            "Chuyên gia kết cấu hệ thống mạng liên kết và vận hành kinh doanh "
           ]
         }
       ]
     },
     "business": {
-      "title": "커뮤니티 및 개발",
+      "title": "Khu phát triển và vận hành kinh doanh ",
       "list": [
         {
-          "name": "James Cheng",
-          "post": "전략 개발 책임자",
+          "name": "Trình Tiểu Vĩnh",
+          "post": "Giám đốc sách lược hàng đầu",
           "imgSrc": "xiaoyong",
+          "intro": "Đại học Thanh Hoa kiêm việc nghiên cứu , người liên tục sáng nghiệp，Thành viên lãnh tụ thanh niên câu lạc bộ Trường An",
           "introList": [
-            "청화 대학교 파트 타임 연구원, 연쇄 창업가",
-            "중국 클라우드 산업 창신 전략 연맹 집행 이사",
-            "장안 클럽 청년 지도자"
+            "Đại học Thanh Hoa kiêm việc nghiên cứu , người liên tục sáng nghiệp",
+            "Chấp hành lí sự liên minh chiến lược sáng tạo ngành hệ thống Yun Trung Quốc ",
+            "Thành viên lãnh tụ thanh niên câu lạc bộ Trường An"
           ]
         },
         {
-          "name": "Larry Lin",
-          "post": "비즈니스 책임자",
+          "name": "Lân Đại Lượng",
+          "post": "Giám đốc phát triển hàng đầu ",
           "imgSrc": "daliang",
+          "intro": "Chuyên gia vận hành kinh doanh mạng liên kết tiêu thụ và xã hộiPhụ trách vận hành BaiDu BaiKe，Có 10 năm kinh nghiệm ngành nghề quảng cáo kĩ thuật số và mạng liên kết",
           "introList": [
-            "인터넷 마케팅과 커뮤니티 운영 전문가",
-            "전 Baidu 백과의 운영 책임자",
-            "10여년간 디지털 광고 및 인터넷 업계 경력"
+            "Chuyên gia vận hành kinh doanh mạng liên kết tiêu thụ và xã hội",
+            "Phụ trách vận hành BaiDu BaiKe",
+            "Có 10 năm kinh nghiệm ngành nghề quảng cáo kĩ thuật số và mạng liên kết"
           ]
         },
         {
-          "name": "Hongyi Zheng",
-          "post": "최고 운영 책임자",
+          "name": "Trịnh Hồng Nghị",
+          "post": "Giám đốc vận hành kinh doanh hàng đầu",
           "imgSrc": "hongyi",
+          "intro": "Tốt nghiệp ngành máy tính đại học công nghiệp Cáp Nhĩ Tân ，Chủ yếu phụ trách triển khai mở rộng ứng dụng DApp，Đã từng đảm nhiệm COO trung tâm phát hành phần mềm khu vực Trung Quốc Kaspersky，Tổng giám sát vận hành kinh doanh Monternet Trung Quốc",
           "introList": [
-            "하얼빈 공업대학교 컴퓨터 공학부 졸업",
-            "Dapp 어플리케이션 주요 담당자",
-            "전 카스퍼키 중국 소프트웨어 발행 센터 COO",
-            "차이나 모바일(sp 사업부) 운영 총감독"
+            "Tốt nghiệp ngành máy tính đại học công nghiệp Cáp Nhĩ Tân ",
+            "Chủ yếu phụ trách triển khai mở rộng ứng dụng DApp",
+            "Đã từng đảm nhiệm COO trung tâm phát hành phần mềm khu vực Trung Quốc Kaspersky",
+            "Tổng giám sát vận hành kinh doanh Monternet Trung Quốc"
           ]
         },
         {
-          "name": "Yan Liu",
-          "post": "메인넷 총 책임자",
+          "name": "Lưu Diệm",
+          "post": "Nhà hiệp điều hội",
           "imgSrc": "liuyan",
+          "intro": "Hơn 10 năm kinh nghiệm vận hành kinh doanh sản phẩm mạng kết nối，Chuyên gia vận hành kinh doanh hệ thống mạng liên kết",
           "introList": [
-            "10여년간 인터넷 제품 운영 경험",
-            "ADP차이나 고급 자문",
-            "F6YangChe 운영 책임자",
-            "NiuWoWo 기술 CEO"
+            "Hơn 10 năm kinh nghiệm vận hành kinh doanh sản phẩm mạng kết nối",
+            "Tư vấn cao cấp khu vực ADP Trung Quốc",
+            "Chuyên gia vận hành kinh doanh hệ thống mạng liên kết "
           ]
         },
         {
-          "name": "Wen Yan",
-          "post": "마케팅 코디네이터",
+          "name": "Diêm Văn",
+          "post": "Nhà hiệp điều thị trường",
           "imgSrc": "yanwen",
+          "intro": "Tốt nghiệp tại học viện truyền thông chi nhánh trường Colombia đại học Missouri nước Mỹ，Đã từng làm việc tại phân xã Bankrate.com Washington",
           "introList": [
-            "미국 미주리 컬럼비아 대학교 신문방송학과 졸업 ",
-            "Bankrate.com 워싱턴 지부 근무 경험",
-            "Sina 재경부 기자로 근무"
+            "Tốt nghiệp tại học viện truyền thông chi nhánh trường Colombia đại học Missouri nước Mỹ",
+            "Đã từng làm việc tại phân xã Bankrate.com Washington",
+            "Từng đảm nhiệm phóng viên tài chính kinh tế XinLang"
           ]
         }
       ]
     },
     "consultant": {
-      "title": "고문",
+      "title": "Cố vấn ",
       "list": [
         {
-          "name": "Yushi Shen",
+          "name": "Thẩm Ngụ Thực ",
+          "intro": "Cử nhân công trình điện tử đại học Thanh Hoa ，Thạc sĩ và tiến sĩ máy tính điện tử chi nhánh trường San Diego đại học California nước Mỹ Nghiên cứu viên nhiều trường đại học cao đẳng như đại học Thanh Hoa ，Cố vấn chiến lược công ty Microsoft",
           "introList": [
-            "청화 대학교 전자 공학부 학사",
-            "미국 캘리포니아 샌 디에이고 대학교 전자 공학 석사 및 박사",
-            "국가 천인 계획 심사 전문가",
-            "청화대학교 등 많은 대학교 연구원",
-            "마이크로소프트 전략 고문"
+            "Cử nhân công trình điện tử đại học Thanh Hoa ",
+            "Thạc sĩ và tiến sĩ máy tính điện tử chi nhánh trường San Diego đại học California nước Mỹ  ",
+            "Chuyên gia đánh giá kế hoạch ngàn người quốc gia ",
+            "Nghiên cứu viên nhiều trường đại học cao đẳng như đại học Thanh Hoa ",
+            "Cố vấn chiến lược công ty Microsoft "
           ]
         },
         {
-          "name": "Xianhua Wei",
+          "name": "Ngụy Tiên Hoa",
+          "intro": "Phó chủ nhiệm trung tâm nghiên cứu kinh tế ảo viện khoa học Trung Quốc và khoa học dữ liệu , giáo viên hướng dẫn tiễn sĩ giáo sư viện khoa học Trung Quốc",
           "introList": [
-            "중국 과학원의 교수, 박사 과정 지도 교수, 중국 과학원의 가상 경제 및 데이터 과학 연구 센터 부주임",
-            "중국 과학원 로이터 금융 리스크 관리 공동 실험장 주임"
+            "Chủ nhiệm chấp hành phòng thực nghiệm liên hợp quản lí rủi ro tiết lộ tài chính viện khoa học Trung Quốc",
+            "Phó chủ nhiệm trung tâm nghiên cứu kinh tế ảo viện khoa học Trung Quốc và khoa học dữ liệu , giáo viên hướng dẫn tiễn sĩ giáo sư viện khoa học Trung Quốc "
           ]
         },
         {
-          "name": "Jamie Cooper",
+          "name": "Jimmy·Cooper",
+          "intro": "Chuyên gia pháp luật quyền tài sản trí tuệ toàn cầu，Giáo sư học viện luật phía tây California，Đại diện nước Mỹ tổ chức quyền tài sản trí tuệ thế giới ",
           "introList": [
-            "글로벌 지식 재산권 법률 전문가",
-            "캘리포니아 서부 대학교 법학과 교수",
-            "proyecto ACCESO 재단 위원장",
-            "전 미국 국무부, 미국 개발 은행, 미국 특허 및 상표 사무소 고문",
-            "세계 지적 재산권 기구의 미국 대표"
+            "Chuyên gia pháp luật quyền tài sản trí tuệ toàn cầu",
+            "Giáo sư học viện luật phía tây California ",
+            "chủ tịch dự án quĩ proyecto ACCESO",
+            "Cố vấn quốc vụ viện nước Mỹ , ngân hàng khai thác nước Mỹ , bản quyền nước Mỹ và cục thương hiệu",
+            "Đại diện nước Mỹ tổ chức quyền tài sản trí tuệ thế giới  "
           ]
         },
         {
-          "name": "Jinglong Zhou",
+          "name": "Chu Cảnh Long",
+          "intro": "Người tiền hợp tác hội Trường Thành",
           "introList": [
-            "전 장성회의 공동 조합원",
-            "전 세계적인 네트워크와 정부와의 관계 및 자원 보유"
+            "Người tiền hợp tác hội Trường Thành",
+            "Có nguồn tài nguyên ngành mạng liên kết trong phạm vi thế giới với chính phủ"
           ]
         },
         {
-          "name": "Jun Zou",
+          "name": "Trâu Quân",
+          "intro": "Tác giả của cuốn sách bán cực chạy “chỉ nam Blockchain”，Chuyên gia liên minh ngành Blockchain Zhongguancun， Đã phát biểu hơn 200 bài luận văn trên hội nghị quốc tế IEEE，Luận văn có liên quan đến Blockchain đã được nhận IEEE ICWS vào năm 2016",
           "introList": [
-            "베스트셀러 <블록체인 기술 지침서>의 저자",
-            "중관촌(중국 IT 기업단지) 블록체인 산업 연합의 전문가",
-            "전 호주 IBM 금융 산업의 수석 소프트웨어 엔지니어",
-            "IEEE 국제 회의에서 200편 이상의 논문 발표",
-            "블록체인 관련 논문 2016년 IEEE ICW로 선정"
+            "Tác giả của cuốn sách bán cực chạy “chỉ nam Blockchain”",
+            "Chuyên gia liên minh ngành Blockchain Zhongguancun",
+            "Kĩ sư phần mềm hàng đầu ngành nghề tài chính IBM Úc",
+            "Đã phát biểu hơn 200 bài luận văn trên hội nghị quốc tế IEEE",
+            "Luận văn có liên quan đến Blockchain đã được nhận IEEE ICWS vào năm 2016"
           ]
         },
         {
-          "name": "Yu Zhu (binke)",
+          "name": "Châu Vũ ",
+          "intro": "Viện trưởng viện nghiên cứu Blockchain và bán lẻ TrueChain mới，Nhà phụ trách thứ nhất bộ phận （o2o） bán lẻ mới tập đoàn Alibaba。Chuyên gia nghiệp vụ thúc đẩy hoàn toàn chữ số hóa , giao tiếp toàn ngạch , kinh doanh tiêu thụ chữ số  ",
           "introList": [
-            "트루체인 신규 제품 판매 및 블록체인 연구원 원장",
-            "알리바바 그룹의 O2O 부문 최고 책임자",
-            "전 상품 상업부 부회장",
-            "디지털화, 소통, 디지털 마케팅 전문가"
+            "Viện trưởng viện nghiên cứu Blockchain và bán lẻ TrueChain mới ",
+            "Nhà phụ trách thứ nhất bộ phận （o2o） bán lẻ mới tập đoàn Alibaba ",
+            "Phó trọng tài thương mại sản phẩm hàng đầu ",
+            "Chuyên gia nghiệp vụ thúc đẩy hoàn toàn chữ số hóa , giao tiếp toàn ngạch , kinh doanh tiêu thụ chữ số  "
           ]
         }
       ]
@@ -447,207 +467,203 @@
   },
   "join": {
     "head": {
-      "title": "트루체인-채용사이트",
-      "keyword": "트루체인，TRUE，채용사이트，블록체인，블록체인 인재，암호화폐",
-      "description": "우리 트루체인은 더 많은 블록체인 인재의 입사를 기대합니다。"
+      "title": "初链-招聘官网",
+      "keyword": "初链，TRUE，招聘官网，区块链，区块链人才，数字货币",
+      "description": "初链招聘期待更多区块链人才加入我们。"
     },
-    "title": "채용 공고",
-    "intro": "창의력 있고, 열정적인, 진심 어린 당신을 환영합니다. 우리와 함께 나아갑시다.",
-    "p1": "입사 후 교육과  업무를 동시 진행할 것이며, 회사에서 배운 전문적인 지식이 후에 많은 도움이 될 것 입니다. 저희 회사는 당신이 회사에 잘 적응할 수 있도록 직원 업무 발전 교육 프로그램을 진행할 계획입니다.。",
-    "p2": "교육은 직원 개개인의 자질 및 잠재능력을 향상시키고 발전시키는데 많은 도움이 될 뿐만 아니라, 회사발전과 성공을 촉진시키는 중요한 지표 중 하나입니다.  이 회사에서 일을 배우면, 당신은 장래에 이 업종에서의 전문가가 될 기회가 있을 것이라고 우리는 자신 있게 말할 수 있습니다.",
-
-    "button": "회원 가입",
-    "duty": "업무 책임",
-    "require": "직위 요구",
-    "workCity": "근무지",
-    "requireNum": "T.O.",
-    "salary": "임금 및 대우",
-    "email": "이력서 보내는 메일",
+    "title": "Gia nhập chúng tôi",
+    "intro": "Hoan ngênh người có tinh thần sáng tạo , nhiệt huyết , thật lòng muốn gia nhập , cùng chúng tôi giương buồm khởi hành",
+    "p1": "Kể từ ngày đầu tiên gia nhập , bạn đã bắt đầu quá trình vừa làm vừa huấn luyện .Bạn sẽ phát hiện kinh nghiệm chuyên nghiệp mà chúng tôi tích lũy có lợi cho bạn rất nhiều .Gia nhập chúng tôi bạn sẽ được liệt vào chức vụ nhân viên của công ty để phát triển kế hoạch huấn luyện .",
+    "p2": "Huấn luyện không chỉ giúp không ngừng nâng cao và nhu cầu phát triển đối với tố chất và tiềm năng mỗi nhân viên , cũng làmột trong những tiêu chí quan trọng thúc đẩy công ty đạt được thành công lớn hơn .Chúng tôi có thể rất tự tin mà nói , thông qua học tập làm việc ở đây , bạn sẽ có cơ hội trở thành chuyên gia ngành nghề .",
+    "button": "Ngay lập tức tham gia",
+    "duty": "Chức vụ và trách nhiệm công việc ",
+    "require": "Yêu cầu chức vụ ",
+    "workCity": "Địa điểm làm việc",
+    "requireNum": "Số lượng yêu cầu",
+    "salary": "Mức lương đãi ngộ",
+    "email": "Vui lòng gửi hồ sơ xin việc vào e-mail",
     "position": [
       {
         "path": "jd/0",
         "icon": "icon font_family icon-kaifa",
-        "job": "고 언어 개발 엔지니어"
+        "job": "Kĩ sư khai thác ngôn ngữ Go"
       },
       {
         "path": "jd/1",
         "icon": "icon font_family icon-suanfa",
-        "job": "고 언어 알고리즘 엔지니어"
+        "job": "Kĩ sư công trình phép tính ngôn ngữ Go "
       },
       {
         "path": "jd/2",
         "icon": "icon font_family icon-touzi",
-        "job": "투자자 관계 총 책임자"
+        "job": "Tổng giám sát mối quan hệ nhà đầu tư"
       },
       {
         "path": "jd/3",
         "icon": "icon font_family icon-zhaopin",
-        "job": "인사담당자"
+        "job": "Chủ quản tuyển nhân viên"
       },
       {
         "path": "jd/4",
         "icon": "icon font_family icon-zhuli",
-        "job": "CEO보좌관"
+        "job": "Trợ lí CEO"
       },
       {
         "path": "jd/5",
         "icon": "icon font_family icon-zongjian",
-        "job": "블록체인 업무 총 감독"
+        "job": "Giám đốc kinh doanh Blockchain"
       },
       {
         "path": "jd/6",
         "icon": "icon font_family icon-shixisheng",
-        "job": "인턴"
+        "job": "Thực tập sinh vận hành kinh doanh"
       }
     ],
     "jobs": [
       {
-        "title": "고 언어 개발 엔지니어",
+        "title": "Kĩ sư khai thác ngôn ngữ Go",
         "duty": [
-          "고(Go)언어를 사용하여 설계하고 계발한 최초의 블록체인 상품 입니다.",
-          "블록체인 기반의 소프트웨어 기반 설계에 참여하고, 블록체인기반 시설의 핵심기술을 연구합니다.",
-          "블록체인의 핵심층(매매, 정보, 컴퓨터 EVM)과 관련된 개발을 담당합니다.",
-          "제품/설계/전단 개발/테스트 팀은 서로 협력하여, 주어진 시간 내에 블록 체인 개발 임무를 수행합니다；",
-          "다른 상사들이 지시한 업무를 수행합니다"
+          "Sử dụng thiết kế ngôn ngữ Go và khai thác sản phẩm của Blockchain TrueChain",
+          "Tham gia thiết kế kết cấu khung phần mềm của hệ thống Blockchain , nghiên cứu kĩ thuật quan trọng của cơ sở hạ tầng Blockchain .",
+          "Phụ trách khai thác tầng hạt nhân Blockchain có liên quan ( giao dịch , thông tin , máy ảo EVM)",
+          "Có quan hệ hợp tác thân thiết với sản phẩm / thiết kế / khai thác hàng đầu / đội ngũ kiểm tra , bảo đảm chất lượng giao phó nhiệm vụ khai thác Blockchain theo đúng thời gian qui định ;",
+          "Công việc khác do lãnh đạo cấp trên sắp xếp "
         ],
         "require": [
-          "2년 이상의 프로젝트 개발 경험이 있다",
-          ".golang프로그래밍 언어 습득, 다중 유통 경로 파악；",
-          "고부하 조건하에 다중 개발 경험자 우대 ；",
-          "탄탄한 컴퓨터 프로그래밍 경력, 특히 데이터 구조, 알고리즘, 코드, 소프트웨어 디자인에 좋은 기초를 갖추고 있어야 합니다.；",
-          "fabric 혹은 이더리움 개발 경험자 우대"
+          "Có trên 2 năm kinh nghiệm khai thác dự án;",
+          "Thành thạo biên trình ngôn ngữ golang , nắm vững đa tuyến trình ;",
+          "Ưu tiên người có kinh nghiệm thiết kế khai thác hệ thống nhớ dung lượng cao và phục vụ số lượng lớn kết nối đồng thời ( High concurrency ) ;",
+          "Có năng lực biên trình máy tính vững chắc , đặc biệt là năng lực phương diện kết cấu số liệu , phép tính , mã code , thiết kế phần mềm ;"
         ]
       },
       {
-        "title": "고 언어 알고리즘 엔지니어",
+        "title": "Kĩ sư công trình phép tính ngôn ngữ Go ",
         "duty": [
-          "고(Go)언어를 사용하여 트루체인 블록체인 상품을 설계하고 개발합니다..",
-          "블록체인 기반의 소프트웨어 기반설계에 참여하고, 블록체인기반 시설의 핵심기술을 연구합니다",
-          "블록체인의  핵심층(컨센서스)과 관련된 개발을 담당한다.",
-          "제품/설계/전단 개발/테스트 팀은 긴밀하게 협력하여, 시간에 맞춰 블록 체인 개발 임무를 수행합니다；",
-          "다른 상사들이 지시한 업무를 수행합니다."
+          "Sử dụng thiết kế ngôn ngữ Go và khai thác sản phẩm của Blockchain TrueChain ",
+          "Tham gia thiết kế kết cấu khung phần mềm của hệ thống Blockchain , nghiên cứu kĩ thuật quan trọng của cơ sở hạ tầng Blockchain . ",
+          "Phụ trách khai thác tầng hạt nhân Blockchain có liên quan (phép tính đồng thuận). ",
+          "Có quan hệ hợp tác thân thiết với sản phẩm / thiết kế / khai thác hàng đầu / đội ngũ kiểm tra , bảo đảm chất lượng giao phó nhiệm vụ khai thác Blockchain theo đúng thời gian qui định ; ",
+          "Công việc khác do lãnh đạo cấp trên sắp xếp "
         ],
         "require": [
-          "2년 이상의 프로젝트 개발 경험이 있다.;",
-          ".golang을 이용한 프로그래밍과 멀티쓰레딩 숙련자 우대 ；",
-          "고부하 조건하에 다중 개발 경험자 우대；",
-          "탄탄한 컴퓨터 프로그래밍 경력, 특히 데이터 구조, 알고리즘, 코드, 소프트웨어 디자인에 좋은 기초를 갖추고 있어야 합니다；",
-          "Fabric  혹은 이더리움 개발 경험자 우대."
+          "Có trên 2 năm kinh nghiệm khai thác dự án;",
+          "Thành thạo biên trình ngôn ngữ golang , nắm vững đa tuyến trình ;",
+          "Ưu tiên người có kinh nghiệm thiết kế khai thác hệ thống nhớ dung lượng cao và phục vụ số lượng lớn kết nối đồng thời ( High concurrency ) ;",
+          "Có năng lực biên trình máy tính vững chắc , đặc biệt là năng lực phương diện kết cấu số liệu , phép tính , mã code , thiết kế phần mềm ;",
+          "Ưu tiên người thành thạo khai thác fabric hoặc Ethereum."
         ]
       },
       {
-        "title": "투자자 관계 총 책임자",
-        "workCity": "중국, 미국",
-        "requireNum": "2명（그중1인은 언어 베이스가 영어여야 하며，영어 회화와 작문 실력이 유능해야 한다.）",
+        "title": "Tổng giám sát mối quan hệ nhà đầu tư",
+        "workCity": "Trung Quốc ,Mỹ",
+        "requireNum": "2 người( trong đó 1 người base tại nước Mỹ , yêu cầu viết nói tiếng Anh thành thạo)",
         "duty": [
-          "기관 투자가들의 관계를 점검하고, 중국과 미국의 주요교류 지역의 블록체인 펀드 조성경로를 점검하고 협의한다."
+          "Phụ trách duy trì mối quan hệ với nhà đầu tư cơ cấu , định hướng đặt nền tảng biểu diễn lưu động và đàm phán hợp tác về Blockchain tại khu vực chủ lưu của Trung Quốc và Mỹ ."
         ],
         "require": [
-          "블록체인 분야에 투자가 익숙하고, 관련자료와 투자 제안서를 작성할 수 있어야 합니다.",
-          "FA출신 혹은 상장회사 모금 및 기금모금 출신, 금융과학 기술 업종의 경력자 우대.",
-          "사람됨이 유연하고 대담하여 과감하게 행동할 수 있고, 블록 체인 기반 지식과 시장 지형을 빠르게 배울 수 있어야 합니다.",
-          "전문가적인 이미지"
+          "Thành thạo lĩnh vực đầu tư Blockchain , có thể làm thư kiến nghị đầu tư và tài liệu có liên quan .",
+          "Bối cảnh tài chính có liên quan ,xuất thân từ FA hoặc xuất thân từ vận động công ty lên sàn chứng khoán và vận động quĩ, ưu tiên người có bối cảnh ngành nghề khoa học kĩ thuật tài chính .",
+          "Linh hoạt nhạy bén cương trực , dám nghĩ dám làm , có thể nhanh chóng học tập kiến thức cơ sở Blockchain và cục bộ thị trường ."
         ],
-        "salary": "기본급 3만위안 3만+공제(모금 규모, 보유 기간, 펀드 인지도 등 지표 연동)"
+        "salary": "lương cố định + hoa hồng (móc nối các chỉ tiêu về quy mô vận động , thời gian đặc biệt , mức độ nổi tiếng của quĩ v…v…)"
       },
       {
-        "title": "인사담당자",
+        "title": "Chủ quản tuyển nhân viên",
         "duty": [
-          "채용, 유지보수, 회사의 채용 경로 평가, 채용경로 효율성 제고；",
-          "각종 채용경로를 통해 채용 정보를 모집하고, 이력서를 선별하고 주요 직위는 직접 헤드헌팅을 하고 ,  전화 면접도  실시합니다.；",
-          "면접 예약,  구직자 응대,  채용 절차 개시(1차면접,  2차면접, 출근 통지 등)；",
-          "직원의 입사 및 정규직 전환, 이직, 퇴직 등의 인사이동 관리.；"
+          "Mở rộng ,duy trì , đánh giá kênh tuyển nhân viên , đảm bảo hiệu quả cao ,tính thuận lợi của kênh tuyển nhân viên của công ty .",
+          "Tận dụng các kênh tuyển nhân viên để đăng thông tin tuyển nhân viên , chọn lọc hồ sơ công việc , chủ động tìm kiếm hồ sơ chức vụ khó tìm , điện thoại gặp mặt phỏng vấn ; ",
+          "Hẹn phỏng vấn , tiếp đón khi có người đến , và theo dõi tiến độ của cả quá trinh tuyển nhân viên ( phỏng vấn lần 1 , phỏng vấn lại , thông báo đi làm ); ",
+          "Làm các thủ tục nhận chức cho nhân viên , chuyển sang làm việc chính thức , điều động , thôi việc v..v… ; "
         ],
         "require": [
-          "블록체인 분야에 투자가 익숙하고, 관련자료와 투자 제안서를 작성할 수 있어야 합니다.",
-          "FA출신 혹은 상장회사 모금 및 기금모금 출신, 금융과학 기술 업종의 경력자 우대.",
-          "사람됨이 유연하고 대담하여 과감하게 행동할 수 있고, 블록 체인 기반 지식과 시장 지형을 빠르게 배울 수 있어야 합니다.",
-          "전문가적인 이미지."
+          "Thành thạo lĩnh vực đầu tư Blockchain , có thể làm thư kiến nghị đầu tư và tài liệu có liên quan .",
+          "Bối cảnh tài chính có liên quan ,xuất thân từ FA hoặc xuất thân từ vận động công ty lên sàn chứng khoán và vận động quĩ, ưu tiên người có bối cảnh ngành nghề khoa học kĩ thuật tài chính .",
+          "Linh hoạt nhạy bén cương trực , dám nghĩ dám làm , có thể nhanh chóng học tập kiến thức cơ sở Blockchain và cục bộ thị trường ."
         ]
       },
       {
-        "title": "CEO보좌관",
+        "title": "Trợ lí CEO",
         "duty": [
-          "금융 은행 관련 업무 배경에는 자산, 신탁, 사모 등의 업무와, 블록체인관련 업무 경험은 우대 사항이 된다.",
-          "CEO는 전체 회사의 업무 계획 및 운영을 총괄하고, 임원들의 정기적인 회의를 조직하여 임원들의 정기적인 경영 결정을 이끌어 내고, CEO들의 중대한 경영 의사 결정과 실행에 들어간다.；",
-          "업무 수행에 따라 회사 운영 초기의 핵심 프로젝트(은행의 프로그램, 업무 프로세스 설계 프로젝트)를 담당하고, CEO에게 사업 보고서를 제출하고, 핵심 노드를 처리한다.；",
-          "CEO는 외부의 상거래 및 파트너의 공공 관계를 원활하게 처리하고, 기존 고객의 상품 유통 경로를 넓히고, 업무 내용을 풍부하게 한다.；",
-          "CEO는 배치, 실시, 점검, 이행, 실행을 수행한다.",
-          "인상이 좋고,  의사 소통이 잘 되며, 사상이 뚜렷하고, 인내심이 있고,  직업 정신이 있어야 한다"
+          "Tốt nghiệp ngành tài chính hoặc ngân hàng, làm công việc quản lí tài sản , tín thác , vận động tư , ưu tiên người có kinh nghiệm làm về Blockchain.",
+          "Giúp CEO tiến hành qui hoạch nghiệp vụ chỉnh thể công ty và quản lí vận hành kinh doanh , tổ chức và điều giải hội nghị định kì của lãnh đạo quản lí cấp cao , và phối hợp CEO tiến hành theo dõi tiến độ và thực hiện các quyết sách kinh doanh quan trọng ;",
+          "Căn cứ theo nhu cầu nghiệp vụ , phụ trách dự án quan trọng vận hành kinh doanh đầu kì của công ty ( như dự án đi vào ngân hàng , dự án thiết kế lưu trình nghiệp vụ ) , hội báo với CEO về tiến triển và xử lí vấn đề tiết điểm quan trọng ;",
+          "Phối hợp CEO xử lí mối quan hệ chung của thương vụ ngoại bộ và đối tác hợp tác , không ngừng mở rộng kênh sản phẩm có khách hàng , phong phú nội dung nghiệp vụ ;",
+          "Hỗ trợ CEO hoàn thành sắp xếp , thực thi , kiểm tra , đô đốc , chấp hành thực hiện tình hình .",
+          "Hình tượng tốt , năng lực giao tiếp biểu đạt tốt , tư duy rõ ràng , chịu khó ,có tinh thần công việc ."
         ],
         "require": [
-          "블록체인 분야에 투자가 익숙하고, 관련자료와 투자 제안서를 작성할 수 있다.",
-          " FA출신 혹은 상장회사 모금 및 기금모금 출신,금융과학 기술 업종의 배경의 경력자 우대.",
-          "사람됨이 유연하고 대담하여 과감하게 행동할 수 있고, 블록 체인 기반 지식과 시장 지형을 빠르게 배울 수 있어야 합니다.",
-          "전문가적인 이미지."
+          "Thành thạo lĩnh vực đầu tư Blockchain , có thể làm thư kiến nghị đầu tư và tài liệu có liên quan .",
+          "Bối cảnh tài chính có liên quan ,xuất thân từ FA hoặc xuất thân từ vận động công ty lên sàn chứng khoán và vận động quĩ, ưu tiên người có bối cảnh ngành nghề khoa học kĩ thuật tài chính .",
+          "Linh hoạt nhạy bén cương trực , dám nghĩ dám làm , có thể nhanh chóng học tập kiến thức cơ sở Blockchain và cục bộ thị trường .",
+          "Hình tượng nghề nghiệp cá nhân ."
         ]
       },
       {
-        "title": "블록체인 업무 총 감독",
+        "title": "Giám đốc kinh doanh Blockchain",
         "duty": [
-          "금융과 은행 관련 경로 배경은, 3년이상의 은행업무 경험이 있다.",
-          "블록체인 기술을 금융업계에 응용하는 방법을 우선적으로 생각한다.",
-          "개발 은행을 조직하여 새로운 판매 방식을 개척하고 새로운 방식의 개발 임무를 수행한다.；",
-          "뚜렷한 업무 개발 아이디어가 있고, 효율적인 시장수행 전략과 강한 고객 개발 능력이 있다..",
-          "금융시장 상황과 체인유형의 금융업무 유형, 절차와 위험 통제에 대한 적절한 리스크 관리와 합의심을 갖추고 있다. ",
-          "플랫폼 운영 방식에 따라 리더십을 구성하고, 블록체인 관리 팀을 구성하며, 외부 링크를 총괄하는 시스템을 총괄 관리한다."
+          "Tốt nghiệp ngành tài chính hoặc ngân hàng, có 3 năm kinh nghiệm trở lên liên quan tới nghiệp vụ ngân hàng.",
+          "Ưu tiên ứng viên thành thạo các phương án giải quyết những tình huống tài chính hay gặp của Blockchain.",
+          "Có nhiệm vụ tổ chức tăng cường phát triển các kênh hoạt động của ngân hàng, tìm tòi và hoàn thiện phương thức kinh doanh mới.",
+          "Có tư duy tìm tòi sáng tạo, nghĩ ra những chiến lược chinh phục thị trường hiệu quả, có năng lực mời chào khách hàng mới tương đối tốt.",
+          "Thông thạo tình hình thị trường tài chính và những loại hình nghiệp vụ, quy trình cũng như cách phòng tránh các mối nguy tài chính của Blockchain, có khả năng dự báo mối nguy tài chính và ý thức nghề nghiệp. ",
+          "Dựa theo mô hình hoạt động của diễn đàn, có khả năng lãnh đạo, tổ chức và quản lý đội ngũ Blockchain, cũng như quản lý giải quyết những công việc khác của diễn đàn."
         ],
         "require": [
-          "시장 마케팅, 금융, 재경 관련 전공；",
-          "10년 이상 금융업의 배경에는 5년 이상의 매출과 사업 관리 경험이 있으며, 블록 체인 솔루션, 블록 체인 제품 판매 경험이 우선입니다. ；  ",
-          "풍부한 금융 전문 지식을 가지고 투자 재테크 시장의 발전을 도모하고, 이 업종에 대해 깊이 있는 인식과 사고를 가지고 있다. ；  ",
-          "블록 체인 업무의  문제해결방안  업무규칙 및 경쟁자 현황",
-          "우수한 팀 건설 경험, 팀워크 관리 능력이 뛰어나 마케팅 팀을 잘 조화시키는 데 능하다.；",
-          "감각적인 시장 의식, 임기응변 능력, 리더십, 독자적인 시장 개척 능력, 학습 능력이 뛰어나고 논리적인 언어 구사 능력, 우수한 언어 구사 능력 ；    ",
-          "고급 고객 자원이 있고, 광범위한 블록체인 및 금융 인맥 자원 보유자가 있다.；",
-          "강한 향상심, 원기 왕성하고 건강하고 낙관적이며 진취적이다；"
+          "Tốt nghiệp ngành liên quan đến thị trường kinh doanh, tiền tệ, tài chính.",
+          "Ưu tiên ứng viên có hơn 10 năm kinh nghiệm làm việc liên quan đến tài chính, hơn 5 năm kinh nghiệm làm trong bộ phận tiêu thụ hàng hoá và quản lý dự án, thông thạo các phương án giải quyết tình huống hay gặp của Blockchain hoặc có kinh nghiệm làm việc trong bộ phận tiêu thụ hàng hoá của Blockchain. ",
+          "Có kiến thức chuyên ngành phong phú về tài chính, có hiểu biết về sự phát triển của thị trường đầu tư tái chính, có tư duy sâu sắc về ngành tài chính.  ",
+          "Thông thạo các quy tắc nghiệp vụ khi giải quyết những vấn đề của Blockchain và hiểu rõ tình hình đối thủ cạnh tranh.",
+          "Có kinh nghiệm dạn dĩ trong việc lập teamgroup, có năng lực quản lý teamgroup, có khả năng phân phối công việc trong teamgroup một cách hợp lý.",
+          "Có cái nhìn sắc bén về thị trường tài chính, khả năng ứng biến cao, có khả năng lãnh đạo và khai thác thị trường mới, say mê học hỏi cái mới; có tư duy logic tốt và khả năng biểu đạt thành lời nói tốt.    ",
+          "Có lượng khách hàng uy tín nhất định, có quen biết rộng rãi trong ngành tài chính cũng như Blockchain.",
+          "Có trí cầu tiến, sôi nổi hoạt bát, sức khỏe dồi dào, lạc quan phóng khoáng, có tinh thần say mê tìm tòi cái mới."
         ]
       },
       {
-        "title": "인턴",
+        "title": "Thực tập sinh vận hành kinh doanh",
         "duty": [
-          "커뮤니티의 핵심 이용자의 개척 및 유지, 활동 수행, 실행, 데이터 통계 등；",
-          "블록체인 관련 이슈 토론 및 모바일 커뮤니티 내 이용자와의 교류를 강화하고, 이용자의 점유율과 활성도, 충성도를 높여 커뮤니티의 시너지 효과를 높일 수 있습니다；",
-          "커뮤니티 활성화를 통한 사용자와 실시간 소통；",
-          "카페의 핵심을 유지하고 적극적으로 사용자를 배려, 이해하고 이용자의 수요를 파악하여 사용자의 피드백을 받는다。"
+          "Phụ trách khai thác, duy trì, cải tiến nâng cao dịch vụ đối với các khách hàng cốt lõi của khu vực phủ sóng, thống kê số liệu, vv...",
+          "Hăng hái tham gia phát biểu ý kiến đối với những chủ đề nóng hổi, tăng cường sự giao lưu đối với các khách hàng trong khu vực phủ sóng, khiến khách hàng tin tưởng, hài lòng và trung thành với dịch vụ, tạo một môi trường tác nghiệp thân thiện.",
+          "Nâng cao hiệu quả dịch vụ của khu vực phủ sóng, trao đổi kịp thời với các khách hàng.",
+          "Phụ trách duy trì các khách hàng cốt lõi cũng như các khách hàng tiềm năng của khu vực phủ sóng, đáp ứng tối đa yêu cầu của khách hàng, thu thập những góp ý của khách hàng. "
         ],
         "require": [
-          "일주일에 최소 3일 정도 일한다",
-          "전문대 및 이상 학력제；",
-          "인터넷을 좋아하고 운영에 관심이 많으며, 학습 능력이 뛰어나며 온라인 오프라인 활동 경험이 있다.；",
-          " office등의 문서 처리 프로그램을 잘 다룰 줄 알아야 한다；",
-          "원활한 의사 소통 능력, 업무에 충실하고 책임감이 있어야 한다.；"
+          "Mỗi tuần ít nhất làm việc 3 ngày",
+          "Làm việc cả ngày chỉ tuyển ứng viên tốt nghiệp cao đẳng trở lên",
+          "Yêu thích Internet, có hứng thú với công việc, khả năng học hỏi cao, có kinh nghiệm tổ chức các hoạt động online và offline.",
+          "Sử dụng thành thạo các phần mềm công sở như office là tốt nhất",
+          "Có năng lực giao tiếp tương đối tốt, có tinh thần trách nhiệm cao với công việc"
         ],
-        "workCity": "북경 왕징"
+        "workCity": "Vọng Kinh, Bắc Kinh"
       }
     ]
   },
   "node": {
     "head": {
-      "title": "트루체인-우선 순위 노드 선거",
-      "keyword": "트루체인, TRUE, 노드 선거, 마스터 노드, 블록체인, 디지털 화폐 ",
-      "description": "트루체인은 9월에 메인넷 테스트 전에 사전 등록 및 투표를 통해, 최대 4천명을 초과하지 않는 우선 순위 노드(POW)과 최대 100명을 초과하지 않는 마스터 노드(PBFT+POW)을 선출할 예정입니다. "
+      "title": "Cuộc vận động ưu tiên",
+      "keyword": "初链，TRUE,节点竞选，超级节点，区块链，数字货币",
+      "description": "初链将在9月主网测试网上线之前，通过报名和投票机制，选举出最多不超过4000个优先标准节点（POW）和 最多不超过100个优先全节点（PBFT+POW）。"
     },
-    "title": "우선 순위 노드 선거 등록",
-    "StandardSum": "표준 노드 선거는 이미 등록이 완료되었습니다.",
-    "nodeFullSum": "마스터 노드 선거는 이미 등록이 완료되었습니다.",
-    "sumNum": "총수",
-    "personalCampaign": "개인 선거",
-    "teamCampaign": "단체 선거",
-    "timeDownCampaign": "우선 순위 노드 선거 투표 카운트 다운",
-    "nodeRank": "우선 순위 노드 선거 투표 순위",
-    "nodeStandard": "표준 노드",
-    "nodeFull": "전체 노드",
-    "tableRank": "순위",
-    "tableNickname": "닉네임",
-    "tableTime": "등록 시간",
-    "tableScore": "종합 득표수",
-    "tableTickets": "득표",
-    "team": "팀",
-    "person": "개인",
-    "day": "일",
-    "hour": "시",
-    "minute": "분",
-    "second": "초"
+    "title": "Danh sách đăng kí theo giờ cụ thể",
+    "StandardSum": "Danh sách đăng kí theo giờ cố định",
+    "nodeFullSum": "Đã đăng ký vận động viên",
+    "sumNum": "Khoảng",
+    "personalCampaign": "Chiến dịch cá nhân",
+    "teamCampaign": "Nhóm chiến dịch",
+    "timeDownCampaign": "Bỏ phiếu đếm ngược",
+    "nodeRank": "Bỏ phiếu danh sách",
+    "nodeStandard": "Nút tiêu chuẩn",
+    "nodeFull": "Tất cả các nút",
+    "tableRank": "Xếp hạng",
+    "tableNickname": "Biệt danh",
+    "tableTime": "Thời gian",
+    "tableScore": "Điểm số",
+    "tableTickets": "Cuộc thăm dò",
+    "team": "nhóm",
+    "person": "Cá nhân",
+    "day": "day",
+    "hour": "hour",
+    "minute": "minute",
+    "second": "second"
   }
 }
