@@ -63,6 +63,10 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
+@media screen and (max-width 1024px)
+  .about-introduce-list
+    ul
+      justify-content center
 .about-banner
   text-align center
   div
@@ -90,7 +94,7 @@ export default {
   ul
     display flex
     align-items baseline
-    justify-content center
+    // justify-content center
     flex-wrap wrap
     padding 0px
     li
