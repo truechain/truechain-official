@@ -116,7 +116,7 @@ div
     .page-title {{ $t('home.institution') }}
     .con
       .co(
-          v-for="index in 4",
+          v-for="index in 5",
         )
           img(:src="require(`@/assets/images/partner${index}.png`)")
   .home-news(v-if="$store.state.locale === 'zh'")
@@ -566,7 +566,7 @@ export default {
     flex-wrap wrap
     justify-content center
     align-items flex-start
-    max-width 1024px
+    // max-width 1024px
     margin 46px auto 0px
     .co
       wh(190px, 106px)
