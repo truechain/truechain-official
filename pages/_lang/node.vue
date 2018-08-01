@@ -51,7 +51,7 @@
       .node-header-countdown
         .node-header-countdown-title {{$t('node.timeDownCampaign')}}
         .node-header-countdown-clock
-          ul
+          ul.ellipsis
             li {{time.d}}
             li {{$t('node.day')}}
             li {{time.h}}
@@ -294,9 +294,22 @@ export default {
       margin 0 5px
     div:nth-child(4)
       flex-grow 1
+  .node-header
+    padding-top 50px !important
   .node-header-countdown
     width 90% !important
     height 200px !important
+  .node-header-title1
+    font-size 30px !important
+  .node-header-title3
+    font-size 25px !important
+  .node-header-apply-title
+    font-size 20px !important
+  .node-header-apply
+    padding  0 !important
+  .node-header-apply-list
+    ul
+      flex-direction column
   .node-header-countdown-clock
     ul
       display flex

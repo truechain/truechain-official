@@ -17,7 +17,7 @@ module.exports = {
         content: '1a4726fefb7d5240f18ddec0b29fe888_1531190239'
       },
       { hid: 'keyword', name: 'keyword', content: 'truechain, true, 初链' },
-      { hid: 'description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 超高性能，无穷节点，混合共识公有链！' }
+      { hid: 'description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 下一代混合共识公链' }
     ],
     link: [
       {
