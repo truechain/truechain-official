@@ -91,14 +91,13 @@
     ],
     "about": {
       "title": "Về vấn đề",
-      "subhead": "Nhanh chóng , không chịu giới hạn , an toàn , có thể khuếch tán dung lượng，Có Public Blockchains đồng thuận hỗn hợp PBFT-fPoW của khu dành cho nhà khai thác toàn cầu",
+      "subhead": "TrueChain là Public Blockchains đồng thuận hỗn hợp Minerva có tính nhanh chóng , an toàn , không chịu giới hạn , không khuếch tán dung lượng.",
       "contentList": [
-        "TrueChain tận dụng cơ chế đồng thuận hỗn hợp PBFT-fPoW và cơ chế phân mảnh an toàn đã giải quyết được vấn đề lớn nhất mà hiện tại Public Blockchains phải đối mặt : sự mâu thuẫn giữa tính năng và sự phân tán ，Giải quyết vấn đề nổi bật nhất của Public Blockchains",
         "TrueChain căn cứ theo cơ chế đồng thuận hỗn hợp Minerva , kết hợp PBFT và fPoW, tìm hiểu vấn đề lớn nhất mà lĩnh vực Public Blockchains phải đối mặt : sự mâu thuẫn giữa tính năng và sự phân tán",
         "TrueChain lợi dụng PBFT làm chuỗi cấp tốc để thực hiện xử lí cấp tốc giao dịch , PoW phụ trách giám sát quản lí và lựa chọn đề cử Ủy ban PBFT , và dung hòa kĩ thuật Block Fruit vào trong hiệp nghị PoW truyền thống , trở thành fPow , giúp người dùng phổ thông có cơ hội tham gia đào khoáng , thực hiện càng thêm phân tán và công bằng hóa .Đồng thời , TrueChain đã tăng thêm cơ chế phân mảnh trên PBFT , đã đột phá hạn chế phương diện khuếch tán dung lượng .",
         "TrueChain có kĩ thuật tiên tiến và chắc chắn , mục tiêu của chúng tôi là cung cấp một hệ thống Blockchain hoàn toàn có thể vận hành , quản lí tốt cho nền kinh tế phân tán . Trước tiên TrueChain đã cung cấp cơ chế động lực đồng thuận hỗn hợp , lợi dụng ý thức kinh tế nâng đỡ từ cơ bản và thúc đẩy sự phát triển của Blockchain .Đồng thời , chi phí cơ chế nhiên liệu ổn định mà TrueChain sáng tạo riêng có thể hạ thấp giá thành của nhà khai thác và nhà vận hành kinh doanh khai thác DApps , từ đó giúp TrueChain càng thêm hướng ra quần chúng",
-        "Đội ngũ TrueChain vô cùng quốc tế hóa , các thành viên đến từ các khu vực như Ấn Độ , Mỹ , Trung Quốc .",
-        "TrueChain là đơn vị lí sự liên minh sáng tạo chiến lược hệ thống tài sản Yun quốc gia Trung Quốc , thành viên trung tâm mạng chuỗi quốc gia , cũng là con số không nhiều , tiếp nhận qua các hạng mục Blockchain mà các hãng truyền thông có uy quyền của đài truyền hình trung ương Trung Quốc đã đưa tin "
+        "Là hệ thống Blockchain , TrueChain thiết lập đặc khu có tính tương thích cao để hấp dẫn nhân viên khai thác và nhà sáng lập trên toàn cầu trở thành thành viên của đặc khu TrueChain. TrueChain không chỉ có một khu toàn cầu hóa , đồng thời TrueChain còn có nhiều sản phẩm nguồn mở , tiện cho nhà khai thác sử dụng , điều này giúp TrueChain có thể xuất phát từ góc độ của người dùng , cung cấp điều kiện có lợi nhất cho DApp khai thác .",
+        "Đội ngũ TrueChain vô cùng quốc tế hóa , các thành viên đến từ các khu vực như Ấn Độ , Mỹ , Trung Quốc."
       ]
     },
     "roadmap": {
