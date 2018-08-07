@@ -16,8 +16,8 @@ module.exports = {
         name: 'shenma-site-verification',
         content: '1a4726fefb7d5240f18ddec0b29fe888_1531190239'
       },
-      { hid: 'keyword', name: 'keyword', content: 'truechain, true, 初链' },
-      { hid: 'description', name: 'description', content: 'Next Generation Public Blockchain with Hybrid Consensus. 下一代混合共识公链' }
+      { hid: 'keyword', name: 'keyword', content: 'truechain, true, 初链, blockchain' },
+      { hid: 'description', name: 'description', content: 'TrueChain－Next Generation Public Blockchain with Hybrid Consensus. 初链－下一代混合共识公链和全球开源公链社区' }
     ],
     link: [
       {
