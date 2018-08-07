@@ -38,9 +38,7 @@
     "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-vue": "^4.0.0",
     "github-webhook-handler": "^0.7.1",
-    "markdown-loader": "^3.0.0",
     "pug": "^2.0.3",
-    "raw-loader": "^0.5.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
   }
