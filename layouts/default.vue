@@ -139,9 +139,9 @@ export default {
         /* eslint-disable-next-line */
         ip: returnCitySN.cip
       }).then(x => {
-        const { country } = JSON.parse(x.data.data).data
-        setStore('lang', this.countrys[country] || 'en')
-        this.changeLanguage(getStore('lang'))
+        // const { country } = JSON.parse(x.data.data).data
+        // setStore('lang', this.countrys[country] || 'en')
+        // this.changeLanguage(getStore('lang'))
       })
     },
     goHome () {
