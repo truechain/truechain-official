@@ -364,6 +364,27 @@
           ]
         },
         {
+          "name": "Hillary Nguyen",
+          "post": "Đối tác tại Việt Nam của TrueChain",
+          "imgSrc": "hillarynguyen",
+          "intro": "阿尔法鲸资本管理合伙人，区块链、数字资产管理战略家、顾问、社区代言人。Hillary Nguyen拥有出色的管理才能，在区块链4.0时代为新兴项目提供有效的管理方案。",
+          "introList": [
+            "Giám đốc điều hành tại AlphaWhale Capital.",
+            "Tư vấn chiến lược, đầu tư, quan hệ hợp tác, cố vấn, là diễn giả có tầm ảnh hưởng với cộng đồng Blockchain, quản lý tài sản kỹ thuật số. ",
+            " Với nhiều kinh nghiệm trong đa lĩnh vực, Hillary giải quyết những bài toán về cơ cấu và xây dựng nền tảng doanh nghiệp một cách hiệu quả trong cuộc cách mạng công nghệ 4.0 ."
+          ]
+        },
+        {
+          "name": "Paulas Pham",
+          "post": "Quản lý cộng đồng TrueChain tại Việt Nam",
+          "imgSrc": "paulaspham",
+          "intro": "区块链社区管理专业人士、BitGreen Candles社区经理，Victory Investment Capital社区经理。Vietnam Crypto Community社区经理。",
+          "introList": [
+            "Nhà quản lý cộng đồng Blockchain chuyên nghiệp",
+            "Điều hành một vài cộng đồng về Blockchain tại Việt Nam"
+          ]
+        },        
+        {
           "name": "Lưu Diệm",
           "post": "Nhà hiệp điều hội",
           "imgSrc": "liuyan",
