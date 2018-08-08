@@ -108,7 +108,7 @@ div
     .page-title {{ $t('home.partner') }}
     .con
       .co(
-          v-for="index in 5",
+          v-for="index in 6",
       )
         img(:src="require(`@/assets/images/p-logo${index}.png`)")
 
