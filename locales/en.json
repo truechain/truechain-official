@@ -331,30 +331,6 @@
           ]
         },
         {
-          "name": "Paulas Pham",
-          "post": "TrueChain Vietnamese Community Director",
-          "imgSrc": "paulaspham",
-          "intro": "区块链社区管理专业人士、BitGreen Candles社区经理，Victory Investment Capital社区经理。Vietnam Crypto Community社区经理。",
-          "introList": [
-            "Blockchain community management professional ",
-            "Community manager at BitGreen Candles ",
-            "Community manager at Victory Investment Capital",
-            "Community manager of Vietnam Crypto Community"
-          ]
-        },
-        {
-          "name": "Paulas Pham",
-          "post": "TrueChain Vietnamese Community Director",
-          "imgSrc": "paulaspham",
-          "intro": "区块链社区管理专业人士、BitGreen Candles社区经理，Victory Investment Capital社区经理。Vietnam Crypto Community社区经理。",
-          "introList": [
-            "Blockchain community management professional ",
-            "Community manager at BitGreen Candles ",
-            "Community manager at Victory Investment Capital",
-            "Community manager of Vietnam Crypto Community"
-          ]
-        },
-        {
           "name": "Hillary Nguyen",
           "post": "Hillary Nguyen TrueChain Vietnamese Partner",
           "imgSrc": "hillarynguyen",
@@ -365,6 +341,18 @@
             "With diverse set of skills, Hillary executes her management role effectively into the new foundation of company in 4.0 revolution."
           ]
         },
+        {
+          "name": "Paulas Pham",
+          "post": "TrueChain Vietnamese Community Director",
+          "imgSrc": "paulaspham",
+          "intro": "区块链社区管理专业人士、BitGreen Candles社区经理，Victory Investment Capital社区经理。Vietnam Crypto Community社区经理。",
+          "introList": [
+            "Blockchain community management professional ",
+            "Community manager at BitGreen Candles ",
+            "Community manager at Victory Investment Capital",
+            "Community manager of Vietnam Crypto Community"
+          ]
+        },        
         {
           "name": "Yan Liu",
           "post": "Community Coordinator",
