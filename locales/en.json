@@ -343,6 +343,29 @@
           ]
         },
         {
+          "name": "Paulas Pham",
+          "post": "TrueChain Vietnamese Community Director",
+          "imgSrc": "paulaspham",
+          "intro": "区块链社区管理专业人士、BitGreen Candles社区经理，Victory Investment Capital社区经理。Vietnam Crypto Community社区经理。",
+          "introList": [
+            "Blockchain community management professional ",
+            "Community manager at BitGreen Candles ",
+            "Community manager at Victory Investment Capital",
+            "Community manager of Vietnam Crypto Community"
+          ]
+        },
+        {
+          "name": "Hillary Nguyen",
+          "post": "Hillary Nguyen TrueChain Vietnamese Partner",
+          "imgSrc": "hillarynguyen",
+          "intro": "阿尔法鲸资本管理合伙人，区块链、数字资产管理战略家、顾问、社区代言人。Hillary Nguyen拥有出色的管理才能，在区块链4.0时代为新兴项目提供有效的管理方案。",
+          "introList": [
+            "Managing partner of Alphawhale Capital.",
+            "A Strategist, Advisor, Communicator, Consultant, community influencer and Speaker in Blockchain, Digital asset management.",
+            "With diverse set of skills, Hillary executes her management role effectively into the new foundation of company in 4.0 revolution."
+          ]
+        },
+        {
           "name": "Yan Liu",
           "post": "Community Coordinator",
           "imgSrc": "liuyan",
