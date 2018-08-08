@@ -11,10 +11,11 @@ export default ({ app, store }) => {
     fallbackLocale: 'default',
     messages: {
       'default': require('~/locales/en.json'),
-      'en': require('~/locales/en.json'),
-      'zh': require('~/locales/zh.json'),
-      'ko': require('~/locales/ko.json'),
-      'vi': require('~/locales/vi.json')
+      'en': require('~/locales/en.json'),  //英文
+      'zh': require('~/locales/zh.json'),  //中国
+      'ko': require('~/locales/ko.json'),  //韩国
+      'th': require('~/locales/th.json'),  //泰国
+      'vi': require('~/locales/vi.json')   //越南
     }
   })
 

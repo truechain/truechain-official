@@ -88,6 +88,7 @@ const langs = [
   { name: '简体中文', tag: 'zh' },
   { name: 'EN', tag: 'default' },
   { name: '한국어', tag: 'ko' },
+  { name: 'ภาษาไทย', tag: 'th' },
   { name: 'Tiếng Việt', tag: 'vi' }
 ]
 
