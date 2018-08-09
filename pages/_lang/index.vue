@@ -282,6 +282,9 @@ export default {
       .banner-home-logo
         position absolute
         top 0
+        left 0px
+        right 0px
+        text-align center
         .icon-logo
           color white
           font-size 140px
@@ -302,6 +305,8 @@ export default {
       .banner-home-buttons
         position absolute
         bottom 80px
+        left 0px
+        right 0px
         text-align center
         a
           padding 11px 20px
