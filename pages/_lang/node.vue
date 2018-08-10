@@ -247,7 +247,7 @@ export default {
       this.nodeType = x
       this.isEligibility = isEligibility
       this.pageIndex = 0
-      this.onFetchSumPage(x)
+      this.onFetchSumPage(x,isEligibility)
       this.fetchData({
         nodeType: x,
         isEligibility
@@ -273,13 +273,15 @@ export default {
     onChangePage (x) {
       this.fetchData({
         pageIndex: x,
-        nodeType: this.nodeType
+        nodeType: this.nodeType,
+        isEligibility:this.isEligibility
       })
     },
-    onFetchSumPage (x) {
+    onFetchSumPage (x,isEligibility) {
       this.fetchData({
         nodeType: x,
-        pageSum: 1000
+        pageSum: 1000,
+        isEligibility
       })
     }
   }
