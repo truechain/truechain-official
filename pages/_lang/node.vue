@@ -267,7 +267,6 @@ export default {
           this.pageSum = res.data.data.length
         } else {
           this.list = res.data.data
-          console.log(this.list)
         }
       })
     },
