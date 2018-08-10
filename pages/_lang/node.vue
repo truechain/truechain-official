@@ -66,13 +66,21 @@
       .node-body-table
         .node-body-table-btn
           div(
-            :class="{ 'node-body-table-btn-avtive': nodeType === 1 }",
-            @click="toggleNode(1)"
+            :class="{ 'node-body-table-btn-avtive': nodeType === 1 && isEligibility === 1 }",
+            @click="toggleNode(1,1)"
           ) {{$t('node.nodeStandard')}}
           div(
-            :class="{ 'node-body-table-btn-avtive': nodeType === 2 }",
-            @click="toggleNode(2)"
+            :class="{ 'node-body-table-btn-avtive': nodeType === 2 && isEligibility === 1 }",
+            @click="toggleNode(2,1)"
             ) {{$t('node.nodeFull')}}
+          div(
+            :class="{ 'node-body-table-btn-avtive': nodeType === 1 && isEligibility === 0  }",
+            @click="toggleNode(1,0)"
+          ) {{$t('node.nodeStandard')}}(未达标)
+          div(
+            :class="{ 'node-body-table-btn-avtive': nodeType === 2 && isEligibility === 0  }",
+            @click="toggleNode(2,0)"
+            ) {{$t('node.nodeFull')}}(未达标)
         .node-body-table-header
           ul
             li
@@ -133,6 +141,7 @@ export default {
       sumNum: 0,
       pageSum: 0,
       nodeType: 1,
+      isEligibility:1,
       pageIndex: 0,
       currentPage: 1,
       pageNumber: 10,
@@ -234,22 +243,25 @@ export default {
         this.time = time
       }, 1000)
     },
-    toggleNode (x) {
+    toggleNode (x,isEligibility) {
       this.nodeType = x
+      this.isEligibility = isEligibility
       this.pageIndex = 0
       this.onFetchSumPage(x)
       this.fetchData({
-        nodeType: x
+        nodeType: x,
+        isEligibility
       })
     },
     fetchData (obj = {}) {
-      const { pageSum, nodeType, pageIndex = 1 } = obj
+      const { pageSum, nodeType, pageIndex = 1, isEligibility } = obj
       this.pageIndex = pageIndex - 1
       apiNodeRank({
         'node_type': nodeType || 1,
         'pageIndex': (pageIndex - 1) * this.pageNumber,
         'pageNumber': pageSum || this.pageNumber,
-        'isScore': this.nodeType === 1
+        'isScore': this.nodeType === 1,
+        'isEligibility': isEligibility
       }).then(res => {
         if (pageSum > 10) {
           this.pageSum = res.data.data.length
