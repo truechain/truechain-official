@@ -79,7 +79,7 @@
               div {{$t('node.tableRank')}}
               div {{$t('node.tableNickname')}}
               div {{$t('node.tableTime')}}
-              //- div TRUE数量
+              div {{$t('node.result')}}
               div {{ nodeType === 1 ? $t('node.tableScore') : 'TTR' + $t('node.tableTickets')}}
         .node-body-table-body
           ul
@@ -91,7 +91,12 @@
               div
                 span(:class="{ tag: item.type === 1 }") {{item.nickname}}
               div.ellipsis {{getTime(+item.create_time)}}
-              //- div {{item.lock_num}}TRUE
+              //- div {{item.lock_num}}TRUE icon-tongguo
+              div
+                i(
+                  class="icon font_family"
+                  :class="item.is_eligibility === 1?'icon-tongguo':'icon-butongguo' "
+                )
               template(v-if="nodeType === 1")
                 div {{item.score}}分
               template(v-else)
@@ -250,6 +255,7 @@ export default {
           this.pageSum = res.data.data.length
         } else {
           this.list = res.data.data
+          console.log(this.list)
         }
       })
     },
@@ -533,4 +539,10 @@ export default {
   position absolute
   right 0px
   bottom 100px
+.icon-tongguo
+  font-size 30px
+  color #78c06e
+.icon-butongguo
+  font-size 30px
+  color #f02c2c
 </style>
