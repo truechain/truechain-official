@@ -526,6 +526,7 @@
       "description": "TrueChain will select no more than 4000 priority standard nodes (POW) and no more than 100 priority master nodes (PBFT+POW) by votes before the test main network released in September."
     },    
     "result": "result",
+    "notPass": "Failed",
     "title": "Priority Nodes Election Enrollment",
     "StandardSum": "Registry for Standard Nodes",
     "nodeFullSum": "Registry for Master Nodes",
