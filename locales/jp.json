@@ -609,7 +609,7 @@
       "description": "トゥルーチェーンは9月メインネットワークテストネットがオンラインする前に、応募及び投票により、4000個以下の優先スタンダードノード（POW）及び100個以下の優先マスターノード（PBFT+POW）を選ぶ。"
     },    
     "result": "result",
-    "notPass": "Failed",
+    "notPass": "(Failed)",
     "title": "優先ノード投票応募",
     "StandardSum": "スタンダードノード投票応募済み",
     "nodeFullSum": "全ノード投票応募済み",

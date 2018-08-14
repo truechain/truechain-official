@@ -76,11 +76,11 @@
           div(
             :class="{ 'node-body-table-btn-avtive': nodeType === 1 && isEligibility === 0  }",
             @click="toggleNode(1,0)"
-          ) {{$t('node.nodeStandard')}}({{$t('node.notPass')}})
+          ) {{$t('node.nodeStandard')}}{{$t('node.notPass')}}
           div(
             :class="{ 'node-body-table-btn-avtive': nodeType === 2 && isEligibility === 0  }",
             @click="toggleNode(2,0)"
-            ) {{$t('node.nodeFull')}}({{$t('node.notPass')}})
+            ) {{$t('node.nodeFull')}}{{$t('node.notPass')}}
         .node-body-table-header
           ul
             li
