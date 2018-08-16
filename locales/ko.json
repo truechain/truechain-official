@@ -626,7 +626,7 @@
     "personalCampaign": "개인 선거",
     "teamCampaign": "단체 선거",
     "timeDownCampaign": "우선 순위 노드 선거 투표 카운트 다운",
-    "nodeRank": "우선 순위 노드 선거 투표 순위",
+    "nodeRank": "Priority Nodes Result",
     "nodeStandard": "표준 노드",
     "nodeFull": "전체 노드",
     "tableRank": "순위",

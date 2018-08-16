@@ -644,7 +644,7 @@
     "personalCampaign": "แคมเปญส่วนตัว",
     "teamCampaign": "ทีมแคมเปญ",
     "timeDownCampaign": "การนับถอยหลังการลงคะแนนโหนโหนดลำดับแรก",
-    "nodeRank": "จัดลำดับคะแนนการเลือกตั้งโหนดลำดับความสำคัญ",
+    "nodeRank": "Priority Nodes Result",
     "nodeStandard": "โหนดมาตรฐาน",
     "nodeFull": "โหนดเต็ม",
     "tableRank": "การจัดอันดับ",

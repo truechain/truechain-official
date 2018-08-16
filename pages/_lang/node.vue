@@ -1,65 +1,5 @@
 <template lang="pug">
   .node-container
-    #particles-js-node
-    .node-bg
-      img(src="~assets/images/home-banner3bg.jpg")
-    .node-header
-      .node-header-title
-        .node-header-title1 {{$t('node.title')}}
-        .node-header-title2
-        .node-header-title3
-          span {{sumNum}}
-          i {{$t('node.person')}}
-      .node-header-apply
-        .node-header-apply-title {{$t('node.StandardSum')}}
-        .node-header-apply-list
-          ul
-            li
-              span {{$t('node.sumNum')}}
-              span
-                i {{nodeStandardSum}}
-                i &nbsp;{{$t('node.person')}}
-            li
-              span {{$t('node.personalCampaign')}}
-              span
-                i {{nodeStandard_11}}
-                i &nbsp;{{$t('node.person')}}
-            li
-              span {{$t('node.teamCampaign')}}
-              span
-                i {{nodeStandard_21}}
-                i &nbsp;{{$t('node.team')}}
-      .node-header-apply
-        .node-header-apply-title {{$t('node.nodeFullSum')}}
-        .node-header-apply-list
-          ul
-            li
-              span {{$t('node.sumNum')}}
-              span
-                i {{nodeFullSum}}
-                i &nbsp;{{$t('node.person')}}
-            li
-              span {{$t('node.personalCampaign')}}
-              span
-                i {{nodeFull_12}}
-                i &nbsp;{{$t('node.person')}}
-            li
-              span {{$t('node.teamCampaign')}}
-              span
-                i {{nodeFull_22}}
-                i &nbsp;{{$t('node.team')}}
-      .node-header-countdown
-        .node-header-countdown-title {{$t('node.timeDownCampaign')}}
-        .node-header-countdown-clock
-          ul.ellipsis
-            li {{time.d}}
-            li {{$t('node.day')}}
-            li {{time.h}}
-            li {{$t('node.hour')}}
-            li {{time.m}}
-            li {{$t('node.minute')}}
-            li {{time.s}}
-            li {{$t('node.second')}}
     .node-body
       // .node-body-title {{$t('node.nodeRank')}}
       .page-title {{$t('node.nodeRank')}}
@@ -88,7 +28,7 @@
               div {{$t('node.tableNickname')}}
               div {{$t('node.tableTime')}}
               div {{$t('node.result')}}
-              div {{ nodeType === 1 ? $t('node.tableScore') : 'TTR' + $t('node.tableTickets')}}
+              //- div {{ nodeType === 1 ? $t('node.tableScore') : 'TTR' + $t('node.tableTickets')}}
         .node-body-table-body
           ul
             li(
@@ -105,10 +45,10 @@
                   class="icon font_family"
                   :class="item.is_eligibility === 1?'icon-tongguo':'icon-butongguo' "
                 )
-              template(v-if="nodeType === 1")
-                div {{item.score}}分
-              template(v-else)
-                div {{item.tickets}}票
+              //- template(v-if="nodeType === 1")
+              //-   div {{item.score}}分
+              //- template(v-else)
+              //-   div {{item.tickets}}票
       .node-body-page
         Page(
           :total="pageSum",
@@ -463,7 +403,7 @@ export default {
   display flex
   flex-direction column
   align-items center
-  padding-top 238px
+  padding-top 80px
   padding-bottom 170px
   position relative
   width 62%
