@@ -89,6 +89,7 @@ const langs = [
   { name: 'EN', tag: 'default' },
   { name: '한국어', tag: 'ko' },
   { name: 'ภาษาไทย', tag: 'th' },
+  { name: 'タイ語', tag: 'jp' },
   { name: 'Tiếng Việt', tag: 'vi' }
 ]
 
@@ -449,14 +450,14 @@ nav
     font-size 13px
     line-height 60px
 .container-app-footer-text
-  font-size 30px
+  font-size 26px
   font-weight bold
   line-height 40px
   height 40px
   color white
   display block
 
-@media screen and (max-width 1180px)
+@media screen and (max-width 1380px)
   .container-app-footer-links
     border-right none
     padding-right 0px

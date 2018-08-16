@@ -66,20 +66,28 @@
       .node-body-table
         .node-body-table-btn
           div(
-            :class="{ 'node-body-table-btn-avtive': nodeType === 1 }",
-            @click="toggleNode(1)"
+            :class="{ 'node-body-table-btn-avtive': nodeType === 1 && isEligibility === 1 }",
+            @click="toggleNode(1,1)"
           ) {{$t('node.nodeStandard')}}
           div(
-            :class="{ 'node-body-table-btn-avtive': nodeType === 2 }",
-            @click="toggleNode(2)"
+            :class="{ 'node-body-table-btn-avtive': nodeType === 2 && isEligibility === 1 }",
+            @click="toggleNode(2,1)"
             ) {{$t('node.nodeFull')}}
+          div(
+            :class="{ 'node-body-table-btn-avtive': nodeType === 1 && isEligibility === 0  }",
+            @click="toggleNode(1,0)"
+          ) {{$t('node.nodeStandard')}}{{$t('node.notPass')}}
+          div(
+            :class="{ 'node-body-table-btn-avtive': nodeType === 2 && isEligibility === 0  }",
+            @click="toggleNode(2,0)"
+            ) {{$t('node.nodeFull')}}{{$t('node.notPass')}}
         .node-body-table-header
           ul
             li
               div {{$t('node.tableRank')}}
               div {{$t('node.tableNickname')}}
               div {{$t('node.tableTime')}}
-              //- div TRUE数量
+              div {{$t('node.result')}}
               div {{ nodeType === 1 ? $t('node.tableScore') : 'TTR' + $t('node.tableTickets')}}
         .node-body-table-body
           ul
@@ -91,7 +99,12 @@
               div
                 span(:class="{ tag: item.type === 1 }") {{item.nickname}}
               div.ellipsis {{getTime(+item.create_time)}}
-              //- div {{item.lock_num}}TRUE
+              //- div {{item.lock_num}}TRUE icon-tongguo
+              div
+                i(
+                  class="icon font_family"
+                  :class="item.is_eligibility === 1?'icon-tongguo':'icon-butongguo' "
+                )
               template(v-if="nodeType === 1")
                 div {{item.score}}分
               template(v-else)
@@ -128,6 +141,7 @@ export default {
       sumNum: 0,
       pageSum: 0,
       nodeType: 1,
+      isEligibility:1,
       pageIndex: 0,
       currentPage: 1,
       pageNumber: 10,
@@ -229,22 +243,25 @@ export default {
         this.time = time
       }, 1000)
     },
-    toggleNode (x) {
+    toggleNode (x,isEligibility) {
       this.nodeType = x
+      this.isEligibility = isEligibility
       this.pageIndex = 0
-      this.onFetchSumPage(x)
+      this.onFetchSumPage(x,isEligibility)
       this.fetchData({
-        nodeType: x
+        nodeType: x,
+        isEligibility
       })
     },
     fetchData (obj = {}) {
-      const { pageSum, nodeType, pageIndex = 1 } = obj
+      const { pageSum, nodeType, pageIndex = 1, isEligibility } = obj
       this.pageIndex = pageIndex - 1
       apiNodeRank({
         'node_type': nodeType || 1,
         'pageIndex': (pageIndex - 1) * this.pageNumber,
         'pageNumber': pageSum || this.pageNumber,
-        'isScore': this.nodeType === 1
+        'isScore': this.nodeType === 1,
+        'isEligibility': isEligibility
       }).then(res => {
         if (pageSum > 10) {
           this.pageSum = res.data.data.length
@@ -256,13 +273,15 @@ export default {
     onChangePage (x) {
       this.fetchData({
         pageIndex: x,
-        nodeType: this.nodeType
+        nodeType: this.nodeType,
+        isEligibility:this.isEligibility
       })
     },
-    onFetchSumPage (x) {
+    onFetchSumPage (x,isEligibility) {
       this.fetchData({
         nodeType: x,
-        pageSum: 1000
+        pageSum: 1000,
+        isEligibility
       })
     }
   }
@@ -533,4 +552,10 @@ export default {
   position absolute
   right 0px
   bottom 100px
+.icon-tongguo
+  font-size 30px
+  color #78c06e
+.icon-butongguo
+  font-size 30px
+  color #f02c2c
 </style>

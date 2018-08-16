@@ -43,7 +43,7 @@
     "slogan": "신속한, 무제한적인, 안전한, 확장성이 있는",
     "slogan1": "글로벌 개발자 커뮤니티를 가지고 있는 PBFT-FPOW 하이브리드 합의 알고리즘 퍼블릭 블록체인",
     "white": "백서",
-    "whiteLink": "https://www.truechain.pro/Truechain_en.pdf",
+    "whiteLink": "https://www.truechain.pro/truechain-ko-white.pdf",
     "yellow": "황서",
     "yellowLink": "https://www.truechain.pro/paper.pdf",
     "banner2":{
@@ -616,7 +616,9 @@
       "title": "트루체인-우선 순위 노드 선거",
       "keyword": "트루체인, TRUE, 노드 선거, 마스터 노드, 블록체인, 디지털 화폐 ",
       "description": "트루체인은 9월에 메인넷 테스트 전에 사전 등록 및 투표를 통해, 최대 4천명을 초과하지 않는 우선 순위 노드(POW)과 최대 100명을 초과하지 않는 마스터 노드(PBFT+POW)을 선출할 예정입니다. "
-    },
+    },    
+    "result": "result",
+    "notPass": "(Failed)",
     "title": "우선 순위 노드 선거 등록",
     "StandardSum": "표준 노드 선거는 이미 등록이 완료되었습니다.",
     "nodeFullSum": "마스터 노드 선거는 이미 등록이 완료되었습니다.",
