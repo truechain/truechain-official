@@ -132,57 +132,58 @@ export default {
   async created () {
     this.fetchData()
     this.onFetchSumPage()
-    this.setContdown()
-    this.NodeSum()
-    this.nodeArr.forEach(item => {
-      this.nodeRankPc(item.type, item.nodeType)
-    })
-    this.nodeStandardSum = await this.nodeTypeSumNum(this.nodeStandardObj)
-    this.nodeFullSum = await this.nodeTypeSumNum(this.nodeFullObj)
+    // this.setContdown() //倒计时方法
+    // this.NodeSum()
+    // this.nodeArr.forEach(item => {
+    //   this.nodeRankPc(item.type, item.nodeType)
+    // })
+    // this.nodeStandardSum = await this.nodeTypeSumNum(this.nodeStandardObj)
+    // this.nodeFullSum = await this.nodeTypeSumNum(this.nodeFullObj)
   },
   methods: {
     getTime,
-    async nodeTypeSumNum (options) {
-      const { data: { data }} = await apiNodeTypeSumNum(options)
-      return data[0].sumNum
-    },
-    async nodeRankPc (type = 1, nodeType = 1) {
-      // debugger
-      const { data: { data }} = await apiNodeRankPc({
-        type: type,
-        node_type: nodeType
-      })
-      const { sumNum } = data[0]
-      if (type === 2 && nodeType === 1) {
-        this.nodeStandard_21 = sumNum
-      } else if (type === 1 && nodeType === 1) {
-        this.nodeStandard_11 = sumNum
-      } else if (type === 2 && nodeType === 2) {
-        this.nodeFull_22 = sumNum
-      } else if (type === 1 && nodeType === 2) {
-        this.nodeFull_12 = sumNum
-      }
-    },
-    async NodeSum () {
-      const { data: { data }} = await apiNodeSum()
-      this.sumNum = data[0].sumNum
-    },
-    setContdown () {
-      const timer = setInterval(() => {
-        const { time, lefttime } = contdown()
-        if (lefttime <= 0) {
-          clearInterval(timer)
-          this.time = {
-            d: '00',
-            h: '00',
-            m: '00',
-            s: '00'
-          }
-          return
-        }
-        this.time = time
-      }, 1000)
-    },
+    // async nodeTypeSumNum (options) {
+    //   const { data: { data }} = await apiNodeTypeSumNum(options)
+    //   console.log(data)
+    //   return data[0].sumNum
+    // },
+    // async nodeRankPc (type = 1, nodeType = 1) {
+    //   // debugger
+    //   const { data: { data }} = await apiNodeRankPc({
+    //     type: type,
+    //     node_type: nodeType
+    //   })
+    //   const { sumNum } = data[0]
+    //   if (type === 2 && nodeType === 1) {
+    //     this.nodeStandard_21 = sumNum
+    //   } else if (type === 1 && nodeType === 1) {
+    //     this.nodeStandard_11 = sumNum
+    //   } else if (type === 2 && nodeType === 2) {
+    //     this.nodeFull_22 = sumNum
+    //   } else if (type === 1 && nodeType === 2) {
+    //     this.nodeFull_12 = sumNum
+    //   }
+    // },
+    // async NodeSum () {
+    //   const { data: { data }} = await apiNodeSum()
+    //   this.sumNum = data[0].sumNum
+    // },
+    // setContdown () {
+    //   const timer = setInterval(() => {
+    //     const { time, lefttime } = contdown()
+    //     if (lefttime <= 0) {
+    //       clearInterval(timer)
+    //       this.time = {
+    //         d: '00',
+    //         h: '00',
+    //         m: '00',
+    //         s: '00'
+    //       }
+    //       return
+    //     }
+    //     this.time = time
+    //   }, 1000)
+    // },
     toggleNode (x,isEligibility) {
       this.nodeType = x
       this.isEligibility = isEligibility
