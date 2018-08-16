@@ -30,18 +30,18 @@ div
             .down
               app-android
               app-ios
-      CarouselItem
-        .banner3-bg
-          img(src="~assets/images/home-banner3bg.jpg")
-        .banner3
-          .lf
-            i(class="icon font_family icon-logo1")
-            p.title {{ $t('home.banner3.title') }}
-            p.line1 {{ $t('home.banner3.line1') }}
-            p.line2 {{ $t('home.banner3.line2') }}
-            .node-detail(@click="$router.push('node')") {{ $t('home.banner3.btntext') }}
-          .ri
-            img(src="~assets/images/home-banner3.png")
+      //- CarouselItem
+      //-   .banner3-bg
+      //-     img(src="~assets/images/home-banner3bg.jpg")
+      //-   .banner3
+      //-     .lf
+      //-       i(class="icon font_family icon-logo1")
+      //-       p.title {{ $t('home.banner3.title') }}
+      //-       p.line1 {{ $t('home.banner3.line1') }}
+      //-       p.line2 {{ $t('home.banner3.line2') }}
+      //-       .node-detail(@click="$router.push('node')") {{ $t('home.banner3.btntext') }}
+      //-     .ri
+      //-       img(src="~assets/images/home-banner3.png")
 
   .home-intro-3col
     .col3-con
