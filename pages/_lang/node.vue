@@ -1,5 +1,18 @@
 <template lang="pug">
   .node-container
+    .node-bg
+      img(src="~assets/images/home-banner3bg.jpg")
+      .node-header
+        .node-header-title
+          .node-header-title1 初链TrueChain优先节点竞选结果公告
+        .node-header-block
+          p 自5月中旬，初链TrueChain正式开放优先节点竞选以来，经过三个月的周期，优先节点竞选已顺利结束。根据初链TrueChain此前公布的节点计划安排，初链TrueChain优先节点申请页面已于8月16日关闭。
+          br
+          p 截止8月16日零点，共计813名海内外初链社区用户参与并达到了本次优先节点竞选资格。其中，标准节点竞选有455个，个人竞选有439人，组队竞选有2组；全节点竞选有340个，个人竞选有43人，组队竞选有17组。
+          br
+          br
+          p(style="text-align:right;") 初链基金会
+          p(style="text-align:right;") 2018年8月16日
     .node-body
       // .node-body-title {{$t('node.nodeRank')}}
       .page-title {{$t('node.nodeRank')}}
@@ -231,55 +244,6 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
-@media screen and (max-width 1024px)
-  .node-body
-    width 90% !important
-  .node-body-table-body,
-  .node-body-table-header
-    div
-      wh(0, 60px)
-      text-align center
-      line-height 60px
-      flex-grow 1
-    div:nth-child(1)
-      flex-grow 0.5
-      width auto !important
-    div:nth-child(2)
-      text-align left
-      box-sizing border-box
-      flex-grow 0
-      width auto !important
-    div:nth-child(3)
-      flex-grow 1
-      margin 0 5px
-    div:nth-child(4)
-      flex-grow 1
-  .node-header
-    padding-top 50px !important
-  .node-header-countdown
-    width 90% !important
-    height 200px !important
-  .node-header-title1
-    font-size 30px !important
-  .node-header-title3
-    font-size 25px !important
-  .node-header-apply-title
-    font-size 20px !important
-  .node-header-apply
-    padding  0 !important
-  .node-header-apply-list
-    ul
-      flex-direction column
-  .node-header-countdown-clock
-    ul
-      display flex
-      li
-        line-height 40px !important
-        margin 0 5px !important
-      li:nth-child(odd)
-        width 40px !important
-        height 40px !important
-        font-size 20px !important
 .node-container
   position relative
 #particles-js-node
@@ -292,9 +256,9 @@ export default {
   right 0
   bottom 0
 .node-bg
-  wh(100%, 1027px)
+  wh(100%, 700px)
   background-color $dark-blue
-  position absolute
+  position relative
   z-index 160
   top 0
   left 0
@@ -302,12 +266,15 @@ export default {
   bottom 0
 
 .node-header
-  wh(100%, 1027px)
+  wh(100%, 700px)
   display flex
+  top 0px
+  left 0px
+  right 0px
   align-items center
   flex-direction column
   padding-top 100px
-  position relative
+  position absolute
   z-index 180
 .node-header-title
   padding-bottom 40px
@@ -317,6 +284,15 @@ export default {
 .node-header-title1
     font-size 48px
     font-weight 600
+    position relative
+    &::after
+      border 15px solid
+      border-color white transparent transparent transparent
+      content ''
+      display inline-block
+      position absolute 
+      top 80px
+      left 49%
 .node-header-title2
     width 0
     height 0
@@ -333,6 +309,19 @@ export default {
     font-size 16px
     color inherit
     margin-left 5px
+.node-header-block
+  max-width 1200px
+  padding 60px 100px
+  background-color rgba(255,255,255,0.1)
+  margin-top 50px
+  color white
+  line-height 28px
+  border-radius 10px
+  p
+    color white
+    font-size 18px
+    line-height 34px
+
 .node-header-apply
   padding 50px 0
   width 100%
@@ -499,4 +488,59 @@ export default {
 .icon-butongguo
   font-size 30px
   color #f02c2c
+@media screen and (max-width 1024px)
+  .node-body
+    width 90% !important
+  .node-body-table-body,
+  .node-body-table-header
+    div
+      wh(0, 60px)
+      text-align center
+      line-height 60px
+      flex-grow 1
+    div:nth-child(1)
+      flex-grow 0.5
+      width auto !important
+    div:nth-child(2)
+      text-align left
+      box-sizing border-box
+      flex-grow 0
+      width auto !important
+    div:nth-child(3)
+      flex-grow 1
+      margin 0 5px
+    div:nth-child(4)
+      flex-grow 1
+  .node-header
+    padding-top 50px !important
+    padding-bottom 30px
+    overflow scroll
+  .node-header-block
+    padding 30px 15px
+    margin-left 15px
+    margin-right 15px
+  .node-header-countdown
+    width 90% !important
+    height 200px !important
+  .node-header-title1
+    font-size 30px !important
+  .node-header-title3
+    font-size 25px !important
+  .node-header-apply-title
+    font-size 20px !important
+  .node-header-apply
+    padding  0 !important
+  .node-header-apply-list
+    ul
+      flex-direction column
+  .node-header-countdown-clock
+    ul
+      display flex
+      li
+        line-height 40px !important
+        margin 0 5px !important
+      li:nth-child(odd)
+        width 40px !important
+        height 40px !important
+        font-size 20px !important
 </style>
