@@ -613,7 +613,16 @@
   },
   "node": {
     "head": {
-      "title": "트루체인-우선 순위 노드 선거",
+      "title": "Announcement| TrueChain priority nodes election ends",
+      "text1":"TrueChain’s priority nodes election runs for 3 months since starting in the mid May, now the election ends. In accordance with the arrangements previously published by TrueChain, the application page of priority node was closed on August 16.",
+      "text2":"By the midnight of August 16, a total of 813 users from TrueChain’s domestic and overseas communities participated and reached the qualification of priority nodes election. Among which are 455 priority standard nodes with 439 individual and 2 teams participated; 340 priority full nodes with 43 individual and 17 teams participated.",
+      "text3":"According to the priority nodes election incentive rules,",
+      "text4":"1.Priority mining begins in mid-september after the Beta version of mainnet launched.",
+      "text5":"2.The rules will last six months, until March 2019",
+      "text6":"3.Full nodes and standard nodes will carve up 2 million TRUE and 4 million TRUE respectively.",
+      "text7":"4.When the priority mining ends in March next year, all the True will be migrated to the mainnet and come into effect immediately.",
+      "text8":"TrueChain Foundation",
+      "text9":"16th, August, 2018",
       "keyword": "트루체인, TRUE, 노드 선거, 마스터 노드, 블록체인, 디지털 화폐 ",
       "description": "트루체인은 9월에 메인넷 테스트 전에 사전 등록 및 투표를 통해, 최대 4천명을 초과하지 않는 우선 순위 노드(POW)과 최대 100명을 초과하지 않는 마스터 노드(PBFT+POW)을 선출할 예정입니다. "
     },    

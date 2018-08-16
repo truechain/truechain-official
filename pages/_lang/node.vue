@@ -4,15 +4,21 @@
       img(src="~assets/images/home-banner3bg.jpg")
       .node-header
         .node-header-title
-          .node-header-title1 初链TrueChain优先节点竞选结果公告
+          .node-header-title1 {{$t('node.head.title')}}
         .node-header-block
-          p 自5月中旬，初链TrueChain正式开放优先节点竞选以来，经过三个月的周期，优先节点竞选已顺利结束。根据初链TrueChain此前公布的节点计划安排，初链TrueChain优先节点申请页面已于8月16日关闭。
+          p {{$t('node.head.text1')}}
           br
-          p 截止8月16日零点，共计813名海内外初链社区用户参与并达到了本次优先节点竞选资格。其中，标准节点竞选有455个，个人竞选有439人，组队竞选有2组；全节点竞选有340个，个人竞选有43人，组队竞选有17组。
+          p {{$t('node.head.text2')}}
+          br
+          p {{$t('node.head.text3')}}
+          p {{$t('node.head.text4')}}
+          p {{$t('node.head.text5')}}
+          p {{$t('node.head.text6')}}
+          p {{$t('node.head.text7')}}
           br
           br
-          p(style="text-align:right;") 初链基金会
-          p(style="text-align:right;") 2018年8月16日
+          p(style="text-align:right;") {{$t('node.head.text8')}}
+          p(style="text-align:right;") {{$t('node.head.text9')}}
     .node-body
       // .node-body-title {{$t('node.nodeRank')}}
       .page-title {{$t('node.nodeRank')}}
@@ -256,7 +262,7 @@ export default {
   right 0
   bottom 0
 .node-bg
-  wh(100%, 700px)
+  wh(100%, 1000px)
   background-color $dark-blue
   position relative
   z-index 160
@@ -266,7 +272,7 @@ export default {
   bottom 0
 
 .node-header
-  wh(100%, 700px)
+  wh(100%, 1000px)
   display flex
   top 0px
   left 0px
