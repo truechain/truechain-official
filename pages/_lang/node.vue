@@ -1,24 +1,24 @@
 <template lang="pug">
   .node-container
-    .node-bg
-      img(src="~assets/images/home-banner3bg.jpg")
-      .node-header
-        .node-header-title
-          .node-header-title1 {{$t('node.head.title')}}
-        .node-header-block
-          p {{$t('node.head.text1')}}
-          br
-          p {{$t('node.head.text2')}}
-          br
-          p {{$t('node.head.text3')}}
-          p {{$t('node.head.text4')}}
-          p {{$t('node.head.text5')}}
-          p {{$t('node.head.text6')}}
-          p {{$t('node.head.text7')}}
-          br
-          br
-          p(style="text-align:right;") {{$t('node.head.text8')}}
-          p(style="text-align:right;") {{$t('node.head.text9')}}
+    //- .node-bg
+    //-   img(src="~assets/images/home-banner3bg.jpg")
+    //-   .node-header
+    //-     .node-header-title
+    //-       .node-header-title1 {{$t('node.head.title')}}
+    //-     .node-header-block
+    //-       p {{$t('node.head.text1')}}
+    //-       br
+    //-       p {{$t('node.head.text2')}}
+    //-       br
+    //-       p {{$t('node.head.text3')}}
+    //-       p {{$t('node.head.text4')}}
+    //-       p {{$t('node.head.text5')}}
+    //-       p {{$t('node.head.text6')}}
+    //-       p {{$t('node.head.text7')}}
+    //-       br
+    //-       br
+    //-       p(style="text-align:right;") {{$t('node.head.text8')}}
+    //-       p(style="text-align:right;") {{$t('node.head.text9')}}
     .node-body
       // .node-body-title {{$t('node.nodeRank')}}
       .page-title {{$t('node.nodeRank')}}
