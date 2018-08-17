@@ -539,10 +539,10 @@ export default {
     flex-wrap wrap
     justify-content center
     align-items flex-start
-    max-width 1124px
+    max-width 800px
     margin 46px auto 0px
     .co
-      wh(210px, 136px)
+      wh(220px, 126px)
       padding 10px 15px
       img
         wh(100%,100%)
@@ -574,13 +574,14 @@ export default {
     // max-width 1024px
     margin 46px auto 0px
     .co
-      wh(190px, 106px)
+      wh(192px, 108px)
       border 1px solid #C5D6F6
       border-radius 5px
-      padding 3px
-      margin 10px
+      padding 0px
+      margin 10px 15px
       img
         wh(100%,100%)
+        border-radius 6px
 
 .home-news
   padding 100px 20px 80px
