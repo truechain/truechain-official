@@ -475,12 +475,12 @@
   },
   "join": {
     "head": {
-      "title": "初链-招聘官网",
+      "title": "Hãy tham gia cùng chúng tôi",
       "keyword": "初链，TRUE，招聘官网，区块链，区块链人才，数字货币",
       "description": "初链招聘期待更多区块链人才加入我们。"
     },
     "title": "Gia nhập chúng tôi",
-    "intro": "Hoan ngênh người có tinh thần sáng tạo , nhiệt huyết , thật lòng muốn gia nhập , cùng chúng tôi giương buồm khởi hành",
+    "intro": "Rất hoan nghênh những người có óc sáng tạo, niềm đam mê và sự chân thành tham gia với chúng tôi!",
     "p1": "Kể từ ngày đầu tiên gia nhập , bạn đã bắt đầu quá trình vừa làm vừa huấn luyện .Bạn sẽ phát hiện kinh nghiệm chuyên nghiệp mà chúng tôi tích lũy có lợi cho bạn rất nhiều .Gia nhập chúng tôi bạn sẽ được liệt vào chức vụ nhân viên của công ty để phát triển kế hoạch huấn luyện .",
     "p2": "Huấn luyện không chỉ giúp không ngừng nâng cao và nhu cầu phát triển đối với tố chất và tiềm năng mỗi nhân viên , cũng làmột trong những tiêu chí quan trọng thúc đẩy công ty đạt được thành công lớn hơn .Chúng tôi có thể rất tự tin mà nói , thông qua học tập làm việc ở đây , bạn sẽ có cơ hội trở thành chuyên gia ngành nghề .",
     "button": "Ngay lập tức tham gia",
@@ -494,17 +494,17 @@
       {
         "path": "jd/0",
         "icon": "icon font_family icon-kaifa",
-        "job": "Kĩ sư khai thác ngôn ngữ Go"
+        "job": "Kĩ sư phát triển ngôn ngữ lập trình Go"
       },
       {
         "path": "jd/1",
         "icon": "icon font_family icon-suanfa",
-        "job": "Kĩ sư công trình phép tính ngôn ngữ Go "
+        "job": "Kỹ sư thuật toán Go "
       },
       {
         "path": "jd/2",
         "icon": "icon font_family icon-touzi",
-        "job": "Tổng giám sát mối quan hệ nhà đầu tư"
+        "job": "Giám đốc đối ngoại"
       },
       {
         "path": "jd/3",
@@ -529,51 +529,52 @@
     ],
     "jobs": [
       {
-        "title": "Kĩ sư khai thác ngôn ngữ Go",
+        "title": "Kĩ sư phát triển ngôn ngữ lập trình Go",
         "duty": [
-          "Sử dụng thiết kế ngôn ngữ Go và khai thác sản phẩm của Blockchain TrueChain",
-          "Tham gia thiết kế kết cấu khung phần mềm của hệ thống Blockchain , nghiên cứu kĩ thuật quan trọng của cơ sở hạ tầng Blockchain .",
-          "Phụ trách khai thác tầng hạt nhân Blockchain có liên quan ( giao dịch , thông tin , máy ảo EVM)",
-          "Có quan hệ hợp tác thân thiết với sản phẩm / thiết kế / khai thác hàng đầu / đội ngũ kiểm tra , bảo đảm chất lượng giao phó nhiệm vụ khai thác Blockchain theo đúng thời gian qui định ;",
-          "Công việc khác do lãnh đạo cấp trên sắp xếp "
+          "Sử dụng ngôn ngữ lập trình Go để thiết kế và phát triển sản phẩm TrueChain.",
+          "Tham gia thiết kế kiến trúc phần mềm của nền tảng blockchain, nghiên cứu các công nghệ chủ chốt của cơ sở hạ tầng blockchain.",
+          "Chịu trách nhiệm phát triển liên quan đến lớp lõi blockchain (giao dịch, tin nhắn, máy ảo EVM).",
+          "Hợp tác chặt chẽ với đội ngũ sản phẩm/thiết kế/phát triển front-end, hoàn thành các công việc phát triển blockchain đúng thời hạn.",
+          "Các công việc khác do Trưởng phòng cấp cao sắp xếp"
         ],
         "require": [
-          "Có trên 2 năm kinh nghiệm khai thác dự án;",
-          "Thành thạo biên trình ngôn ngữ golang , nắm vững đa tuyến trình ;",
-          "Ưu tiên người có kinh nghiệm thiết kế khai thác hệ thống nhớ dung lượng cao và phục vụ số lượng lớn kết nối đồng thời ( High concurrency ) ;",
-          "Có năng lực biên trình máy tính vững chắc , đặc biệt là năng lực phương diện kết cấu số liệu , phép tính , mã code , thiết kế phần mềm ;"
+          "Có hơn 2 năm kinh nghiệm trong phát triển dự án;",
+          "Thành thạo ngôn ngữ lập trình golang và multireading (công nghệ đa luồng);",
+          "Ưu tiên người có kinh nghiệm trong thiết kế phát triển hệ thống bộ nhớ dung lượng và kết nối cao;",
+          "Có khả năng lập trình máy tính vững chắc, đặc biệt là thành thạo trong cấu trúc dữ liệu, thuật toán và mã hóa, thiết kế phần mềm;"
         ]
       },
       {
-        "title": "Kĩ sư công trình phép tính ngôn ngữ Go ",
+        "title": "Kỹ sư thuật toán Go ",
         "duty": [
-          "Sử dụng thiết kế ngôn ngữ Go và khai thác sản phẩm của Blockchain TrueChain ",
-          "Tham gia thiết kế kết cấu khung phần mềm của hệ thống Blockchain , nghiên cứu kĩ thuật quan trọng của cơ sở hạ tầng Blockchain . ",
-          "Phụ trách khai thác tầng hạt nhân Blockchain có liên quan (phép tính đồng thuận). ",
-          "Có quan hệ hợp tác thân thiết với sản phẩm / thiết kế / khai thác hàng đầu / đội ngũ kiểm tra , bảo đảm chất lượng giao phó nhiệm vụ khai thác Blockchain theo đúng thời gian qui định ; ",
-          "Công việc khác do lãnh đạo cấp trên sắp xếp "
+          "Sử dụng ngôn ngữ lập trình Go để thiết kế và phát triển sản phẩm TrueChain. ",
+          "Tham gia thiết kế kiến trúc phần mềm của nền tảng blockchain, nghiên cứu các công nghệ chủ chốt của cơ sở hạ tầng blockchain. ",
+          "Chịu trách nhiệm phát triển liên quan đến lớp lõi blockchain (giao dịch, tin nhắn, máy ảo EVM)",
+          "Hợp tác chặt chẽ với đội ngũ sản phẩm/thiết kế/phát triển front-end, hoàn thành các công việc phát triển blockchain đúng thời hạn. ",
+          "Các công việc khác do Trưởng phòng cấp cao sắp xếp"
         ],
         "require": [
-          "Có trên 2 năm kinh nghiệm khai thác dự án;",
-          "Thành thạo biên trình ngôn ngữ golang , nắm vững đa tuyến trình ;",
-          "Ưu tiên người có kinh nghiệm thiết kế khai thác hệ thống nhớ dung lượng cao và phục vụ số lượng lớn kết nối đồng thời ( High concurrency ) ;",
-          "Có năng lực biên trình máy tính vững chắc , đặc biệt là năng lực phương diện kết cấu số liệu , phép tính , mã code , thiết kế phần mềm ;",
-          "Ưu tiên người thành thạo khai thác fabric hoặc Ethereum."
+          "Có hơn 2 năm kinh nghiệm trong phát triển dự án;",
+          "Thành thạo ngôn ngữ lập trình golang và multireading (công nghệ đa luồng);",
+          "Ưu tiên người có kinh nghiệm trong thiết kế phát triển hệ thống nhớ dung lượng và kết nối cao;",
+          "Có khả năng lập trình máy tính vững chắc, đặc biệt là thành thạo trong cấu trúc dữ liệu, thuật toán và mã hóa, thiết kế phần mềm;",
+          "Ưu tiên người thành thạo phát triển fabric hoặc Ethereum."
         ]
       },
       {
-        "title": "Tổng giám sát mối quan hệ nhà đầu tư",
-        "workCity": "Trung Quốc ,Mỹ",
-        "requireNum": "2 người( trong đó 1 người base tại nước Mỹ , yêu cầu viết nói tiếng Anh thành thạo)",
+        "title": "Giám đốc đối ngoại",
+        "workCity": "Trung Quốc, Mỹ",
+        "requireNum": "2 người (trong đó có 1 người từ Mỹ, yêu cầu thông thạo nói và viết tiếng Anh)",
         "duty": [
           "Phụ trách duy trì mối quan hệ với nhà đầu tư cơ cấu , định hướng đặt nền tảng biểu diễn lưu động và đàm phán hợp tác về Blockchain tại khu vực chủ lưu của Trung Quốc và Mỹ ."
         ],
         "require": [
-          "Thành thạo lĩnh vực đầu tư Blockchain , có thể làm thư kiến nghị đầu tư và tài liệu có liên quan .",
-          "Bối cảnh tài chính có liên quan ,xuất thân từ FA hoặc xuất thân từ vận động công ty lên sàn chứng khoán và vận động quĩ, ưu tiên người có bối cảnh ngành nghề khoa học kĩ thuật tài chính .",
-          "Linh hoạt nhạy bén cương trực , dám nghĩ dám làm , có thể nhanh chóng học tập kiến thức cơ sở Blockchain và cục bộ thị trường ."
+          "Có kinh nghiệm trong lĩnh vực đầu tư blockchain, có thể chuẩn bị các tài liệu liên quan và các đề xuất đầu tư.",
+          "Có kinh nghiệm liên quan đến tài chính, phân tích cơ bản; hoặc gây quỹ công ty và gây quỹ tư nhân; hoặc ngành công nghiệp FinTech. ",
+          "Có tính linh hoạt và chính trực; táo bạo trong tư duy và hành động; có thể nhanh chóng tìm hiểu kiến thức cơ bản và cấu trúc thị trường của blockchain.",
+          "Tác phong cá nhân chuyên nghiệp"
         ],
-        "salary": "lương cố định + hoa hồng (móc nối các chỉ tiêu về quy mô vận động , thời gian đặc biệt , mức độ nổi tiếng của quĩ v…v…)"
+        "salary": "Mức lương: Mức lương cơ bản khoảng 30.000 + hoa hồng ( tuỳ thuộc vào khối lượng vốn gây quỹ, thời gian nắm giữ, tiềm năng của quỹ, v.v.)"
       },
       {
         "title": "Chủ quản tuyển nhân viên",
@@ -664,8 +665,8 @@
     "result": "Kết quả",
     "notPass": "(Failed)",
     "title": "Danh sách đăng kí theo giờ cụ thể",
-    "StandardSum": "Danh sách đăng kí theo giờ cố định",
-    "nodeFullSum": "Đã đăng ký vận động viên",
+    "StandardSum": "Danh sách đăng ký trở thành Standard Node",
+    "nodeFullSum": "Danh sách đăng ký trở thành Master Node",
     "sumNum": "Khoảng",
     "personalCampaign": "Chiến dịch cá nhân",
     "teamCampaign": "Nhóm chiến dịch",
@@ -675,7 +676,7 @@
     "nodeFull": "Tất cả các nút",
     "tableRank": "Xếp hạng",
     "tableNickname": "Biệt danh",
-    "tableTime": "Thời gian",
+    "tableTime": "Thời gian đăng ký",
     "tableScore": "Điểm số",
     "tableTickets": "Cuộc thăm dò",
     "team": "nhóm",
