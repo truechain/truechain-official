@@ -16,7 +16,7 @@ export default ({ app, store }) => {
       'ko': require('~/locales/ko.json'),  //韩国
       'th': require('~/locales/th.json'),  //泰国
       'jp': require('~/locales/jp.json'),  //日本
-      'vi': require('~/locales/vi.json')   //越南
+      'vn': require('~/locales/vn.json')   //越南
     }
   })
 

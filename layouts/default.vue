@@ -90,7 +90,7 @@ const langs = [
   { name: '한국어', tag: 'ko' },
   { name: 'ภาษาไทย', tag: 'th' },
   { name: 'タイ語', tag: 'jp' },
-  { name: 'Tiếng Việt', tag: 'vi' }
+  { name: 'Tiếng Việt', tag: 'vn' }
 ]
 
 export default {
