@@ -32,8 +32,8 @@
       "link": "https://www.youtube.com/channel/UCsKSh9TPpYCZwHFn4lzhmFg?view_as=subscriber"
     }
   ],
-  "footerLinkDescr":"Hệ thống xã giao chính thức TrueChain",
-  "footerDownDescr":"Tải về ứng dụng ví tiền nhẹ TrueChain ",
+  "footerLinkDescr":"Nền tảng SNS chính thức của TrueChain",
+  "footerDownDescr":"Tải về ứng dụng light wallet của TrueChain",
   "home": {
     "head": {
       "title": "新一代混合共识公链",
@@ -41,10 +41,10 @@
       "description": "初链是全球最早的PBFT - fPOW混合共识公链"
     },
     "slogan": "Nhanh chóng , không chịu giới hạn , an toàn , có thể khuếch tán dung lượng",
-    "slogan1": "Có Public Blockchains đồng thuận hỗn hợp PBFT-fPoW của khu dành cho nhà khai thác toàn cầu ",
-    "white": "Sách bạch bì",
+    "slogan1": "Nhanh chóng, không bị giới hạn, an toàn và có thể mở rộng Public Blockchain sử dụng công nghệ đồng thuận lai PBFT-POW với sự hỗ trợ của cộng đồng các nhà phát triển trên toàn thế giới.",
+    "white": "White paper",
     "whiteLink": "https://www.truechain.pro/Truechain_en.pdf",
-    "yellow": "Sách hoàng bì",
+    "yellow": "Yellow paper",
     "yellowLink": "https://www.truechain.pro/paper.pdf",
     "banner2":{
       "title":"True Ứng dụng ví ánh sáng",
@@ -60,95 +60,105 @@
     "superiority": [
       {
         "icon": "icon font_family icon-jiejue",
-        "title": "Giải quyết vấn đề nổi bật nhất của Public Blockchains",
-        "detail":"TrueChain tận dụng cơ chế đồng thuận hỗn hợp PBFT-fPoW và cơ chế phân mảnh an toàn đã giải quyết được vấn đề lớn nhất mà hiện tại Public Blockchains phải đối mặt : sự mâu thuẫn giữa tính năng và sự phân tán"
+        "title": "Giải quyết những rào cản của Public Blockchain",
+        "detail":"TrueChain giải quyết sự mâu thuẫn giữa hiệu quả công việc và tính phi tập trung của Public Blockchain nhờ vào tính chất phân cấp của cơ chế đồng thuận lai PBFT - POW sử dụng công nghệ phân mảnh an toàn."
       },
       {
         "icon": "icon font_family icon-tianchengzuo",
-        "title": "Bảo đảm sự phân tán và tính công bằng",
-        "detail":"Sử dụng Block Fruit làm Slow chain , dùng fPoW thay thế hiệp nghị PoW của Trung Bản Thông , TrueChain có thể đảm bảo sự phân tán và tính công bằng của Public Blockchains thời đại mới "
+        "title": "Bảo đảm tính phi tập trung và sự công bằng",
+        "detail":"TrueChain đảm bảo tính phi tập trung và sự công bằng cho thế hệ Public blockchain mới bằng cách sử dụng Fruitchain như một Snailchain để thay thế PoW của fPoW của Nakamoto."
       },
       {
         "icon": "icon font_family icon-gongshijizhi",
-        "title": "Cơ chế động lực đồng thuận hỗn hợp đời thứ nhất",
-        "detail":"TrueChain là cơ chế đời thứ nhất lợi dụng cơ chế động lực để quản lí Public Blockchains đồng thuận hỗn hợp , đây chính là kĩ thuật Blockchain tạo lên ý thức kinh tế"
+        "title": "Mô hình khuyến khích đồng thuận lai đầu tiên",
+        "detail":"TrueChain là dự án đầu tiên thiết kế mô hình khuyến khích đồng thuận lai, giúp truyền tải được nhận thức kinh tế vào công nghệ blockchain. "
       },
       {
         "icon": "icon font_family icon-jizhi",
-        "title": "Cơ chế chi phí nhiên liệu ổn định , giá thành thấp",
-        "detail":"Thực hiện chi phí nhiên liệu bằng không đối với bất kì loại Blockchain nào mà nói là điều không thể nào , mặc dù như vậy , TrueChain vẫn có thể cung cấp chi phí nhiên liệu ổn định , giá thành thấp giúp càng nhiều DApps thực hiện lên đồng chuỗi"
+        "title": "Cơ chế phí gas thấp và ổn định",
+        "detail":"Phí gas bằng không là không thể đối với bất kỳ Public blockchain nào, mặc dù như vậy, TrueChain vẫn có thể thiết lập cơ chế phí gas thấp và ổn định nhằm tạo điều kiện cho nhiều DApp được phát triển trên mạng lưới."
       },
       {
         "icon": "icon font_family icon-shequ",
-        "title": "Khu dành cho nhà khai thác trên toàn thế giới lớn mạnh",
-        "detail":"Trong Public Blockchains thời đại mới , TrueChain có qui mô lớn nhất trong phạm vi Trung Quốc , khu dành cho nhà khai thác có tốc độ tăng trưởng nhanh nhất trong phạm vi toàn cầu"
+        "title": "Cộng đồng phát triền toàn cầu mạnh mẽ",
+        "detail":"Trong số các Public blockchain thế hệ mới, TrueChain có một cộng đồng phát triển lớn nhất Trung Quốc và tiến bộ nhanh chóng nhất thế giới."
       },
       {
         "icon": "icon font_family icon-chanpin",
-        "title": "Ma trận sản phẩm nguồn mở",
-        "detail":"Để hoàn thiện và cho phép kết hợp hệ thống Public Blockchains đồng thuận , TrueChain có ma trận sản phẩm vô cùng hoàn chỉnh và dễ sử dụng , đồng thời tất cả các sản phẩm đều mở nguồn ra bên ngoài"
+        "title": "Đa dạng các sản phẩm mã nguồn mở ",
+        "detail":"TrueChain mang đến hàng loạt các sản phẩm có thể hỗ trợ nền tảng Public blockchain đồng thuận lai và giúp chuỗi công nghệ vừa có mã nguồn mở, vừa dễ sử dụng. "
       }
     ],
     "about": {
-      "title": "Về vấn đề",
-      "subhead": "TrueChain là Public Blockchains đồng thuận hỗn hợp Minerva có tính nhanh chóng , an toàn , không chịu giới hạn , không khuếch tán dung lượng.",
+      "title": "Về chúng tôi",
+      "subhead": "TrueChain là một nền tảng Public blockchain đồng thuận lai, nhanh chóng, phân quyền, an toàn và có thể mở rộng. Dự án nhận được sự hỗ trợ từ công nghệ đồng thuận lai gọi là Minerva và một cộng đồng phát triển toàn cầu.",
       "contentList": [
-        "TrueChain căn cứ theo cơ chế đồng thuận hỗn hợp Minerva , kết hợp PBFT và fPoW, tìm hiểu vấn đề lớn nhất mà lĩnh vực Public Blockchains phải đối mặt : sự mâu thuẫn giữa tính năng và sự phân tán",
-        "TrueChain lợi dụng PBFT làm chuỗi cấp tốc để thực hiện xử lí cấp tốc giao dịch , PoW phụ trách giám sát quản lí và lựa chọn đề cử Ủy ban PBFT , và dung hòa kĩ thuật Block Fruit vào trong hiệp nghị PoW truyền thống , trở thành fPow , giúp người dùng phổ thông có cơ hội tham gia đào khoáng , thực hiện càng thêm phân tán và công bằng hóa .Đồng thời , TrueChain đã tăng thêm cơ chế phân mảnh trên PBFT , đã đột phá hạn chế phương diện khuếch tán dung lượng .",
-        "TrueChain có kĩ thuật tiên tiến và chắc chắn , mục tiêu của chúng tôi là cung cấp một hệ thống Blockchain hoàn toàn có thể vận hành , quản lí tốt cho nền kinh tế phân tán . Trước tiên TrueChain đã cung cấp cơ chế động lực đồng thuận hỗn hợp , lợi dụng ý thức kinh tế nâng đỡ từ cơ bản và thúc đẩy sự phát triển của Blockchain .Đồng thời , chi phí cơ chế nhiên liệu ổn định mà TrueChain sáng tạo riêng có thể hạ thấp giá thành của nhà khai thác và nhà vận hành kinh doanh khai thác DApps , từ đó giúp TrueChain càng thêm hướng ra quần chúng",
-        "Là hệ thống Blockchain , TrueChain thiết lập đặc khu có tính tương thích cao để hấp dẫn nhân viên khai thác và nhà sáng lập trên toàn cầu trở thành thành viên của đặc khu TrueChain. TrueChain không chỉ có một khu toàn cầu hóa , đồng thời TrueChain còn có nhiều sản phẩm nguồn mở , tiện cho nhà khai thác sử dụng , điều này giúp TrueChain có thể xuất phát từ góc độ của người dùng , cung cấp điều kiện có lợi nhất cho DApp khai thác .",
-        "Đội ngũ TrueChain vô cùng quốc tế hóa , các thành viên đến từ các khu vực như Ấn Độ , Mỹ , Trung Quốc."
+        "Rất nhiều public chain chỉ dựa trên cơ chế đồng thuận như PoW hoặc PoS, đang gặp phải rào cản lớn về sự hiệu quả. Mặt khác, những chuỗi dPoS hoặc dBFT đã cải thiện được sự hiểu quả nhưng lại gặp phải rào cản về tính phi tập trung. TrueChain sử dụng cơ chế đồng thuận lai gọi là Minerva kết hợp giữa PBFT và fPoW để giải quyết vấn đề lớn nhất cản trở public blockchain: sự mâu thuẫn giữa tính phi tập trung và độ hiệu quả",
+        "TrueChain sử dụng PBFT làm chuỗi tốc độ (fast-chain) để xử lý các giao dịch, và các node PoW làm nhiệm vụ giám sát và bầu chọn FBFT. Bên cạnh đó, TrueChain tích hợp thêm công nghệ fruitchain vào giao thức PoW truyền thống, tạo thành fPoW (đóng vai trò là một snailchain) nhằm giúp chuỗi có tính phi tập trung cao và công bằng. TrueChain cũng thiết lập công nghệ phân mảnh (sharding) vào PBFT để tăng giới hạn mở rộng .",
+        "TrueChain sử dụng PBFT làm chuỗi tốc độ (fast-chain) để xử lý các giao dịch, và các node PoW làm nhiệm vụ giám sát và bầu chọn FBFT. Bên cạnh đó, TrueChain tích hợp thêm công nghệ fruitchain vào giao thức PoW truyền thống, tạo thành fPoW (đóng vai trò là một snailchain) nhằm giúp chuỗi có tính phi tập trung cao và công bằng. TrueChain cũng thiết lập công nghệ phân mảnh (sharding) vào PBFT để tăng giới hạn mở rộng.",
+        "Với vai trò là một nền tảng công nghệ, TrueChain xây dựng một cộng đồng toàn diện nhằm thu hút các nhà phát triển và doanh nhân toàn cầu trở thành một phần của cuộc cách mạng kinh tế phi tập trung. TrueChain không chỉ có một cộng đồng phát triển toàn cầu mà còn có một mạng lưới sản phẩm tiện lợi cho các nhà phát triển. Các sản phẩm mã nguồn mở này sẽ cung cấp các điều kiện thuận lợi nhất cho người dùng.",
+        "Đội ngũ của TrueChain đến từ nhiều nơi trên thế giới như Ấn Độ, Mỹ, Trung Quốc, v.v."
       ]
     },
     "roadmap": {
-      "title": "Tuyến đường",
+      "title": "Lộ trình phát triển",
       "list": [
         {
           "time": "2018-01",
-          "events": ["Sách bạch bì True phát biểu"]
+          "events": ["TrueChain ra mắt giấy trắng"]
         },
         {
           "time": "2018-03",
-          "events": ["Chuỗi liên minh PBFT"]
+          "events": ["Ra mắt Liên minh blockchain PBFT "]
         },
         {
           "time": "2018-04",
-          "events": ["Sách hoàng bì kĩ thuật TrueChain phát biểu", "Cơ chế đồng thuận hỗn hợp thiết kế hoàn thiện", "Hệ thống quản lí chu kì sinh mệnh hợp đồng phát biểu và hệ thống stellar phát biểu"]
+          "events": [
+            "TrueChain phát hành giấy vàng", 
+            "Hoàn thiện thiết kế cơ chế đồng thuận lai", 
+            "Stellar – Nền tảng để triển khai và quản lý vòng đời của các hợp đồng thông minh đã được ra mắt"
+          ]
         },
         {
           "time": "2018-05",
-          "events": ["Sơ đồ tuyến đường công trình TrueChain được github phát biểu", "Ví tiền nhẹ TrueChain đã được tung lên mạng", "Hệ thống cạnh tranh lựa chọn tiết điểm phân tán TrueChain đã được tung lên mạng 05-2018"]
+          "events": [
+              "Lộ trình phát triển kỹ thuật của TrueChain ra mắt trên Github",
+             "TrueChain ra mắt light wallet ", 
+             "TrueChain ra mắt hệ thống biểu quyết dành cho các node phi tập trung"]
         },
         {
           "time": "2018-06",
-          "events": ["Nguồn mở khung mã code đồng thuận hỗn hợp", "Cơ chế động lực đồng thuận hỗn hợp phát biểu", "Kiểm tra bên trong mạng chính v0.01"]
+          "events": ["Mô hình mã nguồn mở đồng thuận lai",
+             "Ra mắt cơ chế các khuyến khích đồng thuận lai ", 
+             "Thử nghiệm nội bộ Mainnet v0.1"
+          ]
         },
         {
           "time": "2018-07",
-          "events": ["thực hiện và mở nguồn khung cơ sở fPOW", "Khu dành cho người khai thác nước Mỹ thành lập vào tháng 7-2018"]
+          "events": ["Hoàn thành khung cơ bản fPOW và mã nguồn mở", "Thiết lập cộng đồng phát triển Hoa Kỳ"]
         },
         {
           "time": "2018-08",
-          "events": ["fPOW và chỉnh hợp mạng chính TrueChain", "Cơ chế phân mảnh đồng thuận hỗn hợp"]
+          "events": ["Tích hợp fPOW và mainnet của TrueChain", "Công nghệ phân mảnh đồng thuận lai"]
         },
         {
           "time": "2018-9",
-          "events": ["Mạng chính TrueChain đã ra mắt trên mạng ( chỉ mở cho tiết điểm ưu tiên )"]
+          "events": ["Khởi chạy mainnet của TrueChain (chỉ mở cho các node ưu tiên )"]
         },
         {
           "time": "2018-12",
-          "events": ["Cơ chế phân mảnh đồng thuận hỗn hợp đã ra mắt trên mạng"]
+          "events": ["Khởi chạy công nghệ phân mảnh đồng thuận lai"]
         },
         {
           "time": "2019-03",
-          "events": ["Mạng chính mở ra cho toàn bộ tiết điểm"]
+          "events": ["Mainnet mở ra với tất cả các node"]
         }
       ]
     },
-    "partner": "Cơ cấu hợp tác",
-    "institution": "Cơ cấu đầu tư",
+    "partner": "Các đối tác",
+    "institution": "Các nhà đầu tư",
     "news":{
-      "title": "Tin mới",
+      "title": "Tin tức",
       "technical": "技术动态",
       "biz": "商业动态",
       "point": "暂无数据",
@@ -174,11 +184,12 @@
   "nav": {
     "git": "GITHUB",
     "blog": "博客",
-    "team": "Đội ngũ",
-    "news": "Tin mới",
-    "join": "Gia nhập chúng tôi",
+    "team": "Đội ngũ ",
+    "news": "Tin tức",
+
+    "join": "Tham gia cùng chúng tôi ",
     "node": "Tiết điểm",
-    "english": "简体中文"
+    "english": "Tiếng Việt"
   },
   "banner": {
     "title": "True轻钱包",
@@ -208,44 +219,41 @@
     },
     "banner": "Và hơn 800+ nhân viên khai thác đến từ toàn cầu",
     "technology": {
-      "title": "Nghiên cứu và khu dành cho nhà khai thác",
+      "title": "Cộng đồng nghiên cứu và phát triển",
       "list": [
         {
-          "name": "Trương Kiếm Nam",
-          "post": "Giám đốc chấp hành cao nhất",
+          "name": "Eric Zhang",
+          "post": "CEO ",
           "imgSrc": "jiannan",
-          "intro": "Thạc sĩ máy tính đại học Oxford，Nhà sáng lập TopHacker và Dorahacks",
           "introList": [
             "Thạc sĩ máy tính đại học Oxford",
-            "Nhà sáng lập TopHacker và Dorahacks",
-            "研Nhân viên nghiên cứu , tổ chức nghiên cứu hạt nhân châu Âu CERN（2013）"
+            "·Nhà sáng lập của TopHacker và Dorahacks",
+            "·Nhân viên nghiên cứu của tổ chức nghiên cứu hạt nhân châu Âu CERN （2013）"
           ]
         },
         {
           "name": "Archit Sharma",
-          "post": "Người phụ trách kĩ thuật công trình",
+          "post": "Trưởng nhóm kỹ thuật đồng thuận",
           "imgSrc": "as",
-          "intro": "Dịch vụ Yun và chuyên gia khai thác hệ thống dạng phân bố , mũ đỏ (Red Hat)。Nhân viên nghiên cứu , tổ chức nghiên cứu hạt nhân châu Âu CERN（2013）。Người cống hiến dự án nguồn mở quan trọng，Quán quân , Dorahacks tín đồ geek Marathon",
           "introList": [
-            "Dịch vụ Yun và chuyên gia khai thác hệ thống dạng phân bố , mũ đỏ (Red Hat)",
-            "Nhân viên nghiên cứu , tổ chức nghiên cứu hạt nhân châu Âu CERN（2013）",
-            "Người cống hiến dự án nguồn mở quan trọng",
-            "Quán quân , Dorahacks tín đồ geek Marathon",
-            "Á quân , CERN Webfest"
+            "Chuyên gia về điện toán và đám mây phân toán quy mô lớn tại Red Hat",
+            "Nhân viên nghiên cứu tại tổ chức nghiên cứu hạt nhân châu Âu CERN（2013）",
+            "Quán quân của Docker Hackathon",
+            "Giải nhì cuộc thi CERN Webfest năm 2013"         
           ]
         },
         {
-          "name": "Lưu Dương",
-          "post": "Người phụ trách mạng chính",
+          "name": "Yang Liu",
+          "post": "Trưởng nhóm mainnet ",
           "imgSrc": "liuyang",
           "introList": [
-            "Cử nhân , thạc sĩ đại học Thanh Hoa",
-            "10 năm kinh nghiệm khai thác và kết cấu hệ thống",
-            "Chuyên gia mật mã học và phép tính"
+            "·Cử nhân & Thạc sĩ Khoa học Máy tính đại học Tsinghua ",
+            "Hơn 10 năm kinh nghiệm trong phát triển và kết cấu hệ thống",
+            "·Chuyên gia về mã hóa và thuật toán "
           ]
         },
         {
-          "name": "Trương Hàn",
+          "name": "Han Zhang",
           "post": "Người phụ trách đội ngũ nghiên cứu",
           "imgSrc": "zhanghan",
           "intro": "Tiến sĩ ngành toán học đại học New South Wales Úc,Từng huấn luyện đội quốc gia toán học Olympic Úc,Nghiên cứu viên đội ngũ nghiên cứu máy tính tính năng cao học việc khoa học Trung Quốc,Có kinh nghiệm nghiên cứu thực tiễn và thực tiễn trong lĩnh vực cơ chế đồng thuận tầng dưới Blockchain , mật mã học , an toàn",
@@ -257,125 +265,114 @@
           ]
         },
         {
-          "name": "Trần Đại Hồng",
-          "post": "Người phụ trách sản phẩm",
+          "name": "Home Chen ",
+          "post": "Trưởng nhóm sản phẩm",
           "imgSrc": "dahong",
-          "intro": "Hơn 20 năm kinh nghiệm trong ngành mạng liên kết，Phòng kĩ thuật hàng đầu Yun lượng hóa Phòng kĩ thuật hàng đầu CaiHuoHuo",
           "introList": [
             "Hơn 20 năm kinh nghiệm trong ngành mạng liên kết",
-            "Phòng kĩ thuật hàng đầu Yun lượng hóa",
-            "Phòng kĩ thuật hàng đầu CaiHuoHuo"
+            "·Giám đốc công nghệ của QuantCloud",
+            "Giám đốc công nghệ của Caihuohuo "
           ]
         },
         {
-          "name": "Sái Chấn Xuyên",
-          "post": "Người phụ trách sản phẩm Front-end",
+          "name": "Felix Cai",
+          "post": "Trưởng nhóm kỹ thuật front-end ",
           "imgSrc": "zhenchuan",
-          "intro": "Tốt nghiệp tại lớp thiếu niên trường đại học giao thông Tây An ，Đứng thứ nhất trong cuộc thi Dorahacks khu tín đồ Geek năm 2017",
           "introList": [
-            "Tốt nghiệp tại lớp thiếu niên trường đại học giao thông Tây An ",
-            "Tín đồ Geek Front-end",
-            "Đứng thứ nhất trong cuộc thi Dorahacks khu tín đồ Geek năm 2017"
+            "·Lớp Thần đồng tại Đại học Xi’an Jiaotong ",
+            "·Hacker Front - end",
+            "·Quán quân DoraHacks Autumn@Xi An 2017"
           ]
         },
         {
-          "name": "Điền Minh",
-          "post": "Người phụ trách chỉnh hợp kĩ thuật",
+          "name": "Ice Ming",
+          "post": "Trưởng nhóm tích hợp kĩ thuật",
           "imgSrc": "tianming",
-          "intro": "Kĩ sư khai thác GolangGolang，Hơn 10 năm c/c++kinh nghiệm khai thác，Sản phẩm kho dữ liệu cập nhật liên tục và kinh nghiệm dự án sản phẩm hệ thống giao dịch tiền tệ kĩ thuật số，Đã từng khai thác đồng BitCoin và ví tiền Ethereum",
           "introList": [
-            "Kĩ sư khai thác GolangGolang",
-            "Hơn 10 năm c/c++kinh nghiệm khai thác",
-            "Sản phẩm kho dữ liệu cập nhật liên tục và kinh nghiệm dự án sản phẩm hệ thống giao dịch tiền tệ kĩ thuật số",
-            "Đã từng khai thác đồng BitCoin và ví tiền Ethereum"
+            ". Hơn 10 năm kinh nghiệm về phát triển c/c++",
+            ". Chuyên gia về các sản phẩm cơ sở dữ liệu thời gian thực và các sản phẩm nền tảng giao dịch tiền kỹ thuật số",
+            ". Tham gia phát triển ví Bitcoin và Ethereum"
           ]
         },
         {
-          "name": "Doãn Nghị ( pháp sư )",
-          "post": "Cố vấn an toàn",
+          "name": "Seay (Phù thủy)",
+          "post": "Điều phối viên an ninh mạng",
           "imgSrc": "fashi",
-          "intro": "Lãnh đạo phòng thực nghiệm tấn công và an toàn Alibaba，Tác giả của “ Thẩm tra mã code : kết cấu an toàn mã code mạng doanh nghiệp。Chủ nhân của Blog an toàn nổi tiếng cnseay.com",
           "introList": [
-            "Lãnh đạo phòng thực nghiệm tấn công và an toàn Alibaba",
-            "Tác giả của “ Thẩm tra mã code : kết cấu an toàn mã code mạng doanh nghiệp”",
-            "Chủ nhân của Blog an toàn nổi tiếng cnseay.com"
+            "·Trưởng nhóm phòng thí nghiệm tấn công và an ninh",
+            "·Tác giả của “Code Audit: Architecture of Enterprise Web Security",
+            "·Tác giả của Blog về an ninh mạng rất nổi tiếng cnseay.com"
           ]
         },
         {
           "name": "Samikshan Bairagya",
-          "post": "Nhà khai thác cao cấp",
+          "post": "Nhà phát triển đồng thuận",
           "imgSrc": "sb",
-          "intro": "Cử nhân khoa học máy tính học viện kĩ thuật quốc gia Durgapur，Kĩ sư phần mềm mũ đỏ(Red Hat) （2013-2018），Nhà khai thác /nhà tham dự dự án mùa hè biên trình của Google ",
           "introList": [
-            "Cử nhân khoa học máy tính học viện kĩ thuật quốc gia Durgapur",
-            "Nhà khai thác /nhà tham dự dự án mùa hè biên trình của Google ",
-            "Kĩ sư phần mềm mũ đỏ(Red Hat) （2013-2018）"
+            "·Cử nhân khoa học máy tính của Học viện Công nghệ Quốc gia của Durgapur",
+            "·Nhà phát triển/người tham gia Google Summer of Code (2012) ",
+            "·Kĩ sư phần mềm tại Red Hat（2013-2018）"
           ]
         },
         {
-          "name": "Trương Húc Bân",
-          "post": "Người phụ trách sản phẩm đồng thuận vàPoW",
+          "name": "Robin Zhang",
+          "post": "Trưởng nhóm sản phẩm đồng thuận và PoW",
           "imgSrc": "xubin",
-          "intro": "Cử nhân , thạc sĩ đại học Thanh Hoa，ó 18 năm kinh nghiệm làm việc , đã từng đảm nhận chức vụ tại Silicon Valley nước Mỹ，Thạc sĩ công trình điện tử đại học SUNY nước Mỹ",
           "introList": [
-            "Cử nhân , thạc sĩ đại học Thanh Hoa",
-            "Thạc sĩ công trình điện tử đại học SUNY nước Mỹ ",
-            "Chuyên gia thông tin mạng",
-            "Có 18 năm kinh nghiệm làm việc , đã từng đảm nhận chức vụ tại Silicon Valley nước Mỹ"
+            "·Cử nhân & Thạc sĩ Đại học Tsinghua",
+            "·Thạc sĩ tại SUNY, Buffalo (Mỹ) ",
+            "·Chuyên gia truyền thông mạng",
+            "Hơn 18 năm kinh nghiệm làm việc tại Silicon Valley và Trung Quốc"
           ]
         },
         {
-          "name": "Đường Bân Kì",
-          "post": "Nhà khai thác cao cấp",
+          "name": "Binqi Tang",
+          "post": "Nhà phát triển cấp cao",
           "imgSrc": "binqi",
           "introList": [
-            "Hơn 10 năm kinh nghiệm khai thác hệ thống và kết cấu khung",
-            "Giám đốc bộ khai thác điện tử Đồng Châu Thâm Quyến",
-            "Nhà kết cấu khung hệ thống Jwinlink Hồ Nam ",
-            "Nhà kết cấu chuyên gia kĩ thuật 58 DaoJia ",
-            "Chuyên gia kết cấu hệ thống mạng liên kết và vận hành kinh doanh "
+            "·Hơn 10 năm kinh nghiệm về thiết kế và phát triển hệ thống",
+            "·Cựu giám đốc bộ phận phát triển của công ty điện tử Shenzhen Coship, đồng thời là Kiến trúc sư của Jwinlink",
+            "·Chuyên gia kỹ thuật của 58 home ",
+            "·Chuyên gia về phân tích dữ liệu kiến trúc lớn trên nền tảng khuôn khổ Internet, kế hoạch triển khai sản phẩm và điều hành"
           ]
         }
       ]
     },
     "business": {
-      "title": "Khu phát triển và vận hành kinh doanh ",
+      "title": "Cộng đồng và sự phát triển doanh nghiệp ",
       "list": [
         {
-          "name": "Trình Tiểu Vĩnh",
-          "post": "Giám đốc sách lược hàng đầu",
+          "name": "James Cheng",
+          "post": "Trưởng phòng phát triển chiến lược",
           "imgSrc": "xiaoyong",
-          "intro": "Đại học Thanh Hoa kiêm việc nghiên cứu , người liên tục sáng nghiệp，Thành viên lãnh tụ thanh niên câu lạc bộ Trường An",
           "introList": [
-            "Đại học Thanh Hoa kiêm việc nghiên cứu , người liên tục sáng nghiệp",
-            "Chấp hành lí sự liên minh chiến lược sáng tạo ngành hệ thống Yun Trung Quốc ",
-            "Thành viên lãnh tụ thanh niên câu lạc bộ Trường An"
+            "·Nhân viên nghiên cứu bán thời gian tại Đại học Tsinghua, và là một Doanh nhân nối tiếp",
+            "·Ban chấp hành hệ thống điện toán đám mây Trung Quốc",
+            "·Thành viên của Youth Lead tại Changan Club"
           ]
         },
         {
-          "name": "Lân Đại Lượng",
-          "post": "Giám đốc phát triển hàng đầu ",
+          "name": "Lary Lin",
+          "post": "Trưởng phòng kinh doanh ",
           "imgSrc": "daliang",
-          "intro": "Chuyên gia vận hành kinh doanh mạng liên kết tiêu thụ và xã hộiPhụ trách vận hành BaiDu BaiKe，Có 10 năm kinh nghiệm ngành nghề quảng cáo kĩ thuật số và mạng liên kết",
           "introList": [
-            "Chuyên gia vận hành kinh doanh mạng liên kết tiêu thụ và xã hội",
-            "Phụ trách vận hành BaiDu BaiKe",
-            "Có 10 năm kinh nghiệm ngành nghề quảng cáo kĩ thuật số và mạng liên kết"
+            "·Chuyên gia hoạt động cộng đồng Internet marketing",
+            "·Hoạt động tại bách khoa toàn thư Baidu",
+            "·Hơn 10 năm kinh nghiệm trong quảng cáo kỹ thuật số và ngành công nghiệp internet"
           ]
         },
         {
-          "name": "Hillary Nguyen",
+          "name": "Hillary Nguyen",
           "post": "Đối tác tại Việt Nam của TrueChain",
           "imgSrc": "hillarynguyen",
-          "intro": "阿尔法鲸资本管理合伙人，区块链、数字资产管理战略家、顾问、社区代言人。Hillary Nguyen拥有出色的管理才能，在区块链4.0时代为新兴项目提供有效的管理方案。",
           "introList": [
             "Giám đốc điều hành tại AlphaWhale Capital.",
-            "Tư vấn chiến lược, đầu tư, quan hệ hợp tác, cố vấn, là diễn giả có tầm ảnh hưởng với cộng đồng Blockchain, quản lý tài sản kỹ thuật số. ",
+            "Tư vấn chiến lược, đầu tư, quan hệ hợp tác, cố vấn, là diễn giả có tầm ảnh hưởng với cộng đồng Blockchain, quản lý tài sản kỹ thuật số. ",
             " Với nhiều kinh nghiệm trong đa lĩnh vực, Hillary giải quyết những bài toán về cơ cấu và xây dựng nền tảng doanh nghiệp một cách hiệu quả trong cuộc cách mạng công nghệ 4.0 ."
           ]
         },
         {
-          "name": "Paulas Pham",
+          "name": "Paulus Pham",
           "post": "Quản lý cộng đồng TrueChain tại Việt Nam",
           "imgSrc": "paulaspham",
           "intro": "区块链社区管理专业人士、BitGreen Candles社区经理，Victory Investment Capital社区经理。Vietnam Crypto Community社区经理。",
@@ -385,25 +382,23 @@
           ]
         },        
         {
-          "name": "Lưu Diệm",
-          "post": "Nhà hiệp điều hội",
+          "name": "Yan Liu ",
+          "post": "Điều phối viên cộng đồng",
           "imgSrc": "liuyan",
-          "intro": "Hơn 10 năm kinh nghiệm vận hành kinh doanh sản phẩm mạng kết nối，Chuyên gia vận hành kinh doanh hệ thống mạng liên kết",
           "introList": [
-            "Hơn 10 năm kinh nghiệm vận hành kinh doanh sản phẩm mạng kết nối",
-            "Tư vấn cao cấp khu vực ADP Trung Quốc",
-            "Chuyên gia vận hành kinh doanh hệ thống mạng liên kết "
+            "Hơn 10 năm kinh nghiệm trong hoạt động sản phẩm internet",
+            "Cố vấn cấp cao của ADP",
+            "Chuyên gia hoạt động của nền tảng công nghệ ô tô "
           ]
         },
         {
-          "name": "Diêm Văn",
-          "post": "Nhà hiệp điều thị trường",
+          "name": "Wen Yan",
+          "post": "Điều phối viên marketing",
           "imgSrc": "yanwen",
-          "intro": "Tốt nghiệp tại học viện truyền thông chi nhánh trường Colombia đại học Missouri nước Mỹ，Đã từng làm việc tại phân xã Bankrate.com Washington",
           "introList": [
-            "Tốt nghiệp tại học viện truyền thông chi nhánh trường Colombia đại học Missouri nước Mỹ",
-            "Đã từng làm việc tại phân xã Bankrate.com Washington",
-            "Từng đảm nhiệm phóng viên tài chính kinh tế XinLang"
+            "Tốt nghiệp Trường Báo chí, Đại học Missouri - Columbia",
+            "Phóng viên tại Bankrate.com ở Washington. D.C",
+            "Phóng viên kinh doanh tại Sina Finance"
           ]
         }
       ]
@@ -412,62 +407,61 @@
       "title": "Cố vấn ",
       "list": [
         {
-          "name": "Thẩm Ngụ Thực ",
-          "intro": "Cử nhân công trình điện tử đại học Thanh Hoa ，Thạc sĩ và tiến sĩ máy tính điện tử chi nhánh trường San Diego đại học California nước Mỹ Nghiên cứu viên nhiều trường đại học cao đẳng như đại học Thanh Hoa ，Cố vấn chiến lược công ty Microsoft",
+          "name": "Yushi Shen ",
           "introList": [
-            "Cử nhân công trình điện tử đại học Thanh Hoa ",
-            "Thạc sĩ và tiến sĩ máy tính điện tử chi nhánh trường San Diego đại học California nước Mỹ  ",
-            "Chuyên gia đánh giá kế hoạch ngàn người quốc gia ",
-            "Nghiên cứu viên nhiều trường đại học cao đẳng như đại học Thanh Hoa ",
-            "Cố vấn chiến lược công ty Microsoft "
+            "Tổng thư ký của Liên minh chiến lược tiên phong về hệ thống đám mây Trung Quốc ",
+            "Thạc sỹ Kỹ sư điện tử Đại học Tsinghua",
+            "Thạc sỹ & Tiến sỹ khoa học máy tính Đại học California, San Diego ",
+            "Tham luận viên cho "Kế hoạch Ngàn tài năng" của Trung Quốc ",
+            "Nhà nghiên cứu của Tsinghua và các trường đại học uy tín khác ",
+            "Người tư vấn chiến lược cho Microsoft"
+
+
           ]
         },
         {
-          "name": "Ngụy Tiên Hoa",
-          "intro": "Phó chủ nhiệm trung tâm nghiên cứu kinh tế ảo viện khoa học Trung Quốc và khoa học dữ liệu , giáo viên hướng dẫn tiễn sĩ giáo sư viện khoa học Trung Quốc",
+          "name": "Xianhua Wei",
           "introList": [
-            "Chủ nhiệm chấp hành phòng thực nghiệm liên hợp quản lí rủi ro tiết lộ tài chính viện khoa học Trung Quốc",
-            "Phó chủ nhiệm trung tâm nghiên cứu kinh tế ảo viện khoa học Trung Quốc và khoa học dữ liệu , giáo viên hướng dẫn tiễn sĩ giáo sư viện khoa học Trung Quốc "
+            "Giáo sư & Tiến sĩ của Học viện Khoa học Trung Quốc",
+            "Phó giám đốc của Trung tâm nghiên cứu kinh tế ảo và khoa học dữ liệu của Học viện Khoa học Trung Quốc ",
+            "Giám đốc điều hành của phòng thí nghiệm quản lý rủi ro tài chính CAS - Reuters"
+
           ]
         },
         {
-          "name": "Jimmy·Cooper",
-          "intro": "Chuyên gia pháp luật quyền tài sản trí tuệ toàn cầu，Giáo sư học viện luật phía tây California，Đại diện nước Mỹ tổ chức quyền tài sản trí tuệ thế giới ",
+          "name": "James Cooper",
           "introList": [
-            "Chuyên gia pháp luật quyền tài sản trí tuệ toàn cầu",
-            "Giáo sư học viện luật phía tây California ",
-            "chủ tịch dự án quĩ proyecto ACCESO",
-            "Cố vấn quốc vụ viện nước Mỹ , ngân hàng khai thác nước Mỹ , bản quyền nước Mỹ và cục thương hiệu",
-            "Đại diện nước Mỹ tổ chức quyền tài sản trí tuệ thế giới  "
+            "Chuyên gia pháp lý về sở hữu trí tuệ toàn cầu",
+            "Giáo sư Trường Luật Tây California ",
+            "Chủ tịch dự án ACCESO Foundation proyecto",
+            "Tư vấn viên của Bộ Ngoại giao Hoa Kỳ, Ngân hàng phát triển Mỹ, Văn phòng sáng chế và nhãn hiệu Hoa Kỳ"
           ]
         },
         {
-          "name": "Chu Cảnh Long",
+          "name": "Jinglong Zhou",
           "intro": "Người tiền hợp tác hội Trường Thành",
           "introList": [
-            "Người tiền hợp tác hội Trường Thành",
-            "Có nguồn tài nguyên ngành mạng liên kết trong phạm vi thế giới với chính phủ"
+            "Cựu đối tác của GWC",
+            "Có các mối quan hệ và tài nguyên rộng lớn về internet và các chính phủ trên toàn thế giới"
           ]
         },
         {
-          "name": "Trâu Quân",
-          "intro": "Tác giả của cuốn sách bán cực chạy “chỉ nam Blockchain”，Chuyên gia liên minh ngành Blockchain Zhongguancun， Đã phát biểu hơn 200 bài luận văn trên hội nghị quốc tế IEEE，Luận văn có liên quan đến Blockchain đã được nhận IEEE ICWS vào năm 2016",
+          "name": "Jun Zou",
           "introList": [
-            "Tác giả của cuốn sách bán cực chạy “chỉ nam Blockchain”",
-            "Chuyên gia liên minh ngành Blockchain Zhongguancun",
-            "Kĩ sư phần mềm hàng đầu ngành nghề tài chính IBM Úc",
-            "Đã phát biểu hơn 200 bài luận văn trên hội nghị quốc tế IEEE",
-            "Luận văn có liên quan đến Blockchain đã được nhận IEEE ICWS vào năm 2016"
+            "“Tác giả của “Block chain technology guide”",
+            "Chuyên gia của khối liên minh công nghiệp blockchain Zhonguancun",
+            "Cựu giám đốc kiến trúc phần mềm trong ngành công nghiệp tài chính của IBM tại Úc",
+            "Xuất bản hơn 200 bài báo trong hội thảo quốc tế về IEEE",
+            "Được nhận giải thưởng IEEE ICWS vào năm 2016"
           ]
         },
         {
-          "name": "Châu Vũ ",
-          "intro": "Viện trưởng viện nghiên cứu Blockchain và bán lẻ TrueChain mới，Nhà phụ trách thứ nhất bộ phận （o2o） bán lẻ mới tập đoàn Alibaba。Chuyên gia nghiệp vụ thúc đẩy hoàn toàn chữ số hóa , giao tiếp toàn ngạch , kinh doanh tiêu thụ chữ số  ",
+          "name": "Yu Zhu ",
           "introList": [
-            "Viện trưởng viện nghiên cứu Blockchain và bán lẻ TrueChain mới ",
-            "Nhà phụ trách thứ nhất bộ phận （o2o） bán lẻ mới tập đoàn Alibaba ",
-            "Phó trọng tài thương mại sản phẩm hàng đầu ",
-            "Chuyên gia nghiệp vụ thúc đẩy hoàn toàn chữ số hóa , giao tiếp toàn ngạch , kinh doanh tiêu thụ chữ số  "
+            "Người đứng đầu Viện Nghiên cứu blockchain và bán lẻ mới ",
+            "Người đứng đầu bộ phận bán lẻ mới (o2o) của Alibaba Group ",
+            "Cựu phó chủ tịch Shopin Enterprise vào năm 2015",
+            "Hoàn thành số hóa, kênhvtruyền thông đầy đủ và chuyên gia kinh doanh digital marketing "
           ]
         }
       ]
@@ -475,14 +469,14 @@
   },
   "join": {
     "head": {
-      "title": "Hãy tham gia cùng chúng tôi",
+      "title": "初链-招聘官网",
       "keyword": "初链，TRUE，招聘官网，区块链，区块链人才，数字货币",
       "description": "初链招聘期待更多区块链人才加入我们。"
     },
-    "title": "Gia nhập chúng tôi",
+    "title": "Hãy tham gia cùng chúng tôi",
     "intro": "Rất hoan nghênh những người có óc sáng tạo, niềm đam mê và sự chân thành tham gia với chúng tôi!",
-    "p1": "Kể từ ngày đầu tiên gia nhập , bạn đã bắt đầu quá trình vừa làm vừa huấn luyện .Bạn sẽ phát hiện kinh nghiệm chuyên nghiệp mà chúng tôi tích lũy có lợi cho bạn rất nhiều .Gia nhập chúng tôi bạn sẽ được liệt vào chức vụ nhân viên của công ty để phát triển kế hoạch huấn luyện .",
-    "p2": "Huấn luyện không chỉ giúp không ngừng nâng cao và nhu cầu phát triển đối với tố chất và tiềm năng mỗi nhân viên , cũng làmột trong những tiêu chí quan trọng thúc đẩy công ty đạt được thành công lớn hơn .Chúng tôi có thể rất tự tin mà nói , thông qua học tập làm việc ở đây , bạn sẽ có cơ hội trở thành chuyên gia ngành nghề .",
+    "p1": "Khi bạn tham gia cùng chúng tôi, bạn sẽ được hướng dẫn trong quá trình làm việc. Bạn sẽ có cơ hội học hỏi từ những kinh nghiệm chuyên nghiệp của chúng tôi. Hãy tham gia vào chương trình đào tạo phát triển nghề nghiệp của nhân viên TrueChain.",
+    "p2": "Việc tập huấn không chỉ giúp nâng cao và cải thiện chất lượng lẫn tiềm năng của mỗi nhân viên, đây cũng là một quá trình quan trọng để công ty đạt được thành công của mình.",
     "button": "Ngay lập tức tham gia",
     "duty": "Chức vụ và trách nhiệm công việc ",
     "require": "Yêu cầu chức vụ ",
@@ -494,17 +488,17 @@
       {
         "path": "jd/0",
         "icon": "icon font_family icon-kaifa",
-        "job": "Kĩ sư phát triển ngôn ngữ lập trình Go"
+        "job": "Kĩ sư khai thác ngôn ngữ Go"
       },
       {
         "path": "jd/1",
         "icon": "icon font_family icon-suanfa",
-        "job": "Kỹ sư thuật toán Go "
+        "job": "Kĩ sư công trình phép tính ngôn ngữ Go "
       },
       {
         "path": "jd/2",
         "icon": "icon font_family icon-touzi",
-        "job": "Giám đốc đối ngoại"
+        "job": "Tổng giám sát mối quan hệ nhà đầu tư"
       },
       {
         "path": "jd/3",
@@ -529,52 +523,51 @@
     ],
     "jobs": [
       {
-        "title": "Kĩ sư phát triển ngôn ngữ lập trình Go",
+        "title": "Kĩ sư khai thác ngôn ngữ Go",
         "duty": [
-          "Sử dụng ngôn ngữ lập trình Go để thiết kế và phát triển sản phẩm TrueChain.",
-          "Tham gia thiết kế kiến trúc phần mềm của nền tảng blockchain, nghiên cứu các công nghệ chủ chốt của cơ sở hạ tầng blockchain.",
-          "Chịu trách nhiệm phát triển liên quan đến lớp lõi blockchain (giao dịch, tin nhắn, máy ảo EVM).",
-          "Hợp tác chặt chẽ với đội ngũ sản phẩm/thiết kế/phát triển front-end, hoàn thành các công việc phát triển blockchain đúng thời hạn.",
-          "Các công việc khác do Trưởng phòng cấp cao sắp xếp"
+          "Sử dụng thiết kế ngôn ngữ Go và khai thác sản phẩm của Blockchain TrueChain",
+          "Tham gia thiết kế kết cấu khung phần mềm của hệ thống Blockchain , nghiên cứu kĩ thuật quan trọng của cơ sở hạ tầng Blockchain .",
+          "Phụ trách khai thác tầng hạt nhân Blockchain có liên quan ( giao dịch , thông tin , máy ảo EVM)",
+          "Có quan hệ hợp tác thân thiết với sản phẩm / thiết kế / khai thác hàng đầu / đội ngũ kiểm tra , bảo đảm chất lượng giao phó nhiệm vụ khai thác Blockchain theo đúng thời gian qui định ;",
+          "Công việc khác do lãnh đạo cấp trên sắp xếp "
         ],
         "require": [
-          "Có hơn 2 năm kinh nghiệm trong phát triển dự án;",
-          "Thành thạo ngôn ngữ lập trình golang và multireading (công nghệ đa luồng);",
-          "Ưu tiên người có kinh nghiệm trong thiết kế phát triển hệ thống bộ nhớ dung lượng và kết nối cao;",
-          "Có khả năng lập trình máy tính vững chắc, đặc biệt là thành thạo trong cấu trúc dữ liệu, thuật toán và mã hóa, thiết kế phần mềm;"
+          "Có trên 2 năm kinh nghiệm khai thác dự án;",
+          "Thành thạo biên trình ngôn ngữ golang , nắm vững đa tuyến trình ;",
+          "Ưu tiên người có kinh nghiệm thiết kế khai thác hệ thống nhớ dung lượng cao và phục vụ số lượng lớn kết nối đồng thời ( High concurrency ) ;",
+          "Có năng lực biên trình máy tính vững chắc , đặc biệt là năng lực phương diện kết cấu số liệu , phép tính , mã code , thiết kế phần mềm ;"
         ]
       },
       {
-        "title": "Kỹ sư thuật toán Go ",
+        "title": "Kĩ sư công trình phép tính ngôn ngữ Go ",
         "duty": [
-          "Sử dụng ngôn ngữ lập trình Go để thiết kế và phát triển sản phẩm TrueChain. ",
-          "Tham gia thiết kế kiến trúc phần mềm của nền tảng blockchain, nghiên cứu các công nghệ chủ chốt của cơ sở hạ tầng blockchain. ",
-          "Chịu trách nhiệm phát triển liên quan đến lớp lõi blockchain (giao dịch, tin nhắn, máy ảo EVM)",
-          "Hợp tác chặt chẽ với đội ngũ sản phẩm/thiết kế/phát triển front-end, hoàn thành các công việc phát triển blockchain đúng thời hạn. ",
-          "Các công việc khác do Trưởng phòng cấp cao sắp xếp"
+          "Sử dụng thiết kế ngôn ngữ Go và khai thác sản phẩm của Blockchain TrueChain ",
+          "Tham gia thiết kế kết cấu khung phần mềm của hệ thống Blockchain , nghiên cứu kĩ thuật quan trọng của cơ sở hạ tầng Blockchain . ",
+          "Phụ trách khai thác tầng hạt nhân Blockchain có liên quan (phép tính đồng thuận). ",
+          "Có quan hệ hợp tác thân thiết với sản phẩm / thiết kế / khai thác hàng đầu / đội ngũ kiểm tra , bảo đảm chất lượng giao phó nhiệm vụ khai thác Blockchain theo đúng thời gian qui định ; ",
+          "Công việc khác do lãnh đạo cấp trên sắp xếp "
         ],
         "require": [
-          "Có hơn 2 năm kinh nghiệm trong phát triển dự án;",
-          "Thành thạo ngôn ngữ lập trình golang và multireading (công nghệ đa luồng);",
-          "Ưu tiên người có kinh nghiệm trong thiết kế phát triển hệ thống nhớ dung lượng và kết nối cao;",
-          "Có khả năng lập trình máy tính vững chắc, đặc biệt là thành thạo trong cấu trúc dữ liệu, thuật toán và mã hóa, thiết kế phần mềm;",
-          "Ưu tiên người thành thạo phát triển fabric hoặc Ethereum."
+          "Có trên 2 năm kinh nghiệm khai thác dự án;",
+          "Thành thạo biên trình ngôn ngữ golang , nắm vững đa tuyến trình ;",
+          "Ưu tiên người có kinh nghiệm thiết kế khai thác hệ thống nhớ dung lượng cao và phục vụ số lượng lớn kết nối đồng thời ( High concurrency ) ;",
+          "Có năng lực biên trình máy tính vững chắc , đặc biệt là năng lực phương diện kết cấu số liệu , phép tính , mã code , thiết kế phần mềm ;",
+          "Ưu tiên người thành thạo khai thác fabric hoặc Ethereum."
         ]
       },
       {
-        "title": "Giám đốc đối ngoại",
-        "workCity": "Trung Quốc, Mỹ",
-        "requireNum": "2 người (trong đó có 1 người từ Mỹ, yêu cầu thông thạo nói và viết tiếng Anh)",
+        "title": "Tổng giám sát mối quan hệ nhà đầu tư",
+        "workCity": "Trung Quốc ,Mỹ",
+        "requireNum": "2 người( trong đó 1 người base tại nước Mỹ , yêu cầu viết nói tiếng Anh thành thạo)",
         "duty": [
           "Phụ trách duy trì mối quan hệ với nhà đầu tư cơ cấu , định hướng đặt nền tảng biểu diễn lưu động và đàm phán hợp tác về Blockchain tại khu vực chủ lưu của Trung Quốc và Mỹ ."
         ],
         "require": [
-          "Có kinh nghiệm trong lĩnh vực đầu tư blockchain, có thể chuẩn bị các tài liệu liên quan và các đề xuất đầu tư.",
-          "Có kinh nghiệm liên quan đến tài chính, phân tích cơ bản; hoặc gây quỹ công ty và gây quỹ tư nhân; hoặc ngành công nghiệp FinTech. ",
-          "Có tính linh hoạt và chính trực; táo bạo trong tư duy và hành động; có thể nhanh chóng tìm hiểu kiến thức cơ bản và cấu trúc thị trường của blockchain.",
-          "Tác phong cá nhân chuyên nghiệp"
+          "Thành thạo lĩnh vực đầu tư Blockchain , có thể làm thư kiến nghị đầu tư và tài liệu có liên quan .",
+          "Bối cảnh tài chính có liên quan ,xuất thân từ FA hoặc xuất thân từ vận động công ty lên sàn chứng khoán và vận động quĩ, ưu tiên người có bối cảnh ngành nghề khoa học kĩ thuật tài chính .",
+          "Linh hoạt nhạy bén cương trực , dám nghĩ dám làm , có thể nhanh chóng học tập kiến thức cơ sở Blockchain và cục bộ thị trường ."
         ],
-        "salary": "Mức lương: Mức lương cơ bản khoảng 30.000 + hoa hồng ( tuỳ thuộc vào khối lượng vốn gây quỹ, thời gian nắm giữ, tiềm năng của quỹ, v.v.)"
+        "salary": "lương cố định + hoa hồng (móc nối các chỉ tiêu về quy mô vận động , thời gian đặc biệt , mức độ nổi tiếng của quĩ v…v…)"
       },
       {
         "title": "Chủ quản tuyển nhân viên",
@@ -649,7 +642,7 @@
   },
   "node": {
     "head": {
-      "title": " Announcement| TrueChain priority nodes election releases result ",
+      "title": "Cuộc vận động ưu tiên",
       "text1":"TrueChain’s priority nodes election lasted for 3 months since it started in the mid-May, now the election ends. In accordance with the arrangements previously published by TrueChain, the application page of priority node closed on August 16.",
       "text2":"By the midnight of August 16, nearly one thousand users from TrueChain’s global community participated and reached the qualification of priority nodes election. Among which are 455 priority standard nodes with 439 individual and 2 teams participated; 340 priority master nodes with 43 individual and 17 teams participated.",
       "text3":"According to the priority nodes election incentive rules,",
@@ -665,18 +658,18 @@
     "result": "Kết quả",
     "notPass": "(Failed)",
     "title": "Danh sách đăng kí theo giờ cụ thể",
-    "StandardSum": "Danh sách đăng ký trở thành Standard Node",
-    "nodeFullSum": "Danh sách đăng ký trở thành Master Node",
+    "StandardSum": "Danh sách đăng kí theo giờ cố định",
+    "nodeFullSum": "Đã đăng ký vận động viên",
     "sumNum": "Khoảng",
     "personalCampaign": "Chiến dịch cá nhân",
     "teamCampaign": "Nhóm chiến dịch",
     "timeDownCampaign": "Bỏ phiếu đếm ngược",
-    "nodeRank": "Priority Nodes Result",
+    "nodeRank": "Bỏ phiếu danh sách",
     "nodeStandard": "Nút tiêu chuẩn",
     "nodeFull": "Tất cả các nút",
     "tableRank": "Xếp hạng",
     "tableNickname": "Biệt danh",
-    "tableTime": "Thời gian đăng ký",
+    "tableTime": "Thời gian",
     "tableScore": "Điểm số",
     "tableTickets": "Cuộc thăm dò",
     "team": "nhóm",
