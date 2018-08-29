@@ -38,10 +38,10 @@
     "head": {
       "title": "Next generation hybrid consensus public chain",
       "keyword": "True，TrueChain，Eric zhang，blockchain, hybrid consensus, Xiaoyong Cheng, Larry Lin",
-      "description": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW. It solves the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency. "
+      "description": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW. It solves the biggest problem confronting permissionless blockchain: the contradiction between decentralization and efficiency. "
     },
     "slogan": "Truly Fast, Permissionless, Secure and Scalable",
-    "slogan1": "PBFT-fPoW hybrid consensus public blockchain with global developer community",
+    "slogan1": "PBFT-fPoW hybrid consensus permissionless blockchain with global developer community",
     "white": "WHITE PAPER",
     "whiteLink": "https://www.truechain.pro/Truechain_en.pdf",
     "yellow": "YELLOW PAPER",
@@ -60,13 +60,13 @@
     "superiority": [
       {
         "icon": "icon font_family icon-jiejue",
-        "title": "Tackles the Obstacles of Public Blockchain",
-        "detail":"The conflict between  efficiency and decentralization for public blockchain is solved by TrueChain with its permissionless PBFT-fPoW hybrid consensus with secure sharding."
+        "title": "Tackles the Obstacles of permissionless blockchain",
+        "detail":"The conflict between  efficiency and decentralization for permissionless blockchain is solved by TrueChain with its permissionless PBFT-fPoW hybrid consensus with secure sharding."
       },
       {
         "icon": "icon font_family icon-tianchengzuo",
         "title": "Ensures  Decentralization and Fairness",
-        "detail":"Using Fruitchain as Snailchain to replace Nakamoto PoW with fPoW, TrueChain ensures  decentralization and fairness for the new generation of public blockchain."
+        "detail":"Using Fruitchain as Snailchain to replace Nakamoto PoW with fPoW, TrueChain ensures  decentralization and fairness for the new generation of permissionless blockchain."
       },
       {
         "icon": "icon font_family icon-gongshijizhi",
@@ -76,24 +76,24 @@
       {
         "icon": "icon font_family icon-jizhi",
         "title": "Stable and Low Gas Fee Mechanism",
-        "detail":"Zero gas fee is impossible for public blockchain, nonetheless, TrueChain designs a stable and relatively low gas fee mechanism for more DApps to be built on it."
+        "detail":"Zero gas fee is impossible for permissionless blockchain, nonetheless, TrueChain designs a stable and relatively low gas fee mechanism for more DApps to be built on it."
       },
       {
         "icon": "icon font_family icon-shequ",
         "title": "Strong Global Developer Community",
-        "detail":"Among the new generation of public blockchains, TrueChain has a developer community that is the largest in China and the fastest growing in the world."
+        "detail":"Among the new generation of permissionless blockchain, TrueChain has a developer community that is the largest in China and the fastest growing in the world."
       },
       {
         "icon": "icon font_family icon-chanpin",
         "title": "Open Sourced Grid of Products",
-        "detail":"TrueChain brings a grid of products that support the hybrid consensus public blockchain platform and makes the chain easy to use, and they are open source!"
+        "detail":"TrueChain brings a grid of products that support the hybrid consensus permissionless blockchain platform and makes the chain easy to use, and they are open source!"
       }
     ],
     "about": {
       "title": "ABOUT",
-      "subhead": "TrueChain is a truly fast, permissionless, secure and scalable public blockchain platform which is supported by hybrid consensus technology called Minerva and a global developer community. ",
+      "subhead": "TrueChain is a truly fast, permissionless, secure and scalable permissionless blockchain platform which is supported by hybrid consensus technology called Minerva and a global developer community. ",
       "contentList": [
-        "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus called Minerva combining PBFT and fPoW to solve the biggest problem confronting public blockchain: the contradiction between decentralization and efficiency.",
+        "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus called Minerva combining PBFT and fPoW to solve the biggest problem confronting permissionless blockchain: the contradiction between decentralization and efficiency.",
         "It uses PBFT as fast-chain to process transactions, and leave the oversight and election of PBFT to the hands of  PoW nodes. Besides, TrueChain integrates fruitchain technology into the traditional PoW protocol  i.e. fPoW, as the snailchain, to make the chain even more decentralized and fair. TrueChain also added sharding on top of PBFT to lift the limit of scalability. ",
         "With solid and leading technology, TrueChain aims to provide a workable and well-governed blockchain platform for decentralized economy. It comes up with the first hybrid consensus incentive model to use economic awareness as a drive to uphold and improve the chain. Meanwhile, it also creates a stable gas fee mechanism to lower the cost for the developers and operators of DApps, and to make the blockchain more public. ",
         "As a platform, TrueChain builds an all-inclusive community to attract the worldwide developers and entrepreneurs to be part of it, to join the decentralized economy revolution. Not only TrueChain has a global developer community, it also has a  grid of products that are handy for the developers, and they are open sourced which allows them to be more user oriented. ",
