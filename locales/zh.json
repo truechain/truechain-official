@@ -61,12 +61,12 @@
       {
         "icon": "icon font_family icon-jiejue",
         "title": "解决公链最显著的问题",
-        "detail":"初链利用基于 PBFT-fPoW混合共识机制和安全的分片机制解决了目前公链面临的最大的问题：性能和去中心化之间的矛盾"
+        "detail":"初链利用基于 PBFT-fPoW混合共识机制和安全的分片机制解决了目前公链(无需许可链)面临的最大的问题：性能和去中心化之间的矛盾"
       },
       {
         "icon": "icon font_family icon-tianchengzuo",
         "title": "确保去中心化和公平性",
-        "detail":"用水果链作为慢链，用fPoW取代中本聪的PoW协议, 初链可确保作为新一代公链的去中心化和公平性"
+        "detail":"用水果链作为慢链，用fPoW取代中本聪的PoW协议, 初链可确保作为新一代公链(无需许可链)的去中心化和公平性"
       },
       {
         "icon": "icon font_family icon-gongshijizhi",
@@ -76,7 +76,7 @@
       {
         "icon": "icon font_family icon-jizhi",
         "title": "稳定、低成本的燃料费机制",
-        "detail":"实现零燃料费对于任何一个公链来说都是不可能的，尽管如此，初链可提供稳定、低成本的燃料费而让更多DApps实现上链"
+        "detail":"实现零燃料费对于任何一个公链(无需许可链)来说都是不可能的，尽管如此，初链可提供稳定、低成本的燃料费而让更多DApps实现上链"
       },
       {
         "icon": "icon font_family icon-shequ",
@@ -91,7 +91,7 @@
     ],
     "about": {
       "title": "关于",
-      "subhead": "初链是真正快速、安全、不受限、可扩容的Minerva混合共识公链，并拥有强大的全球开发者社区。",
+      "subhead": "初链是真正快速、安全、不受限、可扩容的Minerva混合共识公链(无需许可链)，并拥有强大的全球开发者社区。",
       "contentList": [
         "初链基于Minerva混合共识机制，结合了PBFT 和 fPoW ，解决了公链领域面临的最大问题：去中心化和性能之间的矛盾。",
         "初链利用PBFT作为快速链实现交易的快速处理，PoW负责PBFT委员会监管和选举，而将水果链技术融合到传统的PoW协议中，成为fPow，使普通用户有机会参与到挖矿中来，实现更加去中心化和公平化。同时，初链在PBFT之上增加了分片机制，突破了扩容性方面的限制。",
