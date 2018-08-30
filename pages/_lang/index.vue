@@ -276,6 +276,8 @@ export default {
       flex-direction column
       justify-content center
       padding-bottom 90px
+      padding-left 20px
+      padding-right 20px
       div
         span
           color white
