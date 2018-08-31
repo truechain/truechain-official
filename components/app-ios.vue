@@ -15,7 +15,8 @@
 </template>
 
 <script>
-const url = 'http://wapxk.com/wapindex-1000-6635.html'
+// const url = 'http://wapxk.com/wapindex-1000-6635.html'
+const url = 'http://wapxk.com/wapindex-1000-6879.html'
 
 export default {
   name: 'app-ios',
