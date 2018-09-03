@@ -224,7 +224,7 @@
         },
         {
           "name": "Archit Sharma",
-          "post": "工程技术负责人",
+          "post": "共识工程负责人",
           "imgSrc": "as",
           "intro": "初链工程技术负责人，分布式系统、操作系统和性能工程方面的专家。曾在Linux全球最大的服务商之一Red Hat（红帽）和欧洲核子研究组织CERN工作，从事大规模云服务和分布式系统设计和开发。Archit是几个重要的开源项目的贡献者，还是很多届Hackathon比赛冠军。",
           "introList": [
@@ -237,7 +237,7 @@
         },
         {
           "name": "刘洋",
-          "post": "主网负责人",
+          "post": "工程负责人",
           "imgSrc": "liuyang",
           "introList": [
             "清华大学学士、硕士",
