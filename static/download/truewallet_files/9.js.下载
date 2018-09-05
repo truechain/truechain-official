@@ -1,0 +1,74 @@
+function goDown(item,event){
+
+if(event.target.tagName != "A"){
+var url = $(item).find(".urlAdd").text();
+    location.href = url;
+}
+    
+}
+
+//游戏分类 收起  展开
+$(function(){
+ var slideHeight = 170; // px
+ var defHeight = $('#wrap').height();
+ if(defHeight >= slideHeight){
+  $('#wrap').css('height' , slideHeight + 'px');
+  $('#read-more').append('<a href="#" style=" color: #378f12;">+展开全部内容</a>');
+  $('#read-more a').click(function(){
+   var curHeight = $('#wrap').height();
+   if(curHeight == slideHeight){
+    $('#wrap').animate({
+     height: defHeight
+    }, "normal");
+    $('#read-more a').html('收起部分内容');
+    $('#gradient').fadeOut();
+   }else{
+    $('#wrap').animate({
+     height: slideHeight
+    }, "normal");
+    $('#read-more a').html('+展开全部内容');
+    $('#gradient').fadeIn();
+   }
+   return false;
+  });  
+ }
+});
+//游戏分类 收起  展开
+$(function(){
+ var slideHeight = 170; // px
+ var defHeight = $('#wrap2').height();
+ if(defHeight >= slideHeight){
+  $('#wrap2').css('height' , slideHeight + 'px');
+  $('#read-more2').append('<a href="#" style=" color: #378f12;">+展开全部内容</a>');
+  $('#read-more2 a').click(function(){
+   var curHeight = $('#wrap2').height();
+   if(curHeight == slideHeight){
+    $('#wrap2').animate({
+     height: defHeight
+    }, "normal");
+    $('#read-more2 a').html('收起部分内容');
+    $('#gradient').fadeOut();
+   }else{
+    $('#wrap2').animate({
+     height: slideHeight
+    }, "normal");
+    $('#read-more2 a').html('+展开全部内容');
+    $('#gradient').fadeIn();
+   }
+   return false;
+  });  
+ }
+});
+
+function is_weixin() {
+var ua = navigator.userAgent.toLowerCase();
+if(ua.match(/MicroMessenger/i) == "micromessenger") {
+$('.weixin').show();
+} else {
+}
+if(ua.match(/\sqq/i) == " qq"){
+$('.weixin').show();
+}else{
+}
+}
+is_weixin();
