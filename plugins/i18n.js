@@ -24,7 +24,10 @@ export default ({ app, store }) => {
     if (app.i18n.locale === app.i18n.fallbackLocale) {
       return `/${link}`
     }
-
-    return `/${app.i18n.locale}/${link}`
+    // don't always append locale
+    if( ( app.i18n.locale) && ( link.indexOf( app.i18n.locale ) < 0 ) ){
+      return `/${app.i18n.locale}/${link}`
+    }   
+    return `/${link}`
   }
 }
