@@ -1,6 +1,6 @@
 <script>
-import Iosappdown from '~/pages/_lang/iosappdown'
-export default Iosappdown
+import Template from '~/pages/_lang/iosappdown'
+export default Template
 </script>
 
 
