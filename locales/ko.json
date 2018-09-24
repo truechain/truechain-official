@@ -1,7 +1,6 @@
 {
   "language": "한국어",
-  "linksList": [
-    {
+  "linksList": [{
       "name": "twitter",
       "icon": "icon font_family icon-twitter",
       "link": "https://twitter.com/truechaingroup/"
@@ -32,8 +31,8 @@
       "link": "https://www.youtube.com/channel/UCsKSh9TPpYCZwHFn4lzhmFg?view_as=subscriber"
     }
   ],
-  "footerLinkDescr":"TrueChain 공식 소셜 플랫폼",
-  "footerDownDescr":"TrueChain 지갑 app 다운로드",
+  "footerLinkDescr": "TrueChain 공식 소셜 플랫폼",
+  "footerDownDescr": "TrueChain 지갑 app 다운로드",
   "home": {
     "head": {
       "title": "트루체인 - 고성능의 무한한 노드, 하이브리드 합의 알고리즘의 블록체인",
@@ -46,47 +45,46 @@
     "whiteLink": "https://www.truechain.pro/truechain-ko-white.pdf",
     "yellow": "황서",
     "yellowLink": "https://www.truechain.pro/paper.pdf",
-    "banner2":{
-      "title":"True 지갑",
-      "line1":"공개 테스트 버전",
-      "line2":"QR코드를 사용하여 다운로드 후 이용하세요"
+    "banner2": {
+      "title": "True 지갑",
+      "line1": "공개 테스트 버전",
+      "line2": "QR코드를 사용하여 다운로드 후 이용하세요"
     },
-    "banner3":{
-      "title":"마스터 노드 투표 절찬리에 진행 중",
-      "line1":"4000개의 우선 순위 표준 노드 & 100개의 마스터 노드",
-      "line2":"3000만 True Token노드의 격려",
-      "btntext":"개표 현황"
+    "banner3": {
+      "title": "마스터 노드 투표 절찬리에 진행 중",
+      "line1": "4000개의 우선 순위 표준 노드 & 100개의 마스터 노드",
+      "line2": "3000만 True Token노드의 격려",
+      "btntext": "개표 현황"
     },
-    "superiority": [
-      {
+    "superiority": [{
         "icon": "icon font_family icon-jiejue",
         "title": "퍼블릭 블록체인의 가장 큰 문제를 해결하였습니다",
-        "detail":"트루체인은 PBFT-FPOW 하이브리드 합의 알고리즘 메커니즘과 안전한 샤딩(Sharding) 기술을 사용하여 퍼블릭 블록체인의 가장큰 문제인 성능과 탈 중앙화 사이의 모순을 해결하였습니다"
+        "detail": "트루체인은 PBFT-FPOW 하이브리드 합의 알고리즘 메커니즘과 안전한 샤딩(Sharding) 기술을 사용하여 퍼블릭 블록체인의 가장큰 문제인 성능과 탈 중앙화 사이의 모순을 해결하였습니다"
       },
       {
         "icon": "icon font_family icon-tianchengzuo",
         "title": "탈 중앙화와 공정성을 확실히 보장합니다",
-        "detail":"트루체인은 fruitchain을 이용해 snailchain를 만들었으며, FPOW로 나카모토(Nakamoto)의 POW를 대체합니다. 트루체인은 신세대 퍼블릭 블록체인의 탈 중앙화와 공평성을 보장합니다"
+        "detail": "트루체인은 fruitchain을 이용해 snailchain를 만들었으며, FPOW로 나카모토(Nakamoto)의 POW를 대체합니다. 트루체인은 신세대 퍼블릭 블록체인의 탈 중앙화와 공평성을 보장합니다"
       },
       {
         "icon": "icon font_family icon-gongshijizhi",
         "title": "제1세대 하이브리드 합의 알고리즘 장려 메커니즘",
-        "detail":"트루체인은 세계 최초로 장려 메커니즘을 이용하여 하이브리드 합의 알고리즘 퍼블릭 블록체인을 형성하였는데, 이것은 블록체인 기술에게 경제 의식을 부여한 것입니다"
+        "detail": "트루체인은 세계 최초로 장려 메커니즘을 이용하여 하이브리드 합의 알고리즘 퍼블릭 블록체인을 형성하였는데, 이것은 블록체인 기술에게 경제 의식을 부여한 것입니다"
       },
       {
         "icon": "icon font_family icon-jizhi",
         "title": "안정적이고 유지비용이 저렴한 메커니즘",
-        "detail":"일반적으로 유지비용이 저렴한 퍼블릭 블록체인을 실현한다는 것은 불가능에 가깝습니다. 그럼에도 불구하고, 트루체인은 안정적이고, 저렴한 유지비용을 제공하여 더 많은 Dapps를 실현할 수 있습니다"
+        "detail": "일반적으로 유지비용이 저렴한 퍼블릭 블록체인을 실현한다는 것은 불가능에 가깝습니다. 그럼에도 불구하고, 트루체인은 안정적이고, 저렴한 유지비용을 제공하여 더 많은 Dapps를 실현할 수 있습니다"
       },
       {
         "icon": "icon font_family icon-shequ",
         "title": "막강한 글로벌 개발자 커뮤니티",
-        "detail":"신세대 퍼블릭 블록체인중에서, 트루체인은 중국내 규모가 가장 크며, 세계에서 성장 속도가 가장 빠른 개발자 커뮤니티를 보유하고 있습니다"
+        "detail": "신세대 퍼블릭 블록체인중에서, 트루체인은 중국내 규모가 가장 크며, 세계에서 성장 속도가 가장 빠른 개발자 커뮤니티를 보유하고 있습니다"
       },
       {
         "icon": "icon font_family icon-chanpin",
         "title": "오픈 소스 상품",
-        "detail":"하이브리드 합의 알고리즘 퍼블릭 블렉체인 플랫폼을 보완하기 위해, 트루체인은 완전하고 이용하기 쉬운 여러가지 상품들이 있고, 모든 상품들은 오픈 소스입니다"
+        "detail": "하이브리드 합의 알고리즘 퍼블릭 블렉체인 플랫폼을 보완하기 위해, 트루체인은 완전하고 이용하기 쉬운 여러가지 상품들이 있고, 모든 상품들은 오픈 소스입니다"
       }
     ],
     "about": {
@@ -103,8 +101,7 @@
     },
     "roadmap": {
       "title": "로드맵",
-      "list": [
-        {
+      "list": [{
           "time": "2018-01",
           "events": ["True백서 발표"]
         },
@@ -148,22 +145,21 @@
     },
     "partner": "협력 파트너",
     "institution": "투자기관",
-    "news":{
-      "title":"새 소식",
+    "news": {
+      "title": "새 소식",
       "technical": "기술 동향",
       "biz": "비즈니스 동향",
-      "list":[
-        {
-          "time":"2018-05-24",
-          "title":"CCTV6에 출연하여 실물경제로 추진"
+      "list": [{
+          "time": "2018-05-24",
+          "title": "CCTV6에 출연하여 실물경제로 추진"
         },
         {
-          "time":"2018-05-23",
-          "title":"블록체인 기술이 수많은 산업들을 전복할 것"
+          "time": "2018-05-23",
+          "title": "블록체인 기술이 수많은 산업들을 전복할 것"
         },
         {
-          "time":"2018-05-20",
-          "title":"트루체인이 중화인민공화국 공업, 정보화부의 블록체인 산업 백서 연구에 참여"
+          "time": "2018-05-20",
+          "title": "트루체인이 중화인민공화국 공업, 정보화부의 블록체인 산업 백서 연구에 참여"
         }
       ]
     }
@@ -209,8 +205,7 @@
     "banner": "With 1200+ developers from the world",
     "technology": {
       "title": "연구 및 개발자 커뮤니티",
-      "list": [
-        {
+      "list": [{
           "name": "Eric Zhang",
           "post": "공동 창립자&CEO",
           "imgSrc": "jiannan",
@@ -331,8 +326,7 @@
     },
     "business": {
       "title": "커뮤니티 및 개발",
-      "list": [
-        {
+      "list": [{
           "name": "James Cheng",
           "post": "전략 개발 책임자",
           "imgSrc": "xiaoyong",
@@ -353,17 +347,6 @@
           ]
         },
         {
-          "name": "Yan Liu",
-          "post": "메인넷 총 책임자",
-          "imgSrc": "liuyan",
-          "introList": [
-            "10여년간 인터넷 제품 운영 경험",
-            "ADP차이나 고급 자문",
-            "F6YangChe 운영 책임자",
-            "NiuWoWo 기술 CEO"
-          ]
-        },
-        {
           "name": "Wen Yan",
           "post": "마케팅 코디네이터",
           "imgSrc": "yanwen",
@@ -377,8 +360,7 @@
     },
     "consultant": {
       "title": "고문",
-      "list": [
-        {
+      "list": [{
           "name": "Yushi Shen",
           "introList": [
             "청화 대학교 전자 공학부 학사",
@@ -445,8 +427,7 @@
     "requireNum": "T.O.",
     "salary": "임금 및 대우",
     "email": "이력서 보내는 메일",
-    "position": [
-      {
+    "position": [{
         "path": "jd/0",
         "icon": "icon font_family icon-kaifa",
         "job": "고 언어 개발 엔지니어"
@@ -482,8 +463,7 @@
         "job": "인턴"
       }
     ],
-    "jobs": [
-      {
+    "jobs": [{
         "title": "고 언어 개발 엔지니어",
         "duty": [
           "고(Go)언어를 사용하여 설계하고 계발한 최초의 블록체인 상품 입니다.",
@@ -607,18 +587,18 @@
   "node": {
     "head": {
       "title": " Announcement| TrueChain priority nodes election releases result ",
-      "text1":"TrueChain’s priority nodes election lasted for 3 months since it started in the mid-May, now the election ends. In accordance with the arrangements previously published by TrueChain, the application page of priority node closed on August 16.",
-      "text2":"By the midnight of August 16, nearly one thousand users from TrueChain’s global community participated and reached the qualification of priority nodes election. Among which are 455 priority standard nodes with 439 individual and 2 teams participated; 340 priority master nodes with 43 individual and 17 teams participated.",
-      "text3":"According to the priority nodes election incentive rules,",
-      "text4":"1.Priority mining begins in mid-september after the Beta version of mainnet launches.",
-      "text5":"2.The mining will last six months, until March 2019",
-      "text6":"3.Master nodes and standard nodes will compete for 2 million TRUE respectively, 4 million TRUE in total.",
-      "text7":"4.All the TRUE will be migrated to the official mainnet and come into effect immediately.",
-      "text8":"TrueChain Foundation",
-      "text9":"16th, August, 2018",
+      "text1": "TrueChain’s priority nodes election lasted for 3 months since it started in the mid-May, now the election ends. In accordance with the arrangements previously published by TrueChain, the application page of priority node closed on August 16.",
+      "text2": "By the midnight of August 16, nearly one thousand users from TrueChain’s global community participated and reached the qualification of priority nodes election. Among which are 455 priority standard nodes with 439 individual and 2 teams participated; 340 priority master nodes with 43 individual and 17 teams participated.",
+      "text3": "According to the priority nodes election incentive rules,",
+      "text4": "1.Priority mining begins in mid-september after the Beta version of mainnet launches.",
+      "text5": "2.The mining will last six months, until March 2019",
+      "text6": "3.Master nodes and standard nodes will compete for 2 million TRUE respectively, 4 million TRUE in total.",
+      "text7": "4.All the TRUE will be migrated to the official mainnet and come into effect immediately.",
+      "text8": "TrueChain Foundation",
+      "text9": "16th, August, 2018",
       "keyword": "트루체인, TRUE, 노드 선거, 마스터 노드, 블록체인, 디지털 화폐 ",
       "description": "트루체인은 9월에 메인넷 테스트 전에 사전 등록 및 투표를 통해, 최대 4천명을 초과하지 않는 우선 순위 노드(POW)과 최대 100명을 초과하지 않는 마스터 노드(PBFT+POW)을 선출할 예정입니다. "
-    },    
+    },
     "result": "result",
     "notPass": "(Failed)",
     "title": "우선 순위 노드 선거 등록",

@@ -1,7 +1,6 @@
 {
   "language": "ภาษาไทย",
-  "linksList": [
-    {
+  "linksList": [{
       "name": "twitter",
       "icon": "icon font_family icon-twitter",
       "link": "https://twitter.com/truechaingroup/"
@@ -32,8 +31,8 @@
       "link": "https://www.youtube.com/channel/UCsKSh9TPpYCZwHFn4lzhmFg?view_as=subscriber"
     }
   ],
-  "footerLinkDescr":"TrueChain แพลตฟอร์มของโซเชียลอย่างเป็นทางการ",
-  "footerDownDescr":"เริ่มดาวน์โหลดแอพพลิเคชัน TrueChain",
+  "footerLinkDescr": "TrueChain แพลตฟอร์มของโซเชียลอย่างเป็นทางการ",
+  "footerDownDescr": "เริ่มดาวน์โหลดแอพพลิเคชัน TrueChain",
   "home": {
     "head": {
       "title": "public blockchain ของรุ่นใหม่",
@@ -46,47 +45,46 @@
     "whiteLink": "https://www.truechain.pro/Truechain_en.pdf",
     "yellow": "หนังสือสีเหลือง",
     "yellowLink": "https://www.truechain.pro/paper.pdf",
-    "banner2":{
-      "title":"True ประยุกต์ใช้กระเป๋าสตางค์เบา",
-      "line1":"รุ่นเบต้า",
-      "line2":"สแกน QR code ดาวน์โหลด"
+    "banner2": {
+      "title": "True ประยุกต์ใช้กระเป๋าสตางค์เบา",
+      "line1": "รุ่นเบต้า",
+      "line2": "สแกน QR code ดาวน์โหลด"
     },
-    "banner3":{
-      "title":"ลำดับความสำคัญแคมเปญที่ร้อนแรง",
-      "line1":"4000 โหนดมาตรฐานลำดับความสำคัญและโหนดเต็มลำดับความสำคัญ 100 จุด",
-      "line2":"3000w True Token  แรงจูงใจของโหนด",
-      "btntext":"ดูรายละเอียด"
+    "banner3": {
+      "title": "ลำดับความสำคัญแคมเปญที่ร้อนแรง",
+      "line1": "4000 โหนดมาตรฐานลำดับความสำคัญและโหนดเต็มลำดับความสำคัญ 100 จุด",
+      "line2": "3000w True Token  แรงจูงใจของโหนด",
+      "btntext": "ดูรายละเอียด"
     },
-    "superiority": [
-      {
+    "superiority": [{
         "icon": "icon font_family icon-jiejue",
         "title": "แก้ปัญหาที่สำคัญที่สุดของห่วงโซ่สาธารณะ",
-        "detail":"ห่วงโซ่เริ่มต้นแก้ปัญหาที่ใหญ่ที่สุดที่ต้องเผชิญกับห่วงโซ่สาธารณะในปัจจุบันโดยใช้กลไกการทำงานร่วมกันของ PBFT-fPoW hybrid และกลไกการกระจายตัวที่ปลอดภัย: ความขัดแย้งระหว่างประสิทธิภาพและการกระจายอำนาจ"
+        "detail": "ห่วงโซ่เริ่มต้นแก้ปัญหาที่ใหญ่ที่สุดที่ต้องเผชิญกับห่วงโซ่สาธารณะในปัจจุบันโดยใช้กลไกการทำงานร่วมกันของ PBFT-fPoW hybrid และกลไกการกระจายตัวที่ปลอดภัย: ความขัดแย้งระหว่างประสิทธิภาพและการกระจายอำนาจ"
       },
       {
         "icon": "icon font_family icon-tianchengzuo",
         "title": "ตรวจสอบการกระจายอำนาจและความเป็นธรรม",
-        "detail":"ใช้ห่วงโซ่ผลไม้เป็นโซ่ช้าการเปลี่ยนค่าพิกเซลสำหรับโปรโตคอล PoW  ห่วงโซ่เริ่มต้นให้แน่ใจว่าการกระจายอำนาจและความเป็นธรรมเป็นโซ่สาธารณะรุ่นใหม่"
+        "detail": "ใช้ห่วงโซ่ผลไม้เป็นโซ่ช้าการเปลี่ยนค่าพิกเซลสำหรับโปรโตคอล PoW  ห่วงโซ่เริ่มต้นให้แน่ใจว่าการกระจายอำนาจและความเป็นธรรมเป็นโซ่สาธารณะรุ่นใหม่"
       },
       {
         "icon": "icon font_family icon-gongshijizhi",
         "title": "รุ่นแรกของสิ่งจูงใจผสมผสานกัน",
-        "detail":"ห่วงโซ่เป็นครั้งแรกในโลกที่ใช้แรงจูงใจเพื่อจัดการห่วงโซ่สาธารณะที่ผสมผสานและเป็นเอกฉันท์ซึ่งทำให้เกิดความรู้สึกทางเศรษฐกิจในการปิดกั้นเทคโนโลยี"
+        "detail": "ห่วงโซ่เป็นครั้งแรกในโลกที่ใช้แรงจูงใจเพื่อจัดการห่วงโซ่สาธารณะที่ผสมผสานและเป็นเอกฉันท์ซึ่งทำให้เกิดความรู้สึกทางเศรษฐกิจในการปิดกั้นเทคโนโลยี"
       },
       {
         "icon": "icon font_family icon-jizhi",
         "title": "มีเสถียรภาพ  กลไกค่าเชื้อเพลิงต้นทุนต่ำ",
-        "detail":"การบรรลุค่าใช้จ่ายด้านพลังงานเป็นศูนย์เป็นไปไม่ได้สำหรับทุกเครือข่ายสาธารณะ แต่อย่างไรก็ตาม ห่วงโซ่เริ่มต้นให้ความมั่นคง ค่าใช้จ่ายเชื้อเพลิงต้นทุนต่ำและ DApps อนุญาตให้ตระหนักถึงห่วงโซ่"
+        "detail": "การบรรลุค่าใช้จ่ายด้านพลังงานเป็นศูนย์เป็นไปไม่ได้สำหรับทุกเครือข่ายสาธารณะ แต่อย่างไรก็ตาม ห่วงโซ่เริ่มต้นให้ความมั่นคง ค่าใช้จ่ายเชื้อเพลิงต้นทุนต่ำและ DApps อนุญาตให้ตระหนักถึงห่วงโซ่"
       },
       {
         "icon": "icon font_family icon-shequ",
         "title": "กลุ่มนักพัฒนาซอฟต์แวร์ระดับโลกที่แข็งแกร่ง",
-        "detail":"ในยุคใหม่ของเครือข่ายสาธารณะ ห่วงโซ่เริ่มต้นมีขนาดใหญ่ที่สุดในประเทศจีนกลุ่มนักพัฒนาซอฟต์แวร์ที่เติบโตเร็วที่สุดในโลก"
+        "detail": "ในยุคใหม่ของเครือข่ายสาธารณะ ห่วงโซ่เริ่มต้นมีขนาดใหญ่ที่สุดในประเทศจีนกลุ่มนักพัฒนาซอฟต์แวร์ที่เติบโตเร็วที่สุดในโลก"
       },
       {
         "icon": "icon font_family icon-chanpin",
         "title": "เปิดแหล่งที่มาเมทริกซ์ของผลิตภัณฑ์",
-        "detail":"เพื่อปรับปรุงและสนับสนุนการผสมแพลตฟอร์มสาธารณะ ห่วงโซ่เริ่มต้นมีเมทริกซ์ผลิตภัณฑ์ที่สมบูรณ์และใช้งานง่ายและผลิตภัณฑ์ทั้งหมดเป็นแหล่งเปิดสู่โลกภายนอก"
+        "detail": "เพื่อปรับปรุงและสนับสนุนการผสมแพลตฟอร์มสาธารณะ ห่วงโซ่เริ่มต้นมีเมทริกซ์ผลิตภัณฑ์ที่สมบูรณ์และใช้งานง่ายและผลิตภัณฑ์ทั้งหมดเป็นแหล่งเปิดสู่โลกภายนอก"
       }
     ],
     "about": {
@@ -103,8 +101,7 @@
     },
     "roadmap": {
       "title": "เส้นทาง",
-      "list": [
-        {
+      "list": [{
           "time": "2018-01",
           "events": ["True กระดาษสีขาวที่ปล่อยออกมา"]
         },
@@ -148,23 +145,22 @@
     },
     "partner": "องค์การความร่วมมือ",
     "institution": "สถาบันการลงทุน",
-    "news":{
+    "news": {
       "title": "ข่าว",
       "technical": "พลวัตทางเทคนิค",
       "biz": "พลวัตของธุรกิจ",
       "point": "ยังไม่มีข้อมูล",
-      "list":[
-        {
-          "time":"2018-05-24",
-          "title":"ห่วงโซ่เริ่มต้นลงบน CCTV6, การส่งเสริมกระตุ้นเศรษฐกิจจริง"
+      "list": [{
+          "time": "2018-05-24",
+          "title": "ห่วงโซ่เริ่มต้นลงบน CCTV6, การส่งเสริมกระตุ้นเศรษฐกิจจริง"
         },
         {
-          "time":"2018-05-23",
-          "title":"เทคโนโลยี Blockchain จะล้มล้างหลายอุตสาหกรรม"
+          "time": "2018-05-23",
+          "title": "เทคโนโลยี Blockchain จะล้มล้างหลายอุตสาหกรรม"
         },
         {
-          "time":"2018-05-20",
-          "title":"ห่วงโซ่แรกเข้าร่วมในการสำรวจกระดาษสีขาวblockchainของกระทรวงอุตสาหกรรมและเทคโนโลยีสารสนเทศ"
+          "time": "2018-05-20",
+          "title": "ห่วงโซ่แรกเข้าร่วมในการสำรวจกระดาษสีขาวblockchainของกระทรวงอุตสาหกรรมและเทคโนโลยีสารสนเทศ"
         }
       ]
     }
@@ -210,8 +206,7 @@
     "banner": "และนักพัฒนาซอฟต์แวร์กว่า 1200+ รายจากทั่วโลก",
     "technology": {
       "title": "กลุ่มนักวิจัยและนักพัฒนาซอฟต์แวร์",
-      "list": [
-        {
+      "list": [{
           "name": "จาง เจี้ยนหนาน",
           "post": "ประธานบริหาร",
           "imgSrc": "jiannan",
@@ -341,8 +336,7 @@
     },
     "business": {
       "title": "พัฒนาและดำเนินงานชุมชน",
-      "list": [
-        {
+      "list": [{
           "name": "เฉิงเสี่ยวหย่ง",
           "post": "หัวหน้าเจ้าหน้าที่กลยุทธ์",
           "imgSrc": "xiaoyong",
@@ -365,17 +359,6 @@
           ]
         },
         {
-          "name": "หลิว เหยี่ยน",
-          "post": "ผู้ประสานงานชุมชน",
-          "imgSrc": "liuyan",
-          "intro": "ผู้อำนวยการฝ่ายปฏิบัติการ รับผิดชอบสำหรับผลิตภัณฑ์ห่วงโซ่เริ่มต้นและการดำเนินธุรกิจ รวมทั้งการก่อสร้างและการดำเนินงานของชุมชนในยุคแรกๆ",
-          "introList": [
-            "ประสบการณ์การใช้งานผลิตภัณฑ์อินเทอร์เน็ตมากกว่าสิบปี",
-            "ที่ปรึกษาอาวุโส ADP China ",
-            "ผู้เชี่ยวชาญด้านการดำเนินงานแพลตฟอร์มอินเทอร์เน็ต"
-          ]
-        },
-        {
           "name": "เหยียน เหวิน",
           "post": "ผู้ประสานงานการตลาด",
           "imgSrc": "yanwen",
@@ -390,8 +373,7 @@
     },
     "consultant": {
       "title": "เฉิน หยู่ชรือ",
-      "list": [
-        {
+      "list": [{
           "name": "เฉิน หยู่ชรือ",
           "intro": "เลขาธิการกลยุทธ์นวัตกรรมอุตสาหกรรมระบบคลาวด์ Allianceของจีน ปริญญาตรีวิศวกรรมอิเล็กทรอนิกส์จาก Tsinghua University  วิทยาศาสตรมหาบัณฑิตและวิทยาการคอมพิวเตอร์จาก University of California, San Diego ผู้เชี่ยวชาญด้านโครงการ Talents แห่งชาติ  มหาวิทยาลัย Tsinghua และนักวิจัยมหาวิทยาลัยอื่น ๆ อีกมากมาย เขาทำหน้าที่เป็นที่ปรึกษาด้านกลยุทธ์ของ Microsoft Corporation หัวหน้าฝ่ายกิจการคอมพิวเตอร์และการพัฒนาธุรกิจในประเทศจีนและทำงานที่สำนักงานใหญ่ของ Microsoft ตั้งแต่ปีพ. ศ. 2549 ถึงปี พ.ศ. 2555 ในฐานะสถาปนิกซอฟต์แวร์อาวุโส",
           "introList": [
@@ -462,8 +444,7 @@
     "requireNum": "ปริมาณความต้องการ",
     "salary": "การรักษาเงินเดือน",
     "email": "เปิดใช้งานกล่องจดหมายการส่งต่อ",
-    "position": [
-      {
+    "position": [{
         "path": "jd/0",
         "icon": "icon font_family icon-kaifa",
         "job": "Go วิศวกรพัฒนาภาษา"
@@ -499,8 +480,7 @@
         "job": "ฝึกปฏิบัติงาน"
       }
     ],
-    "jobs": [
-      {
+    "jobs": [{
         "title": "Goวิศวกรพัฒนาภาษา",
         "duty": [
           "ออกแบบและพัฒนาผลิตภัณฑ์ที่มี blockchain แบบโซ่ต้นโดยใช้ภาษา Go",
@@ -624,20 +604,20 @@
   "node": {
     "head": {
       "title": " Announcement| TrueChain priority nodes election releases result ",
-      "text1":"TrueChain’s priority nodes election lasted for 3 months since it started in the mid-May, now the election ends. In accordance with the arrangements previously published by TrueChain, the application page of priority node closed on August 16.",
-      "text2":"By the midnight of August 16, nearly one thousand users from TrueChain’s global community participated and reached the qualification of priority nodes election. Among which are 455 priority standard nodes with 439 individual and 2 teams participated; 340 priority master nodes with 43 individual and 17 teams participated.",
-      "text3":"According to the priority nodes election incentive rules,",
-      "text4":"1.Priority mining begins in mid-september after the Beta version of mainnet launches.",
-      "text5":"2.The mining will last six months, until March 2019",
-      "text6":"3.Master nodes and standard nodes will compete for 2 million TRUE respectively, 4 million TRUE in total.",
-      "text7":"4.All the TRUE will be migrated to the official mainnet and come into effect immediately.",
-      "text8":"TrueChain Foundation",
-      "text9":"16th, August, 2018",
+      "text1": "TrueChain’s priority nodes election lasted for 3 months since it started in the mid-May, now the election ends. In accordance with the arrangements previously published by TrueChain, the application page of priority node closed on August 16.",
+      "text2": "By the midnight of August 16, nearly one thousand users from TrueChain’s global community participated and reached the qualification of priority nodes election. Among which are 455 priority standard nodes with 439 individual and 2 teams participated; 340 priority master nodes with 43 individual and 17 teams participated.",
+      "text3": "According to the priority nodes election incentive rules,",
+      "text4": "1.Priority mining begins in mid-september after the Beta version of mainnet launches.",
+      "text5": "2.The mining will last six months, until March 2019",
+      "text6": "3.Master nodes and standard nodes will compete for 2 million TRUE respectively, 4 million TRUE in total.",
+      "text7": "4.All the TRUE will be migrated to the official mainnet and come into effect immediately.",
+      "text8": "TrueChain Foundation",
+      "text9": "16th, August, 2018",
       "keyword": "Blockchain，TRUE,แคมเปญโหนด，โหนดซุปเปอร์，ห่วงโซ่บล็อก，数字货币",
       "description": "ห่วงโซ่เริ่มต้นจะเลือกโหนดมาตรฐานลำดับความสำคัญไม่เกิน 4000 (POWs) และไม่เกิน 100 โหนดที่มีลำดับความสำคัญสูง (PBFT + POW) ผ่านกลไกการลงทะเบียนและการลงคะแนนก่อนสายทดสอบเครือข่ายหลักในเดือนกันยายน"
-    },   
+    },
     "result": "ผลลัพธ์",
-    "notPass": "(Failed)",    
+    "notPass": "(Failed)",
     "title": "การลงทะเบียนเลือกตั้งโหนดลำดับความสำคัญ",
     "StandardSum": "แคมเปญโหนดมาตรฐานได้รับการลงทะเบียนแล้ว",
     "nodeFullSum": "แคมเปญโหนดได้รับการลงชื่อสมัครใช้แล้ว",

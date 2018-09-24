@@ -1,7 +1,6 @@
 {
   "language": "Tiếng Việt",
-  "linksList": [
-    {
+  "linksList": [{
       "name": "twitter",
       "icon": "icon font_family icon-twitter",
       "link": "https://twitter.com/truechaingroup/"
@@ -32,8 +31,8 @@
       "link": "https://www.youtube.com/channel/UCsKSh9TPpYCZwHFn4lzhmFg?view_as=subscriber"
     }
   ],
-  "footerLinkDescr":"Nền tảng SNS chính thức của TrueChain",
-  "footerDownDescr":"Tải về ứng dụng light wallet của TrueChain",
+  "footerLinkDescr": "Nền tảng SNS chính thức của TrueChain",
+  "footerDownDescr": "Tải về ứng dụng light wallet của TrueChain",
   "home": {
     "head": {
       "title": "新一代混合共识公链",
@@ -46,47 +45,46 @@
     "whiteLink": "https://www.truechain.pro/Truechain_en.pdf",
     "yellow": "Yellow paper",
     "yellowLink": "https://www.truechain.pro/paper.pdf",
-    "banner2":{
-      "title":"True Ứng dụng ví ánh sáng",
-      "line1":"Phiên bản beta công khai",
-      "line2":"Quét mã QR tải xuống"
+    "banner2": {
+      "title": "True Ứng dụng ví ánh sáng",
+      "line1": "Phiên bản beta công khai",
+      "line2": "Quét mã QR tải xuống"
     },
-    "banner3":{
-      "title":"Ưu tiên bầu cử nút nóng",
-      "line1":"4000 nút tiêu chuẩn ưu tiên và 100 nút đầy đủ ưu tiên",
-      "line2":"3000w Kích hoạt nút mã hóa thực sự",
-      "btntext":"Xem chi tiết"
+    "banner3": {
+      "title": "Ưu tiên bầu cử nút nóng",
+      "line1": "4000 nút tiêu chuẩn ưu tiên và 100 nút đầy đủ ưu tiên",
+      "line2": "3000w Kích hoạt nút mã hóa thực sự",
+      "btntext": "Xem chi tiết"
     },
-    "superiority": [
-      {
+    "superiority": [{
         "icon": "icon font_family icon-jiejue",
         "title": "Giải quyết những rào cản của Public Blockchain",
-        "detail":"TrueChain giải quyết sự mâu thuẫn giữa hiệu quả công việc và tính phi tập trung của Public Blockchain nhờ vào tính chất phân cấp của cơ chế đồng thuận lai PBFT - POW sử dụng công nghệ phân mảnh an toàn."
+        "detail": "TrueChain giải quyết sự mâu thuẫn giữa hiệu quả công việc và tính phi tập trung của Public Blockchain nhờ vào tính chất phân cấp của cơ chế đồng thuận lai PBFT - POW sử dụng công nghệ phân mảnh an toàn."
       },
       {
         "icon": "icon font_family icon-tianchengzuo",
         "title": "Bảo đảm tính phi tập trung và sự công bằng",
-        "detail":"TrueChain đảm bảo tính phi tập trung và sự công bằng cho thế hệ Public blockchain mới bằng cách sử dụng Fruitchain như một Snailchain để thay thế PoW của fPoW của Nakamoto."
+        "detail": "TrueChain đảm bảo tính phi tập trung và sự công bằng cho thế hệ Public blockchain mới bằng cách sử dụng Fruitchain như một Snailchain để thay thế PoW của fPoW của Nakamoto."
       },
       {
         "icon": "icon font_family icon-gongshijizhi",
         "title": "Mô hình khuyến khích đồng thuận lai đầu tiên",
-        "detail":"TrueChain là dự án đầu tiên thiết kế mô hình khuyến khích đồng thuận lai, giúp truyền tải được nhận thức kinh tế vào công nghệ blockchain. "
+        "detail": "TrueChain là dự án đầu tiên thiết kế mô hình khuyến khích đồng thuận lai, giúp truyền tải được nhận thức kinh tế vào công nghệ blockchain. "
       },
       {
         "icon": "icon font_family icon-jizhi",
         "title": "Cơ chế phí gas thấp và ổn định",
-        "detail":"Phí gas bằng không là không thể đối với bất kỳ Public blockchain nào, mặc dù như vậy, TrueChain vẫn có thể thiết lập cơ chế phí gas thấp và ổn định nhằm tạo điều kiện cho nhiều DApp được phát triển trên mạng lưới."
+        "detail": "Phí gas bằng không là không thể đối với bất kỳ Public blockchain nào, mặc dù như vậy, TrueChain vẫn có thể thiết lập cơ chế phí gas thấp và ổn định nhằm tạo điều kiện cho nhiều DApp được phát triển trên mạng lưới."
       },
       {
         "icon": "icon font_family icon-shequ",
         "title": "Cộng đồng phát triền toàn cầu mạnh mẽ",
-        "detail":"Trong số các Public blockchain thế hệ mới, TrueChain có một cộng đồng phát triển lớn nhất Trung Quốc và tiến bộ nhanh chóng nhất thế giới."
+        "detail": "Trong số các Public blockchain thế hệ mới, TrueChain có một cộng đồng phát triển lớn nhất Trung Quốc và tiến bộ nhanh chóng nhất thế giới."
       },
       {
         "icon": "icon font_family icon-chanpin",
         "title": "Đa dạng các sản phẩm mã nguồn mở ",
-        "detail":"TrueChain mang đến hàng loạt các sản phẩm có thể hỗ trợ nền tảng Public blockchain đồng thuận lai và giúp chuỗi công nghệ vừa có mã nguồn mở, vừa dễ sử dụng. "
+        "detail": "TrueChain mang đến hàng loạt các sản phẩm có thể hỗ trợ nền tảng Public blockchain đồng thuận lai và giúp chuỗi công nghệ vừa có mã nguồn mở, vừa dễ sử dụng. "
       }
     ],
     "about": {
@@ -102,8 +100,7 @@
     },
     "roadmap": {
       "title": "Lộ trình phát triển",
-      "list": [
-        {
+      "list": [{
           "time": "2018-01",
           "events": ["TrueChain ra mắt giấy trắng"]
         },
@@ -114,23 +111,24 @@
         {
           "time": "2018-04",
           "events": [
-            "TrueChain phát hành giấy vàng", 
-            "Hoàn thiện thiết kế cơ chế đồng thuận lai", 
+            "TrueChain phát hành giấy vàng",
+            "Hoàn thiện thiết kế cơ chế đồng thuận lai",
             "Stellar – Nền tảng để triển khai và quản lý vòng đời của các hợp đồng thông minh đã được ra mắt"
           ]
         },
         {
           "time": "2018-05",
           "events": [
-              "Lộ trình phát triển kỹ thuật của TrueChain ra mắt trên Github",
-             "TrueChain ra mắt light wallet ", 
-             "TrueChain ra mắt hệ thống biểu quyết dành cho các node phi tập trung"]
+            "Lộ trình phát triển kỹ thuật của TrueChain ra mắt trên Github",
+            "TrueChain ra mắt light wallet ",
+            "TrueChain ra mắt hệ thống biểu quyết dành cho các node phi tập trung"
+          ]
         },
         {
           "time": "2018-06",
           "events": ["Mô hình mã nguồn mở đồng thuận lai",
-             "Ra mắt cơ chế các khuyến khích đồng thuận lai ", 
-             "Thử nghiệm nội bộ Mainnet v0.1"
+            "Ra mắt cơ chế các khuyến khích đồng thuận lai ",
+            "Thử nghiệm nội bộ Mainnet v0.1"
           ]
         },
         {
@@ -157,23 +155,22 @@
     },
     "partner": "Các đối tác",
     "institution": "Các nhà đầu tư",
-    "news":{
+    "news": {
       "title": "Tin tức",
       "technical": "技术动态",
       "biz": "商业动态",
       "point": "暂无数据",
-      "list":[
-        {
-          "time":"2018-05-24",
-          "title":"Blockchain đăng nhập CCTV6, giúp thúc đẩy kinh tế thực thể "
+      "list": [{
+          "time": "2018-05-24",
+          "title": "Blockchain đăng nhập CCTV6, giúp thúc đẩy kinh tế thực thể "
         },
         {
-          "time":"2018-05-23",
-          "title":"Kĩ thuật Blockchain sẽ lật đổ nhiều ngành nghề"
+          "time": "2018-05-23",
+          "title": "Kĩ thuật Blockchain sẽ lật đổ nhiều ngành nghề"
         },
         {
-          "time":"2018-05-20",
-          "title":"TrueChain tham gia điều tra sách bạch bì ngành Blockchain với bộ Thông tin và Truyền thông"
+          "time": "2018-05-20",
+          "title": "TrueChain tham gia điều tra sách bạch bì ngành Blockchain với bộ Thông tin và Truyền thông"
         }
       ]
     }
@@ -220,8 +217,7 @@
     "banner": "Và hơn 1200+ nhân viên khai thác đến từ toàn cầu",
     "technology": {
       "title": "Cộng đồng nghiên cứu và phát triển",
-      "list": [
-        {
+      "list": [{
           "name": "Eric Zhang",
           "post": "CEO ",
           "imgSrc": "jiannan",
@@ -239,7 +235,7 @@
             "Chuyên gia về điện toán và đám mây phân toán quy mô lớn tại Red Hat",
             "Nhân viên nghiên cứu tại tổ chức nghiên cứu hạt nhân châu Âu CERN（2013）",
             "Quán quân của Docker Hackathon",
-            "Giải nhì cuộc thi CERN Webfest năm 2013"         
+            "Giải nhì cuộc thi CERN Webfest năm 2013"
           ]
         },
         {
@@ -340,8 +336,7 @@
     },
     "business": {
       "title": "Cộng đồng và sự phát triển doanh nghiệp ",
-      "list": [
-        {
+      "list": [{
           "name": "James Cheng",
           "post": "Trưởng phòng phát triển chiến lược",
           "imgSrc": "xiaoyong",
@@ -380,16 +375,6 @@
             "Nhà quản lý cộng đồng Blockchain chuyên nghiệp",
             "Điều hành một vài cộng đồng về Blockchain tại Việt Nam"
           ]
-        },        
-        {
-          "name": "Yan Liu ",
-          "post": "Điều phối viên cộng đồng",
-          "imgSrc": "liuyan",
-          "introList": [
-            "Hơn 10 năm kinh nghiệm trong hoạt động sản phẩm internet",
-            "Cố vấn cấp cao của ADP",
-            "Chuyên gia hoạt động của nền tảng công nghệ ô tô "
-          ]
         },
         {
           "name": "Wen Yan",
@@ -405,8 +390,7 @@
     },
     "consultant": {
       "title": "Cố vấn ",
-      "list": [
-        {
+      "list": [{
           "name": "Yushi Shen ",
           "introList": [
             "Tổng thư ký của Liên minh chiến lược tiên phong về hệ thống đám mây Trung Quốc ",
@@ -473,8 +457,7 @@
     "requireNum": "Số lượng yêu cầu",
     "salary": "Mức lương đãi ngộ",
     "email": "Vui lòng gửi hồ sơ xin việc vào e-mail",
-    "position": [
-      {
+    "position": [{
         "path": "jd/0",
         "icon": "icon font_family icon-kaifa",
         "job": "Kĩ sư khai thác ngôn ngữ Go"
@@ -510,8 +493,7 @@
         "job": "Thực tập sinh vận hành kinh doanh"
       }
     ],
-    "jobs": [
-      {
+    "jobs": [{
         "title": "Kĩ sư khai thác ngôn ngữ Go",
         "duty": [
           "Sử dụng thiết kế ngôn ngữ Go và khai thác sản phẩm của Blockchain TrueChain",
@@ -632,18 +614,18 @@
   "node": {
     "head": {
       "title": "Cuộc vận động ưu tiên",
-      "text1":"TrueChain’s priority nodes election lasted for 3 months since it started in the mid-May, now the election ends. In accordance with the arrangements previously published by TrueChain, the application page of priority node closed on August 16.",
-      "text2":"By the midnight of August 16, nearly one thousand users from TrueChain’s global community participated and reached the qualification of priority nodes election. Among which are 455 priority standard nodes with 439 individual and 2 teams participated; 340 priority master nodes with 43 individual and 17 teams participated.",
-      "text3":"According to the priority nodes election incentive rules,",
-      "text4":"1.Priority mining begins in mid-september after the Beta version of mainnet launches.",
-      "text5":"2.The mining will last six months, until March 2019",
-      "text6":"3.Master nodes and standard nodes will compete for 2 million TRUE respectively, 4 million TRUE in total.",
-      "text7":"4.All the TRUE will be migrated to the official mainnet and come into effect immediately.",
-      "text8":"TrueChain Foundation",
-      "text9":"16th, August, 2018",
+      "text1": "TrueChain’s priority nodes election lasted for 3 months since it started in the mid-May, now the election ends. In accordance with the arrangements previously published by TrueChain, the application page of priority node closed on August 16.",
+      "text2": "By the midnight of August 16, nearly one thousand users from TrueChain’s global community participated and reached the qualification of priority nodes election. Among which are 455 priority standard nodes with 439 individual and 2 teams participated; 340 priority master nodes with 43 individual and 17 teams participated.",
+      "text3": "According to the priority nodes election incentive rules,",
+      "text4": "1.Priority mining begins in mid-september after the Beta version of mainnet launches.",
+      "text5": "2.The mining will last six months, until March 2019",
+      "text6": "3.Master nodes and standard nodes will compete for 2 million TRUE respectively, 4 million TRUE in total.",
+      "text7": "4.All the TRUE will be migrated to the official mainnet and come into effect immediately.",
+      "text8": "TrueChain Foundation",
+      "text9": "16th, August, 2018",
       "keyword": "初链，TRUE,节点竞选，超级节点，区块链，数字货币",
       "description": "初链将在9月主网测试网上线之前，通过报名和投票机制，选举出最多不超过4000个优先标准节点（POW）和 最多不超过100个优先全节点（PBFT+POW）。"
-    },    
+    },
     "result": "Kết quả",
     "notPass": "(Failed)",
     "title": "Danh sách đăng kí theo giờ cụ thể",

@@ -1,7 +1,6 @@
 {
   "language": "EN",
-  "linksList": [
-    {
+  "linksList": [{
       "name": "twitter",
       "icon": "icon font_family icon-twitter",
       "link": "https://twitter.com/truechaingroup/"
@@ -32,8 +31,8 @@
       "link": "https://www.youtube.com/channel/UCsKSh9TPpYCZwHFn4lzhmFg?view_as=subscriber"
     }
   ],
-  "footerLinkDescr":"TrueChain Official SNS Platform",
-  "footerDownDescr":"TrueChain Light Wallet  APP Download",
+  "footerLinkDescr": "TrueChain Official SNS Platform",
+  "footerDownDescr": "TrueChain Light Wallet  APP Download",
   "home": {
     "head": {
       "title": "Next generation hybrid consensus public chain",
@@ -47,46 +46,45 @@
     "yellow": "YELLOW PAPER",
     "yellowLink": "https://www.truechain.pro/paper.pdf",
     "banner2": {
-      "title":"The True Light Wallet APP",
-      "line1":"Public beta version",
-      "line2":"Scan QR code to download"
+      "title": "The True Light Wallet APP",
+      "line1": "Public beta version",
+      "line2": "Scan QR code to download"
     },
-    "banner3":{
-      "title":"Priority Nodes Election",
-      "line1":"4000 Standard Nodes&100 Master Nodes",
-      "line2":"3000w TRUE as rewards",
-      "btntext":"See details"
+    "banner3": {
+      "title": "Priority Nodes Election",
+      "line1": "4000 Standard Nodes&100 Master Nodes",
+      "line2": "3000w TRUE as rewards",
+      "btntext": "See details"
     },
-    "superiority": [
-      {
+    "superiority": [{
         "icon": "icon font_family icon-jiejue",
         "title": "Tackles the Obstacles of permissionless blockchain",
-        "detail":"The conflict between  efficiency and decentralization for permissionless blockchain is solved by TrueChain with its permissionless PBFT-fPoW hybrid consensus with secure sharding."
+        "detail": "The conflict between  efficiency and decentralization for permissionless blockchain is solved by TrueChain with its permissionless PBFT-fPoW hybrid consensus with secure sharding."
       },
       {
         "icon": "icon font_family icon-tianchengzuo",
         "title": "Ensures  Decentralization and Fairness",
-        "detail":"Using Fruitchain as Snailchain to replace Nakamoto PoW with fPoW, TrueChain ensures  decentralization and fairness for the new generation of permissionless blockchain."
+        "detail": "Using Fruitchain as Snailchain to replace Nakamoto PoW with fPoW, TrueChain ensures  decentralization and fairness for the new generation of permissionless blockchain."
       },
       {
         "icon": "icon font_family icon-gongshijizhi",
         "title": "The First  Hybrid Consensus Incentive Model",
-        "detail":"TrueChain is the first in the world to design an incentive model for the governance of the hybrid consensus which impart economic awareness to blockchain technology"
+        "detail": "TrueChain is the first in the world to design an incentive model for the governance of the hybrid consensus which impart economic awareness to blockchain technology"
       },
       {
         "icon": "icon font_family icon-jizhi",
         "title": "Stable and Low Gas Fee Mechanism",
-        "detail":"Zero gas fee is impossible for permissionless blockchain, nonetheless, TrueChain designs a stable and relatively low gas fee mechanism for more DApps to be built on it."
+        "detail": "Zero gas fee is impossible for permissionless blockchain, nonetheless, TrueChain designs a stable and relatively low gas fee mechanism for more DApps to be built on it."
       },
       {
         "icon": "icon font_family icon-shequ",
         "title": "Strong Global Developer Community",
-        "detail":"Among the new generation of permissionless blockchain, TrueChain has a developer community that is the largest in China and the fastest growing in the world."
+        "detail": "Among the new generation of permissionless blockchain, TrueChain has a developer community that is the largest in China and the fastest growing in the world."
       },
       {
         "icon": "icon font_family icon-chanpin",
         "title": "Open Sourced Grid of Products",
-        "detail":"TrueChain brings a grid of products that support the hybrid consensus permissionless blockchain platform and makes the chain easy to use, and they are open source!"
+        "detail": "TrueChain brings a grid of products that support the hybrid consensus permissionless blockchain platform and makes the chain easy to use, and they are open source!"
       }
     ],
     "about": {
@@ -102,8 +100,7 @@
     },
     "roadmap": {
       "title": "ROAD MAP",
-      "list": [
-        {
+      "list": [{
           "time": "2018-01",
           "events": ["TrueChain’s white paper released"]
         },
@@ -147,22 +144,21 @@
     },
     "partner": "PARTNER",
     "institution": "INVESTORS",
-    "news":{
-      "title":"NEWS",
+    "news": {
+      "title": "NEWS",
       "technical": "Technical trends",
       "biz": "Business trends",
-      "list":[
-        {
-          "time":"2018-05-24",
-          "title":"TrueChain shows on CCTV6 to boost real economy"
+      "list": [{
+          "time": "2018-05-24",
+          "title": "TrueChain shows on CCTV6 to boost real economy"
         },
         {
-          "time":"2018-05-23",
-          "title":"Blockchain technology will revolutionize many industries"
+          "time": "2018-05-23",
+          "title": "Blockchain technology will revolutionize many industries"
         },
         {
-          "time":"2018-05-20",
-          "title":"TrueChain contributed to blockchain whitepaper by MIIT"
+          "time": "2018-05-20",
+          "title": "TrueChain contributed to blockchain whitepaper by MIIT"
         }
       ]
     }
@@ -197,12 +193,11 @@
       "title": "TrueChain team-TrueChain",
       "keyword": "TrueChain team members, TRUE, Blockchain expert, digital currency expert, Blockchain Talents",
       "description": "The leading research and engineering team members of True Chain come from the U.S., India and China. "
-    },    
+    },
     "banner": "With 1200+ developers from the world",
     "technology": {
       "title": "Research and Developers Community",
-      "list": [
-        {
+      "list": [{
           "name": "Eric Zhang",
           "post": "CEO",
           "imgSrc": "jiannan",
@@ -309,8 +304,7 @@
     },
     "business": {
       "title": "Community and development",
-      "list": [
-        {
+      "list": [{
           "name": "James Cheng",
           "post": "head of strategic development",
           "imgSrc": "xiaoyong",
@@ -350,16 +344,6 @@
             "Blockchain community management professional ",
             "Managers of some major blockchain user community in Vietnam"
           ]
-        },        
-        {
-          "name": "Yan Liu",
-          "post": "Community Coordinator",
-          "imgSrc": "liuyan",
-          "introList": [
-            "10+years internet product operation experience",
-            "Senior advisor of ADP",
-            "Operation Expert of automobile Technology Platform"
-          ]
         },
         {
           "name": "Wen Yan",
@@ -375,8 +359,7 @@
     },
     "consultant": {
       "title": "Advisors",
-      "list": [
-        {
+      "list": [{
           "name": "Yushi Shen",
           "introList": [
             "The Secretary-General of China Cloud System Pioneer Strategic Alliance    ",
@@ -442,8 +425,7 @@
     "requireNum": "Demand amount",
     "salary": "Salary",
     "email": "Resume delivery",
-    "position": [
-      {
+    "position": [{
         "path": "jd/0",
         "icon": "icon font_family icon-kaifa",
         "job": "Go development engineer"
@@ -459,8 +441,7 @@
         "job": "Investor Relations Director"
       }
     ],
-    "jobs": [
-      {
+    "jobs": [{
         "title": "Go development engineer",
         "duty": [
           "Use Go language to design and develop the TrueChain product.",
@@ -514,18 +495,18 @@
   "node": {
     "head": {
       "title": " Announcement| TrueChain priority nodes election releases result ",
-      "text1":"TrueChain’s priority nodes election lasted for 3 months since it started in the mid-May, now the election ends. In accordance with the arrangements previously published by TrueChain, the application page of priority node closed on August 16.",
-      "text2":"By the midnight of August 16, nearly one thousand users from TrueChain’s global community participated and reached the qualification of priority nodes election. Among which are 455 priority standard nodes with 439 individual and 2 teams participated; 340 priority master nodes with 43 individual and 17 teams participated.",
-      "text3":"According to the priority nodes election incentive rules,",
-      "text4":"1.Priority mining begins in mid-september after the Beta version of mainnet launches.",
-      "text5":"2.The mining will last six months, until March 2019",
-      "text6":"3.Master nodes and standard nodes will compete for 2 million TRUE respectively, 4 million TRUE in total.",
-      "text7":"4.All the TRUE will be migrated to the official mainnet and come into effect immediately.",
-      "text8":"TrueChain Foundation",
-      "text9":"16th, August, 2018",
+      "text1": "TrueChain’s priority nodes election lasted for 3 months since it started in the mid-May, now the election ends. In accordance with the arrangements previously published by TrueChain, the application page of priority node closed on August 16.",
+      "text2": "By the midnight of August 16, nearly one thousand users from TrueChain’s global community participated and reached the qualification of priority nodes election. Among which are 455 priority standard nodes with 439 individual and 2 teams participated; 340 priority master nodes with 43 individual and 17 teams participated.",
+      "text3": "According to the priority nodes election incentive rules,",
+      "text4": "1.Priority mining begins in mid-september after the Beta version of mainnet launches.",
+      "text5": "2.The mining will last six months, until March 2019",
+      "text6": "3.Master nodes and standard nodes will compete for 2 million TRUE respectively, 4 million TRUE in total.",
+      "text7": "4.All the TRUE will be migrated to the official mainnet and come into effect immediately.",
+      "text8": "TrueChain Foundation",
+      "text9": "16th, August, 2018",
       "keyword": "TrueChain,TRUE, nodes election, super nodes, blockchain, digital currency",
       "description": "TrueChain will select no more than 4000 priority standard nodes (POW) and no more than 100 priority master nodes (PBFT+POW) by votes before the test main network released in September."
-    },    
+    },
     "result": "result",
     "notPass": "(Failed)",
     "title": "Priority Nodes Election Enrollment",
