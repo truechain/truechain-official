@@ -107,6 +107,12 @@ export default {
     } else {
       // this.setLanguage()
     }
+    setTimeout(()=>{
+      let scriptEl = document.createElement("script")
+      scriptEl.type = "text/javascript";
+      scriptEl.src = "//s19.cnzz.com/z_stat.php?id=1274893188&web_id=1274893188";
+      document.body.appendChild(scriptEl)
+    },200)
   },
   head () {
     return {
@@ -117,7 +123,6 @@ export default {
       ],
       script: [
         { src: '//pv.sohu.com/cityjson?ie=utf-8' },
-        { src: '//s19.cnzz.com/z_stat.php?id=1274893188&web_id=1274893188' },
       ]
     }
   },
