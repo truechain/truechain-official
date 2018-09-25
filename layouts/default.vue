@@ -69,6 +69,7 @@
         .container-app-footer-copyright
           div Copyright ⓒ TrueChain All Rights Reserved.
           // div COPYRIGHT© TRUE CHAIN {{$t('copyright') }}
+        
 </template>
 
 <script>
@@ -115,7 +116,8 @@ export default {
         { hid: 'home-description', name: 'description', content: this.$t('home.head.description') }
       ],
       script: [
-        { src: '//pv.sohu.com/cityjson?ie=utf-8' }
+        { src: '//pv.sohu.com/cityjson?ie=utf-8' },
+        { src: '//s19.cnzz.com/z_stat.php?id=1274893188&web_id=1274893188' },
       ]
     }
   },
@@ -208,7 +210,7 @@ export default {
   }
 }
 </script>
-<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1274893188'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1274893188%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+
 
 <style lang="stylus" scpoed>
 @import '~@/assets/stylus/index.styl';
@@ -501,4 +503,6 @@ nav
     display block
   .container-app-header-button.lang
     display inline-block
+a[title=站长统计]
+  display none
 </style>
