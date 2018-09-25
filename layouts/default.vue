@@ -109,7 +109,7 @@ export default {
     }
     setTimeout(()=>{
       let scriptEl = document.createElement("script")
-      scriptEl.type = "text/javascript";
+      scriptEl.type = "text/javascript"
       scriptEl.src = "//s19.cnzz.com/z_stat.php?id=1274893188&web_id=1274893188";
       document.body.appendChild(scriptEl)
     },200)
