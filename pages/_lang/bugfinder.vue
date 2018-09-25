@@ -11,9 +11,9 @@ div.finder-box
       .reward-item  
         p.primary-txt 10000 TRUE
         p.second-txt 最高奖励
-      .reward-item
-        p.primary-txt 4 条
-        p.second-txt 已认领
+      //- .reward-item
+      //-   p.primary-txt 4 条
+      //-   p.second-txt 已认领
   .finder-box-con
     .finder-box-left
       .finder-box-left-title 测试范围
