@@ -3,7 +3,10 @@ import VueI18n from 'vue-i18n'
 
 Vue.use(VueI18n)
 
-export default ({ app, store }) => {
+export default ({
+  app,
+  store
+}) => {
   // Set i18n instance on app
   // This way we can use it in middleware and pages asyncData/fetch
   app.i18n = new VueI18n({
@@ -11,12 +14,12 @@ export default ({ app, store }) => {
     fallbackLocale: 'default',
     messages: {
       'default': require('~/locales/en.json'),
-      'en': require('~/locales/en.json'),  //英文
-      'zh': require('~/locales/zh.json'),  //中国
-      'ko': require('~/locales/ko.json'),  //韩国
-      'th': require('~/locales/th.json'),  //泰国
-      'jp': require('~/locales/jp.json'),  //日本
-      'vn': require('~/locales/vn.json')   //越南
+      'en': require('~/locales/en.json'), // 英文
+      'zh': require('~/locales/zh.json'), // 中国
+      'ko': require('~/locales/ko.json'), // 韩国
+      'th': require('~/locales/th.json'), // 泰国
+      'jp': require('~/locales/jp.json'), // 日本
+      'vn': require('~/locales/vn.json') // 越南
     }
   })
 
@@ -25,9 +28,9 @@ export default ({ app, store }) => {
       return `/${link}`
     }
     // don't always append locale
-    if( ( app.i18n.locale) && ( link.indexOf( app.i18n.locale ) < 0 ) ){
+    if ((app.i18n.locale) && (link.indexOf(app.i18n.locale) < 0)) {
       return `/${app.i18n.locale}/${link}`
-    }   
+    }
     return `/${link}`
   }
 }

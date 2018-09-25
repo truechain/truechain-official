@@ -1,7 +1,6 @@
 {
   "language": "タイ語",
-  "linksList": [
-    {
+  "linksList": [{
       "name": "twitter",
       "icon": "icon font_family icon-twitter",
       "link": "https://twitter.com/truechaingroup/"
@@ -32,8 +31,8 @@
       "link": "https://www.youtube.com/channel/UCsKSh9TPpYCZwHFn4lzhmFg?view_as=subscriber"
     }
   ],
-  "footerLinkDescr":"トゥルーチェーン公式ソーシャルプラットフォーム",
-  "footerDownDescr":"トゥルーチェーンSPVアプリケーションダウンロード",
+  "footerLinkDescr": "トゥルーチェーン公式ソーシャルプラットフォーム",
+  "footerDownDescr": "トゥルーチェーンSPVアプリケーションダウンロード",
   "home": {
     "head": {
       "title": "新世代ハイブリッドコンセンサスパブリックチェーン",
@@ -47,46 +46,45 @@
     "yellow": "イエローペーパー",
     "yellowLink": "https://www.truechain.pro/paper.pdf",
     "banner2": {
-      "title":"True SPVアプリケーション",
-      "line1":"公式テストバージョン",
-      "line2":"QRコードの読み取りダウンロード"
+      "title": "True SPVアプリケーション",
+      "line1": "公式テストバージョン",
+      "line2": "QRコードの読み取りダウンロード"
     },
-    "banner3":{
-      "title":"優先ノードの熱い投票中",
-      "line1":"4000個優先スタンダードノード & 100個優先マスターノード",
-      "line2":"3000w True Tokenノードインセンティブ",
-      "btntext":"詳細チェック"
+    "banner3": {
+      "title": "優先ノードの熱い投票中",
+      "line1": "4000個優先スタンダードノード & 100個優先マスターノード",
+      "line2": "3000w True Tokenノードインセンティブ",
+      "btntext": "詳細チェック"
     },
-    "superiority": [
-      {
+    "superiority": [{
         "icon": "icon font_family icon-jiejue",
         "title": "パブリックチェーンの最も重要な問題を解決する",
-        "detail":"トゥルーチェーンは、PBFT-fPoWハイブリッドコンセンサスメカニズム及び安全な断片化メカニズムによって、従来にあるパブリックチェーンの最大の問題、すなわち、性能と分散化との矛盾の問題を解決した"
+        "detail": "トゥルーチェーンは、PBFT-fPoWハイブリッドコンセンサスメカニズム及び安全な断片化メカニズムによって、従来にあるパブリックチェーンの最大の問題、すなわち、性能と分散化との矛盾の問題を解決した"
       },
       {
         "icon": "icon font_family icon-tianchengzuo",
         "title": "分散化及び公平性を確保した",
-        "detail":"フルーツチェーンをスローチェーンとして使用し、fPoWにより中本聡のPoWプロトコルを取り換え、トゥルーチェーンは新世代パブリックチェーンとしての分散化及び公平性を確保できた"
+        "detail": "フルーツチェーンをスローチェーンとして使用し、fPoWにより中本聡のPoWプロトコルを取り換え、トゥルーチェーンは新世代パブリックチェーンとしての分散化及び公平性を確保できた"
       },
       {
         "icon": "icon font_family icon-gongshijizhi",
         "title": "初代ハイブリッドコンセンサスインセンティブメカニズム",
-        "detail":"トゥルーチェーンは世界初のインセンティブメカニズムによりハイブリッドコンセンサスパブリックチェーンを管理するものであり、ブロックチェーン技術に経済意識を吹き込んだ"
+        "detail": "トゥルーチェーンは世界初のインセンティブメカニズムによりハイブリッドコンセンサスパブリックチェーンを管理するものであり、ブロックチェーン技術に経済意識を吹き込んだ"
       },
       {
         "icon": "icon font_family icon-jizhi",
         "title": "安定的、低コストの燃料費メカニズム",
-        "detail":"燃料費用のゼロ化はパブリックチェーンにとって不可能であるが、トゥルーチェーンは安定的、低コストの燃料費でより多くのDAppsをチェーンにすることができる"
+        "detail": "燃料費用のゼロ化はパブリックチェーンにとって不可能であるが、トゥルーチェーンは安定的、低コストの燃料費でより多くのDAppsをチェーンにすることができる"
       },
       {
         "icon": "icon font_family icon-shequ",
         "title": "強い世界開発者コミュニティ",
-        "detail":"新世代パブリックチェーンにおいて、トゥルーチェーンは、中国国内で規模が最大であり、世界的に拡張速度が最も早い開発者コミュニティを備える"
+        "detail": "新世代パブリックチェーンにおいて、トゥルーチェーンは、中国国内で規模が最大であり、世界的に拡張速度が最も早い開発者コミュニティを備える"
       },
       {
         "icon": "icon font_family icon-chanpin",
         "title": "オープンソースの製品マトリックス",
-        "detail":"ハイブリッドコンセンサスパブリックチェーンプラットフォームを完全化、サポートするために、トゥルーチェーンは十分に完全で、かつ使いやすい製品マトリックスを備え、かつすべての製品がオープンソースを提供している"
+        "detail": "ハイブリッドコンセンサスパブリックチェーンプラットフォームを完全化、サポートするために、トゥルーチェーンは十分に完全で、かつ使いやすい製品マトリックスを備え、かつすべての製品がオープンソースを提供している"
       }
     ],
     "about": {
@@ -103,8 +101,7 @@
     },
     "roadmap": {
       "title": "ルート",
-      "list": [
-        {
+      "list": [{
           "time": "2018-01",
           "events": ["Trueホワイトペーパー発表"]
         },
@@ -148,22 +145,21 @@
     },
     "partner": "提携機関",
     "institution": "投資機関",
-    "news":{
-      "title":"ニュース",
+    "news": {
+      "title": "ニュース",
       "technical": "技術情報",
       "biz": "ビジネス情報",
-      "list":[
-        {
-          "time":"2018-05-24",
-          "title":"トゥルーチェーンがCCTV6に報道され、実体経済促進に助力した"
+      "list": [{
+          "time": "2018-05-24",
+          "title": "トゥルーチェーンがCCTV6に報道され、実体経済促進に助力した"
         },
         {
-          "time":"2018-05-23",
-          "title":"Blockchain technology will revolutionize many industries"
+          "time": "2018-05-23",
+          "title": "Blockchain technology will revolutionize many industries"
         },
         {
-          "time":"2018-05-20",
-          "title":"トゥルーチェーンが工信部に主催されたブロックチェーン産業ホワイトペーパーアンケート調査に協力した"
+          "time": "2018-05-20",
+          "title": "トゥルーチェーンが工信部に主催されたブロックチェーン産業ホワイトペーパーアンケート調査に協力した"
         }
       ]
     }
@@ -202,8 +198,7 @@
     "banner": "全世界からの1200+名以上の開発者",
     "technology": {
       "title": "研究及び開発者コミュニティ",
-      "list": [
-        {
+      "list": [{
           "name": "エリック・チャン",
           "post": "CEO",
           "imgSrc": "jiannan",
@@ -324,8 +319,7 @@
     },
     "business": {
       "title": "コミュニティ運営",
-      "list": [
-        {
+      "list": [{
           "name": "程小永",
           "post": "チーフストラテジーオフィサー",
           "imgSrc": "xiaoyong",
@@ -344,15 +338,6 @@
             "バイドゥ百科の運営に携わった",
             "10年の数字広告及びインターネット業界経験あり"
           ]
-        },{
-          "name": "劉焰",
-          "post": "コミュニティー",
-          "imgSrc": "liuyan",
-          "introList": [
-            "10年以上のインターネット製品運営経験ある",
-            "ADP中国区スパーコンサルティング",
-            "インターネットプラットフォーム運営専門家"
-          ]
         },
         {
           "name": "閆聞",
@@ -360,16 +345,15 @@
           "imgSrc": "yanwen",
           "introList": [
             "アメリカミズーリ大学コロンビア支部ニュース通信学院卒業",
-             "Bankrate.comワシントン支店に就職したことある",
-             "Sina Finance記者に努めた"
+            "Bankrate.comワシントン支店に就職したことある",
+            "Sina Finance記者に努めた"
           ]
         }
       ]
     },
     "consultant": {
       "title": "顧問",
-      "list": [
-        {
+      "list": [{
           "name": "沈寓実",
           "introList": [
             "清華大学電子工程学士",
@@ -410,7 +394,7 @@
           "name": "朱宇（鬓客）",
           "introList": [
             "トゥルーチェーン新小売りとブロックチェーン研究院院長",
-            "アリババグループ新小売り（O2O）部署の初任責任者", 
+            "アリババグループ新小売り（O2O）部署の初任責任者",
             "上品ビジネスの前副総裁",
             "完全数字化、全ルート交流、数字マーケティング業務専門家"
           ]
@@ -436,8 +420,7 @@
     "requireNum": "募集人数",
     "salary": "給料待遇",
     "email": "履歴書応募メール",
-    "position": [
-      {
+    "position": [{
         "path": "jd/0",
         "icon": "icon font_family icon-kaifa",
         "job": "Go言語開発エンジニア"
@@ -450,7 +433,7 @@
       {
         "path": "jd/2",
         "icon": "icon font_family icon-touzi",
-        "job": "投資者関連監督" 
+        "job": "投資者関連監督"
       },
       {
         "path": "jd/3",
@@ -473,8 +456,7 @@
         "job": "運営インターン"
       }
     ],
-    "jobs": [
-      {
+    "jobs": [{
         "title": "Go言語開発エンジニア",
         "duty": [
           "Go言語を使用してトゥルーチェーンブロックチェーンの製品を設計、開発する。",
@@ -598,18 +580,18 @@
   "node": {
     "head": {
       "title": " Announcement| TrueChain priority nodes election releases result ",
-      "text1":"TrueChain’s priority nodes election lasted for 3 months since it started in the mid-May, now the election ends. In accordance with the arrangements previously published by TrueChain, the application page of priority node closed on August 16.",
-      "text2":"By the midnight of August 16, nearly one thousand users from TrueChain’s global community participated and reached the qualification of priority nodes election. Among which are 455 priority standard nodes with 439 individual and 2 teams participated; 340 priority master nodes with 43 individual and 17 teams participated.",
-      "text3":"According to the priority nodes election incentive rules,",
-      "text4":"1.Priority mining begins in mid-september after the Beta version of mainnet launches.",
-      "text5":"2.The mining will last six months, until March 2019",
-      "text6":"3.Master nodes and standard nodes will compete for 2 million TRUE respectively, 4 million TRUE in total.",
-      "text7":"4.All the TRUE will be migrated to the official mainnet and come into effect immediately.",
-      "text8":"TrueChain Foundation",
-      "text9":"16th, August, 2018",
+      "text1": "TrueChain’s priority nodes election lasted for 3 months since it started in the mid-May, now the election ends. In accordance with the arrangements previously published by TrueChain, the application page of priority node closed on August 16.",
+      "text2": "By the midnight of August 16, nearly one thousand users from TrueChain’s global community participated and reached the qualification of priority nodes election. Among which are 455 priority standard nodes with 439 individual and 2 teams participated; 340 priority master nodes with 43 individual and 17 teams participated.",
+      "text3": "According to the priority nodes election incentive rules,",
+      "text4": "1.Priority mining begins in mid-september after the Beta version of mainnet launches.",
+      "text5": "2.The mining will last six months, until March 2019",
+      "text6": "3.Master nodes and standard nodes will compete for 2 million TRUE respectively, 4 million TRUE in total.",
+      "text7": "4.All the TRUE will be migrated to the official mainnet and come into effect immediately.",
+      "text8": "TrueChain Foundation",
+      "text9": "16th, August, 2018",
       "keyword": "トゥルーチェーン，TRUE,ノード投票，スーパーノード，ブロックチェーン，数字通貨",
       "description": "トゥルーチェーンは9月メインネットワークテストネットがオンラインする前に、応募及び投票により、4000個以下の優先スタンダードノード（POW）及び100個以下の優先マスターノード（PBFT+POW）を選ぶ。"
-    },    
+    },
     "result": "result",
     "notPass": "(Failed)",
     "title": "優先ノード投票応募",
