@@ -16,7 +16,8 @@
 
 <script>
 // const url = 'http://wapxk.com/wapindex-1000-6879.html'
-const url = 'https://www.truechain.pro/download/truewallet.html'
+// const url = 'https://www.truechain.pro/download/truewallet.html'
+const url = 'https://www.truechain.pro/iosappdown'
 
 export default {
   name: 'app-ios',
