@@ -9,7 +9,7 @@ div.finder-box
         .finder-box-top-left-descr 初链是真正快速、安全、不受限、可扩容的Minerva混合共识公链(无需许可链)，并拥有强大的全球开发者社区。
     .finder-box-top-right
       .reward-item  
-        p.primary-txt 22.00 Ether
+        p.primary-txt 10000 TRUE
         p.second-txt 最高奖励
       .reward-item
         p.primary-txt 4 条
@@ -105,16 +105,16 @@ div.finder-box
         a.btn(href="https://dvpnet.io/company/company-info/id/99#item-three") 提交漏洞
       .finder-box-right-item
         span.dot.serious
-        span.text 严重：6.00 - 22.00 Ether
+        span.text 严重：2700 - 10000 TRUE
       .finder-box-right-item
         span.dot.high
-        span.text 高危：3.00 - 6.00 Ether
+        span.text 高危：1300 - 2700 TRUE
       .finder-box-right-item
         span.dot.mid
-        span.text 中危：0.20 - 3.00 Ether
+        span.text 中危：80 - 1300 TRUE
       .finder-box-right-item
         span.dot.low
-        span.text 低危：0.05 - 0.20 Ether
+        span.text 低危：20 - 80 TRUE
         
 </template>
 
