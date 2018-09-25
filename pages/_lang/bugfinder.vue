@@ -163,6 +163,7 @@ export default {
       line-height 20px
       color #798d99
     .finder-box-top-right
+      margin 0px 20px
       .reward-item
         display inline-block
         vertical-align top
@@ -220,6 +221,43 @@ export default {
         background-color #f7c708
       .dot.low
         background-color #0bb0a8
-.p
-  font-size 100px
+pre
+  white-space pre-wrap
+  white-space -moz-pre-wrap
+  white-space -pre-wrap
+  white-space -o-pre-wrap
+  word-wrap break-word
+  word-bread break-all
+
+@media screen and (max-width 860px)
+  .finder-box
+    // display none
+    .finder-box-top
+      padding 18px 15px
+      flex-direction column
+      .finder-box-top-left
+        flex-direction column
+        .left-logo
+          flex-shrink 0
+          text-align center
+          img 
+            width auto 
+            height auto
+        .finder-box-top-left-title
+          text-align center
+          display none
+        .finder-box-top-left-descr
+          margin-top 20px
+      .finder-box-top-right
+        text-align center
+    .finder-box-con
+      padding 0px 20px
+      justify-content center
+      .finder-box-left
+        order 2
+        .finder-box-left-con
+          word-break break-all
+      .finder-box-right
+        order 1
+
 </style>
