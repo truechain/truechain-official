@@ -184,6 +184,7 @@ export default {
       .finder-box-left-con
         font-size 13px
         line-height 22px
+        margin-bottom 25px
     .finder-box-right
       margin 0px 20px 20px
       .finder-box-right-title
