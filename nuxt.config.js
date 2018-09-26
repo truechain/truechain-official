@@ -65,6 +65,6 @@ module.exports = {
     color: 'cyan'
   },
   router: {
-    middleware: 'i18n'
+    middleware: ['pagestat','i18n',]
   }
 }
