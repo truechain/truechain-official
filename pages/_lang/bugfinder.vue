@@ -9,8 +9,8 @@ div.finder-box
         .finder-box-top-left-descr 初链是真正快速、安全、不受限、可扩容的Minerva混合共识公链(无需许可链)，并拥有强大的全球开发者社区。
     .finder-box-top-right
       .reward-item  
-        p.primary-txt 10000 TRUE
         p.second-txt 最高奖励
+        p.primary-txt 10000 TRUE        
       //- .reward-item
       //-   p.primary-txt 4 条
       //-   p.second-txt 已认领
