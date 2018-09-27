@@ -531,5 +531,26 @@
     "hour": "Hour",
     "minute": "Minute",
     "second": "Second"
+  },
+  "bugfinder":{
+    "testPlan":"Testing Range",
+    "rewardPlan":"Reward Plan",
+    "submitBug":"Submit Plan",
+    "highestRewardLabel":"Highest",
+    "pageTitle":"True Chain",
+    "pageDescr":"TrueChain is a truly fast, permissionless, secure and scalable permissionless blockchain platform which is supported by hybrid consensus technology called Minerva and a global developer community.",
+    "seriousBugLabel":"Serious Bugs",
+    "seriousBugText1":"Bugs that can directly obtain the limit of operation server and significant data, including but not limited to Arbitrary command execution, uploading webshell, Arbitrary code execution, large amounts of data from SQL injection. ",
+    "seriousBugText2":"Logic bugs that seriously affect the security of system operation, including but not limited to arbitrary account password reset, the modification of bugs, a large number of bugs that obtain user identity authentication information, unauthorized access bugs, unauthorized access to the background management system, and so on. ",
+    "seriousBugText3":"The divarication can be caused by certain means; ",
+    "seriousBugText4":"Currently, a large-scale security bugs are breaking out, which need enough attention ",
+    "highRiskBugLabel":"High Risk Bugs",
+    "highRiskBugText":"Business operation can be seriously affected by certain means, and may bring huge losses to customers, such as key business operation can be Dos, login interface can be attacked and business system can be easily used by bonus hunter.\nBugs of User ID need to obtain by user interaction, including conventional storage/reflection XSS vulnerabilities, CSRF bugs of core business operations, etc.\nRandom document read / modify / cover / delete / download;\nModifying user profiles, personal information, and forcing users to perform certain operations bypassing the limit.\nThe leakage of important information that can bring damage to the target system, File backup of sensitive information or leakage of source code, etc. ( such as the leakage of storage keys, the leakage of data access password, the leakage of SVN／Git account and the leakage of VPN account).\nBugs can Led to the ownership lost of token contracts, for example: Key function access control defects, call injection caused the bypass of key function access and so on.\nBugs can damage the normal work of the token contracts, for example: DoS bugs led by sending ETH to a Malicious address, and the DoS bugs led by the exhaustion of gas.",
+    "midRiskBugLabel":"Medium Risk Bugs",
+    "midRiskBugText":"Bugs can affect the security of the target system but cannot be directly proved to be available;\nBugs able to obtain target network device permissions but determined not to be further utilized;\nNon-critical information leakage, open URL jump bugs, XSS bugs with certain restrictions and difficult to be utilized, CSRF bugs of non-core key business operations, etc.\nHigh-risk bugs require specific addresses to be triggered, such as the numerical overflow bugs that can be triggered by the holder of the token contract; Access control defects of non-critical functions and logic design defects that cannot cause direct capital loss.",
+    "lowRiskBugLabel":"Low Risk Bugs",
+    "lowRiskBugText":"It is impossible to determine whether the security of the target system can be affected. For example, the target system management port is open to the public network but cannot be directly utilized, the Banner information of the target system can be identified, and other infiltration testers can identify that it is difficult to use but may have potential security threats.\nBugs that are difficult to be triggered, and those with limited harms after being triggered, such as the numerical overflow bugs that needs a large number of ETH or tokens to be triggered, the bugs that the attacker cannot directly profit after they triggered numerical overflow, and the risk of relying on transaction sequence triggered by specifying high gas.\n",
+    "noticeLabel":"Matters Need Attention",
+    "noticeText":"• The client includes all client programs published through official channels\n• No rewards for bugs that already submitted on other bug disclosure platforms.\n• Third-party application bugs on open platforms are not rewarded.\n•The earliest submission of the same bug is rewarded."
   }
 }
