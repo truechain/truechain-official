@@ -72,6 +72,11 @@
             .container-app-footer-buttons
               app-android
               app-ios
+            //- .container-app-footer-down-ming
+            //-   a.container-app-footer-down-ming-btn(
+            //-     target='_blank'
+            //-     href='https://www.truechain.pro/download/truebeta-ming-guide-docker.pdf'
+            //- )  TrueChain挖矿教程
         .container-app-footer-copyright
           div Copyright ⓒ TrueChain All Rights Reserved.
           // div COPYRIGHT© TRUE CHAIN {{$t('copyright') }}
@@ -446,7 +451,7 @@ nav
     clear both
   .app-button-box
     height 42px
-    margin-top 58px
+    margin-top 18px
     float none
     .app-button
       line-height 40px
@@ -460,6 +465,30 @@ nav
     div
       wh(80px,80px)
       margin 0px auto
+
+
+
+
+
+
+
+
+
+
+
+
+.container-app-footer-down-ming
+  text-align center
+  .container-app-footer-down-ming-btn
+    font-size 16px
+    display inline-block
+    line-height 44px
+    color white
+    border-radius 25px
+    border 1px solid white
+    margin 10px auto 0px
+    padding 0px 20px
+    width 100%
 .container-app-footer-copyright
   padding-bottom 0px
   div
