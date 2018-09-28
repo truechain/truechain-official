@@ -11,6 +11,12 @@
               li(
                   @click="jumpTo('https://github.com/truechain')"
                 ) {{ $t(`nav.git`) }}
+              li(
+                  @click="jumpTo('https://www.truescan.net')"
+                ) {{ $t(`nav.truescan`) }}
+              li(
+                  @click="jumpTo('http://www.truewallet.net')"
+                ) {{ $t(`nav.webwallet`) }}
               nuxt-link(
                 v-for="(item, index) in indexList",
                 tag="li",

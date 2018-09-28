@@ -173,6 +173,8 @@
     "join": "JOIN US",
     "node": "NODE",
     "reward": "REWARD",
+    "truescan":"TrueScan",
+    "webwallet":"Wallet",
     "english": "EN"
   },
   "news": {
