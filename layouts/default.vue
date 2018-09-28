@@ -72,11 +72,11 @@
             .container-app-footer-buttons
               app-android
               app-ios
-            //- .container-app-footer-down-ming
-            //-   a.container-app-footer-down-ming-btn(
-            //-     target='_blank'
-            //-     href='https://www.truechain.pro/download/truebeta-ming-guide-docker.pdf'
-            //- )  TrueChain挖矿教程
+            .container-app-footer-down-ming
+              a.container-app-footer-down-ming-btn(
+                target='_blank'
+                href='https://www.truechain.pro/download/truebeta-ming-guide-docker.pdf'
+            )  TrueChain挖矿教程
         .container-app-footer-copyright
           div Copyright ⓒ TrueChain All Rights Reserved.
           // div COPYRIGHT© TRUE CHAIN {{$t('copyright') }}
