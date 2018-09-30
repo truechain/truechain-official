@@ -80,15 +80,15 @@
             )  docker版
               a.container-app-footer-down-ming-btn(
                 target='_blank'
-                href='https://www.truechain.pro/download/ming/ming-version-windows.doc'
+                href='https://www.truechain.pro/download/ming/ming-version-windows.docx'
             )  win版
               a.container-app-footer-down-ming-btn(
                 target='_blank'
-                href='https://www.truechain.pro/download/ming/ming-version-linux.doc'
+                href='https://www.truechain.pro/download/ming/ming-version-linux.docx'
             )  linux版
               a.container-app-footer-down-ming-btn(
                 target='_blank'
-                href='https://www.truechain.pro/download/ming/ming-version-mac.doc'
+                href='https://www.truechain.pro/download/ming/ming-version-mac.docx'
             )  mac版
         .container-app-footer-copyright
           div Copyright ⓒ TrueChain All Rights Reserved.
