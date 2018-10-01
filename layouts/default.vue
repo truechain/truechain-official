@@ -80,15 +80,15 @@
             )  docker版
               a.container-app-footer-down-ming-btn(
                 target='_blank'
-                href='https://www.truechain.pro/download/ming/ming-version-windows.docx'
+                href='https://www.truechain.pro/download/ming/ming-version-windows.pdf'
             )  win版
               a.container-app-footer-down-ming-btn(
                 target='_blank'
-                href='https://www.truechain.pro/download/ming/ming-version-linux.docx'
+                href='https://www.truechain.pro/download/ming/ming-version-linux.pdf'
             )  linux版
               a.container-app-footer-down-ming-btn(
                 target='_blank'
-                href='https://www.truechain.pro/download/ming/ming-version-mac.docx'
+                href='https://www.truechain.pro/download/ming/ming-version-mac.pdf'
             )  mac版
         .container-app-footer-copyright
           div Copyright ⓒ TrueChain All Rights Reserved.
@@ -501,7 +501,6 @@ nav
   font-size 20px
   font-weight bold
   line-height 28px
-  height 28px
   color white
   display block
 
@@ -516,6 +515,8 @@ nav
 
 
 @media screen and (max-width 860px)
+  .container-app-footer-down-ming
+    text-align center
   .container-app-header-nav
     ul
       overflow hidden
