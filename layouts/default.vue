@@ -91,7 +91,9 @@
                 href='https://www.truechain.pro/download/ming/ming-version-mac.pdf'
             )  mac版
         .container-app-footer-copyright
-          div Copyright ⓒ TrueChain All Rights Reserved.
+          div 
+            span Copyright ⓒ TrueChain All Rights Reserved.
+            span {{ $t(`footerContactUs`) }}： partner@truechain.pro
           // div COPYRIGHT© TRUE CHAIN {{$t('copyright') }}
         
 </template>
@@ -492,11 +494,13 @@ nav
     padding 0px 12px
 .container-app-footer-copyright
   padding-bottom 0px
-  div
+  span
     color white
     text-align left
     font-size 13px
-    line-height 60px
+    line-height 20px
+    display inline-block
+    padding 15px 20px
 .container-app-footer-text
   font-size 20px
   font-weight bold
