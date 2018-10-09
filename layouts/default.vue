@@ -73,12 +73,27 @@
               app-android
               app-ios
             .container-app-footer-down-ming
+              .container-app-footer-text TrueChain挖矿教程
               a.container-app-footer-down-ming-btn(
                 target='_blank'
-                href='https://www.truechain.pro/download/truebeta-ming-guide-docker.pdf'
-            )  TrueChain挖矿教程
+                href='https://www.truechain.pro/download/ming/truebeta-ming-guide-docker.pdf'
+            )  docker版
+              a.container-app-footer-down-ming-btn(
+                target='_blank'
+                href='https://www.truechain.pro/download/ming/ming-version-windows.pdf'
+            )  win版
+              a.container-app-footer-down-ming-btn(
+                target='_blank'
+                href='https://www.truechain.pro/download/ming/ming-version-linux.pdf'
+            )  linux版
+              a.container-app-footer-down-ming-btn(
+                target='_blank'
+                href='https://www.truechain.pro/download/ming/ming-version-mac.pdf'
+            )  mac版
         .container-app-footer-copyright
-          div Copyright ⓒ TrueChain All Rights Reserved.
+          div 
+            span Copyright ⓒ TrueChain All Rights Reserved.
+            span {{ $t(`footerContactUs`) }}： partner@truechain.pro
           // div COPYRIGHT© TRUE CHAIN {{$t('copyright') }}
         
 </template>
@@ -440,21 +455,22 @@ nav
           border-color transparent transparent #fff transparent
 .container-app-footer-down
   position relative
-  padding 10px 0px 60px 70px
+  padding 5px 0px 60px 70px
 .container-app-footer-buttons
   display flex
   flex-wrap wrap
   justify-content center
+  padding-top 5px
   &:before,&:after
     content: " ";
     display: block;
     clear both
   .app-button-box
     height 42px
-    margin-top 18px
+    margin-top 0px
     float none
     .app-button
-      line-height 40px
+      line-height 35px
       display flex
       flex-direction row
       align-items center
@@ -465,42 +481,30 @@ nav
     div
       wh(80px,80px)
       margin 0px auto
-
-
-
-
-
-
-
-
-
-
-
-
 .container-app-footer-down-ming
-  text-align center
+  text-align left
   .container-app-footer-down-ming-btn
-    font-size 16px
+    font-size 15px
     display inline-block
-    line-height 44px
+    line-height 35px
     color white
     border-radius 25px
     border 1px solid white
-    margin 10px auto 0px
-    padding 0px 20px
-    width 100%
+    margin 6px 5px 0px
+    padding 0px 12px
 .container-app-footer-copyright
   padding-bottom 0px
-  div
+  span
     color white
     text-align left
     font-size 13px
-    line-height 60px
+    line-height 20px
+    display inline-block
+    padding 15px 20px
 .container-app-footer-text
-  font-size 26px
+  font-size 20px
   font-weight bold
-  line-height 40px
-  height 40px
+  line-height 28px
   color white
   display block
 
@@ -515,6 +519,8 @@ nav
 
 
 @media screen and (max-width 860px)
+  .container-app-footer-down-ming
+    text-align center
   .container-app-header-nav
     ul
       overflow hidden

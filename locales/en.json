@@ -165,6 +165,7 @@
   },
   "name": "TrueChain",
   "copyright": "(truechain) Official website All rights reserved",
+  "footerContactUs":"Contact Us",
   "nav": {
     "git": "GITHUB",
     "blog": "BLOG",
@@ -173,8 +174,8 @@
     "join": "JOIN US",
     "node": "NODE",
     "reward": "REWARD",
-    "truescan":"TrueScan",
-    "webwallet":"Wallet",
+    "truescan":"TRUE SCAN",
+    "webwallet":"WALLET",
     "english": "EN"
   },
   "news": {

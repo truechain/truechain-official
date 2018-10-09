@@ -168,6 +168,7 @@
   "roadmap": "路线",
   "name": "初链",
   "copyright": "（初链）官方网站版权所有",
+  "footerContactUs":"合作咨询邮箱",
   "nav": {
     "git": "GITHUB",
     "blog": "博客",
@@ -176,6 +177,7 @@
     "join": "加入我们",
     "node": "节点",
     "reward": "悬赏计划",
+    "truescan":"TRUE SCAN",
     "webwallet":"钱包",
     "english": "简体中文"
   },
