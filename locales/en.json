@@ -198,7 +198,7 @@
       "keyword": "TrueChain team members, TRUE, Blockchain expert, digital currency expert, Blockchain Talents",
       "description": "The leading research and engineering team members of True Chain come from the U.S., India and China. "
     },
-    "banner": "With 1200+ developers from the world",
+    "banner": "With 2000+ developers from the world",
     "technology": {
       "title": "Research and Developers Community",
       "list": [{
@@ -283,17 +283,6 @@
           ]
         },
         {
-          "name": "Robin Zhang",
-          "post": "Consensus and PoW product lead",
-          "imgSrc": "xubin",
-          "introList": [
-            "BS, MS, Tsinghua University",
-            "MS of SUNY, Buffalo",
-            "Network communications expert",
-            "18+years experience in Silicon Valley and China"
-          ]
-        },
-        {
           "name": "Binqi Tang",
           "post": "Senior developer",
           "imgSrc": "binqi",
@@ -347,16 +336,6 @@
           "introList": [
             "Blockchain community management professional ",
             "Managers of some major blockchain user community in Vietnam"
-          ]
-        },
-        {
-          "name": "Wen Yan",
-          "post": "Marketing coordinator",
-          "imgSrc": "yanwen",
-          "introList": [
-            "Graduated from School of Journalism, University of Missouri - Columbia",
-            "Reporter at Bankrate.com in Washington. D.C",
-            "Business reporter at Sina Finance"
           ]
         }
       ]

@@ -203,7 +203,7 @@
       "keyword": "트루체인 팀원, TRUE, 블록체인 전문가, 블록체인 인재",
       "description": "트루체인의 글로벌 팀원은 주로 기술팀, 비즈니스 및 블록체인 전문가 고문으로 구성되어 있으며, 미국과 인도 그리고 중국에 분포되어있다."
     },
-    "banner": "With 1200+ developers from the world",
+    "banner": "With 2000+ developers from the world",
     "technology": {
       "title": "연구 및 개발자 커뮤니티",
       "list": [{
@@ -301,17 +301,6 @@
           ]
         },
         {
-          "name": "Robin Zhang",
-          "post": "합의 알고리즘과 POW 제품의 담당자",
-          "imgSrc": "xubin",
-          "introList": [
-            "청화대학교 학사, 석사",
-            "미국 뉴욕 주립대학교 전자 공학과 석사",
-            "네트워크 통신 전문가",
-            "미국 실리콘 밸리에서 18년간 근무"
-          ]
-        },
-        {
           "name": "Binqi Tang",
           "post": "상급 개발자",
           "imgSrc": "binqi",
@@ -345,16 +334,6 @@
             "인터넷 마케팅과 커뮤니티 운영 전문가",
             "전 Baidu 백과의 운영 책임자",
             "10여년간 디지털 광고 및 인터넷 업계 경력"
-          ]
-        },
-        {
-          "name": "Wen Yan",
-          "post": "마케팅 코디네이터",
-          "imgSrc": "yanwen",
-          "introList": [
-            "미국 미주리 컬럼비아 대학교 신문방송학과 졸업 ",
-            "Bankrate.com 워싱턴 지부 근무 경험",
-            "Sina 재경부 기자로 근무"
           ]
         }
       ]
