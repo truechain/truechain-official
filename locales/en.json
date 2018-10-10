@@ -129,16 +129,20 @@
           "events": ["fPOW and TrueChain mainnet integrate ", "Hybrid consensus sharding mechanism "]
         },
         {
-          "time": "2018-09",
-          "events": ["TrueChain mainnet launch （only open to priority nodes）"]
+          "time": "2018-Q4",
+          "events": ["Late October: smart contract platform launch"]
         },
         {
-          "time": "2018-12",
-          "events": ["Hybrid consensus sharding launch"]
+          "time": "2019-Q1",
+          "events": ["TrueChain mainnet launch"]
         },
         {
-          "time": "2019-03",
-          "events": ["Mainnet open to all nodes"]
+          "time": "2019-Q2",
+          "events": ["The launch of sharding, storage solution, easy Dapp (Beta version)"]
+        },
+        {
+          "time": "2019-Q3",
+          "events": ["Comprehensively promote solutions in easy Dapp industry and sharding industry"]
         }
       ]
     },
