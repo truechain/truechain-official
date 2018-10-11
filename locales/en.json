@@ -32,7 +32,28 @@
     }
   ],
   "footerLinkDescr": "TrueChain Official SNS Platform",
-  "footerDownDescr": "TrueChain Light Wallet  APP Download",
+  "footerDownDescr": "TrueChain Light Wallet  APP Download",  
+  "footer":{
+    "miningGuideText":"TrueChain mining guide",
+    "mingBtns":[
+      {
+        "text":"docker",
+        "link":"https://www.truechain.pro/download/ming/truebeta-ming-guide-docker.pdf"
+      },
+      {
+        "text":"linux",
+        "link":"https://www.truechain.pro/download/ming/ming-version-linux.pdf"
+      },
+      {
+        "text":"win",
+        "link":"https://www.truechain.pro/download/ming/ming-version-windows.pdf"
+      },
+      {
+        "text":"mac",
+        "link":"https://www.truechain.pro/download/ming/ming-version-mac.pdf"
+      }      
+    ]
+  },
   "home": {
     "head": {
       "title": "TrueChain | Next generation hybrid consensus public chain",

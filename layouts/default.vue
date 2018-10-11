@@ -73,23 +73,14 @@
               app-android
               app-ios
             .container-app-footer-down-ming
-              .container-app-footer-text TrueChain挖矿教程
+              .container-app-footer-text {{$t('footer.miningGuideText')}}
               a.container-app-footer-down-ming-btn(
-                target='_blank'
-                href='https://www.truechain.pro/download/ming/truebeta-ming-guide-docker.pdf'
-            )  docker版
-              a.container-app-footer-down-ming-btn(
-                target='_blank'
-                href='https://www.truechain.pro/download/ming/ming-version-windows.pdf'
-            )  win版
-              a.container-app-footer-down-ming-btn(
-                target='_blank'
-                href='https://www.truechain.pro/download/ming/ming-version-linux.pdf'
-            )  linux版
-              a.container-app-footer-down-ming-btn(
-                target='_blank'
-                href='https://www.truechain.pro/download/ming/ming-version-mac.pdf'
-            )  mac版
+                v-for="item in $t('footer.mingBtns')",
+                :key='item.text',
+                tartget='_blank',
+                :href="item.link"
+              ) {{item.text}}
+              
         .container-app-footer-copyright
           div 
             span Copyright ⓒ TrueChain All Rights Reserved.

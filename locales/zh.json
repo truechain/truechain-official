@@ -33,6 +33,27 @@
   ],
   "footerLinkDescr": "初链官方社交平台",
   "footerDownDescr": "初链轻钱包应用下载",
+  "footer":{
+    "miningGuideText":"TrueChain挖矿教程",
+    "mingBtns":[
+      {
+        "text":"docker版",
+        "link":"https://www.truechain.pro/download/ming/truebeta-ming-guide-docker.pdf"
+      },
+      {
+        "text":"linux版",
+        "link":"https://www.truechain.pro/download/ming/ming-version-linux.pdf"
+      },
+      {
+        "text":"win版",
+        "link":"https://www.truechain.pro/download/ming/ming-version-windows.pdf"
+      },
+      {
+        "text":"mac版",
+        "link":"https://www.truechain.pro/download/ming/ming-version-mac.pdf"
+      }      
+    ]
+  },
   "home": {
     "head": {
       "title": "初链官网 | 新一代混合共识公链",
