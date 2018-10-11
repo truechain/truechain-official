@@ -144,12 +144,20 @@
           "events": ["Khởi chạy mainnet của TrueChain (chỉ mở cho các node ưu tiên )"]
         },
         {
-          "time": "2018-12",
-          "events": ["Khởi chạy công nghệ phân mảnh đồng thuận lai"]
+          "time": "2018-Q4",
+          "events": ["Cuối tháng 10 : Khởi chạy nền tảng hợp đồng thông minh."]
         },
         {
-          "time": "2019-03",
-          "events": ["Mainnet mở ra với tất cả các node"]
+          "time": "2019-Q1",
+          "events": ["Khởi chạy phiên bản mainnet của TrueChain"]
+        },
+        {
+          "time": "2019-Q2",
+          "events": ["Khởi chạy Sharding, kế hoạch giải pháp lưu trữ, easy Dapp (phiên bản Beta)"]
+        },
+        {
+          "time": "2019-Q3",
+          "events": ["Các giải pháp thúc đẩy một cách toàn diện trong ngành công nghiệp easy Dapp và ngành công nghiệp Sharding"]
         }
       ]
     },
