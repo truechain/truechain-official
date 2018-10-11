@@ -328,6 +328,17 @@
             "·Chuyên gia kỹ thuật của 58 home ",
             "·Chuyên gia về phân tích dữ liệu kiến trúc lớn trên nền tảng khuôn khổ Internet, kế hoạch triển khai sản phẩm và điều hành"
           ]
+        },
+        {
+          "name": "Brian Liu",
+          "post": "Nhà diễn giả về Blockchain",
+          "imgSrc": "liupeng",
+          "introList": [
+            "MSc và B.S tại trường đại học Peking",
+            "Tác giá của cuốn “Blockchain: 101”",
+            "10 năm kinh nghiệm trong phát triển phần mềm, từng dẫn dắt và huyến luyện cho các đội ngũ có hiệu suất làm việc cao",
+            "Đã từng làm việc tại IBM China Development Lab (CDL) High Performance Computing team và “LERO - The Irish Software Engineering Research Center” tập đoàn nghiên cứu về các hệ thống phân phối"
+          ]
         }
       ]
     },
@@ -371,6 +382,29 @@
           "introList": [
             "Nhà quản lý cộng đồng Blockchain chuyên nghiệp",
             "Điều hành một vài cộng đồng về Blockchain tại Việt Nam"
+          ]
+        },
+        {
+          "name": "Sun-Woo Chu",
+          "post": "Đối tác chiến lược của TrueChain tại Hàn Quốc",
+          "imgSrc": "qiutingnan",
+          "introList": [
+            "Nhà sáng lập & giám đốc điều hành tại",
+            "Global Finance Society’s China Committee Chairman",
+            "Money Today Innovation Strategy Team Asia Chief",
+            "One Asia Editor-in-Chief",
+            "Asia Today Multimedia Desk Editor/International Editor"
+          ]
+        },
+        {
+          "name": "Pingping Wang",
+          "post": "Đối tác chiến lược của TrueChain tại Hàn Quốc",
+          "imgSrc": "wangpingping",
+          "introList": [
+            "Giám đốc chính, Doanh nhân Trung Quốc tại",
+            "Money Today Innovation Strategy Team Reporter",
+            "One Asia Reporter",
+            "Asia Today Multimedia Desk & International Reporter"
           ]
         }
       ]
