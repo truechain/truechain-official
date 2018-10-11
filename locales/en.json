@@ -129,6 +129,10 @@
           "events": ["fPOW and TrueChain mainnet integrate ", "Hybrid consensus sharding mechanism "]
         },
         {
+          "time": "2018-09",
+          "events": [" TrueChain mainnet launch (only open to priority nodes) "]
+        },
+        {
           "time": "2018-Q4",
           "events": ["Late October: smart contract platform launch"]
         },
