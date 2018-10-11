@@ -79,8 +79,7 @@
                 :key='item.text',
                 tartget='_blank',
                 :href="item.link"
-              ) {{item.text}}
-              
+              ) {{item.text}}              
         .container-app-footer-copyright
           div 
             span Copyright ⓒ TrueChain All Rights Reserved.

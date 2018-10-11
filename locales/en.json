@@ -38,19 +38,19 @@
     "mingBtns":[
       {
         "text":"docker",
-        "link":"https://www.truechain.pro/download/ming/truebeta-ming-guide-docker.pdf"
+        "link":"https://www.truechain.pro/download/ming/ming-version-docker-en.pdf"
       },
       {
         "text":"linux",
-        "link":"https://www.truechain.pro/download/ming/ming-version-linux.pdf"
+        "link":"https://www.truechain.pro/download/ming/ming-version-linux-en.pdf"
       },
       {
         "text":"win",
-        "link":"https://www.truechain.pro/download/ming/ming-version-windows.pdf"
+        "link":"https://www.truechain.pro/download/ming/ming-version-windows-en.pdf"
       },
       {
         "text":"mac",
-        "link":"https://www.truechain.pro/download/ming/ming-version-mac.pdf"
+        "link":"https://www.truechain.pro/download/ming/ming-version-mac-en.pdf"
       }      
     ]
   },
