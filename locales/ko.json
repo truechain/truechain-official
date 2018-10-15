@@ -344,6 +344,24 @@
           ]
         },
         {
+          "name": "Hillary Nguyen",
+          "post": "트루체인(Truechain)베트남 책임자",
+          "imgSrc": "hillarynguyen",
+          "introList": [            
+            "AlphaWhale Capital 운영파트너",
+            "블록체인, 데이터자산관리전략전문가, 고문, 커뮤니티 책임자로 다수 블록체인의 새로운 프로젝트에 대해 솔루션을 제공"
+          ]
+        },
+        {
+          "name": "Paulus Pham",
+          "post": "트루체인(Truechain)베트남 커뮤니티 책임자",
+          "imgSrc": "paulaspham",
+          "introList": [
+            "블록체인 커뮤니티 관리 전문가",
+            "베트남 유명 블록체인 커뮤니티 관리 책임자"
+          ]
+        },
+        {
           "name": "Sun-Woo Chu",
           "post": "TrueChain Strategic partner of Korea",
           "imgSrc": "qiutingnan",
