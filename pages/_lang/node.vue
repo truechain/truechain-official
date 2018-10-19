@@ -263,6 +263,7 @@ export default {
   bottom 0
 .node-bg
   wh(100%, 1000px)
+  border-bottom 1px solid rgba(250,250,250,0.2)
   background-color $dark-blue
   position relative
   z-index 160
@@ -396,7 +397,8 @@ export default {
       font-weight bold
       font-size 48px
 .node-body
-  display flex
+  // display flex
+  display none
   flex-direction column
   align-items center
   padding-top 80px

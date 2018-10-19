@@ -26,8 +26,6 @@ div.page
           .second 大小： 5.46MB
           .second 更新日期：2018-08-19
 
-
-
 </template>
 
 <script>
