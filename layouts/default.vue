@@ -118,6 +118,7 @@ export default {
   },
   mounted () {
     const lang = getStore('lang')
+    console.log('webhook');
     if(lang) {
       // this.changeLanguage(lang) //会触发每个页面重新渲染,并无必要
     } else {
