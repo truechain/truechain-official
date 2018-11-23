@@ -27,7 +27,7 @@ module.exports = {
       },
       {
         rel: 'stylesheet',
-        href: '///at.alicdn.com/t/font_702478_v911vz4nzdm.css'
+        href: '///at.alicdn.com/t/font_702478_eswmzx63z9d.css'
       }
     ]
   },
@@ -65,6 +65,6 @@ module.exports = {
     color: 'cyan'
   },
   router: {
-    middleware: ['pagestat','i18n',]
+    middleware: ['pagestat', 'i18n']
   }
 }

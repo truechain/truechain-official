@@ -5,7 +5,7 @@
         .container-app-header
           div(@click="goHome")
             .container-app-header-logo
-              i(class="icon font_family icon-logo2")
+              i(class="icon font_family icon-truelogo1")
           .container-app-header-nav
             ul(:style="{'height': menuIsOpen ? `${40 * (indexList.length + 1)}px` : '0'}")
               li(
@@ -79,13 +79,13 @@
                 :key='item.text',
                 tartget='_blank',
                 :href="item.link"
-              ) {{item.text}}              
+              ) {{item.text}}
         .container-app-footer-copyright
-          div 
+          div
             span Copyright ⓒ TrueChain All Rights Reserved.
             span {{ $t(`footerContactUs`) }}： partner@truechain.pro
           // div COPYRIGHT© TRUE CHAIN {{$t('copyright') }}
-        
+
 </template>
 
 <script>
@@ -268,9 +268,11 @@ nav
   margin-top 15px
   float left
   cursor pointer
-  .icon-logo2
+  color white
+  .font_family
     color white
-    font-size 135px
+    transform scale(13)
+    margin-left 60px
     line-height 0
 .container-app-header-nav
   color $font-light

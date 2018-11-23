@@ -3,14 +3,15 @@ div.finder-box
   .finder-box-top
     .finder-box-top-left
       div.left-logo
-        img(:src="require(`~/assets/images/logo_bot.png`)")
+        i(class="icon font_family icon-truelogo")
+        //- img(:src="require(`~/assets/images/logo_bot.png`)")
       div
         .finder-box-top-left-title {{ $t('bugfinder.pageTitle') }}
         .finder-box-top-left-descr {{ $t('bugfinder.pageDescr') }}
     .finder-box-top-right
-      .reward-item  
+      .reward-item
         p.second-txt {{ $t('bugfinder.highestRewardLabel') }}
-        p.primary-txt 10000 TRUE        
+        p.primary-txt 10000 TRUE
       //- .reward-item
       //-   p.primary-txt 4 条
       //-   p.second-txt 已认领
@@ -94,20 +95,20 @@ div.finder-box
       .finder-box-right-item
         span.dot.low
         span.text {{ $t('bugfinder.lowRiskBugLabel') }}：20 - 80 TRUE
-        
+
 </template>
 
 <script>
-export default {  
+export default {
   data () {
     return {
-      
+
     }
   },
   async created () {
   },
   methods: {
-    
+
   }
 }
 </script>
@@ -134,6 +135,9 @@ export default {
       word-break break-all
       .left-logo
         margin-right 30px
+        .font_family
+          color #1073B9
+          font-size 100px
     .finder-box-top-left-title
       font-size 20px
       line-height 40px
@@ -150,7 +154,7 @@ export default {
         margin 15px 15px 0px 0px
         .primary-txt
           font-size 18px
-          line-height 30px          
+          line-height 30px
         .second-txt
           font-size 12px
           line-height 20px
@@ -160,7 +164,7 @@ export default {
     flex-direction row
     flex-wrap wrap
     padding 0px 40px
-    justify-content space-between 
+    justify-content space-between
     .finder-box-left
       margin-bottom 20px
       max-width 750px
@@ -221,8 +225,8 @@ pre
         .left-logo
           flex-shrink 0
           text-align center
-          img 
-            width auto 
+          img
+            width auto
             height auto
         .finder-box-top-left-title
           text-align center
