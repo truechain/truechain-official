@@ -102,8 +102,6 @@ div
                 .txt {{txt}}
           .odd(v-if="index%2>0")
             .time {{item.time}}
-
-
   .home-partner
     .page-title {{ $t('home.partner') }}
     .con
@@ -111,7 +109,6 @@ div
           v-for="index in 6",
       )
         img(:src="require(`@/assets/images/p-logo${index}.png`)")
-
   .home-investment
     .page-title {{ $t('home.institution') }}
     .con
@@ -119,29 +116,34 @@ div
           v-for="index in 6",
         )
           img(:src="require(`@/assets/images/partner${index}.png`)")
-  .home-news(v-if="$store.state.locale === 'zh'")
-    .page-title {{ $t('home.news.title') }}
-    .con
-      .co(
-        v-for="(item,i) in $t('home.news.list')"
-      )
-        .vid(@click='showmod(i)')
-          img.pic(
-            :src="require(`@/assets/images/mx${i+1}.jpg`)"
-          )
-          img.playicon(src="/playicon.png")
-          .vid-mask
-        // .time {{ item.time }}
-        .descr {{ item.title }}
-  no-ssr(placeholder="Loading...")
-    Modal(
-      v-model="modalvid",
-      class-name="vertical-center-modal",
-      @on-visible-change="changedmodal",
-      :width="700"
-    )
+  .home-news
+    .page-title {{ $t('home.adVideoTitle') }}
+    .ad-video-con
       no-ssr(placeholder="Loading...")
         d-player(:options="dplayerOpts" ref="dplayer")
+  //- .home-news(v-if="$store.state.locale === 'zh'")
+  //-   .page-title {{ $t('home.news.title') }}
+  //-   .con
+  //-     .co(
+  //-       v-for="(item,i) in $t('home.news.list')"
+  //-     )
+  //-       .vid(@click='showmod(i)')
+  //-         img.pic(
+  //-           :src="require(`@/assets/images/mx${i+1}.jpg`)"
+  //-         )
+  //-         img.playicon(src="/playicon.png")
+  //-         .vid-mask
+  //-       // .time {{ item.time }}
+  //-       .descr {{ item.title }}
+  //- no-ssr(placeholder="Loading...")
+  //-   Modal(
+  //-     v-model="modalvid",
+  //-     class-name="vertical-center-modal",
+  //-     @on-visible-change="changedmodal",
+  //-     :width="700"
+  //-   )
+  //-     no-ssr(placeholder="Loading...")
+  //-       d-player(:options="dplayerOpts" ref="dplayer")
 
 </template>
 
@@ -162,7 +164,8 @@ export default {
       modalvid: false,
       dplayerOpts: {
         video: {
-          url: '/m1.mp4'
+          // url: '/m1.mp4'
+          url: '', 
         },
         autoplay: false,
         contextmenu: [],
@@ -185,7 +188,7 @@ export default {
       window.particlesJS('particles-js', liziConfig)
     } else {
       setTimeout(() => {
-        window.particlesJS('particles-js', liziConfig)
+        window.particlesJS('particles-js', liziConfig)        
       }, 500);
     }
     this.$nextTick(x => {
@@ -197,6 +200,19 @@ export default {
         }
       }
     })
+    setTimeout(()=>{
+      let locale = this.$store.state.locale
+      let videoUrl = 'https://www.truechain.pro/video/true-ad-en-zh.mp4'
+      if ( locale == 'ko' ) {
+        videoUrl = 'https://www.truechain.pro/video/true-ad-en-ko.mp4'
+      }
+      if ( locale == 'vn' ) {
+        videoUrl = 'https://www.truechain.pro/video/true-ad-en-vn.mp4'
+      }
+      this.player.switchVideo({
+        url: videoUrl
+      })
+    },300)
   },
   head: {
     script: [
@@ -588,6 +604,9 @@ export default {
 .home-news
   padding 100px 20px 80px
   background-color $bg-pearlblue
+  .ad-video-con
+    max-width 800px
+    margin 46px auto 0px
   h3
     color $font-dark
     text-align center

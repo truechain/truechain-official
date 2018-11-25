@@ -60,6 +60,8 @@
       "keyword": "True，TrueChain，Eric zhang，blockchain, hybrid consensus, Xiaoyong Cheng, Larry Lin",
       "description": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW. It solves the biggest problem confronting permissionless blockchain: the contradiction between decentralization and efficiency. "
     },
+    "adVideoTitle":"INTRODUCE",
+    "adVideoLink":"https://www.truechain.pro/video/true-ad-en-zh.mp4",
     "slogan": "Truly Fast, Permissionless, Secure and Scalable",
     "slogan1": "PBFT-fPoW hybrid consensus permissionless blockchain with global developer community",
     "white": "WHITE PAPER",
@@ -236,19 +238,8 @@
           "imgSrc": "jiannan",
           "introList": [
             "M.S. In Computer Science, Oxford University",
-            "Founder of TopHacker Group and DoraHacks ",
+            "Founder of DoraHacks ",
             "Researcher, CERN Open Lab (2013)"
-          ]
-        },
-        {
-          "name": "Archit Sharma",
-          "post": "Consensus Engineering Lead",
-          "imgSrc": "as",
-          "introList": [
-            "Large-scale cloud and distributed computation expert, Red Hat",
-            "Researcher, CERN IT (2013)",
-            "Champion, Docker Hackathon",
-            "Second Prize, CERN Webfest 2013"
           ]
         },
         {
@@ -299,16 +290,6 @@
             "Lead, Alibaba attack and security lab",
             "Author of “Code Audit: Architecture of Enterprise Web Security”",
             "Host of well-known security blog cnseay.com"
-          ]
-        },
-        {
-          "name": "Samikshan Bairagya",
-          "post": "Consensus Developer",
-          "imgSrc": "sb",
-          "introList": [
-            "B.S. In computer science from National Institute of Technology, Durgapur ",
-            "Developer/Participant, Google Summer of Code (2012)",
-            "Software Engineer, Red Hat (2013 - 2018)"
           ]
         },
         {
@@ -383,9 +364,9 @@
           "introList": [
             "Element Founder & CEO",
             "Global Finance Society’s China Committee Chairman",
-            "Money Today Innovation Strategy Team Asia Chief",
-            "One Asia Editor-in-Chief",
-            "Asia Today Multimedia Desk Editor/International Editor"
+            "former Money Today Innovation Strategy Team Asia Chief",
+            "former One Asia Editor-in-Chief",
+            "former Asia Today Multimedia Desk Editor/International Editor"
           ]
         },
         {

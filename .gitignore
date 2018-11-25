@@ -11,3 +11,8 @@ npm-debug.log
 dist
 
 package-lock.json
+*.lock
+
+/static/*
+nohup.out
+*.zip

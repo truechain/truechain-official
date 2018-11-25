@@ -39,6 +39,8 @@
       "keyword": "初链，TRUE，初链币，TrueChain，张剑南，区块链，混合共识，程小永，林大亮",
       "description": "初链是全球最早的PBFT - fPOW混合共识公链"
     },
+    "adVideoTitle":"INTRODUCE",
+    "adVideoLink":"https://www.truechain.pro/video/true-ad-en-vn.mp4",
     "slogan": "",
     "slogan1": "Nhanh chóng, không bị giới hạn, an toàn và có thể mở rộng Public Blockchain sử dụng công nghệ đồng thuận lai PBFT-POW với sự hỗ trợ của cộng đồng các nhà phát triển trên toàn thế giới.",
     "white": "White paper",
@@ -231,19 +233,8 @@
           "imgSrc": "jiannan",
           "introList": [
             "Thạc sĩ máy tính đại học Oxford",
-            "·Nhà sáng lập của TopHacker và Dorahacks",
+            "·Nhà sáng lập của Dorahacks",
             "·Nhân viên nghiên cứu của tổ chức nghiên cứu hạt nhân châu Âu CERN （2013）"
-          ]
-        },
-        {
-          "name": "Archit Sharma",
-          "post": "Trưởng nhóm kỹ thuật đồng thuận",
-          "imgSrc": "as",
-          "introList": [
-            "Chuyên gia về điện toán và đám mây phân toán quy mô lớn tại Red Hat",
-            "Nhân viên nghiên cứu tại tổ chức nghiên cứu hạt nhân châu Âu CERN（2013）",
-            "Quán quân của Docker Hackathon",
-            "Giải nhì cuộc thi CERN Webfest năm 2013"
           ]
         },
         {
@@ -294,16 +285,6 @@
             "·Trưởng nhóm phòng thí nghiệm tấn công và an ninh",
             "·Tác giả của “Code Audit: Architecture of Enterprise Web Security",
             "·Tác giả của Blog về an ninh mạng rất nổi tiếng cnseay.com"
-          ]
-        },
-        {
-          "name": "Samikshan Bairagya",
-          "post": "Nhà phát triển đồng thuận",
-          "imgSrc": "sb",
-          "introList": [
-            "·Cử nhân khoa học máy tính của Học viện Công nghệ Quốc gia của Durgapur",
-            "·Nhà phát triển/người tham gia Google Summer of Code (2012) ",
-            "·Kĩ sư phần mềm tại Red Hat（2013-2018）"
           ]
         },
         {
@@ -379,9 +360,8 @@
           "introList": [
             "Nhà sáng lập & giám đốc điều hành tại",
             "Global Finance Society’s China Committee Chairman",
-            "Money Today Innovation Strategy Team Asia Chief",
-            "One Asia Editor-in-Chief",
-            "Asia Today Multimedia Desk Editor/International Editor"
+            "Trưởng Ban Châu Á thay đổi chiến lược tiền tệ kể từ hôm nay",
+            "former Asia Today Multimedia Desk Editor/International Editor"
           ]
         },
         {
