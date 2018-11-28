@@ -39,6 +39,8 @@
       "keyword": "트루체인，TRUE，트루체인 코인，TrueChain，Eric Zhang，블록체인，하이브리드 합의 알고리즘，Xiaoyong Cheng，Larry Lin",
       "description": "트루체인（TrueChain）은 세계 최초로 PBFT-POW 하이브리드 합의 알고리즘을 실현한 퍼블릭 블록체인입니다. 트루체인은 블록체인 계열 중 가장 중요한 문제인 탈 중앙화와 성능 사이의 모순을 해결하였습니다."
     },
+    "adVideoTitle":"INTRODUCE",
+    "adVideoLink":"https://www.truechain.pro/video/true-ad-en-ko.mp4",
     "slogan": "신속한, 무제한적인, 안전한, 확장성이 있는",
     "slogan1": "글로벌 개발자 커뮤니티를 가지고 있는 PBFT-FPOW 하이브리드 합의 알고리즘 퍼블릭 블록체인",
     "white": "백서",
@@ -220,20 +222,8 @@
           "imgSrc": "jiannan",
           "introList": [
             "옥스포드 대학 컴퓨터 공학과 석사",
-            "TopHacker와Dorahacks창립자",
+            "Dorahacks창립자",
             "유럽 원자력 연구소 CERN 연구원(2013)"
-          ]
-        },
-        {
-          "name": "Archit Sharma",
-          "post": "트루체인 프로젝트 기술 책임자",
-          "imgSrc": "as",
-          "introList": [
-            "운영 체제 및 성능 공학 방면의 전문가, Red-Hat 연구원",
-            "유럽 원자력 연구소 CERN 연구원(2013)",
-            "중요 오픈 소스 항목 공헌자",
-            "Docker Hackathon 우승",
-            "CERN Webfest 2013 준우승"
           ]
         },
         {
@@ -285,16 +275,6 @@
             "알리바바 보안 부분과 공방 실습 담당자",
             "“코드 감사: 기업판 온라인 코드 보안 아키텍처”의 저자",
             "보안 블로그 cnseay.com 운영"
-          ]
-        },
-        {
-          "name": "Samikshan Bairagya",
-          "post": "선임 개발자",
-          "imgSrc": "sb",
-          "introList": [
-            "두르가푸르 국립 과학 기술 대학교 컴퓨터 공학 학사",
-            "구글 summer 프로그래밍 프로젝트 개발자/참여자(2012)",
-            "Red-Hat 소프트웨어 엔지니어(2013-2018)"
           ]
         },
         {
