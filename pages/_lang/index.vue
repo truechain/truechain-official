@@ -165,7 +165,7 @@ export default {
       dplayerOpts: {
         video: {
           // url: '/m1.mp4'
-          url: '', 
+          url: '',
         },
         autoplay: false,
         contextmenu: [],
@@ -188,7 +188,7 @@ export default {
       window.particlesJS('particles-js', liziConfig)
     } else {
       setTimeout(() => {
-        window.particlesJS('particles-js', liziConfig)        
+        window.particlesJS('particles-js', liziConfig)
       }, 500);
     }
     this.$nextTick(x => {
