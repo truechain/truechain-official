@@ -40,7 +40,7 @@
       "description": "트루체인（TrueChain）은 세계 최초로 PBFT-POW 하이브리드 합의 알고리즘을 실현한 퍼블릭 블록체인입니다. 트루체인은 블록체인 계열 중 가장 중요한 문제인 탈 중앙화와 성능 사이의 모순을 해결하였습니다."
     },
     "adVideoTitle":"INTRODUCE",
-    "adVideoLink":"https://www.truechain.pro/video/true-ad-en-ko.mp4",
+    "adVideoLink":"https://qiniu.baixiaojian.com/video/ad-ko.mp4",
     "slogan": "신속한, 무제한적인, 안전한, 확장성이 있는",
     "slogan1": "글로벌 개발자 커뮤니티를 가지고 있는 PBFT-FPOW 하이브리드 합의 알고리즘 퍼블릭 블록체인",
     "white": "백서",
@@ -327,7 +327,7 @@
           "name": "Hillary Nguyen",
           "post": "트루체인(Truechain)베트남 책임자",
           "imgSrc": "hillarynguyen",
-          "introList": [            
+          "introList": [
             "AlphaWhale Capital 운영파트너",
             "블록체인, 데이터자산관리전략전문가, 고문, 커뮤니티 책임자로 다수 블록체인의 새로운 프로젝트에 대해 솔루션을 제공"
           ]

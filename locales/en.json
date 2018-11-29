@@ -32,7 +32,7 @@
     }
   ],
   "footerLinkDescr": "TrueChain Official SNS Platform",
-  "footerDownDescr": "TrueChain Light Wallet  APP Download",  
+  "footerDownDescr": "TrueChain Light Wallet  APP Download",
   "footer":{
     "miningGuideText":"TrueChain mining guide",
     "mingBtns":[
@@ -51,7 +51,7 @@
       {
         "text":"mac",
         "link":"https://www.truechain.pro/download/ming/ming-version-mac-en.pdf"
-      }      
+      }
     ]
   },
   "home": {
@@ -61,7 +61,7 @@
       "description": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW. It solves the biggest problem confronting permissionless blockchain: the contradiction between decentralization and efficiency. "
     },
     "adVideoTitle":"INTRODUCE",
-    "adVideoLink":"https://www.truechain.pro/video/true-ad-en-zh.mp4",
+    "adVideoLink":"https://qiniu.baixiaojian.com/video/ad-en.mp4",
     "slogan": "Truly Fast, Permissionless, Secure and Scalable",
     "slogan1": "PBFT-fPoW hybrid consensus permissionless blockchain with global developer community",
     "white": "WHITE PAPER",

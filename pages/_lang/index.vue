@@ -202,12 +202,12 @@ export default {
     })
     setTimeout(()=>{
       let locale = this.$store.state.locale
-      let videoUrl = 'https://www.truechain.pro/video/true-ad-en-zh.mp4'
+      let videoUrl = 'https://qiniu.baixiaojian.com/video/ad-zh.mp4'
       if ( locale == 'ko' ) {
-        videoUrl = 'https://www.truechain.pro/video/true-ad-en-ko.mp4'
+        videoUrl = 'https://qiniu.baixiaojian.com/video/ad-ko.mp4'
       }
       if ( locale == 'vn' ) {
-        videoUrl = 'https://www.truechain.pro/video/true-ad-en-vn.mp4'
+        videoUrl = 'https://qiniu.baixiaojian.com/video/ad-vn.mp4'
       }
       this.player.switchVideo({
         url: videoUrl
