@@ -12,6 +12,9 @@
                   @click="jumpTo('https://github.com/truechain')"
                 ) {{ $t(`nav.git`) }}
               li(
+                  @click="jumpTo('http://trueglobal.pro')"
+                ) TRUE GLOBAL
+              li(
                   @click="jumpTo('https://www.truescan.net')"
                 ) {{ $t(`nav.truescan`) }}
               li(
