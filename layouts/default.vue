@@ -5,7 +5,7 @@
         .container-app-header
           div(@click="goHome")
             .container-app-header-logo
-              i(class="icon font_family icon-truelogo1")
+              i(class="icon font_family icon-truelogo")
           .container-app-header-nav
             ul(:style="{'height': menuIsOpen ? `${40 * (indexList.length + 1)}px` : '0'}")
               li(
@@ -274,7 +274,7 @@ nav
   color white
   .font_family
     color white
-    transform scale(13)
+    transform scale(4.5)
     margin-left 60px
     line-height 0
 .container-app-header-nav

@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+.home
   .loop-header
     #particles-js
     Carousel(
@@ -42,7 +42,11 @@ div
       //-       .node-detail(@click="$router.push('node')") {{ $t('home.banner3.btntext') }}
       //-     .ri
       //-       img(src="~assets/images/home-banner3.png")
-
+    .home-sign-up
+      span
+        span(class="icon font_family icon-tongzhi")
+        span
+          a(href="http://trueglobal.pro/",target="_blank") &nbsp;&nbsp;“HelloWorld”--2018区块链应用落地大赛开始报名了!
   .home-intro-3col
     .col3-con
       .co(
@@ -121,6 +125,13 @@ div
     .ad-video-con
       no-ssr(placeholder="Loading...")
         d-player(:options="dplayerOpts" ref="dplayer")
+  Modal(v-model="modal2" width="600")
+    div
+      div
+        i(class="icon font_family icon-guanbi" @click="modal2 = false")
+      div
+        a(href="http://trueglobal.pro/",target="_blank")
+          img(src="@/assets/images/game-ad.png")
   //- .home-news(v-if="$store.state.locale === 'zh'")
   //-   .page-title {{ $t('home.news.title') }}
   //-   .con
@@ -151,7 +162,7 @@ div
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
 import liziConfig from '~/config/donglizi'
-
+import { setStore, getStore } from '~/util'
 export default {
   asyncData ({ req }) {
     return {
@@ -175,6 +186,7 @@ export default {
   },
   data () {
     return {
+      modal2: false,
       value1: 0,
       homeCarouse: 0,
       homeConfig: {
@@ -184,6 +196,12 @@ export default {
     }
   },
   mounted () {
+    const isShow = getStore('isShow');
+    if(!isShow) {
+      this.modal2 = true;
+      setStore('isShow', 'true')
+    }
+
     if (window.particlesJS) {
       window.particlesJS('particles-js', liziConfig)
     } else {
@@ -243,7 +261,24 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
-
+.ivu-modal-content
+  background-color rgba(0,0,0,0) !important
+.icon-guanbi
+  // width 40px
+  position absolute
+  right 0
+  // background red
+  font-size 45px
+  color #C7C7C7
+  cursor pointer
+.home-sign-up
+  background-color #F2F5FA
+  text-align center
+  padding 20px
+  span,a
+    color $font-dark
+    font-size 18px
+    font-weight bold
 .vertical-center-modal
   display: flex
   align-items: center
