@@ -44,6 +44,7 @@
     "pug": "^2.0.3",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "vue-eslint-parser": "^3.2.2"
+    "vue-eslint-parser": "^3.2.2",
+    "vue-loader": "^13.7.2"
   }
 }
