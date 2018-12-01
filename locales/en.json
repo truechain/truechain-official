@@ -384,7 +384,18 @@
     },
     "consultant": {
       "title": "Advisors",
-      "list": [{
+      "list": [
+        {
+          "name": "Lin ChuiZhou",
+          "intro": "",
+          "introList": [
+            "Academician consultant of TrueChain",
+            "Academician of the Royal Swedish Academy of Sciences and Hong Kong Academy of Engineering Sciences",
+            "Former vice — principal of Hong Kong University of Science and technology and a former president of Industrial Technology Research Institute.",
+            "Former Visiting professor of National University of Singapore,Tsinghua University, University of Science and Technology of China, Shanghai Jiaotong University and many prestigious Institutions at home and abroad."
+          ]
+        },
+        {
           "name": "Yushi Shen",
           "introList": [
             "The Secretary-General of China Cloud System Pioneer Strategic Alliance    ",
@@ -393,6 +404,22 @@
             "Panelist for China’s “the Thousand Talents Plan”",
             "Researcher of Tsinghua and other prestigious universities",
             "Strategic consultant for Microsoft"
+          ]
+        },
+        {
+          "name": "PUNTIL JONGJITTRAKOON",
+          "intro": "",
+          "introList": [
+            "President of Thailand Crypto Beach Association"
+          ]
+        },
+        {
+          "name": "Jimmy Zhao",
+          "intro": "",
+          "introList": [
+            "Founder of ZBX.COM( European branches of ZB),",
+            "Founder of Cryptonord (Cryptonord is the Cornerstone Investors of TrueChain)",
+            "A prominent figure in the blockchain industry of Europe, Jimmy manages a fund of 10,000 bitcoins"
           ]
         },
         {
