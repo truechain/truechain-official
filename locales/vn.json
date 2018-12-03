@@ -379,7 +379,19 @@
     },
     "consultant": {
       "title": "Cố vấn ",
-      "list": [{
+      "list": [
+        {
+          "name": "林垂宙",
+          "intro": "",
+          "introList": [
+            "Viện Sĩ Cố Vấn TrueChain",
+            "Viện sĩ của Viện Hàn lâm Khoa học Hoàng gia Thụy Điển và Học viện Khoa học Kỹ thuật Hồng Kông",
+            "Nguyên Phó Hiệu trưởng Trường Đại học Khoa học và Công nghệ Hồng Kông",
+            "và nguyên là Viện trưởng Viện Nghiên cứu Công nghệ Công nghiệp",
+            "Nguyên giáo sư thỉnh giảng của Đại học Quốc gia Singapore, Đại học Tsinghua, Đại học Khoa học và Công nghệ Trung Quốc, Đại học Giao thông Thượng Hải và nhiều tổ chức uy tín trong và ngoài nước."
+          ]
+        },
+        {
           "name": "Yushi Shen ",
           "introList": [
             "Tổng thư ký của Liên minh chiến lược tiên phong về hệ thống đám mây Trung Quốc ",
@@ -388,6 +400,23 @@
             "Tham luận viên cho “Kế hoạch Ngàn tài năng” của Trung Quốc ",
             "Nhà nghiên cứu của Tsinghua và các trường đại học uy tín khác ",
             "Người tư vấn chiến lược cho Microsoft"
+          ]
+        },
+        {
+          "name": "PUNTIL JONGJITTRAKOON",
+          "intro": "",
+          "introList": [
+            "Chủ tịch Hiệp hội Crypto Beach Thái Lan"
+          ]
+        },
+        {
+          "name": "Jimmy Zhao",
+          "intro": "",
+          "introList": [
+            "Người sáng lập ZBX.COM (chi nhánh Châu Âu của ZB),",
+            "Người sáng lập Cryptonord",
+            "Cryptonord là nhà đầu tư thuở sơ khai của TrueChain",
+            "Một nhân vật nổi bật trong ngành công nghiệp blockchain của châu Âu, Jimmy quản lý một quỹ sở hữu 10.000 bitcoin"
           ]
         },
         {
