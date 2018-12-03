@@ -3,10 +3,29 @@ module.exports = {
    ** Headers of the page
    */
   head: {
+    htmlAttrs: {
+      prefix: 'og: http://ogp.me/ns#'
+    },
     title: '初链-高性能无穷节点混合共识公链-官网',
     meta: [
       {
         charset: 'utf-8'
+      },
+      {
+        property: 'og:title',
+        content: 'TrueChain'
+      },
+      {
+        property: 'og:description',
+        content: 'TrueChain－Next Generation Public Blockchain with Hybrid Consensus'
+      },
+      {
+        property: 'og:url',
+        content: 'https://truechain.pro'
+      },
+      {
+        property: 'og:image',
+        content: 'https://qiniu.baixiaojian.com/logo.png'
       },
       {
         name: 'viewport',

@@ -112,7 +112,7 @@
     ],
     "about": {
       "title": "ABOUT",
-      "subhead": "TrueChain is a truly fast, permissionless, secure and scalable permissionless blockchain platform which is supported by hybrid consensus technology called Minerva and a global developer community. ",
+      "subhead": "TrueChain is a truly fast, permissionless, secure and scalable blockchain platform which is supported by hybrid consensus technology called Minerva and a global developer community. ",
       "contentList": [
         "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus called Minerva combining PBFT and fPoW to solve the biggest problem confronting permissionless blockchain: the contradiction between decentralization and efficiency.",
         "It uses PBFT as fast-chain to process transactions, and leave the oversight and election of PBFT to the hands of  PoW nodes. Besides, TrueChain integrates fruitchain technology into the traditional PoW protocol  i.e. fPoW, as the snailchain, to make the chain even more decentralized and fair. TrueChain also added sharding on top of PBFT to lift the limit of scalability. ",
@@ -563,7 +563,7 @@
     "submitBug":"Submit Plan",
     "highestRewardLabel":"Highest",
     "pageTitle":"True Chain",
-    "pageDescr":"TrueChain is a truly fast, permissionless, secure and scalable permissionless blockchain platform which is supported by hybrid consensus technology called Minerva and a global developer community.",
+    "pageDescr":"TrueChain is a truly fast, permissionless, secure and scalable blockchain platform which is supported by hybrid consensus technology called Minerva and a global developer community.",
     "seriousBugLabel":"Serious Bugs",
     "seriousBugText1":"Bugs that can directly obtain the limit of operation server and significant data, including but not limited to Arbitrary command execution, uploading webshell, Arbitrary code execution, large amounts of data from SQL injection. ",
     "seriousBugText2":"Logic bugs that seriously affect the security of system operation, including but not limited to arbitrary account password reset, the modification of bugs, a large number of bugs that obtain user identity authentication information, unauthorized access bugs, unauthorized access to the background management system, and so on. ",
