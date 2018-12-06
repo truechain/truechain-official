@@ -18,8 +18,9 @@
             span(v-if="$store.state.locale === 'en'") No Cliche, Leading Tech, Workable Chain
           .banner-home-buttons
             a(href="https://github.com/truechain",target="_blank") GITHUB
-            a(:href="$t('home.whiteLink')",target="_blank") {{ $t('home.white') }}
             a(:href="$t('home.yellowLink')",target="_blank") {{ $t('home.yellow') }}
+            a(href="https://github.com/truechain/wiki",target="_blank") TECHNICAL DOCUMENTS
+            a(href="https://github.com/truechain/truechain-engineering-code",target="_blank") MAIN NET
       CarouselItem
         .banner2
           img.telpic(src="~assets/images/home-banner2.png")
@@ -370,7 +371,7 @@ export default {
           cursor pointer
           transition background .5s ease
           color white
-          width 178px
+          min-width 178px
           text-align center
           display inline-block
           &:hover

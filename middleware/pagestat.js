@@ -6,7 +6,7 @@ export default function (context) {
       const scriptEl = document.createElement('script')
       scriptEl.type = 'text/javascript'
       scriptEl.id = 'page_stat'
-      scriptEl.src = '//s19.cnzz.com/z_stat.php?id=1274893188&web_id=1274893188';
+      scriptEl.src = '//s19.cnzz.com/z_stat.php?id=1274893188&web_id=1274893188'
       document.body.appendChild(scriptEl)
     }, 300)
   }
