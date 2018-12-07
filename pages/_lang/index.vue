@@ -262,6 +262,9 @@ export default {
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
+@media screen and (max-width 400px)
+  .banner-home-buttons
+    display none
 .ivu-modal-content
   background-color rgba(0,0,0,0) !important
 .icon-guanbi
@@ -276,6 +279,7 @@ export default {
   background-color #F2F5FA
   text-align center
   padding 20px
+  // line-height 25px
   span,a
     color $font-dark
     font-size 18px
@@ -823,9 +827,6 @@ export default {
     .time-line-block:last-child
       .lf,.ri
         padding-bottom 80px
-
-
-
 
 .home-introduce-banner
   overflow hidden
