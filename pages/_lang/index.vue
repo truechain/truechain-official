@@ -263,8 +263,17 @@ export default {
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
 @media screen and (max-width 400px)
+  .banner-home-slogan
+    margin-top 40px !important
+    div
+      line-height 30px !important
   .banner-home-buttons
-    display none
+    a
+      min-width auto !important
+      margin-bottom 15px !important
+  .home-sign-up
+    a
+      font-size 12px !important
 .ivu-modal-content
   background-color rgba(0,0,0,0) !important
 .icon-guanbi
