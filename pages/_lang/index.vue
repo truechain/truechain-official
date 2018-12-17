@@ -43,11 +43,11 @@
       //-       .node-detail(@click="$router.push('node')") {{ $t('home.banner3.btntext') }}
       //-     .ri
       //-       img(src="~assets/images/home-banner3.png")
-    .home-sign-up
-      span
-        span(class="icon font_family icon-tongzhi")
-        span
-          a(href="http://trueglobal.pro/",target="_blank") &nbsp;&nbsp;“HelloWorld”--2018区块链应用落地大赛开始报名了!
+    //- .home-sign-up
+    //-   span
+    //-     span(class="icon font_family icon-tongzhi")
+    //-     span
+    //-       a(href="http://trueglobal.pro/",target="_blank") &nbsp;&nbsp;“HelloWorld”--2018区块链应用落地大赛开始报名了!
   .home-intro-3col
     .col3-con
       .co(
@@ -126,7 +126,7 @@
     .ad-video-con
       no-ssr(placeholder="Loading...")
         d-player(:options="dplayerOpts" ref="dplayer")
-  Modal(v-model="modal2" width="600")
+  // Modal(v-model="modal2" width="600")
     div
       div
         i(class="icon font_family icon-guanbi" @click="modal2 = false")
@@ -197,11 +197,11 @@ export default {
     }
   },
   mounted () {
-    const isShow = getStore('isShow');
-    if(!isShow) {
-      this.modal2 = true;
-      setStore('isShow', 'true')
-    }
+    // const isShow = getStore('isShow');
+    // if(!isShow) {
+    //   this.modal2 = true;
+    //   setStore('isShow', 'true')
+    // }
 
     if (window.particlesJS) {
       window.particlesJS('particles-js', liziConfig)
