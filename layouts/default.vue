@@ -9,8 +9,8 @@
           .container-app-header-nav
             ul(:style="{'height': menuIsOpen ? `${40 * (indexList.length + 1)}px` : '0'}")
               li(
-                  @click="jumpTo('https://github.com/truechain')"
-                ) {{ $t(`nav.git`) }}
+                  @click="jumpTo('http://ddp.truescan.net/')"
+                ) {{ $t(`nav.developer`) }}
               li(
                   @click="jumpTo('http://trueglobal.pro')"
                 ) TRUE GLOBAL
