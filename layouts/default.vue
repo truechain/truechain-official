@@ -56,12 +56,12 @@
           .container-app-footer-links
             p.container-app-footer-text {{ $t('footerLinkDescr') }}
             ul
-              li(
-                @mouseenter="setErweima",
-                @mouseleave="setErweima",
-              )
-                span(class="icon font_family icon-weixin")
-                transition(name="fade", mode="out-in")
+              //- li(
+              //-   @mouseenter="setErweima",
+              //-   @mouseleave="setErweima",
+              //- )
+              //-   span(class="icon font_family icon-weixin")
+              //-   transition(name="fade", mode="out-in")
                   span(class="wechatImg " v-show="isWechat")
               li(
                 v-for="(item, index) in $t('linksList')",
