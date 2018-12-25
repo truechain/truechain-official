@@ -1,6 +1,12 @@
 {
   "language": "简体中文",
-  "linksList": [{
+  "linksList": [
+    {
+      "name": "微博",
+      "icon": "icon font_family icon-weibo",
+      "link": "https://weibo.com/u/1246658260"
+    },
+    {
       "name": "twitter",
       "icon": "icon font_family icon-twitter",
       "link": "https://twitter.com/truechaingroup/"
