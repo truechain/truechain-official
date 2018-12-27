@@ -19,9 +19,9 @@ export default {
       ]
     }
   },
-  async asyncData({isDev, route, store, env, params, query, req, res, redirect, error}) {
+  async asyncData({ params }) {
      const result = await apiArticleDetail({
-      id: route.params.id
+      id: params.id
     });
     return {
       detail: result.data.data[0] || {}

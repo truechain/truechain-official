@@ -44,7 +44,7 @@
 import { getTime } from '~/util/index.js'
 import { apiArticleList } from '@/api'
 export default {
-  async asyncData({isDev, route, store, env, params, query, req, res, redirect, error}) {
+  async asyncData({ store }) {
     const result = await apiArticleList({
         'theme': 1,
         'pageIndex': 0,
