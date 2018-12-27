@@ -19,6 +19,14 @@ export default {
       ]
     }
   },
+  async asyncData({isDev, route, store, env, params, query, req, res, redirect, error}) {
+     const result = await apiArticleDetail({
+      id: route.params.id
+    });
+    return {
+      detail: result.data.data[0] || {}
+    }
+  },
   data () {
     return {
       detail: {},
@@ -27,13 +35,6 @@ export default {
   },
   methods: {
     getTime
-  },
-  mounted () {
-    apiArticleDetail({
-      id: this.$route.params.id
-    }).then(res => {
-      this.detail = res.data.data[0] || {}
-    })
   }
 }
 </script>

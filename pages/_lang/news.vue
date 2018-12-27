@@ -44,6 +44,17 @@
 import { getTime } from '~/util/index.js'
 import { apiArticleList } from '@/api'
 export default {
+  async asyncData({isDev, route, store, env, params, query, req, res, redirect, error}) {
+    const result = await apiArticleList({
+        'theme': 1,
+        'pageIndex': 0,
+        'pageNumber': 10,
+        'language': store.state.locale === 'zh' ? '1' : '2'
+      })
+      return {
+        list: result.data.data
+      }
+  },
   head () {
     return {
       title: this.$t('news.head.title'),
@@ -65,7 +76,7 @@ export default {
     }
   },
   mounted () {
-    this.fetchData()
+    // this.fetchData()
     this.onFetchSumPage()
   },
   methods: {
