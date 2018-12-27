@@ -2,28 +2,28 @@
 
 import axios from 'axios'
 import qs from 'qs'
-import Vue from 'vue'
-const that = Vue.prototype
+// import Vue from 'vue'
+// const that = Vue.prototype
 import {
   articleUrl,
   lightWalletUrl
 } from '../config/index.js'
 
-axios.interceptors.request.use(req => {
-  that.$Spin.show()
-  return req
-}, err => {
-  that.$Message.error(err)
-  return Promise.reject(err)
-})
+// axios.interceptors.request.use(req => {
+//   that.$Spin.show()
+//   return req
+// }, err => {
+//   that.$Message.error(err)
+//   return Promise.reject(err)
+// })
 
-axios.interceptors.response.use(res => {
-  that.$Spin.hide()
-  return res
-}, err => {
-  that.$Message.error(err)
-  return Promise.reject(err)
-})
+// axios.interceptors.response.use(res => {
+//   that.$Spin.hide()
+//   return res
+// }, err => {
+//   that.$Message.error(err)
+//   return Promise.reject(err)
+// })
 
 export default {
   post (url, data) {
