@@ -17,8 +17,8 @@ switch (process.env.NODE_ENV) {
   case 'production':
     // articleUrl = 'http://39.105.125.189:8001/'
     // lightWalletUrl = 'http://39.105.125.189:7001/'
-    articleUrl = 'https://www.truechain.pro/api2/'
-    lightWalletUrl = 'https://www.truechain.pro/api/'
+    articleUrl = '//www.truechain.pro/api2/'
+    lightWalletUrl = '//www.truechain.pro/api/'
     break
 }
 
