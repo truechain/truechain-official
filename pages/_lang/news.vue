@@ -44,7 +44,7 @@
 import { getTime } from '~/util/index.js'
 import { apiArticleList } from '@/api'
 export default {
-  async asyncData({ store }) {
+  /* async asyncData({ store }) {
     const result = await apiArticleList({
         'theme': 1,
         'pageIndex': 0,
@@ -54,7 +54,7 @@ export default {
       return {
         list: result.data.data
       }
-  },
+  }, */
   head () {
     return {
       title: this.$t('news.head.title'),
@@ -76,7 +76,7 @@ export default {
     }
   },
   mounted () {
-    // this.fetchData()
+    this.fetchData()
     this.onFetchSumPage()
   },
   methods: {

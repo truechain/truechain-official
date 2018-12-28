@@ -19,14 +19,14 @@ export default {
       ]
     }
   },
-  async asyncData({ params }) {
+  /* async asyncData({ params }) {
      const result = await apiArticleDetail({
       id: params.id
     });
     return {
       detail: result.data.data[0] || {}
     }
-  },
+  }, */
   data () {
     return {
       detail: {},
@@ -35,6 +35,13 @@ export default {
   },
   methods: {
     getTime
+  },
+  mounted () {
+    apiArticleDetail({
+      id: this.$route.params.id
+    }).then(res => {
+      this.detail = res.data.data[0] || {}
+    })
   }
 }
 </script>
