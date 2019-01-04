@@ -126,13 +126,14 @@
     .ad-video-con
       no-ssr(placeholder="Loading...")
         d-player(:options="dplayerOpts" ref="dplayer")
-  // Modal(v-model="modal2" width="600")
+  Modal(v-model="modal2" width="600")
     div
       div
         i(class="icon font_family icon-guanbi" @click="modal2 = false")
       div
         a(href="http://trueglobal.pro/",target="_blank")
-          img(src="@/assets/images/game-ad.png")
+          img(src="@/assets/images/happy.jpg")
+          //- img(src="@/assets/images/game-ad.png")
   //- .home-news(v-if="$store.state.locale === 'zh'")
   //-   .page-title {{ $t('home.news.title') }}
   //-   .con
@@ -197,12 +198,15 @@ export default {
     }
   },
   mounted () {
-    // const isShow = getStore('isShow');
-    // if(!isShow) {
-    //   this.modal2 = true;
-    //   setStore('isShow', 'true')
-    // }
-
+    const stopTime = 1546617600000;
+    debugger
+    if(+new Date() < stopTime) {
+      const isShowHappy = getStore('isShowHappy');
+      if(!isShowHappy) {
+        this.modal2 = true;
+        setStore('isShowHappy', 'true')
+      }
+    }
     if (window.particlesJS) {
       window.particlesJS('particles-js', liziConfig)
     } else {
