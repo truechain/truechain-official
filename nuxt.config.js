@@ -32,6 +32,10 @@ module.exports = {
         content: 'width=device-width, initial-scale=1'
       },
       {
+        name: 'baidu-site-verification',
+        content: 'Z6qsmM03hJ'
+      },
+      {
         name: 'shenma-site-verification',
         content: '1a4726fefb7d5240f18ddec0b29fe888_1531190239'
       },
