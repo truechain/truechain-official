@@ -225,12 +225,12 @@ export default {
     })
     setTimeout(()=>{
       let locale = this.$store.state.locale
-      let videoUrl = 'https://qiniu.baixiaojian.com/video/ad-zh.mp4'
+      let videoUrl = 'https://qiniu.truescan.net/video/ad-zh.mp4'
       if ( locale == 'ko' ) {
-        videoUrl = 'https://qiniu.baixiaojian.com/video/ad-ko.mp4'
+        videoUrl = 'https://qiniu.truescan.net/video/ad-ko.mp4'
       }
       if ( locale == 'vn' ) {
-        videoUrl = 'https://qiniu.baixiaojian.com/video/ad-vn.mp4'
+        videoUrl = 'https://qiniu.truescan.net/video/ad-vn.mp4'
       }
       this.player.switchVideo({
         url: videoUrl

@@ -25,7 +25,7 @@ module.exports = {
       },
       {
         property: 'og:image',
-        content: 'https://qiniu.baixiaojian.com/logo.png'
+        content: 'https://qiniu.truescan.net/logo.png'
       },
       {
         name: 'viewport',
