@@ -11,14 +11,8 @@ module.exports = {
       {
         charset: 'utf-8'
       },
-      {
-        property: 'og:title',
-        content: 'TrueChain'
-      },
-      {
-        property: 'og:description',
-        content: 'TrueChain－Next Generation Public Blockchain with Hybrid Consensus'
-      },
+      { name: 'keyword', content: 'truechain,true,初链,区块链,blockchain,共识机制' },
+      { name: 'description', content: 'TrueChain－Next Generation Public Blockchain with Hybrid Consensus. 初链－下一代混合共识公链和全球开源公链社区' },
       {
         property: 'og:url',
         content: 'https://truechain.pro'
@@ -38,9 +32,7 @@ module.exports = {
       {
         name: 'shenma-site-verification',
         content: '1a4726fefb7d5240f18ddec0b29fe888_1531190239'
-      },
-      { hid: 'keyword', name: 'keyword', content: 'truechain, true, 初链, blockchain' },
-      { hid: 'description', name: 'description', content: 'TrueChain－Next Generation Public Blockchain with Hybrid Consensus. 初链－下一代混合共识公链和全球开源公链社区' }
+      }
     ],
     link: [
       {

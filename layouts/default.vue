@@ -127,9 +127,9 @@ export default {
   mounted () {
     const lang = getStore('lang')
     if(lang) {
-      // this.changeLanguage(lang) //会触发每个页面重新渲染,并无必要
+      this.changeLanguage(lang) //会触发每个页面重新渲染,并无必要
     } else {
-      // this.setLanguage()
+      this.setLanguage()
     }
     setTimeout(()=>{
       let existEl = document.getElementById("page_stat")
