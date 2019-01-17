@@ -56,9 +56,9 @@
   },
   "home": {
     "head": {
-      "title": "TrueChain 初链官网 | Next generation hybrid consensus public chain 初链",
-      "keywords": "True, TrueChain, 初链官网, Eric zhang, blockchain, hybrid consensus, Xiaoyong Cheng, Larry Lin, 初链",
-      "description": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW. It solves the biggest problem confronting permissionless blockchain: the contradiction between decentralization and efficiency. "
+      "title": "初链TrueChain－Next Generation Public Blockchain with Hybrid Consensus.",
+      "keywords": "初链, TRUE,初链币, TrueChain, truechain, blockchain, TRUE币, Hybrid Consensus, 第三代公链, 初链官网, Pow+pbft, CCTV, Eric Zhang, 刘洋, DApp",
+      "description": "Committed to the next generation of blockchain infrastructure, TrueChain is the world first public blockchain adopting the fPow+ PBFT hybrid consensus and has a strong global open source technology community, providing the underlying public chain support for decentralized applications (DApp) with high performance and high security."
     },
     "adVideoTitle":"INTRODUCTION",
     "adVideoLink":"https://qiniu.truescan.net/video/ad-en.mp4",
