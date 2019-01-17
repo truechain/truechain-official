@@ -6,13 +6,13 @@ module.exports = {
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns#'
     },
-    title: '初链-高性能无穷节点混合共识公链-官网',
+    // title: '初链-高性能无穷节点混合共识公链-官网',
     meta: [
       {
         charset: 'utf-8'
       },
-      { name: 'keywords', content: 'truechain,true,初链,区块链,blockchain,共识机制' },
-      { name: 'description', content: '初链官网,初链 TrueChain－Next Generation Public Blockchain with Hybrid Consensus. 初链－下一代混合共识公链和全球开源公链社区' },
+      // { name: 'keywords', content: 'truechain,true,初链,区块链,blockchain,共识机制' },
+      // { name: 'description', content: '初链官网,初链 TrueChain－Next Generation Public Blockchain with Hybrid Consensus. 初链－下一代混合共识公链和全球开源公链社区' },
       {
         property: 'og:url',
         content: 'https://truechain.pro'

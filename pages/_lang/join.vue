@@ -27,7 +27,7 @@ export default {
     return {
       title: this.$t('join.head.title'),
       meta: [
-        { hid: 'join-keyword', name: 'keywords', content: this.$t('join.head.keyword') },
+        { hid: 'join-keyword', name: 'keywords', content: this.$t('join.head.keywords') },
         { hid: 'join-description', name: 'description', content: this.$t('join.head.description') }
       ]
     }

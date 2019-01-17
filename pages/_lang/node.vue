@@ -88,7 +88,7 @@ export default {
     return {
       title: this.$t('node.head.title'),
       meta: [
-        { hid: 'node-keyword', name: 'keywords', content: this.$t('node.head.keyword') },
+        { hid: 'node-keyword', name: 'keywords', content: this.$t('node.head.keywords') },
         { hid: 'node-description', name: 'description', content: this.$t('node.head.description') }
       ]
     }
