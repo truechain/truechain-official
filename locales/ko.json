@@ -36,7 +36,7 @@
   "home": {
     "head": {
       "title": "TrueChain | 트루체인 - 고성능의 무한한 노드, 하이브리드 합의 알고리즘의 블록체인",
-      "keyword": "트루체인，TRUE，트루체인 코인，TrueChain，Eric Zhang，블록체인，하이브리드 합의 알고리즘，Xiaoyong Cheng，Larry Lin",
+      "keywords": "트루체인，TRUE，트루체인 코인，TrueChain，Eric Zhang，블록체인，하이브리드 합의 알고리즘，Xiaoyong Cheng，Larry Lin",
       "description": "트루체인（TrueChain）은 세계 최초로 PBFT-POW 하이브리드 합의 알고리즘을 실현한 퍼블릭 블록체인입니다. 트루체인은 블록체인 계열 중 가장 중요한 문제인 탈 중앙화와 성능 사이의 모순을 해결하였습니다."
     },
     "adVideoTitle":"INTRODUCTION",
@@ -196,7 +196,7 @@
   "news": {
     "head": {
       "title": "트루체인 새소식-트루체인 최신 동태-블록체인 속보-트루체인",
-      "keyword": "트루체인 속보, TRUE, 블록체인 속보, 사이버 머니 속보",
+      "keywords": "트루체인 속보, TRUE, 블록체인 속보, 사이버 머니 속보",
       "description": " True Chain의 새 소식 업데이트, 블록체인 속보 및 블록체인 영역의 소식과 데이터를 실시간으로 업데이트."
     },
     "point": "데이터가 없습니다",
@@ -211,7 +211,7 @@
   "team": {
     "head": {
       "title": "트루체인 팀-트루체인TrueChain",
-      "keyword": "트루체인 팀원, TRUE, 블록체인 전문가, 블록체인 인재",
+      "keywords": "트루체인 팀원, TRUE, 블록체인 전문가, 블록체인 인재",
       "description": "트루체인의 글로벌 팀원은 주로 기술팀, 비즈니스 및 블록체인 전문가 고문으로 구성되어 있으며, 미국과 인도 그리고 중국에 분포되어있다."
     },
     "banner": "With 2000+ developers from the world",
@@ -413,7 +413,7 @@
   "join": {
     "head": {
       "title": "트루체인-채용사이트",
-      "keyword": "트루체인，TRUE，채용사이트，블록체인，블록체인 인재，암호화폐",
+      "keywords": "트루체인，TRUE，채용사이트，블록체인，블록체인 인재，암호화폐",
       "description": "우리 트루체인은 더 많은 블록체인 인재의 입사를 기대합니다。"
     },
     "title": "채용 공고",
@@ -597,7 +597,7 @@
       "text7": "4.All the TRUE will be migrated to the official mainnet and come into effect immediately.",
       "text8": "TrueChain Foundation",
       "text9": "16th, August, 2018",
-      "keyword": "트루체인, TRUE, 노드 선거, 마스터 노드, 블록체인, 디지털 화폐 ",
+      "keywords": "트루체인, TRUE, 노드 선거, 마스터 노드, 블록체인, 디지털 화폐 ",
       "description": "트루체인은 9월에 메인넷 테스트 전에 사전 등록 및 투표를 통해, 최대 4천명을 초과하지 않는 우선 순위 노드(POW)과 최대 100명을 초과하지 않는 마스터 노드(PBFT+POW)을 선출할 예정입니다. "
     },
     "result": "result",

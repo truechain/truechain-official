@@ -57,7 +57,7 @@
   "home": {
     "head": {
       "title": "TrueChain | Next generation hybrid consensus public chain",
-      "keyword": "True，TrueChain，Eric zhang，blockchain, hybrid consensus, Xiaoyong Cheng, Larry Lin",
+      "keywords": "True，TrueChain，Eric zhang，blockchain, hybrid consensus, Xiaoyong Cheng, Larry Lin",
       "description": "TrueChain is the first public chain in the world which brings about the technology of hybrid consensus combining PBFT and POW. It solves the biggest problem confronting permissionless blockchain: the contradiction between decentralization and efficiency. "
     },
     "adVideoTitle":"INTRODUCTION",
@@ -213,7 +213,7 @@
   "news": {
     "head": {
       "title": "TrueChain news-TrueChain Updates, TrueChain posts",
-      "keyword": "TrueChain news-TrueChain flash, digital currency news, TRUE",
+      "keywords": "TrueChain news-TrueChain flash, digital currency news, TRUE",
       "description": "TrueChain news section provides real-time information about TrueChain, news and real-time information in the field of blockchain."
     },
     "title": "news",
@@ -227,7 +227,7 @@
   "team": {
     "head": {
       "title": "TrueChain team-TrueChain",
-      "keyword": "TrueChain team members, TRUE, Blockchain expert, digital currency expert, Blockchain Talents",
+      "keywords": "TrueChain team members, TRUE, Blockchain expert, digital currency expert, Blockchain Talents",
       "description": "The leading research and engineering team members of True Chain come from the U.S., India and China. "
     },
     "banner": "With 2000+ developers from the world",
@@ -428,7 +428,7 @@
   "join": {
     "head": {
       "title": "TrueChain recruitment website",
-      "keyword": "TrueChain, TRUE, recruitment website,blockchain, blockchain employee, digital currency",
+      "keywords": "TrueChain, TRUE, recruitment website,blockchain, blockchain employee, digital currency",
       "description": "TrueChain welcome more people come to join us."
     },
     "title": "JOIN US",
@@ -521,7 +521,7 @@
       "text7": "4.All the TRUE will be migrated to the official mainnet and come into effect immediately.",
       "text8": "TrueChain Foundation",
       "text9": "16th, August, 2018",
-      "keyword": "TrueChain,TRUE, nodes election, super nodes, blockchain, digital currency",
+      "keywords": "TrueChain,TRUE, nodes election, super nodes, blockchain, digital currency",
       "description": "TrueChain will select no more than 4000 priority standard nodes (POW) and no more than 100 priority master nodes (PBFT+POW) by votes before the test main network released in September."
     },
     "result": "result",

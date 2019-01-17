@@ -88,7 +88,7 @@ export default {
     return {
       title: this.$t('node.head.title'),
       meta: [
-        { hid: 'node-keyword', name: 'keyword', content: this.$t('node.head.keyword') },
+        { hid: 'node-keyword', name: 'keywords', content: this.$t('node.head.keyword') },
         { hid: 'node-description', name: 'description', content: this.$t('node.head.description') }
       ]
     }
@@ -297,7 +297,7 @@ export default {
       border-color white transparent transparent transparent
       content ''
       display inline-block
-      position absolute 
+      position absolute
       top 90px
       left 49%
 .node-header-title2

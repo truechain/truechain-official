@@ -36,7 +36,7 @@
   "home": {
     "head": {
       "title": "TrueChain | Một thế hệ mới của chuỗi công đồng nhất trí hỗn hợp",
-      "keyword": "初链，TRUE，初链币，TrueChain，张剑南，区块链，混合共识，程小永，林大亮",
+      "keywords": "初链，TRUE，初链币，TrueChain，张剑南，区块链，混合共识，程小永，林大亮",
       "description": "初链是全球最早的PBFT - fPOW混合共识公链"
     },
     "adVideoTitle":"INTRODUCTION",
@@ -207,7 +207,7 @@
   "news": {
     "head": {
       "title": "初链Tin mới-初链最新动态-区块链快讯-初链",
-      "keyword": "初链快讯，TRUE,区块链快讯，数字货币快讯",
+      "keywords": "初链快讯，TRUE,区块链快讯，数字货币快讯",
       "description": "初链新闻版块提供初链最新动态消息，区块链快讯等区块链领域的实时资讯。"
     },
     "title": "Tin mới",
@@ -222,7 +222,7 @@
   "team": {
     "head": {
       "title": "初链Đội ngũ-初链TrueChain",
-      "keyword": "初链团队成员，TRUE,区块链专家，数字货币专家，区块链人才",
+      "keywords": "初链团队成员，TRUE,区块链专家，数字货币专家，区块链人才",
       "description": "初链的全球团队成员主要分为技术团队，商业团队及区块链专家顾问，分布在美国、印度和中国。"
     },
     "banner": "Và hơn 2000+ nhân viên khai thác đến từ toàn cầu",
@@ -424,7 +424,7 @@
   "join": {
     "head": {
       "title": "初链-招聘官网",
-      "keyword": "初链，TRUE，招聘官网，区块链，区块链人才，数字货币",
+      "keywords": "初链，TRUE，招聘官网，区块链，区块链人才，数字货币",
       "description": "初链招聘期待更多区块链人才加入我们。"
     },
     "title": "Hãy tham gia cùng chúng tôi",
@@ -604,7 +604,7 @@
       "text7": "4.All the TRUE will be migrated to the official mainnet and come into effect immediately.",
       "text8": "TrueChain Foundation",
       "text9": "16th, August, 2018",
-      "keyword": "初链，TRUE,节点竞选，超级节点，区块链，数字货币",
+      "keywords": "初链，TRUE,节点竞选，超级节点，区块链，数字货币",
       "description": "初链将在9月主网测试网上线之前，通过报名和投票机制，选举出最多不超过4000个优先标准节点（POW）和 最多不超过100个优先全节点（PBFT+POW）。"
     },
     "result": "Kết quả",

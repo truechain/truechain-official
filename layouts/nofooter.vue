@@ -86,7 +86,7 @@ export default {
     return {
       title: this.$t('home.head.title'),
       meta: [
-        { hid: 'home-keyword', name: 'keyword', content: this.$t('home.head.keyword') },
+        { hid: 'home-keyword', name: 'keywords', content: this.$t('home.head.keyword') },
         { hid: 'home-description', name: 'description', content: this.$t('home.head.description') }
       ],
       script: [

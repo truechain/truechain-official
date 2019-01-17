@@ -11,8 +11,8 @@ module.exports = {
       {
         charset: 'utf-8'
       },
-      { name: 'keyword', content: 'truechain,true,初链,区块链,blockchain,共识机制' },
-      { name: 'description', content: 'TrueChain－Next Generation Public Blockchain with Hybrid Consensus. 初链－下一代混合共识公链和全球开源公链社区' },
+      { name: 'keywords', content: 'truechain,true,初链,区块链,blockchain,共识机制' },
+      { name: 'description', content: '初链官网,初链 TrueChain－Next Generation Public Blockchain with Hybrid Consensus. 初链－下一代混合共识公链和全球开源公链社区' },
       {
         property: 'og:url',
         content: 'https://truechain.pro'

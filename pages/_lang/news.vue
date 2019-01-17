@@ -59,7 +59,7 @@ export default {
     return {
       title: this.$t('news.head.title'),
       meta: [
-        { hid: 'news-keyword', name: 'keyword', content: this.$t('news.head.keyword') },
+        { hid: 'news-keyword', name: 'keywords', content: this.$t('news.head.keyword') },
         { hid: 'news-description', name: 'description', content: this.$t('news.head.description') }
       ]
     }
