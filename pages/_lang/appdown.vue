@@ -153,7 +153,8 @@ export default {
           color #fff
           font-size 15px
   .coy
-    font-size:12px;
-    font-weight:400;
-    color:rgba(32,50,96,1);
+    font-size:12px
+    font-weight:400
+    margin-bottom 30px
+    color:rgba(32,50,96,1)
 </style>
