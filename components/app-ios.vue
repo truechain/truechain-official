@@ -9,7 +9,7 @@
     <div class="app-button-qrcode" :class="{'app-button-qrcode-show': showQRCode}">
       <div>
         <!-- <img src="~@/assets/images/iosQR.png"> -->
-        <img src="/download/iosappdownqr.png">        
+        <img src="/download/iosappdownqr.png">
       </div>
     </div>
   </div>
@@ -18,7 +18,7 @@
 <script>
 // const url = 'http://wapxk.com/wapindex-1000-6879.html'
 // const url = 'https://www.truechain.pro/download/truewallet.html'
-const url = 'https://www.truechain.pro/iosappdown'
+const url = 'http://www.truechain.pro/iosappdown'
 
 export default {
   name: 'app-ios',

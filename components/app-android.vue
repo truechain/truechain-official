@@ -16,7 +16,7 @@
 </template>
 
 <script>
-const url = 'https://www.truechain.pro/download/true.apk'
+const url = 'http://www.truechain.pro/download/true.apk'
 
 export default {
   name: 'app-android',
