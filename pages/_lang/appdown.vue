@@ -9,7 +9,7 @@ div.page
     .page-con-right
       .page-con-right-title Truewallet
       .apple-down-btn
-        a(target="_blank",href="http://www.truechain.pro/download/true.apk")
+        a(target="_blank",href="https://qiniu.truescan.net/file/true.apk")
           svg(
             xmlns="http://www.w3.org/2000/svg",
             xmlns:xlink="http://www.w3.org/1999/xlink",

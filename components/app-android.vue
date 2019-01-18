@@ -16,7 +16,7 @@
 </template>
 
 <script>
-const url = 'http://www.truechain.pro/download/true.apk'
+const url = 'https://qiniu.truescan.net/file/true.apk'
 
 export default {
   name: 'app-android',
