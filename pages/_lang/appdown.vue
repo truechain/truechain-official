@@ -139,6 +139,7 @@ export default {
         margin 0px 0px 30px
       .bj
         width 80%
+        max-height 100%
     .page-con-right
       .apple-down-btn
         display flex
