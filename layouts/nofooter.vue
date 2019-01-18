@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  //- div
     .container-app(@click="closeMenu")
       nav
         .container-app-header
@@ -38,11 +38,11 @@
               :key="item.tag"
               @click="changeLanguage(item.tag)"
             ) {{item.name}}
-      .container-app-content
-        transition(name="fade-x", mode="out-in")
-          nuxt
-          Spin(size="small", v-if="false")
-        .container-app-footer-copyright
+  .container-app-content
+    transition(name="fade-x", mode="out-in")
+      nuxt
+      Spin(size="small", v-if="false")
+        //- .container-app-footer-copyright
           div Copyright ⓒ TrueChain All Rights Reserved.
           // div COPYRIGHT© TRUE CHAIN {{$t('copyright') }}
 </template>
@@ -51,7 +51,7 @@
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
 import { apiGetIpInfo } from '~/api'
-import { setStore, getStore } from '~/util';
+import { setStore, getStore } from '~/util'
 const indexList = [
   // { path: 'https://github.com/truechain', tag: 'git' },
   // { path: 'http://group.truechain.pro/', tag: 'blog' },
@@ -76,7 +76,7 @@ export default {
   },
   mounted () {
     const lang = getStore('lang')
-    if(lang) {
+    if (lang) {
       // this.changeLanguage(lang) //会触发每个页面重新渲染,并无必要
     } else {
       // this.setLanguage()
@@ -313,7 +313,6 @@ nav
     text-align center
     font-size 13px
     line-height 60px
-
 
 @media screen and (max-width 860px)
   .container-app-header-nav
