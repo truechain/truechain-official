@@ -101,6 +101,7 @@ import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
 import { apiGetIpInfo } from '~/api'
 import { setStore, getStore } from '~/util';
+import baiduAnalyse from '@/middleware/baiduAnalyse'
 const indexList = [
   // { path: 'https://github.com/truechain', tag: 'git' },
   // { path: 'http://group.truechain.pro/', tag: 'blog' },
@@ -125,6 +126,7 @@ export default {
     AppIos
   },
   mounted () {
+    baiduAnalyse()
     const lang = getStore('lang')
     if(lang) {
       this.changeLanguage(lang) //会触发每个页面重新渲染,并无必要

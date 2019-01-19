@@ -8,7 +8,11 @@ div.page
     .page-con-right
       .page-con-right-title Truewallet
       .apple-down-btn
-        a(target="_blank",href="itms-services://?action=download-manifest&url=https://www.truechain.pro/download/true-wallet.plist")
+        a(
+          target="_blank",
+          href="itms-services://?action=download-manifest&url=https://www.truechain.pro/download/true-wallet.plist",
+          @click="onDownIos"
+        )
           svg(
             xmlns="http://www.w3.org/2000/svg",
             xmlns:xlink="http://www.w3.org/1999/xlink",
@@ -35,7 +39,12 @@ export default {
   layout: 'nofooter',
   async mounted() {
     baiduAnalyse()
-  }
+  },
+  methods: {
+    onDownIos () {
+      window._hmt.push(['_trackEvent', 'software', 'download', 'iosh5down'])
+    }
+  },
 }
 </script>
 
