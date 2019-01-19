@@ -39,21 +39,14 @@ div.page
 </template>
 
 <script>
+import baiduAnalyse from '@/middleware/baiduAnalyse'
 export default {
   layout: 'nofooter',
-  data () {
-    return {
-
-    }
-  },
-  async created () {
-  },
-  methods: {
-
+  async mounted() {
+    baiduAnalyse()
   }
 }
 </script>
-
 
 <style lang="stylus">
 @import '~@/assets/stylus/mixin.styl'
