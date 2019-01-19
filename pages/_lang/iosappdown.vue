@@ -3,7 +3,8 @@ div.page
   .page-con
     .page-con-left
       p.page-con-left-title Truewallet
-      img(src="~assets/images/iosappdown001.png")
+      //- img(src="~assets/images/iosappdown001.png")
+      img(src="~assets/images/wallet.png")
     .page-con-right
       .page-con-right-title Truewallet
       .apple-down-btn
@@ -23,8 +24,8 @@ div.page
         .descr
           .primary 手机扫描二维码下载安装
           .second 版本：1.6.0
-          .second 大小： 5.46MB
-          .second 更新日期：2018-08-19
+          .second 大小： 7.1MB
+          .second 更新日期：2019-01-18
 
 </template>
 
@@ -39,7 +40,7 @@ export default {
   async created () {
   },
   methods: {
-    
+
   }
 }
 </script>
@@ -69,7 +70,7 @@ export default {
   line-height 1.2
   margin 100px 0px 50px
 .page-con-right-con
-  img 
+  img
     display inline-block
     vertical-align top
     wh(135px,135px)
@@ -96,7 +97,7 @@ export default {
   margin-bottom 50px
   svg
     display inline-block
-    vertical-align top 
+    vertical-align top
     margin 6px 10px 0px 0px
   span
     vertical-align top
@@ -118,5 +119,5 @@ export default {
     .page-con-right
       .apple-down-btn
         width 100%
-        margin 30px 0px 
+        margin 30px 0px
 </style>
