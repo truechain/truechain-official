@@ -23,7 +23,7 @@ div.page
         img.qr(src="/download/iosappdownqr.png")
         .descr
           .primary 手机扫描二维码下载安装
-          .second 版本：1.6.0
+          .second 版本：3.1.0
           .second 大小： 7.1MB
           .second 更新日期：2019-01-18
 
