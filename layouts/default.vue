@@ -92,6 +92,9 @@
           div
             span Copyright ⓒ TrueChain All Rights Reserved.
             span {{ $t(`footerContactUs`) }}： partner@truechain.pro
+            span sitemap:
+              a(href="//www.truechain.pro/sitemap.xml", tartget="_blank")
+                span XML
           // div COPYRIGHT© TRUE CHAIN {{$t('copyright') }}
 
 </template>
