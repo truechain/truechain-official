@@ -9,7 +9,7 @@
     <div class="app-button-qrcode" :class="{'app-button-qrcode-show': showQRCode}">
       <div>
         <!-- <img src="~@/assets/images/iosQR.png"> -->
-        <img src="/download/iosappdownqr.png">
+        <img src="~@/assets/images/iosappdownQR.png">
       </div>
     </div>
   </div>
