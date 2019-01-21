@@ -10,7 +10,7 @@ div.page
       .apple-down-btn
         a(
           target="_blank",
-          href="itms-services://?action=download-manifest&url=https://www.truechain.pro/download/true-wallet.plist",
+          href="itms-services://?action=download-manifest&url=https://qiniu.truescan.net/file/true-wallet.plist",
           @click="onDownIos"
         )
           svg(
