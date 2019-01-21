@@ -44,19 +44,19 @@
     "mingBtns":[
       {
         "text":"docker版",
-        "link":"https://www.truechain.pro/download/ming/ming-version-docker-zh.pdf"
+        "link":"https://qiniu.truescan.net/pdf/ming-version-docker-zh.pdf"
       },
       {
         "text":"linux版",
-        "link":"https://www.truechain.pro/download/ming/ming-version-linux-zh.pdf"
+        "link":"https://qiniu.truescan.net/pdf/ming-version-linux-zh.pdf"
       },
       {
         "text":"win版",
-        "link":"https://www.truechain.pro/download/ming/ming-version-windows-zh.pdf"
+        "link":"https://qiniu.truescan.net/pdf/ming-version-windows-zh.pdf"
       },
       {
         "text":"mac版",
-        "link":"https://www.truechain.pro/download/ming/ming-version-mac-zh.pdf"
+        "link":"https://qiniu.truescan.net/pdf/ming-version-mac-zh.pdf"
       }
     ]
   },
@@ -71,9 +71,9 @@
     "slogan": "真正快速、不受限、安全、可扩容",
     "slogan1": "具有全球开发者社区的PBFT-fPoW混合共识公链",
     "white": "白皮书",
-    "whiteLink": "https://www.truechain.pro/whitepaper-zh.pdf",
+    "whiteLink": "https://qiniu.truescan.net/pdf/whitepaper-zh.pdf",
     "yellow": "黄皮书",
-    "yellowLink": "https://www.truechain.pro/yellowpaper-zh.pdf",
+    "yellowLink": "https://qiniu.truescan.net/pdf/yellowpaper-zh.pdf",
     "banner2": {
       "title": "True 轻钱包应用",
       "line1": "公测版本",
