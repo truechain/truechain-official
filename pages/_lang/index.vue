@@ -21,16 +21,16 @@
             a(:href="$t('home.yellowLink')",target="_blank") {{ $t('home.yellow') }}
             a(:href="$t('home.whiteLink')",target="_blank") {{ $t('home.white') }}
             a(href="https://github.com/truechain/truechain-engineering-code",target="_blank") {{ $t('home.mainNet') }}
-      CarouselItem
-        .banner2
-          img.telpic(src="~assets/images/home-banner2.png")
-          .ri
-            p.title {{ $t('home.banner2.title') }}
-            p.line1 {{ $t('home.banner2.line1') }}
-            p.line2 {{ $t('home.banner2.line2') }}
-            .down
-              app-android
-              app-ios
+      //- CarouselItem
+      //-   .banner2
+      //-     img.telpic(src="~assets/images/home-banner2.png")
+      //-     .ri
+      //-       p.title {{ $t('home.banner2.title') }}
+      //-       p.line1 {{ $t('home.banner2.line1') }}
+      //-       p.line2 {{ $t('home.banner2.line2') }}
+      //-       .down
+      //-         app-android
+      //-         app-ios
       //- CarouselItem
       //-   .banner3-bg
       //-     img(src="~assets/images/home-banner3bg.jpg")
