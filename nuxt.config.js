@@ -32,6 +32,10 @@ module.exports = {
       {
         name: 'shenma-site-verification',
         content: '1a4726fefb7d5240f18ddec0b29fe888_1531190239'
+      },
+      {
+        name: '360-site-verification',
+        content: '7fa37e8328536ca9f2af1a41b9386455'
       }
     ],
     link: [
