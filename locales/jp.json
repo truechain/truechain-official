@@ -45,6 +45,7 @@
     "whiteLink": "https://qiniu.truescan.net/pdf/whitepaper-en.pdf",
     "yellow": "イエローペーパー",
     "yellowLink": "https://qiniu.truescan.net/pdf/yellowpaper-en.pdf",
+    "mainNet": "MAIN NET",
     "banner2": {
       "title": "True SPVアプリケーション",
       "line1": "公式テストバージョン",

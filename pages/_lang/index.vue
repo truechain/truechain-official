@@ -19,8 +19,8 @@
           .banner-home-buttons
             a(href="https://github.com/truechain",target="_blank") GITHUB
             a(:href="$t('home.yellowLink')",target="_blank") {{ $t('home.yellow') }}
-            a(href="https://github.com/truechain/wiki",target="_blank") TECHNICAL DOCUMENTS
-            a(href="https://github.com/truechain/truechain-engineering-code",target="_blank") MAIN NET
+            a(:href="$t('home.whiteLink')",target="_blank") {{ $t('home.white') }}
+            a(href="https://github.com/truechain/truechain-engineering-code",target="_blank") {{ $t('home.mainNet') }}
       CarouselItem
         .banner2
           img.telpic(src="~assets/images/home-banner2.png")
