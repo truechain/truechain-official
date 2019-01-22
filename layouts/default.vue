@@ -21,7 +21,7 @@
                 ) TRUE GLOBAL
               li(
                   @click="jumpTo('https://www.truescan.net')"
-                ) {{ $t(`nav.truescan`) }}
+                ) TRUE SCAN
               li(
                   @click="jumpTo('http://www.truewallet.net')"
                 ) {{ $t(`nav.webwallet`) }}
