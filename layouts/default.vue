@@ -116,7 +116,7 @@ const indexList = [
 ]
 const langs = [
   { name: '简体中文', tag: 'zh' },
-  { name: 'EN', tag: 'default' },
+  { name: 'EN', tag: 'en' },
   { name: '한국어', tag: 'ko' },
   { name: 'ภาษาไทย', tag: 'th' },
   { name: 'タイ語', tag: 'jp' },
@@ -236,9 +236,8 @@ export default {
 
       const { $route: { fullPath, params }, $router } = this
       const path = fullPath.split(`/${params.lang}`).join('')
-
       setStore('lang', lang)
-      if (lang === 'default') {
+      if (lang === 'zh') {
         $router.push(fullPath.replace(/^\/[^\/]+/, ''))
       } else {
         $router.push(`/${lang}${path}`)

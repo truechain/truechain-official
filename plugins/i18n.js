@@ -11,9 +11,8 @@ export default ({
   // This way we can use it in middleware and pages asyncData/fetch
   app.i18n = new VueI18n({
     locale: store.state.locale,
-    fallbackLocale: 'default',
+    fallbackLocale: 'zh',
     messages: {
-      'default': require('~/locales/en.json'),
       'en': require('~/locales/en.json'), // 英文
       'zh': require('~/locales/zh.json'), // 中国
       'ko': require('~/locales/ko.json'), // 韩国
