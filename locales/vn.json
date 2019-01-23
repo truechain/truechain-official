@@ -92,7 +92,7 @@
     ],
     "about": {
       "title": "Về chúng tôi",
-      "subhead": "TrueChain là một nền tảng Public blockchain đồng thuận lai, nhanh chóng, phân quyền, an toàn và có thể mở rộng. Dự án nhận được sự hỗ trợ từ công nghệ đồng thuận lai gọi là Minerva và một cộng đồng phát triển toàn cầu.",
+      "subhead": "TrueChain cam kết mang đến thế hệ cơ sở hạ tầng blockchain tiếp theo. Đây là chuỗi công khai đầu tiên trên thế giới áp dụng công nghệ đồng thuận lai fPow + PBFT và có cộng đồng công nghệ mã nguồn mở toàn cầu mạnh mẽ, cung cấp hỗ trợ chuỗi công cộng cơ bản mang lại độ bảo mật cao và hiệu suất vượt trội cho các ứng dụng phi tập trung (DApp) và các tài sản số trên toàn cầu.",
       "contentList": [
         "Rất nhiều public chain chỉ dựa trên cơ chế đồng thuận như PoW hoặc PoS, đang gặp phải rào cản lớn về sự hiệu quả. Mặt khác, những chuỗi dPoS hoặc dBFT đã cải thiện được sự hiểu quả nhưng lại gặp phải rào cản về tính phi tập trung. TrueChain sử dụng cơ chế đồng thuận lai gọi là Minerva kết hợp giữa PBFT và fPoW để giải quyết vấn đề lớn nhất cản trở public blockchain: sự mâu thuẫn giữa tính phi tập trung và độ hiệu quả",
         "TrueChain sử dụng PBFT làm chuỗi tốc độ (fast-chain) để xử lý các giao dịch, và các node PoW làm nhiệm vụ giám sát và bầu chọn FBFT. Bên cạnh đó, TrueChain tích hợp thêm công nghệ fruitchain vào giao thức PoW truyền thống, tạo thành fPoW (đóng vai trò là một snailchain) nhằm giúp chuỗi có tính phi tập trung cao và công bằng. TrueChain cũng thiết lập công nghệ phân mảnh (sharding) vào PBFT để tăng giới hạn mở rộng .",
