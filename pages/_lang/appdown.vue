@@ -60,6 +60,10 @@ export default {
   },
   methods: {
     onDownIos () {
+      var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
+      if(isWeixinBrowser){
+        alert('点击右上角,在浏览器中打开原网页')
+      }
       window._hmt.push(['_trackEvent', 'software', 'download', 'iosh5down'])
     },
     onDownAndroid () {
