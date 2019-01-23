@@ -53,6 +53,11 @@ export default {
   async mounted() {
     baiduAnalyse()
   },
+  head () {
+    return {
+      title: 'TrueChain钱包下载 | 简单、安全、有趣的区块链钱包'
+    }
+  },
   methods: {
     onDownIos () {
       window._hmt.push(['_trackEvent', 'software', 'download', 'iosh5down'])

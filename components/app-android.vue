@@ -15,7 +15,7 @@
     </a>
     <div class="app-button-qrcode" :class="{'app-button-qrcode-show': showQRCode}">
       <div>
-        <img src="~@/assets/images/androidQR.png">
+        <img src="~@/assets/images/androidQR1.png">
       </div>
     </div>
   </div>
