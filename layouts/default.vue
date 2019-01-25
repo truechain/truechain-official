@@ -10,11 +10,11 @@
             ul(:style="{'height': menuIsOpen ? `${40 * (indexList.length + 1)}px` : '0'}")
               template(v-if="$t('language') === '简体中文'")
                 li(
-                    @click="jumpTo('http://ddp.truescan.net/')"
+                    @click="jumpTo('http://dev.truedapp.net/')"
                   ) {{ $t(`nav.developer`) }}
               template(v-else)
                 li(
-                    @click="jumpTo('http://ddp.truechain.pro/')"
+                    @click="jumpTo('http://dev.truechain.pro/')"
                   ) {{ $t(`nav.developer`) }}
               li(
                   @click="jumpTo('http://trueglobal.pro')"
