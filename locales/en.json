@@ -113,7 +113,7 @@
     ],
     "about": {
       "title": "ABOUT",
-      "subhead": "TrueChain is committed to the next generation of blockchain infrastructure. It is the world's first public chain adopting the fPow+ PBFT hybrid consensus and has a strong global open source technology community, providing the underlying public blockchain support with high performance and high security for decentralized application (DApp) and global asset circulation.",
+      "subhead": "TrueChain is committed to be the next generation of blockchain infrastructure. It is the world's first public chain adopting the fPow+ PBFT hybrid consensus that has a strong global open source developer community supporting it. TrueChain provides the underlying public blockchain support with high performance and high security for decentralized application (DApp) and global asset circulation.",
       "contentList": [
         "Many public chains based on single consensus mechanism such as PoW or PoS, are having a bottleneck in efficiency. One the other hand, those based on dPoS or dBFT have been improved in efficiency, but are having problems in decentralization. TrueChain uses hybrid consensus called Minerva combining PBFT and fPoW to solve the biggest problem confronting permissionless blockchain: the contradiction between decentralization and efficiency.",
         "It uses PBFT as fast-chain to process transactions, and leave the oversight and election of PBFT to the hands of PoW nodes. Besides, TrueChain integrates fruitchain technology into the traditional PoW protocol i.e. fPoW, as the snailchain, to make the chain even more decentralized and fair. TrueChain also added sharding on top of PBFT to lift the limit of scalability.",
