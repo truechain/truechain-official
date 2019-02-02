@@ -79,7 +79,7 @@ export default {
       var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
       if(isWeixinBrowser){
         e.preventDefault()
-        alert('点击右上角,在浏览器中打开原网页')
+        alert('点击右上角，选择在浏览器中打开')
       }
       window._hmt.push(['_trackEvent', 'software', 'download', 'androidh5down']);
     }
@@ -92,7 +92,7 @@ export default {
 .page
   background-color $dark-blue
   padding-top 60px
-  height 100vh
+  min-height 100vh
   .page-con
     display flex
     flex-direction row
@@ -152,6 +152,7 @@ export default {
     line-height 42px
 @media screen and (max-width 860px)
   .page
+    position relative
     background-color #fff
     .page-con
       flex-direction column
@@ -173,6 +174,7 @@ export default {
         width 90%
         max-height 100%
     .page-con-right
+      padding-bottom 40px
       .down-btn
         display flex
         align-items center
@@ -186,8 +188,8 @@ export default {
           color #fff
           font-size 15px
   .coy
-    font-size:12px
-    font-weight:400
-    margin-bottom 30px
-    color:rgba(32,50,96,1)
+    position absolute
+    bottom 20px
+    font-size 12px
+    color rgba(32,50,96,1)
 </style>
