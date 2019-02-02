@@ -8,7 +8,7 @@ div.page
       img(src="~assets/images/wallet.png").bj
     .page-con-right
       .page-con-right-title Truewallet
-      .apple-down-btn
+      .down-btn(v-if="ua !== 'ios'")
         a(
           target="_blank",
           href="https://qiniu.truescan.net/file/true.apk",
@@ -26,7 +26,7 @@ div.page
             path(d="M116.799504 7.937984 116.799504 7.937984 116.799504 7.937984Z")
             path(d="M396.32769 281.79845q9.065178 0 15.590202-6.525023t6.525023-15.590202-6.525023-15.590202-15.590202-6.525023-15.304434 6.525023-6.239256 15.590202 6.239256 15.590202 15.304434 6.525023zM635.610295 281.79845q9.065178 0 15.304434-6.525023t6.239256-15.590202-6.239256-15.590202-15.304434-6.525023-15.590202 6.525023-6.525023 15.590202 6.525023 15.590202 15.590202 6.525023zM175.207194 386.119442q23.813953 0 40.817116 17.003163t17.003163 40.817116l0 243.807256q0 24.385488-16.733271 41.388651t-41.102884 17.003163-41.388651-17.003163-17.003163-41.388651l0-243.807256q0-23.813953 17.003163-40.817116t41.388651-17.003163zM776.223752 396.899225l0 377.625798q0 26.084217-18.146233 44.23045t-43.658915 18.146233l-42.531721 0 0 128.706481q0 24.385488-17.003163 41.388651t-41.388651 17.003163-41.388651-17.003163-17.003163-41.388651l0-128.706481-78.252651 0 0 128.706481q0 24.385488-17.003163 41.388651t-41.388651 17.003163q-23.813953 0-40.817116-17.003163t-17.003163-41.388651l-0.571535-128.706481-41.960186 0q-26.084217 0-44.23045-18.146233t-18.146233-44.23045l0-377.625798 520.509519 0zM644.675473 167.269209q60.662078 31.180403 96.954543 87.032062t36.292465 122.181457l-524.478512 0q0-66.345674 36.292465-122.181457t97.526078-87.032062l-40.261457-74.283659q-3.968992-7.36645 2.841798-11.335442 7.36645-3.397457 11.335442 3.397457l40.817116 74.839318q53.867163-23.813953 113.973581-23.813953t113.973581 23.813953l40.817116-74.839318q3.968992-6.810791 11.335442-3.397457 6.810791 3.968992 2.841798 11.335442zM915.138481 443.955597l0 243.807256q0 24.385488-17.003163 41.388651t-41.388651 17.003163q-23.813953 0-40.817116-17.003163t-17.003163-41.388651l0-243.807256q0-24.385488 17.003163-41.102884t40.817116-16.733271q24.385488 0 41.388651 16.733271t17.003163 41.102884z")
           span.color_f Android版本下载
-      .apple-down-btn
+      .down-btn(v-if="ua !== 'android'")
         a(
           target="_blank",
           href="itms-services://?action=download-manifest&url=https://qiniu.truescan.net/file/true-wallet.plist",
@@ -50,8 +50,21 @@ div.page
 import baiduAnalyse from '@/middleware/baiduAnalyse'
 export default {
   layout: 'nofooter',
+  data () {
+    return {
+      ua: ''
+    }
+  },
   async mounted() {
     baiduAnalyse()
+    const u = navigator.userAgent
+    const isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1
+    const isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)
+    if (isAndroid && !isiOS) {
+      this.ua = 'android'
+    } else if (isiOS && !isAndroid) {
+      this.ua = 'ios'
+    }
   },
   head () {
     return {
@@ -60,13 +73,14 @@ export default {
   },
   methods: {
     onDownIos () {
-      var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
-      if(isWeixinBrowser){
-        alert('点击右上角,在浏览器中打开原网页')
-      }
       window._hmt.push(['_trackEvent', 'software', 'download', 'iosh5down'])
     },
-    onDownAndroid () {
+    onDownAndroid (e) {
+      var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
+      if(isWeixinBrowser){
+        e.preventDefault()
+        alert('点击右上角,在浏览器中打开原网页')
+      }
       window._hmt.push(['_trackEvent', 'software', 'download', 'androidh5down']);
     }
   },
@@ -120,7 +134,7 @@ export default {
       font-size 14px
       line-height 20px
       color white
-.apple-down-btn
+.down-btn
   line-height 42px
   width 175px
   height 50px
@@ -156,10 +170,10 @@ export default {
         line-height 1.2
         margin 0px 0px 30px
       .bj
-        width 80%
+        width 90%
         max-height 100%
     .page-con-right
-      .apple-down-btn
+      .down-btn
         display flex
         align-items center
         justify-content center
