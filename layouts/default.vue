@@ -16,9 +16,9 @@
                 li(
                     @click="jumpTo('http://dev.truechain.pro/')"
                   ) {{ $t(`nav.developer`) }}
-              li(
-                  @click="jumpTo('http://trueglobal.pro')"
-                ) TRUE GLOBAL
+              //- li(
+              //-     @click="jumpTo('http://trueglobal.pro')"
+              //-   ) TRUE GLOBAL
               li(
                   @click="jumpTo('https://www.truescan.net')"
                 ) TRUE SCAN
