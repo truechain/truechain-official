@@ -15,14 +15,14 @@
     </a>
     <div class="app-button-qrcode" :class="{'app-button-qrcode-show': showQRCode}">
       <div>
-        <img src="~@/assets/images/androidQR1.png">
+        <img src="~@/assets/images/downloadQR.png">
       </div>
     </div>
   </div>
 </template>
 
 <script>
-const url = 'https://qiniu.truescan.net/file/true.apk'
+const url = 'https://dapp.truedapp.net/appdown'
 
 export default {
   name: 'app-android',
