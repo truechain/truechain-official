@@ -112,7 +112,7 @@ const indexList = [
   { path: 'news', tag: 'news' },
   { path: 'join', tag: 'join' },
   // { path: 'node', tag: 'node' },
-  { path: 'bugfinder', tag: 'reward' },
+  // { path: 'bugfinder', tag: 'reward' },
 ]
 const langs = [
   { name: '简体中文', tag: 'zh' },
