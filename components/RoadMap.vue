@@ -26,7 +26,7 @@ const road = []
 road.push('time')
 road.push(...new Array(18).fill('finished'))
 road.push('time')
-road.push(...new Array(2).fill('finished'))
+road.push(...new Array(1).fill('finished'))
 road.push(...new Array(9).fill('future'))
 road.push('time')
 road.push(...new Array(4).fill('future'))
