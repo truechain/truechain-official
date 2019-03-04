@@ -74,39 +74,40 @@
 
   .home-roadmap
     .page-title {{ $t('home.roadmap.title') }}
-    .time-line-con
-      .start-point
-      .time-line-block(
-        v-for="(item,index) in $t('home.roadmap.list') "
-      )
-        .lf
-          .even(v-if="index%2==0")
-            .time {{item.time}}
-          .odd(v-if="index%2>0")
-            .link-bk
-            .link-dot-big
-            .link-dot-sm
-            .bk
-              .entry-txt(
-                v-for="(txt, index) in item.events",
-                :key="index"
-              )
-                .dot
-                .txt {{txt}}
-        .ri
-          .even(v-if="index%2==0")
-            .link-bk
-            .link-dot-big
-            .link-dot-sm
-            .bk
-              .entry-txt(
-                v-for="(txt, index) in item.events",
-                :key="index"
-              )
-                .dot
-                .txt {{txt}}
-          .odd(v-if="index%2>0")
-            .time {{item.time}}
+    RoadMap
+    //- .time-line-con
+    //-   .start-point
+    //-   .time-line-block(
+    //-     v-for="(item,index) in $t('home.roadmap.list') "
+    //-   )
+    //-     .lf
+    //-       .even(v-if="index%2==0")
+    //-         .time {{item.time}}
+    //-       .odd(v-if="index%2>0")
+    //-         .link-bk
+    //-         .link-dot-big
+    //-         .link-dot-sm
+    //-         .bk
+    //-           .entry-txt(
+    //-             v-for="(txt, index) in item.events",
+    //-             :key="index"
+    //-           )
+    //-             .dot
+    //-             .txt {{txt}}
+    //-     .ri
+    //-       .even(v-if="index%2==0")
+    //-         .link-bk
+    //-         .link-dot-big
+    //-         .link-dot-sm
+    //-         .bk
+    //-           .entry-txt(
+    //-             v-for="(txt, index) in item.events",
+    //-             :key="index"
+    //-           )
+    //-             .dot
+    //-             .txt {{txt}}
+    //-       .odd(v-if="index%2>0")
+    //-         .time {{item.time}}
   .home-partner
     .page-title {{ $t('home.partner') }}
     .con
@@ -165,6 +166,9 @@ import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
 import liziConfig from '~/config/donglizi'
 import { setStore, getStore } from '~/util'
+
+import RoadMap from '~/components/RoadMap'
+
 export default {
   asyncData ({ req }) {
     return {
@@ -244,7 +248,8 @@ export default {
   },
   components: {
     AppAndroid,
-    AppIos
+    AppIos,
+    RoadMap
   },
   methods: {
     showmod (vind) {

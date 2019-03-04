@@ -7,7 +7,7 @@
             .container-app-header-logo
               i(class="icon font_family icon-logo2")
           .container-app-header-nav
-            ul(:style="{'height': menuIsOpen ? `${40 * (indexList.length + 1)}px` : '0'}")
+            ul(:style="{'height': menuIsOpen ? `${50 * (indexList.length + 1)}px` : '0'}")
               li(
                   @click="jumpTo('https://github.com/truechain')"
                 ) {{ $t(`nav.git`) }}
@@ -209,8 +209,8 @@ nav
   background-color $dark-blue
   // background-color red
 .container-app-header
-  padding 35px 0
-  width 80%
+  padding 35px 20px 0 0
+  max-width 1200px
   margin auto
 .container-app-header-logo
   margin-top 15px
@@ -326,8 +326,9 @@ nav
       transition height .6s
       li
         float none
-        line-height 30px
+        line-height 40px
         margin-left 0
+        padding 5px 35px
         border none !important
   .langsSelecttor
     overflow hidden
@@ -346,4 +347,9 @@ nav
     display block
   .container-app-header-button.lang
     display inline-block
+    
+@media screen and (min-width 860px)
+  .container-app-header-nav
+    ul
+      height auto!important
 </style>
