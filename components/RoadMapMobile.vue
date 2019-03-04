@@ -11,29 +11,9 @@
             <span class="point"></span>
             <span class="text">{{$t(`home.roadmap.content[${ti + 1 + j}]`)}}</span>
           </li>
+          <span class="ellipsis" v-if="i === 2"></span>
         </ul>
       </div>
-      
-      <!-- <div class="time" @click="() => this.show2 = !this.show2">
-        <div>{{$t(`home.roadmap.content[${time2}]`)}}</div>
-        <span :class="{ 'opened': show2 }"></span>
-      </div>
-      <ul v-if="show2" class="info">
-        <li v-for="(type, i) in info2" :key="i" :class="'node-' + type">
-          <span class="point"></span>
-          <span class="text">{{$t(`home.roadmap.content[${time2 + 1 + i}]`)}}</span>
-        </li>
-      </ul>
-      <div class="time" @click="() => this.show3 = !this.show3">
-        <div>{{$t(`home.roadmap.content[${time3}]`)}}</div>
-        <span :class="{ 'opened': show3 }"></span>
-      </div>
-      <ul v-if="show3" class="info">
-        <li v-for="(type, i) in info3" :key="i" :class="'node-' + type">
-          <span class="point"></span>
-          <span class="text">{{$t(`home.roadmap.content[${time3 + 1 + i}]`)}}</span>
-        </li>
-      </ul> -->
     </div>
   </div>
 </template>
@@ -169,10 +149,10 @@ export default {
         top 50%
         left 0px
         width 40px
-        height 50%
+        height 54%
         border-top solid 2px #2f65ad
         transform translateY(-1px)
-      &:last-child:before
+      &:last-of-type:before
         background-color #fff
     .node-finished
       .text
@@ -188,4 +168,13 @@ export default {
       .text
         border dashed 1px #2f65ad
         color #2f65ad
+    .ellipsis
+      position absolute
+      left 8px
+      bottom -2px
+      width 4px
+      height 4px
+      background-color #2f65ad
+      border-radius 50%
+      box-shadow 0 12px 0 #2f65ad, 0 24px 0 #2f65ad
 </style>
