@@ -84,9 +84,9 @@ export default {
       right -12px
       width 4px
       height 4px
-      background-color #4267a9
+      background-color #2f65ad
       border-radius 50%
-      box-shadow 12px 0 0 #4267a9, 24px 0 0 #4267a9
+      box-shadow 12px 0 0 #2f65ad, 24px 0 0 #2f65ad
   .rl
     float right
     &:nth-child(even)
@@ -106,9 +106,9 @@ export default {
       left -12px
       width 4px
       height 4px
-      background-color #4267a9
+      background-color #2f65ad
       border-radius 50%
-      box-shadow -12px 0 0 #4267a9, -24px 0 0 #4267a9
+      box-shadow -12px 0 0 #2f65ad, -24px 0 0 #2f65ad
   li
     flex 0 0 180px
     width 180px
@@ -119,7 +119,7 @@ export default {
       position absolute
       height 2px
       width 180px
-      background-color #4267a9
+      background-color #2f65ad
       top 149px
       left 0
     &:first-child:before
@@ -129,7 +129,7 @@ export default {
       position absolute
       width 20px
       height 20px
-      border solid 2px #4267a9
+      border solid 2px #2f65ad
       top 150px
       left 90px
       border-radius 10px
@@ -142,15 +142,15 @@ export default {
         left 5px
         width 6px
         height 11px
-        border-right solid 2px #4267a9
-        border-bottom solid 2px #4267a9
+        border-right solid 2px #2f65ad
+        border-bottom solid 2px #2f65ad
         transform rotate(45deg)
     .time
       position absolute
       top 180px
       width 100%
       text-align center
-      color #4267a9 
+      color #2f65ad 
       &:after
         content '\e622'
         position absolute
@@ -174,34 +174,34 @@ export default {
         position absolute
         width 2px
         height 30px
-        background-color #4267a9
+        background-color #2f65ad
         left 109px
   .node-finished
     .text
-      background-color #4267a9
-      border solid 1px #4267a9
+      background-color #2f65ad
+      border solid 1px #2f65ad
       color #fff
     .point
-      background-color #4267a9
+      background-color #2f65ad
       &:after
         content ''
         border-color #fff
   .node-future
     .text
-      border dashed 1px #4267a9
-      color #4267a9
+      border dashed 1px #2f65ad
+      color #2f65ad
   .node-time
     .point
       width 14px
       height 14px
-      background-color #4267a9
+      background-color #2f65ad
       &:after
         content none
   .turn
     position absolute
     width 50px
     height 302px
-    border solid 2px #4267a9
+    border solid 2px #2f65ad
   .turn-right
     border-radius 0 30px 30px 0
     border-left none

@@ -74,7 +74,10 @@
 
   .home-roadmap
     .page-title {{ $t('home.roadmap.title') }}
-    RoadMap
+    .only-on-pc
+      RoadMap
+    .only-on-mobile
+      RoadMapMobile
     //- .time-line-con
     //-   .start-point
     //-   .time-line-block(
@@ -168,6 +171,7 @@ import liziConfig from '~/config/donglizi'
 import { setStore, getStore } from '~/util'
 
 import RoadMap from '~/components/RoadMap'
+import RoadMapMobile from '~/components/RoadMapMobile'
 
 export default {
   asyncData ({ req }) {
@@ -249,7 +253,8 @@ export default {
   components: {
     AppAndroid,
     AppIos,
-    RoadMap
+    RoadMap,
+    RoadMapMobile
   },
   methods: {
     showmod (vind) {
@@ -1026,4 +1031,11 @@ export default {
       flex-direction column
       li
         margin 20px 0
+
+@media screen and (max-width 700px)
+  .only-on-pc
+    display none
+@media screen and (min-width 700px)
+  .only-on-mobile
+    display none
 </style>
