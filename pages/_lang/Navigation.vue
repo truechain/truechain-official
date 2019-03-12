@@ -10,6 +10,7 @@
     </div>
     <div class="navi-count-down">
       <p class="title">TrueChain主网距离上线还有</p>
+      <CountDown/>
     </div>
     <div class="navi-steps">
       <p class="title">True大航海时代</p>
@@ -23,6 +24,7 @@
 
 <script>
 import Step from '@/components/navigation/Step'
+import CountDown from '@/components/navigation/CountDown'
 
 export default {
   name: 'Navigation',
@@ -31,11 +33,6 @@ export default {
       focusIndex: -1
     }
   },
-  // mounted () {
-  //   setInterval(() => {
-  //     this.focusIndex = (this.focusIndex + 2) % 6 - 1
-  //   }, 4000)
-  // },
   methods: {
     toggle (i) {
       if (this.focusIndex === i) {
@@ -46,7 +43,8 @@ export default {
     }
   },
   components: {
-    Step
+    Step,
+    CountDown
   }
 }
 </script>
@@ -69,13 +67,30 @@ export default {
     align-items center
   li
     font-size 22px
+    padding-left 80px
     line-height 34px
     font-weight 500
-    width 250px
+    width 330px
     color #203260
+    position relative
+    &:before
+      font-family 'font_family'
+      position absolute
+      font-size 70px
+      top 50%
+      left 0
+      color #1e64b4
+      transform translateY(-50%)
+    &:nth-child(1):before
+      content '\e650'
+    &:nth-child(2):before
+      content '\e64d'
+    &:nth-child(3):before
+      content '\e64f'
 .navi-count-down
   height 350px
   display flex
+  flex-direction column
   justify-content center
   align-items center
   .title
