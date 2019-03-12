@@ -8,6 +8,10 @@
               i(class="icon font_family icon-truelogo")
           .container-app-header-nav
             ul(:style="{'height': menuIsOpen ? `${50 * (indexList.length + 1)}px` : '0'}")
+              nuxt-link(
+                tag="li",
+                to="navigation"
+              ) 大航海时代
               template(v-if="$t('language') === '简体中文'")
                 li(
                     @click="jumpTo('http://dev.truedapp.net/')"
@@ -21,10 +25,10 @@
               //-   ) TRUE GLOBAL
               li(
                   @click="jumpTo('https://www.truescan.net')"
-                ) TRUE SCAN
-              li(
-                  @click="jumpTo('http://www.truewallet.net')"
-                ) {{ $t(`nav.webwallet`) }}
+                ) TrueScan
+              //- li(
+              //-     @click="jumpTo('http://www.truewallet.net')"
+              //-   ) {{ $t(`nav.webwallet`) }}
               nuxt-link(
                 v-for="(item, index) in indexList",
                 tag="li",
