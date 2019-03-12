@@ -15,7 +15,7 @@
       <p class="title">True大航海时代</p>
       <hr>
       <ul>
-        <Step v-for="i in 5" :key="i" :index="i - 1" :focus="focusIndex" />
+        <Step @click="toggle(i - 1)" v-for="i in 5" :key="i" :index="i - 1" :focus="focusIndex" />
       </ul>
     </div>
   </div>
@@ -28,7 +28,21 @@ export default {
   name: 'Navigation',
   data () {
     return {
-      focusIndex: 0
+      focusIndex: -1
+    }
+  },
+  // mounted () {
+  //   setInterval(() => {
+  //     this.focusIndex = (this.focusIndex + 2) % 6 - 1
+  //   }, 4000)
+  // },
+  methods: {
+    toggle (i) {
+      if (this.focusIndex === i) {
+        this.focusIndex = -1
+      } else {
+        this.focusIndex = i
+      }
     }
   },
   components: {
