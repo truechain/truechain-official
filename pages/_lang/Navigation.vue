@@ -3,17 +3,15 @@
     <div class="navi-banner"></div>
     <div class="navi-intro">
       <ul>
-        <li>解决公链最显著的问题</li>
-        <li>第一代混合共识激励机制</li>
-        <li>稳定、低成本的燃料费机制及首家代付机制</li>
+        <li v-for="i in 3" :key="i">{{ $t(`navigation.intro[${i - 1}]`) }}</li>
       </ul>
     </div>
     <div class="navi-count-down">
-      <p class="title">TrueChain主网距离上线还有</p>
+      <p class="title">{{ $t('navigation.countdown') }}</p>
       <CountDown/>
     </div>
     <div class="navi-steps">
-      <p class="title">True大航海时代</p>
+      <p class="title">{{ $t('navigation.title') }}</p>
       <hr>
       <ul>
         <Step @click="toggle(i - 1)" @like="like(i - 1)"
@@ -30,6 +28,14 @@ import CountDown from '@/components/navigation/CountDown'
 
 export default {
   name: 'Navigation',
+  head () {
+    return {
+      title: this.$t('navigation.head.title'),
+      meta: [
+        { hid: 'news-keyword', name: 'keywords', content: this.$t('navigation.head.keywords') }
+      ]
+    }
+  },
   asyncData () {
     // TODO: get data from chain
     return {

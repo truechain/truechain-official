@@ -24,7 +24,7 @@
           <span class="title">{{ $t(`navigation.stpes[${index}].name`) }}</span>
           <span class="summary">{{ $t(`navigation.stpes[${index}].summary`) }}</span>
           <p class="intro" v-if="intro">{{ intro }}</p>
-          <span class="lock" v-else>待开启</span>
+          <span class="lock" v-else>{{ $t('navigation.locked') }}</span>
           <span class="like" :class="{ 'liked': liked }" @click="like">{{likeCount}}</span>
         </div>
       </div>

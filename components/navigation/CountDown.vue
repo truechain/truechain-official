@@ -4,7 +4,7 @@
       <li v-for="(num, index) in numbers" :key="index">
         <Numebr :num="num" />
       </li>
-      <span>天</span>
+      <span>{{ $t('node.day') }}</span>
     </ul>
   </div>
 </template>
@@ -12,7 +12,7 @@
 <script>
 import Numebr from './Number'
 
-const endTime = 1553961600000 // 2013.3.31 00:00:00 GMT+0800
+const endTime = 1553918400000 // 2013.3.30 12:00:00 GMT+0800
 
 export default {
   name: 'NavigationCountDown',

@@ -11,7 +11,7 @@
               nuxt-link(
                 tag="li",
                 to="navigation"
-              ) 大航海时代
+              ) {{ $t('navigation.nav') }}
               template(v-if="$t('language') === '简体中文'")
                 li(
                     @click="jumpTo('http://dev.truedapp.net/')"
