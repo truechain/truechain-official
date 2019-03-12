@@ -16,7 +16,9 @@
       <p class="title">True大航海时代</p>
       <hr>
       <ul>
-        <Step @click="toggle(i - 1)" v-for="i in 5" :key="i" :index="i - 1" :focus="focusIndex" />
+        <Step @click="toggle(i - 1)" @like="like(i - 1)"
+          v-for="i in 5" :key="i" :index="i - 1"
+          :focus="focusIndex" :likeCount="likeCount[i - 1]" />
       </ul>
     </div>
   </div>
@@ -28,9 +30,15 @@ import CountDown from '@/components/navigation/CountDown'
 
 export default {
   name: 'Navigation',
+  asyncData () {
+    // TODO: get data from chain
+    return {
+      likeCount: [0, 0, 0, 0, 0]
+    }
+  },
   data () {
     return {
-      focusIndex: -1
+      focusIndex: -1,
     }
   },
   methods: {
@@ -40,6 +48,10 @@ export default {
       } else {
         this.focusIndex = i
       }
+    },
+    like (i) {
+      // TODO: update count to chain
+      this.$set(this.likeCount, i, this.likeCount[i] + 1)
     }
   },
   components: {

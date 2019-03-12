@@ -25,7 +25,7 @@
           <span class="summary">{{ $t(`navigation.stpes[${index}].summary`) }}</span>
           <p class="intro" v-if="intro">{{ intro }}</p>
           <span class="lock" v-else>待开启</span>
-          <span class="like" :class="{ 'liked': liked }" @click="like">100</span>
+          <span class="like" :class="{ 'liked': liked }" @click="like">{{likeCount}}</span>
         </div>
       </div>
     </transition>
@@ -37,7 +37,11 @@ export default {
   name: 'NavigationStep',
   props: {
     index: Number,
-    focus: Number
+    focus: Number,
+    likeCount: {
+      type: Number,
+      default: 0
+    }
   },
   data () {
     return {
@@ -61,7 +65,10 @@ export default {
     },
     like (e) {
       e.stopPropagation()
-      this.liked = !this.liked
+      if (!this.liked) {
+        this.liked = true
+        this.$emit('like')
+      }
     }
   }
 }
