@@ -18,7 +18,7 @@ export default {
       renderer: null,
       scene: null,
       camera: null,
-      mesh: null,
+      earth: null,
       raf: null
     }
   },
@@ -26,6 +26,7 @@ export default {
     const camera = new OrthographicCamera(-160, 160, 88, -88, 0.1, 1000)
     camera.position.set(0, 0, 100)
     const scene = new Scene()
+    scene.fog = new THREE.FogExp2(0x203260, 0.01)
     const renderer = new WebGLRenderer({
       antialias: true,
       alpha: true
@@ -38,13 +39,18 @@ export default {
     }, [])
     geometry.setPositions(pos)
     const material = new InstancedPointsMaterial({
-      color: 0x5e98df
+      color: 0x5e98df,
+      fog: true,
+      side: THREE.DoubleSide
     })
     const mesh = new Mesh(geometry, material)
+    mesh.position.set(0, 0, 0)
     scene.add(mesh)
-    const plane = new Mesh(new BoxBufferGeometry(360, 180), new MeshBasicMaterial({ color: 0x30457a }))
-    plane.position.set(0, 0, -10)
+    // const plane = new Mesh(new BoxBufferGeometry(360, 180), new MeshBasicMaterial({ color: 0x30457a }))
+    // plane.position.set(0, 0, -10)
     // scene.add(plane)
+
+    this.earth = mesh
 
     this.scene = scene
     this.renderer = renderer
@@ -58,6 +64,7 @@ export default {
   },
   methods: {
     render () {
+      this.earth.rotation.y += 0.004
       this.renderer.render(this.scene, this.camera)
       this.raf = requestAnimationFrame(this.render)
     }
