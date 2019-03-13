@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="navi-banner"></div>
+    <div class="navi-banner">
+      <World/>
+    </div>
     <div class="navi-intro">
       <ul>
         <li v-for="i in 3" :key="i">{{ $t(`navigation.intro[${i - 1}]`) }}</li>
@@ -23,6 +25,7 @@
 </template>
 
 <script>
+import World from '@/components/navigation/World'
 import Step from '@/components/navigation/Step'
 import CountDown from '@/components/navigation/CountDown'
 
@@ -61,6 +64,7 @@ export default {
     }
   },
   components: {
+    World,
     Step,
     CountDown
   }
