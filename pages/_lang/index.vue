@@ -47,7 +47,7 @@
     //-   span
     //-     span(class="icon font_family icon-tongzhi")
     //-     span
-    //-       a(href="http://trueglobal.pro/",target="_blank") &nbsp;&nbsp;“HelloWorld”--2018区块链应用落地大赛开始报名了!
+    //-       a(href="http://trueglobal.pro/",target="_blank") &nbsp;&nbsp;“HelloEarth”--2018区块链应用落地大赛开始报名了!
   .home-intro-3col
     .col3-con
       .co(

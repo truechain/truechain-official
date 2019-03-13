@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="navi-banner">
-      <World/>
+      <Earth/>
     </div>
     <div class="navi-intro">
       <ul>
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import World from '@/components/navigation/World'
+import Earth from '@/components/navigation/Earth'
 import Step from '@/components/navigation/Step'
 import CountDown from '@/components/navigation/CountDown'
 
@@ -64,7 +64,7 @@ export default {
     }
   },
   components: {
-    World,
+    Earth,
     Step,
     CountDown
   }
@@ -75,7 +75,7 @@ export default {
 @import '~@/assets/stylus/mixin.styl'
 
 .navi-banner
-  height 650px
+  height 660px
   background-color $dark-blue
 .navi-intro
   background-color #f2f5fa

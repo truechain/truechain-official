@@ -8,10 +8,22 @@ const origin = require('./world-simplified.json')
 
 const deg = Math.PI / 180
 const r = 180
-const longNum = 120
-const latNum = 60
+const longNum = 180
+const latNum = 90
 const dLong = 360 / longNum
 const dLat = 180 / latNum
+
+const trans = ([long, lat]) => {
+  // Adjusting the position of the Bering Strait
+  long = (long + 540 - 12) % 360 - 180
+
+  // Remove Antarctica from Earth
+  if (lat < -59) {
+    return [long, lat - 180]
+  }
+
+  return [long * (0.9 - Math.pow(lat / 270, 2)), lat - 15]
+}
 
 const initPoints = (world) => {
   let boundary = []
@@ -19,15 +31,18 @@ const initPoints = (world) => {
     const coordinates = countryInfo.coordinates
     for (let i = 0; i < coordinates.length; i++) {
       const polygon = coordinates[i]
-      let lastPoint = polygon[0]
+      let lastPoint = trans(polygon[0])
       let nextPoint = []
       for (let j = 1; j < polygon.length; j++) {
-        nextPoint = polygon[j]
+        nextPoint = trans(polygon[j])
         const minLat = Math.min(lastPoint[1], nextPoint[1])
         const maxLat = Math.max(lastPoint[1], nextPoint[1])
         const startLat = Math.ceil(minLat / dLat) * dLat
         const k = (nextPoint[0] - lastPoint[0]) / (nextPoint[1] - lastPoint[1])
         for (let lat = startLat; lat < maxLat; lat += dLat) {
+          if (lat < -90) {
+            continue
+          }
           const long = k * (lat - lastPoint[1]) + lastPoint[0]
           const index = Math.round((lat + 90) / dLat) + 1
           if (boundary[index] === undefined) {
@@ -40,24 +55,12 @@ const initPoints = (world) => {
     }
   })
 
-  for (let i = 0; i < boundary.length; i++) {
-    if (boundary[i]) {
-      // boundary[i].push(-180,180)
-      break
-    }
-    boundary[i] = [-180, 180]
-  }
-
   const points = []
   const coords = []
   const borders = []
   boundary = boundary.map((longList, latOrder) => {
     longList.sort((a, b) => a - b)
     const lat = (latOrder + 1) * dLat - 90
-    // remove arctic
-    if (lat < -59) {
-      return []
-    }
 
     const minLong = longList[0]
     const maxLong = longList[longList.length - 1]
@@ -80,7 +83,7 @@ const initPoints = (world) => {
         const z = r * Math.cos(long * deg) * cosLat
         const point = { x, y, z }
         points.push(point)
-        coords.push({ long, lat })
+        coords.push([long, lat])
       }
     }
 
