@@ -1,7 +1,12 @@
 <template>
   <div>
     <div class="navi-banner">
-      <Earth/>
+      <div>
+        <Earth/>
+        <div class="ship" :style="{
+          'transform': `translate3d(${shipX}px, ${shipY}px, 0)`
+        }"><Ship/></div>
+      </div>
     </div>
     <div class="navi-intro">
       <ul>
@@ -26,8 +31,21 @@
 
 <script>
 import Earth from '@/components/navigation/Earth'
+import Ship from '@/components/navigation/Ship'
 import Step from '@/components/navigation/Step'
 import CountDown from '@/components/navigation/CountDown'
+
+const trans = ([long, lat]) => {
+  // Adjusting the position of the Bering Strait
+  long = (long + 540 - 12) % 360 - 180
+
+  // Remove Antarctica from Earth
+  if (lat < -59) {
+    return [long, lat - 180]
+  }
+
+  return [long * (0.9 - Math.pow(lat / 270, 2)), lat - 15]
+}
 
 export default {
   name: 'Navigation',
@@ -48,6 +66,19 @@ export default {
   data () {
     return {
       focusIndex: -1,
+      shipPos: [103.85, 1.3]
+    }
+  },
+  computed: {
+    transedShipPos () {
+      console.log(trans(this.shipPos))
+      return trans(this.shipPos)
+    },
+    shipX () {
+      return this.transedShipPos[0] * 3.75
+    },
+    shipY () {
+      return -this.transedShipPos[1] * 3.75
     }
   },
   methods: {
@@ -65,6 +96,7 @@ export default {
   },
   components: {
     Earth,
+    Ship,
     Step,
     CountDown
   }
@@ -77,6 +109,17 @@ export default {
 .navi-banner
   height 660px
   background-color $dark-blue
+  >div
+    width 1200px
+    height 660px
+    margin auto
+    position relative
+  .ship
+    width 60px
+    height 60px
+    position absolute
+    top 50%
+    left 50%
 .navi-intro
   background-color #f2f5fa
   ul

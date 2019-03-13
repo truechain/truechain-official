@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <!-- <canvas id="navi-world" width="1400" height="650"></canvas> -->
-  </div>
+  <div></div>
 </template>
 
 <script>
@@ -56,12 +54,12 @@ export default {
     const mainCanvas = this.renderer.domElement
     mainCanvas.id = 'webgl-world'
     this.$el.appendChild(this.renderer.domElement)
-    requestAnimationFrame(this.render)
+    this.raf = requestAnimationFrame(this.render)
   },
   methods: {
     render () {
       this.renderer.render(this.scene, this.camera)
-      requestAnimationFrame(this.render)
+      this.raf = requestAnimationFrame(this.render)
     }
   },
   beforeDestroy () {
@@ -71,9 +69,3 @@ export default {
   }
 }
 </script>
-
-<style lang="stylus">
-#webgl-world
-  display block
-  margin auto
-</style>
