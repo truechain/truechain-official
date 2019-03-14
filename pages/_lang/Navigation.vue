@@ -3,9 +3,9 @@
     <div class="navi-banner">
       <div>
         <Earth/>
-        <div class="ship" :style="{
+        <!-- <div class="ship" :style="{
           'transform': `translate3d(${shipX}px, ${shipY}px, 0)`
-        }"><Ship/></div>
+        }"><Ship/></div> -->
       </div>
     </div>
     <div class="navi-intro">
@@ -106,11 +106,12 @@ export default {
 @import '~@/assets/stylus/mixin.styl'
 
 .navi-banner
-  height 660px
   background-color $dark-blue
   >div
-    width 1200px
-    height 660px
+    max-width 1200px
+    max-height 660px
+    width 100vw
+    height 55vw
     margin auto
     position relative
   .ship
@@ -125,17 +126,19 @@ export default {
     display flex
     max-width 1240px
     padding 0 20px
-    height 140px
     margin auto
     justify-content space-between
     align-items center
   li
+    height 140px
     font-size 22px
     padding-left 80px
     line-height 34px
     font-weight 500
     width 330px
     color #203260
+    display flex
+    align-items center
     position relative
     &:before
       font-family 'font_family'
@@ -185,4 +188,12 @@ export default {
     padding 0 20px
     margin 30px 0
     display flex
+
+@media screen and (max-width 860px)
+  .navi-intro ul
+    flex-direction column
+
+  .navi-banner >div
+    width 100vw
+    height 80vw
 </style>

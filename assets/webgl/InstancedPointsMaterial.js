@@ -18,7 +18,8 @@ const lineUniforms = THREE.UniformsUtils.merge([
     uDeformation: { value: 0 },
     uPlaneHeight: { value: 0 },
     uRadiu: { value: 100 },
-    uTimer: { value: 0 }
+    uTimer: { value: 0 },
+    uHighlight: { value: new THREE.Color(0xffffff) }
   }
 ])
 
@@ -67,6 +68,13 @@ export default class InstancedPointsMaterial extends THREE.ShaderMaterial {
   }
   set timer (value) {
     this.uniforms.uTimer.value = value
+  }
+
+  get highlight () {
+    return this.uniforms.uHighlight.value
+  }
+  set highlight (value) {
+    this.uniforms.uHighlight.value.copy(value)
   }
 
   static get isInstancedPointsMaterial () {
