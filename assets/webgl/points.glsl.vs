@@ -16,7 +16,7 @@ vec2 restoreLongAndLat(const in vec2 longAndLat) {
   float latI = longAndLat.y + 15.0;
   float k = 0.9 - latI * latI / 72900.0;
   float longI = longAndLat.x / k;
-  return vec2(longI, latI);
+  return vec2(longI + 12.0, latI);
 }
 
 vec3 coordTrans(

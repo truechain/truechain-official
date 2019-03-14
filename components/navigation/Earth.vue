@@ -16,6 +16,7 @@ import {
 
 import InstancedPointsGeometry from '@/assets/webgl/InstancedPointsGeometry'
 import InstancedPointsMaterial from '@/assets/webgl/InstancedPointsMaterial'
+import Light from '@/assets/webgl/Light'
 
 import coords from '@/assets/webgl/world-points.json'
 
@@ -33,6 +34,23 @@ const trans = ([long, lat]) => {
   return [long * (0.9 - Math.pow(lat / 270, 2)), lat - 15]
 }
 
+const testPos = [
+  29.458349, 106.396826,
+  39.804935, 114.973428,
+  22.204878, 45.426417,
+  10.106263, 39.144935,
+  47.397837, 4.803222,
+  41.997906, -1.405880,
+  44.136586, 11.842139,
+  38.935887, 16.504146,
+  44.490049, 27.585049,
+  36.044760, -81.188223,
+  39.062638, -78.335972,
+  39.897687, -122.714527,
+  49.997562, -121.413225,
+  9.171568, -66.633754
+]
+
 export default {
   name: 'NavigationEarth',
   props: ['shipPos'],
@@ -42,6 +60,7 @@ export default {
       scene: null,
       camera: null,
       earth: null,
+      light: null,
       ship: null,
       shipTrans: null,
       material: null,
@@ -56,9 +75,6 @@ export default {
     }
   },
   beforeMount () {
-    if (window.innerWidth <= 860) {
-      this.toggle()
-    }
     // const camera = new OrthographicCamera(-160, 160, 88, -88, 0.1, 1000)
     // camera.position.set(0, 0, 100)
     const camera = new PerspectiveCamera(30, 1200 / 660, 0.1, 1000)
@@ -87,31 +103,45 @@ export default {
     earth.position.set(0, 0, 0)
     scene.add(earth)
 
+    const ship = new THREE.Mesh(new THREE.PlaneBufferGeometry(20, 20), new THREE.MeshBasicMaterial({
+      transparent: true,
+      side: THREE.DoubleSide
+    }))
+    ship.position.set(0, 0, 4)
+    const shipTrans = new THREE.Group()
+    shipTrans.position.set(...trans(this.shipPos), 0)
+
+    shipTrans.add(ship)
+
+    this.ship = ship
+    this.shipTrans = shipTrans
     new THREE.TextureLoader().load(require('@/assets/webgl/ship_128.png'), texture => {
       texture.wrapS = texture.wrapT = THREE.RepeatWrapping
       texture.anisotropy = false
-      const ship = new THREE.Mesh(new THREE.PlaneBufferGeometry(20, 20), new THREE.MeshBasicMaterial({
-        map: texture,
-        transparent: true,
-        side: THREE.DoubleSide
-      }))
-      ship.position.set(0, 0, 4)
-      const shipTrans = new THREE.Group()
-      shipTrans.position.set(...trans(this.shipPos), 0)
-
-      shipTrans.add(ship)
+      ship.material.map = texture
+      ship.material.needsUpdate = true
       earth.add(shipTrans)
+    })
 
-      this.ship = ship
-      this.shipTrans = shipTrans
+    const light = new Light(testPos)
+    light.material.deformation = 1
+    earth.add(light)
+
+    new THREE.TextureLoader().load(require('@/assets/webgl/light.png'), texture => {
+      light.lightMap = texture
     })
 
     this.earth = earth
+    this.light = light
     this.material = material
 
     this.scene = scene
     this.renderer = renderer
     this.camera = camera
+
+    if (window.innerWidth <= 860) {
+      this.toggle()
+    }
   },
   mounted () {
     window.addEventListener('resize', this.onresize)
@@ -145,17 +175,11 @@ export default {
         }
       }
       if (this.isBall) {
-        // if (this.ship) {
-        //   this.ship.material.opacity += (1 - this.ship.material.opacity) * 0.03
-        // }
         this.launching  *= 0.97
         this.earth.rotation.y += 0.007 + this.launching
         this.earth.rotation.x += (0.4 - this.earth.rotation.x) * 0.01
         this.material.deformation += (1 - this.material.deformation) * 0.03
       } else {
-        // if (this.ship) {
-        //   this.ship.material.opacity *= 0.93
-        // }
         // if (this.earth.rotation.y > Math.PI) {
         //   this.earth.rotation.y = (this.earth.rotation.y + Math.PI) % Math.PI - Math.PI
         // }
@@ -166,6 +190,8 @@ export default {
         this.earth.rotation.x *= 0.98
         this.material.deformation *= 0.97
       }
+
+      this.light.deformation = this.material.deformation
 
       if (this.ship) {
         this.ship.position.y = Math.sin(timer / 500) * 2
@@ -183,11 +209,13 @@ export default {
     toggle () {
       this.isBall = !this.isBall
       this.animator = this.shipAnimator(this.isBall)
-      this.launching = Math.random() / 10
+      if (this.isBall) {
+        this.launching = Math.random() / 8 + 0.08
+      }
     },
     moveCamera (e) {
-      this.cameraX = ((e.pageX - this.left) / 600 - 1) * 50
-      this.cameraY = ((e.pageY - this.top) / 330 - 1) * 50
+      this.cameraX = ((e.pageX - this.left) / 600 - 1) * 70
+      this.cameraY = ((e.pageY - this.top) / 330 - 1) * 70
     },
     resetCamera () {
       this.cameraX = 0

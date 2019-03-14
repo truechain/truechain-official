@@ -3,6 +3,11 @@
  *
  * parameters = {
  *  color: <hex>,
+ *  highlight: <hex>
+ *  planeHeight: <float>,
+ *  radiu: <float>,
+ *  deformation: <float>,
+ *  timer: <float>
  * }
  */
 
@@ -11,7 +16,7 @@ import * as THREE from 'three'
 import pointsVS from './points.glsl.vs'
 import pointsFS from './points.glsl.fs'
 
-const lineUniforms = THREE.UniformsUtils.merge([
+const pointsUniforms = THREE.UniformsUtils.merge([
   THREE.UniformsLib.common,
   THREE.UniformsLib.fog,
   {
@@ -27,7 +32,7 @@ export default class InstancedPointsMaterial extends THREE.ShaderMaterial {
   constructor (parameters) {
     super({
       type: 'InstancedPointsMaterial',
-      uniforms: THREE.UniformsUtils.clone(lineUniforms),
+      uniforms: THREE.UniformsUtils.clone(pointsUniforms),
       vertexShader: pointsVS,
       fragmentShader: pointsFS
     })
