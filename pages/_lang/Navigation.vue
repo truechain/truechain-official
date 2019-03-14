@@ -2,7 +2,7 @@
   <div>
     <div class="navi-banner">
       <div>
-        <Earth/>
+        <Earth :shipPos="shipPos" />
         <!-- <div class="ship" :style="{
           'transform': `translate3d(${shipX}px, ${shipY}px, 0)`
         }"><Ship/></div> -->
@@ -165,7 +165,8 @@ export default {
     font-weight 600
     color #2870bc
 .navi-steps
-  height 820px
+  min-height 820px
+  padding 60px 0
   background-color #f2f5fa
   display flex
   flex-direction column
@@ -183,8 +184,8 @@ export default {
     background-color $font-dark
     margin 30px 0
   ul
-    height 500px
-    width 1240px
+    width 100%
+    max-width 1240px
     padding 0 20px
     margin 30px 0
     display flex
@@ -196,4 +197,7 @@ export default {
   .navi-banner >div
     width 100vw
     height 80vw
+  
+  .navi-steps ul
+    flex-direction column
 </style>

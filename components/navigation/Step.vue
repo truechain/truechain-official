@@ -1,16 +1,21 @@
 <template>
-  <li @click="onClick" class="navi-step-box" :class="{ 'navi-stpe-box-open': open }">
+  <li @click="onClick" class="navi-step-box" :class="{
+    'navi-stpe-box-open': open,
+    'navi-stpe-box-close': close
+  }">
     <transition name="fade">
       <div class="navi-step-default" v-if="!open">
         <transition name="fade-delay">
           <div class="content" v-if="focus === -1">
             <i class="font_family icon-chuan"></i>
-            <span class="title">{{ $t(`navigation.stpes[${index}].name`) }}</span>
-            <span class="summary">{{ $t(`navigation.stpes[${index}].summary`) }}</span>
+            <div>
+              <span class="title">{{ $t(`navigation.stpes[${index}].name`) }}</span>
+              <span class="summary">{{ $t(`navigation.stpes[${index}].summary`) }}</span>
+            </div>
           </div>
         </transition>
         <transition name="fade-delay">
-          <div class="content" style="width: 40px;" v-if="close">
+          <div class="content content-close" v-if="close">
             <span class="title">{{ $t(`navigation.stpes[${index}].name`) }}</span>
           </div>
         </transition>
@@ -79,12 +84,12 @@ export default {
   height 500px
   flex 1 0 85px
   background-color #2870bc
-  margin 0 6px
+  margin 6px
   border-radius 10px
   position relative
   transition flex 1s
 .navi-stpe-box-open
-  flex 0 0 800px
+  flex 50 0 300px
 .navi-step-default
   position absolute
   top 0
@@ -93,7 +98,7 @@ export default {
   margin 2px
   background-color #fff
   border-radius 8px
-  height 496px
+  height calc(100% - 4px)
   overflow hidden
   .content
     position absolute
@@ -106,6 +111,11 @@ export default {
     flex-direction column
     justify-content center
     transform translateX(-50%)
+    div
+      display flex
+      flex-direction column
+  .content-close
+    width 40px
   i
     display block
     font-size 80px
@@ -159,14 +169,16 @@ export default {
       right 0
   .content
     position absolute
-    top 0
+    top 50%
     left 50%
-    width 800px
+    width 100%
+    min-width 300px
     height 100%
+    min-height 400px
     padding 30px 40px
     display flex
     flex-direction column
-    transform translateX(-50%)
+    transform translate3d(-50%, -50%, 0)
   .title
     text-align center
     font-size 28px
@@ -237,4 +249,47 @@ export default {
   transition all .6s .2s
 .fade-delay-leave-active
   transition all .4s
+
+@media screen and (max-width 860px)
+  .navi-step-box
+    height auto
+    flex 1 0 140px
+  .navi-stpe-box-open
+    flex 50 0 500px
+  .navi-stpe-box-close
+    flex 1 0 80px
+  .navi-step-default
+    .content
+      width 100%
+      text-align left
+      align-items center
+      flex-direction row
+    .content-close
+      width auto
+    i
+      margin-right 20px
+    .title
+      margin 0
+    .summary
+      margin 0
+  .navi-step-open .border
+    left -10px !important
+    width calc(100% + 20px)
+    height 24px
+    &:before
+      width 6px
+      height 12px
+      left -8px
+      top 4px
+    &:after
+      width 6px
+      height 12px
+      left auto
+      right -8px
+      bottom 4px
+    &:first-of-type
+      top 0
+    &:last-of-type
+      top auto
+      bottom 0
 </style>
