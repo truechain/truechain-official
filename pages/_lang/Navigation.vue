@@ -71,7 +71,6 @@ export default {
   },
   computed: {
     transedShipPos () {
-      console.log(trans(this.shipPos))
       return trans(this.shipPos)
     },
     shipX () {
@@ -170,7 +169,7 @@ export default {
   justify-content center
   align-items center
   .title
-    font-size 30px
+    font-size 40px
     font-weight 600
     color #2870bc
   hr
