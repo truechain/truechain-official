@@ -86,8 +86,8 @@ export default {
   methods: {
     onresize () {
       const rect = this.$el.getBoundingClientRect()
-      this.left = rect.left
-      this.top = rect.top
+      this.left = rect.left + window.pageXOffset
+      this.top = rect.top + window.pageYOffset
       if (rect.width > 860) {
         this.camera.aspect = 1 / 0.55
         this.renderer.setSize(rect.width, rect.width * 0.55)
