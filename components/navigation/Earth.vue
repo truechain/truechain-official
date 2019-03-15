@@ -117,7 +117,6 @@ export default {
     this.shipTrans = shipTrans
     new THREE.TextureLoader().load(require('@/assets/webgl/ship_128.png'), texture => {
       texture.wrapS = texture.wrapT = THREE.RepeatWrapping
-      texture.anisotropy = false
       ship.material.map = texture
       ship.material.needsUpdate = true
       earth.add(shipTrans)
@@ -127,7 +126,8 @@ export default {
     light.material.deformation = 1
     earth.add(light)
 
-    new THREE.TextureLoader().load(require('@/assets/webgl/light.png'), texture => {
+    new THREE.TextureLoader().load(require('@/assets/webgl/light_256.png'), texture => {
+      texture.anisotropy = renderer.capabilities.getMaxAnisotropy()
       light.lightMap = texture
     })
 
