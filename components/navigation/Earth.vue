@@ -1,6 +1,5 @@
 <template>
-  <div class="navi-earth" @click="toggle"
-    @mousemove="moveCamera" @mouseleave="resetCamera">
+  <div class="navi-earth" @click="toggle">
     <div class="navi-earth-plane" :class="{ 'navi-earth-ball': isBall }"></div>
   </div>
 </template>
@@ -147,6 +146,8 @@ export default {
     window.addEventListener('resize', this.onresize)
     this.onresize()
 
+    document.body.addEventListener('mousemove', this.moveCamera)
+
     const mainCanvas = this.renderer.domElement
     mainCanvas.id = 'webgl-world'
     this.$el.appendChild(this.renderer.domElement)
@@ -214,8 +215,8 @@ export default {
       }
     },
     moveCamera (e) {
-      this.cameraX = ((e.pageX - this.left) / 600 - 1) * 70
-      this.cameraY = ((e.pageY - this.top) / 330 - 1) * 70
+      this.cameraX = ((e.pageX - this.left) / 600 - 1) * 50
+      this.cameraY = ((e.pageY - this.top) / 330 - 1) * 50
     },
     resetCamera () {
       this.cameraX = 0
@@ -253,6 +254,7 @@ export default {
       cancelAnimationFrame(this.raf)
     }
     window.removeEventListener('resize', this.onresize)
+    document.body.removeEventListener('mousemove', this.moveCamera)
   }
 }
 </script>
