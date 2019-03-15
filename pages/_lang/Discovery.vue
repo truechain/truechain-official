@@ -205,6 +205,17 @@ export default {
       color #203260
       margin 16px 0
 
+@media screen and (max-width 500px)
+  .navi-steps
+    .title
+      font-size 28px
+    .context
+      margin 10px 0
+      p
+        font-size 14px
+        line-height 22px
+        margin 10px 0
+
 @media screen and (max-width 860px)
   .navi-intro ul
     flex-direction column

@@ -200,6 +200,8 @@ export default {
     font-size 14px
     line-height 20px
     color #fff
+    max-height 260px
+    overflow scroll
   .lock
     color #2870bc
     width 150px
@@ -266,6 +268,16 @@ export default {
     .content
       min-width 400px
 
+@media screen and (max-width 500px)
+  .navi-step-default
+    .title
+      font-size 22px
+    .summary
+      font-size 16px
+  .navi-step-open
+    .title
+      font-size 22px
+
 @media screen and (max-width 860px)
   .navi-step-box
     height auto
@@ -286,7 +298,7 @@ export default {
         width 400px
         text-align center
     i
-      margin-right 20px
+      margin-right 10px
     .title
       margin 0
     .summary
