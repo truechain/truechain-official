@@ -20,6 +20,11 @@
     <div class="navi-steps">
       <p class="title">{{ $t('navigation.title') }}</p>
       <hr>
+      <div class="context">
+        <p v-for="i in 2" :key="i">
+          {{ $t(`navigation.context[${i - 1}]`) }}
+        </p>
+      </div>
       <ul>
         <Step @click="toggle(i - 1)" @like="like(i - 1)"
           v-for="i in 5" :key="i" :index="i - 1"
@@ -131,7 +136,7 @@ export default {
     align-items center
   li
     height 140px
-    font-size 22px
+    font-size 18px
     padding-left 80px
     line-height 34px
     font-weight 500
@@ -190,6 +195,15 @@ export default {
     padding 0 20px
     margin 30px 0
     display flex
+  .context
+    margin 16px 0
+    p
+      max-width 1240px
+      padding 0 20px
+      font-size 16px
+      line-height 32px
+      color #203260
+      margin 16px 0
 
 @media screen and (max-width 860px)
   .navi-intro ul

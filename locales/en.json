@@ -606,5 +606,51 @@
     "lowRiskBugText":"It is impossible to determine whether the security of the target system can be affected. For example, the target system management port is open to the public network but cannot be directly utilized, the Banner information of the target system can be identified, and other infiltration testers can identify that it is difficult to use but may have potential security threats.\nBugs that are difficult to be triggered, and those with limited harms after being triggered, such as the numerical overflow bugs that needs a large number of ETH or tokens to be triggered, the bugs that the attacker cannot directly profit after they triggered numerical overflow, and the risk of relying on transaction sequence triggered by specifying high gas.\n",
     "noticeLabel":"Matters Need Attention",
     "noticeText":"• The client includes all client programs published through official channels\n• No rewards for bugs that already submitted on other bug disclosure platforms.\n• Third-party application bugs on open platforms are not rewarded.\n•The earliest submission of the same bug is rewarded."
+  },
+  "navigation": {
+    "nav": "The Great Discovery Plan",
+    "intro": [
+      "Tackles the Obstacles of permissionless blockchain",
+      "The First Hybrid Consensus Incentive Model",
+      "Stable and Low Gas Fee Mechanism and provides gas payment agency"
+    ],
+    "context": [
+      "The Age of Discovery, or the Age of Exploration (approximately from the beginning of the 15th century until the end of the 17th century), is an informal  defined term for the period in the world history in which extensive overseas exploration emerged as a powerful factor in European culture and which was the beginning of globalization. This represented one of the most significant global events concerning ecology, agriculture and culture in history.",
+      "Adhering to the spirit of exploration in the ‘Age of Discovery’, TrueChain officially released ‘The Great Discovery Plan’, which is committed to accelerating the development of technology, content, branding, and eco-system, in a multidimensional way within one year. In addition, the TrueChain team will comprehensively promote the future development plan through multi-dimensional live broadcasts, offline road shows and online publicity activities. The ‘Great Discovery Plan’ is the first phase of a development and promotion plan released by TrueChain after its establishment. The Great Discovery Plan is mainly divided into the following five stages: ‘Ming Treasure Voyages’, ‘The Cape of Good Hope’, ‘The New Channel’, ‘The New Continent’, and ‘Round-The-World Travel’. The Great Discovery Plan  corresponds to the Columbus stage of the  TrueChain' roadmap, which is divided into Genesis, Columbus, and Republic."
+    ],
+    "countdown": "TrueChain主网距离上线还有",
+    "title": "The Great Discovery Plan",
+    "locked": "Ready to Sail",
+    "stpes": [
+      {
+        "name": "Treasure voyages",
+        "summary": "assets digitalization",
+        "intro": "TrueChain has been striving to connect with the international market, and Pandaq, the first cross-border fintech platform in Asia was launched on March 7 by TrueChain partnering with Eight Decimal Capital. It aims to provide one-stop asset digitalization technology solutions for truly valuable businesses and assets.\nOn March 12th, TrueChain launched Asia's first ST Protocol called PandaST. This protocol provides a standard for the tokenization and circulation of traditional securitized assets on blockchain, and aims to help enterprises transfer the compliance of traditional securitized investment assets to the operation of the blockchain, allowing qualified investors to participate in STO after identity verification."
+      },
+      {
+        "name": "Cape of Good Hope",
+        "summary": "new mainnet ",
+        "intro": ""
+      },
+      {
+        "name": "New Channel",
+        "summary": "win-win collaboration",
+        "intro": ""
+      },
+      {
+        "name": "New Continent",
+        "summary": "global consensus",
+        "intro": ""
+      },
+      {
+        "name": "Round the world",
+        "summary": "decentralized community",
+        "intro": ""
+      }
+    ],
+    "head": {
+      "title": "The Great Discovery Plan - TrueChain",
+      "keywords": "初链, TRUE,初链币, TrueChain, truechain, blockchain, TRUE币, Hybrid Consensus, 第三代公链, 初链官网, Pow+pbft, CCTV, Eric Zhang, 刘洋, DApp, Mainnet goes online, true swap, true switch,  Age of Voyage, truechain mainnet go live"
+    }
   }
 }

@@ -15,7 +15,9 @@
           </div>
         </transition>
         <transition name="fade-delay">
-          <div class="content content-close" v-if="close">
+          <div class="content content-close" :class="{
+            'content-rotate': $i18n.locale !== 'zh'
+          }" v-if="close">
             <span class="title">{{ $t(`navigation.stpes[${index}].name`) }}</span>
           </div>
         </transition>
@@ -30,7 +32,7 @@
           <span class="summary">{{ $t(`navigation.stpes[${index}].summary`) }}</span>
           <p class="intro" v-if="intro">{{ intro }}</p>
           <span class="lock" v-else>{{ $t('navigation.locked') }}</span>
-          <span class="like" :class="{ 'liked': liked }" @click="like">{{likeCount}}</span>
+          <!-- <span class="like" :class="{ 'liked': liked }" @click="like">{{likeCount}}</span> -->
         </div>
       </div>
     </transition>
@@ -114,6 +116,7 @@ export default {
     div
       display flex
       flex-direction column
+      align-items center
   .content-close
     width 40px
   i
@@ -172,7 +175,8 @@ export default {
     top 50%
     left 50%
     width 100%
-    min-width 300px
+    min-width 400px
+    max-width 600px
     height 100%
     min-height 400px
     padding 30px 40px
@@ -250,6 +254,17 @@ export default {
 .fade-delay-leave-active
   transition all .4s
 
+@media screen and (min-width 860px)
+  .navi-step-default
+    .content-rotate
+      width 400px
+      transform translateX(-50%) rotate(90deg)
+.navi-step-default
+  .summary
+    width 120px
+    margin-left 20px
+    margin-right 20px
+
 @media screen and (max-width 860px)
   .navi-step-box
     height auto
@@ -266,6 +281,9 @@ export default {
       flex-direction row
     .content-close
       width auto
+      .title
+        width 400px
+        text-align center
     i
       margin-right 20px
     .title

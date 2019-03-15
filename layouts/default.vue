@@ -10,7 +10,7 @@
             ul(:style="{'height': menuIsOpen ? `${50 * (indexList.length + 1)}px` : '0'}")
               nuxt-link(
                 tag="li",
-                to="navigation"
+                to="discovery"
               ) {{ $t('navigation.nav') }}
               template(v-if="$t('language') === '简体中文'")
                 li(
