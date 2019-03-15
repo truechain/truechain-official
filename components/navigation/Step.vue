@@ -175,7 +175,6 @@ export default {
     top 50%
     left 50%
     width 100%
-    min-width 400px
     max-width 600px
     height 100%
     min-height 400px
@@ -259,11 +258,13 @@ export default {
     .content-rotate
       width 400px
       transform translateX(-50%) rotate(90deg)
-.navi-step-default
-  .summary
-    width 120px
-    margin-left 20px
-    margin-right 20px
+    .summary
+      width 120px
+      margin-left 20px
+      margin-right 20px
+  .navi-step-open
+    .content
+      min-width 400px
 
 @media screen and (max-width 860px)
   .navi-step-box

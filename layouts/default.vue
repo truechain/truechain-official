@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     .container-app(@click="closeMenu")
-      nav
+      nav(:style="{ 'z-index': menuIsOpen || langsSelectorIsOpen ? 1200 : 1000 }")
         .container-app-header
           div(@click="goHome")
             .container-app-header-logo
