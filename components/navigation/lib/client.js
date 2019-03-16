@@ -445,7 +445,7 @@ export const likeCount = function likeCount () {
       }
     }).then(data => {
       if (data && data.result !== '0x') {
-        const hexNumber = data.result.substr(130, 320).match(/\d{64}/g)
+        const hexNumber = data.result.substr(130, 320).match(/[0-9a-fA-F]{64}/g)
         return hexNumber.map(hex => Number('0x' + hex))
       } else {
         throw new Error('no data')
