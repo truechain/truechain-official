@@ -32,7 +32,7 @@
           <span class="summary">{{ $t(`navigation.stpes[${index}].summary`) }}</span>
           <p class="intro" v-if="intro">{{ intro }}</p>
           <span class="lock" v-else>{{ $t('navigation.locked') }}</span>
-          <!-- <span class="like" :class="{ 'liked': liked }" @click="like">{{likeCount}}</span> -->
+          <span class="like" :class="{ 'liked': liked }" @click="like">{{likeCount}}</span>
         </div>
       </div>
     </transition>

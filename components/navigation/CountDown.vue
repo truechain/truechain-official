@@ -12,7 +12,7 @@
 <script>
 import Numebr from './Number'
 
-const endTime = 0
+const endTime = 1553918400000 // 2013.3.30 12:00:00 GMT+0800
 
 export default {
   name: 'NavigationCountDown',

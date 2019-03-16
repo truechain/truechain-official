@@ -21,7 +21,9 @@
     "webgl-init": "node assets/webgl/processPoint.js"
   },
   "dependencies": {
+    "@types/elliptic": "^6.4.5",
     "axios": "^0.18.0",
+    "elliptic": "^6.4.1",
     "iview": "^2.14.2",
     "nuxt": "^1.0.0",
     "qs": "^6.5.2",

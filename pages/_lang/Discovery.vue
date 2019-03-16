@@ -35,6 +35,8 @@
 </template>
 
 <script>
+import * as Client from '@/components/navigation/lib/client'
+
 import Earth from '@/components/navigation/Earth'
 import Ship from '@/components/navigation/Ship'
 import Step from '@/components/navigation/Step'
@@ -62,16 +64,11 @@ export default {
       ]
     }
   },
-  asyncData () {
-    // TODO: get data from chain
-    return {
-      likeCount: [0, 0, 0, 0, 0]
-    }
-  },
   data () {
     return {
       focusIndex: -1,
-      shipPos: [103.85, 1.3]
+      shipPos: [103.85, 1.3],
+      likeCount: [0, 0, 0, 0, 0]
     }
   },
   computed: {
@@ -85,6 +82,11 @@ export default {
       return -this.transedShipPos[1] * 3.75
     }
   },
+  mounted () {
+    Client.likeCount().then(count => {
+      this.likeCount = count
+    })
+  },
   methods: {
     toggle (i) {
       if (this.focusIndex === i) {
@@ -94,7 +96,7 @@ export default {
       }
     },
     like (i) {
-      // TODO: update count to chain
+      Client.like(i).then(console.log)
       this.$set(this.likeCount, i, this.likeCount[i] + 1)
     }
   },
