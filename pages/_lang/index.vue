@@ -48,6 +48,8 @@
     //-     span(class="icon font_family icon-tongzhi")
     //-     span
     //-       a(href="http://trueglobal.pro/",target="_blank") &nbsp;&nbsp;“HelloEarth”--2018区块链应用落地大赛开始报名了!
+  .home-sea-modal(@click="cancelSeaModal",v-show="showSeaModal=='true'")
+    img(:src="require(`@/assets/images/sea.png`)",@click="$router.push('discovery')")
   .home-intro-3col
     .col3-con
       .co(
@@ -191,7 +193,7 @@ export default {
         autoplay: false,
         contextmenu: [],
         player: null
-      }
+      },
     }
   },
   data () {
@@ -202,7 +204,8 @@ export default {
       homeConfig: {
         dots: 'inside',
         arrow: 'hover'
-      }
+      },
+      showSeaModal:'true'
     }
   },
   mounted () {
@@ -221,6 +224,11 @@ export default {
       setTimeout(() => {
         window.particlesJS('particles-js', liziConfig)
       }, 500);
+    }
+    if(sessionStorage.showSeaModal){
+      this.toshowSeaModal(sessionStorage.showSeaModal)
+    }else{
+      this.toshowSeaModal(this.showSeaModal)
     }
     this.$nextTick(x => {
       this.player = this.$refs.dplayer.dp
@@ -264,6 +272,12 @@ export default {
       })
       this.player.play()
     },
+    cancelSeaModal(){
+      this.toshowSeaModal('false')
+    },
+    toshowSeaModal(sign){
+      sessionStorage.showSeaModal = this.showSeaModal = sign
+    },
     changedmodal (sts) {
       if (!sts) {
         // false:模态框关闭 true:模态框打开  关闭播放模态框时暂停视频播放
@@ -288,6 +302,14 @@ export default {
   .home-sign-up
     a
       font-size 12px !important
+  .home-sea-modal
+    position absolute 
+    z-index 110
+    top 200px
+    text-align center 
+    img
+      width 120px
+      height auto
 .ivu-modal-content
   background-color rgba(0,0,0,0) !important
 .icon-guanbi
@@ -298,6 +320,20 @@ export default {
   font-size 45px
   color #C7C7C7
   cursor pointer
+.home-sea-modal
+  position absolute 
+  z-index 110
+  top 0px
+  text-align center 
+  width 100%
+  height 100vh
+  display flex
+  justify-content center
+  align-items center
+  background-color rgba(255,255,255,0.7)
+  img
+    width 320px
+    height auto
 .home-sign-up
   background-color #F2F5FA
   text-align center
