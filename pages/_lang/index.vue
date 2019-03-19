@@ -48,8 +48,12 @@
     //-     span(class="icon font_family icon-tongzhi")
     //-     span
     //-       a(href="http://trueglobal.pro/",target="_blank") &nbsp;&nbsp;“HelloEarth”--2018区块链应用落地大赛开始报名了!
-  .home-sea-modal(@click="cancelSeaModal",v-show="showSeaModal=='true'")
-    img(:src="require(`@/assets/images/sea.png`)",@click="$router.push('discovery')")
+  transition(name="fade")
+    .home-sea-modal(@click="toggleDiscoveryModal(false)", v-show="showDiscoveryModal")
+      img(
+        src="~assets/images/discovery.png",
+        @click="$router.push('discovery')"
+      )
   .home-intro-3col
     .col3-con
       .co(
@@ -193,7 +197,7 @@ export default {
         autoplay: false,
         contextmenu: [],
         player: null
-      },
+      }
     }
   },
   data () {
@@ -205,7 +209,7 @@ export default {
         dots: 'inside',
         arrow: 'hover'
       },
-      showSeaModal:'true'
+      showDiscoveryModal: false
     }
   },
   mounted () {
@@ -225,11 +229,11 @@ export default {
         window.particlesJS('particles-js', liziConfig)
       }, 500);
     }
-    if(sessionStorage.showSeaModal){
-      this.toshowSeaModal(sessionStorage.showSeaModal)
-    }else{
-      this.toshowSeaModal(this.showSeaModal)
-    }
+    setTimeout(() => {
+      if (!sessionStorage.seenDiscoveryModal) {
+        this.toggleDiscoveryModal(true)
+      }
+    }, 500)
     this.$nextTick(x => {
       this.player = this.$refs.dplayer.dp
       if (window.screen.availWidth < 436) {
@@ -272,11 +276,11 @@ export default {
       })
       this.player.play()
     },
-    cancelSeaModal(){
-      this.toshowSeaModal('false')
-    },
-    toshowSeaModal(sign){
-      sessionStorage.showSeaModal = this.showSeaModal = sign
+    toggleDiscoveryModal (isShow) {
+      this.showDiscoveryModal = isShow
+      if (!isShow) {
+        sessionStorage.seenDiscoveryModal = true
+      }
     },
     changedmodal (sts) {
       if (!sts) {
@@ -302,14 +306,6 @@ export default {
   .home-sign-up
     a
       font-size 12px !important
-  .home-sea-modal
-    position absolute 
-    z-index 110
-    top 200px
-    text-align center 
-    img
-      width 120px
-      height auto
 .ivu-modal-content
   background-color rgba(0,0,0,0) !important
 .icon-guanbi
@@ -321,19 +317,22 @@ export default {
   color #C7C7C7
   cursor pointer
 .home-sea-modal
-  position absolute 
-  z-index 110
-  top 0px
+  position fixed
+  z-index 1100
+  top 0
+  left 0
   text-align center 
   width 100%
   height 100vh
   display flex
   justify-content center
   align-items center
-  background-color rgba(255,255,255,0.7)
+  background-color #0008
   img
-    width 320px
+    width 520px
+    max-width 90vw
     height auto
+    cursor pointer
 .home-sign-up
   background-color #F2F5FA
   text-align center
