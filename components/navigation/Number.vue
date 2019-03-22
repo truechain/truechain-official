@@ -28,7 +28,7 @@ export default {
     num () {
       setTimeout(() => {
         this.last = this.num
-      }, 800)
+      }, 850)
     }
   }
 }
@@ -84,9 +84,9 @@ export default {
     transform scaleY(0)
 
   .top-move
-    animation 0.2s ease-out forwards top
+    animation 0.4s ease-in forwards top
   .bottom-move
-    animation 0.2s ease-in 0.2s forwards bottom
+    animation 0.4s ease-out 0.4s forwards bottom
 
 @keyframes top
   from
