@@ -116,13 +116,20 @@
   //-       div.close(@click="toggleNoticeModal(false)")
   //-       div.title {{ $t('notice.title') }}
   //-       span {{ $t('notice.pre') }}
-  //-       p {{ $t('notice.content[0]') }}
-  //-       p {{ $t('notice.content[1]') }}
-  //-       p {{ $t('notice.content[2]') }}
-  //-         a(href="https://qiniu.truescan.net/wallet/pdf/exchange.pdf" target="_blank") {{ $t('notice.link') }}
+  //-       p(
+  //-         v-for="(text, index) in $t('notice.content')"
+  //-         :key="index"
+  //-       ) {{ text }}
+  //-       a(
+  //-         class="docs"
+  //-         href="https://qiniu.truescan.net/wallet/pdf/exchange.pdf"
+  //-         target="_blank"
+  //-       ) {{ $t('notice.link') }}
   //-       span.address {{ $t('notice.address') }} 0x6AC371048903B76B6D969c575Bc9d9bf28139B76
   //-       span.qrcode {{ $t('notice.qrcode') }}
   //-         img(src="@/assets/images/exchangeQR.png")
+  //-       span {{ $t('notice.app') }}
+  //-         a(href="https://dapp.truedapp.net/appdown/" target="_blank") https://dapp.truedapp.net/appdown/
 </template>
 
 <script>
@@ -874,7 +881,7 @@ export default {
     font-size 14px
     line-height 24px
   .title
-    width 280px
+    width 360px
     height 60px
     border-radius 6px
     background-color #402a92
@@ -923,14 +930,18 @@ export default {
   a
     color #ffd939
     text-decoration underline
-  .address
-    margin-top 24px
-  .qrcode img
-    width 100px
-    height 100px
-    vertical-align text-top
-    border solid 4px #fff
-    border-radius 6px
+    display inline
+  .docs
+    margin 10px 0
+    display block
+  .qrcode
+    margin 10px 0
+    img
+      width 100px
+      height 100px
+      vertical-align text-top
+      border solid 4px #fff
+      border-radius 6px
 
 @media screen and (max-width 1024px)
   .home-intro-3col

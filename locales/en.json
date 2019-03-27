@@ -652,5 +652,19 @@
       "title": "The Great Discovery Plan - TrueChain",
       "keywords": "初链, TRUE,初链币, TrueChain, truechain, blockchain, TRUE币, Hybrid Consensus, 第三代公链, 初链官网, Pow+pbft, CCTV, Eric Zhang, 刘洋, DApp, Mainnet goes online, true swap, true switch,  Age of Voyage, truechain mainnet go live"
     }
+  },
+  "notice": {
+    "title": "TRUE Swap Announcement",
+    "pre": "Dear TrueChain fans,",
+    "content": [
+      "The mainnet of TrueChain will be launched on March 30, and the mapping process between ERC20 TRUE token and TrueChain mainnet TRUE token has started. ERC20 TRUE will be swapped at 1:1 ratio to TrueChain Mainnet TRUE. ",
+      "TRUE holders please SWAP your tokens as soon as possible. There are 2 ways you can swap your tokens: SWAP with the support from an exchange and SWAP without exchange.",
+      "1. If your TRUE tokens are in the exchanges, you do not need to anything on your side. TrueChain has contacted the exchanges that currently support TRUE, and the exchanges will complete the swap of TRUE automatically for their customers.",
+      "2. If your TRUE tokens are in the exchanges, you will need to transfer those tokens from your existing ERC 20 wallet including Imtoken, Kcash to the assigned ETH address. TrueChain Foundation will confirm the transaction and send the same amount of new TrueChain mainnet tokens back to your address within 10 business days after the mainnet Launch. "
+    ],
+    "link": "Click here for the detailed instructions",
+    "address": "The officially assigned unique address is: ",
+    "qrcode": "and the QR code of the address: ",
+    "app": "Please download the TRUE Wallet from the official site: "
   }
 }
