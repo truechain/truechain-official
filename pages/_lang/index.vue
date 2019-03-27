@@ -104,32 +104,32 @@
       div
         div
           img(src="@/assets/images/happy.jpg")
-  transition(name="fade")
-    .home-sea-modal(@click="toggleDiscoveryModal(false)", v-show="showDiscoveryModal")
-      img(
-        src="~assets/images/discovery.png",
-        @click="$router.push('discovery')"
-      )
   //- transition(name="fade")
-  //-   .home-notice-modal(v-show="showNotice")
-  //-     div
-  //-       div.close(@click="toggleNoticeModal(false)")
-  //-       div.title {{ $t('notice.title') }}
-  //-       span {{ $t('notice.pre') }}
-  //-       p(
-  //-         v-for="(text, index) in $t('notice.content')"
-  //-         :key="index"
-  //-       ) {{ text }}
-  //-       a(
-  //-         class="docs"
-  //-         href="https://qiniu.truescan.net/wallet/pdf/exchange.pdf"
-  //-         target="_blank"
-  //-       ) {{ $t('notice.link') }}
-  //-       span.address {{ $t('notice.address') }} 0x6AC371048903B76B6D969c575Bc9d9bf28139B76
-  //-       span.qrcode {{ $t('notice.qrcode') }}
-  //-         img(src="@/assets/images/exchangeQR.png")
-  //-       span {{ $t('notice.app') }}
-  //-         a(href="https://dapp.truedapp.net/appdown/" target="_blank") https://dapp.truedapp.net/appdown/
+  //-   .home-sea-modal(@click="toggleDiscoveryModal(false)", v-show="showDiscoveryModal")
+  //-     img(
+  //-       src="~assets/images/discovery.png",
+  //-       @click="$router.push('discovery')"
+  //-     )
+  transition(name="fade")
+    .home-notice-modal(v-show="showNotice")
+      div
+        div.close(@click="toggleNoticeModal(false)")
+        div.title {{ $t('notice.title') }}
+        span {{ $t('notice.pre') }}
+        p(
+          v-for="(text, index) in $t('notice.content')"
+          :key="index"
+        ) {{ text }}
+        a(
+          class="docs"
+          href="https://qiniu.truescan.net/wallet/pdf/exchange.pdf"
+          target="_blank"
+        ) {{ $t('notice.link') }}
+        span.address {{ $t('notice.address') }} 0x6AC371048903B76B6D969c575Bc9d9bf28139B76
+        span.qrcode {{ $t('notice.qrcode') }}
+          img(src="@/assets/images/exchangeQR.png")
+        span {{ $t('notice.app') }}
+          a(href="https://dapp.truedapp.net/appdown/" target="_blank") https://dapp.truedapp.net/appdown/
 </template>
 
 <script>
