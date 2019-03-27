@@ -48,12 +48,6 @@
     //-     span(class="icon font_family icon-tongzhi")
     //-     span
     //-       a(href="http://trueglobal.pro/",target="_blank") &nbsp;&nbsp;“HelloEarth”--2018区块链应用落地大赛开始报名了!
-  transition(name="fade")
-    .home-sea-modal(@click="toggleDiscoveryModal(false)", v-show="showDiscoveryModal")
-      img(
-        src="~assets/images/discovery.png",
-        @click="$router.push('discovery')"
-      )
   .home-intro-3col
     .col3-con
       .co(
@@ -84,39 +78,6 @@
       RoadMap
     .only-on-mobile
       RoadMapMobile
-    //- .time-line-con
-    //-   .start-point
-    //-   .time-line-block(
-    //-     v-for="(item,index) in $t('home.roadmap.list') "
-    //-   )
-    //-     .lf
-    //-       .even(v-if="index%2==0")
-    //-         .time {{item.time}}
-    //-       .odd(v-if="index%2>0")
-    //-         .link-bk
-    //-         .link-dot-big
-    //-         .link-dot-sm
-    //-         .bk
-    //-           .entry-txt(
-    //-             v-for="(txt, index) in item.events",
-    //-             :key="index"
-    //-           )
-    //-             .dot
-    //-             .txt {{txt}}
-    //-     .ri
-    //-       .even(v-if="index%2==0")
-    //-         .link-bk
-    //-         .link-dot-big
-    //-         .link-dot-sm
-    //-         .bk
-    //-           .entry-txt(
-    //-             v-for="(txt, index) in item.events",
-    //-             :key="index"
-    //-           )
-    //-             .dot
-    //-             .txt {{txt}}
-    //-       .odd(v-if="index%2>0")
-    //-         .time {{item.time}}
   .home-partner
     .page-title {{ $t('home.partner') }}
     .con
@@ -143,31 +104,25 @@
       div
         div
           img(src="@/assets/images/happy.jpg")
-          //- img(src="@/assets/images/game-ad.png")
-  //- .home-news(v-if="$store.state.locale === 'zh'")
-  //-   .page-title {{ $t('home.news.title') }}
-  //-   .con
-  //-     .co(
-  //-       v-for="(item,i) in $t('home.news.list')"
-  //-     )
-  //-       .vid(@click='showmod(i)')
-  //-         img.pic(
-  //-           :src="require(`@/assets/images/mx${i+1}.jpg`)"
-  //-         )
-  //-         img.playicon(src="/playicon.png")
-  //-         .vid-mask
-  //-       // .time {{ item.time }}
-  //-       .descr {{ item.title }}
-  //- no-ssr(placeholder="Loading...")
-  //-   Modal(
-  //-     v-model="modalvid",
-  //-     class-name="vertical-center-modal",
-  //-     @on-visible-change="changedmodal",
-  //-     :width="700"
-  //-   )
-  //-     no-ssr(placeholder="Loading...")
-  //-       d-player(:options="dplayerOpts" ref="dplayer")
-
+  transition(name="fade")
+    .home-sea-modal(@click="toggleDiscoveryModal(false)", v-show="showDiscoveryModal")
+      img(
+        src="~assets/images/discovery.png",
+        @click="$router.push('discovery')"
+      )
+  //- transition(name="fade")
+  //-   .home-notice-modal(v-show="showNotice")
+  //-     div
+  //-       div.close(@click="toggleNoticeModal(false)")
+  //-       div.title {{ $t('notice.title') }}
+  //-       span {{ $t('notice.pre') }}
+  //-       p {{ $t('notice.content[0]') }}
+  //-       p {{ $t('notice.content[1]') }}
+  //-       p {{ $t('notice.content[2]') }}
+  //-         a(href="https://qiniu.truescan.net/wallet/pdf/exchange.pdf" target="_blank") {{ $t('notice.link') }}
+  //-       span.address {{ $t('notice.address') }} 0x6AC371048903B76B6D969c575Bc9d9bf28139B76
+  //-       span.qrcode {{ $t('notice.qrcode') }}
+  //-         img(src="@/assets/images/exchangeQR.png")
 </template>
 
 <script>
@@ -209,7 +164,8 @@ export default {
         dots: 'inside',
         arrow: 'hover'
       },
-      showDiscoveryModal: false
+      showDiscoveryModal: false,
+      showNotice: false
     }
   },
   mounted () {
@@ -232,6 +188,9 @@ export default {
     setTimeout(() => {
       if (!sessionStorage.seenDiscoveryModal) {
         this.toggleDiscoveryModal(true)
+      }
+      if (!sessionStorage.showNotice) {
+        this.toggleNoticeModal(true)
       }
     }, 500)
     this.$nextTick(x => {
@@ -282,6 +241,12 @@ export default {
         sessionStorage.seenDiscoveryModal = true
       }
     },
+    toggleNoticeModal (isShow) {
+      this.showNotice = isShow
+      if (!isShow) {
+        sessionStorage.showNotice = true
+      }
+    },
     changedmodal (sts) {
       if (!sts) {
         // false:模态框关闭 true:模态框打开  关闭播放模态框时暂停视频播放
@@ -306,73 +271,7 @@ export default {
   .home-sign-up
     a
       font-size 12px !important
-.ivu-modal-content
-  background-color rgba(0,0,0,0) !important
-.icon-guanbi
-  // width 40px
-  position absolute
-  right 0
-  // background red
-  font-size 45px
-  color #C7C7C7
-  cursor pointer
-.home-sea-modal
-  position fixed
-  z-index 1100
-  top 0
-  left 0
-  text-align center 
-  width 100%
-  height 100vh
-  display flex
-  justify-content center
-  align-items center
-  background-color #0008
-  img
-    width 520px
-    max-width 90vw
-    height auto
-    cursor pointer
-.home-sign-up
-  background-color #F2F5FA
-  text-align center
-  padding 20px
-  // line-height 25px
-  span,a
-    color $font-dark
-    font-size 18px
-    font-weight bold
-.vertical-center-modal
-  display: flex
-  align-items: center
-  justify-content: center
-  .ivu-modal
-    top: 0px
-.ivu-modal-footer
-.ivu-modal-close
-  display none
-.ivu-modal-body
-  padding 0px
 
-.dplayer-icon
-  .dplayer-icon-content
-    wh(100%,100%)
-.dplayer-ptime,
-.dplayer-dtime
-  color white
-.ivu-carousel-dots
-  margin-bottom 10px
-  z-index 230
-.ivu-carousel
-  .ivu-carousel-arrow.left
-    left 100px
-  .ivu-carousel-arrow.right
-    right 100px
-  .ivu-carousel-arrow
-    transform scale(1.5)
-    background ''
-    .ivu-icon
-      color white
 .loop-header
   wh(100%,500px)
   position relative
@@ -785,106 +684,6 @@ export default {
     margin 24px auto 54px
     wh(60px, 4px)
     border-radius 2px
-  .time-line-con
-    max-width 630px
-    margin 46px auto 0px
-    .start-point
-      dot(8px)
-      background-color $font-dark
-      margin 0px auto -2px
-      position relative
-      z-index 200
-      left -1.2px
-    .time-line-block
-      display flex
-      flex-direction row
-      flex-wrap: nowrap
-      justify-content space-between
-      align-items stretch
-      font-size 0px
-      .lf,.ri
-        width 50%
-        padding 20px
-        box-sizing border-box
-        font-size 14px
-        txtwrap()
-        word-break: break-word;
-        position relative
-        z-index 200
-      .lf
-        border-right 2px solid $font-dark
-        .time
-          text-align right
-        .link-bk
-          background-color $font-dark
-          wh(20px,2px)
-          position absolute
-          z-index 200
-          top 54px
-          right 0px
-        .link-dot-big
-          dot(18px)
-          background-color #C5D6F6
-          position absolute
-          z-index 190
-          top 46px
-          right -10px
-        .link-dot-sm
-          dot(10px)
-          background-color $font-dark
-          position absolute
-          z-index 200
-          top 50px
-          right -6px
-      .ri
-        .link-bk
-          background-color $font-dark
-          wh(20px,2px)
-          position absolute
-          z-index 200
-          top 54px
-          left 0px
-        .link-dot-big
-          dot(18px)
-          background-color #C5D6F6
-          position absolute
-          z-index 190
-          top 46px
-          left -10px
-        .link-dot-sm
-          dot(10px)
-          background-color $font-dark
-          position absolute
-          z-index 200
-          top 50px
-          left -6px
-      .time
-        color $font-dark
-        margin-top 20px
-        line-height 30px
-      .bk
-        background-color $font-dark
-        padding 10px 20px 10px 8px
-        color white
-        border-radius 6px
-        margin-top 10px
-        .entry-txt
-          display flex
-          flex-direction row
-          flex-wrap nowrap
-          justify-content flex-start
-          align-items flex-start
-          .dot
-            flex-shrink 0
-            background-color white
-            dot(8px)
-            margin 10px 10px 0px 10px
-          .txt
-            color white
-            line-height 26px
-    .time-line-block:last-child
-      .lf,.ri
-        padding-bottom 80px
 
 .home-introduce-banner
   overflow hidden
@@ -1031,6 +830,107 @@ export default {
     border solid 1px $font-dark
     margin 0 20px
     wh(300px, 120px)
+  
+.home-sea-modal
+  position fixed
+  z-index 1100
+  top 0
+  left 0
+  text-align center 
+  width 100%
+  height 100vh
+  display flex
+  justify-content center
+  align-items center
+  background-color #000b
+  img
+    width 520px
+    max-width 90vw
+    height auto
+    cursor pointer
+
+.home-notice-modal
+  position fixed
+  z-index 1100
+  top 0
+  left 0
+  text-align center 
+  width 100%
+  height 100vh
+  display flex
+  justify-content center
+  align-items center
+  background-color #000b
+  >div
+    width 600px
+    border 2px solid #fff
+    border-radius 10px
+    padding 40px 24px 24px
+    background-color #32126f
+    background-image url('~@/assets/images/notice.png')
+    background-size cover
+    position relative
+    text-align left
+    font-size 14px
+    line-height 24px
+  .title
+    width 280px
+    height 60px
+    border-radius 6px
+    background-color #402a92
+    font-size 24px
+    color #ffffff
+    font-weight 500
+    display flex
+    justify-content center
+    align-items center
+    position absolute
+    left 50%
+    top 0
+    transform translate3d(-50%, -50%, 0)
+  .close
+    width 20px
+    height 20px
+    border-radius 10px
+    border solid 1px #fff
+    position absolute
+    top -18px
+    right -22px
+    cursor pointer
+    &:after
+      content ''
+      height 1px
+      width 14px
+      background-color #fff
+      position absolute
+      top 50%
+      left 50%
+      transform translate3d(-50%, -50%, 0) rotate(45deg)
+    &:before
+      content ''
+      height 1px
+      width 14px
+      background-color #fff
+      position absolute
+      top 50%
+      left 50%
+      transform translate3d(-50%, -50%, 0) rotate(-45deg)
+  span
+    color #fff
+  p
+    color #fff
+    text-indent 2em
+  a
+    color #ffd939
+    text-decoration underline
+  .address
+    margin-top 24px
+  .qrcode img
+    width 100px
+    height 100px
+    vertical-align text-top
+    border solid 4px #fff
+    border-radius 6px
 
 @media screen and (max-width 1024px)
   .home-intro-3col

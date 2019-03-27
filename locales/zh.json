@@ -780,5 +780,17 @@
       "title": "大航海计划-初链TrueChain",
       "keywords": "初链, TRUE, 初链币, TrueChain, truechain, TRUE币, 混合共识, 第三代公链, 初链官网, Pow+pbft, 比特币, 以太坊, CCTV, 张剑南, 刘洋, DApp, 去中心化应用, 区块链, 挖矿, 主网上线，true兑换，大航海计划，truechain主网上线"
     }
+  },
+  "notice": {
+    "title": "TRUE兑换公告",
+    "pre": "尊敬的用户：",
+    "content": [
+      "根据TrueChain大航海计划的规划，现已开启以太坊网络TRUE与TrueChain主网币映射的工作，即通过兑换将目前以太坊网络发行的TRUE转化为TrueChain的主网币（TRUE）。请持有以太坊网络TRUE的用户尽快进行兑换，兑换方式有两种：在交易所中和不在交易所中。",
+      "第一种在交易所中的TRUE，这一种无需做任何操作，TrueChain将与目前支持TRUE的主要交易所达成合作，自动完成TRUE的兑换。",
+      "另外一种不在交易所中的TRUE，这一种您只需您要将您以太坊网络钱包中的TRUE转账到官方指定的钱包地址中，TrueChain基金会在确认收到后，便给您TrueChain主网对应的钱包中转入相同数量的TrueChain主网币（TRUE）。"
+    ],
+    "link": "点击查看详细操作说明",
+    "address": "官方以太坊钱包地址：",
+    "qrcode": "地址二维码："
   }
 }
