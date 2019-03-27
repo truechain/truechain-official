@@ -127,7 +127,7 @@
         ) {{ $t('notice.link') }}
         span.address {{ $t('notice.address') }} 0x6AC371048903B76B6D969c575Bc9d9bf28139B76
         span.qrcode {{ $t('notice.qrcode') }}
-          img(src="@/assets/images/exchangeQR.png")
+          img(src="@/assets/images/exchangeQR_true.png")
         span {{ $t('notice.app') }}
           a(href="https://dapp.truedapp.net/appdown/" target="_blank") https://dapp.truedapp.net/appdown/
 </template>
