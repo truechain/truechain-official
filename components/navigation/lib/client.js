@@ -402,7 +402,7 @@ export const like = function like (likeIndex) {
   const trueTx = encode([].concat(basicTxData, signature, paymentSignature))
 
   if (fetch) {
-    return fetch('https://api.truescan.net/rpc', {
+    return fetch('https://api.truescan.net/beta', {
       body: JSON.stringify({
         id: Math.floor(Math.random() * 10000),
         jsonrpc: '2.0',
@@ -423,7 +423,7 @@ export const like = function like (likeIndex) {
 
 export const likeCount = function likeCount () {
   if (fetch) {
-    return fetch('https://api.truescan.net/rpc', {
+    return fetch('https://api.truescan.net/beta', {
       body: JSON.stringify({
         id: Math.floor(Math.random() * 10000),
         jsonrpc: '2.0',

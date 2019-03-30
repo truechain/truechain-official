@@ -69,7 +69,7 @@ export default {
   data () {
     return {
       focusIndex: -1,
-      shipPos: [103.85, 1.3],
+      shipPos: [88.85, 4.3],
       likeCount: [0, 0, 0, 0, 0]
     }
   },
