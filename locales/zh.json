@@ -747,6 +747,7 @@
       "秉承大航海时代，勇于开拓的精神，初链TrueChain正式对外发布“大航海计划”,致力于在一年内通过技术、内容、品牌、生态和资本多维度全方面发展提速，并且官方将通过多维度的直播互动、线下路演以及全网宣传活动全面剖析未来发展规划。“大航海计划”是初链TrueChain成立后，首次对外发布的第一个阶段性的发展推进计划，大航海计划主要分为以下五个阶段：下西洋、好望角、新航道、新大陆、环球行。大航海计划对应TrueChain的Columbus进程，TrueChain的进程分为Genesis（创世）、Columbus（探索）、Republic（共和）。"
     ],
     "countdown": "TrueChain主网距离上线还有",
+    "congratulate": "热烈祝贺Truechain主网上线！",
     "title": "True大航海计划",
     "locked": "待开启",
     "stpes": [
@@ -763,7 +764,7 @@
       {
         "name": "新航道",
         "summary": "踏上新征程 合作共赢",
-        "intro": ""
+        "intro": "基于以太坊的ERC20代币TRUE将切换到TrueChain Mainnet的主网币；\nTRUE钱包将上线多款新应用；\nTRUE将登陆新的国际交易平台；\n在海外的现实场景的流通中崭露头角。"
       },
       {
         "name": "新大陆",

@@ -14,8 +14,10 @@
       </ul>
     </div>
     <div class="navi-count-down">
-      <p class="title">{{ $t('navigation.countdown') }}</p>
-      <CountDown/>
+      <p class="title">{{ $t('navigation.congratulate') }}</p>
+      <span>2019-3-30</span>
+      <!-- <p class="title">{{ $t('navigation.countdown') }}</p>
+      <CountDown/> -->
     </div>
     <div class="navi-steps">
       <p class="title">{{ $t('navigation.title') }}</p>
@@ -162,16 +164,22 @@ export default {
     &:nth-child(3):before
       content '\e64f'
 .navi-count-down
-  height 350px
-  // height 10px
+  // height 350px
+  height 200px
   display flex
   flex-direction column
   justify-content center
   align-items center
+  position relative
   .title
     font-size 30px
     font-weight 600
     color #2870bc
+  span
+    position absolute
+    bottom 20px
+    color #2870bc
+    opacity .8
 .navi-steps
   min-height 820px
   padding 60px 0
