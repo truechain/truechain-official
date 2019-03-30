@@ -115,21 +115,22 @@
       div
         div.close(@click="toggleNoticeModal(false)")
         div.title {{ $t('notice.title') }}
-        span {{ $t('notice.pre') }}
-        p(
-          v-for="(text, index) in $t('notice.content')"
-          :key="index"
-        ) {{ text }}
-        a(
-          class="docs"
-          href="https://qiniu.truescan.net/wallet/pdf/exchange.pdf"
-          target="_blank"
-        ) {{ $t('notice.link') }}
-        span.address {{ $t('notice.address') }} 0x6AC371048903B76B6D969c575Bc9d9bf28139B76
-        span.qrcode {{ $t('notice.qrcode') }}
-          img(src="@/assets/images/exchangeQR_true.png")
-        span {{ $t('notice.app') }}
-          a(href="https://dapp.truedapp.net/appdown/" target="_blank") https://dapp.truedapp.net/appdown/
+        div.context
+          span {{ $t('notice.pre') }}
+          p(
+            v-for="(text, index) in $t('notice.content')"
+            :key="index"
+          ) {{ text }}
+          a(
+            class="docs"
+            href="https://qiniu.truescan.net/wallet/pdf/exchange.pdf"
+            target="_blank"
+          ) {{ $t('notice.link') }}
+          span.address {{ $t('notice.address') }} 0x6AC371048903B76B6D969c575Bc9d9bf28139B76
+          span.qrcode {{ $t('notice.qrcode') }}
+            img(src="@/assets/images/exchangeQR_true.png")
+          span {{ $t('notice.app') }}
+            a(href="https://dapp.truedapp.net/appdown/" target="_blank") https://dapp.truedapp.net/appdown/
 </template>
 
 <script>
@@ -870,6 +871,8 @@ export default {
   background-color #000b
   >div
     width 600px
+    max-width 90%
+    max-height 80vh
     border 2px solid #fff
     border-radius 10px
     padding 40px 24px 24px
@@ -878,14 +881,14 @@ export default {
     background-size cover
     position relative
     text-align left
-    font-size 14px
+    font-size 12px
     line-height 24px
   .title
-    width 360px
+    width 300px
     height 60px
     border-radius 6px
     background-color #402a92
-    font-size 24px
+    font-size 20px
     color #ffffff
     font-weight 500
     display flex
@@ -895,6 +898,9 @@ export default {
     left 50%
     top 0
     transform translate3d(-50%, -50%, 0)
+  .context
+    max-height 70vh
+    overflow scroll
   .close
     width 20px
     height 20px
@@ -924,6 +930,7 @@ export default {
       transform translate3d(-50%, -50%, 0) rotate(-45deg)
   span
     color #fff
+    display block
   p
     color #fff
     text-indent 2em
