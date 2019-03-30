@@ -24,8 +24,8 @@ export default {
   data () {
     const timeIndex = [0, 19, 30]
     const info1 = new Array(18).fill('finished')
-    const info2 = new Array(1).fill('finished')
-    info2.push(...new Array(9).fill('future'))
+    const info2 = new Array(3).fill('finished')
+    info2.push(...new Array(7).fill('future'))
     const info3 = new Array(4).fill('future')
     return {
       timeIndex,

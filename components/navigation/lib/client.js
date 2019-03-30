@@ -367,9 +367,9 @@ function genData (likeIndex) {
   return '0x078c478b' + (likeIndex % 256).toString(16).padStart(64, '0')
 }
 
-const chainId = 18928
+const chainId = 19330
 const chainIdHex = makeEven('0x' + chainId.toString(16))
-const contractAddr = '0x86e950bDafC79CD923102c2D3290D44A1b7Dd4D8'
+const contractAddr = '0x734B9306d463B409a8125De53C759703ADBDBb68'
 const signer = makeSigner(2 * chainId + 35)
 
 export const like = function like (likeIndex) {
@@ -402,7 +402,7 @@ export const like = function like (likeIndex) {
   const trueTx = encode([].concat(basicTxData, signature, paymentSignature))
 
   if (fetch) {
-    return fetch('https://api.truescan.net/beta', {
+    return fetch('https://api.truescan.net/rpc', {
       body: JSON.stringify({
         id: Math.floor(Math.random() * 10000),
         jsonrpc: '2.0',
@@ -423,7 +423,7 @@ export const like = function like (likeIndex) {
 
 export const likeCount = function likeCount () {
   if (fetch) {
-    return fetch('https://api.truescan.net/beta', {
+    return fetch('https://api.truescan.net/rpc', {
       body: JSON.stringify({
         id: Math.floor(Math.random() * 10000),
         jsonrpc: '2.0',
