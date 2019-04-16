@@ -94,7 +94,7 @@
               ) {{item.text}}
         .container-app-footer-copyright
           div
-            span Copyright ⓒ TrueChain All Rights Reserved.
+            span Copyright ⓒ TRUECHAIN FOUNDATION LTD. All Rights Reserved.
             span {{ $t(`footerContactUs`) }}： partner@truechain.pro
             span sitemap:
               a(href="//www.truechain.pro/sitemap.xml", tartget="_blank")
