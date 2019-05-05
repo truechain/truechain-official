@@ -363,6 +363,17 @@
           ]
         },
         {
+          "name": "Jimmy Zhao",
+          "post": "Đối tác chiến lược toàn cầu TrueChain",
+          "imgSrc": "jimmy",
+          "introList": [
+            "Người sáng lập ZBX.COM (chi nhánh Châu Âu của ZB),",
+            "Người sáng lập Cryptonord",
+            "Cryptonord là nhà đầu tư thuở sơ khai của TrueChain",
+            "Một nhân vật nổi bật trong ngành công nghiệp blockchain của châu Âu, Jimmy quản lý một quỹ sở hữu 10.000 bitcoin"
+          ]
+        },
+        {
           "name": "Hillary Nguyen",
           "post": "Đối tác tại Việt Nam của TrueChain",
           "imgSrc": "hillarynguyen",
@@ -436,16 +447,6 @@
           "intro": "",
           "introList": [
             "Chủ tịch Hiệp hội Crypto Beach Thái Lan"
-          ]
-        },
-        {
-          "name": "Jimmy Zhao",
-          "intro": "",
-          "introList": [
-            "Người sáng lập ZBX.COM (chi nhánh Châu Âu của ZB),",
-            "Người sáng lập Cryptonord",
-            "Cryptonord là nhà đầu tư thuở sơ khai của TrueChain",
-            "Một nhân vật nổi bật trong ngành công nghiệp blockchain của châu Âu, Jimmy quản lý một quỹ sở hữu 10.000 bitcoin"
           ]
         }
       ]

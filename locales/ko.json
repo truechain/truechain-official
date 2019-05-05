@@ -352,6 +352,16 @@
           ]
         },
         {
+          "name": "Jimmy Zhao",
+          "post": "TrueChain 글로벌 전략 파트너",
+          "imgSrc": "jimmy",
+          "introList": [
+            "ZBX.COM(ZB 유럽회사) 창업자이자 Cryptonord 창업자이다.",
+            "Cryptonord는 TRUEchain 초기투자자 중 하나다. ",
+            "또한 1만 비트코인 규모의 펀드를 담당하고 있는 유럽 블록체인 산업의 핵심 인물 중 하나다."
+          ]
+        },
+        {
           "name": "Hillary Nguyen",
           "post": "트루체인(Truechain)베트남 책임자",
           "imgSrc": "hillarynguyen",
@@ -424,15 +434,6 @@
           "intro": "",
           "introList": [
             "태국 크립토비취(Crypto Beach) 협회 회장"
-          ]
-        },
-        {
-          "name": "Jimmy Zhao",
-          "intro": "",
-          "introList": [
-            "ZBX.COM(ZB 유럽회사) 창업자이자 Cryptonord 창업자이다.",
-            "Cryptonord는 TRUEchain 초기투자자 중 하나다. ",
-            "또한 1만 비트코인 규모의 펀드를 담당하고 있는 유럽 블록체인 산업의 핵심 인물 중 하나다."
           ]
         }
       ]

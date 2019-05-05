@@ -411,6 +411,19 @@
           ]
         },
         {
+          "name": "Jimmy Zhao",
+          "post": "TrueChain全球战略合伙人",
+          "imgSrc": "jimmy",
+          "introList": [
+            "ZB集团高管兼ZB欧洲站ZBX创始人",
+            "Cryptonord 创始人",
+            "Y investment 合伙人",
+            "ChainX 创始人",
+            "Jimmy掌管一万比特币规模的基金",
+            "欧洲知名的区块链行业核心人物"
+          ]
+        },
+        {
           "name": "Hillary Nguyen",
           "post": "初链越南合伙人",
           "imgSrc": "hillarynguyen",
@@ -486,16 +499,6 @@
           "intro": "",
           "introList": [
             "泰国数字沙滩协会会长"
-          ]
-        },
-        {
-          "name": "Jimmy Zhao",
-          "intro": "",
-          "introList": [
-            "ZBX.COM(ZB欧洲公司)创始人",
-            "Cryptonord 创始人",
-            "Cryptonord 为 TrueChain 基石投资者",
-            "Jimmy掌管一万比特币规模的基金，是欧洲知名的区块链行业核心人物"
           ]
         }
       ]

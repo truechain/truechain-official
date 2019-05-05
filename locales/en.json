@@ -378,6 +378,19 @@
           ]
         },
         {
+          "name": "Jimmy Zhao",
+          "post": "TrueChain Global Strategic Partner",
+          "imgSrc": "jimmy",
+          "introList": [
+            "ZB group executive and founder of ZBX (ZB Europe)",
+            "Founder of Cryptonord",
+            "Partner of Y investment",
+            "Founder of ChainX",
+            "Runs a 10,000-bitcoin fund",
+            "A well-known core figure in the blockchain industry in Europe"
+          ]
+        },
+        {
           "name": "Hillary Nguyen",
           "post": "TrueChain Vietnamese Partner",
           "imgSrc": "hillarynguyen",
@@ -450,15 +463,6 @@
           "intro": "",
           "introList": [
             "President of Thailand Crypto Beach Association"
-          ]
-        },
-        {
-          "name": "Jimmy Zhao",
-          "intro": "",
-          "introList": [
-            "Founder of ZBX.COM( European branches of ZB),",
-            "Founder of Cryptonord (Cryptonord is the Cornerstone Investors of TrueChain)",
-            "A prominent figure in the blockchain industry of Europe, Jimmy manages a fund of 10,000 bitcoins"
           ]
         }
       ]

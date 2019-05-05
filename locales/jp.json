@@ -335,12 +335,22 @@
         },
         {
           "name": "林大亮",
-          "post": "首席发展官",
+          "post": "首席発展官",
           "imgSrc": "daliang",
           "introList": [
             "インターネットマーケティング及びコミュニティ運営専門家",
             "バイドゥ百科の運営に携わった",
             "10年の数字広告及びインターネット業界経験あり"
+          ]
+        },
+        {
+          "name": "Jimmy Zhao",
+          "post": "True Charinグローバル戦略パートナー",
+          "imgSrc": "jimmy",
+          "introList": [
+            "ZBX.COM(ZBヨーロッパ)の創業者，Cryptonord の創業者",
+            "ちなみにCryptonordはTrueChain（トウルー チャイナファンド）の投資会社",
+            "現在、Jimmyは１万ビットコイン規模のファンドを司り、ヨーロッパのブロックチェーン業界において核心的な存在"
           ]
         },
         {
@@ -416,15 +426,6 @@
           "intro": "",
           "introList": [
             "タイのデジタルビーチ協会会長"
-          ]
-        },
-        {
-          "name": "Jimmy Zhao",
-          "intro": "",
-          "introList": [
-            "ZBX.COM(ZBヨーロッパ)の創業者，Cryptonord の創業者",
-            "ちなみにCryptonordはTrueChain（トウルー チャイナファンド）の投資会社",
-            "現在、Jimmyは１万ビットコイン規模のファンドを司り、ヨーロッパのブロックチェーン業界において核心的な存在"
           ]
         }
       ]
