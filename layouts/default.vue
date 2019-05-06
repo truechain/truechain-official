@@ -135,11 +135,12 @@ export default {
   mounted () {
     baiduAnalyse()
     const lang = getStore('lang')
-    if(lang) {
-      this.changeLanguage(lang) //会触发每个页面重新渲染,并无必要
-    } else {
+    // 初始化根据ip设置语言，不进行本地获取
+    // if(lang) {
+    //   this.changeLanguage(lang) //会触发每个页面重新渲染,并无必要
+    // } else {
       this.setLanguage()
-    }
+    // }
     setTimeout(()=>{
       let existEl = document.getElementById("page_stat")
       if(existEl){ document.body.removeChild( existEl ) }
