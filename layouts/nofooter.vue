@@ -107,7 +107,9 @@ export default {
         '中国': 'zh',
         '美国': 'en',
         '韩国': 'ko',
-        '越南': 'vi'
+        '越南': 'vi',
+        '日本': 'jp',
+        '韩国': 'ko'
       }
     }
   },
@@ -347,7 +349,7 @@ nav
     display block
   .container-app-header-button.lang
     display inline-block
-    
+
 @media screen and (min-width 860px)
   .container-app-header-nav
     ul
