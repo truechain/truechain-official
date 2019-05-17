@@ -277,7 +277,7 @@
           ]
         },
         {
-          "name": "Yang Liu",
+          "name": "Dylan Liu",
           "post": "CTO",
           "imgSrc": "liuyang",
           "introList": [
@@ -317,11 +317,10 @@
           ]
         },
         {
-          "name": "Biyun Zeng",
+          "name": "Neol Zeng",
           "post": "Senior R&D Director",
           "imgSrc": "biyun",
           "introList": [
-            "Bằng cử nhân tại trường đại học bách khoa  Xi ‘an",
             "8 năm kinh nghiệm phát triển ngôn ngữ C",
             "Nhiều năm kinh nghiệm làm việc ở nước ngoài",
             "Trưởng bộ phận R & D và production của nhà thông minh DiXiang",
@@ -421,7 +420,7 @@
       "title": "Cố vấn ",
       "list": [
         {
-          "name": "林垂宙",
+          "name": "Lin ChuiZhou",
           "intro": "",
           "introList": [
             "Viện Sĩ Cố Vấn TrueChain",

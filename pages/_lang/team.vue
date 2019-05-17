@@ -9,7 +9,7 @@
             :key="index"
           )
             .about-introduce-list-avatar
-              img(:src="require(`~/assets/members/${item.imgSrc}.png`)")
+              //- img(:src="require(`~/assets/members/${item.imgSrc}.png`)")
               // .about-introduce-list-name-hover {{ item.name }}
             .about-introduce-list-name {{ item.name }}
             .about-introduce-list-post {{ item.post }}
@@ -26,7 +26,7 @@
           )
             .about-introduce-list-avatar
               // img(:src="require(`@/assets/members/b${index + 1}.png`)")
-              img(:src="require(`~/assets/members/${item.imgSrc}.png`)")
+              //- img(:src="require(`~/assets/members/${item.imgSrc}.png`)")
               // .about-introduce-list-name-hover {{ item.name }}
             .about-introduce-list-name {{ item.name }}
             // .about-introduce-list-detail {{ item.intro }}
@@ -108,7 +108,7 @@ export default {
         .about-introduce-list-name-hover
           opacity 1
       .about-introduce-list-avatar
-        wh(100%, 200px)
+        // wh(100%, 200px)
         border-radius 50%
         overflow hidden
         position relative

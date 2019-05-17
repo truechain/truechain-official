@@ -247,7 +247,7 @@
     "technology": {
       "title": "研究及び開発者コミュニティ",
       "list": [{
-          "name": "エリック・チャン",
+          "name": "Eric Zhang",
           "post": "CEO",
           "imgSrc": "jiannan",
           "introList": [
@@ -257,7 +257,7 @@
           ]
         },
         {
-          "name": "劉洋",
+          "name": "Dylan Liu",
           "post": "CTO",
           "imgSrc": "liuyang",
           "introList": [
@@ -267,7 +267,7 @@
           ]
         },
         {
-          "name": "蔡振川",
+          "name": "Felix Cai",
           "post": "フロントエンド製品責任者",
           "imgSrc": "zhenchuan",
           "introList": [
@@ -278,7 +278,7 @@
         },
 
         {
-          "name": "田明",
+          "name": "Ice Ming",
           "post": "技術統合責任者",
           "imgSrc": "tianming",
           "introList": [
@@ -289,7 +289,7 @@
           ]
         },
         {
-          "name": "尹毅（法師）",
+          "name": "Seay (Wizard)",
           "post": "安全性顧問",
           "imgSrc": "fashi",
           "introList": [
@@ -299,19 +299,18 @@
           ]
         },
         {
-          "name": "Biyun Zeng",
+          "name": "Neol Zeng",
           "post": "Senior R&D Director",
           "imgSrc": "biyun",
           "introList": [
-            "Bachelor degree in Xi ‘an Polytechnic University",
-            "8 years of experience in C language development",
-            "Many years of overseas working experience",
-            "Led the R&D and production of DiXiang smart home",
-            "Was the director of development and operation of VisualTouring"
+            "Algorithmic Engineer",
+            "Eight years of C language development experiences",
+            "Having many years of overseas R&D experiences",
+            "Former Director of R&D and Operation of Well-known Artificial Intelligence Projects"
           ]
         },
         {
-          "name": "劉朋",
+          "name": "Brian Liu",
           "post": "ブロックチェーンエバンジェリスト",
           "imgSrc": "liupeng",
           "introList": [
@@ -325,7 +324,7 @@
     "business": {
       "title": "コミュニティ運営",
       "list": [{
-          "name": "程小永",
+          "name": "James Cheng",
           "post": "チーフストラテジーオフィサー",
           "imgSrc": "xiaoyong",
           "introList": [
@@ -334,7 +333,7 @@
           ]
         },
         {
-          "name": "林大亮",
+          "name": "Larry Lin",
           "post": "首席発展官",
           "imgSrc": "daliang",
           "introList": [
@@ -373,7 +372,7 @@
           ]
         },
         {
-          "name": "チュ・ソンウ",
+          "name": "Sun-Woo Chu",
           "post": "TrueChain韓国戦略パートナー",
           "imgSrc": "qiutingnan",
           "introList": [
@@ -385,7 +384,7 @@
           ]
         },
         {
-          "name": "王萍萍",
+          "name": "Pingping Wang",
           "post": "TrueChain韓国コミュニティー首席代表",
           "imgSrc": "wangpingping",
           "introList": [
@@ -401,7 +400,7 @@
       "title": "顧問",
       "list": [
         {
-          "name": "林垂宙",
+          "name": "Lin ChuiZhou",
           "intro": "",
           "introList": [
             "TrueChain（トウルー チャイナ）アカデミー会員特別招聘顧問",
@@ -412,7 +411,7 @@
           ]
         },
         {
-          "name": "沈寓実",
+          "name": "Yushi Shen",
           "introList": [
             "清華大学電子工程学士",
             "アメリカカリフォルニア州ンディエゴ支部電子コンピューター修士及び博士",

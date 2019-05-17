@@ -266,7 +266,7 @@
           ]
         },
         {
-          "name": "Yang Liu",
+          "name": "Dylan Liu",
           "post": "CTO",
           "imgSrc": "liuyang",
           "introList": [
@@ -307,15 +307,14 @@
           ]
         },
         {
-          "name": "Biyun Zeng",
+          "name": "Neol Zeng",
           "post": "Senior R&D Director",
           "imgSrc": "biyun",
           "introList": [
-            "시안공업대학 학사 졸업",
-            "C언어 개발 경력 8년",
-            "다년간의 해외 근무 경력",
-            "DiXiang Technology 스마트홈 연구개발 및 생산 담당했음",
-            "VisualTouring 연구개발 및  운영 담당했음"
+            "Algorithmic Engineer",
+            "Eight years of C language development experiences",
+            "Having many years of overseas R&D experiences",
+            "Former Director of R&D and Operation of Well-known Artificial Intelligence Projects"
           ]
         },
         {

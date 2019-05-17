@@ -281,7 +281,7 @@
           ]
         },
         {
-          "name": "Yang Liu",
+          "name": "Dylan Liu",
           "post": "CTO",
           "imgSrc": "liuyang",
           "introList": [
@@ -291,7 +291,7 @@
           ]
         },
         {
-          "name": "Qingsong Zhou",
+          "name": "Kenny Zhou",
           "post": "Product Team Lead",
           "imgSrc": "qingsong",
           "intro": "",
@@ -331,15 +331,14 @@
           ]
         },
         {
-          "name": "Biyun Zeng",
+          "name": "Neol Zeng",
           "post": "Senior R&D Director",
           "imgSrc": "biyun",
           "introList": [
-            "Bachelor degree in Xi ‘an Polytechnic University",
-            "8 years of experience in C language development",
-            "Many years of overseas working experience",
-            "Led the R&D and production of DiXiang smart home",
-            "Was the director of development and operation of VisualTouring"
+            "Algorithmic Engineer",
+            "Eight years of C language development experiences",
+            "Having many years of overseas R&D experiences",
+            "Former Director of R&D and Operation of Well-known Artificial Intelligence Projects"
           ]
         },
         {

@@ -284,221 +284,209 @@
     },
     "banner": "及来自全球的2000+开发人员",
     "technology": {
-      "title": "研究和开发者社区",
+      "title": "Research and Developers Community",
       "list": [{
-          "name": "张剑南",
-          "post": "首席执行官",
+          "name": "Eric Zhang",
+          "post": "CEO",
           "imgSrc": "jiannan",
-          "intro": "初链联合创始人及CEO，牛津大学计算机硕士，曾在欧洲核子研究组织CERN研究分布式系统，并创立全球最大，覆盖地域最广的Hacker社区--Dorahacks。",
           "introList": [
-            "牛津大学计算机硕士",
-            "Dorahacks创始人",
-            "研究人员，欧洲核子研究组织CERN（2013）"
+            "M.S. In Computer Science, Oxford University",
+            "Founder of DoraHacks ",
+            "Researcher, CERN Open Lab (2013)"
           ]
         },
         {
-          "name": "刘洋",
+          "name": "Dylan Liu",
           "post": "CTO",
           "imgSrc": "liuyang",
           "introList": [
-            "清华大学学士、硕士",
-            "十多年开发和系统架构经验",
-            "密码学和算法专家"
+            "B.S. & M.S. Computer Science, Tsinghua University",
+            "10+years experience in development and system architecture",
+            "Cryptography and algorithms expert"
           ]
         },
         {
-          "name": "张翰",
-          "post": "研究团队负责人",
-          "imgSrc": "zhanghan",
-          "intro": "初链大中华区CTO，从事IT行业20年，在互联网产品设计开发和软件项目管理方面有丰富的经验。 “财火火”的技术合伙人，负责新产品的研发，服务器集群和高并发处理。",
+          "name": "Hendrik C",
+          "post": "Lead Researcher",
+          "imgSrc": " ",
+          "intro": " ",
           "introList": [
-            "澳大利亚新南威尔士大学数学系博士",
-            "曾任澳大利亚奥林匹克数学国家队教练",
-            "中国科学院高性能计算研究团队研究员",
-            "在区块链底层共识机制，密码学，安全领域拥有丰富的研究经验和实践"
+            "PhD in mathematics",
+            "Has ample experience in researching and practicing blockchain technologies, cryptography and security."
           ]
         },
         {
-          "name": "周庆松",
-          "post": "产品团队负责人",
+          "name": "Kenny Zhou",
+          "post": "Product Team Lead",
           "imgSrc": "qingsong",
           "intro": "",
           "introList": [
-            "原臻橙医生联合创始人&CTO",
-            "十多年大型分布式系统和架构及产品经验"
+            "Former co-founder &CTO at the Honest Doctor ",
+            "More than 10 years of experience in large-scale distributed systems and architectures and products"
           ]
         },
         {
-          "name": "蔡振川",
-          "post": "前端产品负责人",
+          "name": "Felix Cai",
+          "post": "Front - end Engineering Lead",
           "imgSrc": "zhenchuan",
-          "intro": "初链前端产品负责人，也是前端极客，毕业于西安交通大学少年班。",
           "introList": [
-            "毕业于西安交通大学少年班",
-            "前端极客",
-            "2017年极客社区Dorahacks比赛第一名"
+            "Youth Class, Xi’an Jiaotong University",
+            "Front - end Hacker",
+            "First Prize, DoraHacks Autumn@Xi An 2017"
           ]
         },
         {
-          "name": "田明",
-          "post": "技术整合负责人",
+          "name": "Ice Ming",
+          "post": "Integration lead",
           "imgSrc": "tianming",
-          "intro": "Golang开发工程师，拥有10多年c/c++开发经验，负责过大型项目，学习能力强,有完整的实时数据库产品及数字货币交易平台产品的项目经验，曾开发过bitcoin和ethereum 钱包。",
           "introList": [
-            "Golang 开发工程师",
-            "10多年c/c++开发经验",
-            "实时数据库产品及数字货币交易平台产品项目经验",
-            "曾开发过比特币和以太坊钱包"
+            "10+years experience in c/c++ development",
+            "Real time database products and digital currency transaction platform products expert",
+            "Participated in developing bitcoin and ethereum wallets"
           ]
         },
         {
-          "name": "尹毅（法师）",
-          "post": "安全顾问",
+          "name": "Seay (Wizard)",
+          "post": "Security Coordinator",
           "imgSrc": "fashi",
-          "intro": "初链安全顾问，《代码审计：企业版网络代码安全架构》Seay源代码安全审计系统作者，以及着名安全博客“cnseay.com”的博客作者。 他曾任职于阿里巴巴安全部门，曾担任阿里攻防实验室的领导者，苏博格技术的合作伙伴。 Seay拥有十多年的安全攻防经验，曾为多家知名企业服务。",
           "introList": [
-            "阿里巴巴攻击和安全实验室领导",
-            "《代码审计：企业版网络代码安全架构》作者",
-            "著名安全博客cnseay.com博主"
+            "Lead, Alibaba attack and security lab",
+            "Author of “Code Audit: Architecture of Enterprise Web Security”",
+            "Host of well-known security blog cnseay.com"
           ]
         },
         {
-          "name": "曾碧云",
-          "post": "高级研发总监",
+          "name": "Neol Zeng",
+          "post": "Senior R&D Director",
           "imgSrc": "biyun",
           "introList": [
-            "西安工业大学本科",
-            "8年C语言开发经验",
-            "多年海外工作经历",
-            "曾负责主导迪想科技智能家居研发生产",
-            "曾任拓视觉研发运营主管"
+            "Algorithmic Engineer",
+            "Eight years of C language development experiences",
+            "Having many years of overseas R&D experiences",
+            "Former Director of R&D and Operation of Well-known Artificial Intelligence Projects"
           ]
         },
         {
-          "name": "刘朋",
-          "post": "技术布道师",
+          "name": "Brian Liu",
+          "post": "Blockchain evangelist",
           "imgSrc": "liupeng",
           "introList": [
-            "北京大学硕士，《趣说区块链》作者",
-            "10年以上软件行业开发、团队教练和团队管理经验",
-            "曾就职于IBM中国开发中心和爱尔兰国家软件工程研究中心"
+            "MSc and B.S from Peking University",
+            "Author of \"Blockchain: 101\"",
+            "10+ working year experience in software development, leading and coaching high performing teams",
+            "Worked in IBM China Development Lab (CDL) High Performance Computing team and \"LERO - The Irish Software Engineering Research Center\" Distributed Systems research group"
           ]
         }
       ]
     },
     "business": {
-      "title": "发展和运营社区",
+      "title": "Community and development",
       "list": [{
-          "name": "程小永",
-          "post": "首席战略官",
+          "name": "James Cheng",
+          "post": "Head of Strategic Development",
           "imgSrc": "xiaoyong",
-          "intro": "初链联合创始人&首席战略官，连续创业者，中国云体系产业创新战略联盟执行理事，长安俱乐部青年领袖成员。",
           "introList": [
-            "清华大学兼职研究员，连续创业者",
-            "中国云体系产业创新战略联盟执行理事",
-            "泰国数字沙滩协会外国专家成员"
+            "Part-time research staff of Tsinghua University, Serial entrepreneur",
+            "Executive Committee of China Cloud System Pioneer Strategic Alliance",
+            "Foreign Expert of Thailand Crypto Beach Association"
           ]
         },
         {
-          "name": "林大亮",
-          "post": "首席发展官",
+          "name": "Larry Lin",
+          "post": "Head of Business Development",
           "imgSrc": "daliang",
-          "intro": "初链联合创始人、首席发展官、互联网营销和社区运营专家，曾负责“百度百科”的运营（中国最大的共建社区）。拥有10年的数字广告和互联网行业经验，也是互联网营销行业畅销书作者。",
           "introList": [
-            "互联网营销和社区运营专家",
-            "曾负责百度百科运营",
-            "拥有十年数字广告和互联网行业经验"
+            "Internet marketing community operation expert",
+            "Baidu encyclopedia operation",
+            "10+years of digital advertising and internet industry"
           ]
         },
         {
           "name": "Jimmy Zhao",
-          "post": "TrueChain全球战略合伙人",
+          "post": "TrueChain Global Strategic Partner",
           "imgSrc": "jimmy",
           "introList": [
-            "ZB集团高管兼ZB欧洲站ZBX创始人",
-            "Cryptonord 创始人",
-            "Y investment 合伙人",
-            "ChainX 创始人",
-            "Jimmy掌管一万比特币规模的基金",
-            "欧洲知名的区块链行业核心人物"
+            "ZB group executive and founder of ZBX (ZB Europe)",
+            "Founder of Cryptonord",
+            "Partner of Y investment",
+            "Founder of ChainX",
+            "Runs a 10,000-bitcoin fund",
+            "A well-known core figure in the blockchain industry in Europe"
           ]
         },
         {
           "name": "Hillary Nguyen",
-          "post": "初链越南合伙人",
+          "post": "TrueChain Vietnamese Partner",
           "imgSrc": "hillarynguyen",
-          "intro": "阿尔法鲸资本管理合伙人，区块链、数字资产管理战略家、顾问、社区代言人。Hillary Nguyen拥有出色的管理才能，在区块链新时代为新兴项目提供有效的管理方案。",
           "introList": [
-            "阿尔法鲸资本管理合伙人",
-            "区块链、数字资产管理战略家、顾问、社区代言人",
-            "Hillary Nguyen拥有出色的管理才能，在区块链新时代为新兴项目提供有效的管理方案"
+            "Managing partner of Alphawhale Capital.",
+            "A Strategist, Advisor, Communicator, Consultant, community influencer and Speaker in Blockchain, Digital asset management.",
+            "With diverse set of skills, Hillary executes her management role effectively into the new foundation of company in revolution."
           ]
         },
         {
-          "name": "Paulas Pham",
-          "post": "初链越南合伙人",
+          "name": "Paulus Pham",
+          "post": "TrueChain Vietnamese Partner",
           "imgSrc": "paulaspham",
-          "intro": "区块链社区管理专业人士、BitGreen Candles社区经理，Victory Investment Capital社区经理。Vietnam Crypto Community社区经理。",
           "introList": [
-            "区块链社区管理专业人士",
-            "越南各主流区块链社区运营负责人"
+            "Blockchain community management professional ",
+            "Managers of some major blockchain user community in Vietnam"
           ]
         },
         {
-          "name": "秋宣宇(秋婷南)",
-          "post": "初链韩国战略合伙人",
+          "name": "Sun-Woo Chu",
+          "post": "TrueChain Strategic partner of Korea",
           "imgSrc": "qiutingnan",
           "introList": [
-            "韩国国际金融学会副会长",
-            "韩国 Element CEO",
-            "前韩国 Money Today 核心战略部 亚洲事务负责人",
-            "前韩国 One Asia 总编",
-            "前韩国 Asia Today 多媒体局/国际部 总监"
+            "Vice President, Korea International Finance Association",
+            "Element Founder & CEO",
+            "former Money Today Innovation Strategy Team Asia Chief",
+            "former One Asia Editor-in-Chief",
+            "former Asia Today Multimedia Desk Editor/International Editor"
           ]
         },
         {
-          "name": "王萍萍",
-          "post": "初链韩国社区首席代表",
+          "name": "Pingping Wang",
+          "post": "TrueChain Strategic partner of Korea",
           "imgSrc": "wangpingping",
           "introList": [
-            "现 Element 理事/中国事业本部长",
-            "前 Money Today 核心战略部 记者",
-            "前 One Asia 记者",
-            "前 Asia Today 多媒体局/国际部 记者"
+            "Element Director, China Business",
+            "Money Today Innovation Strategy Team Reporter",
+            "One Asia Reporter",
+            "Asia Today Multimedia Desk & International Reporter"
           ]
         }
       ]
     },
     "consultant": {
-      "title": "顾问",
+      "title": "Advisors",
       "list": [
         {
-          "name": "林垂宙",
+          "name": "Lin ChuiZhou",
           "intro": "",
           "introList": [
-            "初链特聘院士顾问",
-            "香港工程科学院院士",
-            "瑞典皇家工程科学院院士",
-            "曾担任香港科技大学副校长、台湾工业技术研究院院长",
-            "曾受聘为新加坡国立大学、清华大学等多所海内外知名学府的客座教授"
+            "Academician consultant of TrueChain",
+            "Academician of the Royal Swedish Academy of Sciences and Hong Kong Academy of Engineering Sciences",
+            "Former vice — principal of Hong Kong University of Science and technology and a former president of Industrial Technology Research Institute.",
+            "Former Visiting professor of National University of Singapore,Tsinghua University, University of Science and Technology of China, Shanghai Jiaotong University and many prestigious Institutions at home and abroad."
           ]
         },
         {
-          "name": "沈寓实",
-          "intro": "中国云体系产业创新战略联盟秘书长，清华大学电子工程学士，美国加州大学圣地亚哥分校电子计算机硕士和博士。国家千人计划评审专家，清华大学等多所高校研究员。曾担任微软公司战略顾问、中国区云计算政府事务和商务拓展负责人，2006年到2012年期间工作于微软总部 ，任高级软件构架师。",
+          "name": "Yushi Shen",
           "introList": [
-            "清华大学电子工程学士",
-            "美国加州大学圣地亚哥分校电子计算机硕士和博士",
-            "国家千人计划评审专家",
-            "清华大学等多所高校研究员",
-            "微软公司战略顾问"
+            "The Secretary-General of China Cloud System Pioneer Strategic Alliance    ",
+            "BS, Electronic Engineering, Tsinghua University",
+            "MA, PH.D, computer science, University of California, San Diego",
+            "Panelist for China’s “the Thousand Talents Plan”",
+            "Researcher of Tsinghua and other prestigious universities",
+            "Strategic consultant for Microsoft"
           ]
         },
         {
           "name": "PUNTIL JONGJITTRAKOON",
           "intro": "",
           "introList": [
-            "泰国数字沙滩协会会长"
+            "President of Thailand Crypto Beach Association"
           ]
         }
       ]
