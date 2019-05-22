@@ -77,9 +77,9 @@ export default {
   mounted () {
     const lang = getStore('lang')
     if (lang) {
-      // this.changeLanguage(lang) //会触发每个页面重新渲染,并无必要
+      this.changeLanguage(lang) // 会触发每个页面重新渲染,并无必要
     } else {
-      // this.setLanguage()
+      this.setLanguage()
     }
   },
   head () {
@@ -115,14 +115,15 @@ export default {
   },
   methods: {
     setLanguage () {
-      apiGetIpInfo({
-        /* eslint-disable-next-line */
-        ip: returnCitySN.cip
-      }).then(x => {
-        const { country } = JSON.parse(x.data.data).data
-        setStore('lang', this.countrys[country] || 'en')
-        this.changeLanguage(getStore('lang'))
-      })
+      setStore('lang', 'en')
+      // apiGetIpInfo({
+      //   /* eslint-disable-next-line */
+      //   ip: returnCitySN.cip
+      // }).then(x => {
+      //   const { country } = JSON.parse(x.data.data).data
+      //   setStore('lang', this.countrys[country] || 'en')
+      //   this.changeLanguage(getStore('lang'))
+      // })
     },
     goHome () {
       const { lang } = this.$route.params

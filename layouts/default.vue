@@ -107,14 +107,14 @@
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
 import { apiGetIpInfo } from '~/api'
-import { setStore, getStore } from '~/util';
+import { setStore, getStore } from '~/util'
 import baiduAnalyse from '@/middleware/baiduAnalyse'
 const indexList = [
   // { path: 'https://github.com/truechain', tag: 'git' },
   // { path: 'http://group.truechain.pro/', tag: 'blog' },
   { path: 'team', tag: 'team' },
   { path: 'news', tag: 'news' },
-  { path: 'join', tag: 'join' },
+  { path: 'join', tag: 'join' }
   // { path: 'node', tag: 'node' },
   // { path: 'bugfinder', tag: 'reward' },
 ]
@@ -136,20 +136,20 @@ export default {
     baiduAnalyse()
     const lang = getStore('lang')
     // 初始化根据ip设置语言，不进行本地获取
-    // if(lang) {
-    //   this.changeLanguage(lang) //会触发每个页面重新渲染,并无必要
-    // } else {
+    if (lang) {
+      this.changeLanguage(lang) // 会触发每个页面重新渲染,并无必要
+    } else {
       this.setLanguage()
-    // }
-    setTimeout(()=>{
-      let existEl = document.getElementById("page_stat")
-      if(existEl){ document.body.removeChild( existEl ) }
-      let scriptEl = document.createElement("script")
-      scriptEl.type = "text/javascript"
-      scriptEl.id = "page_stat"
-      scriptEl.src = "//s19.cnzz.com/z_stat.php?id=1274893188&web_id=1274893188";
+    }
+    setTimeout(() => {
+      const existEl = document.getElementById('page_stat')
+      if (existEl) { document.body.removeChild(existEl) }
+      const scriptEl = document.createElement('script')
+      scriptEl.type = 'text/javascript'
+      scriptEl.id = 'page_stat'
+      scriptEl.src = '//s19.cnzz.com/z_stat.php?id=1274893188&web_id=1274893188'
       document.body.appendChild(scriptEl)
-    },200)
+    }, 200)
   },
   head () {
     return {
@@ -159,7 +159,7 @@ export default {
         { hid: 'home-description', name: 'description', content: this.$t('home.head.description') }
       ],
       script: [
-        { src: '//pv.sohu.com/cityjson?ie=utf-8' },
+        { src: '//pv.sohu.com/cityjson?ie=utf-8' }
       ]
     }
   },
@@ -184,14 +184,16 @@ export default {
   },
   methods: {
     setLanguage () {
-      apiGetIpInfo({
-        /* eslint-disable-next-line */
-        ip: returnCitySN.cip
-      }).then(x => {
-        const { country } = JSON.parse(x.data.data).data
-        setStore('lang', this.countrys[country] || 'en')
-        this.changeLanguage(getStore('lang'))
-      })
+      setStore('lang', 'en')
+      this.changeLanguage('en')
+      // apiGetIpInfo({
+      //   /* eslint-disable-next-line */
+      //   ip: returnCitySN.cip
+      // }).then(x => {
+      //   const { country } = JSON.parse(x.data.data).data
+      //   setStore('lang', this.countrys[country] || 'en')
+      //   this.changeLanguage(getStore('lang'))
+      // })
     },
     goHome () {
       const { lang } = this.$route.params
@@ -253,7 +255,6 @@ export default {
   }
 }
 </script>
-
 
 <style lang="stylus" scpoed>
 @import '~@/assets/stylus/index.styl';
@@ -527,7 +528,6 @@ nav
     text-align center
   .container-app-footer-down
     padding-left 0px
-
 
 @media screen and (max-width 860px)
   .container-app-footer-down-ming
