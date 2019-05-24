@@ -213,6 +213,7 @@
     },
     "partner": "PARTNER",
     "institution": "INVESTORS",
+    "exchanges": "EXCHANGES",
     "news": {
       "title": "NEWS",
       "technical": "Technical trends",

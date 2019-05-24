@@ -92,6 +92,13 @@
           v-for="index in 6",
         )
           img(:src="require(`@/assets/images/partner${index}.png`)")
+  .home-investment(v-if="$i18n.locale !== 'zh'")
+    .page-title {{ $t('home.exchanges') }}
+    .con
+      .co(
+          v-for="name in exchanges",
+        )
+          img(:src="`https://qiniu.truescan.net/exchange/${name}.png`")
   .home-news
     .page-title {{ $t('home.adVideoTitle') }}
     .ad-video-con
@@ -142,6 +149,10 @@ import { setStore, getStore } from '~/util'
 import RoadMap from '~/components/RoadMap'
 import RoadMapMobile from '~/components/RoadMapMobile'
 
+const exchanges = [
+  'okex', 'zb', 'zbx', 'bithumb', 'bw', 'hitbtc', 'yoex'
+]
+
 export default {
   asyncData ({ req }) {
     return {
@@ -160,7 +171,8 @@ export default {
         autoplay: false,
         contextmenu: [],
         player: null
-      }
+      },
+      exchanges
     }
   },
   data () {
