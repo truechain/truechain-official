@@ -29,7 +29,7 @@ div.page
       .down-btn(v-if="ua !== 'android'")
         a(
           target="_blank",
-          href="https://testflight.apple.com/join/ByXhtU54",
+          href="itms-services://?action=download-manifest&url=https://qiniu.truescan.net/file/true-wallet.plist",
           @click="onDownIos"
         )
           svg(
