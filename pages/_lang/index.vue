@@ -133,6 +133,7 @@
             href="https://qiniu.truescan.net/wallet/pdf/exchange.pdf"
             target="_blank"
           ) {{ $t('notice.link') }}
+          span.address {{ $t('notice.contract') }} 0xA4d17AB1eE0efDD23edc2869E7BA96B89eEcf9AB
           span.address {{ $t('notice.address') }} 0x6AC371048903B76B6D969c575Bc9d9bf28139B76
           span.qrcode {{ $t('notice.qrcode') }}
             img(src="@/assets/images/exchangeQR_true.png")
@@ -882,7 +883,7 @@ export default {
   align-items center
   background-color #000b
   >div
-    width 600px
+    width 620px
     max-width 90%
     max-height 80vh
     border 2px solid #fff
