@@ -13,18 +13,24 @@
                 to="discovery"
               ) {{ $t('navigation.nav') }}
               li.container-app-header-nav-langli
-                Dropdown(@on-click="jumpTo", trigger="click")
+                Dropdown(@on-click="jumpTo", trigger="hover")
                   Button(type="primary") {{ $t(`nav.deer`) }}
                     Icon(type="arrow-down-b")
                   DropdownMenu(slot="list")
+                    DropdownItem(
+                      name="http://dev.truedapp.net/"
+                      ) {{ $t(`nav.developer`) }}
                     template(v-if="$t('language') === '简体中文'")
                       DropdownItem(
-                        name="http://dev.truedapp.net/"
-                        ) {{ $t(`nav.developer`) }}
+                          name="http://doc.truechain.pro/center-en/1091414"
+                        ) {{ $t(`nav.document`) }}
                     template(v-else)
                       DropdownItem(
-                        name="http://dev.truechain.pro/"
-                        ) {{ $t(`nav.developer`) }}
+                          name="http://doc.truechain.pro/center/1096543/"
+                        ) {{ $t(`nav.document`) }}
+                    DropdownItem(
+                      name="https://stellar.truechain.pro/"
+                    ) Stellar
                     DropdownItem(
                       name="https://www.truescan.net/"
                     ) TrueScan
