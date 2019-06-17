@@ -670,8 +670,9 @@
     ],
     "link": "Click here for the detailed instructions",
     "contract": "The ERC20 TRUE token contract address is: ",
-    "address": "The officially assigned unique address is: ",
+    "address": "The officially assigned unique address for collection is: ",
     "qrcode": "and the QR code of the address: ",
-    "app": "Please download the TRUE Wallet from the official site: "
+    "app": "Please download the TRUE Wallet from the official site: ",
+    "safety":"For the safety of your assets, please only buy TRUE token from reputable source. The old ERC20 TRUE token contract address is: 0xA4d17AB1eE0efDD23edc2869E7BA96B89eEcf9AB . DO NOT TRANSFER TO THIS ADDRESS!!!"
   }
 }

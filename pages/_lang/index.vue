@@ -133,12 +133,13 @@
             href="https://qiniu.truescan.net/wallet/pdf/exchange.pdf"
             target="_blank"
           ) {{ $t('notice.link') }}
-          span.address {{ $t('notice.contract') }} 0xA4d17AB1eE0efDD23edc2869E7BA96B89eEcf9AB
+          //- span.address {{ $t('notice.contract') }} 0xA4d17AB1eE0efDD23edc2869E7BA96B89eEcf9AB
           span.address {{ $t('notice.address') }} 0x6AC371048903B76B6D969c575Bc9d9bf28139B76
           span.qrcode {{ $t('notice.qrcode') }}
             img(src="@/assets/images/exchangeQR_true.png")
           span {{ $t('notice.app') }}
             a(href="https://dapp.truedapp.net/appdown/" target="_blank") https://dapp.truedapp.net/appdown/
+          span {{ $t('notice.safety') }}
 </template>
 
 <script>
@@ -851,13 +852,13 @@ export default {
     border solid 1px $font-dark
     margin 0 20px
     wh(300px, 120px)
-  
+
 .home-sea-modal
   position fixed
   z-index 1100
   top 0
   left 0
-  text-align center 
+  text-align center
   width 100%
   height 100vh
   display flex
@@ -875,7 +876,7 @@ export default {
   z-index 1100
   top 0
   left 0
-  text-align center 
+  text-align center
   width 100%
   height 100vh
   display flex

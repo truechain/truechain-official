@@ -156,7 +156,8 @@ export default {
       title: this.$t('home.head.title'),
       meta: [
         { hid: 'home-keyword', name: 'keywords', content: this.$t('home.head.keywords') },
-        { hid: 'home-description', name: 'description', content: this.$t('home.head.description') }
+        { hid: 'home-description', name: 'description', content: this.$t('home.head.description') },
+        { hid: 'home-googleVer', name: 'google-site-verification', content: this.$t('home.head.googleVer') },
       ],
       script: [
         { src: '//pv.sohu.com/cityjson?ie=utf-8' }
