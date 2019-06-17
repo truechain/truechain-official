@@ -12,20 +12,36 @@
                 tag="li",
                 to="discovery"
               ) {{ $t('navigation.nav') }}
-              template(v-if="$t('language') === '简体中文'")
-                li(
-                    @click="jumpTo('http://dev.truedapp.net/')"
-                  ) {{ $t(`nav.developer`) }}
-              template(v-else)
-                li(
-                    @click="jumpTo('http://dev.truechain.pro/')"
-                  ) {{ $t(`nav.developer`) }}
+              li.container-app-header-nav-langli
+                Dropdown(@on-click="jumpTo", trigger="click")
+                  Button(type="primary") {{ $t(`nav.deer`) }}
+                    Icon(type="arrow-down-b")
+                  DropdownMenu(slot="list")
+                    template(v-if="$t('language') === '简体中文'")
+                      DropdownItem(
+                        name="http://dev.truedapp.net/"
+                        ) {{ $t(`nav.developer`) }}
+                    template(v-else)
+                      DropdownItem(
+                        name="http://dev.truechain.pro/"
+                        ) {{ $t(`nav.developer`) }}
+                    DropdownItem(
+                      name="https://www.truescan.net/"
+                    ) TrueScan
+              //- template(v-if="$t('language') === '简体中文'")
+              //-   li(
+              //-       @click="jumpTo('http://dev.truedapp.net/')"
+              //-     ) {{ $t(`nav.developer`) }}
+              //- template(v-else)
+              //-   li(
+              //-       @click="jumpTo('http://dev.truechain.pro/')"
+              //-     ) {{ $t(`nav.developer`) }}
               //- li(
               //-     @click="jumpTo('http://trueglobal.pro')"
               //-   ) TRUE GLOBAL
-              li(
-                  @click="jumpTo('https://www.truescan.net')"
-                ) TrueScan
+              //- li(
+              //-     @click="jumpTo('https://www.truescan.net')"
+              //-   ) TrueScan
               //- li(
               //-     @click="jumpTo('http://www.truewallet.net')"
               //-   ) {{ $t(`nav.webwallet`) }}
@@ -213,6 +229,9 @@ export default {
       } else {
         this.$router.push(path)
       }
+    },
+    huhu () {
+      alert('21323');
     },
     toggleMenu () {
       this.closeLangsSelector()
