@@ -22,11 +22,11 @@
                       ) {{ $t(`nav.developer`) }}
                     template(v-if="$t('language') === '简体中文'")
                       DropdownItem(
-                          name="http://doc.truechain.pro/center-en/1091414"
+                          name="http://doc.truechain.pro/center/1096543/"
                         ) {{ $t(`nav.document`) }}
                     template(v-else)
                       DropdownItem(
-                          name="http://doc.truechain.pro/center/1096543/"
+                          name="http://doc.truechain.pro/center-en/1091414"
                         ) {{ $t(`nav.document`) }}
                     DropdownItem(
                       name="https://stellar.truechain.pro/"
@@ -179,7 +179,7 @@ export default {
       meta: [
         { hid: 'home-keyword', name: 'keywords', content: this.$t('home.head.keywords') },
         { hid: 'home-description', name: 'description', content: this.$t('home.head.description') },
-        { hid: 'home-googleVer', name: 'google-site-verification', content: this.$t('home.head.googleVer') },
+        { hid: 'home-googleVer', name: 'google-site-verification', content: this.$t('home.head.googleVer') }
       ],
       script: [
         { src: '//pv.sohu.com/cityjson?ie=utf-8' }
@@ -237,7 +237,7 @@ export default {
       }
     },
     huhu () {
-      alert('21323');
+      alert('21323')
     },
     toggleMenu () {
       this.closeLangsSelector()
