@@ -104,6 +104,7 @@
     .ad-video-con
       no-ssr(placeholder="Loading...")
         d-player(:options="dplayerOpts" ref="dplayer")
+  .home-float(@click="toggleNoticeModal()")
   Modal(v-model="modal2" width="600")
     div
       div
@@ -211,9 +212,9 @@ export default {
       if (!sessionStorage.seenDiscoveryModal) {
         this.toggleDiscoveryModal(true)
       }
-      if (!sessionStorage.showNotice) {
-        this.toggleNoticeModal(true)
-      }
+      // if (!sessionStorage.showNotice) {
+      //   this.toggleNoticeModal(true)
+      // }
     }, 500)
     this.$nextTick(x => {
       this.player = this.$refs.dplayer.dp
@@ -264,7 +265,11 @@ export default {
       }
     },
     toggleNoticeModal (isShow) {
-      this.showNotice = isShow
+      // this.showNotice = isShow
+      // if (!isShow) {
+      //   sessionStorage.showNotice = true
+      // }
+      this.showNotice = !this.showNotice
       if (!isShow) {
         sessionStorage.showNotice = true
       }
@@ -689,6 +694,15 @@ export default {
         color $font-dark
         line-height 20px
         margin-top 15px
+.home-float
+  position fixed
+  right 2%
+  bottom 5%
+  width 100px
+  height 100px
+  background-repeat no-repeat
+  background-image url("~@/assets/images/exchange.png")
+
 .home-roadmap
   background-color white
   padding 100px 20px 0px
