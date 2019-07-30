@@ -43,20 +43,8 @@
     "miningGuideText":"TrueChain挖矿教程",
     "mingBtns":[
       {
-        "text":"docker版",
-        "link":"https://qiniu.truescan.net/pdf/ming-version-docker-zh.pdf"
-      },
-      {
-        "text":"linux版",
-        "link":"https://qiniu.truescan.net/pdf/ming-version-linux-zh.pdf"
-      },
-      {
-        "text":"win版",
-        "link":"https://qiniu.truescan.net/pdf/ming-version-windows-zh.pdf"
-      },
-      {
-        "text":"mac版",
-        "link":"https://qiniu.truescan.net/pdf/ming-version-mac-zh.pdf"
+        "text":"Mining",
+        "link":"http://doc.truechain.pro/center/1098768"
       }
     ]
   },
