@@ -153,7 +153,7 @@ import RoadMap from '~/components/RoadMap'
 import RoadMapMobile from '~/components/RoadMapMobile'
 
 const exchanges = [
-  'okex', 'zb', 'zbx', 'bithumb', 'bw', 'hitbtc', 'yoex', 'bn'
+  'bn', 'okex', 'zb', 'bithumb', 'bw', 'hitbtc'
 ]
 
 export default {
