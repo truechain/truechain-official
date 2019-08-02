@@ -82,7 +82,7 @@
     .page-title {{ $t('home.partner') }}
     .con
       .co(
-          v-for="index in 6",
+          v-for="index in 7",
       )
         img(:src="require(`@/assets/images/p-logo${index}.png`)")
   .home-investment
@@ -153,7 +153,7 @@ import RoadMap from '~/components/RoadMap'
 import RoadMapMobile from '~/components/RoadMapMobile'
 
 const exchanges = [
-  'okex', 'zb', 'zbx', 'bithumb', 'bw', 'hitbtc', 'yoex'
+  'okex', 'zb', 'zbx', 'bithumb', 'bw', 'hitbtc', 'yoex', 'bn'
 ]
 
 export default {
@@ -169,7 +169,7 @@ export default {
       dplayerOpts: {
         video: {
           // url: '/m1.mp4'
-          url: '',
+          url: ''
         },
         autoplay: false,
         contextmenu: [],
@@ -192,12 +192,12 @@ export default {
     }
   },
   mounted () {
-    const stopTime = 1546617600000;
+    const stopTime = 1546617600000
     // debugger
-    if(+new Date() < stopTime) {
-      const isShowHappy = getStore('isShowHappy');
-      if(!isShowHappy) {
-        this.modal2 = true;
+    if (+new Date() < stopTime) {
+      const isShowHappy = getStore('isShowHappy')
+      if (!isShowHappy) {
+        this.modal2 = true
         setStore('isShowHappy', 'true')
       }
     }
@@ -206,7 +206,7 @@ export default {
     } else {
       setTimeout(() => {
         window.particlesJS('particles-js', liziConfig)
-      }, 500);
+      }, 500)
     }
     setTimeout(() => {
       if (!sessionStorage.seenDiscoveryModal) {
@@ -225,19 +225,19 @@ export default {
         }
       }
     })
-    setTimeout(()=>{
-      let locale = this.$store.state.locale
+    setTimeout(() => {
+      const locale = this.$store.state.locale
       let videoUrl = 'https://qiniu.truescan.net/video/ad-zh.mp4'
-      if ( locale == 'ko' ) {
+      if (locale == 'ko') {
         videoUrl = 'https://qiniu.truescan.net/video/ad-ko.mp4'
       }
-      if ( locale == 'vn' ) {
+      if (locale == 'vn') {
         videoUrl = 'https://qiniu.truescan.net/video/ad-vn.mp4'
       }
       this.player.switchVideo({
         url: videoUrl
       })
-    },300)
+    }, 300)
   },
   head: {
     script: [
