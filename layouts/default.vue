@@ -69,7 +69,7 @@ export default {
   beforeCreate () {
     const { $route: { fullPath, params }, $router } = this;
     if (!(params && params.lang)) {
-      this.$router.push('/en/discovery'); // 页面加载时跳转
+      $router.push('/discovery')
     }
   },
   mounted () {
