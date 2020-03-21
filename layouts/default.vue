@@ -66,6 +66,12 @@ export default {
     AppAndroid,
     AppIos
   },
+  beforeCreate () {
+    const { $route: { fullPath, params }, $router } = this;
+    if (!(params && params.lang)) {
+      this.$router.push('/en/discovery'); // 页面加载时跳转
+    }
+  },
   mounted () {
     baiduAnalyse()
     const { $route: { fullPath, params }, $router } = this;

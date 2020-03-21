@@ -175,6 +175,7 @@ export default {
     font-size 30px
     font-weight 600
     color #2870bc
+    text-align center
   span
     position absolute
     bottom 20px
