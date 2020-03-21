@@ -8,6 +8,7 @@
               i(class="icon font_family icon-truelogo")
           .container-app-header-nav
             ul(:style="{'height': menuIsOpen ? `${50 * (indexList.length + 1)}px` : '0'}")
+              li(@click="onJump()") {{ $t(`nav.homepage`) }}
               nuxt-link(
                 tag="li",
                 to="discovery"
@@ -150,9 +151,16 @@ export default {
     setErweima () {
       this.isWechat = !this.isWechat
     },
-    onJump (path) {
-      if (!path) return
-      window.open(path)
+    onJump () {
+      const { lang } = this.$route.params
+      const trueChainUrl = 'http://39.98.240.34:6016/'
+      if (lang === 'zh') {
+        window.open(trueChainUrl + 'cn')
+      } else if (lang === 'ko') {
+        window.open(trueChainUrl + 'kr')
+      } else {
+        window.open(trueChainUrl);
+      }
     },
     jumpTo (path) {
       if (/http[s]?:\/\//.test(path)) {

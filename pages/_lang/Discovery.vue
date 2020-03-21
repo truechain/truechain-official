@@ -165,7 +165,7 @@ export default {
       content '\e64f'
 .navi-count-down
   // height 350px
-  height 200px
+  height 400px
   display flex
   flex-direction column
   justify-content center

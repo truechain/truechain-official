@@ -236,7 +236,8 @@
     "node": "NODE",
     "reward": "BOUNTY",
     "webwallet":"WALLET",
-    "english": "EN"
+    "english": "EN",
+    "homepage": "HOME PAGE"
   },
   "news": {
     "head": {

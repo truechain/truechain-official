@@ -245,7 +245,8 @@
     "node": "节点",
     "reward": "悬赏计划",
     "webwallet":"钱包",
-    "english": "简体中文"
+    "english": "简体中文",
+    "homepage": "首页"
   },
   "banner": {
     "title": "True轻钱包",
