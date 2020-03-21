@@ -144,8 +144,9 @@ export default {
     },
     goHome () {
       const { lang } = this.$route.params
-      const trueChainUrl = 'https://www.truechain.pro/'
+      // const trueChainUrl = 'https://www.truechain.pro/'
       // const trueChainUrl = 'http://39.98.240.34:6016/'
+      const trueChainUrl = 'http://www.truedapp.net/'
       // const trueChainUrl = 'http://localhost:4200/'
       if (lang === 'zh') {
         window.location.href = trueChainUrl + 'cn'
@@ -160,8 +161,9 @@ export default {
     },
     onJump () {
       const { lang } = this.$route.params
-      const trueChainUrl = 'https://www.truechain.pro/'
+      // const trueChainUrl = 'https://www.truechain.pro/'
       // const trueChainUrl = 'http://39.98.240.34:6016/'
+      const trueChainUrl = 'http://www.truedapp.net/'
       // const trueChainUrl = 'http://localhost:4200/'
       if (lang === 'zh') {
         window.location.href = trueChainUrl + 'cn'
