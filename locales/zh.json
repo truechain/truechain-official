@@ -711,7 +711,7 @@
     "noticeText":"• 客户端包括所有通过官方途径发布的客户端程序；\n• 提交在其他漏洞披露平台已提交的漏洞不计奖励。\n• 开放平台的第三方应用漏洞不计奖励；\n• 同一漏洞最早提交者得奖励。"
   },
   "navigation": {
-    "nav": "大航海计划",
+    "nav": "TRUE大航海计划2.0",
     "intro": [
       "解决公链最显著的问题",
       "第一代混合共识激励机制",
@@ -719,42 +719,43 @@
     ],
     "context": [
       "大航海时代，又被称作地理大发现。指在15世纪-17世纪世界各地，尤其是欧洲发起的广泛跨洋活动与地理学上的重大突破。大航海时代是人类文明进程中最重要的历史之一， 自人类完成了第一次环球旅行之后，世界在开始真正意义上连成一个整体，其历史意义尤为深远。",
-      "秉承大航海时代，勇于开拓的精神，初链TrueChain正式对外发布“大航海计划”,致力于在一年内通过技术、内容、品牌、生态和资本多维度全方面发展提速，并且官方将通过多维度的直播互动、线下路演以及全网宣传活动全面剖析未来发展规划。“大航海计划”是初链TrueChain成立后，首次对外发布的第一个阶段性的发展推进计划，大航海计划主要分为以下五个阶段：下西洋、好望角、新航道、新大陆、环球行。大航海计划对应TrueChain的Columbus进程，TrueChain的进程分为Genesis（创世）、Columbus（探索）、Republic（共和）。"
+      "秉承大航海时代，勇于开拓的精神，2020年初链TrueChain正式对外发布“大航海计划2.0 ”，并启动主网上线一周年庆祝活动和混合共识2.0升级，致力于在一年内通过技术、内容、品牌、生态和资本多维度全方面发展提速，并且官方将通过多维度的全网宣传活动全面剖析未来发展规划。“大航海计划2.0”是初链TrueChain成立后，在2019年首次大航海计划后，第二次对外发布的阶段性的发展推进计划，大航海计划2.0主要分为以下五个阶段：下西洋、好望角、新航道、新大陆、环球行。大航海计划2.0对应TrueChain的Republic进程，TrueChain的进程分为Genesis（创世）、Columbus（探索）、Republic（共和）。"
     ],
     "countdown": "TrueChain主网距离上线还有",
+    "countdown2": "主网上线一周年庆",
     "congratulate": "热烈祝贺Truechain主网上线！",
-    "title": "True大航海计划",
+    "title": "TRUE大航海计划2.0",
     "locked": "待开启",
     "stpes": [
       {
         "name": "下西洋",
-        "summary": "资产数字化 全球联动",
-        "intro": "初链TrueChain立足对接国际市场，与八维资本联合已于3月7日推出亚洲首个跨境金融科技平台Pandaq，旨在为真正有价值的商业和资产提供一站式数字资产发行技术解决方案。\n3月12日发布了亚洲第一个ST 协议PandaST Protocol 。该协议提供了一个将传统证券化资产在链上发行、流通的规范，旨在帮助企业将传统证券化投资资产合规的转移至区块链上运作，允许经过身份审核的合格投资人参与其中。"
+        "summary": "技术升级，平台联动",
+        "intro": "主网共识准备升级为DPoS+fPoW\n交易所关闭充提\n百大社区联合打Call"
       },
       {
         "name": "好望角",
-        "summary": "主网倒计时 社区共振",
-        "intro": "正式开启主网倒计时活动，并同期开展多样化的直播互动。\n初链TrueChain 将发布新版slogan。\nTrueChain Main-net将正式上线，由此作为全球最早的混合共识公链，并立足于为去中心化应用（DApp）和全球资产流通提供高性能和高安全性的底层公链支撑的下一代基础设施的TrueChain 主网将正式亮相。\n新版支持主网的TRUE钱包也将正式发布。"
+        "summary": "一周年庆,开放测试",
+        "intro": "上线一周年活动精彩纷呈\n混合共识2.0 Beta开放测试\n全新的质押挖矿开启"
       },
       {
         "name": "新航道",
-        "summary": "踏上新征程 合作共赢",
-        "intro": "基于以太坊的ERC20代币TRUE将切换到TrueChain Mainnet的主网币；\nTRUE钱包将上线多款新应用；\nTRUE将登陆新的国际交易平台；\n在海外的现实场景的流通中崭露头角。"
+        "summary": "减产启动，节点竞选",
+        "intro": "启动减产\n节点竞选\n全面开启质押挖矿"
       },
       {
         "name": "新大陆",
-        "summary": "开拓新格局 共识环球",
-        "intro": "欧洲、东亚、东南亚、美国将同期开展多项线下综合路演和宣传；\n初链TrueChain将亮相在马耳他召开的2019马耳他人工智能和区块链峰会；\n多项优质资产将选择Pandaq平台进行发布。"
+        "summary": "Defi生态，应用落地",
+        "intro": "Defi生态和应用落地"
       },
       {
         "name": "环球行",
-        "summary": "生态共同体 展望未来",
-        "intro": "\n初链TrueChain将在越南河内召开首届全球共识大会“TRUE Consensus 2019”，行业嘉宾、知名媒体、知名资本等将共赴盛会;\n发布“TRUE Future of Blockchain”生态计划和未来战略;\n即将发布《TRUE Bridge跨链白皮书》\n此后，TrueGlobal将作为初链TrueChain的生态社区组织在全球进行环球巡回路演和社区互动。"
+        "summary": "交易并行化 高性能处理",
+        "intro": ""
       }
     ],
     "head": {
-      "title": "大航海计划-初链TrueChain",
-      "keywords": "初链, TRUE, 初链币, TrueChain, truechain, TRUE币, 混合共识, 第三代公链, 初链官网, Pow+pbft, 比特币, 以太坊, CCTV, 张剑南, 刘洋, DApp, 去中心化应用, 区块链, 挖矿, 主网上线，true兑换，大航海计划，truechain主网上线"
+      "title": "TrueChain－Next Generation Public Blockchain with Hybrid Consensus.初链",
+      "keywords": "TRUE, TrueChain,初链, truechain, blockchain, Hybrid Consensus, 第三代公链, 初链官网, fPoW + DPoS, CCTV, Eric Zhang, DApp"
     }
   },
   "notice": {

@@ -644,5 +644,53 @@
     "hour": "시",
     "minute": "분",
     "second": "초"
+  },
+  "navigation": {
+    "nav": "TRUE대항해 계획2.0",
+    "intro": [
+      "Tackles the Obstacles of permissionless blockchain",
+      "The First Hybrid Consensus Incentive Model",
+      "Stable and Low Gas Fee Mechanism and provides gas payment agency"
+    ],
+    "context": [
+      "대항해 시대는 또한 위대한 지리 대발견이라고 합니다. 이는15세기-17세기 유럽에서 시작된 광범위한 대양 횡단 활동과 지리학적 중대한 돌파를 가리 킵니다. 대항해 시대는 인류 문명의 프로세스에서 가장 중요한 역사 중 하나이며 인류가 첫번째 세계 일주 여행을 마친 이후로 세계는 진전한 의미에서 하나의 전체로 이어져 왔으며 그 역사적 중요성은 특히 깊습니다.",
+      "대항해시대 과감한 개척정신을 계승하여 2020년 초 트루체인(TrueChain)은 '대항해 계획 2.0'을 공식으로 발표 동시에 혼합 컨센서스 2.0을 업그레이드하여 1년간 기술, 콘텐츠, 브랜드, 생태과 자본등 각 측면으로 발전을 가속화할 예정일 뿐만 아니라 일년내 여러 방식으로 내용 종합 분석,개발 계획 등을 전면적으로 홍보 진행할 예정입니다. \"대항해 계획 2.0\"은 트루체인(TrueChain) 설립 후, 2019년 첫 대항해 계획 이후 두 번째로 발표된 단계적 발전 추진 계획으로 대항해계획 2.0은 주로 다음과 같이 5단계로 나뉘어져 있습니다. 대항해 계획 2.0은 TrueChain의 Republic 프로세스에 대응하고 TrueChain의 프로세스는 Genesis(창세), Columbus(탐색), Republic(공화)로 구분됩니다."
+    ],
+    "countdown": "Mainnet Deployment Count Down",
+    "countdown2": "메인넷 상장 1주년",
+    "congratulate": "Congratulations on the official launch of TrueChain's mainnet!",
+    "title": "TRUE대항해 계획2.0",
+    "locked": "오픈 대기",
+    "stpes": [
+      {
+        "name": "대항해",
+        "summary": "기술 업그레이드 ,플랫폼 연동",
+        "intro": "메이넷 합의를 DPoS+fPoW로 업그레이드\n거래소 입출금 일시 중지\n100여개 커뮤니티에서 Call"
+      },
+      {
+        "name": "희망봉",
+        "summary": "공개 테스트 , 새로운 스테이킹",
+        "intro": "하이브리드 컨센서스 2.0 Beta 공개 테스트\n새로운 양식의 스테이킹 마이닝 개시"
+      },
+      {
+        "name": "신항도",
+        "summary": "감산 시작， 노드 선정",
+        "intro": "감산 정식 시작\n노드 선정\n전면적으로 스테이킹 마이닝 오픈"
+      },
+      {
+        "name": "신대륙",
+        "summary": "Defi생태，응용 착륙",
+        "intro": "Defi생태 및 응용 착륙"
+      },
+      {
+        "name": "환치우(环球)행",
+        "summary": "거래 병행, 고성능 처리",
+        "intro": ""
+      }
+    ],
+    "head": {
+      "title": "TrueChain－Next Generation Public Blockchain with Hybrid Consensus.初链",
+      "keywords": "TRUE, TrueChain,初链, truechain, blockchain, Hybrid Consensus, 第三代公链, 初链官网, fPoW + DPoS, CCTV, Eric Zhang, DApp"
+    }
   }
 }

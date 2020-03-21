@@ -1,32 +1,36 @@
 <template>
-  <div class="navi-count-down-box">
-    <ul class="days" v-if="true">
-      <li v-for="(num, index) in numbers" :key="index">
-        <Numebr :num="num" />
-      </li>
-      <span>{{ $t('node.day') }}</span>
-    </ul>
-    <ul class="days" v-else>
-      <li v-for="(num, index) in hour" :key="index">
-        <Numebr :num="num" />
-      </li>
-      <span>{{ $t('node.hour') }}</span>
-      <li v-for="(num, index) in minute" :key="index + 2">
-        <Numebr :num="num" />
-      </li>
-      <span>{{ $t('node.minute') }}</span>
-      <li v-for="(num, index) in second" :key="index + 4">
-        <Numebr :num="num" />
-      </li>
-      <span>{{ $t('node.second') }}</span>
-    </ul>
+  <div  class="navi-count-down-box">
+    <div v-if="numbers > 0 || hour[0] !== 0 || hour[1] !== 0 || minute[0] !== 0 || minute[1] !== 0 || second[0] !== 0 || second[1] !== 0">
+      <ul class="days" v-if="numbers > 0">
+        <li v-for="(num, index) in numbers" :key="index">
+          <Numebr :num="num" />
+        </li>
+        <span>{{ $t('node.day') }}</span>
+      </ul>
+      <ul class="days" v-else>
+        <li v-for="(num, index) in hour" :key="index">
+          <Numebr :num="num" />
+        </li>
+        <span>{{ $t('node.hour') }}</span>
+        <li v-for="(num, index) in minute" :key="index + 2">
+          <Numebr :num="num" />
+        </li>
+        <span>{{ $t('node.minute') }}</span>
+        <li v-for="(num, index) in second" :key="index + 4">
+          <Numebr :num="num" />
+        </li>
+        <span>{{ $t('node.second') }}</span>
+      </ul>
+    </div>
+    <span v-else>2020-03-30</span>
   </div>
 </template>
 
 <script>
 import Numebr from './Number'
 
-const endTime = 1553961600000 // 2013.3.30 12:00:00 GMT+0800
+// const endTime = 1553961600000 // 2013.3.30 12:00:00 GMT+0800
+const endTime = 1585540800000 // 1585540800000 // 2013.3.30 12:00:00 GMT+0800
 
 export default {
   name: 'NavigationCountDown',

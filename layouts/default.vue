@@ -13,51 +13,6 @@
                 to="discovery"
               ) {{ $t('navigation.nav') }}
               li.container-app-header-nav-langli
-                Dropdown(@on-click="jumpTo", trigger="hover")
-                  Button(type="primary") {{ $t(`nav.deer`) }}
-                    Icon(type="arrow-down-b")
-                  DropdownMenu(slot="list")
-                    DropdownItem(
-                      name="http://dev.truedapp.net/"
-                      ) {{ $t(`nav.developer`) }}
-                    template(v-if="$t('language') === '简体中文'")
-                      DropdownItem(
-                          name="http://doc.truechain.pro/center/1096543/"
-                        ) {{ $t(`nav.document`) }}
-                    template(v-else)
-                      DropdownItem(
-                          name="http://doc.truechain.pro/center-en/1091414"
-                        ) {{ $t(`nav.document`) }}
-                    DropdownItem(
-                      name="https://stellar.truechain.pro/"
-                    ) Stellar
-                    DropdownItem(
-                      name="https://www.truescan.net/"
-                    ) TrueScan
-              //- template(v-if="$t('language') === '简体中文'")
-              //-   li(
-              //-       @click="jumpTo('http://dev.truedapp.net/')"
-              //-     ) {{ $t(`nav.developer`) }}
-              //- template(v-else)
-              //-   li(
-              //-       @click="jumpTo('http://dev.truechain.pro/')"
-              //-     ) {{ $t(`nav.developer`) }}
-              //- li(
-              //-     @click="jumpTo('http://trueglobal.pro')"
-              //-   ) TRUE GLOBAL
-              //- li(
-              //-     @click="jumpTo('https://www.truescan.net')"
-              //-   ) TrueScan
-              //- li(
-              //-     @click="jumpTo('http://www.truewallet.net')"
-              //-   ) {{ $t(`nav.webwallet`) }}
-              nuxt-link(
-                v-for="(item, index) in indexList",
-                tag="li",
-                :key="index",
-                :to="item.path"
-              ) {{ $t(`nav.${item.tag}`) }}
-              li.container-app-header-nav-langli
                 Dropdown(@on-click="changeLanguage", trigger="click")
                   Button(type="primary") {{ $t(`language`) }}
                     Icon(type="arrow-down-b")
@@ -82,53 +37,12 @@
         transition(name="fade-x", mode="out-in")
           nuxt
           Spin(size="small", v-if="false")
-      .container-app-footer
-        .container-app-footer-info
-          .container-app-footer-links
-            p.container-app-footer-text {{ $t('footerLinkDescr') }}
-            ul
-              //- li(
-              //-   @mouseenter="setErweima",
-              //-   @mouseleave="setErweima",
-              //- )
-              //-   span(class="icon font_family icon-weixin")
-              //-   transition(name="fade", mode="out-in")
-                  span(class="wechatImg " v-show="isWechat")
-              li(
-                v-for="(item, index) in $t('linksList')",
-                :key="index",
-                @click="onJump(item.link)",
-                :id="item.id"
-              )
-                span(:class="item.icon")
-          .container-app-footer-down
-            .container-app-footer-text {{ $t('footerDownDescr') }}
-            .container-app-footer-buttons
-              app-android
-              app-ios
-            .container-app-footer-down-ming
-              .container-app-footer-text {{$t('footer.miningGuideText')}}
-              a.container-app-footer-down-ming-btn(
-                v-for="item in $t('footer.mingBtns')",
-                :key='item.text',
-                tartget='_blank',
-                :href="item.link"
-              ) {{item.text}}
-        .container-app-footer-copyright
-          div
-            span Copyright ⓒ TRUECHAIN FOUNDATION LTD. All Rights Reserved.
-            span {{ $t(`footerContactUs`) }}： partner@truechain.pro
-            span sitemap:
-              a(href="//www.truechain.pro/sitemap.xml", tartget="_blank")
-                span XML
-          // div COPYRIGHT© TRUE CHAIN {{$t('copyright') }}
 
 </template>
 
 <script>
 import AppAndroid from '~/components/app-android.vue'
 import AppIos from '~/components/app-ios.vue'
-import { apiGetIpInfo } from '~/api'
 import { setStore, getStore } from '~/util'
 import baiduAnalyse from '@/middleware/baiduAnalyse'
 const indexList = [
@@ -143,10 +57,7 @@ const indexList = [
 const langs = [
   { name: '简体中文', tag: 'zh' },
   { name: 'EN', tag: 'en' },
-  { name: '한국어', tag: 'ko' },
-  { name: 'ภาษาไทย', tag: 'th' },
-  { name: 'タイ語', tag: 'jp' },
-  { name: 'Tiếng Việt', tag: 'vn' }
+  { name: '한국어', tag: 'ko' }
 ]
 
 export default {
@@ -156,12 +67,18 @@ export default {
   },
   mounted () {
     baiduAnalyse()
-    const lang = getStore('lang')
-    // 初始化根据ip设置语言，不进行本地获取
-    if (lang) {
-      this.changeLanguage(lang) // 会触发每个页面重新渲染,并无必要
+    const { $route: { fullPath, params }, $router } = this;
+    if (params.lang) {
+      const path = fullPath.split(`/${params.lang}`).join('')
+      setStore('lang', params.lang)
+      if (params.lang === 'zh' || params.lang === 'default') {
+        $router.push(fullPath.replace(/^\/[^\/]+/, ''))
+      } else {
+        $router.push(`/${params.lang}${path}`)
+      }
     } else {
-      this.setLanguage()
+      setStore('lang', 'zh');
+      this.changeLanguage('zh')
     }
     setTimeout(() => {
       const existEl = document.getElementById('page_stat')
@@ -220,7 +137,15 @@ export default {
     },
     goHome () {
       const { lang } = this.$route.params
-      this.$router.push(`/${lang ? lang + '/' : ''}`)
+      // const trueChainUrl = 'https://www.truechain.pro/'
+      const trueChainUrl = 'http://39.98.240.34:6016/'
+      if (lang === 'zh') {
+        window.location.href = trueChainUrl + 'cn'
+      } else if (lang === 'ko') {
+        window.location.href = trueChainUrl + 'kr'
+      } else {
+        window.location.href = trueChainUrl
+      }
     },
     setErweima () {
       this.isWechat = !this.isWechat
@@ -235,9 +160,6 @@ export default {
       } else {
         this.$router.push(path)
       }
-    },
-    huhu () {
-      alert('21323')
     },
     toggleMenu () {
       this.closeLangsSelector()
