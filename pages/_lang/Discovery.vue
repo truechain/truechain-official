@@ -13,12 +13,12 @@
         <li v-for="i in 3" :key="i">{{ $t(`navigation.intro[${i - 1}]`) }}</li>
       </ul>
     </div>-->
+    <!--
+    倒计时
     <div class="navi-count-down">
-   <!--   <p class="title">{{ $t('navigation.congratulate') }}</p>
-      <span>2019-3-30</span>-->
        <p class="title">{{ $t('navigation.countdown2') }}</p>
       <CountDown/>
-    </div>
+    </div>-->
     <div class="navi-steps">
       <p class="title">{{ $t('navigation.title') }}</p>
       <hr>
