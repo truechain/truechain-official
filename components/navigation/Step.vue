@@ -30,7 +30,7 @@
         <div class="content">
           <span class="title">{{ $t(`navigation.stpes[${index}].name`) }}</span>
           <span class="summary">{{ $t(`navigation.stpes[${index}].summary`) }}</span>
-          <p class="intro" v-if="index === 0">{{ intro }}</p>
+          <p class="intro" v-if="index <= 1">{{ intro }}</p>
           <p class="lock" v-else>{{ $t('navigation.locked') }}</p>
          <!-- <span class="like" :class="{ 'liked': liked }" @click="like">{{likeCount}}</span>-->
         </div>
