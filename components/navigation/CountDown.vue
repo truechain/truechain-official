@@ -30,7 +30,7 @@
 import Numebr from './Number'
 
 // const endTime = 1553961600000 // 2013.3.30 12:00:00 GMT+0800
-const endTime = 1585584000000 // 1585540800000 // 2013.3.30 12:00:00 GMT+0800;1585627200000
+const endTime = 1585540800000 // 2013.3.30 12:00:00 GMT+0800;
 
 export default {
   name: 'NavigationCountDown',
