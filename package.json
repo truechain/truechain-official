@@ -2,7 +2,7 @@
   "name": "truechain-official-ssr",
   "version": "1.0.0",
   "description": "Nuxt.js project",
-  "author": "baixiaojian <15101661380@163.com>",
+  "author": "",
   "private": true,
   "config": {
     "nuxt": {
